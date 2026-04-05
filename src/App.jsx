@@ -1,0 +1,234 @@
+import { useState, useEffect } from 'react';
+import Sidebar from './components/Sidebar';
+import Dashboard from './components/Dashboard';
+import Chat from './components/Chat';
+import Notebook from './components/Notebook';
+import Patterns from './components/Patterns';
+
+import { categoryData, getDefaultRole } from './data/categoryData';
+import { getScenariosByRole } from './data/scenariosData';
+
+// Mock initial data
+const initialVocabulary = [
+  { term: "Rollout", meaning: "推出 / 上線", example: "We are planning the rollout of the new system next month.", lang: 'en' }
+];
+
+const VOCAB_STORAGE_KEY = 'IT_ENGLISH_APP_VOCABULARY';
+const LANG_STORAGE_KEY = 'IT_APP_TARGET_LANG';
+const CAT_STORAGE_KEY = 'APP_USER_CAT';
+const ROLE_STORAGE_KEY = 'APP_USER_ROLE';
+const LEVEL_STORAGE_KEY = 'APP_USER_LEVEL';
+
+function App() {
+  const [activeTab, setActiveTab] = useState('dashboard');
+  const [apiKey, setApiKey] = useState('');
+  const [correctionMode, setCorrectionMode] = useState('communicative');
+  
+  // New target language state
+  const [targetLanguage, setTargetLanguage] = useState(() => {
+    return localStorage.getItem(LANG_STORAGE_KEY) || 'en';
+  });
+
+  // User context states
+  const [userCategory, setUserCategory] = useState(() => localStorage.getItem(CAT_STORAGE_KEY) || 'workplace');
+  const [userRole, setUserRole] = useState(() => localStorage.getItem(ROLE_STORAGE_KEY) || 'it');
+  const [userLevel, setUserLevel] = useState(() => localStorage.getItem(LEVEL_STORAGE_KEY) || 'pre-intermediate');
+
+  const [vocabulary, setVocabulary] = useState(() => {
+    const saved = localStorage.getItem(VOCAB_STORAGE_KEY);
+    if (saved) {
+      try { return JSON.parse(saved); } catch (e) { console.error(e); }
+    }
+    return initialVocabulary;
+  });
+
+  useEffect(() => localStorage.setItem(VOCAB_STORAGE_KEY, JSON.stringify(vocabulary)), [vocabulary]);
+  useEffect(() => localStorage.setItem(LANG_STORAGE_KEY, targetLanguage), [targetLanguage]);
+  useEffect(() => {
+    localStorage.setItem(CAT_STORAGE_KEY, userCategory);
+    localStorage.setItem(ROLE_STORAGE_KEY, userRole);
+    localStorage.setItem(LEVEL_STORAGE_KEY, userLevel);
+  }, [userCategory, userRole, userLevel]);
+
+  // Derived scenarios based on userRole
+  const scenarios = getScenariosByRole(userRole);
+  const [activeScenario, setActiveScenario] = useState(null);
+  
+  const [chatHistory, setChatHistory] = useState([]);
+
+  const handleStartScenario = (scenario) => {
+    setActiveScenario(scenario);
+    
+    const langName = targetLanguage === 'en' ? '英文' : '日文';
+    
+    // Look up category and role labels for prompt
+    const catLabel = categoryData.categories.find(c => c.id === userCategory)?.label || userCategory;
+    const roleLabel = categoryData.roles[userCategory]?.find(r => r.id === userRole)?.label || userRole;
+    const levelLabel = categoryData.levels.find(l => l.id === userLevel)?.label || userLevel;
+
+    const aiGreeting = targetLanguage === 'en' 
+      ? `Hello! Let's practice this scenario: "${scenario.title}". Are you ready?`
+      : `こんにちは！このシチュエーション：「${scenario.title}」を練習しましょう。準備はいいですか？`;
+    const aiTranslation = targetLanguage === 'en'
+      ? `您好！我們來練習這個情境：「${scenario.title}」。您準備好了嗎？`
+      : `你好！我們來練習這個情境：「${scenario.title}」。準備好了嗎？`;
+
+    setChatHistory([
+      { role: 'system', content: `目前情境處於【${catLabel} - ${roleLabel}】的脈絡下。情境設定: ${scenario.title}. ${scenario.desc}. 請扮演導師或對話對象，使用符合【${levelLabel}】程度規格的${langName}與我進行對話。` },
+      { 
+        role: 'assistant', 
+        content: aiGreeting,
+        translation: aiTranslation
+      }
+    ]);
+    setActiveTab('chat');
+  };
+
+  const handleStartPatternDrill = (patternItem) => {
+    setActiveScenario({ title: "句型代換練習", desc: "教練給予情境，使用者填入代換詞彙" });
+    
+    const langName = targetLanguage === 'en' ? '英文' : '日文';
+    const levelLabel = categoryData.levels.find(l => l.id === userLevel)?.label || userLevel;
+
+    const aiGreeting = targetLanguage === 'en' 
+      ? `Let's drill this pattern: "${patternItem.pattern}". I will give you a scenario in Chinese, and you reply using this pattern.`
+      : `このパターンの練習をしましょう: "${patternItem.pattern}". 中国語で状況を説明するので、あなたはこのパターンを使って答えてください。`;
+    const aiTranslation = targetLanguage === 'en'
+      ? `我們來練習這個句型：「${patternItem.pattern}」。我會給你一個中文情境，請你使用這個句型回覆。`
+      : `我們來練習這個句型：「${patternItem.pattern}」。我會給你一個中文情境，請你使用這個句型回答。`;
+
+    setChatHistory([
+      { role: 'system', content: `我們正在進行語詞代換練習。目標句型是：【${patternItem.pattern}】。請你根據【${levelLabel}】難度，給出一個中文情境提示，讓使用者試著將合適的${langName}詞彙填入代換位置。使用者回答後，請確認是否正確，並接著給出下一個不同的情境。` },
+      { 
+        role: 'assistant', 
+        content: aiGreeting,
+        translation: aiTranslation
+      }
+    ]);
+    setActiveTab('chat');
+  };
+
+  const addVocabulary = (term, meaning, example, lang = targetLanguage) => {
+    setVocabulary(prev => [{ term, meaning, example, lang }, ...prev]);
+  };
+
+  const removeVocabulary = (termToRemove, langToRemove) => {
+    setVocabulary(prev => prev.filter(v => !(v.term === termToRemove && v.lang === langToRemove)));
+  };
+
+  const handleCategoryChange = (e) => {
+    const newCat = e.target.value;
+    setUserCategory(newCat);
+    setUserRole(getDefaultRole(newCat));
+  };
+
+  return (
+    <div className="app-container">
+      <Sidebar 
+        activeTab={activeTab} 
+        setActiveTab={setActiveTab} 
+        targetLanguage={targetLanguage} 
+        userRole={userRole}
+        userLevel={userLevel}
+      />
+      
+      <main className="main-content">
+        {activeTab === 'dashboard' && (
+          <Dashboard 
+            scenarios={scenarios} 
+            onStart={handleStartScenario} 
+            targetLanguage={targetLanguage}
+            userRole={userRole}
+          />
+        )}
+        
+        {activeTab === 'chat' && (
+          <Chat 
+            scenario={activeScenario}
+            chatHistory={chatHistory}
+            setChatHistory={setChatHistory}
+            apiKey={apiKey}
+            addVocabulary={addVocabulary}
+            correctionMode={correctionMode}
+            targetLanguage={targetLanguage}
+            userCategory={userCategory}
+            userRole={userRole}
+            userLevel={userLevel}
+          />
+        )}
+        
+        {activeTab === 'notebook' && (
+          <Notebook vocabulary={vocabulary} removeVocabulary={removeVocabulary} targetLanguage={targetLanguage} />
+        )}
+
+        {activeTab === 'patterns' && (
+          <Patterns 
+            userRole={userRole} 
+            userLevel={userLevel} 
+            targetLanguage={targetLanguage}
+            handleStartPatternDrill={handleStartPatternDrill}
+          />
+        )}
+        
+        {activeTab === 'settings' && (
+          <div className="animate-fade-in glass-panel" style={{ padding: '2rem', maxWidth: '600px', margin: '0 auto', marginTop: '50px' }}>
+            <h2 style={{ marginBottom: '1.5rem' }}>設定與 API</h2>
+            
+            <div className="form-group-mobile" style={{ marginBottom: '1.5rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <div>
+                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>主類別</label>
+                <select className="glass-input" value={userCategory} onChange={handleCategoryChange} style={{ appearance: 'auto', backgroundColor: 'rgba(0,0,0,0.8)' }}>
+                  {categoryData.categories.map(c => <option key={c.id} value={c.id}>{c.label}</option>)}
+                </select>
+              </div>
+              <div>
+                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>主題與職務</label>
+                <select className="glass-input" value={userRole} onChange={(e) => setUserRole(e.target.value)} style={{ appearance: 'auto', backgroundColor: 'rgba(0,0,0,0.8)' }}>
+                  {categoryData.roles[userCategory]?.map(r => <option key={r.id} value={r.id}>{r.label}</option>)}
+                </select>
+              </div>
+            </div>
+
+            <div className="form-group-mobile" style={{ marginBottom: '1.5rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <div>
+                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>學習語言目標</label>
+                <select className="glass-input" value={targetLanguage} onChange={(e) => setTargetLanguage(e.target.value)} style={{ appearance: 'auto', backgroundColor: 'rgba(0,0,0,0.8)' }}>
+                  <option value="en">英語 (English)</option>
+                  <option value="ja">日語 (日本語)</option>
+                </select>
+              </div>
+              <div>
+                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>語言程度</label>
+                <select className="glass-input" value={userLevel} onChange={(e) => setUserLevel(e.target.value)} style={{ appearance: 'auto', backgroundColor: 'rgba(0,0,0,0.8)' }}>
+                  {categoryData.levels.map(l => <option key={l.id} value={l.id}>{l.label}</option>)}
+                </select>
+              </div>
+            </div>
+
+            <div style={{ marginBottom: '1.5rem' }}>
+              <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>文法糾錯嚴格度</label>
+              <select className="glass-input" value={correctionMode} onChange={(e) => setCorrectionMode(e.target.value)} style={{ appearance: 'auto', backgroundColor: 'rgba(0,0,0,0.8)' }}>
+                <option value="communicative">溝通為主（僅糾正重大基礎錯誤，鼓勵開口）</option>
+                <option value="strict">超級嚴格（抓出所有不道地、些微的文法瑕疵）</option>
+              </select>
+            </div>
+
+            <div style={{ marginBottom: '1rem' }}>
+              <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>Gemini API 金鑰</label>
+              <input type="password" className="glass-input" placeholder="AIzaSy..." value={apiKey} onChange={(e) => setApiKey(e.target.value)} />
+              <p style={{ marginTop: '0.8rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                {apiKey ? <span className="text-success">已輸入金鑰，真實 AI 模式啟動中。</span> : <span>目前以 <span className="text-accent">模擬對話體驗模式 (Mock Mode)</span> 執行中。</span>}
+              </p>
+            </div>
+            
+            <button className="glass-button active" style={{ padding: '10px 20px', display: 'inline-block', marginTop: '1rem' }} onClick={() => setActiveTab('dashboard')}>
+              儲存設定並返回
+            </button>
+          </div>
+        )}
+      </main>
+    </div>
+  );
+}
+
+export default App;
