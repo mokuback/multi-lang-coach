@@ -4,7 +4,7 @@ import { callGeminiAPI, analyzeSentenceAPI, polishSentenceAPI } from '../utils/l
 
 import { categoryData } from '../data/categoryData';
 
-const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, correctionMode, targetLanguage, userCategory, userRole, userLevel }) => {
+const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, correctionMode, targetLanguage, userCategory, userRole, userLevel, speechRate = 5, autoRead = false }) => {
   const [input, setInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const [translatedIndexes, setTranslatedIndexes] = useState(new Set());
@@ -31,6 +31,20 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, co
   useEffect(() => {
     scrollToBottom();
   }, [chatHistory, isTyping]);
+
+  // Handle Auto Read
+  const prevHistoryLength = useRef(chatHistory.length);
+  useEffect(() => {
+    if (autoRead && chatHistory.length > prevHistoryLength.current) {
+      const lastMsg = chatHistory[chatHistory.length - 1];
+      if (lastMsg.role === 'assistant' && lastMsg.content) {
+        const displayIndex = chatHistory.filter((msg) => msg.role !== 'system').length - 1;
+        // Small timeout to ensure DOM update won't interfere
+        setTimeout(() => handleSpeak(lastMsg.content, displayIndex), 100);
+      }
+    }
+    prevHistoryLength.current = chatHistory.length;
+  }, [chatHistory, autoRead]);
 
   // Clean up global listeners and TTS/STT on unmount
   useEffect(() => {
@@ -134,6 +148,32 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, co
     }
   };
 
+  const handleSuggestClick = async (text, realIndex) => {
+    if (!apiKey) {
+      alert("請先在「設定與 API」中輸入 Gemini API Key，才能使用此功能。");
+      return;
+    }
+    
+    setLearningModalData(null);
+    setIsAnalyzing(true);
+    try {
+      const historyContext = chatHistory.slice(0, realIndex + 1);
+      const result = await polishSentenceAPI(text, historyContext, apiKey, targetLanguage);
+      if (result && result.polished) {
+        setLearningModalData({
+          isSuggestion: true,
+          original: text,
+          suggestion: result.polished
+        });
+      }
+    } catch (error) {
+      console.error(error);
+      alert(`建議發生錯誤: ${error.message}`);
+    } finally {
+      setIsAnalyzing(false);
+    }
+  };
+
   // TTS Function
   const handleSpeak = (text, index) => {
     if (playingIndex === index) {
@@ -159,7 +199,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, co
       utterance.voice = optimalVoice;
     }
 
-    utterance.rate = 0.95;
+    utterance.rate = 0.5 + (speechRate * 0.1);
     utterance.pitch = 1.0;
 
     utterance.onend = () => setPlayingIndex(null);
@@ -377,6 +417,32 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, co
                 <p style={{ fontWeight: isUser ? 500 : 400, fontSize: '1.05rem', lineHeight: '1.5' }}>
                   {(!isUser && translatedIndexes.has(index) && msg.translation) ? msg.translation : msg.content}
                 </p>
+
+                {isUser && msg.content && (
+                  <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '12px', gap: '8px' }}>
+                    <button 
+                      onClick={() => handleSuggestClick(msg.content, chatHistory.indexOf(msg))}
+                      style={{
+                        background: 'rgba(217, 70, 239, 0.1)',
+                        border: '1px solid #d946ef',
+                        color: '#d946ef',
+                        padding: '4px 12px',
+                        borderRadius: '16px',
+                        fontSize: '0.8rem',
+                        cursor: 'pointer',
+                        transition: 'all 0.2s',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '4px'
+                      }}
+                      onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(217, 70, 239, 0.2)'}
+                      onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(217, 70, 239, 0.1)'}
+                      title="讓 AI 提供更道地、專業的說法建議"
+                    >
+                      <Wand2 size={14} /> AI 潤飾建議
+                    </button>
+                  </div>
+                )}
 
                 {!isUser && msg.content && (
                   <div style={{ display: 'flex', justifyContent: 'flex-start', marginTop: '12px', gap: '8px', flexWrap: 'wrap' }}>
@@ -661,7 +727,24 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, co
                   <div className="typing-dot" style={{ width: '12px', height: '12px', background: 'var(--accent-color)', borderRadius: '50%', animation: 'fadeIn 1s infinite alternate 0.2s' }}></div>
                   <div className="typing-dot" style={{ width: '12px', height: '12px', background: 'var(--accent-color)', borderRadius: '50%', animation: 'fadeIn 1s infinite alternate 0.4s' }}></div>
                 </div>
-                <p className="text-muted">AI 正在為您深度拆解句型與重點生詞...</p>
+                <p className="text-muted">AI 正在深度處理中...</p>
+              </div>
+            ) : learningModalData && learningModalData.isSuggestion ? (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                <div>
+                  <h4 style={{ color: 'var(--text-secondary)', marginBottom: '8px', fontSize: '1rem' }}>您的原始輸入：</h4>
+                  <div style={{ background: 'rgba(255,255,255,0.05)', padding: '16px', borderRadius: '8px', color: 'var(--text-primary)' }}>
+                    {learningModalData.original}
+                  </div>
+                </div>
+                <div>
+                  <h4 style={{ color: 'var(--accent-color)', marginBottom: '8px', fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <Wand2 size={18} /> AI 道地建議說法：
+                  </h4>
+                  <div style={{ background: 'rgba(217, 70, 239, 0.1)', border: '1px solid rgba(217, 70, 239, 0.3)', padding: '20px', borderRadius: '8px', color: '#fdf4ff', fontSize: '1.1rem', fontWeight: 500, lineHeight: 1.6 }}>
+                    {learningModalData.suggestion}
+                  </div>
+                </div>
               </div>
             ) : learningModalData && (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}>

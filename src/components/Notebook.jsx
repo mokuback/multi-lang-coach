@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BookOpen, Volume2, Search, Trash2 } from 'lucide-react';
 
-const Notebook = ({ vocabulary, removeVocabulary, targetLanguage }) => {
+const Notebook = ({ vocabulary, removeVocabulary, targetLanguage, speechRate = 5 }) => {
   const filteredVocabulary = vocabulary.filter(v => v.lang === targetLanguage);
   const handleSpeak = (text, lang = 'en') => {
     const isJa = lang === 'ja';
@@ -30,9 +30,8 @@ const Notebook = ({ vocabulary, removeVocabulary, targetLanguage }) => {
         
         if (naturalVoice) {
           utterance.voice = naturalVoice;
-        } else {
-          utterance.rate = 0.9;
         }
+        utterance.rate = 0.5 + (speechRate * 0.1);
         
         window.speechSynthesis.speak(utterance);
       }

@@ -18,11 +18,17 @@ const LANG_STORAGE_KEY = 'IT_APP_TARGET_LANG';
 const CAT_STORAGE_KEY = 'APP_USER_CAT';
 const ROLE_STORAGE_KEY = 'APP_USER_ROLE';
 const LEVEL_STORAGE_KEY = 'APP_USER_LEVEL';
+const RATE_STORAGE_KEY = 'APP_SPEECH_RATE';
+const AUTO_READ_STORAGE_KEY = 'APP_AUTO_READ';
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
   const [apiKey, setApiKey] = useState('');
   const [correctionMode, setCorrectionMode] = useState('communicative');
+  
+  const [speechRate, setSpeechRate] = useState(() => parseInt(localStorage.getItem(RATE_STORAGE_KEY) || '5', 10));
+  const [autoRead, setAutoRead] = useState(() => localStorage.getItem(AUTO_READ_STORAGE_KEY) === 'true');
+
   
   // New target language state
   const [targetLanguage, setTargetLanguage] = useState(() => {
@@ -44,6 +50,8 @@ function App() {
 
   useEffect(() => localStorage.setItem(VOCAB_STORAGE_KEY, JSON.stringify(vocabulary)), [vocabulary]);
   useEffect(() => localStorage.setItem(LANG_STORAGE_KEY, targetLanguage), [targetLanguage]);
+  useEffect(() => localStorage.setItem(RATE_STORAGE_KEY, speechRate.toString()), [speechRate]);
+  useEffect(() => localStorage.setItem(AUTO_READ_STORAGE_KEY, autoRead.toString()), [autoRead]);
   useEffect(() => {
     localStorage.setItem(CAT_STORAGE_KEY, userCategory);
     localStorage.setItem(ROLE_STORAGE_KEY, userRole);
@@ -154,11 +162,13 @@ function App() {
             userCategory={userCategory}
             userRole={userRole}
             userLevel={userLevel}
+            speechRate={speechRate}
+            autoRead={autoRead}
           />
         )}
         
         {activeTab === 'notebook' && (
-          <Notebook vocabulary={vocabulary} removeVocabulary={removeVocabulary} targetLanguage={targetLanguage} />
+          <Notebook vocabulary={vocabulary} removeVocabulary={removeVocabulary} targetLanguage={targetLanguage} speechRate={speechRate} />
         )}
 
         {activeTab === 'patterns' && (
@@ -211,6 +221,37 @@ function App() {
                 <option value="communicative">溝通為主（僅糾正重大基礎錯誤，鼓勵開口）</option>
                 <option value="strict">超級嚴格（抓出所有不道地、些微的文法瑕疵）</option>
               </select>
+            </div>
+
+            <div className="form-group-mobile" style={{ marginBottom: '1.5rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <div>
+                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>朗讀語速 (1-10)</label>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                  <input 
+                    type="range" 
+                    min="1" max="10" step="1" 
+                    value={speechRate} 
+                    onChange={(e) => setSpeechRate(parseInt(e.target.value, 10))}
+                    style={{ flex: 1 }}
+                  />
+                  <span style={{ color: 'var(--accent-color)', fontWeight: 'bold' }}>{speechRate}</span>
+                </div>
+              </div>
+              <div>
+                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>自動朗讀 (對話練習)</label>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.5rem' }}>
+                  <input 
+                    type="checkbox" 
+                    id="autoReadToggle"
+                    checked={autoRead} 
+                    onChange={(e) => setAutoRead(e.target.checked)}
+                    style={{ width: '1.2rem', height: '1.2rem', cursor: 'pointer' }}
+                  />
+                  <label htmlFor="autoReadToggle" style={{ cursor: 'pointer', color: 'var(--text-primary)' }}>
+                    {autoRead ? '開啟' : '關閉'}
+                  </label>
+                </div>
+              </div>
             </div>
 
             <div style={{ marginBottom: '1rem' }}>
