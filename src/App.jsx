@@ -134,14 +134,18 @@ function App() {
     const levelLabel = categoryData.levels.find(l => l.id === userLevel)?.label || userLevel;
 
     const aiGreeting = targetLanguage === 'en' 
-      ? `Hello! Let's practice this scenario: "${scenario.title}". Are you ready?`
-      : `こんにちは！このシチュエーション：「${scenario.title}」を練習しましょう。準備はいいですか？`;
+      ? (scenario.id === 'free-mode' ? `Hello! Let's start our conversation. You can talk about anything!` : `Hello! Let's practice this scenario: "${scenario.title}". Are you ready?`)
+      : (scenario.id === 'free-mode' ? `こんにちは！会話を始めましょう。何について話してもいいですよ！` : `こんにちは！このシチュエーション：「${scenario.title}」を練習しましょう。準備はいいですか？`);
     const aiTranslation = targetLanguage === 'en'
-      ? `您好！我們來練習這個情境：「${scenario.title}」。您準備好了嗎？`
-      : `你好！我們來練習這個情境：「${scenario.title}」。準備好了嗎？`;
+      ? (scenario.id === 'free-mode' ? `您好！我們開始自由對話吧，您可以聊任何話題！` : `您好！我們來練習這個情境：「${scenario.title}」。您準備好了嗎？`)
+      : (scenario.id === 'free-mode' ? `你好！我們開始自由對話吧，隨便聊聊！` : `你好！我們來練習這個情境：「${scenario.title}」。準備好了嗎？`);
+
+    const systemPrompt = scenario.id === 'free-mode'
+      ? `這是一場不限主題的自由對話。請扮演導師或友善的對話對象，使用符合【${levelLabel}】程度規格的${langName}與我進行自然的對話交流。請根據我聊到的話題給予有趣的回應，並適時提出問題來引導對話繼續。`
+      : `目前情境處於【${catLabel} - ${roleLabel}】的脈絡下。情境設定: ${scenario.title}. ${scenario.desc}. 請扮演導師或對話對象，使用符合【${levelLabel}】程度規格的${langName}與我進行對話。`;
 
     setChatHistory([
-      { role: 'system', content: `目前情境處於【${catLabel} - ${roleLabel}】的脈絡下。情境設定: ${scenario.title}. ${scenario.desc}. 請扮演導師或對話對象，使用符合【${levelLabel}】程度規格的${langName}與我進行對話。` },
+      { role: 'system', content: systemPrompt },
       { 
         role: 'assistant', 
         content: aiGreeting,

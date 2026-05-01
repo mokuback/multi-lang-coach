@@ -14,11 +14,11 @@ const Dashboard = ({ scenarios, onStart, targetLanguage = 'en', userRole = 'it',
         </div>
         <button 
           className="glass-button active" 
-          onClick={() => onStart({ id: 'free-chat', title: "隨意日常交談", desc: "不限主題的自由對話。您可以聊聊近況，或是最新的趨勢。", difficulty: "不限" })}
+          onClick={() => onStart({ id: 'free-mode', title: "自由對話模式", desc: "不限主題，隨心所欲地與 AI 進行自然交流，訓練臨場反應。", difficulty: "不限" })}
           style={{ padding: '12px 20px', borderRadius: '8px', display: 'flex', alignItems: 'center', gap: '8px', border: '1px solid var(--accent-color)' }}
         >
           <MessageSquare size={18} />
-          無任務任意對話
+          ✨ 自由對話模式 (Free Mode)
         </button>
       </header>
 

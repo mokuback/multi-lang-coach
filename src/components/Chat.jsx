@@ -433,71 +433,73 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
         </span>
       </header>
 
-      {/* Pattern Hints Collapsible Panel */}
-      <div style={{ marginBottom: '20px' }}>
-        <button
-          onClick={() => setShowPatternHints(!showPatternHints)}
-          style={{
-            background: 'var(--glass-bg)',
-            border: '1px solid var(--glass-border)',
-            borderRadius: '12px',
-            padding: '12px 20px',
-            width: '100%',
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            cursor: 'pointer',
-            color: 'var(--text-primary)',
-            fontSize: '1rem',
-            fontWeight: 500,
-            transition: 'background 0.2s'
-          }}
-          onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'}
-          onMouseLeave={(e) => e.currentTarget.style.background = 'var(--glass-bg)'}
-        >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <Lightbulb size={18} className="text-accent" />
-            💡 本情境推薦句型 ({patternVersion === '01' ? '基礎教科書版' : '進階商務版'})
-          </div>
-          <span>{showPatternHints ? '▲ 收合' : '▼ 展開'}</span>
-        </button>
-
-        {showPatternHints && (() => {
-          const currentPatterns = patternVersion === '01' ? scenarioPatterns01 : scenarioPatterns02;
-          const scenarioData = currentPatterns[scenario?.id] || currentPatterns['default'];
-          const patterns = scenarioData ? (scenarioData[targetLanguage] || scenarioData['en'] || []) : [];
-
-          if (patterns.length === 0) return null;
-
-          return (
-            <div className="glass-panel animate-slide-in" style={{ 
-              marginTop: '8px', 
-              padding: '16px 20px', 
-              background: 'rgba(255,255,255,0.02)',
+      {/* Pattern Hints Collapsible Panel (Hidden in free-mode) */}
+      {scenario?.id !== 'free-mode' && (
+        <div style={{ marginBottom: '20px' }}>
+          <button
+            onClick={() => setShowPatternHints(!showPatternHints)}
+            style={{
+              background: 'var(--glass-bg)',
+              border: '1px solid var(--glass-border)',
+              borderRadius: '12px',
+              padding: '12px 20px',
+              width: '100%',
               display: 'flex',
-              flexDirection: 'column',
-              gap: '12px'
-            }}>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '8px' }}>
-                在對話中試著運用以下句型，讓您的表達更自然：
-              </p>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '12px' }}>
-                {patterns.slice(0, 4).map((p, idx) => (
-                  <div key={idx} style={{ 
-                    background: 'rgba(0,0,0,0.2)', 
-                    padding: '12px', 
-                    borderRadius: '8px',
-                    borderLeft: '2px solid var(--accent-color)'
-                  }}>
-                    <div style={{ fontWeight: 'bold', marginBottom: '4px', color: 'var(--text-primary)' }}>{p.pattern}</div>
-                    <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{p.explanation}</div>
-                  </div>
-                ))}
-              </div>
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              cursor: 'pointer',
+              color: 'var(--text-primary)',
+              fontSize: '1rem',
+              fontWeight: 500,
+              transition: 'background 0.2s'
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'}
+            onMouseLeave={(e) => e.currentTarget.style.background = 'var(--glass-bg)'}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <Lightbulb size={18} className="text-accent" />
+              💡 本情境推薦句型 ({patternVersion === '01' ? '基礎教科書版' : '進階商務版'})
             </div>
-          );
-        })()}
-      </div>
+            <span>{showPatternHints ? '▲ 收合' : '▼ 展開'}</span>
+          </button>
+
+          {showPatternHints && (() => {
+            const currentPatterns = patternVersion === '01' ? scenarioPatterns01 : scenarioPatterns02;
+            const scenarioData = currentPatterns[scenario?.id] || currentPatterns['default'];
+            const patterns = scenarioData ? (scenarioData[targetLanguage] || scenarioData['en'] || []) : [];
+
+            if (patterns.length === 0) return null;
+
+            return (
+              <div className="glass-panel animate-slide-in" style={{ 
+                marginTop: '8px', 
+                padding: '16px 20px', 
+                background: 'rgba(255,255,255,0.02)',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '12px'
+              }}>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '8px' }}>
+                  在對話中試著運用以下句型，讓您的表達更自然：
+                </p>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '12px' }}>
+                  {patterns.slice(0, 4).map((p, idx) => (
+                    <div key={idx} style={{ 
+                      background: 'rgba(0,0,0,0.2)', 
+                      padding: '12px', 
+                      borderRadius: '8px',
+                      borderLeft: '2px solid var(--accent-color)'
+                    }}>
+                      <div style={{ fontWeight: 'bold', marginBottom: '4px', color: 'var(--text-primary)' }}>{p.pattern}</div>
+                      <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{p.explanation}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            );
+          })()}
+        </div>
+      )}
 
       {/* Messages area */}
       <div className="glass-panel" style={{ 
