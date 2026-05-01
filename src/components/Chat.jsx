@@ -591,7 +591,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                   </div>
                 )}
 
-                {!isUser && msg.content && !msg.isError && (
+                {!isUser && msg.content && !msg.isError && scenario?.id !== 'pattern-drill' && (
                   <div style={{ display: 'flex', justifyContent: 'flex-start', marginTop: '12px', gap: '8px', flexWrap: 'wrap' }}>
                     
                     {/* TTS Read Aloud */}
