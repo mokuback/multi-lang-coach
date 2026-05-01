@@ -9,7 +9,6 @@ import scenarioPatterns02 from '../data/scenarioPatterns_02.json';
 const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, addPattern, correctionMode, targetLanguage, userCategory, userRole, userLevel, speechRate = 5, autoRead = false, patternVersion = '02' }) => {
   const [input, setInput] = useState('');
   const [showPatternHints, setShowPatternHints] = useState(false);
-  const [showMockReminder, setShowMockReminder] = useState(true);
   const [isTyping, setIsTyping] = useState(false);
   const [translatedIndexes, setTranslatedIndexes] = useState(new Set());
   const messagesEndRef = useRef(null);
@@ -439,26 +438,16 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
       </header>
 
       {/* Mock Mode Reminder Banner */}
-      {!apiKey && showMockReminder && (
-        <div className="glass-panel animate-slide-in" style={{ 
+      {!apiKey && (
+        <div className="glass-panel" style={{ 
           marginBottom: '20px', 
           padding: '16px 24px', 
           background: 'rgba(255, 215, 0, 0.1)', 
           borderLeft: '4px solid #FFD700',
           display: 'flex',
           alignItems: 'flex-start',
-          gap: '16px',
-          position: 'relative'
+          gap: '16px'
         }}>
-          <button 
-            onClick={() => setShowMockReminder(false)}
-            style={{ position: 'absolute', top: '12px', right: '12px', background: 'transparent', border: 'none', cursor: 'pointer', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '4px', borderRadius: '50%' }}
-            title="關閉提示"
-            onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.1)'}
-            onMouseLeave={(e) => e.currentTarget.style.background = 'transparent'}
-          >
-            <X size={18} />
-          </button>
           <Info size={24} style={{ color: '#FFD700', flexShrink: 0, marginTop: '2px' }} />
           <div>
             <h3 style={{ color: 'var(--text-primary)', marginBottom: '8px', fontSize: '1.05rem' }}>
