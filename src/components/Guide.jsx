@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { BookOpen } from 'lucide-react';
@@ -34,20 +35,20 @@ const Guide = () => {
               return (
                 <ReactMarkdown
                   components={{
-                    h1: ({node, ...props}) => <h1 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginBottom: '24px', borderBottom: '1px solid var(--glass-border)', paddingBottom: '12px' }} {...props} />,
-                    h2: ({node, ...props}) => <h2 style={{ fontSize: '1.5rem', color: 'var(--text-primary)', marginTop: '32px', marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px' }} {...props} />,
-                    h3: ({node, ...props}) => <h3 style={{ fontSize: '1.2rem', color: 'var(--text-primary)', marginTop: '24px', marginBottom: '12px' }} {...props} />,
-                    p: ({node, ...props}) => <p style={{ marginBottom: '16px', color: 'var(--text-secondary)' }} {...props} />,
-                    ul: ({node, ...props}) => <ul style={{ marginBottom: '16px', paddingLeft: '24px', color: 'var(--text-secondary)' }} {...props} />,
-                    ol: ({node, ...props}) => <ol style={{ marginBottom: '16px', paddingLeft: '24px', color: 'var(--text-secondary)' }} {...props} />,
-                    li: ({node, ...props}) => <li style={{ marginBottom: '8px' }} {...props} />,
-                    strong: ({node, ...props}) => <strong style={{ color: 'var(--text-primary)', fontWeight: 'bold' }} {...props} />,
-                    a: ({node, ...props}) => <a style={{ color: 'var(--accent-color)', textDecoration: 'none' }} target="_blank" rel="noopener noreferrer" {...props} />,
-                    hr: ({node, ...props}) => <hr style={{ border: 'none', borderTop: '1px solid var(--glass-border)', margin: '32px 0' }} {...props} />,
-                    blockquote: ({node, ...props}) => <blockquote style={{ borderLeft: '4px solid var(--accent-color)', paddingLeft: '16px', margin: '24px 0', color: 'var(--text-muted)', fontStyle: 'italic', background: 'rgba(0,0,0,0.2)', padding: '16px' }} {...props} />,
-                    code: ({node, inline, ...props}) => inline 
-                      ? <code style={{ color: '#FFD700', background: 'rgba(255, 215, 0, 0.1)', padding: '2px 6px', borderRadius: '4px', fontWeight: 'bold' }} {...props} />
-                      : <code {...props} />
+                    h1: (props) => { const {node, ...rest} = props; return <h1 style={{ fontSize: '2rem', color: 'var(--accent-color)', marginBottom: '24px', borderBottom: '1px solid var(--glass-border)', paddingBottom: '12px' }} {...rest} />; },
+                    h2: (props) => { const {node, ...rest} = props; return <h2 style={{ fontSize: '1.5rem', color: 'var(--text-primary)', marginTop: '32px', marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px' }} {...rest} />; },
+                    h3: (props) => { const {node, ...rest} = props; return <h3 style={{ fontSize: '1.2rem', color: 'var(--text-primary)', marginTop: '24px', marginBottom: '12px' }} {...rest} />; },
+                    p: (props) => { const {node, ...rest} = props; return <p style={{ marginBottom: '16px', color: 'var(--text-secondary)' }} {...rest} />; },
+                    ul: (props) => { const {node, ...rest} = props; return <ul style={{ marginBottom: '16px', paddingLeft: '24px', color: 'var(--text-secondary)' }} {...rest} />; },
+                    ol: (props) => { const {node, ...rest} = props; return <ol style={{ marginBottom: '16px', paddingLeft: '24px', color: 'var(--text-secondary)' }} {...rest} />; },
+                    li: (props) => { const {node, ...rest} = props; return <li style={{ marginBottom: '8px' }} {...rest} />; },
+                    strong: (props) => { const {node, ...rest} = props; return <strong style={{ color: 'var(--text-primary)', fontWeight: 'bold' }} {...rest} />; },
+                    a: (props) => { const {node, ...rest} = props; return <a style={{ color: 'var(--accent-color)', textDecoration: 'none' }} target="_blank" rel="noopener noreferrer" {...rest} />; },
+                    hr: (props) => { const {node, ...rest} = props; return <hr style={{ border: 'none', borderTop: '1px solid var(--glass-border)', margin: '32px 0' }} {...rest} />; },
+                    blockquote: (props) => { const {node, ...rest} = props; return <blockquote style={{ borderLeft: '4px solid var(--accent-color)', paddingLeft: '16px', margin: '24px 0', color: 'var(--text-muted)', fontStyle: 'italic', background: 'rgba(0,0,0,0.2)', padding: '16px' }} {...rest} />; },
+                    code: (props) => { const {node, inline, ...rest} = props; return inline 
+                      ? <code style={{ color: '#FFD700', background: 'rgba(255, 215, 0, 0.1)', padding: '2px 6px', borderRadius: '4px', fontWeight: 'bold' }} {...rest} />
+                      : <code {...rest} />; }
                   }}
                 >
                   {t(userGuideMd || '')}

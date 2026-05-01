@@ -3,7 +3,7 @@ import { LayoutDashboard, MessageSquare, BookOpen, Settings, BookMarked, FileTex
 import { categoryData } from '../data/categoryData';
 import { useI18n } from '../contexts/I18nContext';
 
-const Sidebar = ({ activeTab, setActiveTab, targetLanguage = 'en', userRole = 'it', userLevel = 'pre-intermediate' }) => {
+const Sidebar = ({ activeTab, setActiveTab, userRole = 'it', userLevel = 'pre-intermediate' }) => {
   const { t } = useI18n();
   const levelLabel = categoryData.levels.find(l => l.id === userLevel)?.label || userLevel;
   const roleLabel = Object.values(categoryData.roles).flat().find(r => r.id === userRole)?.label || userRole;

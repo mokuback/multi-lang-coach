@@ -99,7 +99,7 @@ export const callGeminiAPI = async (chatHistory, apiKey, correctionMode, targetL
     let parsedResult;
     try {
       parsedResult = JSON.parse(textOutput);
-    } catch (e) {
+    } catch {
       // Emergency cleanup in case the LLM returned markdown blocks anyway
       const cleaned = textOutput.replace(/```json/gi, '').replace(/```/g, '').trim();
       parsedResult = JSON.parse(cleaned);
@@ -168,7 +168,7 @@ export const analyzeSentenceAPI = async (sentence, apiKey, targetLanguage = 'en'
     let parsedResult;
     try {
       parsedResult = JSON.parse(textOutput);
-    } catch (e) {
+    } catch {
       const cleaned = textOutput.replace(/```json/gi, '').replace(/```/g, '').trim();
       parsedResult = JSON.parse(cleaned);
     }
@@ -235,7 +235,7 @@ export const polishSentenceAPI = async (draftText, chatHistory, apiKey, targetLa
     let parsedResult;
     try {
       parsedResult = JSON.parse(textOutput);
-    } catch (e) {
+    } catch {
       const cleaned = textOutput.replace(/```json/gi, '').replace(/```/g, '').trim();
       parsedResult = JSON.parse(cleaned);
     }

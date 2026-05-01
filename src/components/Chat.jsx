@@ -3,7 +3,6 @@ import { Send, AlertCircle, CheckCircle, Info, Lightbulb, X, Wand2, Volume2, Mic
 import { callGeminiAPI, analyzeSentenceAPI, polishSentenceAPI } from '../utils/llmClient';
 import { useI18n } from '../contexts/I18nContext';
 
-import { categoryData } from '../data/categoryData';
 import scenarioPatterns01 from '../data/scenarioPatterns_01.json';
 import scenarioPatterns02 from '../data/scenarioPatterns_02.json';
 
@@ -49,6 +48,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
       }
     }
     prevHistoryLength.current = chatHistory.length;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [chatHistory, autoRead]);
 
   // Clean up global listeners and TTS/STT on unmount
@@ -94,7 +94,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
         recognitionRef.current.stop();
       }
     };
-  }, []);
+  }, [targetLanguage]);
 
   const handleTextSelection = (index) => {
     setTimeout(() => {

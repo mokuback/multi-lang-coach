@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BookMarked, Play, Info, Layers } from 'lucide-react';
 import scenarioPatterns01 from '../data/scenarioPatterns_01.json';
 import scenarioPatterns02 from '../data/scenarioPatterns_02.json';
