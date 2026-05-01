@@ -27,8 +27,9 @@ const Sidebar = ({ activeTab, setActiveTab, targetLanguage = 'en', userRole = 'i
       <div className="sidebar-header" style={{ marginBottom: '40px', padding: '0 10px' }}>
         <h1 style={{ fontSize: '1.2rem', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
           <span style={{ color: 'var(--accent-color)', fontSize: '1.5rem' }}>◆</span> 
-          情境對話特訓
+          Multi-Lang Coach
         </h1>
+        <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '4px', marginLeft: '24px' }}>大數據語音教練</p>
       </div>
 
       <nav className="sidebar-nav" style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '8px' }}>

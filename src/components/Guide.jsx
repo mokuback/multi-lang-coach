@@ -41,7 +41,10 @@ const Guide = () => {
                     strong: ({node, ...props}) => <strong style={{ color: 'var(--text-primary)', fontWeight: 'bold' }} {...props} />,
                     a: ({node, ...props}) => <a style={{ color: 'var(--accent-color)', textDecoration: 'none' }} target="_blank" rel="noopener noreferrer" {...props} />,
                     hr: ({node, ...props}) => <hr style={{ border: 'none', borderTop: '1px solid var(--glass-border)', margin: '32px 0' }} {...props} />,
-                    blockquote: ({node, ...props}) => <blockquote style={{ borderLeft: '4px solid var(--accent-color)', paddingLeft: '16px', margin: '24px 0', color: 'var(--text-muted)', fontStyle: 'italic', background: 'rgba(0,0,0,0.2)', padding: '16px' }} {...props} />
+                    blockquote: ({node, ...props}) => <blockquote style={{ borderLeft: '4px solid var(--accent-color)', paddingLeft: '16px', margin: '24px 0', color: 'var(--text-muted)', fontStyle: 'italic', background: 'rgba(0,0,0,0.2)', padding: '16px' }} {...props} />,
+                    code: ({node, inline, ...props}) => inline 
+                      ? <code style={{ color: '#FFD700', background: 'rgba(255, 215, 0, 0.1)', padding: '2px 6px', borderRadius: '4px', fontWeight: 'bold' }} {...props} />
+                      : <code {...props} />
                   }}
                 >
                   {userGuideMd || ''}
