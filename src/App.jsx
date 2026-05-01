@@ -5,6 +5,7 @@ import Chat from './components/Chat';
 import Notebook from './components/Notebook';
 import PatternNotebook from './components/PatternNotebook';
 import Patterns from './components/Patterns';
+import Guide from './components/Guide';
 
 import { categoryData, getDefaultRole } from './data/categoryData';
 import { getScenariosByRole } from './data/scenariosData';
@@ -26,7 +27,7 @@ const PROGRESS_STORAGE_KEY = 'APP_LEARNING_PROGRESS';
 const PATTERN_VERSION_STORAGE_KEY = 'APP_PATTERN_VERSION';
 
 function App() {
-  const [activeTab, setActiveTab] = useState('dashboard');
+  const [activeTab, setActiveTab] = useState('guide');
   const [apiKey, setApiKey] = useState('');
   const [correctionMode, setCorrectionMode] = useState('communicative');
   
@@ -212,6 +213,10 @@ function App() {
       />
       
       <main className="main-content">
+        {activeTab === 'guide' && (
+          <Guide />
+        )}
+
         {activeTab === 'dashboard' && (
           <Dashboard 
             scenarios={scenarios} 

@@ -6,6 +6,7 @@ const Sidebar = ({ activeTab, setActiveTab, targetLanguage = 'en', userRole = 'i
   const levelLabel = categoryData.levels.find(l => l.id === userLevel)?.label || userLevel;
   const roleLabel = Object.values(categoryData.roles).flat().find(r => r.id === userRole)?.label || userRole;
   const navItems = [
+    { id: 'guide', label: '使用說明', icon: BookOpen },
     { id: 'dashboard', label: '每日任務', icon: LayoutDashboard },
     { id: 'chat', label: '對話練習', icon: MessageSquare },
     { id: 'notebook', label: '生詞筆記', icon: BookOpen },
