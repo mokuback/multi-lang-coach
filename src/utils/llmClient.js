@@ -48,6 +48,8 @@ export const callGeminiAPI = async (chatHistory, apiKey, correctionMode, targetL
       },
       "extractedVocab": {
         "term": "對方或你的對白中，值得學習的進階詞彙或片語",
+        "phonetic": "該單字的KK音標(若為英文)或羅馬拼音(若為日文)，若為長句可為空字串",
+        "partOfSpeech": "該單字的詞性簡寫(如 n., vi., adj.)，若非單一字彙則可為空字串",
         "meaning": "繁體中文解釋",
         "example": "包含該詞彙的${langName}例句"
       }
@@ -123,10 +125,10 @@ export const analyzeSentenceAPI = async (sentence, apiKey, targetLanguage = 'en'
     JSON 格式必須精確符合以下結構：
     {
       "vocab": [
-        { "word": "${termName}", "zh": "繁體中文解釋", "partOfSpeech": "詞性" }
+        { "word": "${termName}", "phonetic": "KK音標或拼音", "zh": "繁體中文解釋", "partOfSpeech": "詞性簡寫(如 n., vi.)", "example": "一個正確的${langName}例句" }
       ],
       "patterns": [
-        { "pattern": "實用句型 / 慣用語", "explanation": "如何在其他 IT 工作場景(如Email或開會)中套用這個句型" }
+        { "pattern": "實用句型 / 慣用語", "explanation": "如何在其他場景中套用這個句型，並請提供一個簡短的${langName}例句" }
       ],
       "grammar": "整句文法結構的繁體中文簡明解析，請著重於實戰語感，而非死板的傳統文法術語。"
     }

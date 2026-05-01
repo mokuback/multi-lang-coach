@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
-import { BookMarked, Play, Info } from 'lucide-react';
-import { getPatterns } from '../data/patternsData';
+import { BookMarked, Play, Info, Layers } from 'lucide-react';
+import scenarioPatterns01 from '../data/scenarioPatterns_01.json';
+import scenarioPatterns02 from '../data/scenarioPatterns_02.json';
 
-const Patterns = ({ userRole, userLevel, targetLanguage, handleStartPatternDrill }) => {
-  const patterns = getPatterns(targetLanguage, userRole, userLevel);
+const Patterns = ({ activeScenario, targetLanguage, handleStartPatternDrill, version, setVersion }) => {
+
+  const currentPatterns = version === '01' ? scenarioPatterns01 : scenarioPatterns02;
+  const scenarioId = activeScenario?.id || 'default';
+  const scenarioData = currentPatterns[scenarioId] || currentPatterns['default'];
+  const patterns = scenarioData ? (scenarioData[targetLanguage] || scenarioData['en'] || []) : [];
 
   return (
     <div className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '800px', margin: '0 auto' }}>
@@ -12,14 +17,35 @@ const Patterns = ({ userRole, userLevel, targetLanguage, handleStartPatternDrill
           <BookMarked className="text-accent" size={32} />
           常用句型 (Patterns)
         </h2>
-        <p className="text-muted">根據您的情境與程度，為您精選最關鍵的母語人士常用句型。點擊進入代換練習模式！</p>
+        <p className="text-muted">根據您當前的每日任務，為您精選最關鍵的母語人士常用句型。點擊進入代換練習模式！</p>
       </header>
+
+      <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '24px', padding: '12px 20px', borderRadius: '12px', background: 'var(--glass-bg)', border: '1px solid var(--glass-border)' }}>
+        <Layers size={20} className="text-accent" />
+        <span style={{ fontWeight: 500, color: 'var(--text-primary)' }}>句型資料庫版本：</span>
+        <div style={{ display: 'flex', gap: '8px' }}>
+          <button 
+            className={`glass-button ${version === '01' ? 'active' : ''}`}
+            style={{ padding: '6px 16px', background: version === '01' ? 'var(--accent-color)' : 'transparent', color: version === '01' ? '#fff' : 'var(--text-primary)', borderColor: version === '01' ? 'var(--accent-color)' : 'var(--glass-border)' }}
+            onClick={() => setVersion('01')}
+          >
+            基礎教科書版 (適合初學)
+          </button>
+          <button 
+            className={`glass-button ${version === '02' ? 'active' : ''}`}
+            style={{ padding: '6px 16px', background: version === '02' ? 'var(--accent-color)' : 'transparent', color: version === '02' ? '#fff' : 'var(--text-primary)', borderColor: version === '02' ? 'var(--accent-color)' : 'var(--glass-border)' }}
+            onClick={() => setVersion('02')}
+          >
+            進階商務版 (母語者思維)
+          </button>
+        </div>
+      </div>
 
       {patterns && patterns.length > 0 ? (
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '20px' }}>
-          {patterns.map((item) => (
+          {patterns.map((item, index) => (
             <div 
-              key={item.id} 
+              key={`${activeScenario}-${index}`} 
               className="glass-panel hover-card" 
               style={{ padding: '20px', cursor: 'pointer', display: 'flex', flexDirection: 'column' }}
               onClick={() => handleStartPatternDrill(item)}
@@ -47,7 +73,7 @@ const Patterns = ({ userRole, userLevel, targetLanguage, handleStartPatternDrill
         </div>
       ) : (
         <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-secondary)' }}>
-          <p>此主題與難度目前沒有相對應的句型。我們會持續擴充！</p>
+          <p>此任務目前沒有相對應的句型，或是大數據尚未生成完畢。請執行句型生成腳本！</p>
         </div>
       )}
     </div>

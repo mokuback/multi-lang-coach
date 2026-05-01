@@ -1,0 +1,18 @@
+{
+  "default": {
+    "en": [
+      {
+        "pattern": "Generating data...",
+        "translation": "資料生成中...",
+        "explanation": "請執行 npm run generate (或 node scripts/generatePatterns.js YOUR_API_KEY) 來產生完整大數據。"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "データ生成中...",
+        "translation": "資料生成中...",
+        "explanation": "請執行腳本來產生大數據。"
+      }
+    ]
+  }
+}

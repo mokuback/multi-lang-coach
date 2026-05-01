@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import Chat from './components/Chat';
 import Notebook from './components/Notebook';
+import PatternNotebook from './components/PatternNotebook';
 import Patterns from './components/Patterns';
 
 import { categoryData, getDefaultRole } from './data/categoryData';
@@ -14,12 +15,15 @@ const initialVocabulary = [
 ];
 
 const VOCAB_STORAGE_KEY = 'IT_ENGLISH_APP_VOCABULARY';
+const PATTERNS_STORAGE_KEY = 'IT_ENGLISH_APP_PATTERNS';
 const LANG_STORAGE_KEY = 'IT_APP_TARGET_LANG';
 const CAT_STORAGE_KEY = 'APP_USER_CAT';
 const ROLE_STORAGE_KEY = 'APP_USER_ROLE';
 const LEVEL_STORAGE_KEY = 'APP_USER_LEVEL';
 const RATE_STORAGE_KEY = 'APP_SPEECH_RATE';
 const AUTO_READ_STORAGE_KEY = 'APP_AUTO_READ';
+const PROGRESS_STORAGE_KEY = 'APP_LEARNING_PROGRESS';
+const PATTERN_VERSION_STORAGE_KEY = 'APP_PATTERN_VERSION';
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -35,9 +39,22 @@ function App() {
     return localStorage.getItem(LANG_STORAGE_KEY) || 'en';
   });
 
+  const [patternVersion, setPatternVersion] = useState(() => {
+    return localStorage.getItem(PATTERN_VERSION_STORAGE_KEY) || '02';
+  });
+
   // User context states
-  const [userCategory, setUserCategory] = useState(() => localStorage.getItem(CAT_STORAGE_KEY) || 'workplace');
-  const [userRole, setUserRole] = useState(() => localStorage.getItem(ROLE_STORAGE_KEY) || 'it');
+  const [userCategory, setUserCategory] = useState(() => {
+    const saved = localStorage.getItem(CAT_STORAGE_KEY);
+    return categoryData.categories.some(c => c.id === saved) ? saved : 'business';
+  });
+  const [userRole, setUserRole] = useState(() => {
+    const savedRole = localStorage.getItem(ROLE_STORAGE_KEY);
+    // if saved role exists in the active category, keep it, otherwise reset
+    const tempCat = categoryData.categories.some(c => c.id === localStorage.getItem(CAT_STORAGE_KEY)) ? localStorage.getItem(CAT_STORAGE_KEY) : 'business';
+    const rolesForCat = categoryData.roles[tempCat] || [];
+    return rolesForCat.some(r => r.id === savedRole) ? savedRole : (rolesForCat[0]?.id || 'it');
+  });
   const [userLevel, setUserLevel] = useState(() => localStorage.getItem(LEVEL_STORAGE_KEY) || 'pre-intermediate');
 
   const [vocabulary, setVocabulary] = useState(() => {
@@ -48,8 +65,27 @@ function App() {
     return initialVocabulary;
   });
 
+  const [savedPatterns, setSavedPatterns] = useState(() => {
+    const saved = localStorage.getItem(PATTERNS_STORAGE_KEY);
+    if (saved) {
+      try { return JSON.parse(saved); } catch (e) { console.error(e); }
+    }
+    return [];
+  });
+
+  const [progress, setProgress] = useState(() => {
+    const saved = localStorage.getItem(PROGRESS_STORAGE_KEY);
+    if (saved) {
+      try { return JSON.parse(saved); } catch (e) { console.error(e); }
+    }
+    return { streak: 0, completedScenarios: 0, lastDate: null };
+  });
+
   useEffect(() => localStorage.setItem(VOCAB_STORAGE_KEY, JSON.stringify(vocabulary)), [vocabulary]);
+  useEffect(() => localStorage.setItem(PATTERNS_STORAGE_KEY, JSON.stringify(savedPatterns)), [savedPatterns]);
+  useEffect(() => localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(progress)), [progress]);
   useEffect(() => localStorage.setItem(LANG_STORAGE_KEY, targetLanguage), [targetLanguage]);
+  useEffect(() => localStorage.setItem(PATTERN_VERSION_STORAGE_KEY, patternVersion), [patternVersion]);
   useEffect(() => localStorage.setItem(RATE_STORAGE_KEY, speechRate.toString()), [speechRate]);
   useEffect(() => localStorage.setItem(AUTO_READ_STORAGE_KEY, autoRead.toString()), [autoRead]);
   useEffect(() => {
@@ -64,14 +100,36 @@ function App() {
   
   const [chatHistory, setChatHistory] = useState([]);
 
+  const updateProgress = () => {
+    const today = new Date().toDateString();
+    setProgress(prev => {
+      let { streak, completedScenarios, lastDate } = prev;
+      completedScenarios += 1;
+      
+      if (lastDate !== today) {
+        const yesterday = new Date();
+        yesterday.setDate(yesterday.getDate() - 1);
+        if (lastDate === yesterday.toDateString()) {
+          streak += 1;
+        } else {
+          streak = 1;
+        }
+        lastDate = today;
+      }
+      
+      return { streak, completedScenarios, lastDate };
+    });
+  };
+
   const handleStartScenario = (scenario) => {
     setActiveScenario(scenario);
+    updateProgress();
     
     const langName = targetLanguage === 'en' ? '英文' : '日文';
     
     // Look up category and role labels for prompt
     const catLabel = categoryData.categories.find(c => c.id === userCategory)?.label || userCategory;
-    const roleLabel = categoryData.roles[userCategory]?.find(r => r.id === userRole)?.label || userRole;
+    const roleLabel = categoryData.roles[userCategory]?.find(r => r.id === userRole)?.label || userRole || 'Unknown';
     const levelLabel = categoryData.levels.find(l => l.id === userLevel)?.label || userLevel;
 
     const aiGreeting = targetLanguage === 'en' 
@@ -94,6 +152,7 @@ function App() {
 
   const handleStartPatternDrill = (patternItem) => {
     setActiveScenario({ title: "句型代換練習", desc: "教練給予情境，使用者填入代換詞彙" });
+    updateProgress();
     
     const langName = targetLanguage === 'en' ? '英文' : '日文';
     const levelLabel = categoryData.levels.find(l => l.id === userLevel)?.label || userLevel;
@@ -116,12 +175,24 @@ function App() {
     setActiveTab('chat');
   };
 
-  const addVocabulary = (term, meaning, example, lang = targetLanguage) => {
-    setVocabulary(prev => [{ term, meaning, example, lang }, ...prev]);
+  const addVocabulary = (term, meaning, example, phonetic = '', partOfSpeech = '', lang = targetLanguage) => {
+    setVocabulary(prev => [{ term, meaning, example, phonetic, partOfSpeech, lang }, ...prev]);
   };
 
   const removeVocabulary = (termToRemove, langToRemove) => {
     setVocabulary(prev => prev.filter(v => !(v.term === termToRemove && v.lang === langToRemove)));
+  };
+
+  const addPattern = (pattern, explanation, lang = targetLanguage) => {
+    setSavedPatterns(prev => {
+      // Prevent duplicates
+      if (prev.some(p => p.pattern === pattern && p.lang === lang)) return prev;
+      return [{ pattern, explanation, lang }, ...prev];
+    });
+  };
+
+  const removePattern = (patternToRemove, langToRemove) => {
+    setSavedPatterns(prev => prev.filter(p => !(p.pattern === patternToRemove && p.lang === langToRemove)));
   };
 
   const handleCategoryChange = (e) => {
@@ -147,6 +218,8 @@ function App() {
             onStart={handleStartScenario} 
             targetLanguage={targetLanguage}
             userRole={userRole}
+            progress={progress}
+            vocabCount={vocabulary.length}
           />
         )}
         
@@ -157,6 +230,7 @@ function App() {
             setChatHistory={setChatHistory}
             apiKey={apiKey}
             addVocabulary={addVocabulary}
+            addPattern={addPattern}
             correctionMode={correctionMode}
             targetLanguage={targetLanguage}
             userCategory={userCategory}
@@ -164,6 +238,7 @@ function App() {
             userLevel={userLevel}
             speechRate={speechRate}
             autoRead={autoRead}
+            patternVersion={patternVersion}
           />
         )}
         
@@ -171,12 +246,17 @@ function App() {
           <Notebook vocabulary={vocabulary} removeVocabulary={removeVocabulary} targetLanguage={targetLanguage} speechRate={speechRate} />
         )}
 
+        {activeTab === 'pattern-notebook' && (
+          <PatternNotebook patterns={savedPatterns} removePattern={removePattern} targetLanguage={targetLanguage} speechRate={speechRate} />
+        )}
+
         {activeTab === 'patterns' && (
           <Patterns 
-            userRole={userRole} 
-            userLevel={userLevel} 
-            targetLanguage={targetLanguage}
+            activeScenario={activeScenario} 
+            targetLanguage={targetLanguage} 
             handleStartPatternDrill={handleStartPatternDrill}
+            version={patternVersion}
+            setVersion={setPatternVersion}
           />
         )}
         

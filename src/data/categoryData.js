@@ -1,27 +1,43 @@
 export const categoryData = {
   categories: [
-    { id: 'workplace', label: '職場專業' },
-    { id: 'campus', label: '校園生活' },
-    { id: 'daily', label: '家庭與日常' }
+    { id: 'business', label: '商務商貿 (Business)' },
+    { id: 'academic', label: '校園留學 (Academic)' },
+    { id: 'lifestyle', label: '居家日常 (Lifestyle)' },
+    { id: 'social', label: '社交休閒 (Social & Travel)' },
+    { id: 'trends', label: '時事趨勢 (Trends)' }
   ],
   roles: {
-    workplace: [
+    business: [
       { id: 'it', label: '資訊科技 (IT)' },
       { id: 'sales', label: '業務銷售 (Sales)' },
-      { id: 'procurement', label: '採購後勤 (Procurement)' },
-      { id: 'management', label: '企業管理 (Management)' },
-      { id: 'accounting', label: '財務會計 (Accounting)' }
+      { id: 'hr', label: '人力資源 (HR)' },
+      { id: 'legal', label: '法務 (Legal)' },
+      { id: 'finance', label: '財務 (Finance)' }
     ],
-    campus: [
-      { id: 'academic', label: '課業學術' },
-      { id: 'social', label: '人際交流' },
-      { id: 'dating', label: '約會交友' },
-      { id: 'clubs', label: '社團聚餐' }
+    academic: [
+      { id: 'courses', label: '課程 (Courses)' },
+      { id: 'clubs', label: '社團 (Clubs)' },
+      { id: 'applications', label: '升學申請 (Applications)' },
+      { id: 'thesis', label: '學術論文 (Thesis)' }
     ],
-    daily: [
-      { id: 'family', label: '家族聚會' },
-      { id: 'holidays', label: '節慶慶祝' },
-      { id: 'travel', label: '休閒旅遊' }
+    lifestyle: [
+      { id: 'home', label: '居家 (Home)' },
+      { id: 'shopping', label: '購物 (Shopping)' },
+      { id: 'dining', label: '美食 (Dining)' },
+      { id: 'pets', label: '寵物 (Pets)' },
+      { id: 'healthcare', label: '醫療 (Healthcare)' }
+    ],
+    social: [
+      { id: 'travel', label: '旅遊 (Travel)' },
+      { id: 'dating', label: '約會 (Dating)' },
+      { id: 'festivals', label: '節慶 (Festivals)' },
+      { id: 'socializing', label: '聚會 (Socializing)' },
+      { id: 'sports', label: '運動 (Sports)' }
+    ],
+    trends: [
+      { id: 'global-news', label: '國際新聞 (Global News)' },
+      { id: 'pop-culture', label: '流行文化 (Pop Culture)' },
+      { id: 'tech-trends', label: '科技新知 (Tech Trends)' }
     ]
   },
   levels: [

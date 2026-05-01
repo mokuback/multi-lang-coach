@@ -1,5 +1,5 @@
 import React from 'react';
-import { LayoutDashboard, MessageSquare, BookOpen, Settings, BookMarked } from 'lucide-react';
+import { LayoutDashboard, MessageSquare, BookOpen, Settings, BookMarked, FileText } from 'lucide-react';
 import { categoryData } from '../data/categoryData';
 
 const Sidebar = ({ activeTab, setActiveTab, targetLanguage = 'en', userRole = 'it', userLevel = 'pre-intermediate' }) => {
@@ -9,6 +9,7 @@ const Sidebar = ({ activeTab, setActiveTab, targetLanguage = 'en', userRole = 'i
     { id: 'dashboard', label: '每日任務', icon: LayoutDashboard },
     { id: 'chat', label: '對話練習', icon: MessageSquare },
     { id: 'notebook', label: '生詞筆記', icon: BookOpen },
+    { id: 'pattern-notebook', label: '句型筆記', icon: FileText },
     { id: 'patterns', label: '常用句型', icon: BookMarked },
     { id: 'settings', label: '設定與 API', icon: Settings }
   ];

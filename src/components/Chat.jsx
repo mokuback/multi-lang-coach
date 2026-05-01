@@ -1,11 +1,14 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, AlertCircle, CheckCircle, Info, Lightbulb, X, Wand2, Volume2, Mic, Square } from 'lucide-react';
+import { Send, AlertCircle, CheckCircle, Info, Lightbulb, X, Wand2, Volume2, Mic, Square, RefreshCw } from 'lucide-react';
 import { callGeminiAPI, analyzeSentenceAPI, polishSentenceAPI } from '../utils/llmClient';
 
 import { categoryData } from '../data/categoryData';
+import scenarioPatterns01 from '../data/scenarioPatterns_01.json';
+import scenarioPatterns02 from '../data/scenarioPatterns_02.json';
 
-const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, correctionMode, targetLanguage, userCategory, userRole, userLevel, speechRate = 5, autoRead = false }) => {
+const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, addPattern, correctionMode, targetLanguage, userCategory, userRole, userLevel, speechRate = 5, autoRead = false, patternVersion = '02' }) => {
   const [input, setInput] = useState('');
+  const [showPatternHints, setShowPatternHints] = useState(false);
   const [isTyping, setIsTyping] = useState(false);
   const [translatedIndexes, setTranslatedIndexes] = useState(new Set());
   const messagesEndRef = useRef(null);
@@ -115,7 +118,14 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, co
       // Auto-extract vocab if the modal generates words
       if (result.vocab && result.vocab.length > 0) {
         result.vocab.forEach(v => {
-          addVocabulary(v.word, v.zh, `[系統自動收錄] 詞性：${v.partOfSpeech}`);
+          addVocabulary(v.word, v.zh, v.example || '', v.phonetic || '', v.partOfSpeech || '');
+        });
+      }
+      
+      // Auto-extract patterns
+      if (result.patterns && result.patterns.length > 0 && addPattern) {
+        result.patterns.forEach(p => {
+          addPattern(p.pattern, p.explanation);
         });
       }
     } catch (error) {
@@ -242,16 +252,16 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, co
               fixed: "進捗を報告いたします...",
               explanation: "對上司或客戶報告時，使用謙讓語「いたします」會更專業且禮貌。"
             };
-            extractedVocab = { term: "ブロッカー (Blocker)", meaning: "阻礙 / 障礙物", example: "リリースを妨げている重大なブロッカーがあります。" };
+            extractedVocab = { term: "ブロッカー (Blocker)", meaning: "阻礙 / 障礙物", example: "リリースを妨げている重大なブロッカーがあります。", phonetic: "blɒk.ər", partOfSpeech: "n." };
           } else if (userText.includes('データベース') || userText.includes('サーバー') || userText.toLowerCase().includes('database') || userText.toLowerCase().includes('server')) {
              aiMessage.content = "バックエンドの問題のようですね。非技術者の上司や顧客に説明するときは、『インフラストラクチャーの遅延が発生しています』と伝えると分かりやすいです。";
              aiMessage.translation = "聽起來像是後端的問題。向非技術主管或客戶說明時，可以說『我們遇到了基礎設施的延遲』會更容易理解。";
-             extractedVocab = { term: "インフラ (Infrastructure)", meaning: "基礎設施 / 架構", example: "当社のITインフラにはアップグレードが必要です。" };
+             extractedVocab = { term: "インフラ (Infrastructure)", meaning: "基礎設施 / 架構", example: "当社のITインフラにはアップグレードが必要です。", phonetic: "ɪn.frəˌstrʌk.tʃər", partOfSpeech: "n." };
           } else {
              aiMessage.content = "なるほど。あなたが焦点を当てている「特定のソフトウェア要件」や「スケジュール」について、もう少し詳しく説明していただけますか？";
              aiMessage.translation = "原來如此。關於您正在關注的「特定軟體需求」或「時程」，能請您再稍微詳細說明一下嗎？";
              aiMessage.correction = null;
-             extractedVocab = { term: "詳しく説明する", meaning: "詳細說明", example: "その点について、詳しく説明していただけますか？" };
+             extractedVocab = { term: "詳しく説明する", meaning: "詳細說明", example: "その点について、詳しく説明していただけますか？", phonetic: "kuwashiku setsumei suru", partOfSpeech: "v." };
           }
         } else {
           // English mock logic
@@ -264,11 +274,11 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, co
                fixed: "I am reporting the progress...",
                explanation: "對於正在進行的動作，請使用現在進行式 'reporting'。"
              };
-             extractedVocab = { term: "Blocker", meaning: "阻礙 / 障礙物", example: "We have a critical blocker preventing the release." };
+             extractedVocab = { term: "Blocker", meaning: "阻礙 / 障礙物", example: "We have a critical blocker preventing the release.", phonetic: "ˈblɑː.kɚ", partOfSpeech: "n." };
           } else if (userText.toLowerCase().includes('database') || userText.toLowerCase().includes('server')) {
              aiMessage.content = "That sounds like a backend issue. When explaining this to a non-technical boss or client, you might want to simplify it. You can say 'We are experiencing infrastructure delays'.";
              aiMessage.translation = "聽起來像是後端基礎設施的問題。在向非技術背景的老闆或客戶解釋時，您可以簡化說法。例如您可以說 'We are experiencing infrastructure delays'。";
-             extractedVocab = { term: "Infrastructure", meaning: "基礎設施 / 架構", example: "Our IT infrastructure needs an upgrade." };
+             extractedVocab = { term: "Infrastructure", meaning: "基礎設施 / 架構", example: "Our IT infrastructure needs an upgrade.", phonetic: "ˈɪn.frəˌstrʌk.tʃɚ", partOfSpeech: "n." };
           } else {
              aiMessage.content = "I understand. Could you elaborate more on the specific software requirements or timelines you are focusing on?";
              aiMessage.translation = "我明白。您能針對特定的軟體需求或專案時程「進一步詳細說明」嗎？";
@@ -278,7 +288,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, co
                fixed: "I will do it by tomorrow.",
                explanation: "'By' 用於說明截止期限，而 'until' 則是用於表示持續的一段期間。"
              };
-             extractedVocab = { term: "Elaborate", meaning: "詳細說明", example: "Could you elaborate on that point?" };
+             extractedVocab = { term: "Elaborate", meaning: "詳細說明", example: "Could you elaborate on that point?", phonetic: "iˈlæb.ə.reɪt", partOfSpeech: "vi." };
           }
         }
 
@@ -303,7 +313,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, co
       const { aiMessage, extractedVocab } = await getMockAIResponse(input);
       setChatHistory(prev => [...prev, aiMessage]);
       if (extractedVocab) {
-        addVocabulary(extractedVocab.term, extractedVocab.meaning, extractedVocab.example);
+        addVocabulary(extractedVocab.term, extractedVocab.meaning, extractedVocab.example, extractedVocab.phonetic, extractedVocab.partOfSpeech);
       }
     } else {
       // Genuine API Call implementation
@@ -324,16 +334,58 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, co
           addVocabulary(
             parsedResult.extractedVocab.term, 
             parsedResult.extractedVocab.meaning, 
-            parsedResult.extractedVocab.example
+            parsedResult.extractedVocab.example,
+            parsedResult.extractedVocab.phonetic || '',
+            parsedResult.extractedVocab.partOfSpeech || ''
           );
         }
       } catch (error) {
         console.error("API Call failed:", error);
         setChatHistory(prev => [...prev, { 
           role: 'assistant', 
-          content: `抱歉，呼叫 AI 發生錯誤：${error.message}。請確認您的網路連線或 API 金鑰是否正確。` 
+          content: `抱歉，呼叫 AI 發生錯誤：${error.message}。請確認您的網路連線或 API 金鑰是否正確。`,
+          isError: true
         }]);
       }
+    }
+    
+    setIsTyping(false);
+  };
+
+  const handleRetry = async (errorIndex) => {
+    const historyToRetry = chatHistory.slice(0, errorIndex);
+    setChatHistory(historyToRetry);
+    setIsTyping(true);
+
+    try {
+      const parsedResult = await callGeminiAPI(historyToRetry, apiKey, correctionMode, targetLanguage, userCategory, userRole, userLevel);
+      
+      let aiMessage = { role: 'assistant', content: parsedResult.content };
+      if (parsedResult.translation) {
+         aiMessage.translation = parsedResult.translation;
+      }
+      if (parsedResult.correction) {
+         aiMessage.correction = parsedResult.correction;
+      }
+      
+      setChatHistory(prev => [...prev, aiMessage]);
+      
+      if (parsedResult.extractedVocab) {
+        addVocabulary(
+          parsedResult.extractedVocab.term, 
+          parsedResult.extractedVocab.meaning, 
+          parsedResult.extractedVocab.example,
+          parsedResult.extractedVocab.phonetic || '',
+          parsedResult.extractedVocab.partOfSpeech || ''
+        );
+      }
+    } catch (error) {
+      console.error("API Call failed during retry:", error);
+      setChatHistory(prev => [...prev, { 
+        role: 'assistant', 
+        content: `抱歉，呼叫 AI 發生錯誤：${error.message}。請確認您的網路連線或 API 金鑰是否正確。`,
+        isError: true
+      }]);
     }
     
     setIsTyping(false);
@@ -380,6 +432,72 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, co
           {apiKey ? 'API 對話模式' : '模擬對話體驗'}
         </span>
       </header>
+
+      {/* Pattern Hints Collapsible Panel */}
+      <div style={{ marginBottom: '20px' }}>
+        <button
+          onClick={() => setShowPatternHints(!showPatternHints)}
+          style={{
+            background: 'var(--glass-bg)',
+            border: '1px solid var(--glass-border)',
+            borderRadius: '12px',
+            padding: '12px 20px',
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            cursor: 'pointer',
+            color: 'var(--text-primary)',
+            fontSize: '1rem',
+            fontWeight: 500,
+            transition: 'background 0.2s'
+          }}
+          onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)'}
+          onMouseLeave={(e) => e.currentTarget.style.background = 'var(--glass-bg)'}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <Lightbulb size={18} className="text-accent" />
+            💡 本情境推薦句型 ({patternVersion === '01' ? '基礎教科書版' : '進階商務版'})
+          </div>
+          <span>{showPatternHints ? '▲ 收合' : '▼ 展開'}</span>
+        </button>
+
+        {showPatternHints && (() => {
+          const currentPatterns = patternVersion === '01' ? scenarioPatterns01 : scenarioPatterns02;
+          const scenarioData = currentPatterns[scenario?.id] || currentPatterns['default'];
+          const patterns = scenarioData ? (scenarioData[targetLanguage] || scenarioData['en'] || []) : [];
+
+          if (patterns.length === 0) return null;
+
+          return (
+            <div className="glass-panel animate-slide-in" style={{ 
+              marginTop: '8px', 
+              padding: '16px 20px', 
+              background: 'rgba(255,255,255,0.02)',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '12px'
+            }}>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '8px' }}>
+                在對話中試著運用以下句型，讓您的表達更自然：
+              </p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '12px' }}>
+                {patterns.slice(0, 4).map((p, idx) => (
+                  <div key={idx} style={{ 
+                    background: 'rgba(0,0,0,0.2)', 
+                    padding: '12px', 
+                    borderRadius: '8px',
+                    borderLeft: '2px solid var(--accent-color)'
+                  }}>
+                    <div style={{ fontWeight: 'bold', marginBottom: '4px', color: 'var(--text-primary)' }}>{p.pattern}</div>
+                    <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{p.explanation}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          );
+        })()}
+      </div>
 
       {/* Messages area */}
       <div className="glass-panel" style={{ 
@@ -444,7 +562,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, co
                   </div>
                 )}
 
-                {!isUser && msg.content && (
+                {!isUser && msg.content && !msg.isError && (
                   <div style={{ display: 'flex', justifyContent: 'flex-start', marginTop: '12px', gap: '8px', flexWrap: 'wrap' }}>
                     
                     {/* TTS Read Aloud */}
@@ -554,6 +672,32 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, co
                       </button>
                     )}
                     
+                  </div>
+                )}
+
+                {!isUser && msg.isError && (
+                  <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '12px', gap: '8px' }}>
+                    <button 
+                      onClick={() => handleRetry(chatHistory.indexOf(msg))}
+                      style={{
+                        background: 'rgba(255, 171, 0, 0.1)',
+                        border: '1px solid #FFAB00',
+                        color: '#FFAB00',
+                        padding: '4px 12px',
+                        borderRadius: '16px',
+                        fontSize: '0.8rem',
+                        cursor: 'pointer',
+                        transition: 'all 0.2s',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '4px'
+                      }}
+                      onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 171, 0, 0.2)'}
+                      onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(255, 171, 0, 0.1)'}
+                      title="重新產生回應"
+                    >
+                      <RefreshCw size={14} /> 重新產生
+                    </button>
                   </div>
                 )}
               </div>

@@ -1,0 +1,7394 @@
+{
+  "it-1": {
+    "en": [
+      {
+        "pattern": "I would like to request a feature enhancement for...",
+        "translation": "我想請求為...增加新功能",
+        "explanation": "軟體需求信件的標準開場白"
+      },
+      {
+        "pattern": "The current system lacks the ability to...",
+        "translation": "目前系統無法...",
+        "explanation": "說明現有系統的限制"
+      },
+      {
+        "pattern": "This feature would improve efficiency by...",
+        "translation": "此功能將透過...提升效率",
+        "explanation": "說明功能帶來的效益"
+      },
+      {
+        "pattern": "Please let me know if you need further clarification.",
+        "translation": "如需進一步說明請告知。",
+        "explanation": "信件結尾的標準用語"
+      },
+      {
+        "pattern": "I have attached the detailed specifications.",
+        "translation": "我已附上詳細規格說明。",
+        "explanation": "說明附件內容"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "...の機能強化をリクエストしたいのですが",
+        "translation": "想請求為...增加新功能",
+        "explanation": "軟體需求信件的標準開場白"
+      },
+      {
+        "pattern": "現在のシステムには...をする機能がありません",
+        "translation": "目前系統無法...",
+        "explanation": "說明現有系統的限制"
+      },
+      {
+        "pattern": "この機能により...の効率が向上します",
+        "translation": "此功能將提升...效率",
+        "explanation": "說明功能帶來的效益"
+      },
+      {
+        "pattern": "詳細な仕様書を添付いたしました",
+        "translation": "已附上詳細規格說明",
+        "explanation": "說明附件內容"
+      },
+      {
+        "pattern": "ご不明な点がございましたらお知らせください",
+        "translation": "如有疑問請告知",
+        "explanation": "信件結尾的標準用語"
+      }
+    ]
+  },
+  "it-2": {
+    "en": [
+      {
+        "pattern": "Could you explain how this feature works?",
+        "translation": "你能解釋這個功能怎麼運作嗎？",
+        "explanation": "詢問軟體功能的標準用語"
+      },
+      {
+        "pattern": "Where can I find the settings for...?",
+        "translation": "我在哪裡可以找到...的設定？",
+        "explanation": "詢問設定位置"
+      },
+      {
+        "pattern": "Is there a way to customize...?",
+        "translation": "有辦法自訂...嗎？",
+        "explanation": "詢問客製化選項"
+      },
+      {
+        "pattern": "What are the system requirements?",
+        "translation": "系統需求是什麼？",
+        "explanation": "詢問系統需求"
+      },
+      {
+        "pattern": "Does this integrate with...?",
+        "translation": "這能與...整合嗎？",
+        "explanation": "詢問整合功能"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "この機能はどのように動作しますか？",
+        "translation": "這個功能怎麼運作？",
+        "explanation": "詢問軟體功能的標準用語"
+      },
+      {
+        "pattern": "...の設定はどこで見つかりますか？",
+        "translation": "...的設定在哪裡？",
+        "explanation": "詢問設定位置"
+      },
+      {
+        "pattern": "...をカスタマイズする方法はありますか？",
+        "translation": "有辦法自訂...嗎？",
+        "explanation": "詢問客製化選項"
+      },
+      {
+        "pattern": "システム要件は何ですか？",
+        "translation": "系統需求是什麼？",
+        "explanation": "詢問系統需求"
+      },
+      {
+        "pattern": "これは...と連携できますか？",
+        "translation": "這能與...整合嗎？",
+        "explanation": "詢問整合功能"
+      }
+    ]
+  },
+  "it-3": {
+    "en": [
+      {
+        "pattern": "I am writing to update you on the project status.",
+        "translation": "我寫信向您報告專案進度。",
+        "explanation": "專案進度報告的開場白"
+      },
+      {
+        "pattern": "We have completed the first phase.",
+        "translation": "我們已完成第一階段。",
+        "explanation": "說明完成進度"
+      },
+      {
+        "pattern": "We encountered a blocker with...",
+        "translation": "我們在...遇到阻礙。",
+        "explanation": "說明遇到的問題"
+      },
+      {
+        "pattern": "The estimated completion date is...",
+        "translation": "預計完成日期是...",
+        "explanation": "說明預計時程"
+      },
+      {
+        "pattern": "I will follow up with a detailed report.",
+        "translation": "我會提供詳細報告。",
+        "explanation": "結尾承諾"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "プロジェクトの進捗状況をお伝えします。",
+        "translation": "向您報告專案進度",
+        "explanation": "專案進度報告的開場白"
+      },
+      {
+        "pattern": "第一フェーズが完了しました。",
+        "translation": "第一階段已完成",
+        "explanation": "說明完成進度"
+      },
+      {
+        "pattern": "...で問題に遭遇しました。",
+        "translation": "在...遇到問題",
+        "explanation": "說明遇到的阻礙"
+      },
+      {
+        "pattern": "完了予定日は...です。",
+        "translation": "預計完成日期是...",
+        "explanation": "說明預計時程"
+      },
+      {
+        "pattern": "詳細な報告書をお送りします。",
+        "translation": "會提供詳細報告",
+        "explanation": "結尾承諾"
+      }
+    ]
+  },
+  "it-4": {
+    "en": [
+      {
+        "pattern": "Let us discuss the new feature requirements.",
+        "translation": "我們來討論新功能需求。",
+        "explanation": "開始討論的開場白"
+      },
+      {
+        "pattern": "What are the priorities for this sprint?",
+        "translation": "這個衝刺週期的優先事項是什麼？",
+        "explanation": "詢問優先順序"
+      },
+      {
+        "pattern": "We need to refactor the code for...",
+        "translation": "我們需要重構...的程式碼。",
+        "explanation": "提出技術建議"
+      },
+      {
+        "pattern": "The deadline for this feature is...",
+        "translation": "此功能的截止日期是...",
+        "explanation": "說明時程"
+      },
+      {
+        "pattern": "I suggest we pair program on this.",
+        "translation": "我建議我們一起配對編程。",
+        "explanation": "提議協作方式"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "新機能の要件について話し合いましょう。",
+        "translation": "來討論新功能需求",
+        "explanation": "開始討論的開場白"
+      },
+      {
+        "pattern": "このスプリントの優先事項は何ですか？",
+        "translation": "這個衝刺週期的優先事項是什麼？",
+        "explanation": "詢問優先順序"
+      },
+      {
+        "pattern": "...のコードをリファクタリングする必要があります。",
+        "translation": "需要重構...的程式碼",
+        "explanation": "提出技術建議"
+      },
+      {
+        "pattern": "この機能の締め切りは...です。",
+        "translation": "此功能的截止日期是...",
+        "explanation": "說明時程"
+      },
+      {
+        "pattern": "ペアプログラミングを提案します。",
+        "translation": "建議一起配對編程",
+        "explanation": "提議協作方式"
+      }
+    ]
+  },
+  "it-5": {
+    "en": [
+      {
+        "pattern": "Can everyone hear me clearly?",
+        "translation": "大家能聽清楚嗎？",
+        "explanation": "視訊會議開場確認"
+      },
+      {
+        "pattern": "Let me share my screen.",
+        "translation": "讓我分享螢幕。",
+        "explanation": "分享螢幕的標準用語"
+      },
+      {
+        "pattern": "Could you repeat that, please?",
+        "translation": "能請你再說一次嗎？",
+        "explanation": "請求重複的禮貌用語"
+      },
+      {
+        "pattern": "We are experiencing some connection issues.",
+        "translation": "我們遇到連線問題。",
+        "explanation": "說明技術問題"
+      },
+      {
+        "pattern": "Let us schedule a follow-up meeting.",
+        "translation": "我們來安排後續會議。",
+        "explanation": "安排下一步的標準用語"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "皆さん、音声はクリアに聞こえますか？",
+        "translation": "大家能聽清楚嗎？",
+        "explanation": "視訊會議開場確認"
+      },
+      {
+        "pattern": "画面を共有します。",
+        "translation": "讓我分享螢幕",
+        "explanation": "分享螢幕的標準用語"
+      },
+      {
+        "pattern": "もう一度お願いできますか？",
+        "translation": "能再說一次嗎？",
+        "explanation": "請求重複的禮貌用語"
+      },
+      {
+        "pattern": "接続に問題が発生しています。",
+        "translation": "遇到連線問題",
+        "explanation": "說明技術問題"
+      },
+      {
+        "pattern": "フォローアップミーティングを設定しましょう。",
+        "translation": "來安排後續會議",
+        "explanation": "安排下一步的標準用語"
+      }
+    ]
+  },
+  "it-6": {
+    "en": [
+      {
+        "pattern": "We need to design a scalable architecture.",
+        "translation": "我們需要設計可擴展的架構。",
+        "explanation": "提出架構設計方向"
+      },
+      {
+        "pattern": "What security measures are in place?",
+        "translation": "現有的安全措施是什麼？",
+        "explanation": "詢問安全機制"
+      },
+      {
+        "pattern": "We should implement encryption for...",
+        "translation": "我們應該為...實作加密。",
+        "explanation": "提出安全建議"
+      },
+      {
+        "pattern": "The system needs redundancy for...",
+        "translation": "系統需要為...做備援。",
+        "explanation": "說明備援需求"
+      },
+      {
+        "pattern": "Let us conduct a security audit.",
+        "translation": "我們來進行安全稽核。",
+        "explanation": "提議安全檢查"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "スケーラブルなアーキテクチャを設計する必要があります。",
+        "translation": "需要設計可擴展的架構",
+        "explanation": "提出架構設計方向"
+      },
+      {
+        "pattern": "どのようなセキュリティ対策が施されていますか？",
+        "translation": "現有的安全措施是什麼？",
+        "explanation": "詢問安全機制"
+      },
+      {
+        "pattern": "...の暗号化を実装すべきです。",
+        "translation": "應該為...實作加密",
+        "explanation": "提出安全建議"
+      },
+      {
+        "pattern": "...の冗長性が必要です。",
+        "translation": "需要為...做備援",
+        "explanation": "說明備援需求"
+      },
+      {
+        "pattern": "セキュリティ監査を行いましょう。",
+        "translation": "來進行安全稽核",
+        "explanation": "提議安全檢查"
+      }
+    ]
+  },
+  "sales-1": {
+    "en": [
+      {
+        "pattern": "Thank you for your interest in our product.",
+        "translation": "感謝您對我們產品的興趣。",
+        "explanation": "產品介紹的標準開場白"
+      },
+      {
+        "pattern": "Let me briefly introduce what we offer.",
+        "translation": "讓我簡單介紹我們提供的產品。",
+        "explanation": "開始產品介紹的轉場語"
+      },
+      {
+        "pattern": "Our product is designed to help you...",
+        "translation": "我們的產品專為幫助您...而設計。",
+        "explanation": "說明產品目的"
+      },
+      {
+        "pattern": "What sets us apart is...",
+        "translation": "我們與眾不同之處在於...",
+        "explanation": "強調產品獨特性"
+      },
+      {
+        "pattern": "Would you like me to demonstrate?",
+        "translation": "您希望我演示嗎？",
+        "explanation": "提議展示產品"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "弊社製品にご興味をお持ちいただきありがとうございます。",
+        "translation": "感謝您對我們產品的興趣",
+        "explanation": "產品介紹的標準開場白"
+      },
+      {
+        "pattern": "弊社が提供する製品を簡単にご紹介します。",
+        "translation": "讓我簡單介紹我們的產品",
+        "explanation": "開始產品介紹的轉場語"
+      },
+      {
+        "pattern": "本製品は...のお手伝いをするために設計されています。",
+        "translation": "本產品專為幫助您...而設計",
+        "explanation": "說明產品目的"
+      },
+      {
+        "pattern": "弊社の強みは...です。",
+        "translation": "我們的優勢在於...",
+        "explanation": "強調產品獨特性"
+      },
+      {
+        "pattern": "デモをご希望ですか？",
+        "translation": "您希望我演示嗎？",
+        "explanation": "提議展示產品"
+      }
+    ]
+  },
+  "sales-2": {
+    "en": [
+      {
+        "pattern": "What brings you here today?",
+        "translation": "今天是什麼風把您吹來的？",
+        "explanation": "開場詢問客戶需求的禮貌用語"
+      },
+      {
+        "pattern": "What challenges are you facing?",
+        "translation": "您目前面臨哪些挑戰？",
+        "explanation": "詢問客戶痛點"
+      },
+      {
+        "pattern": "What are your goals for this quarter?",
+        "translation": "您本季度的目標是什麼？",
+        "explanation": "詢問業務目標"
+      },
+      {
+        "pattern": "How do you currently handle...?",
+        "translation": "您目前如何處理...？",
+        "explanation": "了解現狀流程"
+      },
+      {
+        "pattern": "What is your timeline for this project?",
+        "translation": "此專案的時間表是什麼？",
+        "explanation": "詢問專案時程"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "本日はどのようなご用件でしょうか？",
+        "translation": "今天有什麼我可以幫您的？",
+        "explanation": "開場詢問客戶需求的禮貌用語"
+      },
+      {
+        "pattern": "どのような課題にお悩みですか？",
+        "translation": "您目前面臨哪些挑戰？",
+        "explanation": "詢問客戶痛點"
+      },
+      {
+        "pattern": "今四半期の目標は何ですか？",
+        "translation": "您本季度的目標是什麼？",
+        "explanation": "詢問業務目標"
+      },
+      {
+        "pattern": "現在...をどのように処理されていますか？",
+        "translation": "您目前如何處理...？",
+        "explanation": "了解現狀流程"
+      },
+      {
+        "pattern": "このプロジェクトのタイムラインは？",
+        "translation": "此專案的時間表是什麼？",
+        "explanation": "詢問專案時程"
+      }
+    ]
+  },
+  "sales-3": {
+    "en": [
+      {
+        "pattern": "I understand your concern about the price.",
+        "translation": "我理解您對價格的疑慮。",
+        "explanation": "認同客戶感受的開場白"
+      },
+      {
+        "pattern": "Let me explain the value you will receive.",
+        "translation": "讓我說明您將獲得的價值。",
+        "explanation": "轉向價值說明"
+      },
+      {
+        "pattern": "If you compare the features...",
+        "translation": "如果您比較功能...",
+        "explanation": "開始功能比較"
+      },
+      {
+        "pattern": "We can offer a discount for...",
+        "translation": "我們可以為...提供折扣。",
+        "explanation": "提出折扣方案"
+      },
+      {
+        "pattern": "Would a payment plan help?",
+        "translation": "分期付款方案有幫助嗎？",
+        "explanation": "提議替代方案"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "価格のご懸念は理解しております。",
+        "translation": "我理解您對價格的疑慮",
+        "explanation": "認同客戶感受的開場白"
+      },
+      {
+        "pattern": "得られる価値についてご説明します。",
+        "translation": "讓我說明您將獲得的價值",
+        "explanation": "轉向價值說明"
+      },
+      {
+        "pattern": "機能を比較すると...",
+        "translation": "如果您比較功能...",
+        "explanation": "開始功能比較"
+      },
+      {
+        "pattern": "...について割引をご用意できます。",
+        "translation": "我們可以為...提供折扣",
+        "explanation": "提出折扣方案"
+      },
+      {
+        "pattern": "分割払いはご検討されますか？",
+        "translation": "分期付款方案有幫助嗎？",
+        "explanation": "提議替代方案"
+      }
+    ]
+  },
+  "sales-4": {
+    "en": [
+      {
+        "pattern": "Let me show you how this works.",
+        "translation": "讓我向您展示這是如何運作的。",
+        "explanation": "開始產品演示的標準用語"
+      },
+      {
+        "pattern": "As you can see on the screen...",
+        "translation": "如您在螢幕上所見...",
+        "explanation": "引導客戶注意力的用語"
+      },
+      {
+        "pattern": "This feature allows you to...",
+        "translation": "此功能讓您能夠...",
+        "explanation": "說明功能用途"
+      },
+      {
+        "pattern": "Would you like to try it yourself?",
+        "translation": "您想親自試試看嗎？",
+        "explanation": "邀請客戶體驗"
+      },
+      {
+        "pattern": "Do you have any questions so far?",
+        "translation": "目前有任何問題嗎？",
+        "explanation": "確認客戶理解狀況"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "どのように動作するかご覧ください。",
+        "translation": "讓我向您展示這是如何運作的",
+        "explanation": "開始產品演示的標準用語"
+      },
+      {
+        "pattern": "画面をご覧ください...",
+        "translation": "請看螢幕...",
+        "explanation": "引導客戶注意力的用語"
+      },
+      {
+        "pattern": "この機能により...が可能です。",
+        "translation": "此功能讓您能夠...",
+        "explanation": "說明功能用途"
+      },
+      {
+        "pattern": "ご自身でお試しになりますか？",
+        "translation": "您想親自試試看嗎？",
+        "explanation": "邀請客戶體驗"
+      },
+      {
+        "pattern": "今のところご質問はございますか？",
+        "translation": "目前有任何問題嗎？",
+        "explanation": "確認客戶理解狀況"
+      }
+    ]
+  },
+  "sales-5": {
+    "en": [
+      {
+        "pattern": "Let us discuss the contract terms.",
+        "translation": "我們來討論合約條款。",
+        "explanation": "開始談判的開場白"
+      },
+      {
+        "pattern": "We need to review the payment terms.",
+        "translation": "我們需要審查付款條款。",
+        "explanation": "提出具體條款"
+      },
+      {
+        "pattern": "The delivery timeline is...",
+        "translation": "交付時間表是...",
+        "explanation": "說明時程安排"
+      },
+      {
+        "pattern": "We can negotiate on...",
+        "translation": "我們可以就...進行協商。",
+        "explanation": "表達協商意願"
+      },
+      {
+        "pattern": "Let us find a middle ground.",
+        "translation": "讓我們找到折衷方案。",
+        "explanation": "提議妥協"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "契約条件について話し合いましょう。",
+        "translation": "我們來討論合約條款",
+        "explanation": "開始談判的開場白"
+      },
+      {
+        "pattern": "支払い条件を確認する必要があります。",
+        "translation": "需要審查付款條款",
+        "explanation": "提出具體條款"
+      },
+      {
+        "pattern": "納品スケジュールは...です。",
+        "translation": "交付時間表是...",
+        "explanation": "說明時程安排"
+      },
+      {
+        "pattern": "...について交渉可能です。",
+        "translation": "可以就...進行協商",
+        "explanation": "表達協商意願"
+      },
+      {
+        "pattern": "妥協点を見つけましょう。",
+        "translation": "讓我們找到折衷方案",
+        "explanation": "提議妥協"
+      }
+    ]
+  },
+  "sales-6": {
+    "en": [
+      {
+        "pattern": "We look forward to a long-term partnership.",
+        "translation": "我們期待建立長期合作夥伴關係。",
+        "explanation": "表達合作意願的開場白"
+      },
+      {
+        "pattern": "Let us explore collaboration opportunities.",
+        "translation": "讓我們探索合作機會。",
+        "explanation": "提出合作討論"
+      },
+      {
+        "pattern": "We value your expertise in...",
+        "translation": "我們重視您在...的專業。",
+        "explanation": "肯定對方優勢"
+      },
+      {
+        "pattern": "How can we support each other?",
+        "translation": "我們如何互相支持？",
+        "explanation": "詢問合作方式"
+      },
+      {
+        "pattern": "Let us draft a partnership agreement.",
+        "translation": "讓我們起草合作夥伴協議。",
+        "explanation": "提議具體行動"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "長期的なパートナーシップを楽しみにしています。",
+        "translation": "期待建立長期合作夥伴關係",
+        "explanation": "表達合作意願的開場白"
+      },
+      {
+        "pattern": "協力の機会を探りましょう。",
+        "translation": "讓我們探索合作機會",
+        "explanation": "提出合作討論"
+      },
+      {
+        "pattern": "...における専門知識を高く評価しています。",
+        "translation": "我們重視您在...的專業",
+        "explanation": "肯定對方優勢"
+      },
+      {
+        "pattern": "どのようにサポートし合えますか？",
+        "translation": "我們如何互相支持？",
+        "explanation": "詢問合作方式"
+      },
+      {
+        "pattern": "パートナーシップ契約を起草しましょう。",
+        "translation": "讓我們起草合作夥伴協議",
+        "explanation": "提議具體行動"
+      }
+    ]
+  },
+  "hr-1": {
+    "en": [
+      {
+        "pattern": "Thank you for applying to our company.",
+        "translation": "感謝您應徵我們公司。",
+        "explanation": "面試邀請的開場白"
+      },
+      {
+        "pattern": "We would like to schedule an interview.",
+        "translation": "我們想安排一場面試。",
+        "explanation": "提出面試邀請"
+      },
+      {
+        "pattern": "Are you available on...?",
+        "translation": "您在...方便嗎？",
+        "explanation": "詢問可行時間"
+      },
+      {
+        "pattern": "The interview will take approximately...",
+        "translation": "面試大約需要...",
+        "explanation": "說明面試時長"
+      },
+      {
+        "pattern": "Please bring your portfolio.",
+        "translation": "請攜帶您的作品集。",
+        "explanation": "提醒準備事項"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "弊社にご応募いただきありがとうございます。",
+        "translation": "感謝您應徵我們公司",
+        "explanation": "面試邀請的開場白"
+      },
+      {
+        "pattern": "面接をスケジュールしたいと考えております。",
+        "translation": "我們想安排面試",
+        "explanation": "提出面試邀請"
+      },
+      {
+        "pattern": "...のご都合はいかがですか？",
+        "translation": "您在...方便嗎？",
+        "explanation": "詢問可行時間"
+      },
+      {
+        "pattern": "面接は約...かかります。",
+        "translation": "面試大約需要...",
+        "explanation": "說明面試時長"
+      },
+      {
+        "pattern": "ポートフォリオをご持参ください。",
+        "translation": "請攜帶您的作品集",
+        "explanation": "提醒準備事項"
+      }
+    ]
+  },
+  "hr-2": {
+    "en": [
+      {
+        "pattern": "Let me explain our benefits package.",
+        "translation": "讓我說明我們的福利方案。",
+        "explanation": "開始福利說明的用語"
+      },
+      {
+        "pattern": "We offer health insurance.",
+        "translation": "我們提供健康保險。",
+        "explanation": "說明保險福利"
+      },
+      {
+        "pattern": "Employees get paid leave.",
+        "translation": "員工享有帶薪休假。",
+        "explanation": "說明休假制度"
+      },
+      {
+        "pattern": "The probation period is...",
+        "translation": "試用期為...",
+        "explanation": "說明試用期"
+      },
+      {
+        "pattern": "Do you have any questions?",
+        "translation": "有任何問題嗎？",
+        "explanation": "確認理解狀況"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "福利厚生についてご説明します。",
+        "translation": "讓我說明福利方案",
+        "explanation": "開始福利說明的用語"
+      },
+      {
+        "pattern": "健康保険を提供しています。",
+        "translation": "我們提供健康保險",
+        "explanation": "說明保險福利"
+      },
+      {
+        "pattern": "従業員には有給休暇があります。",
+        "translation": "員工享有帶薪休假",
+        "explanation": "說明休假制度"
+      },
+      {
+        "pattern": "試用期間は...です。",
+        "translation": "試用期為...",
+        "explanation": "說明試用期"
+      },
+      {
+        "pattern": "ご質問はございますか？",
+        "translation": "有任何問題嗎？",
+        "explanation": "確認理解狀況"
+      }
+    ]
+  },
+  "hr-3": {
+    "en": [
+      {
+        "pattern": "Tell me about yourself.",
+        "translation": "請自我介紹。",
+        "explanation": "面試開場的標準問題"
+      },
+      {
+        "pattern": "Why do you want to work here?",
+        "translation": "為什麼想在這裡工作？",
+        "explanation": "詢問求職動機"
+      },
+      {
+        "pattern": "What are your strengths?",
+        "translation": "你的優點是什麼？",
+        "explanation": "詢問個人特質"
+      },
+      {
+        "pattern": "Describe a challenge you overcame.",
+        "translation": "描述你克服過的挑戰。",
+        "explanation": "行為面試問題"
+      },
+      {
+        "pattern": "Where do you see yourself in 5 years?",
+        "translation": "你五年後想在哪裡？",
+        "explanation": "詢問職涯規劃"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "自己紹介をお願いします。",
+        "translation": "請自我介紹",
+        "explanation": "面試開場的標準問題"
+      },
+      {
+        "pattern": "なぜ当社で働きたいのですか？",
+        "translation": "為什麼想在這裡工作？",
+        "explanation": "詢問求職動機"
+      },
+      {
+        "pattern": "あなたの長所は何ですか？",
+        "translation": "你的優點是什麼？",
+        "explanation": "詢問個人特質"
+      },
+      {
+        "pattern": "克服した課題について教えてください。",
+        "translation": "描述你克服過的挑戰",
+        "explanation": "行為面試問題"
+      },
+      {
+        "pattern": "5年後、どうなっていたいですか？",
+        "translation": "你五年後想在哪裡？",
+        "explanation": "詢問職涯規劃"
+      }
+    ]
+  },
+  "hr-4": {
+    "en": [
+      {
+        "pattern": "Let us plan the onboarding program.",
+        "translation": "我們來規劃入職培訓計畫。",
+        "explanation": "開始討論的開場白"
+      },
+      {
+        "pattern": "New hires need orientation.",
+        "translation": "新進員工需要入職培訓。",
+        "explanation": "說明培訓需求"
+      },
+      {
+        "pattern": "The training lasts...",
+        "translation": "培訓為期...",
+        "explanation": "說明培訓時長"
+      },
+      {
+        "pattern": "We should assign a mentor.",
+        "translation": "我們應該分配一位導師。",
+        "explanation": "提出具體建議"
+      },
+      {
+        "pattern": "Let us review the schedule.",
+        "translation": "我們來檢視時程表。",
+        "explanation": "確認計畫細節"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "オンボーディングプログラムを計画しましょう。",
+        "translation": "我們來規劃入職培訓計畫",
+        "explanation": "開始討論的開場白"
+      },
+      {
+        "pattern": "新入社員にはオリエンテーションが必要です。",
+        "translation": "新進員工需要入職培訓",
+        "explanation": "說明培訓需求"
+      },
+      {
+        "pattern": "研修期間は...です。",
+        "translation": "培訓為期...",
+        "explanation": "說明培訓時長"
+      },
+      {
+        "pattern": "メンターを割り当てるべきです。",
+        "translation": "我們應該分配一位導師",
+        "explanation": "提出具體建議"
+      },
+      {
+        "pattern": "スケジュールを見直しましょう。",
+        "translation": "我們來檢視時程表",
+        "explanation": "確認計畫細節"
+      }
+    ]
+  },
+  "hr-5": {
+    "en": [
+      {
+        "pattern": "We need to address the conflict.",
+        "translation": "我們需要處理這個衝突。",
+        "explanation": "開始調解的開場白"
+      },
+      {
+        "pattern": "Please explain your side.",
+        "translation": "請說明您的立場。",
+        "explanation": "給予發言機會"
+      },
+      {
+        "pattern": "I understand your frustration.",
+        "translation": "我理解您的挫折感。",
+        "explanation": "展現同理心"
+      },
+      {
+        "pattern": "Let us find a solution.",
+        "translation": "讓我們找到解決方案。",
+        "explanation": "提議解決問題"
+      },
+      {
+        "pattern": "We expect professional behavior.",
+        "translation": "我們期待專業的行為。",
+        "explanation": "設定行為標準"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "この紛争に対処する必要があります。",
+        "translation": "我們需要處理這個衝突",
+        "explanation": "開始調解的開場白"
+      },
+      {
+        "pattern": "あなたの立場を説明してください。",
+        "translation": "請說明您的立場",
+        "explanation": "給予發言機會"
+      },
+      {
+        "pattern": "あなたの不満は理解できます。",
+        "translation": "我理解您的挫折感",
+        "explanation": "展現同理心"
+      },
+      {
+        "pattern": "解決策を見つけましょう。",
+        "translation": "讓我們找到解決方案",
+        "explanation": "提議解決問題"
+      },
+      {
+        "pattern": "プロフェッショナルな振る舞いを期待しています。",
+        "translation": "我們期待專業的行為",
+        "explanation": "設定行為標準"
+      }
+    ]
+  },
+  "hr-6": {
+    "en": [
+      {
+        "pattern": "We need to discuss talent retention.",
+        "translation": "我們需要討論人才留任。",
+        "explanation": "開始討論的開場白"
+      },
+      {
+        "pattern": "High performers need recognition.",
+        "translation": "高績效員工需要認可。",
+        "explanation": "說明留任策略"
+      },
+      {
+        "pattern": "We should review compensation.",
+        "translation": "我們應該檢視薪酬。",
+        "explanation": "提出具體建議"
+      },
+      {
+        "pattern": "Layoffs are a last resort.",
+        "translation": "裁員是最後手段。",
+        "explanation": "說明政策立場"
+      },
+      {
+        "pattern": "Let us create a transition plan.",
+        "translation": "我們來制定過渡計畫。",
+        "explanation": "提出行動方案"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "人材定着について話し合う必要があります。",
+        "translation": "我們需要討論人才留任",
+        "explanation": "開始討論的開場白"
+      },
+      {
+        "pattern": "優秀な人材には認識が必要です。",
+        "translation": "高績效員工需要認可",
+        "explanation": "說明留任策略"
+      },
+      {
+        "pattern": "報酬を見直すべきです。",
+        "translation": "我們應該檢視薪酬",
+        "explanation": "提出具體建議"
+      },
+      {
+        "pattern": "解雇は最後の手段です。",
+        "translation": "裁員是最後手段",
+        "explanation": "說明政策立場"
+      },
+      {
+        "pattern": "移行計画を作成しましょう。",
+        "translation": "我們來制定過渡計畫",
+        "explanation": "提出行動方案"
+      }
+    ]
+  },
+  "legal-1": {
+    "en": [
+      {
+        "pattern": "We need to confirm the signing date.",
+        "translation": "我們需要確認簽署日期。",
+        "explanation": "開始確認合約流程的用語"
+      },
+      {
+        "pattern": "Is the contract ready for signature?",
+        "translation": "合約準備好簽署了嗎？",
+        "explanation": "詢問合約狀態"
+      },
+      {
+        "pattern": "Please review the draft before...",
+        "translation": "請在...之前審閱草案。",
+        "explanation": "設定審閱期限"
+      },
+      {
+        "pattern": "We need two witnesses.",
+        "translation": "我們需要兩位見證人。",
+        "explanation": "說明簽署要求"
+      },
+      {
+        "pattern": "Let us schedule the signing meeting.",
+        "translation": "我們來安排簽署會議。",
+        "explanation": "提議具體行動"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "署名日の確認が必要です。",
+        "translation": "我們需要確認簽署日期",
+        "explanation": "開始確認合約流程的用語"
+      },
+      {
+        "pattern": "契約書は署名の準備ができていますか？",
+        "translation": "合約準備好簽署了嗎？",
+        "explanation": "詢問合約狀態"
+      },
+      {
+        "pattern": "...までに草案をご確認ください。",
+        "translation": "請在...之前審閱草案",
+        "explanation": "設定審閱期限"
+      },
+      {
+        "pattern": "2名の証人が必要です。",
+        "translation": "我們需要兩位見證人",
+        "explanation": "說明簽署要求"
+      },
+      {
+        "pattern": "署名会議をスケジュールしましょう。",
+        "translation": "我們來安排簽署會議",
+        "explanation": "提議具體行動"
+      }
+    ]
+  },
+  "legal-2": {
+    "en": [
+      {
+        "pattern": "What does this term mean?",
+        "translation": "這個術語是什麼意思？",
+        "explanation": "詢問法律術語定義的標準用語"
+      },
+      {
+        "pattern": "Could you clarify the definition of...?",
+        "translation": "您能說明...的定義嗎？",
+        "explanation": "禮貌請求解釋"
+      },
+      {
+        "pattern": "I am not familiar with this concept.",
+        "translation": "我不熟悉這個概念。",
+        "explanation": "坦承不了解的用語"
+      },
+      {
+        "pattern": "Please explain in plain language.",
+        "translation": "請用簡單的語言解釋。",
+        "explanation": "請求通俗解釋"
+      },
+      {
+        "pattern": "Does this have any legal implications?",
+        "translation": "這有什麼法律含義嗎？",
+        "explanation": "詢問法律影響"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "この用語はどういう意味ですか？",
+        "translation": "這個術語是什麼意思？",
+        "explanation": "詢問法律術語定義的標準用語"
+      },
+      {
+        "pattern": "...の定義をご説明いただけますか？",
+        "translation": "您能說明...的定義嗎？",
+        "explanation": "禮貌請求解釋"
+      },
+      {
+        "pattern": "この概念には詳しくありません。",
+        "translation": "我不熟悉這個概念",
+        "explanation": "坦承不了解的用語"
+      },
+      {
+        "pattern": "分かりやすい言葉で説明してください。",
+        "translation": "請用簡單的語言解釋",
+        "explanation": "請求通俗解釋"
+      },
+      {
+        "pattern": "これには法的な影響がありますか？",
+        "translation": "這有什麼法律含義嗎？",
+        "explanation": "詢問法律影響"
+      }
+    ]
+  },
+  "legal-3": {
+    "en": [
+      {
+        "pattern": "I need to review the terms of service.",
+        "translation": "我需要審查服務條款。",
+        "explanation": "開始審查合約的用語"
+      },
+      {
+        "pattern": "This clause needs revision.",
+        "translation": "這個條款需要修訂。",
+        "explanation": "指出問題條款"
+      },
+      {
+        "pattern": "We cannot accept this term.",
+        "translation": "我們無法接受此條款。",
+        "explanation": "表達拒絕立場"
+      },
+      {
+        "pattern": "Please clarify the liability section.",
+        "translation": "請說明責任歸屬部分。",
+        "explanation": "要求具體說明"
+      },
+      {
+        "pattern": "Let us negotiate this provision.",
+        "translation": "我們來協商此條款。",
+        "explanation": "提議協商"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "利用規約を確認する必要があります。",
+        "translation": "我需要審查服務條款",
+        "explanation": "開始審查合約的用語"
+      },
+      {
+        "pattern": "この条項は改訂が必要です。",
+        "translation": "這個條款需要修訂",
+        "explanation": "指出問題條款"
+      },
+      {
+        "pattern": "この条件は受け入れられません。",
+        "translation": "我們無法接受此條款",
+        "explanation": "表達拒絕立場"
+      },
+      {
+        "pattern": "責任部分をご説明ください。",
+        "translation": "請說明責任歸屬部分",
+        "explanation": "要求具體說明"
+      },
+      {
+        "pattern": "この規定について交渉しましょう。",
+        "translation": "我們來協商此條款",
+        "explanation": "提議協商"
+      }
+    ]
+  },
+  "legal-4": {
+    "en": [
+      {
+        "pattern": "We need to sign an NDA.",
+        "translation": "我們需要簽署保密協議。",
+        "explanation": "提出保密協議要求的用語"
+      },
+      {
+        "pattern": "What information is covered?",
+        "translation": "涵蓋哪些資訊？",
+        "explanation": "詢問保密範圍"
+      },
+      {
+        "pattern": "How long does this agreement last?",
+        "translation": "此協議期限多久？",
+        "explanation": "詢問有效期"
+      },
+      {
+        "pattern": "Are there any exceptions?",
+        "translation": "有任何例外嗎？",
+        "explanation": "詢問豁免情況"
+      },
+      {
+        "pattern": "We need legal counsel to review.",
+        "translation": "我們需要法律顧問審閱。",
+        "explanation": "提出專業審查需求"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "NDAに署名する必要があります。",
+        "translation": "我們需要簽署保密協議",
+        "explanation": "提出保密協議要求的用語"
+      },
+      {
+        "pattern": "どの情報が対象ですか？",
+        "translation": "涵蓋哪些資訊？",
+        "explanation": "詢問保密範圍"
+      },
+      {
+        "pattern": "この契約の期間はどれくらいですか？",
+        "translation": "此協議期限多久？",
+        "explanation": "詢問有效期"
+      },
+      {
+        "pattern": "例外はありますか？",
+        "translation": "有任何例外嗎？",
+        "explanation": "詢問豁免情況"
+      },
+      {
+        "pattern": "法務顧問による審査が必要です。",
+        "translation": "我們需要法律顧問審閱",
+        "explanation": "提出專業審查需求"
+      }
+    ]
+  },
+  "legal-5": {
+    "en": [
+      {
+        "pattern": "There has been a breach of contract.",
+        "translation": "發生了違約情況。",
+        "explanation": "提出違約主張的開場白"
+      },
+      {
+        "pattern": "You failed to deliver as agreed.",
+        "translation": "您未能依約交付。",
+        "explanation": "說明具體違約事實"
+      },
+      {
+        "pattern": "We seek damages for...",
+        "translation": "我們就...要求損害賠償。",
+        "explanation": "提出賠償要求"
+      },
+      {
+        "pattern": "This constitutes a material breach.",
+        "translation": "這構成重大違約。",
+        "explanation": "說明違約嚴重程度"
+      },
+      {
+        "pattern": "We reserve our legal rights.",
+        "translation": "我們保留法律追訴權。",
+        "explanation": "法律聲明的標準用語"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "契約違反が発生しました。",
+        "translation": "發生了違約情況",
+        "explanation": "提出違約主張的開場白"
+      },
+      {
+        "pattern": "約束通りに納品されませんでした。",
+        "translation": "您未能依約交付",
+        "explanation": "說明具體違約事實"
+      },
+      {
+        "pattern": "...について損害賠償を求めます。",
+        "translation": "我們就...要求損害賠償",
+        "explanation": "提出賠償要求"
+      },
+      {
+        "pattern": "これは重大な契約違反に該当します。",
+        "translation": "這構成重大違約",
+        "explanation": "說明違約嚴重程度"
+      },
+      {
+        "pattern": "法的権利を留保します。",
+        "translation": "我們保留法律追訴權",
+        "explanation": "法律聲明的標準用語"
+      }
+    ]
+  },
+  "legal-6": {
+    "en": [
+      {
+        "pattern": "We need to protect our IP globally.",
+        "translation": "我們需要全球保護我們的知識產權。",
+        "explanation": "提出跨國知識產權議題的開場白"
+      },
+      {
+        "pattern": "Which countries should we file in?",
+        "translation": "我們應該在哪些國家申請？",
+        "explanation": "詢問保護範圍"
+      },
+      {
+        "pattern": "What is the filing deadline?",
+        "translation": "申請期限是什麼時候？",
+        "explanation": "詢問時程"
+      },
+      {
+        "pattern": "We need a local counsel in...",
+        "translation": "我們需要在...的當地律師。",
+        "explanation": "提出專業需求"
+      },
+      {
+        "pattern": "How do we enforce our rights?",
+        "translation": "我們如何執行我們的權利？",
+        "explanation": "詢問維權方式"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "知的財産を世界的に保護する必要があります。",
+        "translation": "我們需要全球保護我們的知識產權",
+        "explanation": "提出跨國知識產權議題的開場白"
+      },
+      {
+        "pattern": "どの国で出願すべきですか？",
+        "translation": "我們應該在哪些國家申請？",
+        "explanation": "詢問保護範圍"
+      },
+      {
+        "pattern": "出願期限はいつですか？",
+        "translation": "申請期限是什麼時候？",
+        "explanation": "詢問時程"
+      },
+      {
+        "pattern": "...の現地弁護士が必要です。",
+        "translation": "我們需要在...的當地律師",
+        "explanation": "提出專業需求"
+      },
+      {
+        "pattern": "権利をどのように執行しますか？",
+        "translation": "我們如何執行我們的權利？",
+        "explanation": "詢問維權方式"
+      }
+    ]
+  },
+  "fin-1": {
+    "en": [
+      {
+        "pattern": "I need to submit my expense report.",
+        "translation": "我需要提交差旅費用報銷單。",
+        "explanation": "開始報銷流程的標準用語"
+      },
+      {
+        "pattern": "Here are my receipts.",
+        "translation": "這是我的收據。",
+        "explanation": "提交證明文件"
+      },
+      {
+        "pattern": "The total amount is...",
+        "translation": "總金額是...",
+        "explanation": "說明報銷金額"
+      },
+      {
+        "pattern": "When will I be reimbursed?",
+        "translation": "什麼時候會核銷？",
+        "explanation": "詢問處理時程"
+      },
+      {
+        "pattern": "Is this expense covered?",
+        "translation": "這筆費用有涵蓋嗎？",
+        "explanation": "確認報銷資格"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "経費精算書を提出する必要があります。",
+        "translation": "我需要提交差旅費用報銷單",
+        "explanation": "開始報銷流程的標準用語"
+      },
+      {
+        "pattern": "領収書です。",
+        "translation": "這是我的收據",
+        "explanation": "提交證明文件"
+      },
+      {
+        "pattern": "合計金額は...です。",
+        "translation": "總金額是...",
+        "explanation": "說明報銷金額"
+      },
+      {
+        "pattern": "いつ精算されますか？",
+        "translation": "什麼時候會核銷？",
+        "explanation": "詢問處理時程"
+      },
+      {
+        "pattern": "この経費は対象になりますか？",
+        "translation": "這筆費用有涵蓋嗎？",
+        "explanation": "確認報銷資格"
+      }
+    ]
+  },
+  "fin-2": {
+    "en": [
+      {
+        "pattern": "I need to verify this invoice.",
+        "translation": "我需要核對這張發票。",
+        "explanation": "開始核對發票的用語"
+      },
+      {
+        "pattern": "There is a discrepancy in the amount.",
+        "translation": "金額有出入。",
+        "explanation": "指出錯誤"
+      },
+      {
+        "pattern": "Could you check your records?",
+        "translation": "您能查一下您的記錄嗎？",
+        "explanation": "請求對方確認"
+      },
+      {
+        "pattern": "Please send a corrected invoice.",
+        "translation": "請發送更正後的發票。",
+        "explanation": "要求補救措施"
+      },
+      {
+        "pattern": "We need this resolved by...",
+        "translation": "我們需要在...之前解決這個問題。",
+        "explanation": "設定解決期限"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "この請求書を確認する必要があります。",
+        "translation": "我需要核對這張發票",
+        "explanation": "開始核對發票的用語"
+      },
+      {
+        "pattern": "金額に不一致があります。",
+        "translation": "金額有出入",
+        "explanation": "指出錯誤"
+      },
+      {
+        "pattern": "記録をご確認いただけますか？",
+        "translation": "您能查一下您的記錄嗎？",
+        "explanation": "請求對方確認"
+      },
+      {
+        "pattern": "修正された請求書を送ってください。",
+        "translation": "請發送更正後的發票",
+        "explanation": "要求補救措施"
+      },
+      {
+        "pattern": "...までに解決する必要があります。",
+        "translation": "我們需要在...之前解決",
+        "explanation": "設定解決期限"
+      }
+    ]
+  },
+  "fin-3": {
+    "en": [
+      {
+        "pattern": "We exceeded our budget this year.",
+        "translation": "我們今年預算超支了。",
+        "explanation": "報告預算問題的開場白"
+      },
+      {
+        "pattern": "The main reason was...",
+        "translation": "主要原因是...",
+        "explanation": "開始解釋原因"
+      },
+      {
+        "pattern": "We had unexpected costs for...",
+        "translation": "我們有...的意外支出。",
+        "explanation": "說明具體支出"
+      },
+      {
+        "pattern": "We have taken measures to...",
+        "translation": "我們已採取措施...",
+        "explanation": "說明應對行動"
+      },
+      {
+        "pattern": "We will be more careful next year.",
+        "translation": "我們明年會更謹慎。",
+        "explanation": "承諾改進"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "今年は予算を超過しました。",
+        "translation": "我們今年預算超支了",
+        "explanation": "報告預算問題的開場白"
+      },
+      {
+        "pattern": "主な理由は...",
+        "translation": "主要原因是...",
+        "explanation": "開始解釋原因"
+      },
+      {
+        "pattern": "...の予期せぬコストがありました。",
+        "translation": "我們有...的意外支出",
+        "explanation": "說明具體支出"
+      },
+      {
+        "pattern": "...の対策を講じました。",
+        "translation": "我們已採取措施...",
+        "explanation": "說明應對行動"
+      },
+      {
+        "pattern": "来年はより注意します。",
+        "translation": "我們明年會更謹慎",
+        "explanation": "承諾改進"
+      }
+    ]
+  },
+  "fin-4": {
+    "en": [
+      {
+        "pattern": "Let us analyze the quarterly report.",
+        "translation": "我們來分析季度財務報表。",
+        "explanation": "開始財報分析的開場白"
+      },
+      {
+        "pattern": "Revenue increased by...",
+        "translation": "營收增加了...",
+        "explanation": "報告營收變化"
+      },
+      {
+        "pattern": "Operating expenses rose due to...",
+        "translation": "營業費用因...而上升。",
+        "explanation": "解釋費用變化"
+      },
+      {
+        "pattern": "Net profit margin is...",
+        "translation": "淨利率是...",
+        "explanation": "報告利潤指標"
+      },
+      {
+        "pattern": "We should monitor cash flow closely.",
+        "translation": "我們應密切監控現金流。",
+        "explanation": "提出建議"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "四半期報告書を分析しましょう。",
+        "translation": "我們來分析季度財務報表",
+        "explanation": "開始財報分析的開場白"
+      },
+      {
+        "pattern": "売上は...増加しました。",
+        "translation": "營收增加了...",
+        "explanation": "報告營收變化"
+      },
+      {
+        "pattern": "営業費用は...のために上昇しました。",
+        "translation": "營業費用因...而上升",
+        "explanation": "解釋費用變化"
+      },
+      {
+        "pattern": "純利益率は...です。",
+        "translation": "淨利率是...",
+        "explanation": "報告利潤指標"
+      },
+      {
+        "pattern": "キャッシュフローを注意深く監視すべきです。",
+        "translation": "我們應密切監控現金流",
+        "explanation": "提出建議"
+      }
+    ]
+  },
+  "fin-5": {
+    "en": [
+      {
+        "pattern": "We need to value the acquisition target.",
+        "translation": "我們需要對併購標的進行估值。",
+        "explanation": "開始併購討論的開場白"
+      },
+      {
+        "pattern": "What is their EBITDA?",
+        "translation": "他們的 EBITDA 是多少？",
+        "explanation": "詢問關鍵財務指標"
+      },
+      {
+        "pattern": "The goodwill should reflect...",
+        "translation": "商譽應反映...",
+        "explanation": "討論無形資產價值"
+      },
+      {
+        "pattern": "We need due diligence on...",
+        "translation": "我們需要對...進行盡職調查。",
+        "explanation": "提出調查需求"
+      },
+      {
+        "pattern": "The valuation range is...",
+        "translation": "估值區間是...",
+        "explanation": "報告估值結果"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "買収対象企業の評価を行う必要があります。",
+        "translation": "我們需要對併購標的進行估值",
+        "explanation": "開始併購討論的開場白"
+      },
+      {
+        "pattern": "EBITDAはいくらですか？",
+        "translation": "他們的 EBITDA 是多少？",
+        "explanation": "詢問關鍵財務指標"
+      },
+      {
+        "pattern": "のれんは...を反映すべきです。",
+        "translation": "商譽應反映...",
+        "explanation": "討論無形資產價值"
+      },
+      {
+        "pattern": "...についてデューデリジェンスが必要です。",
+        "translation": "我們需要對...進行盡職調查",
+        "explanation": "提出調查需求"
+      },
+      {
+        "pattern": "評価額の範囲は...です。",
+        "translation": "估值區間是...",
+        "explanation": "報告估值結果"
+      }
+    ]
+  },
+  "fin-6": {
+    "en": [
+      {
+        "pattern": "I will present the risk assessment.",
+        "translation": "我將報告風險評估結果。",
+        "explanation": "開始風險報告的開場白"
+      },
+      {
+        "pattern": "The main risks include...",
+        "translation": "主要風險包括...",
+        "explanation": "列出風險因素"
+      },
+      {
+        "pattern": "Market volatility may impact...",
+        "translation": "市場波動可能影響...",
+        "explanation": "說明市場風險"
+      },
+      {
+        "pattern": "We recommend diversification.",
+        "translation": "我們建議分散投資。",
+        "explanation": "提出風險對策"
+      },
+      {
+        "pattern": "The expected return is...",
+        "translation": "預期報酬是...",
+        "explanation": "報告預期收益"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "リスク評価を報告します。",
+        "translation": "我將報告風險評估結果",
+        "explanation": "開始風險報告的開場白"
+      },
+      {
+        "pattern": "主なリスクには...が含まれます。",
+        "translation": "主要風險包括...",
+        "explanation": "列出風險因素"
+      },
+      {
+        "pattern": "市場のボラティリティが...に影響する可能性があります。",
+        "translation": "市場波動可能影響...",
+        "explanation": "說明市場風險"
+      },
+      {
+        "pattern": "分散投資をお勧めします。",
+        "translation": "我們建議分散投資",
+        "explanation": "提出風險對策"
+      },
+      {
+        "pattern": "期待リターンは...です。",
+        "translation": "預期報酬是...",
+        "explanation": "報告預期收益"
+      }
+    ]
+  },
+  "crs-1": {
+    "en": [
+      {
+        "pattern": "Excuse me, do you know where the classroom is?",
+        "translation": "不好意思，請問教室在哪裡？",
+        "explanation": "詢問教室位置的禮貌用語"
+      },
+      {
+        "pattern": "Which building is it in?",
+        "translation": "在哪棟建築物？",
+        "explanation": "詢問具體位置"
+      },
+      {
+        "pattern": "What time does class start?",
+        "translation": "課程幾點開始？",
+        "explanation": "詢問上課時間"
+      },
+      {
+        "pattern": "Is there a map available?",
+        "translation": "有地圖嗎？",
+        "explanation": "請求指引"
+      },
+      {
+        "pattern": "Thank you for your help.",
+        "translation": "謝謝您的幫忙。",
+        "explanation": "表達感謝"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "すみません、教室はどこですか？",
+        "translation": "不好意思，請問教室在哪裡？",
+        "explanation": "詢問教室位置的禮貌用語"
+      },
+      {
+        "pattern": "どの建物ですか？",
+        "translation": "在哪棟建築物？",
+        "explanation": "詢問具體位置"
+      },
+      {
+        "pattern": "授業は何時に始まりますか？",
+        "translation": "課程幾點開始？",
+        "explanation": "詢問上課時間"
+      },
+      {
+        "pattern": "地図はありますか？",
+        "translation": "有地圖嗎？",
+        "explanation": "請求指引"
+      },
+      {
+        "pattern": "ありがとうございました。",
+        "translation": "謝謝您的幫忙",
+        "explanation": "表達感謝"
+      }
+    ]
+  },
+  "crs-2": {
+    "en": [
+      {
+        "pattern": "When is the assignment due?",
+        "translation": "作業什麼時候到期？",
+        "explanation": "詢問截止日期的標準用語"
+      },
+      {
+        "pattern": "Can I get an extension?",
+        "translation": "我可以申請延期嗎？",
+        "explanation": "請求寬限"
+      },
+      {
+        "pattern": "What format should I use?",
+        "translation": "我應該用什麼格式？",
+        "explanation": "詢問提交要求"
+      },
+      {
+        "pattern": "Where do I submit?",
+        "translation": "我要在哪裡提交？",
+        "explanation": "詢問提交地點"
+      },
+      {
+        "pattern": "Are there any late penalties?",
+        "translation": "遲交會有處罰嗎？",
+        "explanation": "詢問遲交後果"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "課題の締め切りはいつですか？",
+        "translation": "作業什麼時候到期？",
+        "explanation": "詢問截止日期的標準用語"
+      },
+      {
+        "pattern": "延長してもらえますか？",
+        "translation": "我可以申請延期嗎？",
+        "explanation": "請求寬限"
+      },
+      {
+        "pattern": "どの形式で提出すればよいですか？",
+        "translation": "我應該用什麼格式？",
+        "explanation": "詢問提交要求"
+      },
+      {
+        "pattern": "どこに提出すればよいですか？",
+        "translation": "我要在哪裡提交？",
+        "explanation": "詢問提交地點"
+      },
+      {
+        "pattern": "遅れた場合のペナルティはありますか？",
+        "translation": "遲交會有處罰嗎？",
+        "explanation": "詢問遲交後果"
+      }
+    ]
+  },
+  "crs-3": {
+    "en": [
+      {
+        "pattern": "I would like to discuss my research topic.",
+        "translation": "我想討論我的研究主題。",
+        "explanation": "開始學術討論的開場白"
+      },
+      {
+        "pattern": "My research question is...",
+        "translation": "我的研究問題是...",
+        "explanation": "說明研究重點"
+      },
+      {
+        "pattern": "I am considering...",
+        "translation": "我正在考慮...",
+        "explanation": "提出想法"
+      },
+      {
+        "pattern": "What literature should I review?",
+        "translation": "我應該參考哪些文獻？",
+        "explanation": "請求指導"
+      },
+      {
+        "pattern": "Thank you for your guidance.",
+        "translation": "謝謝您的指導。",
+        "explanation": "表達感謝"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "研究テーマについてご相談したいです。",
+        "translation": "我想討論我的研究主題",
+        "explanation": "開始學術討論的開場白"
+      },
+      {
+        "pattern": "私の研究質問は...",
+        "translation": "我的研究問題是...",
+        "explanation": "說明研究重點"
+      },
+      {
+        "pattern": "...を検討しています。",
+        "translation": "我正在考慮...",
+        "explanation": "提出想法"
+      },
+      {
+        "pattern": "どの文献をレビューすべきですか？",
+        "translation": "我應該參考哪些文獻？",
+        "explanation": "請求指導"
+      },
+      {
+        "pattern": "ご指導ありがとうございます。",
+        "translation": "謝謝您的指導",
+        "explanation": "表達感謝"
+      }
+    ]
+  },
+  "crs-4": {
+    "en": [
+      {
+        "pattern": "Let us start the group discussion.",
+        "translation": "我們開始小組討論吧。",
+        "explanation": "開始討論的用語"
+      },
+      {
+        "pattern": "What is your opinion on...?",
+        "translation": "你對...有什麼看法？",
+        "explanation": "徵求意見"
+      },
+      {
+        "pattern": "I agree with that point.",
+        "translation": "我同意這一點。",
+        "explanation": "表達贊同"
+      },
+      {
+        "pattern": "I have a different perspective.",
+        "translation": "我有不同的觀點。",
+        "explanation": "表達不同意見"
+      },
+      {
+        "pattern": "Let us summarize our points.",
+        "translation": "讓我們總結我們的觀點。",
+        "explanation": "歸納討論"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "グループディスカッションを始めましょう。",
+        "translation": "我們開始小組討論吧",
+        "explanation": "開始討論的用語"
+      },
+      {
+        "pattern": "...についてどう思いますか？",
+        "translation": "你對...有什麼看法？",
+        "explanation": "徵求意見"
+      },
+      {
+        "pattern": "その点に同意します。",
+        "translation": "我同意這一點",
+        "explanation": "表達贊同"
+      },
+      {
+        "pattern": "私は別の見解を持っています。",
+        "translation": "我有不同的觀點",
+        "explanation": "表達不同意見"
+      },
+      {
+        "pattern": "議論をまとめましょう。",
+        "translation": "讓我們總結我們的觀點",
+        "explanation": "歸納討論"
+      }
+    ]
+  },
+  "crs-5": {
+    "en": [
+      {
+        "pattern": "Good morning, everyone.",
+        "translation": "各位早安。",
+        "explanation": "簡報開場的標準用語"
+      },
+      {
+        "pattern": "Today I will present...",
+        "translation": "今天我將報告...",
+        "explanation": "說明報告主題"
+      },
+      {
+        "pattern": "Let me move to the next slide.",
+        "translation": "讓我進入下一張投影片。",
+        "explanation": "轉場用語"
+      },
+      {
+        "pattern": "As shown in this chart...",
+        "translation": "如這張圖表所示...",
+        "explanation": "引用視覺資料"
+      },
+      {
+        "pattern": "Are there any questions?",
+        "translation": "有任何問題嗎？",
+        "explanation": "開放提問"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "皆さん、おはようございます。",
+        "translation": "各位早安",
+        "explanation": "簡報開場的標準用語"
+      },
+      {
+        "pattern": "本日は...について発表します。",
+        "translation": "今天我將報告...",
+        "explanation": "說明報告主題"
+      },
+      {
+        "pattern": "次のスライドに移ります。",
+        "translation": "讓我進入下一張投影片",
+        "explanation": "轉場用語"
+      },
+      {
+        "pattern": "このグラフに示すように...",
+        "translation": "如這張圖表所示...",
+        "explanation": "引用視覺資料"
+      },
+      {
+        "pattern": "ご質問はありますか？",
+        "translation": "有任何問題嗎？",
+        "explanation": "開放提問"
+      }
+    ]
+  },
+  "crs-6": {
+    "en": [
+      {
+        "pattern": "I argue that...",
+        "translation": "我主張...",
+        "explanation": "提出論點的標準用語"
+      },
+      {
+        "pattern": "The evidence suggests...",
+        "translation": "證據顯示...",
+        "explanation": "引用證據"
+      },
+      {
+        "pattern": "I respectfully disagree.",
+        "translation": "我禮貌地表示不同意。",
+        "explanation": "表達反對意見"
+      },
+      {
+        "pattern": "Let us consider another angle.",
+        "translation": "讓我們考慮另一個角度。",
+        "explanation": "提出替代觀點"
+      },
+      {
+        "pattern": "In conclusion...",
+        "translation": "總結來說...",
+        "explanation": "總結用語"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "私は...と主張します。",
+        "translation": "我主張...",
+        "explanation": "提出論點的標準用語"
+      },
+      {
+        "pattern": "証拠は...を示唆しています。",
+        "translation": "證據顯示...",
+        "explanation": "引用證據"
+      },
+      {
+        "pattern": "申し訳ありませんが、同意できません。",
+        "translation": "我禮貌地表示不同意",
+        "explanation": "表達反對意見"
+      },
+      {
+        "pattern": "別の角度から考えてみましょう。",
+        "translation": "讓我們考慮另一個角度",
+        "explanation": "提出替代觀點"
+      },
+      {
+        "pattern": "結論として...",
+        "translation": "總結來說...",
+        "explanation": "總結用語"
+      }
+    ]
+  },
+  "clb-1": {
+    "en": [
+      {
+        "pattern": "How can I join this club?",
+        "translation": "我要怎麼加入這個社團？",
+        "explanation": "詢問入社方式的標準用語"
+      },
+      {
+        "pattern": "Are there any requirements?",
+        "translation": "有什麼要求嗎？",
+        "explanation": "詢問入社條件"
+      },
+      {
+        "pattern": "When is the orientation?",
+        "translation": "迎新活動是什麼時候？",
+        "explanation": "詢問活動時間"
+      },
+      {
+        "pattern": "Is there a membership fee?",
+        "translation": "有會費嗎？",
+        "explanation": "詢問費用"
+      },
+      {
+        "pattern": "I would like to sign up.",
+        "translation": "我想報名。",
+        "explanation": "表達加入意願"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "このサークルにはどうやって入れますか？",
+        "translation": "我要怎麼加入這個社團？",
+        "explanation": "詢問入社方式的標準用語"
+      },
+      {
+        "pattern": "何か条件はありますか？",
+        "translation": "有什麼要求嗎？",
+        "explanation": "詢問入社條件"
+      },
+      {
+        "pattern": "新入生歓迎会はいつですか？",
+        "translation": "迎新活動是什麼時候？",
+        "explanation": "詢問活動時間"
+      },
+      {
+        "pattern": "会費はありますか？",
+        "translation": "有會費嗎？",
+        "explanation": "詢問費用"
+      },
+      {
+        "pattern": "入会したいです。",
+        "translation": "我想報名",
+        "explanation": "表達加入意願"
+      }
+    ]
+  },
+  "clb-2": {
+    "en": [
+      {
+        "pattern": "I enjoy...",
+        "translation": "我喜歡...",
+        "explanation": "分享興趣的開場白"
+      },
+      {
+        "pattern": "My hobby is...",
+        "translation": "我的愛好是...",
+        "explanation": "說明興趣愛好"
+      },
+      {
+        "pattern": "I have been doing this for...",
+        "translation": "我做這個已經...了。",
+        "explanation": "說明經驗長度"
+      },
+      {
+        "pattern": "What do you like to do?",
+        "translation": "你喜歡做什麼？",
+        "explanation": "詢問對方興趣"
+      },
+      {
+        "pattern": "We have a lot in common.",
+        "translation": "我們有很多共同點。",
+        "explanation": "建立連結"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "私は...が好きです。",
+        "translation": "我喜歡...",
+        "explanation": "分享興趣的開場白"
+      },
+      {
+        "pattern": "私の趣味は...です。",
+        "translation": "我的愛好是...",
+        "explanation": "說明興趣愛好"
+      },
+      {
+        "pattern": "これを...からやっています。",
+        "translation": "我做這個已經...了",
+        "explanation": "說明經驗長度"
+      },
+      {
+        "pattern": "何をするのが好きですか？",
+        "translation": "你喜歡做什麼？",
+        "explanation": "詢問對方興趣"
+      },
+      {
+        "pattern": "共通点がたくさんありますね。",
+        "translation": "我們有很多共同點",
+        "explanation": "建立連結"
+      }
+    ]
+  },
+  "clb-3": {
+    "en": [
+      {
+        "pattern": "Let us plan the recruitment event.",
+        "translation": "我們來規劃招生活動。",
+        "explanation": "開始討論的開場白"
+      },
+      {
+        "pattern": "We need posters and flyers.",
+        "translation": "我們需要海報和傳單。",
+        "explanation": "列出所需物資"
+      },
+      {
+        "pattern": "Who can help with...?",
+        "translation": "誰能幫忙...？",
+        "explanation": "分配任務"
+      },
+      {
+        "pattern": "The deadline is...",
+        "translation": "截止日期是...",
+        "explanation": "說明時程"
+      },
+      {
+        "pattern": "Let us follow up next week.",
+        "explanation": "我們下週再追蹤。",
+        "translation": "設定追蹤時間"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "新入生勧誘イベントを計画しましょう。",
+        "translation": "我們來規劃招生活動",
+        "explanation": "開始討論的開場白"
+      },
+      {
+        "pattern": "ポスターとチラシが必要です。",
+        "translation": "我們需要海報和傳單",
+        "explanation": "列出所需物資"
+      },
+      {
+        "pattern": "...を手伝える人はいますか？",
+        "translation": "誰能幫忙...？",
+        "explanation": "分配任務"
+      },
+      {
+        "pattern": "締め切りは...です。",
+        "translation": "截止日期是...",
+        "explanation": "說明時程"
+      },
+      {
+        "pattern": "来週またフォローアップしましょう。",
+        "translation": "我們下週再追蹤",
+        "explanation": "設定追蹤時間"
+      }
+    ]
+  },
+  "clb-4": {
+    "en": [
+      {
+        "pattern": "Let us discuss the budget.",
+        "translation": "我們來討論預算。",
+        "explanation": "開始財務討論的用語"
+      },
+      {
+        "pattern": "How much do we have?",
+        "translation": "我們有多少預算？",
+        "explanation": "詢問可用資金"
+      },
+      {
+        "pattern": "We should allocate more to...",
+        "translation": "我們應該多分配給...",
+        "explanation": "提出分配建議"
+      },
+      {
+        "pattern": "We need to save money.",
+        "translation": "我們需要省錢。",
+        "explanation": "提出節約需求"
+      },
+      {
+        "pattern": "Let us vote on this.",
+        "translation": "我們來投票表決。",
+        "explanation": "提議決策方式"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "予算について話し合いましょう。",
+        "translation": "我們來討論預算",
+        "explanation": "開始財務討論的用語"
+      },
+      {
+        "pattern": "いくらありますか？",
+        "translation": "我們有多少預算？",
+        "explanation": "詢問可用資金"
+      },
+      {
+        "pattern": "...にもっと配分すべきです。",
+        "translation": "我們應該多分配給...",
+        "explanation": "提出分配建議"
+      },
+      {
+        "pattern": "お金を節約する必要があります。",
+        "translation": "我們需要省錢",
+        "explanation": "提出節約需求"
+      },
+      {
+        "pattern": "これについて投票しましょう。",
+        "translation": "我們來投票表決",
+        "explanation": "提議決策方式"
+      }
+    ]
+  },
+  "clb-5": {
+    "en": [
+      {
+        "pattern": "I am running for...",
+        "translation": "我正在競選...",
+        "explanation": "宣布競選職位的用語"
+      },
+      {
+        "pattern": "If elected, I will...",
+        "translation": "如果當選，我將...",
+        "explanation": "提出政見"
+      },
+      {
+        "pattern": "My experience includes...",
+        "translation": "我的經驗包括...",
+        "explanation": "說明資歷"
+      },
+      {
+        "pattern": "I ask for your vote.",
+        "translation": "我請求您的支持。",
+        "explanation": "請求投票"
+      },
+      {
+        "pattern": "Thank you for listening.",
+        "translation": "謝謝聆聽。",
+        "explanation": "結束演說的用語"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "私は...に立候補しています。",
+        "translation": "我正在競選...",
+        "explanation": "宣布競選職位的用語"
+      },
+      {
+        "pattern": "当選すれば...",
+        "translation": "如果當選，我將...",
+        "explanation": "提出政見"
+      },
+      {
+        "pattern": "私の経験には...が含まれます。",
+        "translation": "我的經驗包括...",
+        "explanation": "說明資歷"
+      },
+      {
+        "pattern": "ご投票をお願いします。",
+        "translation": "我請求您的支持",
+        "explanation": "請求投票"
+      },
+      {
+        "pattern": "ご清聴ありがとうございました。",
+        "translation": "謝謝聆聽",
+        "explanation": "結束演說的用語"
+      }
+    ]
+  },
+  "clb-6": {
+    "en": [
+      {
+        "pattern": "We need to resolve this conflict.",
+        "translation": "我們需要解決這個衝突。",
+        "explanation": "開始調解的開場白"
+      },
+      {
+        "pattern": "Let us hear both sides.",
+        "translation": "讓我們聽聽雙方的說法。",
+        "explanation": "給予發言機會"
+      },
+      {
+        "pattern": "I understand your frustration.",
+        "translation": "我理解你的挫折感。",
+        "explanation": "展現同理心"
+      },
+      {
+        "pattern": "Can we find a compromise?",
+        "translation": "我們能找到折衷方案嗎？",
+        "explanation": "提議解決方式"
+      },
+      {
+        "pattern": "Let us move forward.",
+        "translation": "讓我們繼續前進。",
+        "explanation": "結束調解的用語"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "この対立を解決する必要があります。",
+        "translation": "我們需要解決這個衝突",
+        "explanation": "開始調解的開場白"
+      },
+      {
+        "pattern": "双方の話を聞きましょう。",
+        "translation": "讓我們聽聽雙方的說法",
+        "explanation": "給予發言機會"
+      },
+      {
+        "pattern": "あなたの不満は理解できます。",
+        "translation": "我理解你的挫折感",
+        "explanation": "展現同理心"
+      },
+      {
+        "pattern": "妥協点を見つけられますか？",
+        "translation": "我們能找到折衷方案嗎？",
+        "explanation": "提議解決方式"
+      },
+      {
+        "pattern": "前に進みましょう。",
+        "translation": "讓我們繼續前進",
+        "explanation": "結束調解的用語"
+      }
+    ]
+  },
+  "app-1": {
+    "en": [
+      {
+        "pattern": "What are the admission requirements?",
+        "translation": "入學要求是什麼？",
+        "explanation": "詢問申請門檻的標準用語"
+      },
+      {
+        "pattern": "Is there a minimum GPA?",
+        "translation": "有最低 GPA 要求嗎？",
+        "explanation": "詢問成績要求"
+      },
+      {
+        "pattern": "Do I need test scores?",
+        "translation": "我需要考試成績嗎？",
+        "explanation": "詢問考試要求"
+      },
+      {
+        "pattern": "What documents are required?",
+        "translation": "需要哪些文件？",
+        "explanation": "詢問文件清單"
+      },
+      {
+        "pattern": "When is the application deadline?",
+        "translation": "申請截止日期是什麼時候？",
+        "explanation": "詢問截止日期"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "入学要件は何ですか？",
+        "translation": "入學要求是什麼？",
+        "explanation": "詢問申請門檻的標準用語"
+      },
+      {
+        "pattern": "最低GPAはありますか？",
+        "translation": "有最低 GPA 要求嗎？",
+        "explanation": "詢問成績要求"
+      },
+      {
+        "pattern": "テストスコアは必要ですか？",
+        "translation": "我需要考試成績嗎？",
+        "explanation": "詢問考試要求"
+      },
+      {
+        "pattern": "必要な書類は何ですか？",
+        "translation": "需要哪些文件？",
+        "explanation": "詢問文件清單"
+      },
+      {
+        "pattern": "願書の締め切りはいつですか？",
+        "translation": "申請截止日期是什麼時候？",
+        "explanation": "詢問截止日期"
+      }
+    ]
+  },
+  "app-2": {
+    "en": [
+      {
+        "pattern": "Could you write a recommendation letter?",
+        "translation": "您能寫一封推薦信嗎？",
+        "explanation": "請求推薦信的禮貌用語"
+      },
+      {
+        "pattern": "What format do you prefer?",
+        "translation": "您偏好什麼格式？",
+        "explanation": "詢問格式偏好"
+      },
+      {
+        "pattern": "When do you need it by?",
+        "translation": "您什麼時候需要？",
+        "explanation": "詢問時程"
+      },
+      {
+        "pattern": "Should I provide any materials?",
+        "translation": "我應該提供任何資料嗎？",
+        "explanation": "詢問需要準備的內容"
+      },
+      {
+        "pattern": "Thank you for your support.",
+        "translation": "謝謝您的支持。",
+        "explanation": "表達感謝"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "推薦状を書いていただけますか？",
+        "translation": "您能寫一封推薦信嗎？",
+        "explanation": "請求推薦信的禮貌用語"
+      },
+      {
+        "pattern": "どの形式をご希望ですか？",
+        "translation": "您偏好什麼格式？",
+        "explanation": "詢問格式偏好"
+      },
+      {
+        "pattern": "いつまでに必要ですか？",
+        "translation": "您什麼時候需要？",
+        "explanation": "詢問時程"
+      },
+      {
+        "pattern": "資料を提供すべきですか？",
+        "translation": "我應該提供任何資料嗎？",
+        "explanation": "詢問需要準備的內容"
+      },
+      {
+        "pattern": "ご支援ありがとうございます。",
+        "translation": "謝謝您的支持",
+        "explanation": "表達感謝"
+      }
+    ]
+  },
+  "app-3": {
+    "en": [
+      {
+        "pattern": "My motivation for applying is...",
+        "translation": "我申請的動機是...",
+        "explanation": "開始個人陳述的用語"
+      },
+      {
+        "pattern": "I am passionate about...",
+        "translation": "我對...充滿熱情。",
+        "explanation": "表達興趣"
+      },
+      {
+        "pattern": "My background includes...",
+        "translation": "我的背景包括...",
+        "explanation": "說明經歷"
+      },
+      {
+        "pattern": "I aim to...",
+        "translation": "我的目標是...",
+        "explanation": "說明目標"
+      },
+      {
+        "pattern": "This program will help me...",
+        "translation": "這個課程將幫助我...",
+        "explanation": "說明為何選擇此課程"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "私の志望動機は...",
+        "translation": "我申請的動機是...",
+        "explanation": "開始個人陳述的用語"
+      },
+      {
+        "pattern": "私は...に情熱を持っています。",
+        "translation": "我對...充滿熱情",
+        "explanation": "表達興趣"
+      },
+      {
+        "pattern": "私のバックグラウンドには...があります。",
+        "translation": "我的背景包括...",
+        "explanation": "說明經歷"
+      },
+      {
+        "pattern": "私の目標は...",
+        "translation": "我的目標是...",
+        "explanation": "說明目標"
+      },
+      {
+        "pattern": "このプログラムは私を助けて...",
+        "translation": "這個課程將幫助我...",
+        "explanation": "說明為何選擇此課程"
+      }
+    ]
+  },
+  "app-4": {
+    "en": [
+      {
+        "pattern": "Let us discuss the school list.",
+        "translation": "我們來討論學校清單。",
+        "explanation": "開始討論的開場白"
+      },
+      {
+        "pattern": "Which schools are reach schools?",
+        "translation": "哪些是夢幻學校？",
+        "explanation": "分類學校類型"
+      },
+      {
+        "pattern": "I need safety schools.",
+        "translation": "我需要保底學校。",
+        "explanation": "表達需求"
+      },
+      {
+        "pattern": "What is the ranking of...?",
+        "translation": "...的排名是多少？",
+        "explanation": "詢問排名"
+      },
+      {
+        "pattern": "Let us narrow it down.",
+        "translation": "我們來縮小範圍。",
+        "explanation": "提議篩選"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "学校リストについて話し合いましょう。",
+        "translation": "我們來討論學校清單",
+        "explanation": "開始討論的開場白"
+      },
+      {
+        "pattern": "どの学校がリーチ校ですか？",
+        "translation": "哪些是夢幻學校？",
+        "explanation": "分類學校類型"
+      },
+      {
+        "pattern": "安全校が必要です。",
+        "translation": "我需要保底學校",
+        "explanation": "表達需求"
+      },
+      {
+        "pattern": "...のランキングは？",
+        "translation": "...的排名是多少？",
+        "explanation": "詢問排名"
+      },
+      {
+        "pattern": "選択肢を絞りましょう。",
+        "translation": "我們來縮小範圍",
+        "explanation": "提議篩選"
+      }
+    ]
+  },
+  "app-5": {
+    "en": [
+      {
+        "pattern": "Tell me about yourself.",
+        "translation": "請自我介紹。",
+        "explanation": "面試開場問題"
+      },
+      {
+        "pattern": "Why this school?",
+        "translation": "為什麼選擇這所學校？",
+        "explanation": "詢問選校原因"
+      },
+      {
+        "pattern": "What are your weaknesses?",
+        "translation": "你的缺點是什麼？",
+        "explanation": "詢問弱點"
+      },
+      {
+        "pattern": "Describe a challenge you faced.",
+        "translation": "描述你面臨過的挑戰。",
+        "explanation": "行為面試問題"
+      },
+      {
+        "pattern": "Do you have any questions?",
+        "translation": "你有任何問題嗎？",
+        "explanation": "結束面試的用語"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "自己紹介をお願いします。",
+        "translation": "請自我介紹",
+        "explanation": "面試開場問題"
+      },
+      {
+        "pattern": "なぜこの学校ですか？",
+        "translation": "為什麼選擇這所學校？",
+        "explanation": "詢問選校原因"
+      },
+      {
+        "pattern": "あなたの弱点は何ですか？",
+        "translation": "你的缺點是什麼？",
+        "explanation": "詢問弱點"
+      },
+      {
+        "pattern": "直面した課題について説明してください。",
+        "translation": "描述你面臨過的挑戰",
+        "explanation": "行為面試問題"
+      },
+      {
+        "pattern": "ご質問はありますか？",
+        "translation": "你有任何問題嗎？",
+        "explanation": "結束面試的用語"
+      }
+    ]
+  },
+  "app-6": {
+    "en": [
+      {
+        "pattern": "I would like to appeal the decision.",
+        "translation": "我想申訴這個決定。",
+        "explanation": "開始申訴的用語"
+      },
+      {
+        "pattern": "I have additional information.",
+        "translation": "我有額外資訊。",
+        "explanation": "說明新增內容"
+      },
+      {
+        "pattern": "My circumstances have changed.",
+        "translation": "我的情況已改變。",
+        "explanation": "說明變化"
+      },
+      {
+        "pattern": "I request reconsideration.",
+        "translation": "我請求重新考量。",
+        "explanation": "提出請求"
+      },
+      {
+        "pattern": "Thank you for your time.",
+        "translation": "謝謝您的時間。",
+        "explanation": "表達感謝"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "決定に対して異議申し立てをしたいです。",
+        "translation": "我想申訴這個決定",
+        "explanation": "開始申訴的用語"
+      },
+      {
+        "pattern": "追加情報があります。",
+        "translation": "我有額外資訊",
+        "explanation": "說明新增內容"
+      },
+      {
+        "pattern": "私の状況が変わりました。",
+        "translation": "我的情況已改變",
+        "explanation": "說明變化"
+      },
+      {
+        "pattern": "再考を求めます。",
+        "translation": "我請求重新考量",
+        "explanation": "提出請求"
+      },
+      {
+        "pattern": "お時間ありがとうございました。",
+        "translation": "謝謝您的時間",
+        "explanation": "表達感謝"
+      }
+    ]
+  },
+  "ths-1": {
+    "en": [
+      {
+        "pattern": "I need to find references for...",
+        "translation": "我需要為...找參考文獻。",
+        "explanation": "開始文獻搜尋的用語"
+      },
+      {
+        "pattern": "Which databases should I use?",
+        "translation": "我應該用哪些資料庫？",
+        "explanation": "詢問資源來源"
+      },
+      {
+        "pattern": "How do I access full text?",
+        "translation": "我如何取得全文？",
+        "explanation": "詢問取得方式"
+      },
+      {
+        "pattern": "Can you recommend key papers?",
+        "translation": "你能推薦關鍵論文嗎？",
+        "explanation": "請求推薦"
+      },
+      {
+        "pattern": "How do I organize my sources?",
+        "translation": "我如何整理我的文獻來源？",
+        "explanation": "詢問管理方法"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "...の参考文献を見つける必要があります。",
+        "translation": "我需要為...找參考文獻",
+        "explanation": "開始文獻搜尋的用語"
+      },
+      {
+        "pattern": "どのデータベースを使うべきですか？",
+        "translation": "我應該用哪些資料庫？",
+        "explanation": "詢問資源來源"
+      },
+      {
+        "pattern": "全文にアクセスする方法は？",
+        "translation": "我如何取得全文？",
+        "explanation": "詢問取得方式"
+      },
+      {
+        "pattern": "重要な論文を推薦していただけますか？",
+        "translation": "你能推薦關鍵論文嗎？",
+        "explanation": "請求推薦"
+      },
+      {
+        "pattern": "参考文献を整理する方法は？",
+        "translation": "我如何整理我的文獻來源？",
+        "explanation": "詢問管理方法"
+      }
+    ]
+  },
+  "ths-2": {
+    "en": [
+      {
+        "pattern": "My research motivation is...",
+        "translation": "我的研究動機是...",
+        "explanation": "開始說明研究動機的用語"
+      },
+      {
+        "pattern": "This topic is important because...",
+        "translation": "這個主題很重要，因為...",
+        "explanation": "說明重要性"
+      },
+      {
+        "pattern": "I became interested in this because...",
+        "translation": "我對此產生興趣是因為...",
+        "explanation": "說明個人緣由"
+      },
+      {
+        "pattern": "This fills a gap in...",
+        "translation": "這填補了...的空白。",
+        "explanation": "說明學術貢獻"
+      },
+      {
+        "pattern": "I hope to contribute to...",
+        "translation": "我希望能為...做出貢獻。",
+        "explanation": "說明期望貢獻"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "私の研究動機は...",
+        "translation": "我的研究動機是...",
+        "explanation": "開始說明研究動機的用語"
+      },
+      {
+        "pattern": "このトピックが重要なのは...",
+        "translation": "這個主題很重要，因為...",
+        "explanation": "說明重要性"
+      },
+      {
+        "pattern": "これに興味を持ったのは...",
+        "translation": "我對此產生興趣是因為...",
+        "explanation": "說明個人緣由"
+      },
+      {
+        "pattern": "これは...の空白を埋めます。",
+        "translation": "這填補了...的空白",
+        "explanation": "說明學術貢獻"
+      },
+      {
+        "pattern": "私は...に貢献したいです。",
+        "translation": "我希望能為...做出貢獻",
+        "explanation": "說明期望貢獻"
+      }
+    ]
+  },
+  "ths-3": {
+    "en": [
+      {
+        "pattern": "I would like to report my progress.",
+        "translation": "我想報告我的進度。",
+        "explanation": "開始進度報告的用語"
+      },
+      {
+        "pattern": "I have completed...",
+        "translation": "我已完成...",
+        "explanation": "說明完成事項"
+      },
+      {
+        "pattern": "I am currently working on...",
+        "translation": "我目前正在進行...",
+        "explanation": "說明進行中的工作"
+      },
+      {
+        "pattern": "I encountered an issue with...",
+        "translation": "我在...遇到問題。",
+        "explanation": "說明遇到的困難"
+      },
+      {
+        "pattern": "What should I focus on next?",
+        "translation": "我接下來應該專注於什麼？",
+        "explanation": "請求指導"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "進捗を報告したいです。",
+        "translation": "我想報告我的進度",
+        "explanation": "開始進度報告的用語"
+      },
+      {
+        "pattern": "...を完了しました。",
+        "translation": "我已完成...",
+        "explanation": "說明完成事項"
+      },
+      {
+        "pattern": "現在...に取り組んでいます。",
+        "translation": "我目前正在進行...",
+        "explanation": "說明進行中的工作"
+      },
+      {
+        "pattern": "...で問題に遭遇しました。",
+        "translation": "我在...遇到問題",
+        "explanation": "說明遇到的困難"
+      },
+      {
+        "pattern": "次に何に集中すべきですか？",
+        "translation": "我接下來應該專注於什麼？",
+        "explanation": "請求指導"
+      }
+    ]
+  },
+  "ths-4": {
+    "en": [
+      {
+        "pattern": "The data shows...",
+        "translation": "數據顯示...",
+        "explanation": "開始解釋數據的用語"
+      },
+      {
+        "pattern": "The results indicate...",
+        "translation": "結果指出...",
+        "explanation": "說明結果含義"
+      },
+      {
+        "pattern": "There is a correlation between...",
+        "translation": "在...之間有相關性。",
+        "explanation": "說明關聯性"
+      },
+      {
+        "pattern": "The findings suggest...",
+        "translation": "研究結果建議...",
+        "explanation": "推論結果"
+      },
+      {
+        "pattern": "This is consistent with...",
+        "translation": "這與...一致。",
+        "explanation": "對照文獻"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "データは...を示しています。",
+        "translation": "數據顯示...",
+        "explanation": "開始解釋數據的用語"
+      },
+      {
+        "pattern": "結果は...を示唆しています。",
+        "translation": "結果指出...",
+        "explanation": "說明結果含義"
+      },
+      {
+        "pattern": "...の間に相関があります。",
+        "translation": "在...之間有相關性",
+        "explanation": "說明關聯性"
+      },
+      {
+        "pattern": "研究結果は...を示唆しています。",
+        "translation": "研究結果建議...",
+        "explanation": "推論結果"
+      },
+      {
+        "pattern": "これは...と一致しています。",
+        "translation": "這與...一致",
+        "explanation": "對照文獻"
+      }
+    ]
+  },
+  "ths-5": {
+    "en": [
+      {
+        "pattern": "Thank you for being here today.",
+        "translation": "感謝各位今天蒞臨。",
+        "explanation": "口試開場的用語"
+      },
+      {
+        "pattern": "My thesis is titled...",
+        "translation": "我的論文題目是...",
+        "explanation": "說明題目"
+      },
+      {
+        "pattern": "My research question is...",
+        "translation": "我的研究問題是...",
+        "explanation": "說明核心問題"
+      },
+      {
+        "pattern": "I would like to conclude that...",
+        "translation": "我想總結...",
+        "explanation": "總結用語"
+      },
+      {
+        "pattern": "I am ready for your questions.",
+        "translation": "我準備好回答問題了。",
+        "explanation": "開始答辯的用語"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "本日はお越しいただきありがとうございます。",
+        "translation": "感謝各位今天蒞臨",
+        "explanation": "口試開場的用語"
+      },
+      {
+        "pattern": "私の論文の題目は...",
+        "translation": "我的論文題目是...",
+        "explanation": "說明題目"
+      },
+      {
+        "pattern": "私の研究質問は...",
+        "translation": "我的研究問題是...",
+        "explanation": "說明核心問題"
+      },
+      {
+        "pattern": "...と結論付けたいです。",
+        "translation": "我想總結...",
+        "explanation": "總結用語"
+      },
+      {
+        "pattern": "ご質問にお答えします。",
+        "translation": "我準備好回答問題了",
+        "explanation": "開始答辯的用語"
+      }
+    ]
+  },
+  "ths-6": {
+    "en": [
+      {
+        "pattern": "There are limitations to my methodology.",
+        "translation": "我的方法論有限制。",
+        "explanation": "開始討論限制的用語"
+      },
+      {
+        "pattern": "The sample size was...",
+        "translation": "樣本大小為...",
+        "explanation": "說明樣本限制"
+      },
+      {
+        "pattern": "This study cannot generalize to...",
+        "translation": "本研究無法推廣至...",
+        "explanation": "說明推論限制"
+      },
+      {
+        "pattern": "Future research should...",
+        "translation": "未來研究應該...",
+        "explanation": "提出未來方向"
+      },
+      {
+        "pattern": "These limitations do not invalidate...",
+        "translation": "這些限制並不否定...",
+        "explanation": "為研究辯護"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "私の方法論には限界があります。",
+        "translation": "我的方法論有限制",
+        "explanation": "開始討論限制的用語"
+      },
+      {
+        "pattern": "サンプルサイズは...でした。",
+        "translation": "樣本大小為...",
+        "explanation": "說明樣本限制"
+      },
+      {
+        "pattern": "本研究は...に一般化できません。",
+        "translation": "本研究無法推廣至...",
+        "explanation": "說明推論限制"
+      },
+      {
+        "pattern": "将来の研究は...",
+        "translation": "未來研究應該...",
+        "explanation": "提出未來方向"
+      },
+      {
+        "pattern": "これらの限界は...を無効にしません。",
+        "translation": "這些限制並不否定...",
+        "explanation": "為研究辯護"
+      }
+    ]
+  },
+  "hom-1": {
+    "en": [
+      {
+        "pattern": "I need to report a leak.",
+        "translation": "我需要報修漏水。",
+        "explanation": "開始報修的用語"
+      },
+      {
+        "pattern": "The leak is in...",
+        "translation": "漏水位置在...",
+        "explanation": "說明問題位置"
+      },
+      {
+        "pattern": "It started about...",
+        "translation": "大約在...開始。",
+        "explanation": "說明時間"
+      },
+      {
+        "pattern": "Can someone come to fix it?",
+        "translation": "能派人來修理嗎？",
+        "explanation": "請求維修"
+      },
+      {
+        "pattern": "When can you come?",
+        "translation": "你們什麼時候能來？",
+        "explanation": "詢問時間"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "漏水を報告したいです。",
+        "translation": "我需要報修漏水",
+        "explanation": "開始報修的用語"
+      },
+      {
+        "pattern": "漏水の場所は...",
+        "translation": "漏水位置在...",
+        "explanation": "說明問題位置"
+      },
+      {
+        "pattern": "...頃から始まりました。",
+        "translation": "大約在...開始",
+        "explanation": "說明時間"
+      },
+      {
+        "pattern": "修理に来てもらえますか？",
+        "translation": "能派人來修理嗎？",
+        "explanation": "請求維修"
+      },
+      {
+        "pattern": "いつ来られますか？",
+        "translation": "你們什麼時候能來？",
+        "explanation": "詢問時間"
+      }
+    ]
+  },
+  "hom-2": {
+    "en": [
+      {
+        "pattern": "How much is this sofa?",
+        "translation": "這張沙發多少錢？",
+        "explanation": "詢價的標準用語"
+      },
+      {
+        "pattern": "Do you have this in other colors?",
+        "translation": "這個有其他顏色嗎？",
+        "explanation": "詢問款式選擇"
+      },
+      {
+        "pattern": "Is delivery included?",
+        "translation": "包含運送嗎？",
+        "explanation": "詢問運送服務"
+      },
+      {
+        "pattern": "What is the warranty?",
+        "translation": "保固期多久？",
+        "explanation": "詢問售後服務"
+      },
+      {
+        "pattern": "Can I get a discount?",
+        "translation": "能打折嗎？",
+        "explanation": "詢問折扣"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "このソファはいくらですか？",
+        "translation": "這張沙發多少錢？",
+        "explanation": "詢價的標準用語"
+      },
+      {
+        "pattern": "他の色はありますか？",
+        "translation": "這個有其他顏色嗎？",
+        "explanation": "詢問款式選擇"
+      },
+      {
+        "pattern": "配送は込みですか？",
+        "translation": "包含運送嗎？",
+        "explanation": "詢問運送服務"
+      },
+      {
+        "pattern": "保証期間はどれくらいですか？",
+        "translation": "保固期多久？",
+        "explanation": "詢問售後服務"
+      },
+      {
+        "pattern": "割引してもらえますか？",
+        "translation": "能打折嗎？",
+        "explanation": "詢問折扣"
+      }
+    ]
+  },
+  "hom-3": {
+    "en": [
+      {
+        "pattern": "We need to divide the chores.",
+        "translation": "我們需要分擔家務。",
+        "explanation": "開始討論的開場白"
+      },
+      {
+        "pattern": "I will take care of...",
+        "translation": "我負責...",
+        "explanation": "承擔責任"
+      },
+      {
+        "pattern": "Can you handle...?",
+        "translation": "你能處理...嗎？",
+        "explanation": "分配任務"
+      },
+      {
+        "pattern": "We should rotate duties.",
+        "translation": "我們應該輪流負責。",
+        "explanation": "提議制度"
+      },
+      {
+        "pattern": "Let us make a schedule.",
+        "translation": "我們來做個時間表。",
+        "explanation": "提議具體行動"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "家事を分担する必要があります。",
+        "translation": "我們需要分擔家務",
+        "explanation": "開始討論的開場白"
+      },
+      {
+        "pattern": "私は...を担当します。",
+        "translation": "我負責...",
+        "explanation": "承擔責任"
+      },
+      {
+        "pattern": "...を任せてもらえますか？",
+        "translation": "你能處理...嗎？",
+        "explanation": "分配任務"
+      },
+      {
+        "pattern": "当番を交代すべきです。",
+        "translation": "我們應該輪流負責",
+        "explanation": "提議制度"
+      },
+      {
+        "pattern": "スケジュールを作りましょう。",
+        "translation": "我們來做個時間表",
+        "explanation": "提議具體行動"
+      }
+    ]
+  },
+  "hom-4": {
+    "en": [
+      {
+        "pattern": "I like modern style.",
+        "translation": "我喜歡現代風格。",
+        "explanation": "表達風格偏好"
+      },
+      {
+        "pattern": "What is your preference?",
+        "translation": "你偏好什麼？",
+        "explanation": "詢問對方偏好"
+      },
+      {
+        "pattern": "This color does not match.",
+        "translation": "這個顏色不搭。",
+        "explanation": "提出意見"
+      },
+      {
+        "pattern": "We need more storage.",
+        "translation": "我們需要更多收納空間。",
+        "explanation": "提出需求"
+      },
+      {
+        "pattern": "Let us look at some options.",
+        "translation": "我們來看些選項。",
+        "explanation": "提議下一步"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "私はモダンスタイルが好きです。",
+        "translation": "我喜歡現代風格",
+        "explanation": "表達風格偏好"
+      },
+      {
+        "pattern": "どちらがお好みですか？",
+        "translation": "你偏好什麼？",
+        "explanation": "詢問對方偏好"
+      },
+      {
+        "pattern": "この色は合いません。",
+        "translation": "這個顏色不搭",
+        "explanation": "提出意見"
+      },
+      {
+        "pattern": "もっと収納が必要です。",
+        "translation": "我們需要更多收納空間",
+        "explanation": "提出需求"
+      },
+      {
+        "pattern": "いくつか選択肢を見てみましょう。",
+        "translation": "我們來看些選項",
+        "explanation": "提議下一步"
+      }
+    ]
+  },
+  "hom-5": {
+    "en": [
+      {
+        "pattern": "Is the rent negotiable?",
+        "translation": "租金可議嗎？",
+        "explanation": "詢問談判空間的用語"
+      },
+      {
+        "pattern": "Can you lower the price?",
+        "translation": "你能降價嗎？",
+        "explanation": "提出降價要求"
+      },
+      {
+        "pattern": "What is included?",
+        "translation": "包含什麼？",
+        "explanation": "詢問租約內容"
+      },
+      {
+        "pattern": "I can sign a longer lease.",
+        "translation": "我可以簽更長的租約。",
+        "explanation": "提出交換條件"
+      },
+      {
+        "pattern": "Let us meet halfway.",
+        "translation": "我們各讓一步吧。",
+        "explanation": "提議折衷"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "家賃は交渉可能ですか？",
+        "translation": "租金可議嗎？",
+        "explanation": "詢問談判空間的用語"
+      },
+      {
+        "pattern": "値下げしていただけますか？",
+        "translation": "你能降價嗎？",
+        "explanation": "提出降價要求"
+      },
+      {
+        "pattern": "何が含まれていますか？",
+        "translation": "包含什麼？",
+        "explanation": "詢問租約內容"
+      },
+      {
+        "pattern": "より長い契約を結べます。",
+        "translation": "我可以簽更長的租約",
+        "explanation": "提出交換條件"
+      },
+      {
+        "pattern": "お互い譲りましょう。",
+        "translation": "我們各讓一步吧",
+        "explanation": "提議折衷"
+      }
+    ]
+  },
+  "hom-6": {
+    "en": [
+      {
+        "pattern": "I need to talk about the noise.",
+        "translation": "我需要談談噪音問題。",
+        "explanation": "開始投訴的用語"
+      },
+      {
+        "pattern": "The noise is disturbing my sleep.",
+        "translation": "噪音影響我的睡眠。",
+        "explanation": "說明影響"
+      },
+      {
+        "pattern": "Could you keep it down?",
+        "translation": "能請你小聲一點嗎？",
+        "explanation": "禮貌請求"
+      },
+      {
+        "pattern": "I would appreciate your cooperation.",
+        "translation": "感謝您的配合。",
+        "explanation": "表達感謝"
+      },
+      {
+        "pattern": "Let us try to resolve this.",
+        "translation": "讓我們試著解決這個問題。",
+        "explanation": "提議解決方案"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "騒音について話したいです。",
+        "translation": "我需要談談噪音問題",
+        "explanation": "開始投訴的用語"
+      },
+      {
+        "pattern": "騒音が私の睡眠を妨げています。",
+        "translation": "噪音影響我的睡眠",
+        "explanation": "說明影響"
+      },
+      {
+        "pattern": "音を小さくしていただけますか？",
+        "translation": "能請你小聲一點嗎？",
+        "explanation": "禮貌請求"
+      },
+      {
+        "pattern": "ご協力に感謝します。",
+        "translation": "感謝您的配合",
+        "explanation": "表達感謝"
+      },
+      {
+        "pattern": "解決しましょう。",
+        "translation": "讓我們試著解決這個問題",
+        "explanation": "提議解決方案"
+      }
+    ]
+  },
+  "shp-1": {
+    "en": [
+      {
+        "pattern": "Do you have this in size...?",
+        "translation": "這個有...尺寸嗎？",
+        "explanation": "詢問尺寸的標準用語"
+      },
+      {
+        "pattern": "What colors are available?",
+        "translation": "有哪些顏色可選？",
+        "explanation": "詢問顏色選項"
+      },
+      {
+        "pattern": "May I try this on?",
+        "translation": "我可以試穿嗎？",
+        "explanation": "請求試穿"
+      },
+      {
+        "pattern": "Where is the fitting room?",
+        "translation": "試衣間在哪裡？",
+        "explanation": "詢問位置"
+      },
+      {
+        "pattern": "This fits perfectly.",
+        "translation": "這件很合身。",
+        "explanation": "表達滿意"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "これの...サイズはありますか？",
+        "translation": "這個有...尺寸嗎？",
+        "explanation": "詢問尺寸的標準用語"
+      },
+      {
+        "pattern": "どの色がありますか？",
+        "translation": "有哪些顏色可選？",
+        "explanation": "詢問顏色選項"
+      },
+      {
+        "pattern": "試着してもいいですか？",
+        "translation": "我可以試穿嗎？",
+        "explanation": "請求試穿"
+      },
+      {
+        "pattern": "試着室はどこですか？",
+        "translation": "試衣間在哪裡？",
+        "explanation": "詢問位置"
+      },
+      {
+        "pattern": "ぴったりです。",
+        "translation": "這件很合身",
+        "explanation": "表達滿意"
+      }
+    ]
+  },
+  "shp-2": {
+    "en": [
+      {
+        "pattern": "Is this on sale?",
+        "translation": "這個有打折嗎？",
+        "explanation": "詢問折扣的用語"
+      },
+      {
+        "pattern": "Can I use a coupon?",
+        "translation": "我能使用折價券嗎？",
+        "explanation": "詢問優惠方式"
+      },
+      {
+        "pattern": "What is the total?",
+        "translation": "總共多少錢？",
+        "explanation": "詢問總金額"
+      },
+      {
+        "pattern": "Do you accept credit cards?",
+        "translation": "你們接受信用卡嗎？",
+        "explanation": "詢問付款方式"
+      },
+      {
+        "pattern": "Can I have a receipt?",
+        "translation": "能給我收據嗎？",
+        "explanation": "索取收據"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "これはセール中ですか？",
+        "translation": "這個有打折嗎？",
+        "explanation": "詢問折扣的用語"
+      },
+      {
+        "pattern": "クーポンを使えますか？",
+        "translation": "我能使用折價券嗎？",
+        "explanation": "詢問優惠方式"
+      },
+      {
+        "pattern": "合計はいくらですか？",
+        "translation": "總共多少錢？",
+        "explanation": "詢問總金額"
+      },
+      {
+        "pattern": "クレジットカードは使えますか？",
+        "translation": "你們接受信用卡嗎？",
+        "explanation": "詢問付款方式"
+      },
+      {
+        "pattern": "レシートをいただけますか？",
+        "translation": "能給我收據嗎？",
+        "explanation": "索取收據"
+      }
+    ]
+  },
+  "shp-3": {
+    "en": [
+      {
+        "pattern": "I would like to return this.",
+        "translation": "我想要退貨。",
+        "explanation": "開始退貨流程的用語"
+      },
+      {
+        "pattern": "It does not fit.",
+        "translation": "尺寸不合。",
+        "explanation": "說明退貨原因"
+      },
+      {
+        "pattern": "Do you have the receipt?",
+        "translation": "您有收據嗎？",
+        "explanation": "詢問證明文件"
+      },
+      {
+        "pattern": "Would you like a refund or exchange?",
+        "translation": "您要退費還是換貨？",
+        "explanation": "詢問處理方式"
+      },
+      {
+        "pattern": "The refund will take...",
+        "translation": "退費需要...",
+        "explanation": "說明處理時間"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "これを返品したいです。",
+        "translation": "我想要退貨",
+        "explanation": "開始退貨流程的用語"
+      },
+      {
+        "pattern": "サイズが合いません。",
+        "translation": "尺寸不合",
+        "explanation": "說明退貨原因"
+      },
+      {
+        "pattern": "レシートはお持ちですか？",
+        "translation": "您有收據嗎？",
+        "explanation": "詢問證明文件"
+      },
+      {
+        "pattern": "返金と交換、どちらをご希望ですか？",
+        "translation": "您要退費還是換貨？",
+        "explanation": "詢問處理方式"
+      },
+      {
+        "pattern": "返金には...かかります。",
+        "translation": "退費需要...",
+        "explanation": "說明處理時間"
+      }
+    ]
+  },
+  "shp-4": {
+    "en": [
+      {
+        "pattern": "How long is the warranty?",
+        "translation": "保固期多久？",
+        "explanation": "詢問保固期限的用語"
+      },
+      {
+        "pattern": "What does it cover?",
+        "translation": "涵蓋哪些項目？",
+        "explanation": "詢問保固範圍"
+      },
+      {
+        "pattern": "Is accidental damage covered?",
+        "translation": "意外損壞有涵蓋嗎？",
+        "explanation": "詢問特定項目"
+      },
+      {
+        "pattern": "How do I claim the warranty?",
+        "translation": "我如何申請保固？",
+        "explanation": "詢問申請流程"
+      },
+      {
+        "pattern": "Is there an extended warranty?",
+        "translation": "有延長保固嗎？",
+        "explanation": "詢問加購選項"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "保証期間はどれくらいですか？",
+        "translation": "保固期多久？",
+        "explanation": "詢問保固期限的用語"
+      },
+      {
+        "pattern": "何がカバーされますか？",
+        "translation": "涵蓋哪些項目？",
+        "explanation": "詢問保固範圍"
+      },
+      {
+        "pattern": "事故による損傷はカバーされますか？",
+        "translation": "意外損壞有涵蓋嗎？",
+        "explanation": "詢問特定項目"
+      },
+      {
+        "pattern": "保証を申請する方法は？",
+        "translation": "我如何申請保固？",
+        "explanation": "詢問申請流程"
+      },
+      {
+        "pattern": "延長保証はありますか？",
+        "translation": "有延長保固嗎？",
+        "explanation": "詢問加購選項"
+      }
+    ]
+  },
+  "shp-5": {
+    "en": [
+      {
+        "pattern": "This product is defective.",
+        "translation": "這個產品有瑕疵。",
+        "explanation": "提出瑕疵投訴的用語"
+      },
+      {
+        "pattern": "I demand a refund.",
+        "translation": "我要求退款。",
+        "explanation": "提出具體要求"
+      },
+      {
+        "pattern": "This is unacceptable.",
+        "translation": "這無法接受。",
+        "explanation": "表達不滿"
+      },
+      {
+        "pattern": "I would like to speak to a manager.",
+        "translation": "我想和經理談。",
+        "explanation": "要求升級處理"
+      },
+      {
+        "pattern": "What compensation can you offer?",
+        "translation": "你能提供什麼補償？",
+        "explanation": "詢問補償方案"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "この製品には欠陥があります。",
+        "translation": "這個產品有瑕疵",
+        "explanation": "提出瑕疵投訴的用語"
+      },
+      {
+        "pattern": "返金を求めます。",
+        "translation": "我要求退款",
+        "explanation": "提出具體要求"
+      },
+      {
+        "pattern": "これは受け入れられません。",
+        "translation": "這無法接受",
+        "explanation": "表達不滿"
+      },
+      {
+        "pattern": "店長と話したいです。",
+        "translation": "我想和經理談",
+        "explanation": "要求升級處理"
+      },
+      {
+        "pattern": "どのような補償を提供できますか？",
+        "translation": "你能提供什麼補償？",
+        "explanation": "詢問補償方案"
+      }
+    ]
+  },
+  "shp-6": {
+    "en": [
+      {
+        "pattern": "What are the differences between...?",
+        "translation": "這兩款有什麼不同？",
+        "explanation": "開始比較產品的用語"
+      },
+      {
+        "pattern": "Which has better performance?",
+        "translation": "哪個性能更好？",
+        "explanation": "詢問性能差異"
+      },
+      {
+        "pattern": "What are the specifications?",
+        "translation": "規格是什麼？",
+        "explanation": "詢問技術細節"
+      },
+      {
+        "pattern": "Which would you recommend?",
+        "translation": "你會推薦哪個？",
+        "explanation": "請求建議"
+      },
+      {
+        "pattern": "Is the price difference worth it?",
+        "translation": "價差值得嗎？",
+        "explanation": "詢問性價比"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "この2つの違いは何ですか？",
+        "translation": "這兩款有什麼不同？",
+        "explanation": "開始比較產品的用語"
+      },
+      {
+        "pattern": "どちらの性能が良いですか？",
+        "translation": "哪個性能更好？",
+        "explanation": "詢問性能差異"
+      },
+      {
+        "pattern": "仕様は何ですか？",
+        "translation": "規格是什麼？",
+        "explanation": "詢問技術細節"
+      },
+      {
+        "pattern": "どちらをお勧めしますか？",
+        "translation": "你會推薦哪個？",
+        "explanation": "請求建議"
+      },
+      {
+        "pattern": "価格差は価値がありますか？",
+        "translation": "價差值得嗎？",
+        "explanation": "詢問性價比"
+      }
+    ]
+  },
+  "din-1": {
+    "en": [
+      {
+        "pattern": "May I see the menu?",
+        "translation": "能給我菜單嗎？",
+        "explanation": "點餐的標準開場用語"
+      },
+      {
+        "pattern": "I would like to order...",
+        "translation": "我想要點...",
+        "explanation": "開始點餐的用語"
+      },
+      {
+        "pattern": "What do you recommend?",
+        "translation": "你有什麼推薦嗎？",
+        "explanation": "請求推薦"
+      },
+      {
+        "pattern": "Is this dish spicy?",
+        "translation": "這道菜辣嗎？",
+        "explanation": "詢問口味"
+      },
+      {
+        "pattern": "That is all, thank you.",
+        "translation": "這樣就好，謝謝。",
+        "explanation": "結束點餐的用語"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "メニューを見せていただけますか？",
+        "translation": "能給我菜單嗎？",
+        "explanation": "點餐的標準開場用語"
+      },
+      {
+        "pattern": "...を注文したいです。",
+        "translation": "我想要點...",
+        "explanation": "開始點餐的用語"
+      },
+      {
+        "pattern": "おすすめは何ですか？",
+        "translation": "你有什麼推薦嗎？",
+        "explanation": "請求推薦"
+      },
+      {
+        "pattern": "この料理は辛いですか？",
+        "translation": "這道菜辣嗎？",
+        "explanation": "詢問口味"
+      },
+      {
+        "pattern": "以上です、ありがとうございます。",
+        "translation": "這樣就好，謝謝",
+        "explanation": "結束點餐的用語"
+      }
+    ]
+  },
+  "din-2": {
+    "en": [
+      {
+        "pattern": "What is the special today?",
+        "translation": "今日特餐是什麼？",
+        "explanation": "詢問特餐的標準用語"
+      },
+      {
+        "pattern": "Is there a set menu?",
+        "translation": "有套餐嗎？",
+        "explanation": "詢問套餐選項"
+      },
+      {
+        "pattern": "What does it come with?",
+        "translation": "這道菜附什麼？",
+        "explanation": "詢問配菜內容"
+      },
+      {
+        "pattern": "Can I substitute...?",
+        "translation": "我能把...換成...嗎？",
+        "explanation": "請求替換"
+      },
+      {
+        "pattern": "That sounds good.",
+        "translation": "聽起來不錯。",
+        "explanation": "表示有興趣"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "今日のスペシャルは何ですか？",
+        "translation": "今日特餐是什麼？",
+        "explanation": "詢問特餐的標準用語"
+      },
+      {
+        "pattern": "セットメニューはありますか？",
+        "translation": "有套餐嗎？",
+        "explanation": "詢問套餐選項"
+      },
+      {
+        "pattern": "何がついてきますか？",
+        "translation": "這道菜附什麼？",
+        "explanation": "詢問配菜內容"
+      },
+      {
+        "pattern": "...に変更できますか？",
+        "translation": "我能把...換成...嗎？",
+        "explanation": "請求替換"
+      },
+      {
+        "pattern": "それは良さそうですね。",
+        "translation": "聽起來不錯",
+        "explanation": "表示有興趣"
+      }
+    ]
+  },
+  "din-3": {
+    "en": [
+      {
+        "pattern": "I have a food allergy.",
+        "translation": "我有食物過敏。",
+        "explanation": "告知過敏的開場用語"
+      },
+      {
+        "pattern": "I am allergic to...",
+        "translation": "我對...過敏。",
+        "explanation": "說明過敏原"
+      },
+      {
+        "pattern": "Does this contain...?",
+        "translation": "這個含有...嗎？",
+        "explanation": "詢問成分"
+      },
+      {
+        "pattern": "Can you prepare it without...?",
+        "translation": "能不要加...嗎？",
+        "explanation": "請求調整"
+      },
+      {
+        "pattern": "Thank you for checking.",
+        "translation": "謝謝你的確認。",
+        "explanation": "表達感謝"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "食物アレルギーがあります。",
+        "translation": "我有食物過敏",
+        "explanation": "告知過敏的開場用語"
+      },
+      {
+        "pattern": "私は...にアレルギーがあります。",
+        "translation": "我對...過敏",
+        "explanation": "說明過敏原"
+      },
+      {
+        "pattern": "これには...が含まれていますか？",
+        "translation": "這個含有...嗎？",
+        "explanation": "詢問成分"
+      },
+      {
+        "pattern": "...なしで作れますか？",
+        "translation": "能不要加...嗎？",
+        "explanation": "請求調整"
+      },
+      {
+        "pattern": "確認ありがとうございます。",
+        "translation": "謝謝你的確認",
+        "explanation": "表達感謝"
+      }
+    ]
+  },
+  "din-4": {
+    "en": [
+      {
+        "pattern": "I would like to make a reservation.",
+        "translation": "我想要訂位。",
+        "explanation": "開始預約的用語"
+      },
+      {
+        "pattern": "For how many people?",
+        "translation": "幾位？",
+        "explanation": "詢問人數"
+      },
+      {
+        "pattern": "What time is available?",
+        "translation": "有什麼時間可選？",
+        "explanation": "詢問可預約時間"
+      },
+      {
+        "pattern": "Can I get a window seat?",
+        "translation": "能給我靠窗的位子嗎？",
+        "explanation": "提出座位偏好"
+      },
+      {
+        "pattern": "I need to cancel my reservation.",
+        "translation": "我需要取消預約。",
+        "explanation": "取消預約的用語"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "予約をしたいのですが。",
+        "translation": "我想要訂位",
+        "explanation": "開始預約的用語"
+      },
+      {
+        "pattern": "何名様ですか？",
+        "translation": "幾位？",
+        "explanation": "詢問人數"
+      },
+      {
+        "pattern": "何時が空いていますか？",
+        "translation": "有什麼時間可選？",
+        "explanation": "詢問可預約時間"
+      },
+      {
+        "pattern": "窓側の席は取れますか？",
+        "translation": "能給我靠窗的位子嗎？",
+        "explanation": "提出座位偏好"
+      },
+      {
+        "pattern": "予約をキャンセルしたいです。",
+        "translation": "我需要取消預約",
+        "explanation": "取消預約的用語"
+      }
+    ]
+  },
+  "din-5": {
+    "en": [
+      {
+        "pattern": "I need to speak with the manager.",
+        "translation": "我需要和經理談。",
+        "explanation": "提出投訴的開場用語"
+      },
+      {
+        "pattern": "The service has been unsatisfactory.",
+        "translation": "服務令人不滿意。",
+        "explanation": "說明問題"
+      },
+      {
+        "pattern": "We have been waiting for...",
+        "translation": "我們已經等了...",
+        "explanation": "說明等待時間"
+      },
+      {
+        "pattern": "This is not what I ordered.",
+        "translation": "這不是我點的。",
+        "explanation": "指出錯誤"
+      },
+      {
+        "pattern": "How will you resolve this?",
+        "translation": "你們如何解決這個問題？",
+        "explanation": "詢問解決方案"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "店長と話したいです。",
+        "translation": "我需要和經理談",
+        "explanation": "提出投訴的開場用語"
+      },
+      {
+        "pattern": "サービスに満足できませんでした。",
+        "translation": "服務令人不滿意",
+        "explanation": "說明問題"
+      },
+      {
+        "pattern": "...待っています。",
+        "translation": "我們已經等了...",
+        "explanation": "說明等待時間"
+      },
+      {
+        "pattern": "これは私が注文したものではありません。",
+        "translation": "這不是我點的",
+        "explanation": "指出錯誤"
+      },
+      {
+        "pattern": "どのように解決しますか？",
+        "translation": "你們如何解決這個問題？",
+        "explanation": "詢問解決方案"
+      }
+    ]
+  },
+  "din-6": {
+    "en": [
+      {
+        "pattern": "The ambiance is...",
+        "translation": "氛圍是...",
+        "explanation": "評價用餐環境的用語"
+      },
+      {
+        "pattern": "The presentation was beautiful.",
+        "translation": "擺盤很漂亮。",
+        "explanation": "評價外觀"
+      },
+      {
+        "pattern": "The flavors were...",
+        "translation": "口味...",
+        "explanation": "評價味道"
+      },
+      {
+        "pattern": "I would give it... stars.",
+        "translation": "我會給它...顆星。",
+        "explanation": "給出評分"
+      },
+      {
+        "pattern": "I would definitely recommend.",
+        "translation": "我絕對會推薦。",
+        "explanation": "總結推薦"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "雰囲気は...",
+        "translation": "氛圍是...",
+        "explanation": "評價用餐環境的用語"
+      },
+      {
+        "pattern": "盛り付けが美しかったです。",
+        "translation": "擺盤很漂亮",
+        "explanation": "評價外觀"
+      },
+      {
+        "pattern": "味は...",
+        "translation": "口味...",
+        "explanation": "評價味道"
+      },
+      {
+        "pattern": "星...個あげます。",
+        "translation": "我會給它...顆星",
+        "explanation": "給出評分"
+      },
+      {
+        "pattern": "ぜひおすすめします。",
+        "translation": "我絕對會推薦",
+        "explanation": "總結推薦"
+      }
+    ]
+  },
+  "pet-1": {
+    "en": [
+      {
+        "pattern": "This is my pet...",
+        "translation": "這是我的寵物...",
+        "explanation": "介紹寵物的開場用語"
+      },
+      {
+        "pattern": "He/She is a...",
+        "translation": "他/她是...",
+        "explanation": "說明品種"
+      },
+      {
+        "pattern": "He/She is... years old.",
+        "translation": "他/她...歲了。",
+        "explanation": "說明年齡"
+      },
+      {
+        "pattern": "His/Her personality is...",
+        "translation": "他/她的個性是...",
+        "explanation": "描述性格"
+      },
+      {
+        "pattern": "Would you like to pet him/her?",
+        "translation": "你想摸摸他/她嗎？",
+        "explanation": "邀請互動"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "これは私のペット...",
+        "translation": "這是我的寵物...",
+        "explanation": "介紹寵物的開場用語"
+      },
+      {
+        "pattern": "彼/彼女は...です。",
+        "translation": "他/她是...",
+        "explanation": "說明品種"
+      },
+      {
+        "pattern": "...歳です。",
+        "translation": "他/她...歲了",
+        "explanation": "說明年齡"
+      },
+      {
+        "pattern": "性格は...",
+        "translation": "他/她的個性是...",
+        "explanation": "描述性格"
+      },
+      {
+        "pattern": "撫でてみますか？",
+        "translation": "你想摸摸他/她嗎？",
+        "explanation": "邀請互動"
+      }
+    ]
+  },
+  "pet-2": {
+    "en": [
+      {
+        "pattern": "I need food for...",
+        "translation": "我需要...的食物。",
+        "explanation": "開始選購寵物食品的用語"
+      },
+      {
+        "pattern": "What brand do you recommend?",
+        "translation": "你推薦什麼品牌？",
+        "explanation": "請求推薦"
+      },
+      {
+        "pattern": "Is this suitable for...",
+        "translation": "這個適合...嗎？",
+        "explanation": "詢問適用性"
+      },
+      {
+        "pattern": "What is the nutritional content?",
+        "translation": "營養成分是什麼？",
+        "explanation": "詢問營養資訊"
+      },
+      {
+        "pattern": "Do you have any samples?",
+        "translation": "有試吃包嗎？",
+        "explanation": "詢問試用品"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "...の餌が必要です。",
+        "translation": "我需要...的食物",
+        "explanation": "開始選購寵物食品的用語"
+      },
+      {
+        "pattern": "どのブランドをお勧めしますか？",
+        "translation": "你推薦什麼品牌？",
+        "explanation": "請求推薦"
+      },
+      {
+        "pattern": "これは...に適していますか？",
+        "translation": "這個適合...嗎？",
+        "explanation": "詢問適用性"
+      },
+      {
+        "pattern": "栄養成分は何ですか？",
+        "translation": "營養成分是什麼？",
+        "explanation": "詢問營養資訊"
+      },
+      {
+        "pattern": "サンプルはありますか？",
+        "translation": "有試吃包嗎？",
+        "explanation": "詢問試用品"
+      }
+    ]
+  },
+  "pet-3": {
+    "en": [
+      {
+        "pattern": "I need to see the vet.",
+        "translation": "我需要看獸醫。",
+        "explanation": "開始就診的用語"
+      },
+      {
+        "pattern": "My pet has been...",
+        "translation": "我的寵物一直在...",
+        "explanation": "描述症狀"
+      },
+      {
+        "pattern": "It started about...",
+        "translation": "大約在...開始。",
+        "explanation": "說明時間"
+      },
+      {
+        "pattern": "He/She has been eating...",
+        "translation": "他/她一直在吃...",
+        "explanation": "說明食慾"
+      },
+      {
+        "pattern": "Is this an emergency?",
+        "translation": "這是緊急情況嗎？",
+        "explanation": "詢問嚴重程度"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "獣医さんに診てもらう必要があります。",
+        "translation": "我需要看獸醫",
+        "explanation": "開始就診的用語"
+      },
+      {
+        "pattern": "ペットが...しています。",
+        "translation": "我的寵物一直在...",
+        "explanation": "描述症狀"
+      },
+      {
+        "pattern": "...頃から始まりました。",
+        "translation": "大約在...開始",
+        "explanation": "說明時間"
+      },
+      {
+        "pattern": "食べている量は...",
+        "translation": "他/她一直在吃...",
+        "explanation": "說明食慾"
+      },
+      {
+        "pattern": "これは緊急ですか？",
+        "translation": "這是緊急情況嗎？",
+        "explanation": "詢問嚴重程度"
+      }
+    ]
+  },
+  "pet-4": {
+    "en": [
+      {
+        "pattern": "I need help training my pet.",
+        "translation": "我需要訓練寵物的幫助。",
+        "explanation": "開始諮詢的用語"
+      },
+      {
+        "pattern": "He/She keeps...",
+        "translation": "他/她一直...",
+        "explanation": "描述問題行為"
+      },
+      {
+        "pattern": "What training methods work?",
+        "translation": "什麼訓練方法有效？",
+        "explanation": "詢問方法"
+      },
+      {
+        "pattern": "How long does training take?",
+        "translation": "訓練需要多久？",
+        "explanation": "詢問時間"
+      },
+      {
+        "pattern": "Can you recommend a trainer?",
+        "translation": "你能推薦訓練師嗎？",
+        "explanation": "請求推薦"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "ペットの訓練について相談したいです。",
+        "translation": "我需要訓練寵物的幫助",
+        "explanation": "開始諮詢的用語"
+      },
+      {
+        "pattern": "ずっと...します。",
+        "translation": "他/她一直...",
+        "explanation": "描述問題行為"
+      },
+      {
+        "pattern": "どの訓練方法が効果的ですか？",
+        "translation": "什麼訓練方法有效？",
+        "explanation": "詢問方法"
+      },
+      {
+        "pattern": "訓練にはどれくらいかかりますか？",
+        "translation": "訓練需要多久？",
+        "explanation": "詢問時間"
+      },
+      {
+        "pattern": "トレーナーを推薦していただけますか？",
+        "translation": "你能推薦訓練師嗎？",
+        "explanation": "請求推薦"
+      }
+    ]
+  },
+  "pet-5": {
+    "en": [
+      {
+        "pattern": "I am moving abroad with my pet.",
+        "translation": "我要帶寵物移民國外。",
+        "explanation": "開始諮詢的用語"
+      },
+      {
+        "pattern": "What documents do I need?",
+        "translation": "我需要哪些文件？",
+        "explanation": "詢問所需文件"
+      },
+      {
+        "pattern": "Is quarantine required?",
+        "translation": "需要隔離嗎？",
+        "explanation": "詢問檢疫要求"
+      },
+      {
+        "pattern": "Which airlines allow pets?",
+        "translation": "哪些航空公司允許攜帶寵物？",
+        "explanation": "詢問運輸選項"
+      },
+      {
+        "pattern": "What vaccinations are required?",
+        "translation": "需要哪些疫苗？",
+        "explanation": "詢問疫苗要求"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "ペットと一緒に海外へ引っ越します。",
+        "translation": "我要帶寵物移民國外",
+        "explanation": "開始諮詢的用語"
+      },
+      {
+        "pattern": "必要な書類は何ですか？",
+        "translation": "我需要哪些文件？",
+        "explanation": "詢問所需文件"
+      },
+      {
+        "pattern": "検疫は必要ですか？",
+        "translation": "需要隔離嗎？",
+        "explanation": "詢問檢疫要求"
+      },
+      {
+        "pattern": "どの航空会社がペットを許可していますか？",
+        "translation": "哪些航空公司允許攜帶寵物？",
+        "explanation": "詢問運輸選項"
+      },
+      {
+        "pattern": "必要なワクチンは何ですか？",
+        "translation": "需要哪些疫苗？",
+        "explanation": "詢問疫苗要求"
+      }
+    ]
+  },
+  "pet-6": {
+    "en": [
+      {
+        "pattern": "My pet has behavioral issues.",
+        "translation": "我的寵物有行為問題。",
+        "explanation": "開始諮詢的用語"
+      },
+      {
+        "pattern": "He/She seems anxious when...",
+        "translation": "當...時他/她似乎很焦慮。",
+        "explanation": "描述症狀"
+      },
+      {
+        "pattern": "What could be the cause?",
+        "translation": "可能的原因是什麼？",
+        "explanation": "詢問原因"
+      },
+      {
+        "pattern": "Are there treatments available?",
+        "translation": "有可用的治療方法嗎？",
+        "explanation": "詢問解決方案"
+      },
+      {
+        "pattern": "How can I help at home?",
+        "translation": "我在家能如何幫助？",
+        "explanation": "詢問日常照護"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "ペットに行動の問題があります。",
+        "translation": "我的寵物有行為問題",
+        "explanation": "開始諮詢的用語"
+      },
+      {
+        "pattern": "...の時に不安そうに見えます。",
+        "translation": "當...時他/她似乎很焦慮",
+        "explanation": "描述症狀"
+      },
+      {
+        "pattern": "原因は何でしょうか？",
+        "translation": "可能的原因是什麼？",
+        "explanation": "詢問原因"
+      },
+      {
+        "pattern": "利用可能な治療法はありますか？",
+        "translation": "有可用的治療方法嗎？",
+        "explanation": "詢問解決方案"
+      },
+      {
+        "pattern": "家でどう手助けできますか？",
+        "translation": "我在家能如何幫助？",
+        "explanation": "詢問日常照護"
+      }
+    ]
+  },
+  "hlt-1": {
+    "en": [
+      {
+        "pattern": "I have pain in my...",
+        "translation": "我的...會痛。",
+        "explanation": "描述疼痛位置的基本用語"
+      },
+      {
+        "pattern": "It hurts when I...",
+        "translation": "當我...時會痛。",
+        "explanation": "說明觸發疼痛的動作"
+      },
+      {
+        "pattern": "The pain is...",
+        "translation": "疼痛是...",
+        "explanation": "描述疼痛性質（如刺痛、鈍痛）"
+      },
+      {
+        "pattern": "It started about...",
+        "translation": "大約在...開始的。",
+        "explanation": "說明時間"
+      },
+      {
+        "pattern": "On a scale of 1 to 10...",
+        "translation": "以1到10分來評估...",
+        "explanation": "描述疼痛程度"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "私の...が痛みます。",
+        "translation": "我的...會痛",
+        "explanation": "描述疼痛位置的基本用語"
+      },
+      {
+        "pattern": "...すると痛みます。",
+        "translation": "當我...時會痛",
+        "explanation": "說明觸發疼痛的動作"
+      },
+      {
+        "pattern": "痛みは...",
+        "translation": "疼痛是...",
+        "explanation": "描述疼痛性質"
+      },
+      {
+        "pattern": "...頃から始まりました。",
+        "translation": "大約在...開始的",
+        "explanation": "說明時間"
+      },
+      {
+        "pattern": "1から10の段階で...",
+        "translation": "以1到10分來評估...",
+        "explanation": "描述疼痛程度"
+      }
+    ]
+  },
+  "hlt-2": {
+    "en": [
+      {
+        "pattern": "I need something for a cold.",
+        "translation": "我需要感冒藥。",
+        "explanation": "開始購藥的用語"
+      },
+      {
+        "pattern": "My symptoms include...",
+        "translation": "我的症狀包括...",
+        "explanation": "描述症狀"
+      },
+      {
+        "pattern": "What do you recommend?",
+        "translation": "你推薦什麼？",
+        "explanation": "請求推薦"
+      },
+      {
+        "pattern": "Are there any side effects?",
+        "translation": "有副作用嗎？",
+        "explanation": "詢問注意事項"
+      },
+      {
+        "pattern": "How should I take this?",
+        "translation": "我該如何服用？",
+        "explanation": "詢問用法"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "風邪薬が必要です。",
+        "translation": "我需要感冒藥",
+        "explanation": "開始購藥的用語"
+      },
+      {
+        "pattern": "症状には...があります。",
+        "translation": "我的症狀包括...",
+        "explanation": "描述症狀"
+      },
+      {
+        "pattern": "何をお勧めしますか？",
+        "translation": "你推薦什麼？",
+        "explanation": "請求推薦"
+      },
+      {
+        "pattern": "副作用はありますか？",
+        "translation": "有副作用嗎？",
+        "explanation": "詢問注意事項"
+      },
+      {
+        "pattern": "どのように服用すればよいですか？",
+        "translation": "我該如何服用？",
+        "explanation": "詢問用法"
+      }
+    ]
+  },
+  "hlt-3": {
+    "en": [
+      {
+        "pattern": "I am here for my test results.",
+        "translation": "我來看檢查結果。",
+        "explanation": "開始就診的用語"
+      },
+      {
+        "pattern": "What do the results show?",
+        "translation": "結果顯示什麼？",
+        "explanation": "詢問結果"
+      },
+      {
+        "pattern": "Is everything normal?",
+        "translation": "一切正常嗎？",
+        "explanation": "確認健康狀態"
+      },
+      {
+        "pattern": "Do I need any treatment?",
+        "translation": "我需要治療嗎？",
+        "explanation": "詢問下一步"
+      },
+      {
+        "pattern": "When should I come back?",
+        "translation": "我該什麼時候回診？",
+        "explanation": "詢問回診時間"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "検査結果を受け取りに来ました。",
+        "translation": "我來看檢查結果",
+        "explanation": "開始就診的用語"
+      },
+      {
+        "pattern": "結果は何を示していますか？",
+        "translation": "結果顯示什麼？",
+        "explanation": "詢問結果"
+      },
+      {
+        "pattern": "すべて正常ですか？",
+        "translation": "一切正常嗎？",
+        "explanation": "確認健康狀態"
+      },
+      {
+        "pattern": "治療は必要ですか？",
+        "translation": "我需要治療嗎？",
+        "explanation": "詢問下一步"
+      },
+      {
+        "pattern": "いつ再診すればよいですか？",
+        "translation": "我該什麼時候回診？",
+        "explanation": "詢問回診時間"
+      }
+    ]
+  },
+  "hlt-4": {
+    "en": [
+      {
+        "pattern": "I would like to make an appointment.",
+        "translation": "我想要預約門診。",
+        "explanation": "開始預約的用語"
+      },
+      {
+        "pattern": "Which doctor are you seeing?",
+        "translation": "您要看哪位醫生？",
+        "explanation": "詢問醫生偏好"
+      },
+      {
+        "pattern": "When is the next available slot?",
+        "translation": "下一個可預約時段是什麼時候？",
+        "explanation": "詢問時間"
+      },
+      {
+        "pattern": "I need a referral for...",
+        "translation": "我需要...的轉診。",
+        "explanation": "說明轉診需求"
+      },
+      {
+        "pattern": "Please confirm the appointment.",
+        "translation": "請確認預約。",
+        "explanation": "請求確認"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "予約をしたいのですが。",
+        "translation": "我想要預約門診",
+        "explanation": "開始預約的用語"
+      },
+      {
+        "pattern": "どの先生に診てもらいますか？",
+        "translation": "您要看哪位醫生？",
+        "explanation": "詢問醫生偏好"
+      },
+      {
+        "pattern": "次の空き枠はいつですか？",
+        "translation": "下一個可預約時段是什麼時候？",
+        "explanation": "詢問時間"
+      },
+      {
+        "pattern": "...の紹介状が必要です。",
+        "translation": "我需要...的轉診",
+        "explanation": "說明轉診需求"
+      },
+      {
+        "pattern": "予約を確認してください。",
+        "translation": "請確認預約",
+        "explanation": "請求確認"
+      }
+    ]
+  },
+  "hlt-5": {
+    "en": [
+      {
+        "pattern": "Let us discuss your treatment plan.",
+        "translation": "我們來討論您的治療方案。",
+        "explanation": "開始討論的開場白"
+      },
+      {
+        "pattern": "You will need to take...",
+        "translation": "您需要服用...",
+        "explanation": "說明用藥"
+      },
+      {
+        "pattern": "Lifestyle changes include...",
+        "translation": "生活方式改變包括...",
+        "explanation": "說明日常照護"
+      },
+      {
+        "pattern": "We should monitor...",
+        "translation": "我們應該監測...",
+        "explanation": "說明追蹤項目"
+      },
+      {
+        "pattern": "Do you have any questions?",
+        "translation": "有任何問題嗎？",
+        "explanation": "確認理解"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "治療計画について話し合いましょう。",
+        "translation": "我們來討論您的治療方案",
+        "explanation": "開始討論的開場白"
+      },
+      {
+        "pattern": "...を服用する必要があります。",
+        "translation": "您需要服用...",
+        "explanation": "說明用藥"
+      },
+      {
+        "pattern": "生活習慣の変化には...があります。",
+        "translation": "生活方式改變包括...",
+        "explanation": "說明日常照護"
+      },
+      {
+        "pattern": "...を監視すべきです。",
+        "translation": "我們應該監測...",
+        "explanation": "說明追蹤項目"
+      },
+      {
+        "pattern": "ご質問はありますか？",
+        "translation": "有任何問題嗎？",
+        "explanation": "確認理解"
+      }
+    ]
+  },
+  "hlt-6": {
+    "en": [
+      {
+        "pattern": "I will explain the procedure.",
+        "translation": "我將解釋手術流程。",
+        "explanation": "開始說明的用語"
+      },
+      {
+        "pattern": "The risks include...",
+        "translation": "風險包括...",
+        "explanation": "說明風險"
+      },
+      {
+        "pattern": "The benefits are...",
+        "translation": "好處是...",
+        "explanation": "說明益處"
+      },
+      {
+        "pattern": "Do you understand?",
+        "translation": "您了解嗎？",
+        "explanation": "確認理解"
+      },
+      {
+        "pattern": "Please sign here.",
+        "translation": "請在此簽名。",
+        "explanation": "請求簽署"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "手術の流れを説明します。",
+        "translation": "我將解釋手術流程",
+        "explanation": "開始說明的用語"
+      },
+      {
+        "pattern": "リスクには...があります。",
+        "translation": "風險包括...",
+        "explanation": "說明風險"
+      },
+      {
+        "pattern": "メリットは...",
+        "translation": "好處是...",
+        "explanation": "說明益處"
+      },
+      {
+        "pattern": "理解されましたか？",
+        "translation": "您了解嗎？",
+        "explanation": "確認理解"
+      },
+      {
+        "pattern": "ここにサインしてください。",
+        "translation": "請在此簽名",
+        "explanation": "請求簽署"
+      }
+    ]
+  },
+  "trv-1": {
+    "en": [
+      {
+        "pattern": "I would like to check in.",
+        "translation": "我想要辦理登機。",
+        "explanation": "機場報到的標準用語"
+      },
+      {
+        "pattern": "Here is my passport.",
+        "translation": "這是我的護照。",
+        "explanation": "出示證件"
+      },
+      {
+        "pattern": "I would like a window seat.",
+        "translation": "我想要靠窗的位子。",
+        "explanation": "選擇座位偏好"
+      },
+      {
+        "pattern": "How much luggage can I check?",
+        "translation": "我能托運多少行李？",
+        "explanation": "詢問行李限制"
+      },
+      {
+        "pattern": "When does boarding start?",
+        "translation": "什麼時候開始登機？",
+        "explanation": "詢問登機時間"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "チェックインしたいです。",
+        "translation": "我想要辦理登機",
+        "explanation": "機場報到的標準用語"
+      },
+      {
+        "pattern": "パスポートです。",
+        "translation": "這是我的護照",
+        "explanation": "出示證件"
+      },
+      {
+        "pattern": "窓側の席がいいです。",
+        "translation": "我想要靠窗的位子",
+        "explanation": "選擇座位偏好"
+      },
+      {
+        "pattern": "荷物はいくつまで預けられますか？",
+        "translation": "我能托運多少行李？",
+        "explanation": "詢問行李限制"
+      },
+      {
+        "pattern": "搭乗はいつ始まりますか？",
+        "translation": "什麼時候開始登機？",
+        "explanation": "詢問登機時間"
+      }
+    ]
+  },
+  "trv-2": {
+    "en": [
+      {
+        "pattern": "Excuse me, how do I get to...?",
+        "translation": "不好意思，我要怎麼去...？",
+        "explanation": "詢問方向的標準用語"
+      },
+      {
+        "pattern": "Is it within walking distance?",
+        "translation": "走路能到嗎？",
+        "explanation": "詢問距離"
+      },
+      {
+        "pattern": "Should I take a taxi?",
+        "translation": "我應該搭計程車嗎？",
+        "explanation": "詢問交通選項"
+      },
+      {
+        "pattern": "Which bus should I take?",
+        "translation": "我應該搭幾號公車？",
+        "explanation": "詢問具體路線"
+      },
+      {
+        "pattern": "Thank you for your help.",
+        "translation": "謝謝你的幫忙。",
+        "explanation": "表達感謝"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "すみません、...への行き方は？",
+        "translation": "不好意思，我要怎麼去...？",
+        "explanation": "詢問方向的標準用語"
+      },
+      {
+        "pattern": "歩いて行けますか？",
+        "translation": "走路能到嗎？",
+        "explanation": "詢問距離"
+      },
+      {
+        "pattern": "タクシーを使うべきですか？",
+        "translation": "我應該搭計程車嗎？",
+        "explanation": "詢問交通選項"
+      },
+      {
+        "pattern": "どのバスに乗ればよいですか？",
+        "translation": "我應該搭幾號公車？",
+        "explanation": "詢問具體路線"
+      },
+      {
+        "pattern": "ありがとうございました。",
+        "translation": "謝謝你的幫忙",
+        "explanation": "表達感謝"
+      }
+    ]
+  },
+  "trv-3": {
+    "en": [
+      {
+        "pattern": "I have a reservation.",
+        "translation": "我有預訂房間。",
+        "explanation": "辦理入住的標準用語"
+      },
+      {
+        "pattern": "There seems to be a problem.",
+        "translation": "似乎有個問題。",
+        "explanation": "提出問題的開場白"
+      },
+      {
+        "pattern": "I booked a... room.",
+        "translation": "我訂的是...房型。",
+        "explanation": "說明訂房內容"
+      },
+      {
+        "pattern": "What are my options?",
+        "translation": "我有什麼選擇？",
+        "explanation": "詢問替代方案"
+      },
+      {
+        "pattern": "Can you find another hotel?",
+        "translation": "你能幫我找其他飯店嗎？",
+        "explanation": "請求協助"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "予約しています。",
+        "translation": "我有預訂房間",
+        "explanation": "辦理入住的標準用語"
+      },
+      {
+        "pattern": "問題があるようです。",
+        "translation": "似乎有個問題",
+        "explanation": "提出問題的開場白"
+      },
+      {
+        "pattern": "私は...の部屋を予約しました。",
+        "translation": "我訂的是...房型",
+        "explanation": "說明訂房內容"
+      },
+      {
+        "pattern": "私の選択肢は何ですか？",
+        "translation": "我有什麼選擇？",
+        "explanation": "詢問替代方案"
+      },
+      {
+        "pattern": "他のホテルを探してもらえますか？",
+        "translation": "你能幫我找其他飯店嗎？",
+        "explanation": "請求協助"
+      }
+    ]
+  },
+  "trv-4": {
+    "en": [
+      {
+        "pattern": "Let us plan our itinerary.",
+        "translation": "我們來規劃行程。",
+        "explanation": "開始討論的開場白"
+      },
+      {
+        "pattern": "What attractions should we visit?",
+        "translation": "我們應該參觀哪些景點？",
+        "explanation": "詢問景點建議"
+      },
+      {
+        "pattern": "How many days should we spend in...?",
+        "translation": "我們應該在...待幾天？",
+        "explanation": "討論時間分配"
+      },
+      {
+        "pattern": "Let us book tickets in advance.",
+        "translation": "我們提前買票吧。",
+        "explanation": "提議具體行動"
+      },
+      {
+        "pattern": "We should leave some flexibility.",
+        "translation": "我們應該留點彈性。",
+        "explanation": "提出規劃建議"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "旅程を計画しましょう。",
+        "translation": "我們來規劃行程",
+        "explanation": "開始討論的開場白"
+      },
+      {
+        "pattern": "どの観光地を訪れるべきですか？",
+        "translation": "我們應該參觀哪些景點？",
+        "explanation": "詢問景點建議"
+      },
+      {
+        "pattern": "...には何日滞在すべきですか？",
+        "translation": "我們應該在...待幾天？",
+        "explanation": "討論時間分配"
+      },
+      {
+        "pattern": "事前にチケットを予約しましょう。",
+        "translation": "我們提前買票吧",
+        "explanation": "提議具體行動"
+      },
+      {
+        "pattern": "ある程度柔軟にしておきましょう。",
+        "translation": "我們應該留點彈性",
+        "explanation": "提出規劃建議"
+      }
+    ]
+  },
+  "trv-5": {
+    "en": [
+      {
+        "pattern": "I lost my passport.",
+        "translation": "我弄丟了護照。",
+        "explanation": "報案的開場白"
+      },
+      {
+        "pattern": "I need to report a lost passport.",
+        "translation": "我需要報失護照。",
+        "explanation": "說明需求"
+      },
+      {
+        "pattern": "Where is the nearest police station?",
+        "translation": "最近的警察局在哪裡？",
+        "explanation": "詢問位置"
+      },
+      {
+        "pattern": "How do I contact my embassy?",
+        "translation": "我如何聯繫大使館？",
+        "explanation": "詢問聯絡方式"
+      },
+      {
+        "pattern": "How long does it take to get a replacement?",
+        "translation": "取得替代護照需要多久？",
+        "explanation": "詢問處理時間"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "パスポートを紛失しました。",
+        "translation": "我弄丟了護照",
+        "explanation": "報案的開場白"
+      },
+      {
+        "pattern": "パスポートの紛失を届けたいです。",
+        "translation": "我需要報失護照",
+        "explanation": "說明需求"
+      },
+      {
+        "pattern": "最寄りの警察署はどこですか？",
+        "translation": "最近的警察局在哪裡？",
+        "explanation": "詢問位置"
+      },
+      {
+        "pattern": "大使館にはどう連絡すればよいですか？",
+        "translation": "我如何聯繫大使館？",
+        "explanation": "詢問聯絡方式"
+      },
+      {
+        "pattern": "再発行にはどれくらいかかりますか？",
+        "translation": "取得替代護照需要多久？",
+        "explanation": "詢問處理時間"
+      }
+    ]
+  },
+  "trv-6": {
+    "en": [
+      {
+        "pattern": "Welcome to...",
+        "translation": "歡迎來到...",
+        "explanation": "導覽開場的用語"
+      },
+      {
+        "pattern": "This building dates back to...",
+        "translation": "這棟建築可以追溯到...",
+        "explanation": "說明歷史年代"
+      },
+      {
+        "pattern": "It was built by...",
+        "translation": "它是由...建造的。",
+        "explanation": "說明建造者"
+      },
+      {
+        "pattern": "The architectural style is...",
+        "translation": "建築風格是...",
+        "explanation": "說明風格"
+      },
+      {
+        "pattern": "This site has significant cultural importance.",
+        "translation": "這個地點具有重要的文化意義。",
+        "explanation": "說明文化價值"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "...へようこそ。",
+        "translation": "歡迎來到...",
+        "explanation": "導覽開場的用語"
+      },
+      {
+        "pattern": "この建物は...に遡ります。",
+        "translation": "這棟建築可以追溯到...",
+        "explanation": "說明歷史年代"
+      },
+      {
+        "pattern": "...によって建てられました。",
+        "translation": "它是由...建造的",
+        "explanation": "說明建造者"
+      },
+      {
+        "pattern": "建築様式は...です。",
+        "translation": "建築風格是...",
+        "explanation": "說明風格"
+      },
+      {
+        "pattern": "この場所は重要な文化的意義があります。",
+        "translation": "這個地點具有重要的文化意義",
+        "explanation": "說明文化價值"
+      }
+    ]
+  },
+  "dat-1": {
+    "en": [
+      {
+        "pattern": "Hi, I am [name]. Nice to meet you.",
+        "translation": "嗨，我叫 [名字]。很高興認識你。",
+        "explanation": "初次見面自我介紹的標準用語"
+      },
+      {
+        "pattern": "What do you do for fun?",
+        "translation": "你平時喜歡做什麼？",
+        "explanation": "詢問興趣愛好"
+      },
+      {
+        "pattern": "This place looks nice.",
+        "translation": "這地方看起來不錯。",
+        "explanation": "開啟話題的寒暄語"
+      },
+      {
+        "pattern": "How did you hear about this event?",
+        "translation": "你是怎麼知道這個活動的？",
+        "explanation": "詢問相識由來"
+      },
+      {
+        "pattern": "So, what brings you here today?",
+        "translation": "所以，你今天為什麼來這裡？",
+        "explanation": "自然展開對話"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "はじめまして、[名前]と申します。",
+        "translation": "嗨，我叫 [名字]",
+        "explanation": "初次見面自我介紹的標準用語"
+      },
+      {
+        "pattern": "普段は何をして楽しむことが多いですか？",
+        "translation": "你平時喜歡做什麼？",
+        "explanation": "詢問興趣愛好"
+      },
+      {
+        "pattern": "ここは良さそうですね。",
+        "translation": "這地方看起來不錯",
+        "explanation": "開啟話題的寒暄語"
+      },
+      {
+        "pattern": "このイベントはどう知りましたか？",
+        "translation": "你是怎麼知道這個活動的？",
+        "explanation": "詢問相識由來"
+      },
+      {
+        "pattern": "今日はどうして来たのですか？",
+        "translation": "所以，你今天為什麼來這裡？",
+        "explanation": "自然展開對話"
+      }
+    ]
+  },
+  "dat-2": {
+    "en": [
+      {
+        "pattern": "I love your outfit!",
+        "translation": "我喜歡你的穿著！",
+        "explanation": "稱讚穿著的常用語"
+      },
+      {
+        "pattern": "That color really suits you.",
+        "translation": "那個顏色真的很適合你。",
+        "explanation": "具體稱讚穿著搭配"
+      },
+      {
+        "pattern": "You have great style.",
+        "translation": "你的品味很好。",
+        "explanation": "整體稱讚品味"
+      },
+      {
+        "pattern": "Where did you get that?",
+        "translation": "你那是在哪買的？",
+        "explanation": "自然延伸話題"
+      },
+      {
+        "pattern": "You look great tonight.",
+        "translation": "你今晚真好看。",
+        "explanation": "稱讚對方外貌"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "その服装好きですよ！",
+        "translation": "我喜歡你的穿著！",
+        "explanation": "稱讚穿著的常用語"
+      },
+      {
+        "pattern": "その色がよく似合っています。",
+        "translation": "那個顏色真的很適合你",
+        "explanation": "具體稱讚穿著搭配"
+      },
+      {
+        "pattern": "センスがいいですね。",
+        "translation": "你的品味很好",
+        "explanation": "整體稱讚品味"
+      },
+      {
+        "pattern": "それはどこで買ったのですか？",
+        "translation": "你那是在哪買的？",
+        "explanation": "自然延伸話題"
+      },
+      {
+        "pattern": "今夜とても素敵ですね。",
+        "translation": "你今晚真好看",
+        "explanation": "稱讚對方外貌"
+      }
+    ]
+  },
+  "dat-3": {
+    "en": [
+      {
+        "pattern": "What matters most to you in life?",
+        "translation": "對你來說人生最重要的是什麼？",
+        "explanation": "深入交流的開場白"
+      },
+      {
+        "pattern": "Where do you see yourself in 5 years?",
+        "translation": "五年後你想在哪裡？",
+        "explanation": "討論未來規劃"
+      },
+      {
+        "pattern": "What is your dream?",
+        "translation": "你的夢想是什麼？",
+        "explanation": "詢問人生目標"
+      },
+      {
+        "pattern": "What is your biggest regret?",
+        "translation": "你最大的遺憾是什麼？",
+        "explanation": "深入了解對方"
+      },
+      {
+        "pattern": "I value...",
+        "translation": "我看重...",
+        "explanation": "分享自己的價值觀"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "人生で最も大切なものは何ですか？",
+        "translation": "對你來說人生最重要的是什麼？",
+        "explanation": "深入交流的開場白"
+      },
+      {
+        "pattern": "5年後どうなっていたいですか？",
+        "translation": "五年後你想在哪裡？",
+        "explanation": "討論未來規劃"
+      },
+      {
+        "pattern": "あなたの夢は何ですか？",
+        "translation": "你的夢想是什麼？",
+        "explanation": "詢問人生目標"
+      },
+      {
+        "pattern": "最大の後悔は何ですか？",
+        "translation": "你最大的遺憾是什麼？",
+        "explanation": "深入了解對方"
+      },
+      {
+        "pattern": "私は...を大切にしています。",
+        "translation": "我看重...",
+        "explanation": "分享自己的價值觀"
+      }
+    ]
+  },
+  "dat-4": {
+    "en": [
+      {
+        "pattern": "So, do you come here often?",
+        "translation": "所以，你常來這裡嗎？",
+        "explanation": "化解尷尬的經典問句"
+      },
+      {
+        "pattern": "Have you tried the food here?",
+        "translation": "你有吃過這裡的東西嗎？",
+        "explanation": "轉向食物話題"
+      },
+      {
+        "pattern": "What kind of music do you like?",
+        "translation": "你喜歡什麼類型的音樂？",
+        "explanation": "分享興趣"
+      },
+      {
+        "pattern": "Tell me about your hobbies.",
+        "translation": "說說你的興趣愛好。",
+        "explanation": "邀請對方分享"
+      },
+      {
+        "pattern": "This is a nice place to chat.",
+        "translation": "這是個聊天的很棒的地方。",
+        "explanation": "肯定當下氛圍"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "よくここに来ますか？",
+        "translation": "所以，你常來這裡？",
+        "explanation": "化解尷尬的經典問句"
+      },
+      {
+        "pattern": "ここの料理食べたことある？",
+        "translation": "你有吃過這裡的東西嗎？",
+        "explanation": "轉向食物話題"
+      },
+      {
+        "pattern": "どんな音楽が好きですか？",
+        "translation": "你喜歡什麼類型的音樂？",
+        "explanation": "分享興趣"
+      },
+      {
+        "pattern": "趣味について教えて。",
+        "translation": "說說你的興趣愛好",
+        "explanation": "邀請對方分享"
+      },
+      {
+        "pattern": "ここは会話するのにいい場所ですね。",
+        "translation": "這是個聊天的很棒的地方",
+        "explanation": "肯定當下氛圍"
+      }
+    ]
+  },
+  "dat-5": {
+    "en": [
+      {
+        "pattern": "We need to talk about our relationship.",
+        "translation": "我們需要談談我們的關係。",
+        "explanation": "嚴肅討論的開場白"
+      },
+      {
+        "pattern": "Where is this going?",
+        "translation": "這段關係要往哪裡走？",
+        "explanation": "詢問未來方向"
+      },
+      {
+        "pattern": "I think we are on different pages.",
+        "translation": "我覺得我們不在同一個頻道上。",
+        "explanation": "表達認知差距"
+      },
+      {
+        "pattern": "What do you want from this relationship?",
+        "translation": "你從這段關係中想要什麼？",
+        "explanation": "詢問對方期望"
+      },
+      {
+        "pattern": "I am looking for something serious.",
+        "translation": "我在找認真的關係。",
+        "explanation": "表明自己的意圖"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "私たちの関係について話す必要があります。",
+        "translation": "我們需要談談我們的關係",
+        "explanation": "嚴肅討論的開場白"
+      },
+      {
+        "pattern": "これってどうなるの？",
+        "translation": "這段關係要往哪裡走？",
+        "explanation": "詢問未來方向"
+      },
+      {
+        "pattern": "私たちが見ているものが違うと思います。",
+        "translation": "我覺得我們認知不同",
+        "explanation": "表達認知差距"
+      },
+      {
+        "pattern": "この関係から何を望んでいますか？",
+        "translation": "你從這段關係中想要什麼？",
+        "explanation": "詢問對方期望"
+      },
+      {
+        "pattern": "私は真剣な関係を望んでいます。",
+        "translation": "我在找認真的關係",
+        "explanation": "表明自己的意圖"
+      }
+    ]
+  },
+  "dat-6": {
+    "en": [
+      {
+        "pattern": "I see your point, but I feel differently.",
+        "translation": "我明白你的觀點，但我有不同的感受。",
+        "explanation": "表達不同意見的禮貌方式"
+      },
+      {
+        "pattern": "Let us find a compromise.",
+        "translation": "讓我們找個折衷方案。",
+        "explanation": "尋求共識"
+      },
+      {
+        "pattern": "I understand where you are coming from.",
+        "translation": "我理解你的出發點。",
+        "explanation": "展現同理心"
+      },
+      {
+        "pattern": "Can we agree to disagree?",
+        "translation": "我們能保留各自意見嗎？",
+        "explanation": "接受分歧"
+      },
+      {
+        "pattern": "This is important to me.",
+        "translation": "這對我很重要。",
+        "explanation": "表達堅持"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "あなたの主張は理解しましたが、感じ方が違います。",
+        "translation": "我明白你的觀點，但感受不同",
+        "explanation": "表達不同意見的禮貌方式"
+      },
+      {
+        "pattern": "妥協点を見つけましょう。",
+        "translation": "讓我們找個折衷方案",
+        "explanation": "尋求共識"
+      },
+      {
+        "pattern": "あなたの立場を理解しました。",
+        "translation": "我理解你的出發點",
+        "explanation": "展現同理心"
+      },
+      {
+        "pattern": "意見の合わない部分は認め合えますか？",
+        "translation": "我們能保留各自意見嗎？",
+        "explanation": "接受分歧"
+      },
+      {
+        "pattern": "これは私にとって重要です。",
+        "translation": "這對我很重要",
+        "explanation": "表達堅持"
+      }
+    ]
+  },
+  "fst-1": {
+    "en": [
+      {
+        "pattern": "Happy New Year! Best wishes for the year ahead.",
+        "translation": "新年快樂！祝新的一年一切順利。",
+        "explanation": "新年祝福的基本用語"
+      },
+      {
+        "pattern": "Wishing you a joyful and prosperous holiday season.",
+        "translation": "祝你有個歡樂繁榮的佳節。",
+        "explanation": "節慶祝福的正式用語"
+      },
+      {
+        "pattern": "May this special day bring you happiness.",
+        "translation": "願這特殊的日子帶給你幸福。",
+        "explanation": "通用節慶祝願"
+      },
+      {
+        "pattern": "Warmest greetings for the festival.",
+        "translation": "獻上最誠摯的節慶祝福。",
+        "explanation": "正式場合的祝賀語"
+      },
+      {
+        "pattern": "Hope you have a wonderful celebration.",
+        "translation": "希望你過個很棒的慶祝。",
+        "explanation": "輕鬆友善的祝語"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "あけましておめでとうございます！良い一年になりますように",
+        "translation": "新年快樂！祝有美好的一年",
+        "explanation": "新年祝福的基本用語"
+      },
+      {
+        "pattern": "楽しく実りある祝日季節を",
+        "translation": "祝你有歡樂豐盛的佳節",
+        "explanation": "節慶祝福的正式用語"
+      },
+      {
+        "pattern": "この特別な日があなたに幸運をもたらしますように",
+        "translation": "願這特別的日子帶給你幸福",
+        "explanation": "通用節慶祝願"
+      },
+      {
+        "pattern": "祭りに心を込めたご挨拶を",
+        "translation": "獻上誠摯的節慶問候",
+        "explanation": "正式場合的祝賀語"
+      },
+      {
+        "pattern": "素晴らしいお祝いになりますように",
+        "translation": "祝福有很棒的慶祝",
+        "explanation": "輕鬆友善的祝語"
+      }
+    ]
+  },
+  "fst-2": {
+    "en": [
+      {
+        "pattern": "The parade is starting on Main Street.",
+        "translation": "遊行在主街開始了。",
+        "explanation": "告知遊行開始的地點與時間"
+      },
+      {
+        "pattern": "The floats look amazing this year!",
+        "translation": "今年的花車看起來太讚了！",
+        "explanation": "表達對遊行表演的驚艷"
+      },
+      {
+        "pattern": "Where is the best viewing spot?",
+        "translation": "哪裡是最好的觀賞點？",
+        "explanation": "詢問最佳觀賞位置"
+      },
+      {
+        "pattern": "Let me get a better view.",
+        "translation": "讓我找個更好的視角。",
+        "explanation": "尋找觀賞位置"
+      },
+      {
+        "pattern": "Do not miss the marching band!",
+        "translation": "不要錯過行進樂隊！",
+        "explanation": "推薦觀賞重點"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "パレードがメインストリートで始まります",
+        "translation": "遊行在主街開始",
+        "explanation": "告知遊行開始的地點與時間"
+      },
+      {
+        "pattern": "今年のフロートは素晴らしい！",
+        "translation": "今年的花車太讚了！",
+        "explanation": "表達對遊行表演的驚艷"
+      },
+      {
+        "pattern": "一番の見応えポイントはどこ？",
+        "translation": "最好的觀賞點在哪裡？",
+        "explanation": "詢問最佳觀賞位置"
+      },
+      {
+        "pattern": "もう少し良い場所を確保します",
+        "translation": "讓我找個更好的位置",
+        "explanation": "尋找觀賞位置"
+      },
+      {
+        "pattern": "マーチングバンドを見逃さないで！",
+        "translation": "不要錯過行進樂隊！",
+        "explanation": "推薦觀賞重點"
+      }
+    ]
+  },
+  "fst-3": {
+    "en": [
+      {
+        "pattern": "What is the traditional food for this festival?",
+        "translation": "這個節日的傳統食物是什麼？",
+        "explanation": "詢問節慶傳統食物"
+      },
+      {
+        "pattern": "My favorite is the...",
+        "translation": "我最喜歡的是...",
+        "explanation": "分享喜愛的食物"
+      },
+      {
+        "pattern": "The recipe has been passed down for generations.",
+        "translation": "食譜代代相傳。",
+        "explanation": "說明傳承意義"
+      },
+      {
+        "pattern": "Can you teach me how to make it?",
+        "translation": "你能教我怎麼做嗎？",
+        "explanation": "請求學習"
+      },
+      {
+        "pattern": "This reminds me of my childhood.",
+        "translation": "這讓我想起我的童年。",
+        "explanation": "表達懷舊情感"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "このお祭りの伝統料理は何ですか？",
+        "translation": "這個節日的傳統料理是什麼？",
+        "explanation": "詢問節慶傳統食物"
+      },
+      {
+        "pattern": "一番お気に入りは...",
+        "translation": "我最喜歡的是...",
+        "explanation": "分享喜愛的食物"
+      },
+      {
+        "pattern": "このレシピは代々受け継がれています",
+        "translation": "食譜代代相傳",
+        "explanation": "說明傳承意義"
+      },
+      {
+        "pattern": "作り方を教えてもらえますか？",
+        "translation": "你能教我怎麼做嗎？",
+        "explanation": "請求學習"
+      },
+      {
+        "pattern": "子供の頃を思い出します",
+        "translation": "讓我想起童年",
+        "explanation": "表達懷舊情感"
+      }
+    ]
+  },
+  "fst-4": {
+    "en": [
+      {
+        "pattern": "I am grateful for everyone here tonight.",
+        "translation": "我很感謝今晚在場的每個人。",
+        "explanation": "致謝的基本用語"
+      },
+      {
+        "pattern": "This tradition means so much to our family.",
+        "translation": "這個傳統對我們家意義重大。",
+        "explanation": "說明傳統的重要性"
+      },
+      {
+        "pattern": "I would like to share what I am thankful for.",
+        "translation": "我想分享我的感恩之事。",
+        "explanation": "開始感恩分享的標準句"
+      },
+      {
+        "pattern": "Thank you for being part of my life.",
+        "translation": "謝謝你成為我生命的一部分。",
+        "explanation": "表達深層感謝"
+      },
+      {
+        "pattern": "Let us raise a toast to our blessings.",
+        "translation": "讓我們為祝福乾杯。",
+        "explanation": "祝酒的標準用語"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "今夜来ていただいた皆様に感謝します",
+        "translation": "很感謝今晚在場的每個人",
+        "explanation": "致謝的基本用語"
+      },
+      {
+        "pattern": "この伝統は私たち家族にとって大切な意味があります",
+        "translation": "這個傳統對我們家意義重大",
+        "explanation": "說明傳統的重要性"
+      },
+      {
+        "pattern": "感謝していることを分かち合いたいです",
+        "translation": "想分享我的感恩之事",
+        "explanation": "開始感恩分享的標準句"
+      },
+      {
+        "pattern": "私の人生に来てくださってありがとうございます",
+        "translation": "謝謝你成為我生命的一部分",
+        "explanation": "表達深層感謝"
+      },
+      {
+        "pattern": "祝福に乾杯しましょう",
+        "translation": "讓我們為祝福乾杯",
+        "explanation": "祝酒的標準用語"
+      }
+    ]
+  },
+  "fst-5": {
+    "en": [
+      {
+        "pattern": "I would like to sign up as a volunteer.",
+        "translation": "我想報名當志工。",
+        "explanation": "表達參與意願的開場白"
+      },
+      {
+        "pattern": "What time should I arrive?",
+        "translation": "我應該幾點到？",
+        "explanation": "詢問集合時間"
+      },
+      {
+        "pattern": "What should I bring?",
+        "translation": "我應該帶什麼？",
+        "explanation": "詢問準備物資"
+      },
+      {
+        "pattern": "Where do I check in?",
+        "translation": "我在哪裡報到？",
+        "explanation": "詢問報到地點"
+      },
+      {
+        "pattern": "Thank you for organizing this.",
+        "translation": "謝謝你們舉辦這個活動。",
+        "explanation": "向主辦單位致謝"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "ボランティアに登録したいのですが",
+        "translation": "想報名當志工",
+        "explanation": "表達參與意願的開場白"
+      },
+      {
+        "pattern": "何時に到着すればいいですか？",
+        "translation": "應該幾點到？",
+        "explanation": "詢問集合時間"
+      },
+      {
+        "pattern": "何を持参すればいいですか？",
+        "translation": "應該帶什麼？",
+        "explanation": "詢問準備物資"
+      },
+      {
+        "pattern": "どこでチェックインすればいいですか？",
+        "translation": "在哪裡報到？",
+        "explanation": "詢問報到地點"
+      },
+      {
+        "pattern": "開催してくださってありがとうございます",
+        "translation": "謝謝你們舉辦這個活動",
+        "explanation": "向主辦單位致謝"
+      }
+    ]
+  },
+  "fst-6": {
+    "en": [
+      {
+        "pattern": "Today, we honor the legacy of...",
+        "translation": "今天，我們紀念...的 legacy。",
+        "explanation": "紀念日致詞的標準開場"
+      },
+      {
+        "pattern": "Their contributions changed our world.",
+        "translation": "他們的貢獻改變了我們的世界。",
+        "explanation": "說明紀念人物的貢獻"
+      },
+      {
+        "pattern": "Let us remember their courage.",
+        "translation": "讓我們記住他們的勇氣。",
+        "explanation": "號召紀念"
+      },
+      {
+        "pattern": "Their spirit lives on in all of us.",
+        "translation": "他們的精神在我們每個人身上延續。",
+        "explanation": "說明精神的傳承"
+      },
+      {
+        "pattern": "We will never forget.",
+        "translation": "我們永遠不會忘記。",
+        "explanation": "結束致詞的總結語"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "今日は...の功績を称える日です",
+        "translation": "今天，我們紀念...",
+        "explanation": "紀念日致詞的標準開場"
+      },
+      {
+        "pattern": "彼らの貢献は私たちの世界を変えました",
+        "translation": "他們的貢獻改變了我們的世界",
+        "explanation": "說明紀念人物的貢獻"
+      },
+      {
+        "pattern": "彼らの勇気を忘れませんように",
+        "translation": "讓我們記住他們的勇氣",
+        "explanation": "號召紀念"
+      },
+      {
+        "pattern": "彼らの精神は私たちの間に生きています",
+        "translation": "他們的精神在我們身上延續",
+        "explanation": "說明精神的傳承"
+      },
+      {
+        "pattern": "私たちは決して忘れません",
+        "translation": "我們永遠不會忘記",
+        "explanation": "結束致詞的總結語"
+      }
+    ]
+  },
+  "soc-1": {
+    "en": [
+      {
+        "pattern": "This is [name], a friend of mine.",
+        "translation": "這是 [名字]，我的朋友。",
+        "explanation": "介紹新朋友的基本用語"
+      },
+      {
+        "pattern": "[Name] is a [profession].",
+        "translation": "[名字] 是 [職業]。",
+        "explanation": "說明新朋友的背景"
+      },
+      {
+        "pattern": "[Name], this is [other person].",
+        "translation": "[名字]，這位是 [其他人]。",
+        "explanation": "進行雙向介紹"
+      },
+      {
+        "pattern": "We are both into [hobby].",
+        "translation": "我們都對 [興趣] 有興趣。",
+        "explanation": "說明共同點"
+      },
+      {
+        "pattern": "Nice to meet you, [name].",
+        "translation": "很高興認識你，[名字]。",
+        "explanation": "見面的問候語"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "こちらは私の友達の[名前]です",
+        "translation": "這是我的朋友 [名字]",
+        "explanation": "介紹新朋友的基本用語"
+      },
+      {
+        "pattern": "[名前]は[職業]です",
+        "translation": "[名字] 是 [職業]",
+        "explanation": "說明新朋友的背景"
+      },
+      {
+        "pattern": "[名前]さん、こちらは[他の人]です",
+        "translation": "[名字]，這位是 [其他人]",
+        "explanation": "進行雙向介紹"
+      },
+      {
+        "pattern": "私たちは二人とも[趣味]に興味があります",
+        "translation": "我們都對 [興趣] 有興趣",
+        "explanation": "說明共同點"
+      },
+      {
+        "pattern": "はじめまして、[名前]です",
+        "translation": "很高興認識你 [名字]",
+        "explanation": "見面的問候語"
+      }
+    ]
+  },
+  "soc-2": {
+    "en": [
+      {
+        "pattern": "I brought this as a gift for the host.",
+        "translation": "我帶了這個當作給主人的禮物。",
+        "explanation": "說明伴手禮的來意"
+      },
+      {
+        "pattern": "I hope you like wine.",
+        "translation": "希望你喜歡紅酒。",
+        "explanation": "說明禮物的內容"
+      },
+      {
+        "pattern": "I was not sure what to bring, so flowers seemed safe.",
+        "translation": "我不確定該帶什麼，所以帶花比較保險。",
+        "explanation": "解釋選擇伴手禮的考量"
+      },
+      {
+        "pattern": "Thank you for having us over.",
+        "translation": "謝謝你邀請我們來。",
+        "explanation": "向主人致謝"
+      },
+      {
+        "pattern": "Please let me know if you would like me to bring anything.",
+        "translation": "如果需要我帶什麼請告訴我。",
+        "explanation": "表示願意幫忙"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "ホストへのギフトとしてこれを持ってきました",
+        "translation": "帶了這個當作給主人的禮物",
+        "explanation": "說明伴手禮的來意"
+      },
+      {
+        "pattern": "ワインをどうぞ",
+        "translation": "希望你喜歡紅酒",
+        "explanation": "說明禮物的內容"
+      },
+      {
+        "pattern": "何を持っていいか分からなかったので、花なら安心だと思って",
+        "translation": "不知道該帶什麼所以帶花",
+        "explanation": "解釋選擇伴手禮的考量"
+      },
+      {
+        "pattern": "私たちを招いてくれてありがとうございます",
+        "translation": "謝謝你邀請我們來",
+        "explanation": "向主人致謝"
+      },
+      {
+        "pattern": "何か持ってくる必要があれば言ってください",
+        "translation": "需要我帶什麼請告訴我",
+        "explanation": "表示願意幫忙"
+      }
+    ]
+  },
+  "soc-3": {
+    "en": [
+      {
+        "pattern": "Welcome! So glad you could make it.",
+        "translation": "歡迎！很高興你能來。",
+        "explanation": "招呼客人的標準用語"
+      },
+      {
+        "pattern": "Can I get you something to drink?",
+        "translation": "我能給你拿點喝的嗎？",
+        "explanation": "詢問飲料需求"
+      },
+      {
+        "pattern": "The food is over here, help yourself.",
+        "translation": "食物在這裡，請自便。",
+        "explanation": "指引食物位置"
+      },
+      {
+        "pattern": "Feel free to mingle around.",
+        "translation": "請自由和其他人交流。",
+        "explanation": "邀請社交"
+      },
+      {
+        "pattern": "Let me introduce you to some people.",
+        "translation": "讓我介紹你認識一些人。",
+        "explanation": "主動安排認識"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "いらっしゃいませ！来てもらえて嬉しいです",
+        "translation": "歡迎！很高興你能來",
+        "explanation": "招呼客人的標準用語"
+      },
+      {
+        "pattern": "お飲み物は何にしますか？",
+        "translation": "需要什麼喝的嗎？",
+        "explanation": "詢問飲料需求"
+      },
+      {
+        "pattern": "食べ物はここにあります。自由にどうぞ",
+        "translation": "食物在這裡，請自便",
+        "explanation": "指引食物位置"
+      },
+      {
+        "pattern": "自由に他の人と話してください",
+        "translation": "請自由和其他人交流",
+        "explanation": "邀請社交"
+      },
+      {
+        "pattern": "何人かの人を紹介しましょう",
+        "translation": "讓我介紹你認識一些人",
+        "explanation": "主動安排認識"
+      }
+    ]
+  },
+  "soc-4": {
+    "en": [
+      {
+        "pattern": "I am really sorry about what I said earlier.",
+        "translation": "真的很抱歉我之前說的話。",
+        "explanation": "為失言道歉的開場白"
+      },
+      {
+        "pattern": "It came out wrong.",
+        "translation": "那不是我原本的意思。",
+        "explanation": "解釋失言的原因"
+      },
+      {
+        "pattern": "I did not mean to offend you.",
+        "translation": "我不是故意冒犯你的。",
+        "explanation": "表明無意冒犯"
+      },
+      {
+        "pattern": "I hope you can forgive me.",
+        "translation": "希望你能原諒我。",
+        "explanation": "請求原諒"
+      },
+      {
+        "pattern": "I will be more careful with my words.",
+        "translation": "我會更注意我的言行。",
+        "explanation": "承諾改進"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "前に言ったこと本当に申し訳ありません",
+        "translation": "真的很抱歉我之前說的話",
+        "explanation": "為失言道歉的開場白"
+      },
+      {
+        "pattern": "正しく伝わらなかった",
+        "translation": "那不是我原本的意思",
+        "explanation": "解釋失言的原因"
+      },
+      {
+        "pattern": "あなたを怒らせるつもりはなかった",
+        "translation": "我不是故意冒犯你的",
+        "explanation": "表明無意冒犯"
+      },
+      {
+        "pattern": "許していただければ幸いです",
+        "translation": "希望你能原諒我",
+        "explanation": "請求原諒"
+      },
+      {
+        "pattern": "言葉遣いには気をつけます",
+        "translation": "我會更注意我的言行",
+        "explanation": "承諾改進"
+      }
+    ]
+  },
+  "soc-5": {
+    "en": [
+      {
+        "pattern": "When you visit my hometown, you must try...",
+        "translation": "你來我家鄉的話，一定要試試...",
+        "explanation": "推薦家鄉料理的開場白"
+      },
+      {
+        "pattern": "It is famous for its local cuisine.",
+        "translation": "它以當地美食聞名。",
+        "explanation": "說明家鄉特色"
+      },
+      {
+        "pattern": "My grandmother makes the best version.",
+        "translation": "我祖母做的最好吃。",
+        "explanation": "分享家族記憶"
+      },
+      {
+        "pattern": "It is a must-try for food lovers.",
+        "translation": "美食愛好者必嚐。",
+        "explanation": "強調推薦度"
+      },
+      {
+        "pattern": "The recipe varies by region.",
+        "translation": "每個地方的食譜都不太一樣。",
+        "explanation": "說明地域差異"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "私の出身地に来たなら、必ず...を試して",
+        "translation": "你來我家鄉的話一定要試試...",
+        "explanation": "推薦家鄉料理的開場白"
+      },
+      {
+        "pattern": "ここは地元の料理で有名です",
+        "translation": "它以當地美食聞名",
+        "explanation": "說明家鄉特色"
+      },
+      {
+        "pattern": "祖母が作るのが一番美味しい",
+        "translation": "我祖母做的最好吃",
+        "explanation": "分享家族記憶"
+      },
+      {
+        "pattern": "美食家は必ず試すべきです",
+        "translation": "美食愛好者必嚐",
+        "explanation": "強調推薦度"
+      },
+      {
+        "pattern": "レシピは地域によって異なります",
+        "translation": "每個地方的食譜都不太一樣",
+        "explanation": "說明地域差異"
+      }
+    ]
+  },
+  "soc-6": {
+    "en": [
+      {
+        "pattern": "In my culture, it is customary to...",
+        "translation": "在我的文化裡，習俗是...",
+        "explanation": "介紹文化習俗的開場白"
+      },
+      {
+        "pattern": "I find the differences fascinating.",
+        "translation": "我覺得這些差異很有趣。",
+        "explanation": "表達對文化交流的興趣"
+      },
+      {
+        "pattern": "It is interesting how we do it differently.",
+        "translation": "我們的做法不同這點很有趣。",
+        "explanation": "比較文化差異"
+      },
+      {
+        "pattern": "Could you teach me more about that?",
+        "translation": "你能多教我一些嗎？",
+        "explanation": "請求深入了解"
+      },
+      {
+        "pattern": "I would love to learn more about your customs.",
+        "translation": "我很想知道更多你們的習俗。",
+        "explanation": "表達學習意願"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "私の文化では、習慣として...があります",
+        "translation": "在我的文化裡，習俗是...",
+        "explanation": "介紹文化習俗的開場白"
+      },
+      {
+        "pattern": "違いにとても魅力を感じます",
+        "translation": "我覺得這些差異很有趣",
+        "explanation": "表達對文化交流的興趣"
+      },
+      {
+        "pattern": "やり方が違うのは面白いですね",
+        "translation": "我們的做法不同這點很有趣",
+        "explanation": "比較文化差異"
+      },
+      {
+        "pattern": "もっと教えてもらえますか？",
+        "translation": "能多教我一些嗎？",
+        "explanation": "請求深入了解"
+      },
+      {
+        "pattern": "あなたの習慣をもっと知りたいです",
+        "translation": "我很想知道更多你們的習俗",
+        "explanation": "表達學習意願"
+      }
+    ]
+  },
+  "spt-1": {
+    "en": [
+      {
+        "pattern": "What is the score?",
+        "translation": "現在比分是多少？",
+        "explanation": "詢問比分的常用語"
+      },
+      {
+        "pattern": "That was an incredible play!",
+        "translation": "那球打得太棒了！",
+        "explanation": "讚嘆精彩表現"
+      },
+      {
+        "pattern": "The home team is winning.",
+        "translation": "主隊現在領先。",
+        "explanation": "說明目前比分狀況"
+      },
+      {
+        "pattern": "Who do you think will take the championship?",
+        "translation": "你覺得誰會拿下冠軍？",
+        "explanation": "預測比賽結果"
+      },
+      {
+        "pattern": "This is a must-win game for them.",
+        "translation": "這場對他們來說是非贏不可的比賽。",
+        "explanation": "強調比賽重要性"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "今のスコアは？",
+        "translation": "現在比分是多少？",
+        "explanation": "詢問比分的常用語"
+      },
+      {
+        "pattern": "あれはすごいプレイだった！",
+        "translation": "那球打得太棒了！",
+        "explanation": "讚嘆精彩表現"
+      },
+      {
+        "pattern": "ホームチームがリードしています",
+        "translation": "主隊現在領先",
+        "explanation": "說明目前比分狀況"
+      },
+      {
+        "pattern": "誰がチャンプ取ると思う？",
+        "translation": "你覺得誰會拿冠軍？",
+        "explanation": "預測比賽結果"
+      },
+      {
+        "pattern": "これは彼らの負けられないゲームです",
+        "translation": "這場是非贏不可的比賽",
+        "explanation": "強調比賽重要性"
+      }
+    ]
+  },
+  "spt-2": {
+    "en": [
+      {
+        "pattern": "I would like to join the league.",
+        "translation": "我想加入聯賽。",
+        "explanation": "表達參賽意願的開場白"
+      },
+      {
+        "pattern": "When does the season start?",
+        "translation": "賽季什麼時候開始？",
+        "explanation": "詢問賽季時間"
+      },
+      {
+        "pattern": "Where are the sign-up forms?",
+        "translation": "報名表在哪裡？",
+        "explanation": "詢問報名地點"
+      },
+      {
+        "pattern": "What is the registration fee?",
+        "translation": "報名費多少？",
+        "explanation": "詢問費用"
+      },
+      {
+        "pattern": "Are there any skill-level requirements?",
+        "translation": "有技術門檻要求嗎？",
+        "explanation": "詢問參賽資格"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "リーグに参加したいです",
+        "translation": "我想加入聯賽",
+        "explanation": "表達參賽意願的開場白"
+      },
+      {
+        "pattern": "シーズンはいつ始まりますか？",
+        "translation": "賽季什麼時候開始？",
+        "explanation": "詢問賽季時間"
+      },
+      {
+        "pattern": "申し込みフォームはどこですか？",
+        "translation": "報名表在哪裡？",
+        "explanation": "詢問報名地點"
+      },
+      {
+        "pattern": "参加費はいくらですか？",
+        "translation": "報名費多少？",
+        "explanation": "詢問費用"
+      },
+      {
+        "pattern": "スキルレベルの要件はありますか？",
+        "translation": "有技術門檻要求嗎？",
+        "explanation": "詢問參賽資格"
+      }
+    ]
+  },
+  "spt-3": {
+    "en": [
+      {
+        "pattern": "Let me warm up before we start.",
+        "translation": "讓我熱身一下再開始。",
+        "explanation": "開始健身的標準用語"
+      },
+      {
+        "pattern": "What is your training routine?",
+        "translation": "你的訓練流程是什麼？",
+        "explanation": "詢問訓練方式"
+      },
+      {
+        "pattern": "Can I spot you on that lift?",
+        "translation": "我能幫你護槓嗎？",
+        "explanation": "請求協助健身"
+      },
+      {
+        "pattern": "Let us aim for three sets of ten.",
+        "translation": "我們目標三組各十下。",
+        "explanation": "設定訓練目標"
+      },
+      {
+        "pattern": "Remember to hydrate.",
+        "translation": "記得多喝水。",
+        "explanation": "健身提醒"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "始める前にウォームアップします",
+        "translation": "讓我熱身一下再開始",
+        "explanation": "開始健身的標準用語"
+      },
+      {
+        "pattern": "トレーニングルーティンは？",
+        "translation": "你的訓練流程是什麼？",
+        "explanation": "詢問訓練方式"
+      },
+      {
+        "pattern": "そのリフティングのサポートできますか",
+        "translation": "我能幫你護槓嗎？",
+        "explanation": "請求協助健身"
+      },
+      {
+        "pattern": "3セット各10回目標にしましょう",
+        "translation": "目標三組各十下",
+        "explanation": "設定訓練目標"
+      },
+      {
+        "pattern": "水分補給を忘れずに",
+        "translation": "記得多喝水",
+        "explanation": "健身提醒"
+      }
+    ]
+  },
+  "spt-4": {
+    "en": [
+      {
+        "pattern": "Let us discuss the game plan.",
+        "translation": "我們來討論作戰策略。",
+        "explanation": "開始討論的比賽用語"
+      },
+      {
+        "pattern": "We need to exploit their weakness on the left side.",
+        "translation": "我們需要利用他們左側的弱點。",
+        "explanation": "提出戰術建議"
+      },
+      {
+        "pattern": "Who is covering the striker?",
+        "translation": "誰來看守前鋒？",
+        "explanation": "分配防守任務"
+      },
+      {
+        "pattern": "We should press high from the start.",
+        "translation": "我們從開局就應該高壓迫搶。",
+        "explanation": "提出比賽策略"
+      },
+      {
+        "pattern": "Remember to stay compact.",
+        "translation": "記得保持緊密陣型。",
+        "explanation": "提醒戰術紀律"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "作戦について話し合いましょう",
+        "translation": "來討論作戰策略",
+        "explanation": "開始討論的比賽用語"
+      },
+      {
+        "pattern": "向こうの左側の弱点を突く必要があります",
+        "translation": "需要利用他們左側的弱點",
+        "explanation": "提出戰術建議"
+      },
+      {
+        "pattern": "誰がストライカーをマークする？",
+        "translation": "誰來看守前鋒？",
+        "explanation": "分配防守任務"
+      },
+      {
+        "pattern": "最初からハイプレスをかけるべきです",
+        "translation": "從開局就應該高壓迫搶",
+        "explanation": "提出比賽策略"
+      },
+      {
+        "pattern": "コンパクトに保つことを忘れずに",
+        "translation": "記得保持緊密陣型",
+        "explanation": "提醒戰術紀律"
+      }
+    ]
+  },
+  "spt-5": {
+    "en": [
+      {
+        "pattern": "I am scheduling a personal training session.",
+        "translation": "我在安排個人訓練課程。",
+        "explanation": "開始預約教練的用語"
+      },
+      {
+        "pattern": "What are your credentials?",
+        "translation": "你的資歷是什麼？",
+        "explanation": "詢問教練資格"
+      },
+      {
+        "pattern": "I want to improve my technique.",
+        "translation": "我想改進我的技術。",
+        "explanation": "說明訓練目標"
+      },
+      {
+        "pattern": "What would a typical session look like?",
+        "translation": "一堂典型的課程會是什麼樣子？",
+        "explanation": "詢問課程內容"
+      },
+      {
+        "pattern": "Do you offer online coaching?",
+        "translation": "你有提供線上教練嗎？",
+        "explanation": "詢問線上選項"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "パーソナルトレーニングのセッションを予約しています",
+        "translation": "在安排個人訓練課程",
+        "explanation": "開始預約教練的用語"
+      },
+      {
+        "pattern": "どのような資格を持つか",
+        "translation": "你的資歷是什麼？",
+        "explanation": "詢問教練資格"
+      },
+      {
+        "pattern": "テクニックを改善したいです",
+        "translation": "想改進技術",
+        "explanation": "說明訓練目標"
+      },
+      {
+        "pattern": "典型的なセッションはどのようなものですか",
+        "translation": "典型課程會是什麼樣子？",
+        "explanation": "詢問課程內容"
+      },
+      {
+        "pattern": "オンラインコーチはありますか",
+        "translation": "有提供線上教練嗎？",
+        "explanation": "詢問線上選項"
+      }
+    ]
+  },
+  "spt-6": {
+    "en": [
+      {
+        "pattern": "The referee made a controversial call.",
+        "translation": "裁判做了一個有爭議的判罰。",
+        "explanation": "對裁判決定的反應"
+      },
+      {
+        "pattern": "That was clearly offside.",
+        "translation": "那球明顯越位了。",
+        "explanation": "表達對規則的看法"
+      },
+      {
+        "pattern": "I think the penalty was too harsh.",
+        "translation": "我覺得處罰太重了。",
+        "explanation": "對處罰的意見"
+      },
+      {
+        "pattern": "Can we ask for a video review?",
+        "translation": "我們能要求影像重播嗎？",
+        "explanation": "詢問挑戰規則"
+      },
+      {
+        "pattern": "Let us hear what the other team has to say.",
+        "translation": "讓我們聽聽另一隊怎麼說。",
+        "explanation": "要求公平看待"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "レフェリーは論争的な判定をしました",
+        "translation": "裁判做了有爭議的判罰",
+        "explanation": "對裁判決定的反應"
+      },
+      {
+        "pattern": "あれは明らかにオフサイドでした",
+        "translation": "那球明顯越位了",
+        "explanation": "表達對規則的看法"
+      },
+      {
+        "pattern": "処分は厳しすぎたと思います",
+        "translation": "我覺得處罰太重了",
+        "explanation": "對處罰的意見"
+      },
+      {
+        "pattern": "ビデオレビューを求められますか？",
+        "translation": "能要求影像重播嗎？",
+        "explanation": "詢問挑戰規則"
+      },
+      {
+        "pattern": "相手チームの言い分も聞かせてください",
+        "translation": "讓我們聽聽另一隊怎麼說",
+        "explanation": "要求公平看待"
+      }
+    ]
+  },
+  "gln-1": {
+    "en": [
+      {
+        "pattern": "Did you hear about the breaking news?",
+        "translation": "你有聽到突發新聞嗎？",
+        "explanation": "開始討論新聞的開場白"
+      },
+      {
+        "pattern": "The situation is developing rapidly.",
+        "translation": "情況正在快速發展中。",
+        "explanation": "描述新聞進度"
+      },
+      {
+        "pattern": "What do you think caused this?",
+        "translation": "你覺得是什麼造成的？",
+        "explanation": "詢問看法"
+      },
+      {
+        "pattern": "Where did you get this information?",
+        "translation": "你從哪裡獲得這個資訊的？",
+        "explanation": "詢問消息來源"
+      },
+      {
+        "pattern": "We should verify this before sharing.",
+        "translation": "我們分享前應該先驗證這個。",
+        "explanation": "提醒訊息驗證"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "速報ニュース聞いた？",
+        "translation": "有聽到突發新聞嗎？",
+        "explanation": "開始討論新聞的開場白"
+      },
+      {
+        "pattern": "状況は急速に展開しています",
+        "translation": "情況正在快速發展中",
+        "explanation": "描述新聞進度"
+      },
+      {
+        "pattern": "何が原因だと思いますか？",
+        "translation": "你覺得是什麼造成的？",
+        "explanation": "詢問看法"
+      },
+      {
+        "pattern": "この情報はどこで手に入れましたか？",
+        "translation": "從哪裡獲得這個資訊的？",
+        "explanation": "詢問消息來源"
+      },
+      {
+        "pattern": "共有する前に確認するべきです",
+        "translation": "分享前應該先驗證",
+        "explanation": "提醒訊息驗證"
+      }
+    ]
+  },
+  "gln-2": {
+    "en": [
+      {
+        "pattern": "The article reports that...",
+        "translation": "文章報導...",
+        "explanation": "開始轉述新聞的標準句型"
+      },
+      {
+        "pattern": "According to official sources...",
+        "translation": "根據官方消息...",
+        "explanation": "引用消息來源"
+      },
+      {
+        "pattern": "This marks the first time since...",
+        "translation": "這是自...以來第一次。",
+        "explanation": "強調新聞重要性"
+      },
+      {
+        "pattern": "The implications could be significant.",
+        "translation": "其影響可能相當重大。",
+        "explanation": "表達對影響的看法"
+      },
+      {
+        "pattern": "Further details are expected to emerge.",
+        "translation": "預計會有更多細節浮現。",
+        "explanation": "預測後續發展"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "記事によれば...",
+        "translation": "文章報導...",
+        "explanation": "開始轉述新聞的標準句型"
+      },
+      {
+        "pattern": "公式情報によれば...",
+        "translation": "根據官方消息...",
+        "explanation": "引用消息來源"
+      },
+      {
+        "pattern": "これは...以来初めてです",
+        "translation": "這是自...以來第一次",
+        "explanation": "強調新聞重要性"
+      },
+      {
+        "pattern": "その影響は重大かもしれません",
+        "translation": "其影響可能相當重大",
+        "explanation": "表達對影響的看法"
+      },
+      {
+        "pattern": "さらなる詳細は明らかになるでしょう",
+        "translation": "預計會有更多細節浮現",
+        "explanation": "預測後續發展"
+      }
+    ]
+  },
+  "gln-3": {
+    "en": [
+      {
+        "pattern": "The vote is taking place next month.",
+        "translation": "投票將在下個月舉行。",
+        "explanation": "說明選舉時間"
+      },
+      {
+        "pattern": "Who are the leading candidates?",
+        "translation": "目前領先的候選人是誰？",
+        "explanation": "詢問候選人情況"
+      },
+      {
+        "pattern": "What are the key policy differences?",
+        "translation": "主要的政策差異是什麼？",
+        "explanation": "詢問政策立場"
+      },
+      {
+        "pattern": "Early polling shows...",
+        "translation": "早期民調顯示...",
+        "explanation": "引用民調數據"
+      },
+      {
+        "pattern": "The election outcome could reshape the political landscape.",
+        "translation": "選舉結果可能重塑政治局面。",
+        "explanation": "預測選舉影響"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "来月投票が行われます",
+        "translation": "投票將在下個月舉行",
+        "explanation": "說明選舉時間"
+      },
+      {
+        "pattern": "現在リーダーは誰ですか？",
+        "translation": "目前領先的候選人是誰？",
+        "explanation": "詢問候選人情況"
+      },
+      {
+        "pattern": "主要な政策の違いは何ですか？",
+        "translation": "主要的政策差異是什麼？",
+        "explanation": "詢問政策立場"
+      },
+      {
+        "pattern": "早期、世論調査では...",
+        "translation": "早期民調顯示...",
+        "explanation": "引用民調數據"
+      },
+      {
+        "pattern": "選挙結果は政治地図を変え得る",
+        "translation": "選舉結果可能重塑政治局面",
+        "explanation": "預測選舉影響"
+      }
+    ]
+  },
+  "gln-4": {
+    "en": [
+      {
+        "pattern": "Climate change is accelerating.",
+        "translation": "氣候變遷正在加速。",
+        "explanation": "報告環境現狀的用語"
+      },
+      {
+        "pattern": "The latest report shows...",
+        "translation": "最新報告顯示...",
+        "explanation": "引用研究數據"
+      },
+      {
+        "pattern": "We need urgent action on...",
+        "translation": "我們需要對...採取緊急行動。",
+        "explanation": "呼籲行動"
+      },
+      {
+        "pattern": "The carbon footprint of...",
+        "translation": "...的碳足跡...",
+        "explanation": "討論排放問題"
+      },
+      {
+        "pattern": "What can individuals do?",
+        "translation": "個人能做什麼？",
+        "explanation": "詢問解決方案"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "気候変動は加速しています",
+        "translation": "氣候變遷正在加速",
+        "explanation": "報告環境現狀的用語"
+      },
+      {
+        "pattern": "最新の報告によると...",
+        "translation": "最新報告顯示...",
+        "explanation": "引用研究數據"
+      },
+      {
+        "pattern": "...について緊急の行動が必要です",
+        "translation": "需要對...採取緊急行動",
+        "explanation": "呼籲行動"
+      },
+      {
+        "pattern": "...のカーボンフットプリント",
+        "translation": "...的碳足跡",
+        "explanation": "討論排放問題"
+      },
+      {
+        "pattern": "個人で何ができますか？",
+        "translation": "個人能做什麼？",
+        "explanation": "詢問解決方案"
+      }
+    ]
+  },
+  "gln-5": {
+    "en": [
+      {
+        "pattern": "The summit brought together...",
+        "translation": "這次峰會聚集了...",
+        "explanation": "報導國際會議的用語"
+      },
+      {
+        "pattern": "Key agreements include...",
+        "translation": "主要協議包括...",
+        "explanation": "列出會議成果"
+      },
+      {
+        "pattern": "The negotiations focused on...",
+        "translation": "談判聚焦於...",
+        "explanation": "說明談判重點"
+      },
+      {
+        "pattern": "Diplomatic relations have...",
+        "translation": "外交關係已...",
+        "explanation": "說明關係變化"
+      },
+      {
+        "pattern": "This could reshape global alliances.",
+        "translation": "這可能重塑全球同盟。",
+        "explanation": "預測影響"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "サミットには...が参加しました",
+        "translation": "這次峰會聚集了...",
+        "explanation": "報導國際會議的用語"
+      },
+      {
+        "pattern": "主要な合意には...が含まれます",
+        "translation": "主要協議包括...",
+        "explanation": "列出會議成果"
+      },
+      {
+        "pattern": "交渉は...に焦点を当てました",
+        "translation": "談判聚焦於...",
+        "explanation": "說明談判重點"
+      },
+      {
+        "pattern": "外交関係は...しました",
+        "translation": "外交關係已...",
+        "explanation": "說明關係變化"
+      },
+      {
+        "pattern": "これは世界の同盟を変え得る",
+        "translation": "這可能重塑全球同盟",
+        "explanation": "預測影響"
+      }
+    ]
+  },
+  "gln-6": {
+    "en": [
+      {
+        "pattern": "The trade dispute escalated.",
+        "translation": "貿易爭端升級了。",
+        "explanation": "報導貿易衝突的用語"
+      },
+      {
+        "pattern": "Tariffs were imposed on...",
+        "translation": "對...徵收了關稅。",
+        "explanation": "說明貿易措施"
+      },
+      {
+        "pattern": "The economic impact could be...",
+        "translation": "經濟影響可能是...",
+        "explanation": "預測經濟後果"
+      },
+      {
+        "pattern": "Negotiations are ongoing.",
+        "translation": "談判正在進行中。",
+        "explanation": "說明當前狀態"
+      },
+      {
+        "pattern": "Both sides need a compromise.",
+        "translation": "雙方都需要妥協。",
+        "explanation": "提出解決方向"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "貿易紛争はエスカレートしました",
+        "translation": "貿易爭端升級了",
+        "explanation": "報導貿易衝突的用語"
+      },
+      {
+        "pattern": "...に関税が課されました",
+        "translation": "對...徵收了關稅",
+        "explanation": "說明貿易措施"
+      },
+      {
+        "pattern": "経済的影響は...かもしれません",
+        "translation": "經濟影響可能是...",
+        "explanation": "預測經濟後果"
+      },
+      {
+        "pattern": "交渉は進行中です",
+        "translation": "談判正在進行中",
+        "explanation": "說明當前狀態"
+      },
+      {
+        "pattern": "双方が妥協を必要としています",
+        "translation": "雙方都需要妥協",
+        "explanation": "提出解決方向"
+      }
+    ]
+  },
+  "pop-1": {
+    "en": [
+      {
+        "pattern": "I watched this movie last weekend.",
+        "translation": "我上週末看了這部電影。",
+        "explanation": "分享電影經驗的開場白"
+      },
+      {
+        "pattern": "The plot was...",
+        "translation": "劇情是...",
+        "explanation": "開始描述劇情"
+      },
+      {
+        "pattern": "The acting was superb.",
+        "translation": "演技精湛。",
+        "explanation": "稱讚演員表現"
+      },
+      {
+        "pattern": "I give it... stars.",
+        "translation": "我給它...顆星。",
+        "explanation": "給出評分"
+      },
+      {
+        "pattern": "You should definitely watch it.",
+        "translation": "你一定要看。",
+        "explanation": "推薦觀看"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "先週末、この映画を見ました",
+        "translation": "我上週末看了這部電影",
+        "explanation": "分享電影經驗的開場白"
+      },
+      {
+        "pattern": "ストーリーは...",
+        "translation": "劇情是...",
+        "explanation": "開始描述劇情"
+      },
+      {
+        "pattern": "演技は素晴らしかったです",
+        "translation": "演技精湛",
+        "explanation": "稱讚演員表現"
+      },
+      {
+        "pattern": "星...個あげます",
+        "translation": "我給它...顆星",
+        "explanation": "給出評分"
+      },
+      {
+        "pattern": "ぜひ見るべきです",
+        "translation": "你一定要看",
+        "explanation": "推薦觀看"
+      }
+    ]
+  },
+  "pop-2": {
+    "en": [
+      {
+        "pattern": "I am a huge fan of [artist].",
+        "translation": "我是 [藝術家] 的超級粉絲。",
+        "explanation": "表達對藝術家喜愛的標準用語"
+      },
+      {
+        "pattern": "Their latest album is fire.",
+        "translation": "他們的最新專輯太讚了。",
+        "explanation": "稱讚新專輯"
+      },
+      {
+        "pattern": "Have you heard their new single?",
+        "translation": "你有聽他們的新單曲嗎？",
+        "explanation": "詢問新作品"
+      },
+      {
+        "pattern": "I got tickets to their concert!",
+        "translation": "我買到他們演唱會的票了！",
+        "explanation": "分享好消息"
+      },
+      {
+        "pattern": "They are going on tour.",
+        "translation": "他們要進行巡演了。",
+        "explanation": "分享巡演消息"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "[アーティスト]の大ファンです",
+        "translation": "我是 [藝術家] 的超級粉絲",
+        "explanation": "表達對藝術家喜愛的標準用語"
+      },
+      {
+        "pattern": "彼らの最新アルバムは本当にすごいです",
+        "translation": "他們的最新專輯太讚了",
+        "explanation": "稱讚新專輯"
+      },
+      {
+        "pattern": "彼らの新曲聞いた？",
+        "translation": "有聽他們的新單曲嗎？",
+        "explanation": "詢問新作品"
+      },
+      {
+        "pattern": "彼らのコンサートチケット取った！",
+        "translation": "買到他們演唱會的票了！",
+        "explanation": "分享好消息"
+      },
+      {
+        "pattern": "彼らはツアーを行うそうです",
+        "translation": "他們要進行巡演了",
+        "explanation": "分享巡演消息"
+      }
+    ]
+  },
+  "pop-3": {
+    "en": [
+      {
+        "pattern": "Did you see that plot twist coming?",
+        "translation": "你有料到那個劇情反轉嗎？",
+        "explanation": "討論劇情的用語"
+      },
+      {
+        "pattern": "I did not expect that ending.",
+        "translation": "我沒料到那個結局。",
+        "explanation": "表達驚訝"
+      },
+      {
+        "pattern": "The character development was...",
+        "translation": "角色發展是...",
+        "explanation": "評論角色塑造"
+      },
+      {
+        "pattern": "Season... was the best.",
+        "translation": "第...季是最棒的。",
+        "explanation": "比較季度"
+      },
+      {
+        "pattern": "I cannot wait for the next season.",
+        "translation": "我迫不及待等下一季。",
+        "explanation": "表達期待"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "あのプロットツイスト予想できた？",
+        "translation": "有料到那個劇情反轉嗎？",
+        "explanation": "討論劇情的用語"
+      },
+      {
+        "pattern": "あの結末は予想外でした",
+        "translation": "沒料到那個結局",
+        "explanation": "表達驚訝"
+      },
+      {
+        "pattern": "キャラクターの成長は...",
+        "translation": "角色發展是...",
+        "explanation": "評論角色塑造"
+      },
+      {
+        "pattern": "シーズン...が一番よかった",
+        "translation": "第...季是最棒的",
+        "explanation": "比較季度"
+      },
+      {
+        "pattern": "次のシーズンが待ちきれません",
+        "translation": "迫不及待等下一季",
+        "explanation": "表達期待"
+      }
+    ]
+  },
+  "pop-4": {
+    "en": [
+      {
+        "pattern": "This trend is going viral.",
+        "translation": "這個趨勢正在爆紅。",
+        "explanation": "描述網路現象的用語"
+      },
+      {
+        "pattern": "The hashtag... is trending.",
+        "translation": "標籤...正在熱門。",
+        "explanation": "報導社交媒體趨勢"
+      },
+      {
+        "pattern": "Everyone is talking about...",
+        "translation": "大家都在討論...",
+        "explanation": "說明話題熱度"
+      },
+      {
+        "pattern": "The meme is hilarious.",
+        "translation": "那個迷因太有趣了。",
+        "explanation": "評論網路文化"
+      },
+      {
+        "pattern": "This will be forgotten in a week.",
+        "translation": "這一週後就會被遺忘。",
+        "explanation": "預測話題壽命"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "このトレンドは拡散しています",
+        "translation": "這個趨勢正在爆紅",
+        "explanation": "描述網路現象的用語"
+      },
+      {
+        "pattern": "ハッシュタグ...がトレンド入り",
+        "translation": "標籤...正在熱門",
+        "explanation": "報導社交媒體趨勢"
+      },
+      {
+        "pattern": "みんなが...について話している",
+        "translation": "大家都在討論...",
+        "explanation": "說明話題熱度"
+      },
+      {
+        "pattern": "そのミームは面白すぎる",
+        "translation": "那個迷因太有趣了",
+        "explanation": "評論網路文化"
+      },
+      {
+        "pattern": "これは1週間で忘れられるでしょう",
+        "translation": "這一週後就會被遺忘",
+        "explanation": "預測話題壽命"
+      }
+    ]
+  },
+  "pop-5": {
+    "en": [
+      {
+        "pattern": "The art exhibit features...",
+        "translation": "這個藝術展覽展示了...",
+        "explanation": "介紹展覽內容的用語"
+      },
+      {
+        "pattern": "The artist explores themes of...",
+        "translation": "藝術家探索...的主題。",
+        "explanation": "說明藝術主題"
+      },
+      {
+        "pattern": "The technique used is...",
+        "translation": "使用的技法是...",
+        "explanation": "討論藝術技法"
+      },
+      {
+        "pattern": "I find this piece thought-provoking.",
+        "translation": "我覺得這件作品發人深省。",
+        "explanation": "表達個人看法"
+      },
+      {
+        "pattern": "This challenges traditional concepts.",
+        "translation": "這挑戰了傳統概念。",
+        "explanation": "評論藝術價值"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "この美術展は...を特集しています",
+        "translation": "這個藝術展覽展示了...",
+        "explanation": "介紹展覽內容的用語"
+      },
+      {
+        "pattern": "アーティストは...のテーマを探求しています",
+        "translation": "藝術家探索...的主題",
+        "explanation": "說明藝術主題"
+      },
+      {
+        "pattern": "使われている技法は...です",
+        "translation": "使用的技法是...",
+        "explanation": "討論藝術技法"
+      },
+      {
+        "pattern": "この作品は考えさせられます",
+        "translation": "我覺得這件作品發人深省",
+        "explanation": "表達個人看法"
+      },
+      {
+        "pattern": "これは伝統的な概念に挑戦しています",
+        "translation": "這挑戰了傳統概念",
+        "explanation": "評論藝術價值"
+      }
+    ]
+  },
+  "pop-6": {
+    "en": [
+      {
+        "pattern": "The gala attracted...",
+        "translation": "這場盛會吸引了...",
+        "explanation": "報導活動的用語"
+      },
+      {
+        "pattern": "Celebrities wore...",
+        "translation": "名人穿著...",
+        "explanation": "描述紅毯時尚"
+      },
+      {
+        "pattern": "The highlight was...",
+        "translation": "亮點是...",
+        "explanation": "指出精彩時刻"
+      },
+      {
+        "pattern": "Social media reacted with...",
+        "translation": "社交媒體的反應是...",
+        "explanation": "報導網路反應"
+      },
+      {
+        "pattern": "This set a new trend.",
+        "translation": "這開啟了新潮流。",
+        "explanation": "說明影響"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "このガラには...が集まりました",
+        "translation": "這場盛會吸引了...",
+        "explanation": "報導活動的用語"
+      },
+      {
+        "pattern": "セレブたちは...を着用",
+        "translation": "名人穿著...",
+        "explanation": "描述紅毯時尚"
+      },
+      {
+        "pattern": "ハイライトは...でした",
+        "translation": "亮點是...",
+        "explanation": "指出精彩時刻"
+      },
+      {
+        "pattern": "SNSの反応は...でした",
+        "translation": "社交媒體的反應是...",
+        "explanation": "報導網路反應"
+      },
+      {
+        "pattern": "これは新しいトレンドを作りました",
+        "translation": "這開啟了新潮流",
+        "explanation": "說明影響"
+      }
+    ]
+  },
+  "tec-1": {
+    "en": [
+      {
+        "pattern": "Have you tried the new AI tool?",
+        "translation": "你有試過新的 AI 工具嗎？",
+        "explanation": "開始討論新技術的標準用語"
+      },
+      {
+        "pattern": "It is a game-changer for productivity.",
+        "translation": "這對生產力來說是個遊戲規則改變者。",
+        "explanation": "說明技術影響"
+      },
+      {
+        "pattern": "How does it compare to the previous version?",
+        "translation": "和前一版本比起來如何？",
+        "explanation": "比較版本差異"
+      },
+      {
+        "pattern": "The learning curve is steep but worth it.",
+        "translation": "學習曲線很陡但值得。",
+        "explanation": "分享使用經驗"
+      },
+      {
+        "pattern": "It is revolutionizing the industry.",
+        "translation": "這正在徹底改變這個產業。",
+        "explanation": "預測技術影響"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "新しいAIツールを試した？",
+        "translation": "有試過新的 AI 工具嗎？",
+        "explanation": "開始討論新技術的標準用語"
+      },
+      {
+        "pattern": "生産性にとってゲームチェンジャーです",
+        "translation": "這對生產力來說是遊戲規則改變者",
+        "explanation": "說明技術影響"
+      },
+      {
+        "pattern": "以前バージョンとどう違う？",
+        "translation": "和前一版本比起來如何？",
+        "explanation": "比較版本差異"
+      },
+      {
+        "pattern": "習熟曲線はきついですが得るものはあります",
+        "translation": "學習曲線很陡但值得",
+        "explanation": "分享使用經驗"
+      },
+      {
+        "pattern": "この業界に革命をもたらしています",
+        "translation": "正在徹底改變這個產業",
+        "explanation": "預測技術影響"
+      }
+    ]
+  },
+  "tec-2": {
+    "en": [
+      {
+        "pattern": "The new smartphone features...",
+        "translation": "新款智慧型手機配備...",
+        "explanation": "介紹新產品的用語"
+      },
+      {
+        "pattern": "The camera has been improved.",
+        "translation": "相機已經升級。",
+        "explanation": "說明具體功能"
+      },
+      {
+        "pattern": "Battery life is now...",
+        "translation": "電池續航力現在...",
+        "explanation": "報導電池表現"
+      },
+      {
+        "pattern": "The price is competitive.",
+        "translation": "價格有競爭力。",
+        "explanation": "評論定價"
+      },
+      {
+        "pattern": "Is it worth upgrading?",
+        "translation": "值得升級嗎？",
+        "explanation": "提出討論問題"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "新しいスマホは...を搭載しています",
+        "translation": "新款智慧型手機配備...",
+        "explanation": "介紹新產品的用語"
+      },
+      {
+        "pattern": "カメラが改良されました",
+        "translation": "相機已經升級",
+        "explanation": "說明具體功能"
+      },
+      {
+        "pattern": "バッテリー持ちは...",
+        "translation": "電池續航力現在...",
+        "explanation": "報導電池表現"
+      },
+      {
+        "pattern": "価格は競争力があります",
+        "translation": "價格有競爭力",
+        "explanation": "評論定價"
+      },
+      {
+        "pattern": "アップグレードする価値はある？",
+        "translation": "值得升級嗎？",
+        "explanation": "提出討論問題"
+      }
+    ]
+  },
+  "tec-3": {
+    "en": [
+      {
+        "pattern": "Generative AI can...",
+        "translation": "生成式 AI 能夠...",
+        "explanation": "介紹 AI 能力的用語"
+      },
+      {
+        "pattern": "It has transformed how I...",
+        "translation": "它改變了我如何...",
+        "explanation": "分享個人經驗"
+      },
+      {
+        "pattern": "The potential applications include...",
+        "translation": "潛在應用包括...",
+        "explanation": "列舉使用場景"
+      },
+      {
+        "pattern": "There are concerns about...",
+        "translation": "有一些關於...的擔憂。",
+        "explanation": "討論風險"
+      },
+      {
+        "pattern": "We should regulate...",
+        "translation": "我們應該規範...",
+        "explanation": "提出政策建議"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "生成AIは...ができます",
+        "translation": "生成式 AI 能夠...",
+        "explanation": "介紹 AI 能力的用語"
+      },
+      {
+        "pattern": "私の...の方法を変えました",
+        "translation": "它改變了我如何...",
+        "explanation": "分享個人經驗"
+      },
+      {
+        "pattern": "潜在的な応用には...があります",
+        "translation": "潛在應用包括...",
+        "explanation": "列舉使用場景"
+      },
+      {
+        "pattern": "...についての懸念があります",
+        "translation": "有一些關於...的擔憂",
+        "explanation": "討論風險"
+      },
+      {
+        "pattern": "...を規制すべきです",
+        "translation": "我們應該規範...",
+        "explanation": "提出政策建議"
+      }
+    ]
+  },
+  "tec-4": {
+    "en": [
+      {
+        "pattern": "VR offers immersive experiences.",
+        "translation": "VR 提供沉浸式體驗。",
+        "explanation": "描述 VR 特點的用語"
+      },
+      {
+        "pattern": "The technology has advanced significantly.",
+        "translation": "這項技術已顯著進步。",
+        "explanation": "說明技術發展"
+      },
+      {
+        "pattern": "Applications range from...",
+        "translation": "應用範圍從...",
+        "explanation": "列舉應用領域"
+      },
+      {
+        "pattern": "The market is growing.",
+        "translation": "市場正在成長。",
+        "explanation": "報導市場趨勢"
+      },
+      {
+        "pattern": "This could revolutionize...",
+        "translation": "這可能徹底改變...",
+        "explanation": "預測未來影響"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "VRは没入型体験を提供します",
+        "translation": "VR 提供沉浸式體驗",
+        "explanation": "描述 VR 特點的用語"
+      },
+      {
+        "pattern": "技術は大幅に進歩しました",
+        "translation": "這項技術已顯著進步",
+        "explanation": "說明技術發展"
+      },
+      {
+        "pattern": "応用範囲は...から...",
+        "translation": "應用範圍從...",
+        "explanation": "列舉應用領域"
+      },
+      {
+        "pattern": "市場は成長しています",
+        "translation": "市場正在成長",
+        "explanation": "報導市場趨勢"
+      },
+      {
+        "pattern": "これは...に革命をもたらす可能性があります",
+        "translation": "這可能徹底改變...",
+        "explanation": "預測未來影響"
+      }
+    ]
+  },
+  "tec-5": {
+    "en": [
+      {
+        "pattern": "Self-driving cars raise ethical questions.",
+        "translation": "自駕車引發倫理問題。",
+        "explanation": "提出科技倫理議題的用語"
+      },
+      {
+        "pattern": "Who is responsible when...",
+        "translation": "當...時，誰該負責？",
+        "explanation": "提出責任歸屬問題"
+      },
+      {
+        "pattern": "The technology is not perfect.",
+        "translation": "這項技術並不完美。",
+        "explanation": "指出技術限制"
+      },
+      {
+        "pattern": "We need more testing.",
+        "translation": "我們需要更多測試。",
+        "explanation": "提出建議"
+      },
+      {
+        "pattern": "Public trust is essential.",
+        "translation": "公眾信任是必要的。",
+        "explanation": "說明採用條件"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "自動運転車は倫理的な問題を提起します",
+        "translation": "自駕車引發倫理問題",
+        "explanation": "提出科技倫理議題的用語"
+      },
+      {
+        "pattern": "...の時、誰が責任を負う？",
+        "translation": "當...時，誰該負責？",
+        "explanation": "提出責任歸屬問題"
+      },
+      {
+        "pattern": "技術は完璧ではありません",
+        "translation": "這項技術並不完美",
+        "explanation": "指出技術限制"
+      },
+      {
+        "pattern": "より多くのテストが必要です",
+        "translation": "我們需要更多測試",
+        "explanation": "提出建議"
+      },
+      {
+        "pattern": "公共の信頼が不可欠です",
+        "translation": "公眾信任是必要的",
+        "explanation": "說明採用條件"
+      }
+    ]
+  },
+  "tec-6": {
+    "en": [
+      {
+        "pattern": "Blockchain enables decentralized...",
+        "translation": "區塊鏈實現去中心化的...",
+        "explanation": "介紹區塊鏈概念的用語"
+      },
+      {
+        "pattern": "Smart contracts can...",
+        "translation": "智慧合約能夠...",
+        "explanation": "說明具體應用"
+      },
+      {
+        "pattern": "Cryptocurrency has...",
+        "translation": "加密貨幣有...",
+        "explanation": "描述加密貨幣特點"
+      },
+      {
+        "pattern": "DeFi could disrupt...",
+        "translation": "DeFi 可能顛覆...",
+        "explanation": "預測金融影響"
+      },
+      {
+        "pattern": "Regulation is catching up.",
+        "translation": "監管正在追趕。",
+        "explanation": "說明政策現狀"
+      }
+    ],
+    "ja": [
+      {
+        "pattern": "ブロックチェーンは分散型...を可能にします",
+        "translation": "區塊鏈實現去中心化的...",
+        "explanation": "介紹區塊鏈概念的用語"
+      },
+      {
+        "pattern": "スマートコントラクトは...",
+        "translation": "智慧合約能夠...",
+        "explanation": "說明具體應用"
+      },
+      {
+        "pattern": "暗号通貨には...があります",
+        "translation": "加密貨幣有...",
+        "explanation": "描述加密貨幣特點"
+      },
+      {
+        "pattern": "DeFiは...を変える可能性があります",
+        "translation": "DeFi 可能顛覆...",
+        "explanation": "預測金融影響"
+      },
+      {
+        "pattern": "規制が追いついています",
+        "translation": "監管正在追趕",
+        "explanation": "說明政策現狀"
+      }
+    ]
+  }
+}
