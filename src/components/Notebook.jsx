@@ -61,7 +61,7 @@ const Notebook = ({ vocabulary, removeVocabulary, targetLanguage, speechRate = 5
 
   return (
     <div id="notebook-export-area" className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '800px', margin: '0 auto' }}>
-      <header style={{ marginBottom: '40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <header style={{ marginBottom: '40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
         <div>
           <h2 style={{ fontSize: '2rem', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '12px' }}>
             <BookOpen className="text-accent" size={32} />
@@ -70,8 +70,8 @@ const Notebook = ({ vocabulary, removeVocabulary, targetLanguage, speechRate = 5
           <p className="text-muted">在這裡複習您在口語對話練習中收集到的實用單字與句型。</p>
         </div>
         
-        <div className="no-export" style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
-          <div style={{ position: 'relative', width: '250px' }}>
+        <div className="no-export" style={{ display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
+          <div style={{ position: 'relative', width: '250px', maxWidth: '100%' }}>
             <Search size={18} style={{ position: 'absolute', left: '12px', top: '14px', color: 'var(--text-secondary)' }} />
             <input 
               type="text" 
