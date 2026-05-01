@@ -27,6 +27,7 @@ const PROGRESS_STORAGE_KEY = 'APP_LEARNING_PROGRESS';
 const PATTERN_VERSION_STORAGE_KEY = 'APP_PATTERN_VERSION';
 const TAB_STORAGE_KEY = 'APP_ACTIVE_TAB';
 const WELCOME_STORAGE_KEY = 'APP_HAS_SEEN_WELCOME';
+const API_KEY_STORAGE_KEY = 'APP_API_KEY';
 
 function App() {
   const [hasSeenWelcome, setHasSeenWelcome] = useState(() => {
@@ -37,7 +38,7 @@ function App() {
     if (localStorage.getItem(WELCOME_STORAGE_KEY) !== 'true') return 'guide';
     return localStorage.getItem(TAB_STORAGE_KEY) || 'dashboard';
   });
-  const [apiKey, setApiKey] = useState('');
+  const [apiKey, setApiKey] = useState(() => localStorage.getItem(API_KEY_STORAGE_KEY) || '');
   const [correctionMode, setCorrectionMode] = useState('communicative');
   
   const [speechRate, setSpeechRate] = useState(() => parseInt(localStorage.getItem(RATE_STORAGE_KEY) || '5', 10));
@@ -97,6 +98,7 @@ function App() {
   useEffect(() => localStorage.setItem(LANG_STORAGE_KEY, targetLanguage), [targetLanguage]);
   useEffect(() => localStorage.setItem(PATTERN_VERSION_STORAGE_KEY, patternVersion), [patternVersion]);
   useEffect(() => localStorage.setItem(TAB_STORAGE_KEY, activeTab), [activeTab]);
+  useEffect(() => localStorage.setItem(API_KEY_STORAGE_KEY, apiKey), [apiKey]);
   useEffect(() => localStorage.setItem(RATE_STORAGE_KEY, speechRate.toString()), [speechRate]);
   useEffect(() => localStorage.setItem(AUTO_READ_STORAGE_KEY, autoRead.toString()), [autoRead]);
   useEffect(() => {
