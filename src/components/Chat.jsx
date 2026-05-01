@@ -460,8 +460,8 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
         </div>
       )}
 
-      {/* Pattern Hints Collapsible Panel (Hidden in free-mode) */}
-      {scenario?.id !== 'free-mode' && (
+      {/* Pattern Hints Collapsible Panel (Hidden in free-mode and pattern-drill) */}
+      {scenario?.id !== 'free-mode' && scenario?.id !== 'pattern-drill' && (
         <div style={{ marginBottom: '20px' }}>
           <button
             onClick={() => setShowPatternHints(!showPatternHints)}

@@ -168,7 +168,7 @@ function App() {
   };
 
   const handleStartPatternDrill = (patternItem) => {
-    setActiveScenario({ title: "句型代換練習", desc: "教練給予情境，使用者填入代換詞彙" });
+    setActiveScenario({ id: 'pattern-drill', title: "句型代換練習", desc: "教練給予情境，使用者填入代換詞彙" });
     updateProgress();
     
     const langName = targetLanguage === 'en' ? '英文' : '日文';
