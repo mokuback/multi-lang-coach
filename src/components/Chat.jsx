@@ -437,6 +437,29 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
         </span>
       </header>
 
+      {/* Mock Mode Reminder Banner */}
+      {!apiKey && (
+        <div className="glass-panel" style={{ 
+          marginBottom: '20px', 
+          padding: '16px 24px', 
+          background: 'rgba(255, 215, 0, 0.1)', 
+          borderLeft: '4px solid #FFD700',
+          display: 'flex',
+          alignItems: 'flex-start',
+          gap: '16px'
+        }}>
+          <Info size={24} style={{ color: '#FFD700', flexShrink: 0, marginTop: '2px' }} />
+          <div>
+            <h3 style={{ color: 'var(--text-primary)', marginBottom: '8px', fontSize: '1.05rem' }}>
+              💡 溫馨提醒：目前為「模擬對話體驗」
+            </h3>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              您現在體驗的是內建的固定情境腳本。若希望 AI 根據您的實際發言給予動態、真實的回應與糾錯，請參考左側的**「使用說明」**，只要 1 分鐘即可快速申請**免費的** Gemini API 金鑰！
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* Pattern Hints Collapsible Panel (Hidden in free-mode) */}
       {scenario?.id !== 'free-mode' && (
         <div style={{ marginBottom: '20px' }}>
