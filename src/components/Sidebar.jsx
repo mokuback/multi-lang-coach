@@ -1,18 +1,20 @@
 import React from 'react';
 import { LayoutDashboard, MessageSquare, BookOpen, Settings, BookMarked, FileText } from 'lucide-react';
 import { categoryData } from '../data/categoryData';
+import { useI18n } from '../contexts/I18nContext';
 
 const Sidebar = ({ activeTab, setActiveTab, targetLanguage = 'en', userRole = 'it', userLevel = 'pre-intermediate' }) => {
+  const { t } = useI18n();
   const levelLabel = categoryData.levels.find(l => l.id === userLevel)?.label || userLevel;
   const roleLabel = Object.values(categoryData.roles).flat().find(r => r.id === userRole)?.label || userRole;
   const navItems = [
-    { id: 'guide', label: '使用說明', icon: BookOpen },
-    { id: 'dashboard', label: '每日任務', icon: LayoutDashboard },
-    { id: 'chat', label: '對話練習', icon: MessageSquare },
-    { id: 'notebook', label: '生詞筆記', icon: BookOpen },
-    { id: 'pattern-notebook', label: '句型筆記', icon: FileText },
-    { id: 'patterns', label: '常用句型', icon: BookMarked },
-    { id: 'settings', label: '設定與 API', icon: Settings }
+    { id: 'guide', label: t('使用說明'), icon: BookOpen },
+    { id: 'dashboard', label: t('每日任務'), icon: LayoutDashboard },
+    { id: 'chat', label: t('對話練習'), icon: MessageSquare },
+    { id: 'notebook', label: t('生詞筆記'), icon: BookOpen },
+    { id: 'pattern-notebook', label: t('句型筆記'), icon: FileText },
+    { id: 'patterns', label: t('常用句型'), icon: BookMarked },
+    { id: 'settings', label: t('設定與 API'), icon: Settings }
   ];
 
   return (
@@ -29,7 +31,7 @@ const Sidebar = ({ activeTab, setActiveTab, targetLanguage = 'en', userRole = 'i
           <span style={{ color: 'var(--accent-color)', fontSize: '1.5rem' }}>◆</span> 
           Multi-Lang Coach
         </h1>
-        <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '4px', marginLeft: '24px' }}>大數據語音教練</p>
+        <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '4px', marginLeft: '24px' }}>{t('大數據語音教練')}</p>
       </div>
 
       <nav className="sidebar-nav" style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '8px' }}>
@@ -59,8 +61,8 @@ const Sidebar = ({ activeTab, setActiveTab, targetLanguage = 'en', userRole = 'i
 
       <div className="sidebar-footer" style={{ padding: '0 10px', marginTop: 'auto' }}>
         <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-          程度：{levelLabel}<br/>
-          主題：{roleLabel}
+          {t('程度')}：{t(levelLabel)}<br/>
+          {t('主題')}：{t(roleLabel)}
         </p>
       </div>
     </aside>

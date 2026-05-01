@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { BookOpen, Volume2, Search, Trash2, Download } from 'lucide-react';
 import { exportToPDF } from '../utils/pdfExporter';
+import { useI18n } from '../contexts/I18nContext';
 
 const Notebook = ({ vocabulary, removeVocabulary, targetLanguage, speechRate = 5 }) => {
+  const { t } = useI18n();
   const [searchTerm, setSearchTerm] = useState('');
   
   const filteredVocabulary = vocabulary.filter(v => {
@@ -48,7 +50,7 @@ const Notebook = ({ vocabulary, removeVocabulary, targetLanguage, speechRate = 5
   };
 
   const handleDelete = (term, lang) => {
-    if (window.confirm(`確定要將單字「${term}」從生詞本中永久移除嗎？`)) {
+    if (window.confirm(t('確定要將單字「') + term + t('」從生詞本中永久移除嗎？'))) {
       if (removeVocabulary) {
         removeVocabulary(term, lang);
       }
@@ -56,7 +58,7 @@ const Notebook = ({ vocabulary, removeVocabulary, targetLanguage, speechRate = 5
   };
 
   const handleExportPDF = () => {
-    exportToPDF('vocabulary', filteredVocabulary, '生詞筆記本');
+    exportToPDF('vocabulary', filteredVocabulary, t('生詞筆記本'));
   };
 
   return (
@@ -65,9 +67,9 @@ const Notebook = ({ vocabulary, removeVocabulary, targetLanguage, speechRate = 5
         <div>
           <h2 style={{ fontSize: '2rem', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '12px' }}>
             <BookOpen className="text-accent" size={32} />
-            生詞筆記本
+            {t('生詞筆記本')}
           </h2>
-          <p className="text-muted">在這裡複習您在口語對話練習中收集到的實用單字與句型。</p>
+          <p className="text-muted">{t('在這裡複習您在口語對話練習中收集到的實用單字與句型。')}</p>
         </div>
         
         <div className="no-export" style={{ display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
@@ -75,7 +77,7 @@ const Notebook = ({ vocabulary, removeVocabulary, targetLanguage, speechRate = 5
             <Search size={18} style={{ position: 'absolute', left: '12px', top: '14px', color: 'var(--text-secondary)' }} />
             <input 
               type="text" 
-              placeholder="搜尋單字..." 
+              placeholder={t("搜尋單字...")} 
               className="glass-input" 
               style={{ paddingLeft: '40px' }}
               value={searchTerm}
@@ -85,11 +87,11 @@ const Notebook = ({ vocabulary, removeVocabulary, targetLanguage, speechRate = 5
           <button
             className="glass-button"
             onClick={handleExportPDF}
-            title="匯出成 PDF"
+            title={t("匯出成 PDF")}
             style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px', whiteSpace: 'nowrap' }}
           >
             <Download size={18} />
-            匯出
+            {t('匯出')}
           </button>
         </div>
       </header>
@@ -117,7 +119,7 @@ const Notebook = ({ vocabulary, removeVocabulary, targetLanguage, speechRate = 5
                   color: 'var(--accent-color)',
                   fontSize: '0.9rem'
                 }}>
-                  {vocab.meaning}
+                  {t(vocab.meaning)}
                 </span>
               </div>
               
@@ -127,7 +129,7 @@ const Notebook = ({ vocabulary, removeVocabulary, targetLanguage, speechRate = 5
                 paddingLeft: '16px' 
               }}>
                 <p style={{ color: 'var(--text-secondary)', fontStyle: 'italic', fontSize: '1rem' }}>
-                  "{vocab.example}"
+                  "{t(vocab.example)}"
                 </p>
               </div>
             </div>
@@ -135,7 +137,7 @@ const Notebook = ({ vocabulary, removeVocabulary, targetLanguage, speechRate = 5
               <button 
                 className="glass-button" 
                 style={{ padding: '10px', borderRadius: '50%', background: 'rgba(255, 255, 255, 0.05)' }} 
-                title="聆聽發音"
+                title={t("聆聽發音")}
                 onClick={() => handleSpeak(vocab.term, vocab.lang)}
               >
                 <Volume2 size={20} className="text-accent" />
@@ -149,7 +151,7 @@ const Notebook = ({ vocabulary, removeVocabulary, targetLanguage, speechRate = 5
                   background: 'rgba(255, 71, 87, 0.05)',
                   border: '1px solid rgba(255, 71, 87, 0.2)'
                 }} 
-                title="移除生詞"
+                title={t("移除生詞")}
                 onClick={() => handleDelete(vocab.term, vocab.lang)}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.background = 'rgba(255, 71, 87, 0.2)';
@@ -170,7 +172,7 @@ const Notebook = ({ vocabulary, removeVocabulary, targetLanguage, speechRate = 5
       {filteredVocabulary.length === 0 && (
         <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-secondary)' }}>
           <BookOpen size={48} style={{ margin: '0 auto 16px', opacity: 0.5 }} />
-          <p>您的筆記本目前是空的。去對話練習中收集更多單字吧！</p>
+          <p>{t('您的筆記本目前是空的。去對話練習中收集更多單字吧！')}</p>
         </div>
       )}
     </div>

@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { BookOpen } from 'lucide-react';
 import userGuideMd from '../data/user_guide.md?raw';
+import { useI18n } from '../contexts/I18nContext';
+
 const Guide = () => {
+  const { t } = useI18n();
   const [error, setError] = useState(null);
 
   if (error) {
@@ -14,9 +17,9 @@ const Guide = () => {
         <div>
           <h2 style={{ fontSize: '2rem', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '12px' }}>
             <BookOpen className="text-accent" size={32} />
-            使用說明
+            {t('使用說明')}
           </h2>
-          <p className="text-muted">了解如何發揮 Multi-Lang Coach 的最大學習效益。</p>
+          <p className="text-muted">{t('了解如何發揮 Multi-Lang Coach 的最大學習效益。')}</p>
         </div>
       </header>
 
@@ -47,7 +50,7 @@ const Guide = () => {
                       : <code {...props} />
                   }}
                 >
-                  {userGuideMd || ''}
+                  {t(userGuideMd || '')}
                 </ReactMarkdown>
               );
             } catch (e) {

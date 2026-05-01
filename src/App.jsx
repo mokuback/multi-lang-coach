@@ -6,6 +6,7 @@ import Notebook from './components/Notebook';
 import PatternNotebook from './components/PatternNotebook';
 import Patterns from './components/Patterns';
 import Guide from './components/Guide';
+import { useI18n } from './contexts/I18nContext.jsx';
 
 import { categoryData, getDefaultRole } from './data/categoryData';
 import { getScenariosByRole } from './data/scenariosData';
@@ -30,6 +31,8 @@ const WELCOME_STORAGE_KEY = 'APP_HAS_SEEN_WELCOME';
 const API_KEY_STORAGE_KEY = 'APP_GEMINI_API_KEY';
 
 function App() {
+  const { t, uiLang, setUiLang } = useI18n();
+
   const [hasSeenWelcome, setHasSeenWelcome] = useState(() => {
     return localStorage.getItem(WELCOME_STORAGE_KEY) === 'true';
   });
@@ -138,23 +141,21 @@ function App() {
     setActiveScenario(scenario);
     updateProgress();
     
-    const langName = targetLanguage === 'en' ? '英文' : '日文';
-    
-    // Look up category and role labels for prompt
-    const catLabel = categoryData.categories.find(c => c.id === userCategory)?.label || userCategory;
-    const roleLabel = categoryData.roles[userCategory]?.find(r => r.id === userRole)?.label || userRole || 'Unknown';
+    const langName = targetLanguage === 'en' ? t('英文') : t('日文');
     const levelLabel = categoryData.levels.find(l => l.id === userLevel)?.label || userLevel;
+    const catLabel = categoryData.categories.find(c => c.id === userCategory)?.label || userCategory;
+    const roleLabel = Object.values(categoryData.roles).flat().find(r => r.id === userRole)?.label || userRole;
 
     const aiGreeting = targetLanguage === 'en' 
-      ? (scenario.id === 'free-mode' ? `Hello! Let's start our conversation. You can talk about anything!` : `Hello! Let's practice this scenario: "${scenario.title}". Are you ready?`)
-      : (scenario.id === 'free-mode' ? `こんにちは！会話を始めましょう。何について話してもいいですよ！` : `こんにちは！このシチュエーション：「${scenario.title}」を練習しましょう。準備はいいですか？`);
+      ? (scenario.id === 'free-mode' ? `Hello! Let's start a free conversation. You can talk about anything!` : `Hello! Let's practice this scenario: "${t(scenario.title)}". Are you ready?`)
+      : (scenario.id === 'free-mode' ? `こんにちは！会話を始めましょう。何について話してもいいですよ！` : `こんにちは！このシチュエーション：「${t(scenario.title)}」を練習しましょう。準備はいいですか？`);
     const aiTranslation = targetLanguage === 'en'
-      ? (scenario.id === 'free-mode' ? `您好！我們開始自由對話吧，您可以聊任何話題！` : `您好！我們來練習這個情境：「${scenario.title}」。您準備好了嗎？`)
-      : (scenario.id === 'free-mode' ? `你好！我們開始自由對話吧，隨便聊聊！` : `你好！我們來練習這個情境：「${scenario.title}」。準備好了嗎？`);
+      ? (scenario.id === 'free-mode' ? t(`您好！我們開始自由對話吧，您可以聊任何話題！`) : t(`您好！我們來練習這個情境：「${scenario.title}」。您準備好了嗎？`))
+      : (scenario.id === 'free-mode' ? t(`你好！我們開始自由對話吧，隨便聊聊！`) : t(`你好！我們來練習這個情境：「${scenario.title}」。準備好了嗎？`));
 
     const systemPrompt = scenario.id === 'free-mode'
-      ? `這是一場不限主題的自由對話。請扮演導師或友善的對話對象，使用符合【${levelLabel}】程度規格的${langName}與我進行自然的對話交流。請根據我聊到的話題給予有趣的回應，並適時提出問題來引導對話繼續。`
-      : `目前情境處於【${catLabel} - ${roleLabel}】的脈絡下。情境設定: ${scenario.title}. ${scenario.desc}. 請扮演導師或對話對象，使用符合【${levelLabel}】程度規格的${langName}與我進行對話。`;
+      ? t(`這是一場不限主題的自由對話。請扮演導師或友善的對話對象，使用符合【${levelLabel}】程度規格的${langName}與我進行自然的對話交流。請根據我聊到的話題給予有趣的回應，並適時提出問題來引導對話繼續。後續解說與翻譯請全程使用【${uiLang === 'zh-CN' ? '簡體中文' : '繁體中文'}】。`)
+      : t(`目前情境處於【${catLabel} - ${roleLabel}】的脈絡下。情境設定: ${scenario.title}. ${scenario.desc}. 請扮演導師或對話對象，使用符合【${levelLabel}】程度規格的${langName}與我進行對話。後續解說與翻譯請全程使用【${uiLang === 'zh-CN' ? '簡體中文' : '繁體中文'}】。`);
 
     setChatHistory([
       { role: 'system', content: systemPrompt },
@@ -168,21 +169,21 @@ function App() {
   };
 
   const handleStartPatternDrill = (patternItem) => {
-    setActiveScenario({ id: 'pattern-drill', title: "句型代換練習", desc: "教練給予情境，使用者填入代換詞彙" });
+    setActiveScenario({ id: 'pattern-drill', title: t("句型代換練習"), desc: t("教練給予情境，使用者填入代換詞彙") });
     updateProgress();
     
-    const langName = targetLanguage === 'en' ? '英文' : '日文';
+    const langName = targetLanguage === 'en' ? t('英文') : t('日文');
     const levelLabel = categoryData.levels.find(l => l.id === userLevel)?.label || userLevel;
 
     const aiGreeting = targetLanguage === 'en' 
       ? `Let's drill this pattern: "${patternItem.pattern}". I will give you a scenario in Chinese, and you reply using this pattern.`
       : `このパターンの練習をしましょう: "${patternItem.pattern}". 中国語で状況を説明するので、あなたはこのパターンを使って答えてください。`;
     const aiTranslation = targetLanguage === 'en'
-      ? `我們來練習這個句型：「${patternItem.pattern}」。我會給你一個中文情境，請你使用這個句型回覆。`
-      : `我們來練習這個句型：「${patternItem.pattern}」。我會給你一個中文情境，請你使用這個句型回答。`;
+      ? t(`我們來練習這個句型：「${patternItem.pattern}」。我會給你一個中文情境，請你使用這個句型回覆。`)
+      : t(`我們來練習這個句型：「${patternItem.pattern}」。我會給你一個中文情境，請你使用這個句型回答。`);
 
     setChatHistory([
-      { role: 'system', content: `我們正在進行語詞代換練習。目標句型是：【${patternItem.pattern}】。請你根據【${levelLabel}】難度，給出一個中文情境提示，讓使用者試著將合適的${langName}詞彙填入代換位置。使用者回答後，請確認是否正確，並接著給出下一個不同的情境。` },
+      { role: 'system', content: t(`我們正在進行語詞代換練習。目標句型是：【${patternItem.pattern}】。請你根據【${levelLabel}】難度，給出一個中文情境提示，讓使用者試著將合適的${langName}詞彙填入代換位置。使用者回答後，請確認是否正確，並接著給出下一個不同的情境。後續解說與翻譯請全程使用【${uiLang === 'zh-CN' ? '簡體中文' : '繁體中文'}】。`) },
       { 
         role: 'assistant', 
         content: aiGreeting,
@@ -239,17 +240,17 @@ function App() {
             boxShadow: '0 0 40px rgba(0, 240, 255, 0.2)'
           }}>
             <h2 style={{ fontSize: '2rem', marginBottom: '16px', color: 'var(--text-primary)' }}>
-              🎉 歡迎來到 Multi-Lang Coach！
+              🎉 {t('歡迎來到 Multi-Lang Coach！')}
             </h2>
             <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', lineHeight: '1.6', marginBottom: '32px' }}>
-              這是一個由大數據驅動的智能外語對話教練。為了讓您體驗完整的 AI 糾錯與推薦功能，我們強烈建議您花 <strong className="text-accent">1 分鐘</strong>閱讀背景的這份使用說明，並免費取得專屬的 API 金鑰！
+              {t('這是一個由大數據驅動的智能外語對話教練。為了讓您體驗完整的 AI 糾錯與推薦功能，我們強烈建議您花')} <strong className="text-accent">1 {t('分鐘')}</strong>{t('閱讀背景的這份使用說明，並免費取得專屬的 API 金鑰！')}
             </p>
             <button 
               className="glass-button active" 
               onClick={closeWelcomeModal}
               style={{ width: '100%', padding: '16px', fontSize: '1.2rem', fontWeight: 'bold' }}
             >
-              好的，帶我去看說明書！
+              {t('好的，帶我去看說明書！')}
             </button>
           </div>
         </div>
@@ -318,9 +319,17 @@ function App() {
         )}
         
         {activeTab === 'settings' && (
-          <div className="animate-fade-in glass-panel" style={{ padding: '2rem', maxWidth: '600px', margin: '0 auto', marginTop: '50px' }}>
-            <h2 style={{ marginBottom: '1.5rem' }}>設定與 API</h2>
+          <div className="glass-panel animate-fade-in" style={{ padding: '24px', maxWidth: '600px', margin: '0 auto', marginTop: '50px' }}>
+            <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'var(--text-primary)' }}>{t('學習設定')}</h2>
             
+            <div style={{ marginBottom: '1.5rem' }}>
+              <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('介面與母語語言')}</label>
+              <select className="glass-input" value={uiLang} onChange={(e) => setUiLang(e.target.value)} style={{ appearance: 'auto', backgroundColor: 'rgba(0,0,0,0.8)' }}>
+                <option value="zh-TW">繁體中文</option>
+                <option value="zh-CN">简体中文</option>
+              </select>
+            </div>
+
             <div className="form-group-mobile" style={{ marginBottom: '1.5rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
               <div>
                 <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>主類別</label>
@@ -353,10 +362,10 @@ function App() {
             </div>
 
             <div style={{ marginBottom: '1.5rem' }}>
-              <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>文法糾錯嚴格度</label>
+              <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('文法糾錯嚴格度')}</label>
               <select className="glass-input" value={correctionMode} onChange={(e) => setCorrectionMode(e.target.value)} style={{ appearance: 'auto', backgroundColor: 'rgba(0,0,0,0.8)' }}>
-                <option value="communicative">溝通為主（僅糾正重大基礎錯誤，鼓勵開口）</option>
-                <option value="strict">超級嚴格（抓出所有不道地、些微的文法瑕疵）</option>
+                <option value="communicative">{t('溝通為主（僅糾正重大基礎錯誤，鼓勵開口）')}</option>
+                <option value="strict">{t('超級嚴格（抓出所有不道地、些微的文法瑕疵）')}</option>
               </select>
             </div>
 
@@ -392,15 +401,15 @@ function App() {
             </div>
 
             <div style={{ marginBottom: '1rem' }}>
-              <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>Gemini API 金鑰</label>
+              <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('Gemini API 金鑰')}</label>
               <input type="password" className="glass-input" placeholder="AIzaSy..." value={apiKey} onChange={(e) => setApiKey(e.target.value)} />
               <p style={{ marginTop: '0.8rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-                {apiKey ? <span className="text-success">已輸入金鑰，真實 AI 模式啟動中。</span> : <span>目前以 <span className="text-accent">模擬對話體驗模式 (Mock Mode)</span> 執行中。</span>}
+                {apiKey ? <span className="text-success">{t('已輸入金鑰，真實 AI 模式啟動中。')}</span> : <span>{t('目前以')} <span className="text-accent">{t('模擬對話體驗模式 (Mock Mode)')}</span> {t('執行中。')}</span>}
               </p>
             </div>
             
             <button className="glass-button active" style={{ padding: '10px 20px', display: 'inline-block', marginTop: '1rem' }} onClick={() => setActiveTab('dashboard')}>
-              儲存設定並返回
+              {t('儲存設定並返回')}
             </button>
           </div>
         )}

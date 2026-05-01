@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { BookMarked, Volume2, Search, Trash2, Download } from 'lucide-react';
 import { exportToPDF } from '../utils/pdfExporter';
+import { useI18n } from '../contexts/I18nContext';
 
 const PatternNotebook = ({ patterns, removePattern, targetLanguage, speechRate = 5 }) => {
+  const { t } = useI18n();
   const [searchTerm, setSearchTerm] = useState('');
   
   const filteredPatterns = patterns.filter(p => {
@@ -46,7 +48,7 @@ const PatternNotebook = ({ patterns, removePattern, targetLanguage, speechRate =
   };
 
   const handleDelete = (pattern, lang) => {
-    if (window.confirm(`確定要將句型「${pattern}」從筆記中永久移除嗎？`)) {
+    if (window.confirm(t('確定要將句型「') + pattern + t('」從筆記中永久移除嗎？'))) {
       if (removePattern) {
         removePattern(pattern, lang);
       }
@@ -54,7 +56,7 @@ const PatternNotebook = ({ patterns, removePattern, targetLanguage, speechRate =
   };
 
   const handleExportPDF = () => {
-    exportToPDF('pattern', filteredPatterns, '句型筆記本');
+    exportToPDF('pattern', filteredPatterns, t('句型筆記本'));
   };
 
   return (
@@ -63,9 +65,9 @@ const PatternNotebook = ({ patterns, removePattern, targetLanguage, speechRate =
         <div>
           <h2 style={{ fontSize: '2rem', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '12px' }}>
             <BookMarked className="text-accent" size={32} />
-            句型筆記本
+            {t('句型筆記本')}
           </h2>
-          <p className="text-muted">在這裡複習您在口語對話練習中解析收藏的實用句型。</p>
+          <p className="text-muted">{t('在這裡複習您在口語對話練習中解析收藏的實用句型。')}</p>
         </div>
         
         <div className="no-export" style={{ display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
@@ -73,7 +75,7 @@ const PatternNotebook = ({ patterns, removePattern, targetLanguage, speechRate =
             <Search size={18} style={{ position: 'absolute', left: '12px', top: '14px', color: 'var(--text-secondary)' }} />
             <input 
               type="text" 
-              placeholder="搜尋句型..." 
+              placeholder={t("搜尋句型...")} 
               className="glass-input" 
               style={{ paddingLeft: '40px' }}
               value={searchTerm}
@@ -83,11 +85,11 @@ const PatternNotebook = ({ patterns, removePattern, targetLanguage, speechRate =
           <button
             className="glass-button"
             onClick={handleExportPDF}
-            title="匯出成 PDF"
+            title={t("匯出成 PDF")}
             style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px', whiteSpace: 'nowrap' }}
           >
             <Download size={18} />
-            匯出
+            {t('匯出')}
           </button>
         </div>
       </header>
@@ -111,7 +113,7 @@ const PatternNotebook = ({ patterns, removePattern, targetLanguage, speechRate =
                 paddingLeft: '16px' 
               }}>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: '1.6' }}>
-                  {p.explanation}
+                  {t(p.explanation)}
                 </p>
               </div>
             </div>
@@ -119,7 +121,7 @@ const PatternNotebook = ({ patterns, removePattern, targetLanguage, speechRate =
               <button 
                 className="glass-button" 
                 style={{ padding: '10px', borderRadius: '50%', background: 'rgba(255, 255, 255, 0.05)' }} 
-                title="聆聽發音"
+                title={t("聆聽發音")}
                 onClick={() => handleSpeak(p.pattern, p.lang)}
               >
                 <Volume2 size={20} className="text-accent" />
@@ -133,7 +135,7 @@ const PatternNotebook = ({ patterns, removePattern, targetLanguage, speechRate =
                   background: 'rgba(255, 71, 87, 0.05)',
                   border: '1px solid rgba(255, 71, 87, 0.2)'
                 }} 
-                title="移除句型"
+                title={t("移除句型")}
                 onClick={() => handleDelete(p.pattern, p.lang)}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.background = 'rgba(255, 71, 87, 0.2)';
@@ -154,7 +156,7 @@ const PatternNotebook = ({ patterns, removePattern, targetLanguage, speechRate =
       {filteredPatterns.length === 0 && (
         <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-secondary)' }}>
           <BookMarked size={48} style={{ margin: '0 auto 16px', opacity: 0.5 }} />
-          <p>您的句型筆記本目前是空的。去對話練習中使用「當句解析」來收集實用句型吧！</p>
+          <p>{t('您的句型筆記本目前是空的。去對話練習中使用「當句解析」來收集實用句型吧！')}</p>
         </div>
       )}
     </div>

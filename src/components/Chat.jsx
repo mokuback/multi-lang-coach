@@ -1,12 +1,14 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, AlertCircle, CheckCircle, Info, Lightbulb, X, Wand2, Volume2, Mic, Square, RefreshCw } from 'lucide-react';
 import { callGeminiAPI, analyzeSentenceAPI, polishSentenceAPI } from '../utils/llmClient';
+import { useI18n } from '../contexts/I18nContext';
 
 import { categoryData } from '../data/categoryData';
 import scenarioPatterns01 from '../data/scenarioPatterns_01.json';
 import scenarioPatterns02 from '../data/scenarioPatterns_02.json';
 
 const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, addPattern, correctionMode, targetLanguage, userCategory, userRole, userLevel, speechRate = 5, autoRead = false, patternVersion = '02' }) => {
+  const { t } = useI18n();
   const [input, setInput] = useState('');
   const [showPatternHints, setShowPatternHints] = useState(false);
   const [isTyping, setIsTyping] = useState(false);
@@ -105,7 +107,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
 
   const handleLearnClick = async (sentence) => {
     if (!apiKey) {
-      alert("請先在「設定與 API」中輸入 Gemini API Key，才能解鎖智能解析功能。");
+      alert(t("請先在「設定與 API」中輸入 Gemini API Key，才能解鎖智能解析功能。"));
       return;
     }
     
@@ -130,7 +132,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
       }
     } catch (error) {
       console.error(error);
-      alert(`解析發生錯誤: ${error.message}，請確認網路連線或金鑰是否正確。`);
+      alert(t(`解析發生錯誤: `) + error.message + t(`，請確認網路連線或金鑰是否正確。`));
       setIsAnalyzing(false);
     } finally {
       setIsAnalyzing(false);
@@ -140,7 +142,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
   const handlePolish = async () => {
     if (!input.trim()) return;
     if (!apiKey) {
-      alert("請先在「設定與 API」中輸入 Gemini API Key，才能使用 AI 潤飾/翻譯功能。");
+      alert(t("請先在「設定與 API」中輸入 Gemini API Key，才能使用 AI 潤飾/翻譯功能。"));
       return;
     }
 
@@ -152,7 +154,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
       }
     } catch (error) {
       console.error(error);
-      alert(`修飾發生錯誤: ${error.message}`);
+      alert(t(`修飾發生錯誤: `) + error.message);
     } finally {
       setIsPolishing(false);
     }
@@ -160,7 +162,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
 
   const handleSuggestClick = async (text, realIndex) => {
     if (!apiKey) {
-      alert("請先在「設定與 API」中輸入 Gemini API Key，才能使用此功能。");
+      alert(t("請先在「設定與 API」中輸入 Gemini API Key，才能使用此功能。"));
       return;
     }
     
@@ -178,7 +180,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
       }
     } catch (error) {
       console.error(error);
-      alert(`建議發生錯誤: ${error.message}`);
+      alert(t(`建議發生錯誤: `) + error.message);
     } finally {
       setIsAnalyzing(false);
     }
@@ -226,7 +228,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
       setIsRecording(false);
     } else {
       if (!recognitionRef.current) {
-        alert("您的瀏覽器尚不支援語音輸入功能。建議使用 Chrome 或 Edge 以獲取完整體驗。");
+        alert(t("您的瀏覽器尚不支援語音輸入功能。建議使用 Chrome 或 Edge 以獲取完整體驗。"));
         return;
       }
       transcriptBuffer.current = input ? input + ' ' : '';
@@ -263,7 +265,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
              aiMessage.correction = null;
              extractedVocab = { term: "詳しく説明する", meaning: "詳細說明", example: "その点について、詳しく説明していただけますか？", phonetic: "kuwashiku setsumei suru", partOfSpeech: "v." };
           }
-          aiMessage.content += "\n\n(💡【システムからのお知らせ】これはデモ用の固定返答です。AIの動的な対話を体験するには、ユーザーガイドを参考に**無料**のGemini APIキーを取得してください！)";
+          aiMessage.content += "\n\n(💡【系統提示】這是供體驗用的模擬回覆。若要讓 AI 根據您的話語動態回應，強烈建議您參考左側「使用說明」，快速申請**免費**的 Gemini API 金鑰！)";
           aiMessage.translation += "\n\n(💡【系統提示】這是供體驗用的模擬回覆。若要讓 AI 根據您的話語動態回應，強烈建議您參考左側「使用說明」，快速申請**免費**的 Gemini API 金鑰！)";
         } else {
           // English mock logic
@@ -347,7 +349,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
         console.error("API Call failed:", error);
         setChatHistory(prev => [...prev, { 
           role: 'assistant', 
-          content: `抱歉，呼叫 AI 發生錯誤：${error.message}。請確認您的網路連線或 API 金鑰是否正確。`,
+          content: t(`抱歉，呼叫 AI 發生錯誤：`) + `${error.message}。` + t(`請確認您的網路連線或 API 金鑰是否正確。`),
           isError: true
         }]);
       }
@@ -387,7 +389,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
       console.error("API Call failed during retry:", error);
       setChatHistory(prev => [...prev, { 
         role: 'assistant', 
-        content: `抱歉，呼叫 AI 發生錯誤：${error.message}。請確認您的網路連線或 API 金鑰是否正確。`,
+        content: t(`抱歉，呼叫 AI 發生錯誤：`) + `${error.message}。` + t(`請確認您的網路連線或 API 金鑰是否正確。`),
         isError: true
       }]);
     }
@@ -402,7 +404,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
     return (
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', flexDirection: 'column', gap: '20px' }}>
         <Info size={48} className="text-muted" />
-        <h2 style={{ fontSize: '1.5rem', color: 'var(--text-secondary)' }}>請先從「每日任務」中選擇一個情境。</h2>
+        <h2 style={{ fontSize: '1.5rem', color: 'var(--text-secondary)' }}>{t('請先從「每日任務」中選擇一個情境。')}</h2>
       </div>
     );
   }
@@ -423,8 +425,8 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
       {/* Chat header */}
       <header className="glass-panel" style={{ padding: '16px 24px', marginBottom: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div>
-          <h2 style={{ fontSize: '1.2rem', marginBottom: '4px' }}>{scenario.title}</h2>
-          <p className="text-muted" style={{ fontSize: '0.9rem' }}>{scenario.desc}</p>
+          <h2 style={{ fontSize: '1.2rem', marginBottom: '4px' }}>{t(scenario.title)}</h2>
+          <p className="text-muted" style={{ fontSize: '0.9rem' }}>{t(scenario.desc)}</p>
         </div>
         <span style={{ 
           background: 'rgba(255, 255, 255, 0.1)', 
@@ -433,7 +435,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
           fontSize: '0.8rem',
           color: 'var(--text-primary)'
         }}>
-          {apiKey ? 'API 對話模式' : '模擬對話體驗'}
+          {apiKey ? t('API 對話模式') : t('模擬對話體驗')}
         </span>
       </header>
 
@@ -451,10 +453,10 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
           <Info size={24} style={{ color: '#FFD700', flexShrink: 0, marginTop: '2px' }} />
           <div>
             <h3 style={{ color: 'var(--text-primary)', marginBottom: '8px', fontSize: '1.05rem' }}>
-              💡 溫馨提醒：目前為「模擬對話體驗」
+              💡 {t('溫馨提醒：目前為「模擬對話體驗」')}
             </h3>
             <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.5' }}>
-              您現在體驗的是內建的固定情境腳本。若希望 AI 根據您的實際發言給予動態、真實的回應與糾錯，請參考左側的**「使用說明」**，只要 1 分鐘即可快速申請**免費的** Gemini API 金鑰！
+              {t('您現在體驗的是內建的固定情境腳本。若希望 AI 根據您的實際發言給予動態、真實的回應與糾錯，請參考左側的')}**「{t('使用說明')}」**，{t('只要 1 分鐘即可快速申請')}**{t('免費的')}** {t('Gemini API 金鑰！')}
             </p>
           </div>
         </div>
@@ -485,9 +487,9 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <Lightbulb size={18} className="text-accent" />
-              💡 本情境推薦句型 ({patternVersion === '01' ? '基礎教科書版' : '進階商務版'})
+              {t('本情境推薦句型')} ({patternVersion === '01' ? t('基礎教科書版') : t('進階商務版')})
             </div>
-            <span>{showPatternHints ? '▲ 收合' : '▼ 展開'}</span>
+            <span>{showPatternHints ? '▲ ' + t('收合') : '▼ ' + t('展開')}</span>
           </button>
 
           {showPatternHints && (() => {
@@ -507,7 +509,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                 gap: '12px'
               }}>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '8px' }}>
-                  在對話中試著運用以下句型，讓您的表達更自然：
+                  {t('在對話中試著運用以下句型，讓您的表達更自然：')}
                 </p>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '12px' }}>
                   {patterns.slice(0, 4).map((p, idx) => (
@@ -518,7 +520,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                       borderLeft: '2px solid var(--accent-color)'
                     }}>
                       <div style={{ fontWeight: 'bold', marginBottom: '4px', color: 'var(--text-primary)' }}>{p.pattern}</div>
-                      <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{p.explanation}</div>
+                      <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{t(p.explanation)}</div>
                     </div>
                   ))}
                 </div>
@@ -562,7 +564,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                 onTouchEnd={!isUser ? () => handleTextSelection(index) : undefined}
               >
                 <p style={{ fontWeight: isUser ? 500 : 400, fontSize: '1.05rem', lineHeight: '1.5' }}>
-                  {(!isUser && translatedIndexes.has(index) && msg.translation) ? msg.translation : msg.content}
+                  {(!isUser && translatedIndexes.has(index) && msg.translation) ? t(msg.translation) : msg.content}
                 </p>
 
                 {isUser && msg.content && (
@@ -584,9 +586,9 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                       }}
                       onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(217, 70, 239, 0.2)'}
                       onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(217, 70, 239, 0.1)'}
-                      title="讓 AI 提供更道地、專業的說法建議"
+                      title={t("讓 AI 提供更道地、專業的說法建議")}
                     >
-                      <Wand2 size={14} /> AI 潤飾建議
+                      <Wand2 size={14} /> {t('AI 潤飾建議')}
                     </button>
                   </div>
                 )}
@@ -618,7 +620,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                       }}
                     >
                       {playingIndex === index ? <Square fill="currentColor" size={14} /> : <Volume2 size={14} />}
-                      {playingIndex === index ? "停止" : "朗讀"}
+                      {playingIndex === index ? t("停止") : t("朗讀")}
                     </button>
 
                     {msg.translation && (
@@ -650,7 +652,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                           e.currentTarget.style.background = 'rgba(255,255,255,0.05)';
                         }}
                       >
-                        {translatedIndexes.has(index) ? "原文" : "翻譯"}
+                        {translatedIndexes.has(index) ? t("原文") : t("翻譯")}
                       </button>
                     )}
 
@@ -673,7 +675,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                         e.currentTarget.style.background = 'rgba(0, 240, 255, 0.1)';
                       }}
                     >
-                      當句解析
+                      {t('當句解析')}
                     </button>
                     
                     {/* Dynamic highlighted text parsing button */}
@@ -697,7 +699,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                           e.currentTarget.style.background = 'rgba(255, 171, 0, 0.1)';
                         }}
                       >
-                        標記解析
+                        {t('標記解析')}
                       </button>
                     )}
                     
@@ -723,9 +725,9 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                       }}
                       onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 171, 0, 0.2)'}
                       onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(255, 171, 0, 0.1)'}
-                      title="重新產生回應"
+                      title={t("重新產生回應")}
                     >
-                      <RefreshCw size={14} /> 重新產生
+                      <RefreshCw size={14} /> {t('重新產生')}
                     </button>
                   </div>
                 )}
@@ -745,7 +747,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                   gap: '12px'
                 }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--error-color)', fontWeight: 600 }}>
-                    <AlertCircle size={18} /> 文法與錯誤糾正
+                    <AlertCircle size={18} /> {t('文法與錯誤糾正')}
                   </div>
                   
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
@@ -764,7 +766,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                   
                   <div style={{ display: 'flex', gap: '8px', alignItems: 'flex-start', marginTop: '4px' }}>
                     <Lightbulb size={18} className="text-accent" style={{ marginTop: '2px' }} />
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>{msg.correction.explanation}</p>
+                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>{t(msg.correction.explanation)}</p>
                   </div>
                 </div>
               )}
@@ -790,7 +792,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
           type="text" 
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="聽打輸入中...或輸入中文草稿並點擊右側魔法棒 ✨" 
+          placeholder={t("聽打輸入中...或輸入中文草稿並點擊右側魔法棒 ✨")} 
           className="glass-input chat-input-wrapper" 
           style={{ flex: 1, padding: '16px 20px', fontSize: '1.05rem', minWidth: '200px' }}
           disabled={isTyping || isPolishing}
@@ -815,14 +817,14 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
               gap: '8px'
             }}
             disabled={!input.trim() || isTyping || isPolishing || isRecording}
-            title={`幫我翻譯成道地的 IT ${targetLanguage === 'en' ? '英文' : '日文'}`}
+            title={t(`幫我翻譯成道地的 IT ${targetLanguage === 'en' ? '英文' : '日文'}`)}
           >
             {isPolishing ? (
               <div className="typing-dot" style={{ width: '8px', height: '8px', background: '#d946ef', borderRadius: '50%', animation: 'fadeIn 0.5s infinite alternate' }}></div>
             ) : (
               <>
                 <Wand2 size={20} />
-                <span style={{ fontWeight: 600 }}>AI 潤飾</span>
+                <span style={{ fontWeight: 600 }}>{t('AI 潤飾')}</span>
               </>
             )}
           </button>
@@ -846,10 +848,10 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
               animation: isRecording ? 'pulseRecording 2s infinite' : 'none'
             }}
             disabled={isTyping || isPolishing}
-            title="麥克風語音輸入"
+            title={t("麥克風語音輸入")}
           >
             {isRecording ? <Square fill="currentColor" size={20} /> : <Mic size={20} />}
-            <span style={{ fontWeight: 600 }}>{isRecording ? '錄音中...' : '口說輸入'}</span>
+            <span style={{ fontWeight: 600 }}>{isRecording ? t('錄音中...') : t('口說輸入')}</span>
           </button>
 
           {/* Send Button */}
