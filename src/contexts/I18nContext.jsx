@@ -7,7 +7,17 @@ const UI_LANG_STORAGE_KEY = 'APP_UI_LANG';
 
 export const I18nProvider = ({ children }) => {
   const [uiLang, setUiLang] = useState(() => {
-    return localStorage.getItem(UI_LANG_STORAGE_KEY) || 'zh-TW';
+    const stored = localStorage.getItem(UI_LANG_STORAGE_KEY);
+    if (stored) return stored;
+
+    if (typeof navigator !== 'undefined' && navigator.language) {
+      const browserLang = navigator.language.toLowerCase();
+      if (browserLang.includes('zh-cn') || browserLang.includes('zh-sg') || browserLang.includes('zh-hans')) {
+        return 'zh-CN';
+      }
+    }
+    
+    return 'zh-TW';
   });
 
   useEffect(() => {
