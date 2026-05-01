@@ -332,31 +332,31 @@ function App() {
 
             <div className="form-group-mobile" style={{ marginBottom: '1.5rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
               <div>
-                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>主類別</label>
+                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('主類別')}</label>
                 <select className="glass-input" value={userCategory} onChange={handleCategoryChange} style={{ appearance: 'auto', backgroundColor: 'rgba(0,0,0,0.8)' }}>
-                  {categoryData.categories.map(c => <option key={c.id} value={c.id}>{c.label}</option>)}
+                  {categoryData.categories.map(c => <option key={c.id} value={c.id}>{t(c.label)}</option>)}
                 </select>
               </div>
               <div>
-                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>主題與職務</label>
+                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('主題與職務')}</label>
                 <select className="glass-input" value={userRole} onChange={(e) => setUserRole(e.target.value)} style={{ appearance: 'auto', backgroundColor: 'rgba(0,0,0,0.8)' }}>
-                  {categoryData.roles[userCategory]?.map(r => <option key={r.id} value={r.id}>{r.label}</option>)}
+                  {categoryData.roles[userCategory]?.map(r => <option key={r.id} value={r.id}>{t(r.label)}</option>)}
                 </select>
               </div>
             </div>
 
             <div className="form-group-mobile" style={{ marginBottom: '1.5rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
               <div>
-                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>學習語言目標</label>
+                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('學習語言目標')}</label>
                 <select className="glass-input" value={targetLanguage} onChange={(e) => setTargetLanguage(e.target.value)} style={{ appearance: 'auto', backgroundColor: 'rgba(0,0,0,0.8)' }}>
-                  <option value="en">英語 (English)</option>
-                  <option value="ja">日語 (日本語)</option>
+                  <option value="en">{t('英語 (English)')}</option>
+                  <option value="ja">{t('日語 (日本語)')}</option>
                 </select>
               </div>
               <div>
-                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>語言程度</label>
+                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('語言程度')}</label>
                 <select className="glass-input" value={userLevel} onChange={(e) => setUserLevel(e.target.value)} style={{ appearance: 'auto', backgroundColor: 'rgba(0,0,0,0.8)' }}>
-                  {categoryData.levels.map(l => <option key={l.id} value={l.id}>{l.label}</option>)}
+                  {categoryData.levels.map(l => <option key={l.id} value={l.id}>{t(l.label)}</option>)}
                 </select>
               </div>
             </div>
@@ -371,7 +371,7 @@ function App() {
 
             <div className="form-group-mobile" style={{ marginBottom: '1.5rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
               <div>
-                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>朗讀語速 (1-10)</label>
+                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('朗讀語速 (1-10)')}</label>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                   <input 
                     type="range" 
@@ -384,7 +384,7 @@ function App() {
                 </div>
               </div>
               <div>
-                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>自動朗讀 (對話練習)</label>
+                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('自動朗讀 (對話練習)')}</label>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.5rem' }}>
                   <input 
                     type="checkbox" 
@@ -394,7 +394,7 @@ function App() {
                     style={{ width: '1.2rem', height: '1.2rem', cursor: 'pointer' }}
                   />
                   <label htmlFor="autoReadToggle" style={{ cursor: 'pointer', color: 'var(--text-primary)' }}>
-                    {autoRead ? '開啟' : '關閉'}
+                    {autoRead ? t('開啟') : t('關閉')}
                   </label>
                 </div>
               </div>
