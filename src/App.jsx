@@ -25,9 +25,18 @@ const RATE_STORAGE_KEY = 'APP_SPEECH_RATE';
 const AUTO_READ_STORAGE_KEY = 'APP_AUTO_READ';
 const PROGRESS_STORAGE_KEY = 'APP_LEARNING_PROGRESS';
 const PATTERN_VERSION_STORAGE_KEY = 'APP_PATTERN_VERSION';
+const TAB_STORAGE_KEY = 'APP_ACTIVE_TAB';
+const WELCOME_STORAGE_KEY = 'APP_HAS_SEEN_WELCOME';
 
 function App() {
-  const [activeTab, setActiveTab] = useState('guide');
+  const [hasSeenWelcome, setHasSeenWelcome] = useState(() => {
+    return localStorage.getItem(WELCOME_STORAGE_KEY) === 'true';
+  });
+
+  const [activeTab, setActiveTab] = useState(() => {
+    if (localStorage.getItem(WELCOME_STORAGE_KEY) !== 'true') return 'guide';
+    return localStorage.getItem(TAB_STORAGE_KEY) || 'dashboard';
+  });
   const [apiKey, setApiKey] = useState('');
   const [correctionMode, setCorrectionMode] = useState('communicative');
   
@@ -87,6 +96,7 @@ function App() {
   useEffect(() => localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(progress)), [progress]);
   useEffect(() => localStorage.setItem(LANG_STORAGE_KEY, targetLanguage), [targetLanguage]);
   useEffect(() => localStorage.setItem(PATTERN_VERSION_STORAGE_KEY, patternVersion), [patternVersion]);
+  useEffect(() => localStorage.setItem(TAB_STORAGE_KEY, activeTab), [activeTab]);
   useEffect(() => localStorage.setItem(RATE_STORAGE_KEY, speechRate.toString()), [speechRate]);
   useEffect(() => localStorage.setItem(AUTO_READ_STORAGE_KEY, autoRead.toString()), [autoRead]);
   useEffect(() => {
@@ -206,8 +216,44 @@ function App() {
     setUserRole(getDefaultRole(newCat));
   };
 
+  const closeWelcomeModal = () => {
+    setHasSeenWelcome(true);
+    localStorage.setItem(WELCOME_STORAGE_KEY, 'true');
+  };
+
   return (
-    <div className="app-container">
+    <>
+      {!hasSeenWelcome && (
+        <div style={{
+          position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh',
+          background: 'rgba(0,0,0,0.85)', zIndex: 9999,
+          display: 'flex', justifyContent: 'center', alignItems: 'center',
+          backdropFilter: 'blur(10px)'
+        }}>
+          <div className="glass-panel animate-slide-in" style={{
+            maxWidth: '500px', width: '90%', padding: '40px',
+            textAlign: 'center', borderRadius: '24px',
+            border: '1px solid var(--accent-color)',
+            boxShadow: '0 0 40px rgba(0, 240, 255, 0.2)'
+          }}>
+            <h2 style={{ fontSize: '2rem', marginBottom: '16px', color: 'var(--text-primary)' }}>
+              🎉 歡迎來到 Multi-Lang Coach！
+            </h2>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', lineHeight: '1.6', marginBottom: '32px' }}>
+              這是一個由大數據驅動的智能外語對話教練。為了讓您體驗完整的 AI 糾錯與推薦功能，我們強烈建議您花 <strong className="text-accent">1 分鐘</strong>閱讀背景的這份使用說明，並免費取得專屬的 API 金鑰！
+            </p>
+            <button 
+              className="glass-button active" 
+              onClick={closeWelcomeModal}
+              style={{ width: '100%', padding: '16px', fontSize: '1.2rem', fontWeight: 'bold' }}
+            >
+              好的，帶我去看說明書！
+            </button>
+          </div>
+        </div>
+      )}
+
+      <div className="app-container">
       <Sidebar 
         activeTab={activeTab} 
         setActiveTab={setActiveTab} 
@@ -358,6 +404,7 @@ function App() {
         )}
       </main>
     </div>
+    </>
   );
 }
 
