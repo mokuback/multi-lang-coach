@@ -263,6 +263,8 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
              aiMessage.correction = null;
              extractedVocab = { term: "詳しく説明する", meaning: "詳細說明", example: "その点について、詳しく説明していただけますか？", phonetic: "kuwashiku setsumei suru", partOfSpeech: "v." };
           }
+          aiMessage.content += "\n\n(💡【システムからのお知らせ】これはデモ用の固定返答です。AIの動的な対話を体験するには、ユーザーガイドを参考に**無料**のGemini APIキーを取得してください！)";
+          aiMessage.translation += "\n\n(💡【系統提示】這是供體驗用的模擬回覆。若要讓 AI 根據您的話語動態回應，強烈建議您參考左側「使用說明」，快速申請**免費**的 Gemini API 金鑰！)";
         } else {
           // English mock logic
           if (userText.toLowerCase().includes('progress')) {
@@ -290,6 +292,8 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
              };
              extractedVocab = { term: "Elaborate", meaning: "詳細說明", example: "Could you elaborate on that point?", phonetic: "iˈlæb.ə.reɪt", partOfSpeech: "vi." };
           }
+          aiMessage.content += "\n\n(💡 [System Note] This is a static demo response. To experience dynamic AI conversations, please refer to the User Guide to easily get your **FREE** Gemini API key!)";
+          aiMessage.translation += "\n\n(💡【系統提示】這是供體驗用的模擬回覆。若要讓 AI 根據您的話語動態回應，強烈建議您參考左側「使用說明」，快速申請**免費**的 Gemini API 金鑰！)";
         }
 
         resolve({ aiMessage, extractedVocab });
