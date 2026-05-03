@@ -81,11 +81,22 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
       recognitionRef.current.lang = targetLanguage === 'ja' ? 'ja-JP' : 'en-US'; 
 
       recognitionRef.current.onresult = (event) => {
-        let currentSpeech = '';
-        for (let i = 0; i < event.results.length; i++) {
-          currentSpeech += event.results[i][0].transcript;
+        let interimTranscript = '';
+        let newFinalTranscript = '';
+
+        for (let i = event.resultIndex; i < event.results.length; i++) {
+          if (event.results[i].isFinal) {
+            newFinalTranscript += event.results[i][0].transcript;
+          } else {
+            interimTranscript += event.results[i][0].transcript;
+          }
         }
-        setInput(transcriptBuffer.current + currentSpeech);
+
+        if (newFinalTranscript) {
+          transcriptBuffer.current += newFinalTranscript;
+        }
+
+        setInput(transcriptBuffer.current + interimTranscript);
       };
 
       recognitionRef.current.onerror = (event) => {
