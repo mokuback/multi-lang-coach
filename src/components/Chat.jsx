@@ -81,22 +81,24 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
       recognitionRef.current.lang = targetLanguage === 'ja' ? 'ja-JP' : 'en-US'; 
 
       recognitionRef.current.onresult = (event) => {
-        let interimTranscript = '';
-        let newFinalTranscript = '';
+        let currentSpeech = '';
+        let lastFinalTranscript = '';
 
-        for (let i = event.resultIndex; i < event.results.length; i++) {
+        for (let i = 0; i < event.results.length; i++) {
+          const transcript = event.results[i][0].transcript;
+          
+          // Android Chrome workaround: it sometimes duplicates identical phrases in the results array
           if (event.results[i].isFinal) {
-            newFinalTranscript += event.results[i][0].transcript;
-          } else {
-            interimTranscript += event.results[i][0].transcript;
+            if (transcript.trim() && transcript.trim() === lastFinalTranscript.trim()) {
+              continue;
+            }
+            lastFinalTranscript = transcript;
           }
+          
+          currentSpeech += transcript;
         }
 
-        if (newFinalTranscript) {
-          transcriptBuffer.current += newFinalTranscript;
-        }
-
-        setInput(transcriptBuffer.current + interimTranscript);
+        setInput(transcriptBuffer.current + currentSpeech);
       };
 
       recognitionRef.current.onerror = (event) => {
