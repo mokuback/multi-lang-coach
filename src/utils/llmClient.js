@@ -246,3 +246,57 @@ export const polishSentenceAPI = async (draftText, chatHistory, apiKey, targetLa
     throw error;
   }
 };
+
+export const analyzeConversationAPI = async (chatHistory, apiKey, targetLanguage = 'en') => {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
+  const langName = targetLanguage === 'en' ? '英文' : '日文';
+
+  const systemInstruction = `
+    你是一個資深的 ${langName} 語言教練。
+    請閱讀以下使用者與 AI 之間的完整對話紀錄。
+    根據使用者的整體表現（詞彙使用、文法準確度、語句流暢度、語氣自然度等），給出一段具有建設性的整體評估與建議。
+    請直接以繁體中文給出一段完整且排版清晰的純文字分析結果（支援簡單的換行，但不要回傳 Markdown 的 \`\`\` 標記）。
+  `;
+
+  // Format the conversation text for the AI
+  const conversationText = chatHistory
+    .filter(msg => msg.role !== 'system')
+    .map(msg => `${msg.role === 'user' ? '使用者 (User)' : 'AI (Assistant)'}: ${msg.content}`)
+    .join('\n\n');
+
+  const contents = [
+    { role: 'user', parts: [{ text: `[完整對話紀錄]\n${conversationText}\n\n請根據以上對話，給予總結性的評估與建議。` }] }
+  ];
+
+  const payload = {
+    systemInstruction: { parts: [{ text: systemInstruction }] },
+    contents: contents,
+    generationConfig: {
+      temperature: 0.5
+    }
+  };
+
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.error?.message || response.statusText);
+    }
+
+    const data = await response.json();
+    const textOutput = data.candidates?.[0]?.content?.parts?.[0]?.text;
+    
+    if (!textOutput) throw new Error("Gemini 回傳了無效的格式");
+
+    return textOutput;
+  } catch (error) {
+    console.error("Gemini Conversation Analysis API Error:", error);
+    throw error;
+  }
+};
+

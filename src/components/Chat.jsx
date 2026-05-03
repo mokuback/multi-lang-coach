@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, AlertCircle, CheckCircle, Info, Lightbulb, X, Wand2, Volume2, Mic, Square, RefreshCw } from 'lucide-react';
-import { callGeminiAPI, analyzeSentenceAPI, polishSentenceAPI } from '../utils/llmClient';
+import { createPortal } from 'react-dom';
+import { Send, AlertCircle, CheckCircle, Info, Lightbulb, X, Wand2, Volume2, Mic, Square, RefreshCw, Download, Loader2 } from 'lucide-react';
+import { callGeminiAPI, analyzeSentenceAPI, polishSentenceAPI, analyzeConversationAPI } from '../utils/llmClient';
+import { exportToPDF } from '../utils/pdfExporter';
 import { useI18n } from '../contexts/I18nContext';
 
 import scenarioPatterns01 from '../data/scenarioPatterns_01.json';
@@ -20,6 +22,10 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
   const [isPolishing, setIsPolishing] = useState(false);
   const [selectedTextData, setSelectedTextData] = useState({ index: null, text: '' });
 
+  // Export State
+  const [showExportModal, setShowExportModal] = useState(false);
+  const [isExporting, setIsExporting] = useState(false);
+
   // TTS State
   const [playingIndex, setPlayingIndex] = useState(null);
 
@@ -27,6 +33,11 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
   const [isRecording, setIsRecording] = useState(false);
   const recognitionRef = useRef(null);
   const transcriptBuffer = useRef('');
+  const [hasSeenMockWarning, setHasSeenMockWarning] = useState(false);
+
+  const closeMockModal = () => {
+    setHasSeenMockWarning(true);
+  };
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -71,7 +82,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
 
       recognitionRef.current.onresult = (event) => {
         let currentSpeech = '';
-        for (let i = event.resultIndex; i < event.results.length; i++) {
+        for (let i = 0; i < event.results.length; i++) {
           currentSpeech += event.results[i][0].transcript;
         }
         setInput(transcriptBuffer.current + currentSpeech);
@@ -186,6 +197,27 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
     }
   };
 
+  const handleExport = async (withAnalysis) => {
+    setIsExporting(true);
+    try {
+      const historyToExport = chatHistory.filter(msg => msg.role !== 'system');
+      let analysisText = null;
+      
+      if (withAnalysis) {
+        analysisText = await analyzeConversationAPI(chatHistory, apiKey, targetLanguage);
+      }
+      
+      const title = `${t(scenario.title)} - ${t('對話紀錄')}`;
+      exportToPDF('chat', historyToExport, title, analysisText);
+      setShowExportModal(false);
+    } catch (error) {
+      console.error(error);
+      alert(t('匯出失敗：') + error.message);
+    } finally {
+      setIsExporting(false);
+    }
+  };
+
   // TTS Function
   const handleSpeak = (text, index) => {
     if (playingIndex === index) {
@@ -195,30 +227,53 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
     }
 
     window.speechSynthesis.cancel();
+    setPlayingIndex(index);
 
-    const utterance = new SpeechSynthesisUtterance(text);
     const isJa = targetLanguage === 'ja';
-    utterance.lang = isJa ? 'ja-JP' : 'en-US';
-    
-    // Find optimal voice
     const voices = window.speechSynthesis.getVoices();
-    const langPrefix = isJa ? 'ja' : 'en';
-    const optimalVoice = 
-      voices.find(v => v.lang.startsWith(langPrefix) && (v.name.includes('Google') || v.name.includes('Microsoft') || v.name.includes('Siri') || v.name.includes('Nanami') || v.name.includes('Keita') || v.name.includes('Ayumi'))) || 
-      voices.find(v => v.lang.startsWith(langPrefix));
-      
-    if (optimalVoice) {
-      utterance.voice = optimalVoice;
+
+    // 如果是學習英文，為了避免英文語音引擎硬唸中文，我們將中英文切開，依序放入播放佇列
+    let segments = [text];
+    if (!isJa) {
+      // 根據中文漢字與全形標點符號進行切割
+      segments = text.split(/([\u4e00-\u9fa5\u3000-\u303F\uFF00-\uFFEF]+)/g).filter(s => s.trim().length > 0);
     }
 
-    utterance.rate = 0.5 + (speechRate * 0.1);
-    utterance.pitch = 1.0;
+    segments.forEach((segment, i) => {
+      const utterance = new SpeechSynthesisUtterance(segment);
+      
+      let isChineseSegment = false;
+      if (!isJa) {
+        isChineseSegment = /[\u4e00-\u9fa5]/.test(segment);
+      }
 
-    utterance.onend = () => setPlayingIndex(null);
-    utterance.onerror = () => setPlayingIndex(null);
+      if (isChineseSegment) {
+        utterance.lang = 'zh-TW';
+        const zhVoice = voices.find(v => v.lang.includes('zh') && (v.name.includes('Google') || v.name.includes('Microsoft') || v.name.includes('Yating') || v.name.includes('Hanhan') || v.name.includes('Hsiao'))) || voices.find(v => v.lang.includes('zh'));
+        if (zhVoice) utterance.voice = zhVoice;
+      } else {
+        utterance.lang = isJa ? 'ja-JP' : 'en-US';
+        const langPrefix = isJa ? 'ja' : 'en';
+        const optimalVoice = 
+          voices.find(v => v.lang.startsWith(langPrefix) && (v.name.includes('Google') || v.name.includes('Microsoft') || v.name.includes('Siri') || v.name.includes('Nanami') || v.name.includes('Keita') || v.name.includes('Ayumi'))) || 
+          voices.find(v => v.lang.startsWith(langPrefix));
+          
+        if (optimalVoice) {
+          utterance.voice = optimalVoice;
+        }
+      }
 
-    setPlayingIndex(index);
-    window.speechSynthesis.speak(utterance);
+      utterance.rate = 0.5 + (speechRate * 0.1);
+      utterance.pitch = 1.0;
+
+      // 只有最後一段唸完時，才清除播放狀態
+      if (i === segments.length - 1) {
+        utterance.onend = () => setPlayingIndex(null);
+        utterance.onerror = () => setPlayingIndex(null);
+      }
+
+      window.speechSynthesis.speak(utterance);
+    });
   };
 
   // STT Toggle
@@ -416,6 +471,9 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
       70% { box-shadow: 0 0 0 10px rgba(255, 71, 87, 0); }
       100% { box-shadow: 0 0 0 0 rgba(255, 71, 87, 0); }
     }
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
   `;
 
   return (
@@ -423,43 +481,120 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
       <style>{pulseKeyframes}</style>
 
       {/* Chat header */}
-      <header className="glass-panel" style={{ padding: '16px 24px', marginBottom: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <header className="glass-panel" style={{ padding: '16px 24px', marginBottom: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
         <div>
           <h2 style={{ fontSize: '1.2rem', marginBottom: '4px' }}>{t(scenario.title)}</h2>
           <p className="text-muted" style={{ fontSize: '0.9rem' }}>{t(scenario.desc)}</p>
         </div>
-        <span style={{ 
-          background: 'rgba(255, 255, 255, 0.1)', 
-          padding: '4px 12px', 
-          borderRadius: '16px',
-          fontSize: '0.8rem',
-          color: 'var(--text-primary)'
-        }}>
-          {apiKey ? t('API 對話模式') : t('模擬對話體驗')}
-        </span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          {apiKey && chatHistory.filter(m => m.role !== 'system').length > 1 && (
+            <button 
+              onClick={() => setShowExportModal(true)}
+              className="glass-button"
+              style={{ padding: '4px 12px', borderRadius: '16px', fontSize: '0.8rem', color: 'var(--text-primary)' }}
+              title={t("匯出對話紀錄")}
+            >
+              <Download size={14} /> {t("匯出")}
+            </button>
+          )}
+          <span style={{ 
+            background: 'rgba(255, 255, 255, 0.1)', 
+            padding: '4px 12px', 
+            borderRadius: '16px',
+            fontSize: '0.8rem',
+            color: 'var(--text-primary)'
+          }}>
+            {apiKey ? t('API 對話模式') : t('模擬對話體驗')}
+          </span>
+        </div>
       </header>
 
-      {/* Mock Mode Reminder Banner */}
-      {!apiKey && (
-        <div className="glass-panel" style={{ 
-          marginBottom: '20px', 
-          padding: '16px 24px', 
-          background: 'rgba(255, 215, 0, 0.1)', 
-          borderLeft: '4px solid #FFD700',
-          display: 'flex',
-          alignItems: 'flex-start',
-          gap: '16px'
+      {/* Export Options Modal */}
+      {showExportModal && createPortal(
+        <div style={{
+          position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh',
+          background: 'rgba(0,0,0,0.85)', zIndex: 9999,
+          display: 'flex', justifyContent: 'center', alignItems: 'center',
+          backdropFilter: 'blur(10px)'
         }}>
-          <Info size={24} style={{ color: '#FFD700', flexShrink: 0, marginTop: '2px' }} />
-          <div>
-            <h3 style={{ color: 'var(--text-primary)', marginBottom: '8px', fontSize: '1.05rem' }}>
+          <div className="glass-panel animate-slide-in" style={{
+            maxWidth: '400px', width: '90%', padding: '30px',
+            textAlign: 'center', borderRadius: '24px',
+            border: '1px solid var(--glass-border)',
+            boxShadow: '0 0 40px rgba(0, 0, 0, 0.5)'
+          }}>
+            <h3 style={{ fontSize: '1.4rem', marginBottom: '16px', color: 'var(--text-primary)' }}>
+              {t('匯出對話紀錄')}
+            </h3>
+            <p style={{ color: 'var(--text-secondary)', marginBottom: '24px', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              {t('您可以直接匯出對話紀錄，或是讓 AI 先針對您整場的表現進行總評估，再一併匯出成 PDF。')}
+            </p>
+            
+            {isExporting ? (
+              <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
+                <Loader2 size={36} className="text-accent" style={{ animation: 'spin 2s linear infinite' }} />
+                <span className="text-accent" style={{ fontWeight: '500' }}>{t('AI 正在仔細分析您的對話表現，請稍候...')}</span>
+              </div>
+            ) : (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                <button 
+                  className="glass-button" 
+                  onClick={() => handleExport(true)}
+                  style={{ width: '100%', padding: '12px', fontSize: '1.05rem', fontWeight: 'bold', border: '1px solid var(--accent-color)', color: 'var(--accent-color)' }}
+                >
+                  <Wand2 size={18} /> {t('匯出並請 AI 解析')}
+                </button>
+                <button 
+                  className="glass-button" 
+                  onClick={() => handleExport(false)}
+                  style={{ width: '100%', padding: '12px', fontSize: '1.05rem' }}
+                >
+                  <Download size={18} /> {t('僅匯出對話紀錄')}
+                </button>
+                <button 
+                  className="glass-button" 
+                  onClick={() => setShowExportModal(false)}
+                  style={{ width: '100%', padding: '12px', fontSize: '1.05rem', marginTop: '8px', background: 'rgba(255, 255, 255, 0.05)' }}
+                >
+                  {t('取消')}
+                </button>
+              </div>
+            )}
+          </div>
+        </div>,
+        document.body
+      )}
+
+      {/* Mock Mode Reminder Modal */}
+      {!apiKey && !hasSeenMockWarning && createPortal(
+        <div style={{
+          position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh',
+          background: 'rgba(0,0,0,0.85)', zIndex: 9999,
+          display: 'flex', justifyContent: 'center', alignItems: 'center',
+          backdropFilter: 'blur(10px)'
+        }}>
+          <div className="glass-panel animate-slide-in" style={{
+            maxWidth: '500px', width: '90%', padding: '40px',
+            textAlign: 'center', borderRadius: '24px',
+            border: '1px solid #FFD700',
+            boxShadow: '0 0 40px rgba(255, 215, 0, 0.2)'
+          }}>
+            <h3 style={{ fontSize: '1.5rem', marginBottom: '16px', color: 'var(--text-primary)' }}>
               💡 {t('溫馨提醒：目前為「模擬對話體驗」')}
             </h3>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.5' }}>
-              {t('您現在體驗的是內建的固定情境腳本。若希望 AI 根據您的實際發言給予動態、真實的回應與糾錯，請參考左側的')}**「{t('使用說明')}」**，{t('只要 1 分鐘即可快速申請')}**{t('免費的')}** {t('Gemini API 金鑰！')}
+            <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', lineHeight: '1.6', marginBottom: '32px' }}>
+              {t('您現在體驗的是內建的固定情境腳本。若希望 AI 根據您的實際發言給予動態、真實的回應與糾錯，請參考左側的')}<strong>「{t('使用說明')}」</strong>，{t('只要 1 分鐘即可快速申請')}<strong>{t('免費的')}</strong> {t('Gemini API 金鑰！')}
             </p>
+            <button 
+              className="glass-button active" 
+              onClick={closeMockModal}
+              style={{ width: '100%', padding: '16px', fontSize: '1.2rem', fontWeight: 'bold' }}
+            >
+              {t('我知道了')}
+            </button>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
 
       {/* Pattern Hints Collapsible Panel (Hidden in free-mode and pattern-drill) */}
