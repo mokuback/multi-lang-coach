@@ -29,6 +29,7 @@ const PATTERN_VERSION_STORAGE_KEY = 'APP_PATTERN_VERSION';
 const TAB_STORAGE_KEY = 'APP_ACTIVE_TAB';
 const WELCOME_STORAGE_KEY = 'APP_HAS_SEEN_WELCOME';
 const API_KEY_STORAGE_KEY = 'APP_GEMINI_API_KEY';
+const ANDROID_SPEECH_STORAGE_KEY = 'APP_ANDROID_SMART_SPEECH';
 
 function App() {
   const { t, uiLang, setUiLang } = useI18n();
@@ -42,6 +43,7 @@ function App() {
     return localStorage.getItem(TAB_STORAGE_KEY) || 'dashboard';
   });
   const [apiKey, setApiKey] = useState(() => localStorage.getItem(API_KEY_STORAGE_KEY) || '');
+  const [androidSmartSpeech, setAndroidSmartSpeech] = useState(() => localStorage.getItem(ANDROID_SPEECH_STORAGE_KEY) !== 'false');
   const [correctionMode, setCorrectionMode] = useState('communicative');
   
   const [speechRate, setSpeechRate] = useState(() => parseInt(localStorage.getItem(RATE_STORAGE_KEY) || '5', 10));
@@ -102,6 +104,7 @@ function App() {
   useEffect(() => localStorage.setItem(PATTERN_VERSION_STORAGE_KEY, patternVersion), [patternVersion]);
   useEffect(() => localStorage.setItem(TAB_STORAGE_KEY, activeTab), [activeTab]);
   useEffect(() => localStorage.setItem(API_KEY_STORAGE_KEY, apiKey), [apiKey]);
+  useEffect(() => localStorage.setItem(ANDROID_SPEECH_STORAGE_KEY, androidSmartSpeech.toString()), [androidSmartSpeech]);
   useEffect(() => localStorage.setItem(RATE_STORAGE_KEY, speechRate.toString()), [speechRate]);
   useEffect(() => localStorage.setItem(AUTO_READ_STORAGE_KEY, autoRead.toString()), [autoRead]);
   useEffect(() => {
@@ -297,6 +300,7 @@ function App() {
             speechRate={speechRate}
             autoRead={autoRead}
             patternVersion={patternVersion}
+            androidSmartSpeech={androidSmartSpeech}
           />
         )}
         
@@ -406,6 +410,19 @@ function App() {
               <p style={{ marginTop: '0.8rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
                 {apiKey ? <span className="text-success">{t('已輸入金鑰，真實 AI 模式啟動中。')}</span> : <span>{t('目前以')} <span className="text-accent">{t('模擬對話體驗模式 (Mock Mode)')}</span> {t('執行中。')}</span>}
               </p>
+
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '1rem' }}>
+                <input 
+                  type="checkbox" 
+                  id="androidSpeechToggle"
+                  checked={androidSmartSpeech} 
+                  onChange={(e) => setAndroidSmartSpeech(e.target.checked)}
+                  style={{ width: '1.2rem', height: '1.2rem', cursor: 'pointer' }}
+                />
+                <label htmlFor="androidSpeechToggle" style={{ cursor: 'pointer', color: 'var(--text-primary)' }}>
+                  {t('Android 手機啟用智慧語音辨識 (解決原生語音疊字問題)')}
+                </label>
+              </div>
             </div>
             
             <button className="glass-button active" style={{ padding: '10px 20px', display: 'inline-block', marginTop: '1rem' }} onClick={() => setActiveTab('dashboard')}>

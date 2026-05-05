@@ -1,20 +1,21 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { Send, AlertCircle, CheckCircle, Info, Lightbulb, X, Wand2, Volume2, Mic, Square, RefreshCw, Download, Loader2 } from 'lucide-react';
-import { callGeminiAPI, analyzeSentenceAPI, polishSentenceAPI, analyzeConversationAPI } from '../utils/llmClient';
+import { callGeminiAPI, analyzeSentenceAPI, polishSentenceAPI, analyzeConversationAPI, transcribeAudioWithGemini } from '../utils/llmClient';
 import { exportToPDF } from '../utils/pdfExporter';
 import { useI18n } from '../contexts/I18nContext';
 
 import scenarioPatterns01 from '../data/scenarioPatterns_01.json';
 import scenarioPatterns02 from '../data/scenarioPatterns_02.json';
 
-const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, addPattern, correctionMode, targetLanguage, userCategory, userRole, userLevel, speechRate = 5, autoRead = false, patternVersion = '02' }) => {
+const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, addPattern, correctionMode, targetLanguage, userCategory, userRole, userLevel, speechRate = 5, autoRead = false, patternVersion = '02', androidSmartSpeech = true }) => {
   const { t } = useI18n();
   const [input, setInput] = useState('');
   const [showPatternHints, setShowPatternHints] = useState(false);
   const [isTyping, setIsTyping] = useState(false);
   const [translatedIndexes, setTranslatedIndexes] = useState(new Set());
   const messagesEndRef = useRef(null);
+  const isAndroid = /Android/i.test(navigator.userAgent);
   
   // States for Learning Modal & Dynamic Text Selection
   const [learningModalData, setLearningModalData] = useState(null);
@@ -31,11 +32,25 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
 
   // STT State & Ref
   const [isRecording, setIsRecording] = useState(false);
+  const [isGeminiRecording, setIsGeminiRecording] = useState(false);
   const recognitionRef = useRef(null);
+  const mediaRecorderRef = useRef(null);
+  const audioChunksRef = useRef([]);
   const transcriptBuffer = useRef('');
   const lastFinalTranscriptRef = useRef('');
-  const isHoldingRef = useRef(false);
   const [hasSeenMockWarning, setHasSeenMockWarning] = useState(false);
+
+  const blobToBase64 = (blob) => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        const base64String = reader.result.split(',')[1];
+        resolve(base64String);
+      };
+      reader.onerror = reject;
+      reader.readAsDataURL(blob);
+    });
+  };
 
   const closeMockModal = () => {
     setHasSeenMockWarning(true);
@@ -112,22 +127,11 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
         // Remove disruptive alerts for QQ and Edge
         if (event.error === 'not-allowed' || event.error === 'network' || event.error === 'aborted') {
           setIsRecording(false);
-          isHoldingRef.current = false;
         }
       };
 
       recognitionRef.current.onend = () => {
-        if (isHoldingRef.current) {
-          // If the user is still holding the button, restart the recording
-          try {
-            recognitionRef.current.start();
-          } catch (e) {
-            setIsRecording(false);
-            isHoldingRef.current = false;
-          }
-        } else {
-          setIsRecording(false);
-        }
+        setIsRecording(false);
       };
     }
 
@@ -309,37 +313,78 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
     });
   };
 
-  // STT Handlers for Push-to-Talk
-  const startRecording = () => {
-    if (!recognitionRef.current) {
-      alert(t("您的瀏覽器尚不支援語音輸入功能。建議使用 Chrome 或 Edge 以獲取完整體驗。"));
-      return;
-    }
-    if (isRecording) return;
-    
-    isHoldingRef.current = true;
-    lastFinalTranscriptRef.current = ''; // Reset deduplication state
-    
-    try {
-      transcriptBuffer.current = input ? input + (input.endsWith(' ') ? '' : ' ') : '';
-      recognitionRef.current.start();
-      setIsRecording(true);
-    } catch (error) {
-      console.error("Failed to start recording:", error);
-      setIsRecording(true);
-    }
-  };
+  // STT Toggle
+  const toggleRecording = async () => {
+    const shouldUseGeminiSTT = isAndroid && androidSmartSpeech && apiKey;
 
-  const stopRecording = () => {
-    isHoldingRef.current = false;
-    if (!isRecording) return;
-    
-    try {
-      recognitionRef.current?.stop();
-    } catch (error) {
-      console.error("Failed to stop recording:", error);
+    if (shouldUseGeminiSTT) {
+      if (isRecording) {
+        if (mediaRecorderRef.current && mediaRecorderRef.current.state === "recording") {
+          mediaRecorderRef.current.stop();
+        }
+        setIsRecording(false);
+      } else {
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+          mediaRecorderRef.current = new MediaRecorder(stream);
+          audioChunksRef.current = [];
+
+          mediaRecorderRef.current.ondataavailable = (event) => {
+            if (event.data.size > 0) {
+              audioChunksRef.current.push(event.data);
+            }
+          };
+
+          mediaRecorderRef.current.onstop = async () => {
+            setIsGeminiRecording(true);
+            try {
+              const audioBlob = new Blob(audioChunksRef.current, { type: mediaRecorderRef.current.mimeType || 'audio/webm' });
+              const base64Audio = await blobToBase64(audioBlob);
+              const transcribedText = await transcribeAudioWithGemini(apiKey, base64Audio, audioBlob.type, targetLanguage);
+              if (transcribedText) {
+                setInput(prev => (prev + (prev.endsWith(' ') ? '' : ' ') + transcribedText).trim());
+              }
+            } catch (err) {
+              console.error("Gemini STT Error:", err);
+              alert("語音辨識發生錯誤：" + err.message);
+            } finally {
+              setIsGeminiRecording(false);
+              stream.getTracks().forEach(track => track.stop());
+            }
+          };
+
+          mediaRecorderRef.current.start();
+          setIsRecording(true);
+        } catch (err) {
+          console.error("Microphone access denied:", err);
+          alert("無法存取麥克風，請確認您的瀏覽器麥克風權限是否開啟。");
+        }
+      }
+    } else {
+      if (isRecording) {
+        try {
+          recognitionRef.current?.stop();
+        } catch (error) {
+          console.error("Failed to stop recording:", error);
+        }
+        setIsRecording(false);
+      } else {
+        if (!recognitionRef.current) {
+          alert(t("您的瀏覽器尚不支援語音輸入功能。建議使用 Chrome 或 Edge 以獲取完整體驗。"));
+          return;
+        }
+        lastFinalTranscriptRef.current = ''; 
+        
+        try {
+          transcriptBuffer.current = input ? input + (input.endsWith(' ') ? '' : ' ') : '';
+          recognitionRef.current.start();
+          setIsRecording(true);
+        } catch (error) {
+          console.error("Failed to start recording:", error);
+          setIsRecording(true);
+        }
+      }
     }
-    setIsRecording(false);
   };
 
   // Mock conversation tree based on typical IT scenario responses
@@ -1014,14 +1059,10 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
             )}
           </button>
 
-          {/* STT Dictation Button (Push-to-Talk) */}
+          {/* STT Dictation Button */}
           <button 
             type="button" 
-            onPointerDown={(e) => { e.preventDefault(); startRecording(); }}
-            onPointerUp={(e) => { e.preventDefault(); stopRecording(); }}
-            onPointerLeave={(e) => { if(isRecording) stopRecording(); }}
-            onPointerCancel={(e) => { if(isRecording) stopRecording(); }}
-            onContextMenu={(e) => e.preventDefault()}
+            onClick={toggleRecording}
             className="glass-button" 
             style={{ 
               padding: '0 20px', 
@@ -1035,15 +1076,13 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
               justifyContent: 'center',
               gap: '8px',
               animation: isRecording ? 'pulseRecording 2s infinite' : 'none',
-              touchAction: 'none',
-              userSelect: 'none',
-              cursor: isRecording ? 'grabbing' : 'pointer'
+              opacity: isGeminiRecording ? 0.7 : 1
             }}
-            disabled={isTyping || isPolishing}
-            title={t("長按麥克風進行語音輸入，放開即停止")}
+            disabled={isTyping || isPolishing || isGeminiRecording}
+            title={t("點擊切換麥克風語音輸入")}
           >
-            {isRecording ? <Square fill="currentColor" size={20} /> : <Mic size={20} />}
-            <span style={{ fontWeight: 600 }}>{isRecording ? t('錄音中 (放開停止)') : t('按住說話')}</span>
+            {isGeminiRecording ? <Loader2 className="text-accent" style={{ animation: 'spin 2s linear infinite' }} size={20} /> : (isRecording ? <Square fill="currentColor" size={20} /> : <Mic size={20} />)}
+            <span style={{ fontWeight: 600 }}>{isGeminiRecording ? t('正在聽寫...') : (isRecording ? t('停止錄音') : t('口說輸入'))}</span>
           </button>
 
           {/* Send Button */}

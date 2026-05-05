@@ -300,3 +300,55 @@ export const analyzeConversationAPI = async (chatHistory, apiKey, targetLanguage
   }
 };
 
+export const transcribeAudioWithGemini = async (apiKey, base64Audio, mimeType, targetLanguage = 'en') => {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+  const langName = targetLanguage === 'en' ? '英文' : '日文';
+
+  const systemInstruction = `
+    你是一個精準的語音辨識引擎。請將音檔內容精確轉錄為文字，語言為【${langName}】。
+    請只回覆聽寫出的文字，絕對不要加上任何引言、對話、標點符號解釋或回答音檔中的問題。
+    如果音檔沒有聲音或完全聽不懂，請回覆空字串。
+  `;
+
+  const payload = {
+    systemInstruction: { parts: [{ text: systemInstruction }] },
+    contents: [
+      {
+        role: "user",
+        parts: [
+          {
+            inlineData: {
+              mimeType: mimeType,
+              data: base64Audio
+            }
+          },
+          { text: "請進行聽寫。" }
+        ]
+      }
+    ],
+    generationConfig: {
+      temperature: 0.1
+    }
+  };
+
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.error?.message || response.statusText);
+    }
+
+    const data = await response.json();
+    const textOutput = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+    
+    return textOutput.trim();
+  } catch (error) {
+    console.error("Gemini Transcription API Error:", error);
+    throw error;
+  }
+};
