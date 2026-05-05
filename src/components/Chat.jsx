@@ -33,6 +33,8 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
   const [isRecording, setIsRecording] = useState(false);
   const recognitionRef = useRef(null);
   const transcriptBuffer = useRef('');
+  const lastFinalTranscriptRef = useRef('');
+  const isHoldingRef = useRef(false);
   const [hasSeenMockWarning, setHasSeenMockWarning] = useState(false);
 
   const closeMockModal = () => {
@@ -82,18 +84,24 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
 
       recognitionRef.current.onresult = (event) => {
         let interimTranscript = '';
-        let finalTranscript = '';
+        let newFinalTranscript = '';
 
         for (let i = event.resultIndex; i < event.results.length; ++i) {
+          const transcript = event.results[i][0].transcript;
           if (event.results[i].isFinal) {
-            finalTranscript += event.results[i][0].transcript;
+            // Android Chrome workaround: it sometimes duplicates identical phrases in the results array
+            if (transcript.trim() && transcript.trim() === lastFinalTranscriptRef.current.trim()) {
+              continue;
+            }
+            lastFinalTranscriptRef.current = transcript;
+            newFinalTranscript += transcript;
           } else {
-            interimTranscript += event.results[i][0].transcript;
+            interimTranscript += transcript;
           }
         }
 
-        if (finalTranscript) {
-          transcriptBuffer.current += finalTranscript;
+        if (newFinalTranscript) {
+          transcriptBuffer.current += newFinalTranscript;
         }
 
         setInput(transcriptBuffer.current + interimTranscript);
@@ -101,16 +109,25 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
 
       recognitionRef.current.onerror = (event) => {
         console.error("Speech Recognition Error", event.error);
-        setIsRecording(false);
-        if (event.error === 'not-allowed') {
-          alert(t("請允許麥克風權限以使用語音輸入。"));
-        } else if (event.error === 'network') {
-          alert(t("語音辨識需要網路連線，請確認網路狀態。"));
+        // Remove disruptive alerts for QQ and Edge
+        if (event.error === 'not-allowed' || event.error === 'network' || event.error === 'aborted') {
+          setIsRecording(false);
+          isHoldingRef.current = false;
         }
       };
 
       recognitionRef.current.onend = () => {
-        setIsRecording(false);
+        if (isHoldingRef.current) {
+          // If the user is still holding the button, restart the recording
+          try {
+            recognitionRef.current.start();
+          } catch (e) {
+            setIsRecording(false);
+            isHoldingRef.current = false;
+          }
+        } else {
+          setIsRecording(false);
+        }
       };
     }
 
@@ -299,6 +316,10 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
       return;
     }
     if (isRecording) return;
+    
+    isHoldingRef.current = true;
+    lastFinalTranscriptRef.current = ''; // Reset deduplication state
+    
     try {
       transcriptBuffer.current = input ? input + (input.endsWith(' ') ? '' : ' ') : '';
       recognitionRef.current.start();
@@ -310,7 +331,9 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
   };
 
   const stopRecording = () => {
+    isHoldingRef.current = false;
     if (!isRecording) return;
+    
     try {
       recognitionRef.current?.stop();
     } catch (error) {
