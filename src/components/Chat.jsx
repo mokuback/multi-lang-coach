@@ -81,29 +81,32 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
       recognitionRef.current.lang = targetLanguage === 'ja' ? 'ja-JP' : 'en-US'; 
 
       recognitionRef.current.onresult = (event) => {
-        let currentSpeech = '';
-        let lastFinalTranscript = '';
+        let interimTranscript = '';
+        let finalTranscript = '';
 
-        for (let i = 0; i < event.results.length; i++) {
-          const transcript = event.results[i][0].transcript;
-          
-          // Android Chrome workaround: it sometimes duplicates identical phrases in the results array
+        for (let i = event.resultIndex; i < event.results.length; ++i) {
           if (event.results[i].isFinal) {
-            if (transcript.trim() && transcript.trim() === lastFinalTranscript.trim()) {
-              continue;
-            }
-            lastFinalTranscript = transcript;
+            finalTranscript += event.results[i][0].transcript;
+          } else {
+            interimTranscript += event.results[i][0].transcript;
           }
-          
-          currentSpeech += transcript;
         }
 
-        setInput(transcriptBuffer.current + currentSpeech);
+        if (finalTranscript) {
+          transcriptBuffer.current += finalTranscript;
+        }
+
+        setInput(transcriptBuffer.current + interimTranscript);
       };
 
       recognitionRef.current.onerror = (event) => {
         console.error("Speech Recognition Error", event.error);
         setIsRecording(false);
+        if (event.error === 'not-allowed') {
+          alert(t("請允許麥克風權限以使用語音輸入。"));
+        } else if (event.error === 'network') {
+          alert(t("語音辨識需要網路連線，請確認網路狀態。"));
+        }
       };
 
       recognitionRef.current.onend = () => {
@@ -289,20 +292,31 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
     });
   };
 
-  // STT Toggle
-  const toggleRecording = () => {
-    if (isRecording) {
-      recognitionRef.current?.stop();
-      setIsRecording(false);
-    } else {
-      if (!recognitionRef.current) {
-        alert(t("您的瀏覽器尚不支援語音輸入功能。建議使用 Chrome 或 Edge 以獲取完整體驗。"));
-        return;
-      }
-      transcriptBuffer.current = input ? input + ' ' : '';
+  // STT Handlers for Push-to-Talk
+  const startRecording = () => {
+    if (!recognitionRef.current) {
+      alert(t("您的瀏覽器尚不支援語音輸入功能。建議使用 Chrome 或 Edge 以獲取完整體驗。"));
+      return;
+    }
+    if (isRecording) return;
+    try {
+      transcriptBuffer.current = input ? input + (input.endsWith(' ') ? '' : ' ') : '';
       recognitionRef.current.start();
       setIsRecording(true);
+    } catch (error) {
+      console.error("Failed to start recording:", error);
+      setIsRecording(true);
     }
+  };
+
+  const stopRecording = () => {
+    if (!isRecording) return;
+    try {
+      recognitionRef.current?.stop();
+    } catch (error) {
+      console.error("Failed to stop recording:", error);
+    }
+    setIsRecording(false);
   };
 
   // Mock conversation tree based on typical IT scenario responses
@@ -977,10 +991,14 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
             )}
           </button>
 
-          {/* STT Dictation Button */}
+          {/* STT Dictation Button (Push-to-Talk) */}
           <button 
             type="button" 
-            onClick={toggleRecording}
+            onPointerDown={(e) => { e.preventDefault(); startRecording(); }}
+            onPointerUp={(e) => { e.preventDefault(); stopRecording(); }}
+            onPointerLeave={(e) => { if(isRecording) stopRecording(); }}
+            onPointerCancel={(e) => { if(isRecording) stopRecording(); }}
+            onContextMenu={(e) => e.preventDefault()}
             className="glass-button" 
             style={{ 
               padding: '0 20px', 
@@ -993,13 +1011,16 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
               alignItems: 'center',
               justifyContent: 'center',
               gap: '8px',
-              animation: isRecording ? 'pulseRecording 2s infinite' : 'none'
+              animation: isRecording ? 'pulseRecording 2s infinite' : 'none',
+              touchAction: 'none',
+              userSelect: 'none',
+              cursor: isRecording ? 'grabbing' : 'pointer'
             }}
             disabled={isTyping || isPolishing}
-            title={t("麥克風語音輸入")}
+            title={t("長按麥克風進行語音輸入，放開即停止")}
           >
             {isRecording ? <Square fill="currentColor" size={20} /> : <Mic size={20} />}
-            <span style={{ fontWeight: 600 }}>{isRecording ? t('錄音中...') : t('口說輸入')}</span>
+            <span style={{ fontWeight: 600 }}>{isRecording ? t('錄音中 (放開停止)') : t('按住說話')}</span>
           </button>
 
           {/* Send Button */}
