@@ -301,7 +301,7 @@ export const analyzeConversationAPI = async (chatHistory, apiKey, targetLanguage
 };
 
 export const transcribeAudioWithGemini = async (apiKey, base64Audio, mimeType, targetLanguage = 'en') => {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
   const langName = targetLanguage === 'en' ? '英文' : '日文';
 
   const systemInstruction = `
