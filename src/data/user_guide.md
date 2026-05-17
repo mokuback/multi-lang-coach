@@ -12,7 +12,7 @@
 1. 點擊左側選單最下方的 **[設定與 API]**。
 2. 在「Gemini API 金鑰」欄位中填入您的專屬 Key。
 
-> **💡 不知道怎麼取得金鑰 (API Key) 嗎？請跟著以下簡單 3 步驟：**
+> **💡 不知道怎麼取得金鑰 (API Key) 嗎？請跟著以下簡單 4 步驟：**
 > 1. 點擊前往 [Google AI Studio](https://aistudio.google.com/app/apikey) 網站，並登入您的一般 Google 帳號。
 > 2. 登入後，點擊畫面上方的藍色按鈕 **「Create API key」**。
 > 3. 在跳出的視窗中，點擊 **「Create API key in new project」**。

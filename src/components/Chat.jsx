@@ -69,7 +69,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
   useEffect(() => {
     if (autoRead && chatHistory.length > prevHistoryLength.current) {
       const lastMsg = chatHistory[chatHistory.length - 1];
-      if (lastMsg.role === 'assistant' && lastMsg.content) {
+      if (lastMsg.role === 'assistant' && lastMsg.content && !lastMsg.isError) {
         const displayIndex = chatHistory.filter((msg) => msg.role !== 'system').length - 1;
         // Small timeout to ensure DOM update won't interfere
         setTimeout(() => handleSpeak(lastMsg.content, displayIndex), 100);
@@ -274,6 +274,13 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
     if (!isJa) {
       // 根據中文漢字與全形標點符號進行切割
       segments = text.split(/([\u4e00-\u9fa5\u3000-\u303F\uFF00-\uFFEF]+)/g).filter(s => s.trim().length > 0);
+    } else if (scenario && scenario.title) {
+      // 日文模式：只針對「情境標題」進行切割，使其能用中文語音朗讀
+      const translatedTitle = t(scenario.title);
+      if (text.includes(translatedTitle)) {
+        // 使用 split 切割，保留情境標題作為獨立片段
+        segments = text.split(new RegExp(`(${translatedTitle})`, 'g')).filter(s => s.trim().length > 0);
+      }
     }
 
     segments.forEach((segment, i) => {
@@ -282,6 +289,9 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
       let isChineseSegment = false;
       if (!isJa) {
         isChineseSegment = /[\u4e00-\u9fa5]/.test(segment);
+      } else if (scenario && scenario.title) {
+        // 日文模式下，只有完全等於情境標題的片段，才判定為中文
+        isChineseSegment = (segment === t(scenario.title));
       }
 
       if (isChineseSegment) {

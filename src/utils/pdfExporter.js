@@ -25,6 +25,7 @@ export const exportToPDF = (type, data, titleText, extraData = null) => {
     itemDiv.style.marginBottom = '24px';
     itemDiv.style.borderBottom = '1px solid #eee';
     itemDiv.style.paddingBottom = '16px';
+    itemDiv.style.pageBreakInside = 'avoid';
 
     if (type === 'vocabulary') {
       const line1 = document.createElement('div');
@@ -103,11 +104,11 @@ export const exportToPDF = (type, data, titleText, extraData = null) => {
       itemDiv.appendChild(roleDiv);
 
       const contentDiv = document.createElement('div');
-      contentDiv.innerText = item.content;
+      contentDiv.innerHTML = item.content.replace(/\n/g, '<br>');
       contentDiv.style.fontSize = '18px';
       contentDiv.style.color = 'black';
       contentDiv.style.lineHeight = '1.6';
-      contentDiv.style.whiteSpace = 'pre-wrap';
+      contentDiv.style.whiteSpace = 'normal';
       contentDiv.style.wordBreak = 'break-word';
       itemDiv.appendChild(contentDiv);
     }
@@ -126,11 +127,11 @@ export const exportToPDF = (type, data, titleText, extraData = null) => {
     exportContainer.appendChild(analysisHeader);
 
     const analysisDiv = document.createElement('div');
-    analysisDiv.innerText = extraData;
+    analysisDiv.innerHTML = extraData.replace(/\n/g, '<br>');
     analysisDiv.style.fontSize = '18px';
     analysisDiv.style.color = 'black';
     analysisDiv.style.lineHeight = '1.8';
-    analysisDiv.style.whiteSpace = 'pre-wrap';
+    analysisDiv.style.whiteSpace = 'normal';
     analysisDiv.style.wordBreak = 'break-word';
     analysisDiv.style.padding = '20px';
     analysisDiv.style.backgroundColor = '#fff5f6';
@@ -144,7 +145,8 @@ export const exportToPDF = (type, data, titleText, extraData = null) => {
     filename:     `${titleText}.pdf`,
     image:        { type: 'jpeg', quality: 0.98 },
     html2canvas:  { scale: 2 },
-    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    pagebreak:    { mode: ['css', 'legacy'] }
   };
   
   html2pdf().set(opt).from(exportContainer.outerHTML).save();
