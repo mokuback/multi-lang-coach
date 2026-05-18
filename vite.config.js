@@ -1,8 +1,15 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import packageJson from './package.json'
+
+const buildDate = new Date().toISOString().split('T')[0];
 
 // https://vite.dev/config/
 export default defineConfig({
+  define: {
+    __APP_VERSION__: JSON.stringify(packageJson.version),
+    __BUILD_DATE__: JSON.stringify(buildDate),
+  },
   plugins: [react()],
   build: {
     rollupOptions: {

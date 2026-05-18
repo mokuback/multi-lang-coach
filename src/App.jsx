@@ -428,6 +428,10 @@ function App() {
             <button className="glass-button active" style={{ padding: '10px 20px', display: 'inline-block', marginTop: '1rem' }} onClick={() => setActiveTab('dashboard')}>
               {t('儲存設定並返回')}
             </button>
+            
+            <div style={{ marginTop: '3rem', textAlign: 'center', fontSize: '0.8rem', color: 'var(--text-secondary)', opacity: 0.6 }}>
+              v{__APP_VERSION__} ({__BUILD_DATE__})
+            </div>
           </div>
         )}
       </main>
