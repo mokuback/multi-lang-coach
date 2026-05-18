@@ -803,7 +803,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                 onMouseUp={!isUser ? () => handleTextSelection(index) : undefined}
                 onTouchEnd={!isUser ? () => handleTextSelection(index) : undefined}
               >
-                <p style={{ fontWeight: isUser ? 500 : 400, fontSize: '1.05rem', lineHeight: '1.5' }}>
+                <p style={{ fontWeight: isUser ? 500 : 400, fontSize: '1.05rem', lineHeight: '1.5', whiteSpace: 'pre-wrap', overflowWrap: 'anywhere' }}>
                   {(!isUser && translatedIndexes.has(index) && msg.translation) ? t(msg.translation) : msg.content}
                 </p>
 
