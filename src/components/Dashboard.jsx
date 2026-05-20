@@ -4,9 +4,20 @@ import { Play, TrendingUp, Calendar, Zap, MessageSquare } from 'lucide-react';
 import { categoryData } from '../data/categoryData';
 import { useI18n } from '../contexts/I18nContext';
 
-const Dashboard = ({ scenarios, onStart, targetLanguage = 'en', userRole = 'it', progress = { streak: 0, completedScenarios: 0 }, vocabCount = 0 }) => {
+const Dashboard = ({ scenarios, onStart, targetLanguage = 'en', userRole = 'it', userCategory = 'business', progress = { streak: 0, completedScenarios: 0 }, vocabCount = 0 }) => {
   const { t } = useI18n();
   const roleLabel = Object.values(categoryData.roles).flat().find(r => r.id === userRole)?.label || userRole;
+
+  const categoryImages = {
+    business: '/scenario_business.png',
+    academic: '/scenario_academic.png',
+    lifestyle: '/scenario_lifestyle.png',
+    social: '/scenario_social.png',
+    trends: '/scenario_trends.png'
+  };
+
+  const bannerImg = categoryImages[userCategory] || '/scenario_business.png';
+
   return (
     <div className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '900px', margin: '0 auto' }}>
       <header style={{ marginBottom: '40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
@@ -27,42 +38,70 @@ const Dashboard = ({ scenarios, onStart, targetLanguage = 'en', userRole = 'it',
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px', marginBottom: '40px' }}>
         {scenarios.map((scenario) => (
           <div key={scenario.id} className="glass-panel hover-card" style={{ 
-            padding: '24px', 
+            padding: '0px', 
+            overflow: 'hidden',
             transition: 'transform 0.3s ease, border-color 0.3s ease',
             cursor: 'pointer',
             display: 'flex',
             flexDirection: 'column'
           }}
-          onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.borderColor = 'var(--accent-color)'; }}
-          onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.borderColor = 'var(--glass-border)'; }}>
+          onMouseEnter={(e) => { 
+            e.currentTarget.style.transform = 'translateY(-5px)'; 
+            e.currentTarget.style.borderColor = 'var(--accent-color)';
+            const img = e.currentTarget.querySelector('.scenario-card-image');
+            if (img) img.style.transform = 'scale(1.05)';
+          }}
+          onMouseLeave={(e) => { 
+            e.currentTarget.style.transform = 'translateY(0)'; 
+            e.currentTarget.style.borderColor = 'var(--glass-border)';
+            const img = e.currentTarget.querySelector('.scenario-card-image');
+            if (img) img.style.transform = 'scale(1)';
+          }}>
             
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-              <span style={{ 
-                background: 'rgba(0, 240, 255, 0.1)', 
+            <div style={{ width: '100%', height: '140px', overflow: 'hidden', position: 'relative' }}>
+              <img 
+                src={bannerImg} 
+                alt={t(scenario.title)} 
+                className="scenario-card-image"
+                style={{ 
+                  width: '100%', 
+                  height: '100%', 
+                  objectFit: 'cover',
+                  transition: 'transform 0.5s ease'
+                }} 
+              />
+              <div style={{ 
+                position: 'absolute', 
+                top: '12px', 
+                left: '12px', 
+                background: 'rgba(0, 0, 0, 0.65)', 
+                backdropFilter: 'blur(4px)',
                 color: 'var(--accent-color)', 
                 padding: '4px 12px', 
                 borderRadius: '16px',
                 fontSize: '0.8rem',
-                fontWeight: 600
+                fontWeight: 600,
+                border: '1px solid rgba(255, 255, 255, 0.15)'
               }}>
                 {t(scenario.difficulty)}
-              </span>
-              <Calendar size={18} className="text-muted" />
+              </div>
             </div>
 
-            <h3 style={{ fontSize: '1.25rem', marginBottom: '12px' }}>{t(scenario.title)}</h3>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '24px', flex: 1 }}>
-              {t(scenario.desc)}
-            </p>
+            <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', flex: 1 }}>
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '12px' }}>{t(scenario.title)}</h3>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '24px', flex: 1 }}>
+                {t(scenario.desc)}
+              </p>
 
-            <button 
-              className="glass-button" 
-              onClick={() => onStart(scenario)}
-              style={{ width: '100%', padding: '12px', borderRadius: '8px' }}
-            >
-              <Play size={18} />
-              {t('開始練習')}
-            </button>
+              <button 
+                className="glass-button" 
+                onClick={() => onStart(scenario)}
+                style={{ width: '100%', padding: '12px', borderRadius: '8px' }}
+              >
+                <Play size={18} />
+                {t('開始練習')}
+              </button>
+            </div>
           </div>
         ))}
       </div>

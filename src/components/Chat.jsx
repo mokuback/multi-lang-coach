@@ -4,6 +4,7 @@ import { Send, AlertCircle, CheckCircle, Info, Lightbulb, X, Wand2, Volume2, Mic
 import { callGeminiAPI, analyzeSentenceAPI, polishSentenceAPI, analyzeConversationAPI, transcribeAudioWithGemini } from '../utils/llmClient';
 import { exportToPDF } from '../utils/pdfExporter';
 import { useI18n } from '../contexts/I18nContext';
+import confetti from 'canvas-confetti';
 
 import scenarioPatterns01 from '../data/scenarioPatterns_01.json';
 import scenarioPatterns02 from '../data/scenarioPatterns_02.json';
@@ -178,6 +179,15 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
           addPattern(p.pattern, p.explanation);
         });
       }
+      
+      // 🎉 Trigger Confetti!
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 },
+        colors: ['#00f0ff', '#d946ef', '#2ed573', '#FFD700'],
+        zIndex: 9999
+      });
     } catch (error) {
       console.error(error);
       alert(t(`解析發生錯誤: `) + error.message + t(`，請確認網路連線或金鑰是否正確。`));
@@ -659,7 +669,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                 <button 
                   className="glass-button" 
                   onClick={() => setShowExportModal(false)}
-                  style={{ width: '100%', padding: '12px', fontSize: '1.05rem', marginTop: '8px', background: 'rgba(255, 255, 255, 0.05)' }}
+                  style={{ width: '100%', padding: '12px', fontSize: '1.05rem', marginTop: '8px', background: 'var(--panel-bg-light)' }}
                 >
                   {t('取消')}
                 </button>
@@ -785,10 +795,29 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
           return (
             <div key={index} className="animate-slide-in" style={{ 
               display: 'flex', 
-              flexDirection: 'column',
+              flexDirection: 'row',
               alignSelf: isUser ? 'flex-end' : 'flex-start',
-              maxWidth: '80%'
+              maxWidth: '85%',
+              gap: '12px',
+              alignItems: 'flex-start'
             }}>
+              {!isUser && (
+                <img 
+                  src="/ai_tutor_avatar.png" 
+                  alt="AI Tutor" 
+                  style={{ 
+                    width: '40px', 
+                    height: '40px', 
+                    borderRadius: '50%', 
+                    border: '2px solid var(--accent-color)',
+                    background: 'var(--panel-bg-light)',
+                    boxShadow: '0 4px 10px rgba(0, 240, 255, 0.15)',
+                    flexShrink: 0,
+                    marginTop: '4px'
+                  }} 
+                />
+              )}
+              <div style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
               
               <div 
                 style={{
@@ -812,9 +841,9 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                     <button 
                       onClick={() => handleSuggestClick(msg.content, chatHistory.indexOf(msg))}
                       style={{
-                        background: 'rgba(217, 70, 239, 0.1)',
-                        border: '1px solid #d946ef',
-                        color: '#d946ef',
+                        background: 'var(--magic-bg)',
+                        border: '1px solid var(--magic-border)',
+                        color: 'var(--magic-color)',
                         padding: '4px 12px',
                         borderRadius: '16px',
                         fontSize: '0.8rem',
@@ -824,8 +853,8 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                         alignItems: 'center',
                         gap: '4px'
                       }}
-                      onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(217, 70, 239, 0.2)'}
-                      onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(217, 70, 239, 0.1)'}
+                      onMouseEnter={(e) => e.currentTarget.style.background = 'var(--magic-bg-hover)'}
+                      onMouseLeave={(e) => e.currentTarget.style.background = 'var(--magic-bg)'}
                       title={t("讓 AI 提供更道地、專業的說法建議")}
                     >
                       <Wand2 size={14} /> {t('AI 潤飾建議')}
@@ -992,13 +1021,13 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                   
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                     <div style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
-                      <span className="text-error" style={{ textDecoration: 'line-through', padding: '4px 8px', background: 'rgba(255, 71, 87, 0.1)', borderRadius: '4px' }}>
+                      <span className="text-error" style={{ textDecoration: 'line-through', padding: '4px 8px', background: 'var(--error-bg)', borderRadius: '4px' }}>
                         {msg.correction.error}
                       </span>
                     </div>
                     <div style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
                       <CheckCircle size={18} className="text-success" style={{ marginTop: '2px' }} />
-                      <span className="text-success" style={{ padding: '4px 8px', background: 'rgba(46, 213, 115, 0.1)', borderRadius: '4px', fontWeight: 500 }}>
+                      <span className="text-success" style={{ padding: '4px 8px', background: 'var(--success-bg)', borderRadius: '4px', fontWeight: 500 }}>
                         {msg.correction.fixed}
                       </span>
                     </div>
@@ -1010,16 +1039,42 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                   </div>
                 </div>
               )}
+              </div>
             </div>
           );
         })}
 
         {isTyping && (
-          <div style={{ alignSelf: 'flex-start', background: 'var(--message-ai)', padding: '16px 20px', borderRadius: '20px 20px 20px 0', border: '1px solid var(--glass-border)' }}>
-            <div style={{ display: 'flex', gap: '6px' }}>
-              <div className="typing-dot" style={{ width: '8px', height: '8px', background: 'var(--text-secondary)', borderRadius: '50%', animation: 'fadeIn 1s infinite alternate' }}></div>
-              <div className="typing-dot" style={{ width: '8px', height: '8px', background: 'var(--text-secondary)', borderRadius: '50%', animation: 'fadeIn 1s infinite alternate 0.2s' }}></div>
-              <div className="typing-dot" style={{ width: '8px', height: '8px', background: 'var(--text-secondary)', borderRadius: '50%', animation: 'fadeIn 1s infinite alternate 0.4s' }}></div>
+          <div className="animate-slide-in" style={{ 
+            display: 'flex', 
+            flexDirection: 'row',
+            alignSelf: 'flex-start',
+            maxWidth: '85%',
+            gap: '12px',
+            alignItems: 'flex-start'
+          }}>
+            <img 
+              src="/ai_tutor_avatar.png" 
+              alt="AI Tutor" 
+              style={{ 
+                width: '40px', 
+                height: '40px', 
+                borderRadius: '50%', 
+                border: '2px solid var(--accent-color)',
+                background: 'var(--panel-bg-light)',
+                boxShadow: '0 4px 10px rgba(0, 240, 255, 0.15)',
+                flexShrink: 0,
+                marginTop: '4px'
+              }} 
+            />
+            <div style={{ alignSelf: 'flex-start', background: 'var(--message-ai)', padding: '16px 20px', borderRadius: '20px 20px 20px 0', border: '1px solid var(--glass-border)', display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <Wand2 size={16} className="text-accent" style={{ animation: 'typingGlow 2s infinite' }} />
+              <div style={{ display: 'flex', gap: '6px' }}>
+                <div className="typing-dot" style={{ width: '8px', height: '8px', background: 'var(--accent-color)', borderRadius: '50%', animation: 'typingGlow 1.5s infinite alternate' }}></div>
+                <div className="typing-dot" style={{ width: '8px', height: '8px', background: 'var(--accent-color)', borderRadius: '50%', animation: 'typingGlow 1.5s infinite alternate 0.2s' }}></div>
+                <div className="typing-dot" style={{ width: '8px', height: '8px', background: 'var(--accent-color)', borderRadius: '50%', animation: 'typingGlow 1.5s infinite alternate 0.4s' }}></div>
+              </div>
+              <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginLeft: '4px' }}>{t('AI 教練思考中...')}</span>
             </div>
           </div>
         )}
@@ -1047,9 +1102,9 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
             style={{ 
               padding: '0 20px', 
               borderRadius: '12px', 
-              background: isPolishing ? 'rgba(255, 255, 255, 0.1)' : 'rgba(217, 70, 239, 0.15)',
-              border: '1px solid rgba(217, 70, 239, 0.5)',
-              color: '#d946ef',
+              background: isPolishing ? 'var(--panel-bg-light)' : 'var(--magic-bg)',
+              border: '1px solid var(--magic-border)',
+              color: 'var(--magic-color)',
               height: '56px',
               display: 'flex',
               alignItems: 'center',
@@ -1060,7 +1115,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
             title={t(`幫我翻譯成道地的 IT ${targetLanguage === 'en' ? '英文' : '日文'}`)}
           >
             {isPolishing ? (
-              <div className="typing-dot" style={{ width: '8px', height: '8px', background: '#d946ef', borderRadius: '50%', animation: 'fadeIn 0.5s infinite alternate' }}></div>
+              <div className="typing-dot" style={{ width: '8px', height: '8px', background: 'var(--magic-color)', borderRadius: '50%', animation: 'fadeIn 0.5s infinite alternate' }}></div>
             ) : (
               <>
                 <Wand2 size={20} />
@@ -1157,7 +1212,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                   <h4 style={{ color: 'var(--accent-color)', marginBottom: '8px', fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
                     <Wand2 size={18} /> AI 道地建議說法：
                   </h4>
-                  <div style={{ background: 'rgba(217, 70, 239, 0.1)', border: '1px solid rgba(217, 70, 239, 0.3)', padding: '20px', borderRadius: '8px', color: '#fdf4ff', fontSize: '1.1rem', fontWeight: 500, lineHeight: 1.6 }}>
+                  <div style={{ background: 'var(--analysis-bg)', border: '1px solid var(--analysis-border)', padding: '20px', borderRadius: '8px', color: 'var(--analysis-text)', fontSize: '1.1rem', fontWeight: 500, lineHeight: 1.6 }}>
                     {learningModalData.suggestion}
                   </div>
                 </div>
@@ -1170,7 +1225,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                     <h4 style={{ color: 'var(--text-primary)', marginBottom: '16px', fontSize: '1.2rem', borderBottom: '1px solid var(--glass-border)', paddingBottom: '8px' }}>🎯 重要生詞</h4>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                       {learningModalData.vocab.map((v, i) => (
-                        <div key={i} style={{ background: 'rgba(255,255,255,0.03)', padding: '12px 16px', borderRadius: '8px', borderLeft: '3px solid var(--accent-color)' }}>
+                        <div key={i} style={{ background: 'var(--panel-bg-light)', padding: '12px 16px', borderRadius: '8px', borderLeft: '3px solid var(--accent-color)' }}>
                           <span style={{ color: 'var(--text-primary)', fontWeight: 600, marginRight: '8px', fontSize: '1.1rem' }}>{v.word}</span>
                           <span style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginRight: '12px', fontStyle: 'italic' }}>{v.partOfSpeech}</span>
                           <span style={{ color: 'var(--text-secondary)' }}>{v.zh}</span>
@@ -1185,7 +1240,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                     <h4 style={{ color: 'var(--text-primary)', marginBottom: '16px', fontSize: '1.2rem', borderBottom: '1px solid var(--glass-border)', paddingBottom: '8px' }}>✨ 實用句型</h4>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                       {learningModalData.patterns.map((p, i) => (
-                        <div key={i} style={{ background: 'rgba(255,255,255,0.03)', padding: '16px', borderRadius: '8px' }}>
+                        <div key={i} style={{ background: 'var(--panel-bg-light)', padding: '16px', borderRadius: '8px' }}>
                           <div style={{ color: 'var(--accent-color)', fontWeight: 600, marginBottom: '8px', fontSize: '1.05rem' }}>{p.pattern}</div>
                           <div style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6' }}>{p.explanation}</div>
                         </div>
@@ -1197,7 +1252,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                 {learningModalData.grammar && (
                   <div>
                     <h4 style={{ color: 'var(--text-primary)', marginBottom: '16px', fontSize: '1.2rem', borderBottom: '1px solid var(--glass-border)', paddingBottom: '8px' }}>💡 實戰文法語感</h4>
-                    <div style={{ background: 'rgba(255,255,255,0.03)', padding: '20px', borderRadius: '8px', lineHeight: '1.8', color: 'var(--text-secondary)', fontSize: '0.95rem' }}>
+                    <div style={{ background: 'var(--panel-bg-light)', padding: '20px', borderRadius: '8px', lineHeight: '1.8', color: 'var(--text-secondary)', fontSize: '0.95rem' }}>
                       {learningModalData.grammar}
                     </div>
                   </div>

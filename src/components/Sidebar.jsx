@@ -1,9 +1,9 @@
 import React from 'react';
-import { LayoutDashboard, MessageSquare, BookOpen, Settings, BookMarked, FileText } from 'lucide-react';
+import { LayoutDashboard, MessageSquare, BookOpen, Settings, BookMarked, FileText, Palette } from 'lucide-react';
 import { categoryData } from '../data/categoryData';
 import { useI18n } from '../contexts/I18nContext';
 
-const Sidebar = ({ activeTab, setActiveTab, userRole = 'it', userLevel = 'pre-intermediate' }) => {
+const Sidebar = ({ activeTab, setActiveTab, userRole = 'it', userLevel = 'pre-intermediate', uiTheme, setUiTheme }) => {
   const { t } = useI18n();
   const levelLabel = categoryData.levels.find(l => l.id === userLevel)?.label || userLevel;
   const roleLabel = Object.values(categoryData.roles).flat().find(r => r.id === userRole)?.label || userRole;
@@ -17,6 +17,12 @@ const Sidebar = ({ activeTab, setActiveTab, userRole = 'it', userLevel = 'pre-in
     { id: 'settings', label: t('設定與 API'), icon: Settings }
   ];
 
+  const cycleTheme = () => {
+    if (uiTheme === 'glass') setUiTheme('saas-dark');
+    else if (uiTheme === 'saas-dark') setUiTheme('saas-light');
+    else setUiTheme('glass');
+  };
+
   return (
     <aside className="glass-panel sidebar-container" style={{ 
       width: '260px', 
@@ -26,12 +32,40 @@ const Sidebar = ({ activeTab, setActiveTab, userRole = 'it', userLevel = 'pre-in
       padding: '24px 16px',
       position: 'relative'
     }}>
-      <div className="sidebar-header" style={{ marginBottom: '40px', padding: '0 10px' }}>
-        <h1 style={{ fontSize: '1.2rem', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <span style={{ color: 'var(--accent-color)', fontSize: '1.5rem' }}>◆</span> 
-          Multi-Lang Coach
-        </h1>
-        <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '4px', marginLeft: '24px' }}>{t('大數據語音教練')}</p>
+      <div className="sidebar-header" style={{ marginBottom: '40px', padding: '0 10px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+        <div>
+          <h1 style={{ fontSize: '1.2rem', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span style={{ color: 'var(--accent-color)', fontSize: '1.5rem' }}>◆</span> 
+            Multi-Lang Coach
+          </h1>
+          <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '4px', marginLeft: '24px' }}>{t('大數據語音教練')}</p>
+        </div>
+        <button 
+          onClick={cycleTheme}
+          title={t("切換介面風格")}
+          style={{
+            background: 'var(--panel-bg-light)',
+            border: '1px solid var(--glass-border)',
+            color: 'var(--text-secondary)',
+            padding: '8px',
+            borderRadius: '50%',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: 'all 0.2s'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.color = 'var(--text-primary)';
+            e.currentTarget.style.background = 'var(--button-bg-hover)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.color = 'var(--text-secondary)';
+            e.currentTarget.style.background = 'var(--panel-bg-light)';
+          }}
+        >
+          <Palette size={16} />
+        </button>
       </div>
 
       <nav className="sidebar-nav" style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '8px' }}>

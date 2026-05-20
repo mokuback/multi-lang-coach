@@ -120,7 +120,7 @@ const PatternNotebook = ({ patterns, removePattern, targetLanguage, speechRate =
             <div style={{ display: 'flex', gap: '8px', alignItems: 'center', marginLeft: '16px' }}>
               <button 
                 className="glass-button" 
-                style={{ padding: '10px', borderRadius: '50%', background: 'rgba(255, 255, 255, 0.05)' }} 
+                style={{ padding: '10px', borderRadius: '50%', background: 'var(--panel-bg-light)' }} 
                 title={t("聆聽發音")}
                 onClick={() => handleSpeak(p.pattern, p.lang)}
               >

@@ -113,7 +113,7 @@ const Notebook = ({ vocabulary, removeVocabulary, targetLanguage, speechRate = 5
                   {vocab.partOfSpeech && <span style={{ color: 'var(--accent-color)', fontSize: '1rem', fontStyle: 'italic', fontWeight: 'normal' }}>{vocab.partOfSpeech}</span>}
                 </h3>
                 <span style={{ 
-                  background: 'rgba(255, 255, 255, 0.05)', 
+                  background: 'var(--panel-bg-light)', 
                   padding: '4px 12px', 
                   borderRadius: '12px',
                   color: 'var(--accent-color)',
@@ -136,7 +136,7 @@ const Notebook = ({ vocabulary, removeVocabulary, targetLanguage, speechRate = 5
             <div className="no-export" style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
               <button 
                 className="glass-button" 
-                style={{ padding: '10px', borderRadius: '50%', background: 'rgba(255, 255, 255, 0.05)' }} 
+                style={{ padding: '10px', borderRadius: '50%', background: 'var(--panel-bg-light)' }} 
                 title={t("聆聽發音")}
                 onClick={() => handleSpeak(vocab.term, vocab.lang)}
               >

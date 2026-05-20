@@ -7,6 +7,7 @@ import PatternNotebook from './components/PatternNotebook';
 import Patterns from './components/Patterns';
 import Guide from './components/Guide';
 import { useI18n } from './contexts/I18nContext.jsx';
+import { Palette } from 'lucide-react';
 
 import { categoryData, getDefaultRole } from './data/categoryData';
 import { getScenariosByRole } from './data/scenariosData';
@@ -30,6 +31,7 @@ const TAB_STORAGE_KEY = 'APP_ACTIVE_TAB';
 const WELCOME_STORAGE_KEY = 'APP_HAS_SEEN_WELCOME';
 const API_KEY_STORAGE_KEY = 'APP_GEMINI_API_KEY';
 const ANDROID_SPEECH_STORAGE_KEY = 'APP_ANDROID_SMART_SPEECH';
+const THEME_STORAGE_KEY = 'APP_UI_THEME';
 
 function App() {
   const { t, uiLang, setUiLang } = useI18n();
@@ -48,7 +50,7 @@ function App() {
   
   const [speechRate, setSpeechRate] = useState(() => parseInt(localStorage.getItem(RATE_STORAGE_KEY) || '5', 10));
   const [autoRead, setAutoRead] = useState(() => localStorage.getItem(AUTO_READ_STORAGE_KEY) === 'true');
-
+  const [uiTheme, setUiTheme] = useState(() => localStorage.getItem(THEME_STORAGE_KEY) || 'glass');
   
   // New target language state
   const [targetLanguage, setTargetLanguage] = useState(() => {
@@ -112,6 +114,11 @@ function App() {
     localStorage.setItem(ROLE_STORAGE_KEY, userRole);
     localStorage.setItem(LEVEL_STORAGE_KEY, userLevel);
   }, [userCategory, userRole, userLevel]);
+
+  useEffect(() => {
+    document.body.setAttribute('data-theme', uiTheme);
+    localStorage.setItem(THEME_STORAGE_KEY, uiTheme);
+  }, [uiTheme]);
 
   // Derived scenarios based on userRole
   const scenarios = getScenariosByRole(userRole);
@@ -227,6 +234,12 @@ function App() {
     localStorage.setItem(WELCOME_STORAGE_KEY, 'true');
   };
 
+  const cycleTheme = () => {
+    if (uiTheme === 'glass') setUiTheme('saas-dark');
+    else if (uiTheme === 'saas-dark') setUiTheme('saas-light');
+    else setUiTheme('glass');
+  };
+
   return (
     <>
       {!hasSeenWelcome && (
@@ -266,6 +279,8 @@ function App() {
         targetLanguage={targetLanguage} 
         userRole={userRole}
         userLevel={userLevel}
+        uiTheme={uiTheme}
+        setUiTheme={setUiTheme}
       />
       
       <main className="main-content">
@@ -279,6 +294,7 @@ function App() {
             onStart={handleStartScenario} 
             targetLanguage={targetLanguage}
             userRole={userRole}
+            userCategory={userCategory}
             progress={progress}
             vocabCount={vocabulary.length}
           />
@@ -326,24 +342,34 @@ function App() {
           <div className="glass-panel animate-fade-in" style={{ padding: '24px', maxWidth: '600px', margin: '0 auto', marginTop: '50px' }}>
             <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'var(--text-primary)' }}>{t('學習設定')}</h2>
             
-            <div style={{ marginBottom: '1.5rem' }}>
-              <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('介面與母語語言')}</label>
-              <select className="glass-input" value={uiLang} onChange={(e) => setUiLang(e.target.value)} style={{ appearance: 'auto', backgroundColor: 'rgba(0,0,0,0.8)' }}>
-                <option value="zh-TW">繁體中文</option>
-                <option value="zh-CN">简体中文</option>
-              </select>
+            <div className="form-group-mobile" style={{ marginBottom: '1.5rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <div>
+                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('介面與母語語言')}</label>
+                <select className="glass-input" value={uiLang} onChange={(e) => setUiLang(e.target.value)} style={{ appearance: 'auto' }}>
+                  <option value="zh-TW">繁體中文</option>
+                  <option value="zh-CN">简体中文</option>
+                </select>
+              </div>
+              <div>
+                <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('介面風格 (UI Theme)')}</label>
+                <select className="glass-input" value={uiTheme} onChange={(e) => setUiTheme(e.target.value)} style={{ appearance: 'auto' }}>
+                  <option value="glass">{t('科技玻璃風 (Glassmorphism)')}</option>
+                  <option value="saas-dark">{t('商業深色風 (SaaS Dark)')}</option>
+                  <option value="saas-light">{t('商業淺色風 (SaaS Light)')}</option>
+                </select>
+              </div>
             </div>
 
             <div className="form-group-mobile" style={{ marginBottom: '1.5rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
               <div>
                 <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('主類別')}</label>
-                <select className="glass-input" value={userCategory} onChange={handleCategoryChange} style={{ appearance: 'auto', backgroundColor: 'rgba(0,0,0,0.8)' }}>
+                <select className="glass-input" value={userCategory} onChange={handleCategoryChange} style={{ appearance: 'auto' }}>
                   {categoryData.categories.map(c => <option key={c.id} value={c.id}>{t(c.label)}</option>)}
                 </select>
               </div>
               <div>
                 <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('主題與職務')}</label>
-                <select className="glass-input" value={userRole} onChange={(e) => setUserRole(e.target.value)} style={{ appearance: 'auto', backgroundColor: 'rgba(0,0,0,0.8)' }}>
+                <select className="glass-input" value={userRole} onChange={(e) => setUserRole(e.target.value)} style={{ appearance: 'auto' }}>
                   {categoryData.roles[userCategory]?.map(r => <option key={r.id} value={r.id}>{t(r.label)}</option>)}
                 </select>
               </div>
@@ -352,14 +378,14 @@ function App() {
             <div className="form-group-mobile" style={{ marginBottom: '1.5rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
               <div>
                 <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('學習語言目標')}</label>
-                <select className="glass-input" value={targetLanguage} onChange={(e) => setTargetLanguage(e.target.value)} style={{ appearance: 'auto', backgroundColor: 'rgba(0,0,0,0.8)' }}>
+                <select className="glass-input" value={targetLanguage} onChange={(e) => setTargetLanguage(e.target.value)} style={{ appearance: 'auto' }}>
                   <option value="en">{t('英語 (English)')}</option>
                   <option value="ja">{t('日語 (日本語)')}</option>
                 </select>
               </div>
               <div>
                 <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('語言程度')}</label>
-                <select className="glass-input" value={userLevel} onChange={(e) => setUserLevel(e.target.value)} style={{ appearance: 'auto', backgroundColor: 'rgba(0,0,0,0.8)' }}>
+                <select className="glass-input" value={userLevel} onChange={(e) => setUserLevel(e.target.value)} style={{ appearance: 'auto' }}>
                   {categoryData.levels.map(l => <option key={l.id} value={l.id}>{t(l.label)}</option>)}
                 </select>
               </div>
@@ -367,7 +393,7 @@ function App() {
 
             <div style={{ marginBottom: '1.5rem' }}>
               <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('文法糾錯嚴格度')}</label>
-              <select className="glass-input" value={correctionMode} onChange={(e) => setCorrectionMode(e.target.value)} style={{ appearance: 'auto', backgroundColor: 'rgba(0,0,0,0.8)' }}>
+              <select className="glass-input" value={correctionMode} onChange={(e) => setCorrectionMode(e.target.value)} style={{ appearance: 'auto' }}>
                 <option value="communicative">{t('溝通為主（僅糾正重大基礎錯誤，鼓勵開口）')}</option>
                 <option value="strict">{t('超級嚴格（抓出所有不道地、些微的文法瑕疵）')}</option>
               </select>
@@ -435,6 +461,16 @@ function App() {
           </div>
         )}
       </main>
+
+      {/* Floating Theme Toggle for Mobile */}
+      <button
+        className="mobile-theme-toggle"
+        onClick={cycleTheme}
+        title={t("切換介面風格")}
+      >
+        <Palette size={20} />
+      </button>
+
     </div>
     </>
   );

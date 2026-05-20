@@ -45,9 +45,9 @@ const Guide = () => {
                     strong: (props) => { const {node, ...rest} = props; return <strong style={{ color: 'var(--text-primary)', fontWeight: 'bold' }} {...rest} />; },
                     a: (props) => { const {node, ...rest} = props; return <a style={{ color: 'var(--accent-color)', textDecoration: 'none' }} target="_blank" rel="noopener noreferrer" {...rest} />; },
                     hr: (props) => { const {node, ...rest} = props; return <hr style={{ border: 'none', borderTop: '1px solid var(--glass-border)', margin: '32px 0' }} {...rest} />; },
-                    blockquote: (props) => { const {node, ...rest} = props; return <blockquote style={{ borderLeft: '4px solid var(--accent-color)', paddingLeft: '16px', margin: '24px 0', color: 'var(--text-muted)', fontStyle: 'italic', background: 'rgba(0,0,0,0.2)', padding: '16px' }} {...rest} />; },
+                    blockquote: (props) => { const {node, ...rest} = props; return <blockquote style={{ borderLeft: '4px solid var(--accent-color)', paddingLeft: '16px', margin: '24px 0', color: 'var(--text-muted)', fontStyle: 'italic', background: 'var(--code-bg)', padding: '16px' }} {...rest} />; },
                     code: (props) => { const {node, inline, ...rest} = props; return inline 
-                      ? <code style={{ color: '#FFD700', background: 'rgba(255, 215, 0, 0.1)', padding: '2px 6px', borderRadius: '4px', fontWeight: 'bold' }} {...rest} />
+                      ? <code style={{ color: 'var(--highlight-text)', background: 'var(--highlight-bg)', padding: '2px 6px', borderRadius: '4px', fontWeight: 'bold' }} {...rest} />
                       : <code {...rest} />; }
                   }}
                 >
