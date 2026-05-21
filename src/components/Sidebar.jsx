@@ -94,10 +94,23 @@ const Sidebar = ({ activeTab, setActiveTab, userRole = 'it', userLevel = 'pre-in
       </nav>
 
       <div className="sidebar-footer" style={{ padding: '0 10px', marginTop: 'auto' }}>
-        <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+        <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '16px' }}>
           {t('程度')}：{t(levelLabel)}<br/>
           {t('主題')}：{t(roleLabel)}
         </p>
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'center', 
+          gap: '8px', 
+          fontSize: '0.75rem', 
+          color: 'var(--text-muted)',
+          borderTop: '1px solid var(--glass-border)',
+          paddingTop: '16px'
+        }}>
+          <span style={{ cursor: 'pointer', transition: 'color 0.2s' }} onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'} onMouseLeave={(e) => e.target.style.color = 'var(--text-muted)'} onClick={() => setActiveTab('about')}>{t('關於我們')}</span> | 
+          <span style={{ cursor: 'pointer', transition: 'color 0.2s' }} onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'} onMouseLeave={(e) => e.target.style.color = 'var(--text-muted)'} onClick={() => setActiveTab('privacy')}>{t('隱私權政策')}</span> | 
+          <span style={{ cursor: 'pointer', transition: 'color 0.2s' }} onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'} onMouseLeave={(e) => e.target.style.color = 'var(--text-muted)'} onClick={() => setActiveTab('contact')}>{t('聯絡我們')}</span>
+        </div>
       </div>
     </aside>
   );

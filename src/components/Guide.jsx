@@ -4,8 +4,9 @@ import ReactMarkdown from 'react-markdown';
 import { BookOpen } from 'lucide-react';
 import userGuideMd from '../data/user_guide.md?raw';
 import { useI18n } from '../contexts/I18nContext';
+import Footer from './Footer';
 
-const Guide = () => {
+const Guide = ({ setActiveTab }) => {
   const { t } = useI18n();
   const [error, setError] = useState(null);
 
@@ -61,6 +62,7 @@ const Guide = () => {
           })()}
         </div>
       </div>
+      {setActiveTab && <Footer setActiveTab={setActiveTab} />}
     </div>
   );
 };

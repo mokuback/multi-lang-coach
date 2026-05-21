@@ -3,8 +3,9 @@ import { Play, TrendingUp, Calendar, Zap, MessageSquare } from 'lucide-react';
 
 import { categoryData } from '../data/categoryData';
 import { useI18n } from '../contexts/I18nContext';
+import Footer from './Footer';
 
-const Dashboard = ({ scenarios, onStart, targetLanguage = 'en', userRole = 'it', userCategory = 'business', progress = { streak: 0, completedScenarios: 0 }, vocabCount = 0 }) => {
+const Dashboard = ({ scenarios, onStart, targetLanguage = 'en', userRole = 'it', userCategory = 'business', progress = { streak: 0, completedScenarios: 0 }, vocabCount = 0, setActiveTab }) => {
   const { t } = useI18n();
   const roleLabel = Object.values(categoryData.roles).flat().find(r => r.id === userRole)?.label || userRole;
 
@@ -129,6 +130,8 @@ const Dashboard = ({ scenarios, onStart, targetLanguage = 'en', userRole = 'it',
           </div>
         </div>
       </section>
+
+      {setActiveTab && <Footer setActiveTab={setActiveTab} />}
     </div>
   );
 };

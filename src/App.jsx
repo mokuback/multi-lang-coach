@@ -6,6 +6,9 @@ import Notebook from './components/Notebook';
 import PatternNotebook from './components/PatternNotebook';
 import Patterns from './components/Patterns';
 import Guide from './components/Guide';
+import AboutUs from './components/pages/AboutUs';
+import PrivacyPolicy from './components/pages/PrivacyPolicy';
+import ContactUs from './components/pages/ContactUs';
 import { useI18n } from './contexts/I18nContext.jsx';
 import { Palette } from 'lucide-react';
 
@@ -285,7 +288,7 @@ function App() {
       
       <main className="main-content">
         {activeTab === 'guide' && (
-          <Guide />
+          <Guide setActiveTab={setActiveTab} />
         )}
 
         {activeTab === 'dashboard' && (
@@ -297,6 +300,7 @@ function App() {
             userCategory={userCategory}
             progress={progress}
             vocabCount={vocabulary.length}
+            setActiveTab={setActiveTab}
           />
         )}
         
@@ -460,6 +464,10 @@ function App() {
             </div>
           </div>
         )}
+
+        {activeTab === 'about' && <AboutUs />}
+        {activeTab === 'privacy' && <PrivacyPolicy />}
+        {activeTab === 'contact' && <ContactUs />}
       </main>
 
       {/* Floating Theme Toggle for Mobile */}

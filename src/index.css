@@ -134,9 +134,7 @@
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: linear-gradient(-45deg, var(--bg-primary), var(--panel-bg-light), var(--bg-primary));
-  background-size: 400% 400%;
-  animation: ambientGlow 30s ease infinite;
+  background-color: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -245,12 +243,6 @@ body {
   0% { opacity: 0; transform: translateY(20px) scale(0.95); }
   70% { opacity: 1; transform: translateY(-5px) scale(1.01); }
   100% { opacity: 1; transform: translateY(0) scale(1); }
-}
-
-@keyframes ambientGlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
 }
 
 @keyframes typingGlow {
