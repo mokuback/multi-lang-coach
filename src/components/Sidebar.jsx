@@ -1,5 +1,5 @@
 import React from 'react';
-import { LayoutDashboard, MessageSquare, BookOpen, Settings, BookMarked, FileText, Palette } from 'lucide-react';
+import { LayoutDashboard, MessageSquare, BookOpen, Settings, BookMarked, FileText, Palette, GraduationCap } from 'lucide-react';
 import { categoryData } from '../data/categoryData';
 import { useI18n } from '../contexts/I18nContext';
 
@@ -9,6 +9,7 @@ const Sidebar = ({ activeTab, setActiveTab, userRole = 'it', userLevel = 'pre-in
   const roleLabel = Object.values(categoryData.roles).flat().find(r => r.id === userRole)?.label || userRole;
   const navItems = [
     { id: 'guide', label: t('使用說明'), icon: BookOpen },
+    { id: 'curriculum', label: t('基礎訓練'), icon: GraduationCap },
     { id: 'dashboard', label: t('每日任務'), icon: LayoutDashboard },
     { id: 'chat', label: t('對話練習'), icon: MessageSquare },
     { id: 'notebook', label: t('生詞筆記'), icon: BookOpen },
@@ -34,11 +35,32 @@ const Sidebar = ({ activeTab, setActiveTab, userRole = 'it', userLevel = 'pre-in
     }}>
       <div className="sidebar-header" style={{ marginBottom: '40px', padding: '0 10px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
         <div>
-          <h1 style={{ fontSize: '1.2rem', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span style={{ color: 'var(--accent-color)', fontSize: '1.5rem' }}>◆</span> 
-            Multi-Lang Coach
-          </h1>
-          <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '4px', marginLeft: '24px' }}>{t('大數據語音教練')}</p>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px' }}>
+            <div style={{
+              width: '38px',
+              height: '38px',
+              borderRadius: '10px',
+              background: 'linear-gradient(135deg, var(--accent-color), var(--magic-color, #d946ef))',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)'
+            }}>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" y1="19" x2="12" y2="22"></line>
+              </svg>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <h1 style={{ fontSize: '1.2rem', fontWeight: '700', color: 'var(--text-primary)', margin: 0, lineHeight: '1.2' }}>
+                Multi-Lang
+              </h1>
+              <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: '600', letterSpacing: '0.5px' }}>
+                {t('大數據語音教練')}
+              </span>
+            </div>
+          </div>
         </div>
         <button 
           onClick={cycleTheme}

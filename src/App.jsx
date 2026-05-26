@@ -6,6 +6,7 @@ import Notebook from './components/Notebook';
 import PatternNotebook from './components/PatternNotebook';
 import Patterns from './components/Patterns';
 import Guide from './components/Guide';
+import Curriculum from './components/Curriculum';
 import AboutUs from './components/pages/AboutUs';
 import PrivacyPolicy from './components/pages/PrivacyPolicy';
 import ContactUs from './components/pages/ContactUs';
@@ -181,6 +182,8 @@ function App() {
     setActiveTab('chat');
   };
 
+
+
   const handleStartPatternDrill = (patternItem) => {
     setActiveScenario({ id: 'pattern-drill', title: t("句型代換練習"), desc: t("教練給予情境，使用者填入代換詞彙") });
     updateProgress();
@@ -206,8 +209,51 @@ function App() {
     setActiveTab('chat');
   };
 
+  const handleStartCurriculumDrill = (unit) => {
+    setActiveScenario({ id: 'curriculum-drill', title: unit.title, desc: unit.description, unit: unit });
+    updateProgress();
+    
+    const langName = targetLanguage === 'en' ? t('英文') : t('日文');
+
+    const vocabList = unit.vocab ? unit.vocab.map(v => v.word).join(', ') : '';
+    const patternList = unit.patterns ? unit.patterns.map(p => p.pattern).join(', ') : '';
+
+    const systemPrompt = t(`我們正在進行【${unit.title}】的零基礎基礎訓練。
+目標語言：${langName}。
+本課重點單字：${vocabList}。
+本課核心句型：${patternList}。
+
+請扮演嚴格但有耐心的 AI 語言教練。你的任務是：
+1. 先用中文簡單說明本課的目標，並出一個與上述單字或句型相關的簡單情境考題，請使用者用${langName}回答。
+2. 根據使用者的回答進行糾錯，確認理解後，再出下一題。
+3. 題目應循序漸進，從單字翻譯到句子代換，最後是簡單的情境對話。
+4. 全程使用【${uiLang === 'zh-CN' ? '簡體中文' : '繁體中文'}】進行解說與引導。`);
+
+    const aiGreeting = targetLanguage === 'en' 
+      ? `Welcome to the unit: "${unit.title}". I am your AI coach. Let's start the training!`
+      : `ユニット「${unit.title}」へようこそ。私はあなたのAIコーチです。特訓を始めましょう！`;
+      
+    const aiTranslation = targetLanguage === 'en'
+      ? t(`歡迎來到「${unit.title}」單元。我是你的 AI 教練，我們開始特訓吧！請準備好，我會出一個中文情境考你。`)
+      : t(`歡迎來到「${unit.title}」單元。我是你的 AI 教練，我們開始特訓吧！請準備好，我會出一個中文情境考你。`);
+
+    setChatHistory([
+      { role: 'system', content: systemPrompt },
+      { 
+        role: 'assistant', 
+        content: aiGreeting,
+        translation: aiTranslation
+      }
+    ]);
+    setActiveTab('chat');
+  };
+
   const addVocabulary = (term, meaning, example, phonetic = '', partOfSpeech = '', lang = targetLanguage) => {
-    setVocabulary(prev => [{ term, meaning, example, phonetic, partOfSpeech, lang }, ...prev]);
+    setVocabulary(prev => {
+      // Prevent duplicates (case-insensitive for English)
+      if (prev.some(v => v.term.toLowerCase() === term.toLowerCase() && v.lang === lang)) return prev;
+      return [{ term, meaning, example, phonetic, partOfSpeech, lang }, ...prev];
+    });
   };
 
   const removeVocabulary = (termToRemove, langToRemove) => {
@@ -289,6 +335,14 @@ function App() {
       <main className="main-content">
         {activeTab === 'guide' && (
           <Guide setActiveTab={setActiveTab} />
+        )}
+
+        {activeTab === 'curriculum' && (
+          <Curriculum 
+            targetLanguage={targetLanguage}
+            speechRate={speechRate}
+            onStartDrill={handleStartCurriculumDrill}
+          />
         )}
 
         {activeTab === 'dashboard' && (
@@ -464,6 +518,7 @@ function App() {
             </div>
           </div>
         )}
+
 
         {activeTab === 'about' && <AboutUs />}
         {activeTab === 'privacy' && <PrivacyPolicy />}

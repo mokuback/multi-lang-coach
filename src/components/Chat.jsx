@@ -164,21 +164,16 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
     setIsAnalyzing(true);
     try {
       const result = await analyzeSentenceAPI(sentence, apiKey, targetLanguage);
+      
+      // Initialize check state for vocab and patterns
+      if (result.vocab) {
+        result.vocab = result.vocab.map(v => ({ ...v, checked: true }));
+      }
+      if (result.patterns) {
+        result.patterns = result.patterns.map(p => ({ ...p, checked: true }));
+      }
+      
       setLearningModalData(result);
-      
-      // Auto-extract vocab if the modal generates words
-      if (result.vocab && result.vocab.length > 0) {
-        result.vocab.forEach(v => {
-          addVocabulary(v.word, v.zh, v.example || '', v.phonetic || '', v.partOfSpeech || '');
-        });
-      }
-      
-      // Auto-extract patterns
-      if (result.patterns && result.patterns.length > 0 && addPattern) {
-        result.patterns.forEach(p => {
-          addPattern(p.pattern, p.explanation);
-        });
-      }
       
       // 🎉 Trigger Confetti!
       confetti({
@@ -503,18 +498,11 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
         if (parsedResult.correction) {
            aiMessage.correction = parsedResult.correction;
         }
+        if (parsedResult.extractedVocab) {
+           aiMessage.extractedVocab = parsedResult.extractedVocab;
+        }
         
         setChatHistory(prev => [...prev, aiMessage]);
-        
-        if (parsedResult.extractedVocab) {
-          addVocabulary(
-            parsedResult.extractedVocab.term, 
-            parsedResult.extractedVocab.meaning, 
-            parsedResult.extractedVocab.example,
-            parsedResult.extractedVocab.phonetic || '',
-            parsedResult.extractedVocab.partOfSpeech || ''
-          );
-        }
       } catch (error) {
         console.error("API Call failed:", error);
         setChatHistory(prev => [...prev, { 
@@ -536,25 +524,18 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
     try {
       const parsedResult = await callGeminiAPI(historyToRetry, apiKey, correctionMode, targetLanguage, userCategory, userRole, userLevel);
       
-      let aiMessage = { role: 'assistant', content: parsedResult.content };
+        let aiMessage = { role: 'assistant', content: parsedResult.content };
       if (parsedResult.translation) {
          aiMessage.translation = parsedResult.translation;
       }
       if (parsedResult.correction) {
          aiMessage.correction = parsedResult.correction;
       }
+      if (parsedResult.extractedVocab) {
+         aiMessage.extractedVocab = parsedResult.extractedVocab;
+      }
       
       setChatHistory(prev => [...prev, aiMessage]);
-      
-      if (parsedResult.extractedVocab) {
-        addVocabulary(
-          parsedResult.extractedVocab.term, 
-          parsedResult.extractedVocab.meaning, 
-          parsedResult.extractedVocab.example,
-          parsedResult.extractedVocab.phonetic || '',
-          parsedResult.extractedVocab.partOfSpeech || ''
-        );
-      }
     } catch (error) {
       console.error("API Call failed during retry:", error);
       setChatHistory(prev => [...prev, { 
@@ -737,12 +718,70 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <Lightbulb size={18} className="text-accent" />
-              {t('本情境推薦句型')} ({patternVersion === '01' ? t('基礎教科書版') : t('進階商務版')})
+              {scenario?.id === 'curriculum-drill' 
+                ? t('本課單字與句型') 
+                : `${t('本情境推薦句型')} (${patternVersion === '01' ? t('基礎教科書版') : t('進階商務版')})`
+              }
             </div>
             <span>{showPatternHints ? '▲ ' + t('收合') : '▼ ' + t('展開')}</span>
           </button>
 
           {showPatternHints && (() => {
+            if (scenario?.id === 'curriculum-drill') {
+               const vocab = scenario.unit?.vocab || [];
+               const patterns = scenario.unit?.patterns || [];
+               
+               if (vocab.length === 0 && patterns.length === 0) return null;
+
+               return (
+                  <div className="glass-panel animate-slide-in" style={{ 
+                    marginTop: '8px', 
+                    padding: '16px 20px', 
+                    background: 'rgba(255,255,255,0.02)',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '16px'
+                  }}>
+                    {vocab.length > 0 && (
+                      <div>
+                        <h4 style={{ color: 'var(--text-primary)', marginBottom: '8px', fontSize: '1rem' }}>🎯 {t('本課單字')}</h4>
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: '8px' }}>
+                          {vocab.map((v, idx) => (
+                            <div key={idx} style={{ 
+                              background: 'rgba(0,0,0,0.2)', 
+                              padding: '8px', 
+                              borderRadius: '6px',
+                              borderLeft: '2px solid var(--accent-color)'
+                            }}>
+                              <div style={{ fontWeight: 'bold', color: 'var(--text-primary)' }}>{v.word}</div>
+                              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{t(v.zh)}</div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                    {patterns.length > 0 && (
+                      <div>
+                        <h4 style={{ color: 'var(--text-primary)', marginBottom: '8px', fontSize: '1rem' }}>✨ {t('核心句型')}</h4>
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '8px' }}>
+                          {patterns.map((p, idx) => (
+                            <div key={idx} style={{ 
+                              background: 'rgba(0,0,0,0.2)', 
+                              padding: '12px', 
+                              borderRadius: '8px',
+                              borderLeft: '2px solid var(--accent-color)'
+                            }}>
+                              <div style={{ fontWeight: 'bold', color: 'var(--text-primary)', marginBottom: '4px' }}>{p.pattern}</div>
+                              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{t(p.explanation)}</div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+               );
+            }
+
             const currentPatterns = patternVersion === '01' ? scenarioPatterns01 : scenarioPatterns02;
             const scenarioData = currentPatterns[scenario?.id] || currentPatterns['default'];
             const patterns = scenarioData ? (scenarioData[targetLanguage] || scenarioData['en'] || []) : [];
@@ -1039,6 +1078,66 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                   </div>
                 </div>
               )}
+
+              {/* Extracted Vocab Inline UI */}
+              {!isUser && msg.extractedVocab && (
+                <div style={{
+                  marginTop: '12px',
+                  background: 'rgba(0, 240, 255, 0.05)',
+                  border: '1px solid rgba(0, 240, 255, 0.2)',
+                  borderRadius: '12px',
+                  padding: '12px 16px',
+                  width: '100%',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '8px'
+                }}>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--accent-color)', fontWeight: 600 }}>
+                      <Lightbulb size={16} /> {t('發現新單字')}
+                    </div>
+                    <button
+                      onClick={(e) => {
+                        e.currentTarget.disabled = true;
+                        e.currentTarget.innerHTML = `✓ ${t('已收錄')}`;
+                        e.currentTarget.style.background = 'var(--success-bg)';
+                        e.currentTarget.style.color = 'var(--success-color)';
+                        e.currentTarget.style.borderColor = 'var(--success-color)';
+                        addVocabulary(
+                          msg.extractedVocab.term, 
+                          msg.extractedVocab.meaning, 
+                          msg.extractedVocab.example,
+                          msg.extractedVocab.phonetic || '',
+                          msg.extractedVocab.partOfSpeech || ''
+                        );
+                      }}
+                      style={{
+                        background: 'transparent',
+                        border: '1px solid var(--accent-color)',
+                        color: 'var(--accent-color)',
+                        padding: '4px 12px',
+                        borderRadius: '16px',
+                        fontSize: '0.75rem',
+                        cursor: 'pointer',
+                        transition: 'all 0.2s',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '4px'
+                      }}
+                      onMouseEnter={(e) => { if (!e.currentTarget.disabled) e.currentTarget.style.background = 'rgba(0, 240, 255, 0.1)'; }}
+                      onMouseLeave={(e) => { if (!e.currentTarget.disabled) e.currentTarget.style.background = 'transparent'; }}
+                    >
+                      <CheckCircle size={14} /> {t('收錄至筆記本')}
+                    </button>
+                  </div>
+                  <div style={{ display: 'flex', gap: '8px', alignItems: 'baseline' }}>
+                    <strong style={{ fontSize: '1.05rem', color: 'var(--text-primary)' }}>{msg.extractedVocab.term}</strong>
+                    {msg.extractedVocab.phonetic && <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>[{msg.extractedVocab.phonetic}]</span>}
+                    {msg.extractedVocab.partOfSpeech && <span style={{ fontSize: '0.8rem', color: 'var(--accent-color)', background: 'rgba(0,240,255,0.1)', padding: '2px 6px', borderRadius: '4px' }}>{msg.extractedVocab.partOfSpeech}</span>}
+                  </div>
+                  <div style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>{msg.extractedVocab.meaning}</div>
+                </div>
+              )}
               </div>
             </div>
           );
@@ -1225,11 +1324,25 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                     <h4 style={{ color: 'var(--text-primary)', marginBottom: '16px', fontSize: '1.2rem', borderBottom: '1px solid var(--glass-border)', paddingBottom: '8px' }}>🎯 重要生詞</h4>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                       {learningModalData.vocab.map((v, i) => (
-                        <div key={i} style={{ background: 'var(--panel-bg-light)', padding: '12px 16px', borderRadius: '8px', borderLeft: '3px solid var(--accent-color)' }}>
-                          <span style={{ color: 'var(--text-primary)', fontWeight: 600, marginRight: '8px', fontSize: '1.1rem' }}>{v.word}</span>
-                          <span style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginRight: '12px', fontStyle: 'italic' }}>{v.partOfSpeech}</span>
-                          <span style={{ color: 'var(--text-secondary)' }}>{v.zh}</span>
-                        </div>
+                        <label key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', background: 'var(--panel-bg-light)', padding: '12px 16px', borderRadius: '8px', borderLeft: '3px solid var(--accent-color)', cursor: 'pointer' }}>
+                          <input 
+                            type="checkbox" 
+                            checked={v.checked !== false} 
+                            onChange={() => {
+                              setLearningModalData(prev => {
+                                const newVocab = [...prev.vocab];
+                                newVocab[i] = { ...newVocab[i], checked: !(newVocab[i].checked !== false) };
+                                return { ...prev, vocab: newVocab };
+                              });
+                            }}
+                            style={{ width: '18px', height: '18px', cursor: 'pointer', accentColor: 'var(--accent-color)' }}
+                          />
+                          <div style={{ flex: 1 }}>
+                            <span style={{ color: 'var(--text-primary)', fontWeight: 600, marginRight: '8px', fontSize: '1.1rem' }}>{v.word}</span>
+                            <span style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginRight: '12px', fontStyle: 'italic' }}>{v.partOfSpeech}</span>
+                            <span style={{ color: 'var(--text-secondary)' }}>{v.zh}</span>
+                          </div>
+                        </label>
                       ))}
                     </div>
                   </div>
@@ -1240,10 +1353,24 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                     <h4 style={{ color: 'var(--text-primary)', marginBottom: '16px', fontSize: '1.2rem', borderBottom: '1px solid var(--glass-border)', paddingBottom: '8px' }}>✨ 實用句型</h4>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                       {learningModalData.patterns.map((p, i) => (
-                        <div key={i} style={{ background: 'var(--panel-bg-light)', padding: '16px', borderRadius: '8px' }}>
-                          <div style={{ color: 'var(--accent-color)', fontWeight: 600, marginBottom: '8px', fontSize: '1.05rem' }}>{p.pattern}</div>
-                          <div style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6' }}>{p.explanation}</div>
-                        </div>
+                        <label key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', background: 'var(--panel-bg-light)', padding: '16px', borderRadius: '8px', cursor: 'pointer' }}>
+                          <input 
+                            type="checkbox" 
+                            checked={p.checked !== false} 
+                            onChange={() => {
+                              setLearningModalData(prev => {
+                                const newPatterns = [...prev.patterns];
+                                newPatterns[i] = { ...newPatterns[i], checked: !(newPatterns[i].checked !== false) };
+                                return { ...prev, patterns: newPatterns };
+                              });
+                            }}
+                            style={{ width: '18px', height: '18px', cursor: 'pointer', marginTop: '4px', accentColor: 'var(--accent-color)' }}
+                          />
+                          <div style={{ flex: 1 }}>
+                            <div style={{ color: 'var(--accent-color)', fontWeight: 600, marginBottom: '4px', fontSize: '1.05rem' }}>{p.pattern}</div>
+                            <div style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6' }}>{p.explanation}</div>
+                          </div>
+                        </label>
                       ))}
                     </div>
                   </div>
@@ -1258,6 +1385,31 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                   </div>
                 )}
 
+                {/* Save Button for Learning Modal */}
+                {(!learningModalData.isSuggestion && (learningModalData.vocab?.length > 0 || learningModalData.patterns?.length > 0)) && (
+                  <div style={{ marginTop: '16px', paddingTop: '20px', borderTop: '1px solid var(--glass-border)', display: 'flex', justifyContent: 'flex-end' }}>
+                    <button
+                      onClick={() => {
+                        if (learningModalData.vocab) {
+                          learningModalData.vocab.filter(v => v.checked !== false).forEach(v => {
+                            addVocabulary(v.word, v.zh, v.example || '', v.phonetic || '', v.partOfSpeech || '');
+                          });
+                        }
+                        if (learningModalData.patterns && addPattern) {
+                          learningModalData.patterns.filter(p => p.checked !== false).forEach(p => {
+                            addPattern(p.pattern, p.explanation);
+                          });
+                        }
+                        setIsAnalyzing(false);
+                        setLearningModalData(null);
+                      }}
+                      className="glass-button active"
+                      style={{ padding: '12px 24px', fontSize: '1.1rem', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '8px' }}
+                    >
+                      <CheckCircle size={18} /> {t('收錄勾選項目並關閉')}
+                    </button>
+                  </div>
+                )}
               </div>
             )}
           </div>
