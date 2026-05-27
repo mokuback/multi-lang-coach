@@ -82,13 +82,32 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
 
   // Clean up global listeners and TTS/STT on unmount
   useEffect(() => {
-    const handleGlobalMouseUp = () => {
-      const selected = window.getSelection().toString().trim();
-      if (!selected) {
+    const handleSelectionChange = () => {
+      const selection = window.getSelection();
+      const selectedText = selection.toString().trim();
+
+      if (!selectedText) {
         setSelectedTextData({ index: null, text: '' });
+        return;
+      }
+
+      if (selection.rangeCount > 0) {
+        const range = selection.getRangeAt(0);
+        let container = range.commonAncestorContainer;
+        let element = container.nodeType === 3 ? container.parentElement : container;
+        
+        if (element) {
+          const bubble = element.closest('[data-message-index]');
+          if (bubble) {
+            const index = parseInt(bubble.getAttribute('data-message-index'), 10);
+            setSelectedTextData({ index, text: selectedText });
+          } else {
+            setSelectedTextData({ index: null, text: '' });
+          }
+        }
       }
     };
-    document.addEventListener('mouseup', handleGlobalMouseUp);
+    document.addEventListener('selectionchange', handleSelectionChange);
 
     // Initialize Web Speech API (STT)
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -137,22 +156,13 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
     }
 
     return () => {
-      document.removeEventListener('mouseup', handleGlobalMouseUp);
+      document.removeEventListener('selectionchange', handleSelectionChange);
       window.speechSynthesis.cancel();
       if (recognitionRef.current) {
         recognitionRef.current.stop();
       }
     };
   }, [targetLanguage]);
-
-  const handleTextSelection = (index) => {
-    setTimeout(() => {
-      const selected = window.getSelection().toString().trim();
-      if (selected) {
-        setSelectedTextData({ index, text: selected });
-      }
-    }, 50);
-  };
 
   const handleLearnClick = async (sentence) => {
     if (!apiKey) {
@@ -868,8 +878,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory, apiKey, addVocabulary, ad
                   border: isUser ? 'none' : '1px solid var(--glass-border)',
                   position: 'relative'
                 }}
-                onMouseUp={!isUser ? () => handleTextSelection(index) : undefined}
-                onTouchEnd={!isUser ? () => handleTextSelection(index) : undefined}
+                data-message-index={!isUser ? index : undefined}
               >
                 <p style={{ fontWeight: isUser ? 500 : 400, fontSize: '1.05rem', lineHeight: '1.5', whiteSpace: 'pre-wrap', overflowWrap: 'anywhere' }}>
                   {(!isUser && translatedIndexes.has(index) && msg.translation) ? t(msg.translation) : msg.content}
