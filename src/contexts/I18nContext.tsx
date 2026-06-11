@@ -2,7 +2,19 @@
 import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
 import * as OpenCC from 'opencc-js';
 
-const I18nContext = createContext();
+interface I18nContextType {
+  uiLang: string;
+  setUiLang: (lang: string) => void;
+  t: (text: string) => string;
+  getLocalizedContent: (contentObj: any) => string;
+}
+
+const I18nContext = createContext<I18nContextType>({
+  uiLang: 'en',
+  setUiLang: () => {},
+  t: (text: string) => text,
+  getLocalizedContent: (contentObj: any) => contentObj,
+});
 
 const UI_LANG_STORAGE_KEY = 'APP_UI_LANG';
 
@@ -165,4 +177,4 @@ export const I18nProvider = ({ children }) => {
   );
 };
 
-export const useI18n = () => useContext(I18nContext);
+export const useI18n = (): I18nContextType => useContext(I18nContext);

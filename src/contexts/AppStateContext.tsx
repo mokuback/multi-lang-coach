@@ -39,6 +39,9 @@ interface AppState {
   currentScenario: any;
 }
 
+// Default scenario for initialization
+const DEFAULT_SCENARIO = null;
+
 interface AppStateContextType {
   state: AppState;
   setState: React.Dispatch<React.SetStateAction<AppState>>;
@@ -60,9 +63,14 @@ interface AppStateContextType {
   setAndroidSmartSpeech: (value: boolean) => void;
   setHasSeenWelcome: (value: boolean) => void;
   
-  // Vocabulary & Patterns
-  setVocabulary: (value: any[]) => void;
-  setSavedPatterns: (value: any[]) => void;
+  // Vocabulary & Patterns - support both direct value and functional update
+  setVocabulary: (value: any[] | ((prev: any[]) => any[])) => void;
+  setSavedPatterns: (value: any[] | ((prev: any[]) => any[])) => void;
+  
+  // Direct state accessors (for convenience)
+  uiTheme: string;
+  userRole: string;
+  userLevel: string;
 }
 
 const AppStateContext = createContext<AppStateContextType | undefined>(undefined);
@@ -112,6 +120,7 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
       return [];
     })(),
     hasSeenWelcome: localStorage.getItem('APP_HAS_SEEN_WELCOME') === 'true',
+    currentScenario: null,
     progress: (() => {
       const saved = localStorage.getItem('APP_LEARNING_PROGRESS');
       if (saved) {
@@ -261,12 +270,18 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
     });
   }, []);
 
-  const setVocabulary = useCallback((value: any[]) => {
-    setState(prev => ({ ...prev, vocabulary: value }));
+  const setVocabulary = useCallback((value: any[] | ((prev: any[]) => any[])) => {
+    setState(prev => ({ 
+      ...prev, 
+      vocabulary: typeof value === 'function' ? value(prev.vocabulary) : value 
+    }));
   }, []);
 
-  const setSavedPatterns = useCallback((value: any[]) => {
-    setState(prev => ({ ...prev, savedPatterns: value }));
+  const setSavedPatterns = useCallback((value: any[] | ((prev: any[]) => any[])) => {
+    setState(prev => ({ 
+      ...prev, 
+      savedPatterns: typeof value === 'function' ? value(prev.savedPatterns) : value 
+    }));
   }, []);
 
   return (
@@ -289,7 +304,11 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
         setHasSeenWelcome,
         updateProgress,
         setVocabulary,
-        setSavedPatterns
+        setSavedPatterns,
+        // Direct state accessors
+        uiTheme: state.uiTheme,
+        userRole: state.userRole,
+        userLevel: state.userLevel
       }}
     >
       {children}

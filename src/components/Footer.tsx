@@ -22,24 +22,24 @@ const Footer = () => {
         <button 
           onClick={() => navigate('/about')}
           style={{ background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer', fontSize: '0.9rem', transition: 'color 0.2s' }}
-          onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'}
-          onMouseLeave={(e) => e.target.style.color = 'var(--text-secondary)'}
+          onMouseEnter={(e) => (e.target as HTMLElement).style.color = 'var(--text-primary)'}
+          onMouseLeave={(e) => (e.target as HTMLElement).style.color = 'var(--text-secondary)'}
         >
           {t('關於我們')}
         </button>
         <button 
           onClick={() => navigate('/privacy')}
           style={{ background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer', fontSize: '0.9rem', transition: 'color 0.2s' }}
-          onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'}
-          onMouseLeave={(e) => e.target.style.color = 'var(--text-secondary)'}
+          onMouseEnter={(e) => (e.target as HTMLElement).style.color = 'var(--text-primary)'}
+          onMouseLeave={(e) => (e.target as HTMLElement).style.color = 'var(--text-secondary)'}
         >
           {t('隱私權政策')}
         </button>
         <button 
           onClick={() => navigate('/contact')}
           style={{ background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer', fontSize: '0.9rem', transition: 'color 0.2s' }}
-          onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'}
-          onMouseLeave={(e) => e.target.style.color = 'var(--text-secondary)'}
+          onMouseEnter={(e) => (e.target as HTMLElement).style.color = 'var(--text-primary)'}
+          onMouseLeave={(e) => (e.target as HTMLElement).style.color = 'var(--text-secondary)'}
         >
           {t('聯絡我們')}
         </button>

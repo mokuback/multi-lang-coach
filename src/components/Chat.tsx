@@ -9,7 +9,32 @@ import ChatExportModal from './ChatExportModal';
 import ChatLearningModal from './ChatLearningModal';
 import confetti from 'canvas-confetti';
 
-const Chat = ({ scenario, chatHistory, setChatHistory }) => {
+interface ChatMessage {
+  role: 'user' | 'assistant' | 'system';
+  content: string;
+  translation?: string;
+  correction?: {
+    original: string;
+    error: string;
+    fixed: string;
+    explanation: string;
+  } | null;
+  extractedVocab?: {
+    term: string;
+    meaning: string;
+    example?: string;
+    phonetic?: string;
+    partOfSpeech?: string;
+    lang?: string;
+  };
+  isError?: boolean;
+}
+
+const Chat = ({ scenario, chatHistory, setChatHistory }: {
+  scenario: any;
+  chatHistory: ChatMessage[];
+  setChatHistory: React.Dispatch<React.SetStateAction<ChatMessage[]>>;
+}) => {
   const { t, uiLang, getLocalizedContent } = useI18n();
   const { state: { apiProvider, apiModel, apiKey, targetLanguage, userCategory, userRole, userLevel, speechRate, autoRead, patternVersion, androidSmartSpeech, correctionMode }, setVocabulary, setSavedPatterns } = useAppState();
   const [input, setInput] = useState('');
@@ -42,12 +67,13 @@ const Chat = ({ scenario, chatHistory, setChatHistory }) => {
   const lastFinalTranscriptRef = useRef('');
   const [hasSeenMockWarning, setHasSeenMockWarning] = useState(false);
 
-  const blobToBase64 = (blob) => {
+  const blobToBase64 = (blob: Blob): Promise<string> => {
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
       reader.onloadend = () => {
-        const base64String = reader.result.split(',')[1];
-        resolve(base64String);
+        const base64String = reader.result as string;
+        const base64 = base64String.split(',')[1];
+        resolve(base64);
       };
       reader.onerror = reject;
       reader.readAsDataURL(blob);
@@ -95,7 +121,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory }) => {
       if (selection.rangeCount > 0) {
         const range = selection.getRangeAt(0);
         let container = range.commonAncestorContainer;
-        let element = container.nodeType === 3 ? container.parentElement : container;
+        let element: Element | null = container.nodeType === 3 ? container.parentElement : container as Element;
         
         if (element) {
           const bubble = element.closest('[data-message-index]');
@@ -414,10 +440,10 @@ const Chat = ({ scenario, chatHistory, setChatHistory }) => {
   };
 
   // Mock conversation tree based on typical IT scenario responses
-  const getMockAIResponse = (userText) => {
+  const getMockAIResponse = (userText: string): Promise<{ aiMessage: ChatMessage; extractedVocab: any }> => {
     return new Promise((resolve) => {
       setTimeout(() => {
-        let aiMessage = { role: 'assistant', content: '' };
+        let aiMessage: ChatMessage = { role: 'assistant', content: '' };
         let extractedVocab = null;
 
         if (targetLanguage === 'ja') {
@@ -479,11 +505,11 @@ const Chat = ({ scenario, chatHistory, setChatHistory }) => {
     });
   };
 
-  const handleSend = async (e) => {
+  const handleSend = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim() || isRecording || isPolishing) return;
 
-    const userMsg = { role: 'user', content: input };
+    const userMsg: ChatMessage = { role: 'user', content: input };
     const newHistory = [...chatHistory, userMsg];
     
     setChatHistory(newHistory);
@@ -508,7 +534,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory }) => {
       try {
         const parsedResult = await callLLMAPI(newHistory, apiProvider, apiModel, apiKey, correctionMode, targetLanguage, userCategory, userRole, userLevel, uiLang);
         
-        let aiMessage = { role: 'assistant', content: parsedResult.content };
+        let aiMessage: ChatMessage = { role: 'assistant', content: parsedResult.content };
         if (parsedResult.translation) {
            aiMessage.translation = parsedResult.translation;
         }
@@ -526,14 +552,14 @@ const Chat = ({ scenario, chatHistory, setChatHistory }) => {
           role: 'assistant', 
           content: t(`抱歉，呼叫 AI 發生錯誤：`) + `${error.message}。` + t(`請確認您的網路連線或 API 金鑰是否正確。`),
           isError: true
-        }]);
+        } as ChatMessage]);
       }
     }
     
     setIsTyping(false);
   };
 
-  const handleRetry = async (errorIndex) => {
+  const handleRetry = async (errorIndex: number) => {
     const historyToRetry = chatHistory.slice(0, errorIndex);
     setChatHistory(historyToRetry);
     setIsTyping(true);
@@ -541,7 +567,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory }) => {
     try {
       const parsedResult = await callLLMAPI(historyToRetry, apiProvider, apiModel, apiKey, correctionMode, targetLanguage, userCategory, userRole, userLevel, uiLang);
       
-        let aiMessage = { role: 'assistant', content: parsedResult.content };
+        let aiMessage: ChatMessage = { role: 'assistant', content: parsedResult.content };
       if (parsedResult.translation) {
          aiMessage.translation = parsedResult.translation;
       }
@@ -559,7 +585,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory }) => {
         role: 'assistant', 
         content: t(`抱歉，呼叫 AI 發生錯誤：`) + `${error.message}。` + t(`請確認您的網路連線或 API 金鑰是否正確。`),
         isError: true
-      }]);
+      } as ChatMessage]);
     }
     
     setIsTyping(false);

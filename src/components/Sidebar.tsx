@@ -144,9 +144,9 @@ const Sidebar = () => {
           borderTop: '1px solid var(--glass-border)',
           paddingTop: '16px'
         }}>
-          <span style={{ cursor: 'pointer', transition: 'color 0.2s' }} onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'} onMouseLeave={(e) => e.target.style.color = 'var(--text-muted)'} onClick={() => navigate('/about')}>{t('關於我們')}</span> | 
-          <span style={{ cursor: 'pointer', transition: 'color 0.2s' }} onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'} onMouseLeave={(e) => e.target.style.color = 'var(--text-muted)'} onClick={() => navigate('/privacy')}>{t('隱私權政策')}</span> | 
-          <span style={{ cursor: 'pointer', transition: 'color 0.2s' }} onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'} onMouseLeave={(e) => e.target.style.color = 'var(--text-muted)'} onClick={() => navigate('/contact')}>{t('聯絡我們')}</span>
+          <span style={{ cursor: 'pointer', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.target as HTMLElement).style.color = 'var(--text-primary)'} onMouseLeave={(e) => (e.target as HTMLElement).style.color = 'var(--text-muted)'} onClick={() => navigate('/about')}>{t('關於我們')}</span> | 
+          <span style={{ cursor: 'pointer', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.target as HTMLElement).style.color = 'var(--text-primary)'} onMouseLeave={(e) => (e.target as HTMLElement).style.color = 'var(--text-muted)'} onClick={() => navigate('/privacy')}>{t('隱私權政策')}</span> | 
+          <span style={{ cursor: 'pointer', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.target as HTMLElement).style.color = 'var(--text-primary)'} onMouseLeave={(e) => (e.target as HTMLElement).style.color = 'var(--text-muted)'} onClick={() => navigate('/contact')}>{t('聯絡我們')}</span>
         </div>
       </div>
     </aside>

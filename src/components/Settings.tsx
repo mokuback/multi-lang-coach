@@ -5,9 +5,8 @@ import { useI18n } from '../contexts/I18nContext';
 import { useAppState } from '../contexts/AppStateContext';
 import { categoryData, getDefaultRole } from '../data/categoryData';
 
-// @ts-expect-error - Vite injects these at build time
+// Vite injects these at build time
 declare const __APP_VERSION__: string;
-// @ts-expect-error
 declare const __BUILD_DATE__: string;
 
 const Settings = () => {

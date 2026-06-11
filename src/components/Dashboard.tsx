@@ -15,8 +15,8 @@ const Dashboard = () => {
   const [scenarios, setScenarios] = useState([]);
   // Load scenarios based on user role and target language
   useEffect(() => {
-    const loadedScenarios = getScenariosByRole(userRole, targetLanguage);
-    setScenarios(loadedScenarios);
+    const loadedScenarios = getScenariosByRole(userRole);
+    setScenarios(loadedScenarios || []);
   }, [userRole, targetLanguage]);
 
   const roleLabel = Object.values(categoryData.roles).flat().find(r => r.id === userRole)?.label || userRole;
@@ -66,13 +66,13 @@ const Dashboard = () => {
           onMouseEnter={(e) => { 
             e.currentTarget.style.transform = 'translateY(-5px)'; 
             e.currentTarget.style.borderColor = 'var(--accent-color)';
-            const img = e.currentTarget.querySelector('.scenario-card-image');
+            const img = e.currentTarget.querySelector('.scenario-card-image') as HTMLElement;
             if (img) img.style.transform = 'scale(1.05)';
           }}
           onMouseLeave={(e) => { 
             e.currentTarget.style.transform = 'translateY(0)'; 
             e.currentTarget.style.borderColor = 'var(--glass-border)';
-            const img = e.currentTarget.querySelector('.scenario-card-image');
+            const img = e.currentTarget.querySelector('.scenario-card-image') as HTMLElement;
             if (img) img.style.transform = 'scale(1)';
           }}>
             
