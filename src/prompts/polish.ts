@@ -19,5 +19,5 @@ export function buildPolishPrompt(ctx: PolishContext): string {
     }
   `;
 
-  return `[PROMPT_VERSION: ${version}]\n${systemInstruction}`;
+  return systemInstruction;
 }

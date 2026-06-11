@@ -114,6 +114,25 @@ const ChatWrapper = () => {
       initializedRef.current = true;
       return;
     }
+
+    // General scenario initialization (for scenarios from Dashboard)
+    if (scenario.id && scenario.title && scenario.desc) {
+      const aiGreeting = targetLanguage === 'en'
+        ? `Hello! Let's start practicing the scenario: "${t(scenario.title)}". ${t(scenario.desc)}`
+        : `こんにちは！「${t(scenario.title)}」のシナリオを練習しましょう。${t(scenario.desc)}`;
+      const aiTranslation = t(`您好！我們開始練習「${t(scenario.title)}」情境。${t(scenario.desc)}`);
+
+      setChatHistory([
+        { role: 'system', content: t(`我們正在進行情境對話練習。情境主題是：【${t(scenario.title)}】。情境描述：${t(scenario.desc)}。請扮演對話對象，使用符合【${levelLabel}】程度規格的${langName}與我進行自然的對話練習。對話開始時，請先用${langName}主動開啟話題。後續解說與翻譯請全程使用【${uiLang === 'zh-CN' ? '簡體中文' : '繁體中文'}】。`) },
+        {
+          role: 'assistant',
+          content: aiGreeting,
+          translation: aiTranslation
+        }
+      ]);
+      initializedRef.current = true;
+      return;
+    }
   }, [scenario, t, targetLanguage, userLevel, uiLang]);
 
   return (

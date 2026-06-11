@@ -28,5 +28,5 @@ export function buildAnalyzeSentencePrompt(ctx: AnalyzeSentenceContext): string 
     }
   `;
 
-  return `[PROMPT_VERSION: ${version}]\n${systemInstruction}`;
+  return systemInstruction;
 }

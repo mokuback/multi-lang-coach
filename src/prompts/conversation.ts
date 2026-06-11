@@ -14,5 +14,5 @@ export function buildConversationAnalysisPrompt(ctx: ConversationAnalysisContext
     請直接以 ${uiLangName} 給出一段完整且排版清晰的純文字分析結果（支援簡單的換行，但不要回傳 Markdown 的 \`\`\` 標記）。
   `;
 
-  return `[PROMPT_VERSION: ${version}]\n${systemInstruction}`;
+  return systemInstruction;
 }

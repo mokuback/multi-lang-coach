@@ -86,5 +86,5 @@ export function buildChatSystemPrompt(ctx: PromptContext): string {
     `;
   }
 
-  return `[PROMPT_VERSION: ${version}]\n${systemInstruction}`;
+  return systemInstruction;
 }
