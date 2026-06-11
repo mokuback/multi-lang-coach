@@ -77,7 +77,7 @@ const executeRequest = async (provider, url, headers, payload) => {
   return textOutput;
 };
 
-const parseJsonResult = (textOutput) => {
+export const parseJsonResult = (textOutput) => {
   try {
     return JSON.parse(textOutput);
   } catch {
