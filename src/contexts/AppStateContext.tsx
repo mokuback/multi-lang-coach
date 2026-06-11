@@ -1,6 +1,9 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { getScenariosByRole } from '../data/scenariosData';
 import { categoryData } from '../data/categoryData';
+import { useVocabulary } from '../hooks/useVocabulary';
+import { usePatterns } from '../hooks/usePatterns';
+import { useProgress } from '../hooks/useProgress';
 
 // 临时类型定义（后续优化）
 interface AppState {
@@ -76,6 +79,11 @@ interface AppStateContextType {
 const AppStateContext = createContext<AppStateContextType | undefined>(undefined);
 
 export function AppStateProvider({ children }: { children: React.ReactNode }) {
+  // Hooks for vocabulary, patterns, and progress
+  const { vocabulary, setVocabulary } = useVocabulary();
+  const { savedPatterns, setSavedPatterns } = usePatterns();
+  const { progress, updateProgress } = useProgress();
+
   // 从 localStorage 初始化状态（简化版，后续优化）
   const [state, setState] = useState<AppState>(() => ({
     apiProvider: localStorage.getItem('APP_API_PROVIDER') || 'gemini',
@@ -105,35 +113,25 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
       return savedRole || 'it';
     })(),
     userLevel: localStorage.getItem('APP_USER_LEVEL') || 'pre-intermediate',
-    vocabulary: (() => {
-      const saved = localStorage.getItem('IT_ENGLISH_APP_VOCABULARY');
-      if (saved) {
-        try { return JSON.parse(saved); } catch (e) { return []; }
-      }
-      return [];
-    })(),
-    savedPatterns: (() => {
-      const saved = localStorage.getItem('IT_ENGLISH_APP_PATTERNS');
-      if (saved) {
-        try { return JSON.parse(saved); } catch (e) { return []; }
-      }
-      return [];
-    })(),
+    vocabulary: [], // Will be synced from hook
+    savedPatterns: [], // Will be synced from hook
     hasSeenWelcome: localStorage.getItem('APP_HAS_SEEN_WELCOME') === 'true',
     currentScenario: null,
-    progress: (() => {
-      const saved = localStorage.getItem('APP_LEARNING_PROGRESS');
-      if (saved) {
-        try { return JSON.parse(saved); } catch (e) { /* fall through */ }
-      }
-      return { streak: 0, completedScenarios: 0, lastDate: null };
-    })()
+    progress: { streak: 0, completedScenarios: 0, lastDate: null } // Will be synced from hook
   }));
 
-  // Persist progress
+  // Sync hook states to state
   useEffect(() => {
-    localStorage.setItem('APP_LEARNING_PROGRESS', JSON.stringify(state.progress));
-  }, [state.progress]);
+    setState(prev => ({ ...prev, vocabulary }));
+  }, [vocabulary]);
+
+  useEffect(() => {
+    setState(prev => ({ ...prev, savedPatterns }));
+  }, [savedPatterns]);
+
+  useEffect(() => {
+    setState(prev => ({ ...prev, progress }));
+  }, [progress]);
 
   // 持久化到 localStorage（简化版）
   useEffect(() => {
@@ -188,14 +186,6 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
     localStorage.setItem('APP_HAS_SEEN_WELCOME', state.hasSeenWelcome.toString());
   }, [state.hasSeenWelcome]);
 
-  useEffect(() => {
-    localStorage.setItem('IT_ENGLISH_APP_VOCABULARY', JSON.stringify(state.vocabulary));
-  }, [state.vocabulary]);
-
-  useEffect(() => {
-    localStorage.setItem('IT_ENGLISH_APP_PATTERNS', JSON.stringify(state.savedPatterns));
-  }, [state.savedPatterns]);
-
   // Convenience setters
   const setApiProvider = useCallback((value: string) => {
     setState(prev => ({ ...prev, apiProvider: value }));
@@ -247,41 +237,6 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
 
   const setHasSeenWelcome = useCallback((value: boolean) => {
     setState(prev => ({ ...prev, hasSeenWelcome: value }));
-  }, []);
-
-  const updateProgress = useCallback(() => {
-    setState(prev => {
-      const today = new Date().toDateString();
-      let { streak, completedScenarios, lastDate } = prev.progress;
-      completedScenarios += 1;
-
-      if (lastDate !== today) {
-        const yesterday = new Date();
-        yesterday.setDate(yesterday.getDate() - 1);
-        if (lastDate === yesterday.toDateString()) {
-          streak += 1;
-        } else {
-          streak = 1;
-        }
-        lastDate = today;
-      }
-
-      return { ...prev, progress: { streak, completedScenarios, lastDate } };
-    });
-  }, []);
-
-  const setVocabulary = useCallback((value: any[] | ((prev: any[]) => any[])) => {
-    setState(prev => ({ 
-      ...prev, 
-      vocabulary: typeof value === 'function' ? value(prev.vocabulary) : value 
-    }));
-  }, []);
-
-  const setSavedPatterns = useCallback((value: any[] | ((prev: any[]) => any[])) => {
-    setState(prev => ({ 
-      ...prev, 
-      savedPatterns: typeof value === 'function' ? value(prev.savedPatterns) : value 
-    }));
   }, []);
 
   return (
