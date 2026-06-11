@@ -1,0 +1,228 @@
+{
+  "beginner": [
+    {
+      "id": "en-it-b1",
+      "pattern": "I use [Software/Tool].",
+      "translations": {
+        "zh-TW": "我使用 [某個軟體/工具]。"
+      },
+      "explanations": {
+        "zh-TW": "用來簡單介紹自己熟悉的工具。"
+      }
+    },
+    {
+      "id": "en-it-b2",
+      "pattern": "The [Device/System] is not working.",
+      "translations": {
+        "zh-TW": "[某個設備/系統] 壞了/無法運作。"
+      },
+      "explanations": {
+        "zh-TW": "最基本回報問題的句型。"
+      }
+    }
+  ],
+  "pre-intermediate": [
+    {
+      "id": "en-it-pi1",
+      "pattern": "I am working on [Task/Project].",
+      "translations": {
+        "zh-TW": "我正在處理 [某個任務/專案]。"
+      },
+      "explanations": {
+        "zh-TW": "報告目前的進度與焦點。"
+      }
+    },
+    {
+      "id": "en-it-pi2",
+      "pattern": "Could you help me with [Task]?",
+      "translations": {
+        "zh-TW": "你能幫我處理 [某個任務] 嗎？"
+      },
+      "explanations": {
+        "zh-TW": "委婉尋求協助。"
+      }
+    },
+    {
+      "id": "en-it-pi3",
+      "pattern": "I have finished [Task] today.",
+      "translations": {
+        "zh-TW": "我今天完成了 [某個任務]。"
+      },
+      "explanations": {
+        "zh-TW": "每日站會 (Daily Standup) 常用的回報完成句型。"
+      }
+    },
+    {
+      "id": "en-it-pi4",
+      "pattern": "We need more time to fix [Component].",
+      "translations": {
+        "zh-TW": "我們需要多一點時間來修復 [某組件]。"
+      },
+      "explanations": {
+        "zh-TW": "說明延遲並爭取時間的用法。"
+      }
+    },
+    {
+      "id": "en-it-pi5",
+      "pattern": "There is an error in [File/Module].",
+      "translations": {
+        "zh-TW": "[某檔案/模組] 裡有一個錯誤。"
+      },
+      "explanations": {
+        "zh-TW": "指出版版錯誤發生地點的情境。"
+      }
+    },
+    {
+      "id": "en-it-pi6",
+      "pattern": "Can you review my code for [Feature]?",
+      "translations": {
+        "zh-TW": "你能幫我 code review [某功能] 嗎？"
+      },
+      "explanations": {
+        "zh-TW": "請求同事進行代碼審查的標準說法。"
+      }
+    },
+    {
+      "id": "en-it-pi7",
+      "pattern": "I am trying to connect to [Database/Server].",
+      "translations": {
+        "zh-TW": "我正嘗試連線至 [資料庫/伺服器]。"
+      },
+      "explanations": {
+        "zh-TW": "描述正在進行的單一連線任務。"
+      }
+    },
+    {
+      "id": "en-it-pi8",
+      "pattern": "The server is down because of [Reason].",
+      "translations": {
+        "zh-TW": "伺服器因為 [某個原因] 停機了。"
+      },
+      "explanations": {
+        "zh-TW": "說明服務中斷原因。"
+      }
+    },
+    {
+      "id": "en-it-pi9",
+      "pattern": "Please reinstall the [Software].",
+      "translations": {
+        "zh-TW": "請重新安裝 [某個軟體]。"
+      },
+      "explanations": {
+        "zh-TW": "給予用戶或同事基礎排解建議。"
+      }
+    },
+    {
+      "id": "en-it-pi10",
+      "pattern": "I will deploy it to [Environment].",
+      "translations": {
+        "zh-TW": "我會把它部署到 [某環境 (如 staging/production)]。"
+      },
+      "explanations": {
+        "zh-TW": "描述程式碼部署流向。"
+      }
+    }
+  ],
+  "intermediate": [
+    {
+      "id": "en-it-i1",
+      "pattern": "We need to fix the bug in [Module].",
+      "translations": {
+        "zh-TW": "我們需要修復 [某模組] 裡的錯誤。"
+      },
+      "explanations": {
+        "zh-TW": "討論要解決的技術問題。"
+      }
+    },
+    {
+      "id": "en-it-i2",
+      "pattern": "What is the status of [Project]?",
+      "translations": {
+        "zh-TW": "[某專案] 狀態如何了？"
+      },
+      "explanations": {
+        "zh-TW": "向同事或下屬詢問進度。"
+      }
+    },
+    {
+      "id": "en-it-i3",
+      "pattern": "The root cause of the issue is [Technical Cause].",
+      "translations": {
+        "zh-TW": "這個問題的根本原因在於 [技術性原因]。"
+      },
+      "explanations": {
+        "zh-TW": "深入分析問題發生點的道地句型 (Root cause)。"
+      }
+    },
+    {
+      "id": "en-it-i4",
+      "pattern": "Let's roll back the deployment to [Previous Version].",
+      "translations": {
+        "zh-TW": "我們把部署退版到 [上一個版本] 吧。"
+      },
+      "explanations": {
+        "zh-TW": "危機處理時常用的退版建議。"
+      }
+    },
+    {
+      "id": "en-it-i5",
+      "pattern": "This feature depends on [API/Service].",
+      "translations": {
+        "zh-TW": "這個功能依賴於 [某個 API / 服務]。"
+      },
+      "explanations": {
+        "zh-TW": "說明系統間耦合與依賴關係。"
+      }
+    },
+    {
+      "id": "en-it-i6",
+      "pattern": "I am going to submit a pull request for [Feature].",
+      "translations": {
+        "zh-TW": "我準備為 [某功能] 提交 PR (Pull Request)。"
+      },
+      "explanations": {
+        "zh-TW": "日常開發中送交合併請求的標準句。"
+      }
+    },
+    {
+      "id": "en-it-i7",
+      "pattern": "Could you grant me access to [System/Repository]?",
+      "translations": {
+        "zh-TW": "您可以開通 [某系統/庫] 的權限給我嗎？"
+      },
+      "explanations": {
+        "zh-TW": "向維運人員索要權限。"
+      }
+    },
+    {
+      "id": "en-it-i8",
+      "pattern": "We are experiencing latency issues with [Service].",
+      "translations": {
+        "zh-TW": "我們目前遇到 [某服務] 的延遲問題。"
+      },
+      "explanations": {
+        "zh-TW": "向客戶或高層報告突發的系統不穩狀況。"
+      }
+    },
+    {
+      "id": "en-it-i9",
+      "pattern": "It seems like a memory leak in [Component].",
+      "translations": {
+        "zh-TW": "看起來像是 [某個組件] 發生了記憶體流失。"
+      },
+      "explanations": {
+        "zh-TW": "推測系統效能問題的常見說法。"
+      }
+    },
+    {
+      "id": "en-it-i10",
+      "pattern": "Let's scale up the instances for [Microservice].",
+      "translations": {
+        "zh-TW": "我們來為主機上的 [某微服務] 增加實例數量（擴容）吧。"
+      },
+      "explanations": {
+        "zh-TW": "討論系統流量與伺服器乘載。"
+      }
+    }
+  ]
+}

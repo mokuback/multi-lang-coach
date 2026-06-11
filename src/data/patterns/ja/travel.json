@@ -1,0 +1,246 @@
+{
+  "beginner": [
+    {
+      "id": "ja-tr-b1",
+      "pattern": "[Item] をお願いします。",
+      "translations": {
+        "zh-TW": "麻煩給我 [某物]。",
+        "en": "I would like [Item], please.",
+        "ja": "[Item] をお願いします。",
+        "ko": "[Item] 을 주세요.",
+        "es": "Me gustaría [Item], por favor.",
+        "fr": "Je voudrais [Item], s'il vous plaît."
+      },
+      "explanations": {
+        "zh-TW": "日本最管用、點餐與買東西通殺的用法。",
+        "en": "Most versatile phrase for ordering or buying in Japan.",
+        "ja": "日本で最も万能な注文・購入句。",
+        "ko": "일본에서 가장 만능인 주문·구매 문구.",
+        "es": "Frase más versátil para ordenar o comprar en Japón.",
+        "fr": "Phrase la plus polyvalente pour commander ou acheter au Japon."
+      }
+    },
+    {
+      "id": "ja-tr-b2",
+      "pattern": "[Place] はどこですか？",
+      "translations": {
+        "zh-TW": "[某個地點] 在哪裡？",
+        "en": "Where is [Place]?",
+        "ja": "[Place] はどこですか？",
+        "ko": "[Place] 이 어디입니까?",
+        "es": "¿Dónde está [Place]?",
+        "fr": "Où est [Place] ?"
+      },
+      "explanations": {
+        "zh-TW": "基礎問路。",
+        "en": "Basic wayfinding question.",
+        "ja": "基本的な道順尋ね。",
+        "ko": "기본적인 길 찾기 질문.",
+        "es": "Pregunta básica de búsqueda de camino.",
+        "fr": "Question basique de recherche de chemin."
+      }
+    }
+  ],
+  "pre-intermediate": [
+    {
+      "id": "ja-tr-pi1",
+      "pattern": "おすすめの [Food/Place] はありますか？",
+      "translations": {
+        "zh-TW": "有推薦的 [某食物/地點] 嗎？",
+        "en": "Do you have any recommendations for [Food/Place]?",
+        "ja": "おすすめの [Food/Place] はありますか？",
+        "ko": "추천하는 [Food/Place] 이 있나요?",
+        "es": "¿Tiene alguna recomendación para [Food/Place]?",
+        "fr": "Avez-vous des recommandations pour [Food/Place] ?"
+      },
+      "explanations": {
+        "zh-TW": "請別人推薦的必學實用句。",
+        "en": "Essential phrase to ask for local recommendations.",
+        "ja": "地元の推薦を求めるための必須句。",
+        "ko": "현지 추천을 요청하기 위한 필수 문구.",
+        "es": "Frase esencial para pedir recomendaciones locales.",
+        "fr": "Phrase essentielle pour demander des recommandations locales."
+      }
+    },
+    {
+      "id": "ja-tr-pi2",
+      "pattern": "[Name] で予約している者です。",
+      "translations": {
+        "zh-TW": "我們是用 [某姓名] 預約的客人。",
+        "en": "I have a reservation under the name [Name].",
+        "ja": "[Name] で予約している者です。",
+        "ko": "[Name] 으로 예약한 사람입니다.",
+        "es": "Tengo una reserva a nombre de [Name].",
+        "fr": "J'ai une réservation au nom de [Name]."
+      },
+      "explanations": {
+        "zh-TW": "走進高級旅店或是居酒屋時，非常道地的報到方式。",
+        "en": "Authentic check-in phrase at upscale restaurants or hotels.",
+        "ja": "高級レストランやホテルでの本格的なチェックイン句。",
+        "ko": "고급 레스토랑이나 호텔에서의 본격적인 체크인 문구.",
+        "es": "Frase auténtica de check-in en restaurantes o hoteles de lujo.",
+        "fr": "Phrase authentique de check-in dans les restaurants ou hôtels de luxe."
+      }
+    },
+    {
+      "id": "ja-tr-pi3",
+      "pattern": "[Item] をもう一ついただけますか？",
+      "translations": {
+        "zh-TW": "可以再給我一個 [某物] 嗎？",
+        "en": "Could I have another [Item], please?",
+        "ja": "[Item] をもう一ついただけますか？",
+        "ko": "[Item] 을 하나 더 주실 수 있나요?",
+        "es": "¿Podría tener otro [Item], por favor?",
+        "fr": "Pourrais-je avoir un autre [Item], s'il vous plaît ?"
+      },
+      "explanations": {
+        "zh-TW": "需要追加餐具或備品時的禮貌說法。",
+        "en": "Polite phrase when needing additional items.",
+        "ja": "追加アイテムが必要な時の丁寧な句。",
+        "ko": "추가 아이템이 필요할 때의 정중한 문구.",
+        "es": "Frase educada cuando se necesitan artículos adicionales.",
+        "fr": "Phrase polie quand des articles supplémentaires sont nécessaires."
+      }
+    },
+    {
+      "id": "ja-tr-pi4",
+      "pattern": "[Item/Ticket] はいくらですか？",
+      "translations": {
+        "zh-TW": "[某物品/車票] 多少錢？",
+        "en": "How much does [Item/Ticket] cost?",
+        "ja": "[Item/Ticket] はいくらですか？",
+        "ko": "[Item/Ticket] 은 얼마입니까?",
+        "es": "¿Cuánto cuesta [Item/Ticket]?",
+        "fr": "Combien coûte [Item/Ticket] ?"
+      },
+      "explanations": {
+        "zh-TW": "詢問價格。",
+        "en": "Universal phrase for asking about prices.",
+        "ja": "価格を尋ねるための万能句。",
+        "ko": "가격을 묻기 위한 만능 문구.",
+        "es": "Frase universal para preguntar sobre precios.",
+        "fr": "Phrase universelle pour demander les prix."
+      }
+    },
+    {
+      "id": "ja-tr-pi5",
+      "pattern": "この近くに [Facility] はありますか？",
+      "translations": {
+        "zh-TW": "這附近有 [某設施 (如便利商店)] 嗎？",
+        "en": "Is there a [Facility] near here?",
+        "ja": "この近くに [Facility] はありますか？",
+        "ko": "이 근처에 [Facility] 가 있나요?",
+        "es": "¿Hay un [Facility] cerca de aquí?",
+        "fr": "Y a-t-il un [Facility] près d'ici ?"
+      },
+      "explanations": {
+        "zh-TW": "詢問地緣周遭設施用。",
+        "en": "Advanced wayfinding, searching for nearby facilities.",
+        "ja": "高度な道順尋ね、周辺施設を探す。",
+        "ko": "고도된 길 찾기, 주변 시설을 찾기.",
+        "es": "Búsqueda de camino avanzada, buscando instalaciones cercanas.",
+        "fr": "Recherche de chemin avancée, cherchant des installations à proximité."
+      }
+    },
+    {
+      "id": "ja-tr-pi6",
+      "pattern": "[Time] にチェックインしたいのですが。",
+      "translations": {
+        "zh-TW": "我想要在 [某個時間] 辦理入住（可是...）。",
+        "en": "I would like to check in at [Time].",
+        "ja": "[Time] にチェックインしたいのですが。",
+        "ko": "[Time] 에 체크인하고 싶은데요.",
+        "es": "Me gustaría hacer el check-in a las [Time].",
+        "fr": "Je voudrais faire le check-in à [Time]."
+      },
+      "explanations": {
+        "zh-TW": "日式特有的委婉請求語氣（加上 が）。",
+        "en": "Japanese-style tentative request tone (adding が).",
+        "ja": "日式特有的保留依頼語調（がを付加）。",
+        "ko": "일본식 특유의 보류 요청 어조 (가를 부가).",
+        "es": "Tono de solicitud tentativa al estilo japonés (añadiendo が).",
+        "fr": "Ton de demande tentative de style japonais (ajoutant が)."
+      }
+    },
+    {
+      "id": "ja-tr-pi7",
+      "pattern": "[Payment Method] で支払えますか？",
+      "translations": {
+        "zh-TW": "可以用 [某種付款方式 (如信用卡/交通卡)] 付款嗎？",
+        "en": "Can I pay by [Payment Method]?",
+        "ja": "[Payment Method] で支払えますか？",
+        "ko": "[Payment Method] 으로 지불할 수 있나요?",
+        "es": "¿Puedo pagar con [Payment Method]?",
+        "fr": "Puis-je payer par [Payment Method] ?"
+      },
+      "explanations": {
+        "zh-TW": "購物付款前的確認。",
+        "en": "Confirm payment method before purchasing.",
+        "ja": "購入前に支払い方法を確認。",
+        "ko": "구매 전에 지불 방법 확인.",
+        "es": "Confirmar método de pago antes de comprar.",
+        "fr": "Confirmer le mode de paiement avant d'acheter."
+      }
+    },
+    {
+      "id": "ja-tr-pi8",
+      "pattern": "これに [Ingredient] は入っていますか？",
+      "translations": {
+        "zh-TW": "這個裡面有加了 [某食材 (如豬肉/蝦)] 嗎？",
+        "en": "Does this contain [Ingredient]?",
+        "ja": "これに [Ingredient] は入っていますか？",
+        "ko": "이것에 [Ingredient] 이 들어있나요?",
+        "es": "¿Esto contiene [Ingredient]?",
+        "fr": "Est-ce que ceci contient [Ingredient] ?"
+      },
+      "explanations": {
+        "zh-TW": "忌口或防過敏時，針對菜單或商品的詢問。",
+        "en": "Essential question for allergy prevention.",
+        "ja": "アレルギー予防のための必須質問。",
+        "ko": "알레르기 예방을 위한 필수 질문.",
+        "es": "Pregunta esencial para prevención de alergias.",
+        "fr": "Question essentielle pour la prévention des allergies."
+      }
+    },
+    {
+      "id": "ja-tr-pi9",
+      "pattern": "今朝、[Place] に行ってきました。",
+      "translations": {
+        "zh-TW": "今天早上我去了 [某地點] 回來了。",
+        "en": "I went to [Place] this morning.",
+        "ja": "今朝、[Place] に行ってきました。",
+        "ko": "오늘 아침, [Place] 에 다녀왔습니다.",
+        "es": "Fui a [Place] esta mañana.",
+        "fr": "Je suis allé à [Place] ce matin."
+      },
+      "explanations": {
+        "zh-TW": "表示完成了該行程，用「てきました」強調動作歸來。",
+        "en": "Indicate completed itinerary, using 'te kimashita' to emphasize return.",
+        "ja": "完了した旅程を指示、「てきました」を使って帰還を強調。",
+        "ko": "완료된 일정을 지시, 'てきました'를 사용하여 귀환을 강조.",
+        "es": "Indicar el itinerario completado, usando 'te kimashita' para enfatizar el regreso.",
+        "fr": "Indiquer l'itinéraire complété, en utilisant 'te kimashita' pour enfatizar le retour."
+      }
+    },
+    {
+      "id": "ja-tr-pi10",
+      "pattern": "写真を撮っていただけませんか？（[Us/Me] の）",
+      "translations": {
+        "zh-TW": "可以請您幫忙拍張照嗎？（拍我們/我）",
+        "en": "Could you take a photo of [Us/Me]?",
+        "ja": "写真を撮っていただけませんか？（[Us/Me] の）",
+        "ko": "사진을 찍어주실 수 없나요? ([Us/Me] 의)",
+        "es": "¿Podría tomar una foto de [Us/Me]?",
+        "fr": "Pourriez-vous prendre une photo de [Us/Moi] ?"
+      },
+      "explanations": {
+        "zh-TW": "在日本觀光聖地請路人幫忙拍照的得體說法。",
+        "en": "Polite phrase to ask passersby for photography help in Japan.",
+        "ja": "日本で通行人に写真撮影の助けを求める丁寧な句。",
+        "ko": "일본에서 행인에게 사진 촬영 도움을 요청하는 정중한 문구.",
+        "es": "Frase educada para pedir ayuda de fotografía a transeúntes en Japón.",
+        "fr": "Phrase polie pour demander de l'aide de photographie à des passants au Japon."
+      }
+    }
+  ]
+}

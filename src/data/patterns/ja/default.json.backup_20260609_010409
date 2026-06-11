@@ -1,0 +1,122 @@
+{
+  "beginner": [
+    {
+      "id": "ja-def-b1",
+      "pattern": "これは [Noun] です。",
+      "translations": {
+        "zh-TW": "這是 [某名詞]。"
+      },
+      "explanations": {
+        "zh-TW": "最基礎的指稱。"
+      }
+    },
+    {
+      "id": "ja-def-b2",
+      "pattern": "[Verb] たいです。",
+      "translations": {
+        "zh-TW": "我想要 [做某事]。"
+      },
+      "explanations": {
+        "zh-TW": "表達自我意願。"
+      }
+    }
+  ],
+  "pre-intermediate": [
+    {
+      "id": "ja-def-pi1",
+      "pattern": "暇な時はよく [Verb] します。",
+      "translations": {
+        "zh-TW": "空閒時我經常 [做某事]。"
+      },
+      "explanations": {
+        "zh-TW": "描述自己的休閒生活。"
+      }
+    },
+    {
+      "id": "ja-def-pi2",
+      "pattern": "[Action] てもらえませんか？",
+      "translations": {
+        "zh-TW": "能不能請你幫我 [做某動作] 呢？"
+      },
+      "explanations": {
+        "zh-TW": "同儕間好用的請託方式。"
+      }
+    },
+    {
+      "id": "ja-def-pi3",
+      "pattern": "出身は [Place] です。",
+      "translations": {
+        "zh-TW": "我的家鄉（出身）是 [某地]。"
+      },
+      "explanations": {
+        "zh-TW": "自我介紹必備句。"
+      }
+    },
+    {
+      "id": "ja-def-pi4",
+      "pattern": "[Action] 方法を知っていますか？",
+      "translations": {
+        "zh-TW": "你知道 [做某動作] 的方法嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問他人技術或方法。"
+      }
+    },
+    {
+      "id": "ja-def-pi5",
+      "pattern": "すみませんが、[Excuse] ので...。",
+      "translations": {
+        "zh-TW": "不好意思，因為 [某個藉口/原因]，所以..."
+      },
+      "explanations": {
+        "zh-TW": "日本人婉轉拒絕的藝術，後面常留白不說死。"
+      }
+    }
+  ],
+  "intermediate": [
+    {
+      "id": "ja-def-i1",
+      "pattern": "[Topic] について、もっと詳しく教えていただけますか？",
+      "translations": {
+        "zh-TW": "關於 [某主題]，能請您更詳細地告訴我嗎？"
+      },
+      "explanations": {
+        "zh-TW": "引導話題深入的客氣用法。"
+      }
+    },
+    {
+      "id": "ja-def-i2",
+      "pattern": "もう [Duration] ずっと [V-ing] います。",
+      "translations": {
+        "zh-TW": "我已經連續 [做某動作] 長達 [某段時間] 了。"
+      },
+      "explanations": {
+        "zh-TW": "表達某個長期持續的狀態。"
+      }
+    }
+  ],
+  "upper-intermediate": [
+    {
+      "id": "ja-def-ui1",
+      "pattern": "私の印象では、[Statement] という感じです。",
+      "translations": {
+        "zh-TW": "就我的印象而言，感覺是 [某描述]。"
+      },
+      "explanations": {
+        "zh-TW": "避開絕對斷言，委婉提出看法的日式溝通精髓。"
+      }
+    }
+  ],
+  "advanced": [
+    {
+      "id": "ja-def-a1",
+      "pattern": "諸般の事情を総合的に勘案しますと、[Conclusion] に至ります。",
+      "translations": {
+        "zh-TW": "綜合考量各種情況後，得出了 [結論]。"
+      },
+      "explanations": {
+        "zh-TW": "極致官方、商業信函的高階用字遣詞。"
+      }
+    }
+  ]
+}

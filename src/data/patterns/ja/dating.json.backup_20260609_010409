@@ -1,0 +1,104 @@
+{
+  "pre-intermediate": [
+    {
+      "id": "ja-dt-pi1",
+      "pattern": "[Day] って、何か予定ありますか？",
+      "translations": {
+        "zh-TW": "[某天] 說起來，你有特別計畫什麼事嗎？"
+      },
+      "explanations": {
+        "zh-TW": "探測對方是否有空的自然起手式。"
+      }
+    },
+    {
+      "id": "ja-dt-pi2",
+      "pattern": "よかったら、一緒に [Food/Drink] でも行きませんか？",
+      "translations": {
+        "zh-TW": "如果可以的話，要不要一起去吃/喝個 [某食物/飲料]？"
+      },
+      "explanations": {
+        "zh-TW": "保留空間（よかったら）的日系溫婉邀約。"
+      }
+    },
+    {
+      "id": "ja-dt-pi3",
+      "pattern": "その [Clothing/Accessory]、すごく似合ってますね。",
+      "translations": {
+        "zh-TW": "這件 [某衣物/配件]，跟你超級搭的耶。"
+      },
+      "explanations": {
+        "zh-TW": "最安全的約會見面讚美套路。"
+      }
+    },
+    {
+      "id": "ja-dt-pi4",
+      "pattern": "どんな [Movie/Music] が好きですか？",
+      "translations": {
+        "zh-TW": "你喜歡哪種 [電影/音樂] 呢？"
+      },
+      "explanations": {
+        "zh-TW": "破冰用的興趣探索話題。"
+      }
+    },
+    {
+      "id": "ja-dt-pi5",
+      "pattern": "今日は [Place] でご一緒できて、とても楽しかったです。",
+      "translations": {
+        "zh-TW": "今天能一起在 [某地] 共度，真的非常開心。"
+      },
+      "explanations": {
+        "zh-TW": "約會結束後必備的感謝定型句。"
+      }
+    },
+    {
+      "id": "ja-dt-pi6",
+      "pattern": "今まで [Place] に行ったことありますか？",
+      "translations": {
+        "zh-TW": "你至今為止去過 [某地] 嗎？"
+      },
+      "explanations": {
+        "zh-TW": "用來探測地點喜好，準備開啟下一次邀約。"
+      }
+    },
+    {
+      "id": "ja-dt-pi7",
+      "pattern": "一緒に [Doing Something] いると、すごく落ち着きます。",
+      "translations": {
+        "zh-TW": "跟你一起 [做某事] 時，我覺得心情特別平靜安穩。"
+      },
+      "explanations": {
+        "zh-TW": "在日本文化中非常高級的好感表達（落ち着く = 安心感）。"
+      }
+    },
+    {
+      "id": "ja-dt-pi8",
+      "pattern": "[Contact Info] を交換しませんか？",
+      "translations": {
+        "zh-TW": "我們要不要交換一下 [某種聯絡方式 (如 LINE)] 呢？"
+      },
+      "explanations": {
+        "zh-TW": "交友場合索取聯絡方式的邀請。"
+      }
+    },
+    {
+      "id": "ja-dt-pi9",
+      "pattern": "[Hobby] のこと、本当に好きなんですね！",
+      "translations": {
+        "zh-TW": "你真的好喜歡 [某個興趣] 的事情呀！"
+      },
+      "explanations": {
+        "zh-TW": "在對方聊得起勁時給予的回饋與肯定。"
+      }
+    },
+    {
+      "id": "ja-dt-pi10",
+      "pattern": "来週、[Event] があるんですけど、一緒に行きませんか？",
+      "translations": {
+        "zh-TW": "下週有個 [某活動]，不知你是否願意一起去呢？"
+      },
+      "explanations": {
+        "zh-TW": "提出具體目的地邀約的自然說法。"
+      }
+    }
+  ]
+}

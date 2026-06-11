@@ -1,0 +1,448 @@
+{
+  "beginner": [
+    {
+      "id": "en-it-b1",
+      "pattern": "I use [Software/Tool].",
+      "translations": {
+        "zh-TW": "我使用 [某個軟體/工具]。",
+        "en": "I use [Software/Tool].",
+        "ja": "[Software/Tool]を使っています。",
+        "ko": "[Software/Tool]을 사용합니다.",
+        "es": "Uso [Software/Tool].",
+        "fr": "J'utilise [Software/Tool]."
+      },
+      "explanations": {
+        "zh-TW": "用來簡單介紹自己熟悉的工具。",
+        "en": "Simply introduce familiar tools.",
+        "ja": "使い慣れたツールを簡単に紹介する。",
+        "ko": "익숙한 도구 간단히 소개.",
+        "es": "Presentar simplemente herramientas familiares.",
+        "fr": "Présenter simplement les outils familiers."
+      }
+    },
+    {
+      "id": "en-it-b2",
+      "pattern": "The [Device/System] is not working.",
+      "translations": {
+        "zh-TW": "[某個設備/系統] 壞了/無法運作。",
+        "en": "The [Device/System] is not working.",
+        "ja": "[Device/System]が動作しません。",
+        "ko": "[Device/System]이 작동하지 않습니다.",
+        "es": "[Device/System] no funciona.",
+        "fr": "[Device/System] ne fonctionne pas."
+      },
+      "explanations": {
+        "zh-TW": "最基本回報問題的句型。",
+        "en": "Most basic problem reporting phrase.",
+        "ja": "最も基本的な問題報告フレーズ。",
+        "ko": "가장 기본적인 문제 보고 문구.",
+        "es": "Frase de informe de problema más básica.",
+        "fr": "Phrase de signalement de problème la plus basique."
+      }
+    }
+  ],
+  "pre-intermediate": [
+    {
+      "id": "en-it-pi1",
+      "pattern": "I am working on [Task/Project].",
+      "translations": {
+        "zh-TW": "我正在處理 [某個任務/專案]。",
+        "en": "I am working on [Task/Project].",
+        "ja": "[Task/Project]に取り組んでいます。",
+        "ko": "[Task/Project]을 작업 중입니다.",
+        "es": "Estoy trabajando en [Task/Project].",
+        "fr": "Je travaille sur [Task/Project]."
+      },
+      "explanations": {
+        "zh-TW": "報告目前的進度與焦點。",
+        "en": "Report current progress and focus.",
+        "ja": "現在の進捗と焦点を報告する。",
+        "ko": "현재 진행 상황과 초점 보고.",
+        "es": "Reportar el progreso y enfoque actual.",
+        "fr": "Rapporter les progrès et l'focus actuels."
+      }
+    },
+    {
+      "id": "en-it-pi2",
+      "pattern": "Could you help me with [Task]?",
+      "translations": {
+        "zh-TW": "你能幫我處理 [某個任務] 嗎？",
+        "en": "Could you help me with [Task]?",
+        "ja": "[Task]を手伝っていただけますか？",
+        "ko": "[Task]을 도와주시겠습니까?",
+        "es": "¿Podría ayudarme con [Task]?",
+        "fr": "Pourriez-vous m'aider avec [Task] ?"
+      },
+      "explanations": {
+        "zh-TW": "委婉尋求協助。",
+        "en": "Tactfully seeking assistance.",
+        "ja": "控えめに支援を求める。",
+        "ko": "완곡하게 지원 요청.",
+        "es": "Buscar ayuda tácticamente.",
+        "fr": "Chercher de l'aide tacticement."
+      }
+    },
+    {
+      "id": "en-it-pi3",
+      "pattern": "I have finished [Task] today.",
+      "translations": {
+        "zh-TW": "我今天完成了 [某個任務]。",
+        "en": "I have finished [Task] today.",
+        "ja": "今日[Task]を完了しました。",
+        "ko": "오늘 [Task]을 완료했습니다.",
+        "es": "He terminado [Task] hoy.",
+        "fr": "J'ai terminé [Task] aujourd'hui."
+      },
+      "explanations": {
+        "zh-TW": "每日站會 (Daily Standup) 常用的回報完成句型。",
+        "en": "Daily standup common report completion phrase.",
+        "ja": "デイリースタンドアップでよく使う完了報告フレーズ。",
+        "ko": "데일리 스탠드업에서 자주 쓰는 완료 보고 문구.",
+        "es": "Frase común de informe de finalización en daily standup.",
+        "fr": "Phrase commune de rapport d'achèvement en daily standup."
+      }
+    },
+    {
+      "id": "en-it-pi4",
+      "pattern": "We need more time to fix [Component].",
+      "translations": {
+        "zh-TW": "我們需要多一點時間來修復 [某組件]。",
+        "en": "We need more time to fix [Component].",
+        "ja": "[Component]を修正するにもう少し時間が必要です。",
+        "ko": "[Component]을 수정하려면 더 많은 시간이 필요합니다.",
+        "es": "Necesitamos más tiempo para arreglar [Component].",
+        "fr": "Nous avons besoin de plus de temps pour réparer [Component]."
+      },
+      "explanations": {
+        "zh-TW": "說明延遲並爭取時間的用法。",
+        "en": "Phrase for explaining delays and buying time.",
+        "ja": "遅延を説明し、時間を稼ぐための用法。",
+        "ko": "지연 설명하고 시간 벌기 위한 용법.",
+        "es": "Frase para explicar retrasos y ganar tiempo.",
+        "fr": "Phrase pour expliquer les retards et gagner du temps."
+      }
+    },
+    {
+      "id": "en-it-pi5",
+      "pattern": "There is an error in [File/Module].",
+      "translations": {
+        "zh-TW": "[某檔案/模組] 裡有一個錯誤。",
+        "en": "There is an error in [File/Module].",
+        "ja": "[File/Module]にエラーがあります。",
+        "ko": "[File/Module]에 오류가 있습니다.",
+        "es": "Hay un error en [File/Module].",
+        "fr": "Il y a une erreur dans [File/Module]."
+      },
+      "explanations": {
+        "zh-TW": "指出版版錯誤發生地點的情境。",
+        "en": "Situation pointing out where the error occurred.",
+        "ja": "エラー発生場所を指摘する状況。",
+        "ko": "오류 발생 위치 지적하는 상황.",
+        "es": "Situación señalando dónde ocurrió el error.",
+        "fr": "Situation pointant où l'erreur s'est produite."
+      }
+    },
+    {
+      "id": "en-it-pi6",
+      "pattern": "Can you review my code for [Feature]?",
+      "translations": {
+        "zh-TW": "你能幫我 code review [某功能] 嗎？",
+        "en": "Can you review my code for [Feature]?",
+        "ja": "[Feature]のコードレビューをしていただけますか？",
+        "ko": "[Feature]에 대한 제 코드 리뷰를 해주시겠습니까?",
+        "es": "¿Puedes revisar mi código para [Feature]?",
+        "fr": "Peux-tu relire mon code pour [Feature] ?"
+      },
+      "explanations": {
+        "zh-TW": "請求同事進行代碼審查的標準說法。",
+        "en": "Standard phrase for requesting code review from colleagues.",
+        "ja": "同僚にコードレビューを依頼する標準的な表現。",
+        "ko": "동료에게 코드 리뷰 요청하는 표준적인 표현.",
+        "es": "Frase estándar para solicitar revisión de código a colegas.",
+        "fr": "Phrase standard pour demander une révision de code aux collègues."
+      }
+    },
+    {
+      "id": "en-it-pi7",
+      "pattern": "I am trying to connect to [Database/Server].",
+      "translations": {
+        "zh-TW": "我正嘗試連線至 [資料庫/伺服器]。",
+        "en": "I am trying to connect to [Database/Server].",
+        "ja": "[Database/Server]に接続しようとしています。",
+        "ko": "[Database/Server]에 연결하려고 시도 중입니다.",
+        "es": "Estoy intentando conectar a [Database/Server].",
+        "fr": "J'essaie de me connecter à [Database/Server]."
+      },
+      "explanations": {
+        "zh-TW": "描述正在進行的單一連線任務。",
+        "en": "Describe a single connection task in progress.",
+        "ja": "進行中の単一接続タスクを説明する。",
+        "ko": "진행 중인 단일 연결 작업 설명.",
+        "es": "Describir una sola tarea de conexión en progreso.",
+        "fr": "Décrire une seule tâche de connexion en cours."
+      }
+    },
+    {
+      "id": "en-it-pi8",
+      "pattern": "The server is down because of [Reason].",
+      "translations": {
+        "zh-TW": "伺服器因為 [某個原因] 停機了。",
+        "en": "The server is down because of [Reason].",
+        "ja": "[Reason]のため、サーバーがダウンしています。",
+        "ko": "[Reason] 때문에 서버가 다운되었습니다.",
+        "es": "El servidor está caído debido a [Reason].",
+        "fr": "Le serveur est tombé à cause de [Reason]."
+      },
+      "explanations": {
+        "zh-TW": "說明服務中斷原因。",
+        "en": "Explain the cause of service interruption.",
+        "ja": "サービス中断の原因を説明する。",
+        "ko": "서비스 중단 원인 설명.",
+        "es": "Explicar la causa de la interrupción del servicio.",
+        "fr": "Expliquer la cause de l'interruption du service."
+      }
+    },
+    {
+      "id": "en-it-pi9",
+      "pattern": "Please reinstall the [Software].",
+      "translations": {
+        "zh-TW": "請重新安裝 [某個軟體]。",
+        "en": "Please reinstall the [Software].",
+        "ja": "[Software]を再インストールしてください。",
+        "ko": "[Software]을 다시 설치해 주세요.",
+        "es": "Por favor, reinstale [Software].",
+        "fr": "Veuillez réinstaller [Software]."
+      },
+      "explanations": {
+        "zh-TW": "給予用戶或同事基礎排解建議。",
+        "en": "Give basic troubleshooting advice to users or colleagues.",
+        "ja": "ユーザーや同僚に基本的なトラブルシューティング助言を与える。",
+        "ko": "사용자나 동료에게 기본 문제 해결 조언 제공.",
+        "es": "Dar consejos básicos de solución de problemas a usuarios o colegas.",
+        "fr": "Donner des conseils de dépannage de base aux utilisateurs ou collègues."
+      }
+    },
+    {
+      "id": "en-it-pi10",
+      "pattern": "I will deploy it to [Environment].",
+      "translations": {
+        "zh-TW": "我會把它部署到 [某環境 (如 staging/production)]。",
+        "en": "I will deploy it to [Environment].",
+        "ja": "[Environment]にデプロイします。",
+        "ko": "[Environment]에 배포하겠습니다.",
+        "es": "Lo desplegaré a [Environment].",
+        "fr": "Je vais le déployer sur [Environment]."
+      },
+      "explanations": {
+        "zh-TW": "描述程式碼部署流向。",
+        "en": "Describe code deployment flow.",
+        "ja": "コードデプロイメントの流れを説明する。",
+        "ko": "코드 배포 흐름 설명.",
+        "es": "Describir el flujo de despliegue de código.",
+        "fr": "Décrire le flux de déploiement de code."
+      }
+    }
+  ],
+  "intermediate": [
+    {
+      "id": "en-it-i1",
+      "pattern": "We need to fix the bug in [Module].",
+      "translations": {
+        "zh-TW": "我們需要修復 [某模組] 裡的錯誤。",
+        "en": "We need to fix the bug in [Module].",
+        "ja": "[Module]のバグを修正する必要があります。",
+        "ko": "[Module]의 버그를 수정해야 합니다.",
+        "es": "Necesitamos arreglar el error en [Module].",
+        "fr": "Nous devons corriger le bug dans [Module]."
+      },
+      "explanations": {
+        "zh-TW": "討論要解決的技術問題。",
+        "en": "Discuss technical issues to be resolved.",
+        "ja": "解決すべき技術的問題を議論する。",
+        "ko": "해결해야 할 기술적 문제 논의.",
+        "es": "Discutir problemas técnicos que deben resolverse.",
+        "fr": "Discuter des problèmes techniques à résoudre."
+      }
+    },
+    {
+      "id": "en-it-i2",
+      "pattern": "What is the status of [Project]?",
+      "translations": {
+        "zh-TW": "[某專案] 狀態如何了？",
+        "en": "What is the status of [Project]?",
+        "ja": "[Project]のステータスはどうなっていますか？",
+        "ko": "[Project]의 상태는 어떻게 됩니까?",
+        "es": "¿Cuál es el estado de [Project]?",
+        "fr": "Quel est le statut de [Project] ?"
+      },
+      "explanations": {
+        "zh-TW": "向同事或下屬詢問進度。",
+        "en": "Ask colleagues or subordinates about progress.",
+        "ja": "同僚や部下に進捗を尋ねる。",
+        "ko": "동료나 부하에게 진행 상황 질문.",
+        "es": "Preguntar a colegas o subordinados sobre el progreso.",
+        "fr": "Demander aux collègues ou subordonnés sur les progrès."
+      }
+    },
+    {
+      "id": "en-it-i3",
+      "pattern": "The root cause of the issue is [Technical Cause].",
+      "translations": {
+        "zh-TW": "這個問題的根本原因在於 [技術性原因]。",
+        "en": "The root cause of the issue is [Technical Cause].",
+        "ja": "この問題の根本原因は[Technical Cause]にあります。",
+        "ko": "이 문제의 근본 원인은 [Technical Cause]에 있습니다.",
+        "es": "La causa raíz del problema es [Technical Cause].",
+        "fr": "La cause racine du problème est [Technical Cause]."
+      },
+      "explanations": {
+        "zh-TW": "深入分析問題發生點的道地句型 (Root cause)。",
+        "en": "Idiomatic phrase for in-depth analysis of problem occurrence point (Root cause).",
+        "ja": "問題発生点を深く分析するための道地的なフレーズ（Root cause）。",
+        "ko": "문제 발생 지점 심층 분석 위한 도착적인 문구 (Root cause).",
+        "es": "Frase idiomática para análisis en profundidad del punto de ocurrencia del problema (Root cause).",
+        "fr": "Phrase idiomatique pour l'analyse approfondie du point de survenue du problème (Root cause)."
+      }
+    },
+    {
+      "id": "en-it-i4",
+      "pattern": "Let's roll back the deployment to [Previous Version].",
+      "translations": {
+        "zh-TW": "我們把部署退版到 [上一個版本] 吧。",
+        "en": "Let's roll back the deployment to [Previous Version].",
+        "ja": "デプロイメントを[Previous Version]にロールバックしましょう。",
+        "ko": "배포를 [Previous Version]으로 롤백합시다.",
+        "es": "Vamos a revertir el despliegue a [Previous Version].",
+        "fr": "Revenons au déploiement précédent [Previous Version]."
+      },
+      "explanations": {
+        "zh-TW": "危機處理時常用的退版建議。",
+        "en": "Rollback suggestion often used in crisis handling.",
+        "ja": "危機処理でよく使われるロールバック提案。",
+        "ko": "위기 처리에서 자주 쓰이는 롤백 제안.",
+        "es": "Sugerencia de reversión frecuentemente usada en manejo de crisis.",
+        "fr": "Suggestion de retour en arrière fréquemment utilisée dans la gestion de crise."
+      }
+    },
+    {
+      "id": "en-it-i5",
+      "pattern": "This feature depends on [API/Service].",
+      "translations": {
+        "zh-TW": "這個功能依賴於 [某個 API / 服務]。",
+        "en": "This feature depends on [API/Service].",
+        "ja": "この機能は[API/Service]に依存しています。",
+        "ko": "이 기능은 [API/Service]에 의존합니다.",
+        "es": "Esta función depende de [API/Service].",
+        "fr": "Cette fonctionnalité dépend de [API/Service]."
+      },
+      "explanations": {
+        "zh-TW": "說明系統間耦合與依賴關係。",
+        "en": "Explain system coupling and dependency relationships.",
+        "ja": "システムの結合と依存関係を説明する。",
+        "ko": "시스템 결합과 의존 관계 설명.",
+        "es": "Explicar el acoplamiento y las relaciones de dependencia del sistema.",
+        "fr": "Expliquer le couplage et les relations de dépendance du système."
+      }
+    },
+    {
+      "id": "en-it-i6",
+      "pattern": "I am going to submit a pull request for [Feature].",
+      "translations": {
+        "zh-TW": "我準備為 [某功能] 提交 PR (Pull Request)。",
+        "en": "I am going to submit a pull request for [Feature].",
+        "ja": "[Feature]のプルリクエストを送信しようとしています。",
+        "ko": "[Feature]에 대한 풀 리퀘스트를 제출하려고 합니다.",
+        "es": "Voy a enviar una pull request para [Feature].",
+        "fr": "Je vais soumettre une pull request pour [Feature]."
+      },
+      "explanations": {
+        "zh-TW": "日常開發中送交合併請求的標準句。",
+        "en": "Standard phrase for submitting merge request in daily development.",
+        "ja": "日常開発でマージリクエストを送信する標準的なフレーズ。",
+        "ko": "일상 개발에서 병합 요청 제출하는 표준 문구.",
+        "es": "Frase estándar para enviar solicitud de fusión en desarrollo diario.",
+        "fr": "Phrase standard pour soumettre une demande de fusion dans le développement quotidien."
+      }
+    },
+    {
+      "id": "en-it-i7",
+      "pattern": "Could you grant me access to [System/Repository]?",
+      "translations": {
+        "zh-TW": "您可以開通 [某系統/庫] 的權限給我嗎？",
+        "en": "Could you grant me access to [System/Repository]?",
+        "ja": "[System/Repository]へのアクセス権限を付与していただけますか？",
+        "ko": "[System/Repository]에 대한 접근 권한을 부여해 주시겠습니까?",
+        "es": "¿Podría otorgarme acceso a [System/Repository]?",
+        "fr": "Pourriez-vous m'accorder l'accès à [System/Repository] ?"
+      },
+      "explanations": {
+        "zh-TW": "向維運人員索要權限。",
+        "en": "Ask operations personnel for permissions.",
+        "ja": "運用担当者に権限を要求する。",
+        "ko": "운영 담당자에게 권한 요청.",
+        "es": "Solicitar permisos al personal de operaciones.",
+        "fr": "Demander des permissions au personnel des opérations."
+      }
+    },
+    {
+      "id": "en-it-i8",
+      "pattern": "We are experiencing latency issues with [Service].",
+      "translations": {
+        "zh-TW": "我們目前遇到 [某服務] 的延遲問題。",
+        "en": "We are experiencing latency issues with [Service].",
+        "ja": "[Service]でレイテンシーの問題が発生しています。",
+        "ko": "[Service]에서 대기 시간 문제가 발생하고 있습니다.",
+        "es": "Estamos experimentando problemas de latencia con [Service].",
+        "fr": "Nous expérimentons des problèmes de latence avec [Service]."
+      },
+      "explanations": {
+        "zh-TW": "向客戶或高層報告突發的系統不穩狀況。",
+        "en": "Report sudden system instability to clients or management.",
+        "ja": "クライアントや経営陣に突発的なシステム不安定状況を報告する。",
+        "ko": "클라이언트나 경영진에게 돌발적인 시스템 불안정 상황 보고.",
+        "es": "Reportar situación repentina de inestabilidad del sistema a clientes o gerencia.",
+        "fr": "Rapporter une situation soudaine d'instabilité du système aux clients ou à la direction."
+      }
+    },
+    {
+      "id": "en-it-i9",
+      "pattern": "It seems like a memory leak in [Component].",
+      "translations": {
+        "zh-TW": "看起來像是 [某個組件] 發生了記憶體流失。",
+        "en": "It seems like a memory leak in [Component].",
+        "ja": "[Component]でメモリリークが発生しているようです。",
+        "ko": "[Component]에서 메모리 누수가 있는 것 같습니다.",
+        "es": "Parece una fuga de memoria en [Component].",
+        "fr": "On dirait une fuite de mémoire dans [Component]."
+      },
+      "explanations": {
+        "zh-TW": "推測系統效能問題的常見說法。",
+        "en": "Common phrase for guessing system performance issues.",
+        "ja": "システムパフォーマンス問題を推測するための一般的なフレーズ。",
+        "ko": "시스템 성능 문제 추측하기 위한 일반적인 문구.",
+        "es": "Frase común para adivinar problemas de rendimiento del sistema.",
+        "fr": "Phrase commune pour deviner les problèmes de performance du système."
+      }
+    },
+    {
+      "id": "en-it-i10",
+      "pattern": "Let's scale up the instances for [Microservice].",
+      "translations": {
+        "zh-TW": "我們來為主機上的 [某微服務] 增加實例數量（擴容）吧。",
+        "en": "Let's scale up the instances for [Microservice].",
+        "ja": "[Microservice]のインスタンス数を増やしましょう。",
+        "ko": "[Microservice]의 인스턴스 수를 늘립시다.",
+        "es": "Vamos a escalar las instancias para [Microservice].",
+        "fr": "Augmentons les instances pour [Microservice]."
+      },
+      "explanations": {
+        "zh-TW": "討論系統流量與伺服器乘載。",
+        "en": "Discuss system traffic and server capacity.",
+        "ja": "システムトラフィックとサーバーキャパシティを議論する。",
+        "ko": "시스템 트래픽과 서버 용량 논의.",
+        "es": "Discutir el tráfico del sistema y la capacidad del servidor.",
+        "fr": "Discuter du trafic système et de la capacité du serveur."
+      }
+    }
+  ]
+}

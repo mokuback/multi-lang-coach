@@ -1,0 +1,232 @@
+{
+  "beginner": [
+    {
+      "id": "en-def-b1",
+      "pattern": "This is a [Noun].",
+      "translations": {
+        "zh-TW": "這是一個 [名詞]。",
+        "en": "This is a [Noun].",
+        "ja": "これは[Noun]です。",
+        "ko": "이것은 [Noun]입니다.",
+        "es": "Esto es un [Noun].",
+        "fr": "Ceci est un [Noun]."
+      },
+      "explanations": {
+        "zh-TW": "基礎單字學習。",
+        "en": "Basic vocabulary learning.",
+        "ja": "基礎単語の学習。",
+        "ko": "기초 단어 학습.",
+        "es": "Aprendizaje básico de vocabulario.",
+        "fr": "Apprentissage de base du vocabulaire."
+      }
+    },
+    {
+      "id": "en-def-b2",
+      "pattern": "I want to [Verb].",
+      "translations": {
+        "zh-TW": "我想要 [做某事]。",
+        "en": "I want to [Verb].",
+        "ja": "[Verb]したいです。",
+        "ko": "[Verb]하고 싶습니다.",
+        "es": "Quiero [Verb].",
+        "fr": "Je veux [Verb]."
+      },
+      "explanations": {
+        "zh-TW": "表達需求。",
+        "en": "Expressing needs.",
+        "ja": "ニーズの表現。",
+        "ko": "욕구 표현.",
+        "es": "Expresar necesidades.",
+        "fr": "Exprimer des besoins."
+      }
+    }
+  ],
+  "pre-intermediate": [
+    {
+      "id": "en-def-pi1",
+      "pattern": "I like to [Verb] in my free time.",
+      "translations": {
+        "zh-TW": "我喜歡在空閒時間 [做某事]。",
+        "en": "I like to [Verb] in my free time.",
+        "ja": "自由時間に[Verb]するのが好きです。",
+        "ko": "저는 자유 시간에 [Verb]하는 것을 좋아합니다.",
+        "es": "Me gusta [Verb] en mi tiempo libre.",
+        "fr": "J'aime [Verb] pendant mon temps libre."
+      },
+      "explanations": {
+        "zh-TW": "介紹自己的興趣。",
+        "en": "Introducing one's interests.",
+        "ja": "自分の興味を紹介する。",
+        "ko": "자신의 관심사 소개.",
+        "es": "Presentar los propios intereses.",
+        "fr": "Présenter ses propres intérêts."
+      }
+    },
+    {
+      "id": "en-def-pi2",
+      "pattern": "Could you please [Action]?",
+      "translations": {
+        "zh-TW": "可以請你 [做某事] 嗎？",
+        "en": "Could you please [Action]?",
+        "ja": "[Action]していただけますか？",
+        "ko": "[Action]해 주시겠습니까?",
+        "es": "¿Podría [Action], por favor?",
+        "fr": "Pourriez-vous [Action], s'il vous plaît ?"
+      },
+      "explanations": {
+        "zh-TW": "禮貌性的基本請求。",
+        "en": "Polite basic request.",
+        "ja": "丁寧な基本的な依頼。",
+        "ko": "정중한 기본 요청.",
+        "es": "Solicitud básica educada.",
+        "fr": "Demande basique polie."
+      }
+    },
+    {
+      "id": "en-def-pi3",
+      "pattern": "I am originally from [Place].",
+      "translations": {
+        "zh-TW": "我原本來自於 [某地]。",
+        "en": "I am originally from [Place].",
+        "ja": "もともと[Place]の出身です。",
+        "ko": "저는 원래 [Place] 출신입니다.",
+        "es": "Soy originalmente de [Place].",
+        "fr": "Je suis originaire de [Place]."
+      },
+      "explanations": {
+        "zh-TW": "自我介紹家鄉或出處。",
+        "en": "Self-introduction of hometown or origin.",
+        "ja": "出身地や出身の自己紹介。",
+        "ko": "고향이나 출신지 자기소개.",
+        "es": "Auto-presentación del pueblo natal o origen.",
+        "fr": "Auto-présentation du village natal ou de l'origine."
+      }
+    },
+    {
+      "id": "en-def-pi4",
+      "pattern": "Do you know how to [Action]?",
+      "translations": {
+        "zh-TW": "你知道要如何 [做某事] 嗎？",
+        "en": "Do you know how to [Action]?",
+        "ja": "[Action]のやり方を知っていますか？",
+        "ko": "[Action]하는 방법을 아시나요?",
+        "es": "¿Sabes cómo [Action]?",
+        "fr": "Est-ce que tu sais comment [Action] ?"
+      },
+      "explanations": {
+        "zh-TW": "詢問他人的技能或知識。",
+        "en": "Asking about others' skills or knowledge.",
+        "ja": "他人のスキルや知識を尋ねる。",
+        "ko": "타인의 기술이나 지식 질문.",
+        "es": "Preguntar sobre las habilidades o conocimientos de otros.",
+        "fr": "Demander les compétences ou connaissances des autres."
+      }
+    },
+    {
+      "id": "en-def-pi5",
+      "pattern": "I'm sorry, but I [Excuse].",
+      "translations": {
+        "zh-TW": "我很抱歉，但我 [某個藉口/原因]。",
+        "en": "I'm sorry, but I [Excuse].",
+        "ja": "すみませんが、[Excuse]です。",
+        "ko": "죄송하지만, [Excuse]입니다.",
+        "es": "Lo siento, pero [Excuse].",
+        "fr": "Je suis désolé(e), mais [Excuse]."
+      },
+      "explanations": {
+        "zh-TW": "婉拒的萬用語氣。",
+        "en": "Versatile tone for declining.",
+        "ja": "断るための万能的な語調。",
+        "ko": "거절을 위한 만능 어조.",
+        "es": "Tono versátil para declinar.",
+        "fr": "Ton polyvalent pour refuser."
+      }
+    }
+  ],
+  "intermediate": [
+    {
+      "id": "en-def-i1",
+      "pattern": "Could you tell me more about [Topic]?",
+      "translations": {
+        "zh-TW": "您可以多告訴我一些關於 [某主題] 的事嗎？",
+        "en": "Could you tell me more about [Topic]?",
+        "ja": "[Topic]についてもっと教えていただけますか？",
+        "ko": "[Topic]에 대해 더 자세히 알려주시겠습니까?",
+        "es": "¿Podría decirme más sobre [Topic]?",
+        "fr": "Pourriez-vous m'en dire plus sur [Topic] ?"
+      },
+      "explanations": {
+        "zh-TW": "延續話題的實用句型。",
+        "en": "Useful phrase for continuing a topic.",
+        "ja": "話題を継続するための実用的なフレーズ。",
+        "ko": "주제를 계속하기 위한 실용적인 문구.",
+        "es": "Frase útil para continuar un tema.",
+        "fr": "Phrase utile pour continuer un sujet."
+      }
+    },
+    {
+      "id": "en-def-i2",
+      "pattern": "I have been [V-ing] for [Duration].",
+      "translations": {
+        "zh-TW": "我已經 [做某動作] 長達 [某段時間] 了。",
+        "en": "I have been [V-ing] for [Duration].",
+        "ja": "[Duration][V-ing]しています。",
+        "ko": "[Duration] 동안 [V-ing]해 오고 있습니다.",
+        "es": "He estado [V-ing] durante [Duration].",
+        "fr": "J'ai été en train de [V-ing] pendant [Duration]."
+      },
+      "explanations": {
+        "zh-TW": "表達持續狀態（現在完成進行式）。",
+        "en": "Expressing continuous state (present perfect continuous).",
+        "ja": "継続状態を表現する（現在完了進行形）。",
+        "ko": "지속 상태 표현 (현재 완료 진행형).",
+        "es": "Expresar estado continuo (presente perfecto continuo).",
+        "fr": "Exprimer un état continu (présent perfect continu)."
+      }
+    }
+  ],
+  "upper-intermediate": [
+    {
+      "id": "en-def-ui1",
+      "pattern": "I'm under the impression that [Statement].",
+      "translations": {
+        "zh-TW": "我的印象是 [描述某件事]。",
+        "en": "I'm under the impression that [Statement].",
+        "ja": "[Statement]という印象を受けます。",
+        "ko": "[Statement]라는 인상을 받습니다.",
+        "es": "Tengo la impresión de que [Statement].",
+        "fr": "J'ai l'impression que [Statement]."
+      },
+      "explanations": {
+        "zh-TW": "委婉表達個人觀點與看法。",
+        "en": "Tactfully expressing personal opinions and views.",
+        "ja": "個人的な意見や見解を控えめに表現する。",
+        "ko": "개인적인 의견과 견해를 완곡하게 표현.",
+        "es": "Expresar tácticamente opiniones y puntos de vista personales.",
+        "fr": "Exprimer tactfullement opinions et points de vue personnels."
+      }
+    }
+  ],
+  "advanced": [
+    {
+      "id": "en-def-a1",
+      "pattern": "Taking all factors into consideration, [Conclusion].",
+      "translations": {
+        "zh-TW": "綜合評估所有因素後可以得出，[結論]。",
+        "en": "Taking all factors into consideration, [Conclusion].",
+        "ja": "すべての要因を考慮すると、[Conclusion]。",
+        "ko": "모든 요인을 고려할 때, [Conclusion]입니다.",
+        "es": "Tomando en consideración todos los factores, [Conclusion].",
+        "fr": "En prenant tous les facteurs en considération, [Conclusion]."
+      },
+      "explanations": {
+        "zh-TW": "高階且正式的總結用語。",
+        "en": "High-level and formal concluding phrase.",
+        "ja": "高レベルでフォーマルな結論用語。",
+        "ko": "고급 있고 공식적인 결론 용어.",
+        "es": "Frase de conclusión de alto nivel y formal.",
+        "fr": "Phrase de conclusion de haut niveau et formelle."
+      }
+    }
+  ]
+}

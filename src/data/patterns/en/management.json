@@ -1,0 +1,204 @@
+{
+  "pre-intermediate": [
+    {
+      "id": "en-mgt-pi1",
+      "pattern": "We need to discuss [Topic].",
+      "translations": {
+        "zh-TW": "我們需要討論 [某主題]。",
+        "en": "We need to discuss [Topic].",
+        "ja": "[Topic]について話し合う必要があります。",
+        "ko": "[Topic]에 대해 논의할 필요가 있습니다.",
+        "es": "Necesitamos discutir [Topic].",
+        "fr": "Nous devons discuter de [Topic]."
+      },
+      "explanations": {
+        "zh-TW": "召開會議或開啟話題的基礎句型。",
+        "en": "Basic phrase for convening a meeting or opening a topic.",
+        "ja": "会議を召集する、または話題を開くための基礎フレーズ。",
+        "ko": "회의 소집 또는 주제 열기 위한 기초 문구.",
+        "es": "Frase básica para convocar una reunión o abrir un tema.",
+        "fr": "Phrase de base pour convoquer une réunion ou ouvrir un sujet."
+      }
+    },
+    {
+      "id": "en-mgt-pi2",
+      "pattern": "What is your opinion on [Topic]?",
+      "translations": {
+        "zh-TW": "你對 [某主題] 的看法是什麼？",
+        "en": "What is your opinion on [Topic]?",
+        "ja": "[Topic]についてのご意見は何ですか？",
+        "ko": "[Topic]에 대한 의견은 무엇입니까?",
+        "es": "¿Cuál es su opinión sobre [Topic]?",
+        "fr": "Quelle est votre opinion sur [Topic] ?"
+      },
+      "explanations": {
+        "zh-TW": "詢問下屬或同事意見。",
+        "en": "Ask subordinates or colleagues for opinions.",
+        "ja": "部下や同僚に意見を尋ねる。",
+        "ko": "부하나 동료에게 의견 질문.",
+        "es": "Preguntar a subordinados o colegas por opiniones.",
+        "fr": "Demander l'opinion aux subordonnés ou collègues."
+      }
+    },
+    {
+      "id": "en-mgt-pi3",
+      "pattern": "Let's schedule a meeting on [Day/Time].",
+      "translations": {
+        "zh-TW": "我們安排在 [某日/時間] 開個會吧。",
+        "en": "Let's schedule a meeting on [Day/Time].",
+        "ja": "[Day/Time]に会議をスケジュールしましょう。",
+        "ko": "[Day/Time]에 회의를 일정잡읍시다.",
+        "es": "Agendemos una reunión el [Day/Time].",
+        "fr": "Planifions une réunion le [Day/Time]."
+      },
+      "explanations": {
+        "zh-TW": "敲定會議時間用。",
+        "en": "Settling meeting time.",
+        "ja": "会議時間を決める。",
+        "ko": "회의 시간 결정.",
+        "es": "Fijar el tiempo de la reunión.",
+        "fr": "Fixer l'heure de la réunion."
+      }
+    },
+    {
+      "id": "en-mgt-pi4",
+      "pattern": "Please send me the report by [Time].",
+      "translations": {
+        "zh-TW": "請在 [某時間] 前回傳報告給我。",
+        "en": "Please send me the report by [Time].",
+        "ja": "[Time]までにレポートを送ってください。",
+        "ko": "[Time]까지 보고서를 보내주세요.",
+        "es": "Por favor, envíeme el informe antes de [Time].",
+        "fr": "Veuillez m'envoyer le rapport avant [Time]."
+      },
+      "explanations": {
+        "zh-TW": "交代死線 (deadline) 給部屬的說法。",
+        "en": "Phrase for assigning deadline to subordinates.",
+        "ja": "部下に締切を割り当てる表現。",
+        "ko": "부하에게 마감 기한 할당하는 표현.",
+        "es": "Frase para asignar fecha límite a subordinados.",
+        "fr": "Phrase pour assigner une date limite aux subordonnés."
+      }
+    },
+    {
+      "id": "en-mgt-pi5",
+      "pattern": "I agree with [Person/Idea].",
+      "translations": {
+        "zh-TW": "我同意 [某人/某想法]。",
+        "en": "I agree with [Person/Idea].",
+        "ja": "[Person/Idea]に賛成です。",
+        "ko": "[Person/Idea]에 동의합니다.",
+        "es": "Estoy de acuerdo con [Person/Idea].",
+        "fr": "Je suis d'accord avec [Person/Idea]."
+      },
+      "explanations": {
+        "zh-TW": "表達贊同的基本說法。",
+        "en": "Basic phrase for expressing agreement.",
+        "ja": "賛成を表現するための基本的な表現。",
+        "ko": "찬성 표현하기 위한 기본적인 표현.",
+        "es": "Frase básica para expresar acuerdo.",
+        "fr": "Phrase de base pour exprimer l'accord."
+      }
+    },
+    {
+      "id": "en-mgt-pi6",
+      "pattern": "We have an issue with [Department/Process].",
+      "translations": {
+        "zh-TW": "我們在 [某部門/流程] 上遇到了一個問題。",
+        "en": "We have an issue with [Department/Process].",
+        "ja": "[Department/Process]に問題があります。",
+        "ko": "[Department/Process]에 문제가 있습니다.",
+        "es": "Tenemos un problema con [Department/Process].",
+        "fr": "Nous avons un problème avec [Department/Process]."
+      },
+      "explanations": {
+        "zh-TW": "向管理層提報營運障礙。",
+        "en": "Report operational obstacles to management.",
+        "ja": "経営陣に運用障害を報告する。",
+        "ko": "경영진에게 운용 장애 보고.",
+        "es": "Reportar obstáculos operacionales a la gerencia.",
+        "fr": "Rapporter des obstacles opérationnels à la direction."
+      }
+    },
+    {
+      "id": "en-mgt-pi7",
+      "pattern": "Our goal is to increase [Metric].",
+      "translations": {
+        "zh-TW": "我們的目標是提升 [某個指標]。",
+        "en": "Our goal is to increase [Metric].",
+        "ja": "私たちの目標は[Metric]を向上させることです。",
+        "ko": "우리의 목표는 [Metric]을 증가시키는 것입니다.",
+        "es": "Nuestro objetivo es aumentar [Metric].",
+        "fr": "Notre objectif est d'augmenter [Metric]."
+      },
+      "explanations": {
+        "zh-TW": "確立團隊的短期目標（如 KPI）。",
+        "en": "Establish short-term team goals (e.g. KPI).",
+        "ja": "チームの短期目標を確立する（例：KPI）。",
+        "ko": "팀의 단기 목표 확립 (예: KPI).",
+        "es": "Establecer objetivos de equipo a corto plazo (ej. KPI).",
+        "fr": "Établir des objectifs d'équipe à court terme (ex: KPI)."
+      }
+    },
+    {
+      "id": "en-mgt-pi8",
+      "pattern": "Thank you for your hard work on [Project].",
+      "translations": {
+        "zh-TW": "感謝你在 [某專案] 上的辛勤工作。",
+        "en": "Thank you for your hard work on [Project].",
+        "ja": "[Project]でのご尽力に感謝します。",
+        "ko": "[Project]에서의 노고에 감사드립니다.",
+        "es": "Gracias por su arduo trabajo en [Project].",
+        "fr": "Merci pour votre travail acharné sur [Project]."
+      },
+      "explanations": {
+        "zh-TW": "對團隊表達常見的感謝鼓勵。",
+        "en": "Common encouragement and thanks to the team.",
+        "ja": "チームへのよくある激励と感謝。",
+        "ko": "팀에 대한 흔한 격려와 감사.",
+        "es": "Estímulo y agradecimiento común al equipo.",
+        "fr": "Encouragement et remerciement commun à l'équipe."
+      }
+    },
+    {
+      "id": "en-mgt-pi9",
+      "pattern": "We are currently over budget on [Category].",
+      "translations": {
+        "zh-TW": "我們目前在 [某類別] 上已經超出預算了。",
+        "en": "We are currently over budget on [Category].",
+        "ja": "現在、[Category]で予算超過しています。",
+        "ko": "현재 [Category]에서 예산을 초과했습니다.",
+        "es": "Actualmente estamos excedidos de presupuesto en [Category].",
+        "fr": "Nous sommes actuellement hors budget sur [Category]."
+      },
+      "explanations": {
+        "zh-TW": "提醒團隊開銷狀況。",
+        "en": "Remind the team about expense status.",
+        "ja": "チームに経費状況を思い出させる。",
+        "ko": "팀에게 비용 상황 상기시킴.",
+        "es": "Recordar al equipo sobre el estado de gastos.",
+        "fr": "Rappeler à l'équipe l'état des dépenses."
+      }
+    },
+    {
+      "id": "en-mgt-pi10",
+      "pattern": "Can you prioritize [Task] today?",
+      "translations": {
+        "zh-TW": "你今天可以將 [某任務] 列為第一優先嗎？",
+        "en": "Can you prioritize [Task] today?",
+        "ja": "今日、[Task]を最優先にできますか？",
+        "ko": "오늘 [Task]을 최우선으로 할 수 있습니까?",
+        "es": "¿Puedes priorizar [Task] hoy?",
+        "fr": "Peux-tu prioriser [Task] aujourd'hui ?"
+      },
+      "explanations": {
+        "zh-TW": "調整團隊成員的任務排序。",
+        "en": "Adjust team members' task ordering.",
+        "ja": "チームメンバーのタスク順序を調整する。",
+        "ko": "팀원 작업 순서 조정.",
+        "es": "Ajustar el orden de tareas de los miembros del equipo.",
+        "fr": "Ajuster l'ordre des tâches des membres de l'équipe."
+      }
+    }
+  ]
+}

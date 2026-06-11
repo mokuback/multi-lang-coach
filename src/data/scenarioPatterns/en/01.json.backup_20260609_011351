@@ -1,0 +1,6866 @@
+{
+  "it-1": [
+    {
+      "id": "en-it-1-01-1",
+      "pattern": "I would like to request a feature enhancement for...",
+      "translations": {
+        "zh-TW": "我想請求為...增加新功能"
+      },
+      "explanations": {
+        "zh-TW": "軟體需求信件的標準開場白"
+      }
+    },
+    {
+      "id": "en-it-1-01-2",
+      "pattern": "The current system lacks the ability to...",
+      "translations": {
+        "zh-TW": "目前系統無法..."
+      },
+      "explanations": {
+        "zh-TW": "說明現有系統的限制"
+      }
+    },
+    {
+      "id": "en-it-1-01-3",
+      "pattern": "This feature would improve efficiency by...",
+      "translations": {
+        "zh-TW": "此功能將透過...提升效率"
+      },
+      "explanations": {
+        "zh-TW": "說明功能帶來的效益"
+      }
+    },
+    {
+      "id": "en-it-1-01-4",
+      "pattern": "Please let me know if you need further clarification.",
+      "translations": {
+        "zh-TW": "如需進一步說明請告知。"
+      },
+      "explanations": {
+        "zh-TW": "信件結尾的標準用語"
+      }
+    },
+    {
+      "id": "en-it-1-01-5",
+      "pattern": "I have attached the detailed specifications.",
+      "translations": {
+        "zh-TW": "我已附上詳細規格說明。"
+      },
+      "explanations": {
+        "zh-TW": "說明附件內容"
+      }
+    }
+  ],
+  "it-2": [
+    {
+      "id": "en-it-2-01-1",
+      "pattern": "Could you explain how this feature works?",
+      "translations": {
+        "zh-TW": "你能解釋這個功能怎麼運作嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問軟體功能的標準用語"
+      }
+    },
+    {
+      "id": "en-it-2-01-2",
+      "pattern": "Where can I find the settings for...?",
+      "translations": {
+        "zh-TW": "我在哪裡可以找到...的設定？"
+      },
+      "explanations": {
+        "zh-TW": "詢問設定位置"
+      }
+    },
+    {
+      "id": "en-it-2-01-3",
+      "pattern": "Is there a way to customize...?",
+      "translations": {
+        "zh-TW": "有辦法自訂...嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問客製化選項"
+      }
+    },
+    {
+      "id": "en-it-2-01-4",
+      "pattern": "What are the system requirements?",
+      "translations": {
+        "zh-TW": "系統需求是什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問系統需求"
+      }
+    },
+    {
+      "id": "en-it-2-01-5",
+      "pattern": "Does this integrate with...?",
+      "translations": {
+        "zh-TW": "這能與...整合嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問整合功能"
+      }
+    }
+  ],
+  "it-3": [
+    {
+      "id": "en-it-3-01-1",
+      "pattern": "I am writing to update you on the project status.",
+      "translations": {
+        "zh-TW": "我寫信向您報告專案進度。"
+      },
+      "explanations": {
+        "zh-TW": "專案進度報告的開場白"
+      }
+    },
+    {
+      "id": "en-it-3-01-2",
+      "pattern": "We have completed the first phase.",
+      "translations": {
+        "zh-TW": "我們已完成第一階段。"
+      },
+      "explanations": {
+        "zh-TW": "說明完成進度"
+      }
+    },
+    {
+      "id": "en-it-3-01-3",
+      "pattern": "We encountered a blocker with...",
+      "translations": {
+        "zh-TW": "我們在...遇到阻礙。"
+      },
+      "explanations": {
+        "zh-TW": "說明遇到的問題"
+      }
+    },
+    {
+      "id": "en-it-3-01-4",
+      "pattern": "The estimated completion date is...",
+      "translations": {
+        "zh-TW": "預計完成日期是..."
+      },
+      "explanations": {
+        "zh-TW": "說明預計時程"
+      }
+    },
+    {
+      "id": "en-it-3-01-5",
+      "pattern": "I will follow up with a detailed report.",
+      "translations": {
+        "zh-TW": "我會提供詳細報告。"
+      },
+      "explanations": {
+        "zh-TW": "結尾承諾"
+      }
+    }
+  ],
+  "it-4": [
+    {
+      "id": "en-it-4-01-1",
+      "pattern": "Let us discuss the new feature requirements.",
+      "translations": {
+        "zh-TW": "我們來討論新功能需求。"
+      },
+      "explanations": {
+        "zh-TW": "開始討論的開場白"
+      }
+    },
+    {
+      "id": "en-it-4-01-2",
+      "pattern": "What are the priorities for this sprint?",
+      "translations": {
+        "zh-TW": "這個衝刺週期的優先事項是什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問優先順序"
+      }
+    },
+    {
+      "id": "en-it-4-01-3",
+      "pattern": "We need to refactor the code for...",
+      "translations": {
+        "zh-TW": "我們需要重構...的程式碼。"
+      },
+      "explanations": {
+        "zh-TW": "提出技術建議"
+      }
+    },
+    {
+      "id": "en-it-4-01-4",
+      "pattern": "The deadline for this feature is...",
+      "translations": {
+        "zh-TW": "此功能的截止日期是..."
+      },
+      "explanations": {
+        "zh-TW": "說明時程"
+      }
+    },
+    {
+      "id": "en-it-4-01-5",
+      "pattern": "I suggest we pair program on this.",
+      "translations": {
+        "zh-TW": "我建議我們一起配對編程。"
+      },
+      "explanations": {
+        "zh-TW": "提議協作方式"
+      }
+    }
+  ],
+  "it-5": [
+    {
+      "id": "en-it-5-01-1",
+      "pattern": "Can everyone hear me clearly?",
+      "translations": {
+        "zh-TW": "大家能聽清楚嗎？"
+      },
+      "explanations": {
+        "zh-TW": "視訊會議開場確認"
+      }
+    },
+    {
+      "id": "en-it-5-01-2",
+      "pattern": "Let me share my screen.",
+      "translations": {
+        "zh-TW": "讓我分享螢幕。"
+      },
+      "explanations": {
+        "zh-TW": "分享螢幕的標準用語"
+      }
+    },
+    {
+      "id": "en-it-5-01-3",
+      "pattern": "Could you repeat that, please?",
+      "translations": {
+        "zh-TW": "能請你再說一次嗎？"
+      },
+      "explanations": {
+        "zh-TW": "請求重複的禮貌用語"
+      }
+    },
+    {
+      "id": "en-it-5-01-4",
+      "pattern": "We are experiencing some connection issues.",
+      "translations": {
+        "zh-TW": "我們遇到連線問題。"
+      },
+      "explanations": {
+        "zh-TW": "說明技術問題"
+      }
+    },
+    {
+      "id": "en-it-5-01-5",
+      "pattern": "Let us schedule a follow-up meeting.",
+      "translations": {
+        "zh-TW": "我們來安排後續會議。"
+      },
+      "explanations": {
+        "zh-TW": "安排下一步的標準用語"
+      }
+    }
+  ],
+  "it-6": [
+    {
+      "id": "en-it-6-01-1",
+      "pattern": "We need to design a scalable architecture.",
+      "translations": {
+        "zh-TW": "我們需要設計可擴展的架構。"
+      },
+      "explanations": {
+        "zh-TW": "提出架構設計方向"
+      }
+    },
+    {
+      "id": "en-it-6-01-2",
+      "pattern": "What security measures are in place?",
+      "translations": {
+        "zh-TW": "現有的安全措施是什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問安全機制"
+      }
+    },
+    {
+      "id": "en-it-6-01-3",
+      "pattern": "We should implement encryption for...",
+      "translations": {
+        "zh-TW": "我們應該為...實作加密。"
+      },
+      "explanations": {
+        "zh-TW": "提出安全建議"
+      }
+    },
+    {
+      "id": "en-it-6-01-4",
+      "pattern": "The system needs redundancy for...",
+      "translations": {
+        "zh-TW": "系統需要為...做備援。"
+      },
+      "explanations": {
+        "zh-TW": "說明備援需求"
+      }
+    },
+    {
+      "id": "en-it-6-01-5",
+      "pattern": "Let us conduct a security audit.",
+      "translations": {
+        "zh-TW": "我們來進行安全稽核。"
+      },
+      "explanations": {
+        "zh-TW": "提議安全檢查"
+      }
+    }
+  ],
+  "sales-1": [
+    {
+      "id": "en-sales-1-01-1",
+      "pattern": "Thank you for your interest in our product.",
+      "translations": {
+        "zh-TW": "感謝您對我們產品的興趣。"
+      },
+      "explanations": {
+        "zh-TW": "產品介紹的標準開場白"
+      }
+    },
+    {
+      "id": "en-sales-1-01-2",
+      "pattern": "Let me briefly introduce what we offer.",
+      "translations": {
+        "zh-TW": "讓我簡單介紹我們提供的產品。"
+      },
+      "explanations": {
+        "zh-TW": "開始產品介紹的轉場語"
+      }
+    },
+    {
+      "id": "en-sales-1-01-3",
+      "pattern": "Our product is designed to help you...",
+      "translations": {
+        "zh-TW": "我們的產品專為幫助您...而設計。"
+      },
+      "explanations": {
+        "zh-TW": "說明產品目的"
+      }
+    },
+    {
+      "id": "en-sales-1-01-4",
+      "pattern": "What sets us apart is...",
+      "translations": {
+        "zh-TW": "我們與眾不同之處在於..."
+      },
+      "explanations": {
+        "zh-TW": "強調產品獨特性"
+      }
+    },
+    {
+      "id": "en-sales-1-01-5",
+      "pattern": "Would you like me to demonstrate?",
+      "translations": {
+        "zh-TW": "您希望我演示嗎？"
+      },
+      "explanations": {
+        "zh-TW": "提議展示產品"
+      }
+    }
+  ],
+  "sales-2": [
+    {
+      "id": "en-sales-2-01-1",
+      "pattern": "What brings you here today?",
+      "translations": {
+        "zh-TW": "今天是什麼風把您吹來的？"
+      },
+      "explanations": {
+        "zh-TW": "開場詢問客戶需求的禮貌用語"
+      }
+    },
+    {
+      "id": "en-sales-2-01-2",
+      "pattern": "What challenges are you facing?",
+      "translations": {
+        "zh-TW": "您目前面臨哪些挑戰？"
+      },
+      "explanations": {
+        "zh-TW": "詢問客戶痛點"
+      }
+    },
+    {
+      "id": "en-sales-2-01-3",
+      "pattern": "What are your goals for this quarter?",
+      "translations": {
+        "zh-TW": "您本季度的目標是什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問業務目標"
+      }
+    },
+    {
+      "id": "en-sales-2-01-4",
+      "pattern": "How do you currently handle...?",
+      "translations": {
+        "zh-TW": "您目前如何處理...？"
+      },
+      "explanations": {
+        "zh-TW": "了解現狀流程"
+      }
+    },
+    {
+      "id": "en-sales-2-01-5",
+      "pattern": "What is your timeline for this project?",
+      "translations": {
+        "zh-TW": "此專案的時間表是什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問專案時程"
+      }
+    }
+  ],
+  "sales-3": [
+    {
+      "id": "en-sales-3-01-1",
+      "pattern": "I understand your concern about the price.",
+      "translations": {
+        "zh-TW": "我理解您對價格的疑慮。"
+      },
+      "explanations": {
+        "zh-TW": "認同客戶感受的開場白"
+      }
+    },
+    {
+      "id": "en-sales-3-01-2",
+      "pattern": "Let me explain the value you will receive.",
+      "translations": {
+        "zh-TW": "讓我說明您將獲得的價值。"
+      },
+      "explanations": {
+        "zh-TW": "轉向價值說明"
+      }
+    },
+    {
+      "id": "en-sales-3-01-3",
+      "pattern": "If you compare the features...",
+      "translations": {
+        "zh-TW": "如果您比較功能..."
+      },
+      "explanations": {
+        "zh-TW": "開始功能比較"
+      }
+    },
+    {
+      "id": "en-sales-3-01-4",
+      "pattern": "We can offer a discount for...",
+      "translations": {
+        "zh-TW": "我們可以為...提供折扣。"
+      },
+      "explanations": {
+        "zh-TW": "提出折扣方案"
+      }
+    },
+    {
+      "id": "en-sales-3-01-5",
+      "pattern": "Would a payment plan help?",
+      "translations": {
+        "zh-TW": "分期付款方案有幫助嗎？"
+      },
+      "explanations": {
+        "zh-TW": "提議替代方案"
+      }
+    }
+  ],
+  "sales-4": [
+    {
+      "id": "en-sales-4-01-1",
+      "pattern": "Let me show you how this works.",
+      "translations": {
+        "zh-TW": "讓我向您展示這是如何運作的。"
+      },
+      "explanations": {
+        "zh-TW": "開始產品演示的標準用語"
+      }
+    },
+    {
+      "id": "en-sales-4-01-2",
+      "pattern": "As you can see on the screen...",
+      "translations": {
+        "zh-TW": "如您在螢幕上所見..."
+      },
+      "explanations": {
+        "zh-TW": "引導客戶注意力的用語"
+      }
+    },
+    {
+      "id": "en-sales-4-01-3",
+      "pattern": "This feature allows you to...",
+      "translations": {
+        "zh-TW": "此功能讓您能夠..."
+      },
+      "explanations": {
+        "zh-TW": "說明功能用途"
+      }
+    },
+    {
+      "id": "en-sales-4-01-4",
+      "pattern": "Would you like to try it yourself?",
+      "translations": {
+        "zh-TW": "您想親自試試看嗎？"
+      },
+      "explanations": {
+        "zh-TW": "邀請客戶體驗"
+      }
+    },
+    {
+      "id": "en-sales-4-01-5",
+      "pattern": "Do you have any questions so far?",
+      "translations": {
+        "zh-TW": "目前有任何問題嗎？"
+      },
+      "explanations": {
+        "zh-TW": "確認客戶理解狀況"
+      }
+    }
+  ],
+  "sales-5": [
+    {
+      "id": "en-sales-5-01-1",
+      "pattern": "Let us discuss the contract terms.",
+      "translations": {
+        "zh-TW": "我們來討論合約條款。"
+      },
+      "explanations": {
+        "zh-TW": "開始談判的開場白"
+      }
+    },
+    {
+      "id": "en-sales-5-01-2",
+      "pattern": "We need to review the payment terms.",
+      "translations": {
+        "zh-TW": "我們需要審查付款條款。"
+      },
+      "explanations": {
+        "zh-TW": "提出具體條款"
+      }
+    },
+    {
+      "id": "en-sales-5-01-3",
+      "pattern": "The delivery timeline is...",
+      "translations": {
+        "zh-TW": "交付時間表是..."
+      },
+      "explanations": {
+        "zh-TW": "說明時程安排"
+      }
+    },
+    {
+      "id": "en-sales-5-01-4",
+      "pattern": "We can negotiate on...",
+      "translations": {
+        "zh-TW": "我們可以就...進行協商。"
+      },
+      "explanations": {
+        "zh-TW": "表達協商意願"
+      }
+    },
+    {
+      "id": "en-sales-5-01-5",
+      "pattern": "Let us find a middle ground.",
+      "translations": {
+        "zh-TW": "讓我們找到折衷方案。"
+      },
+      "explanations": {
+        "zh-TW": "提議妥協"
+      }
+    }
+  ],
+  "sales-6": [
+    {
+      "id": "en-sales-6-01-1",
+      "pattern": "We look forward to a long-term partnership.",
+      "translations": {
+        "zh-TW": "我們期待建立長期合作夥伴關係。"
+      },
+      "explanations": {
+        "zh-TW": "表達合作意願的開場白"
+      }
+    },
+    {
+      "id": "en-sales-6-01-2",
+      "pattern": "Let us explore collaboration opportunities.",
+      "translations": {
+        "zh-TW": "讓我們探索合作機會。"
+      },
+      "explanations": {
+        "zh-TW": "提出合作討論"
+      }
+    },
+    {
+      "id": "en-sales-6-01-3",
+      "pattern": "We value your expertise in...",
+      "translations": {
+        "zh-TW": "我們重視您在...的專業。"
+      },
+      "explanations": {
+        "zh-TW": "肯定對方優勢"
+      }
+    },
+    {
+      "id": "en-sales-6-01-4",
+      "pattern": "How can we support each other?",
+      "translations": {
+        "zh-TW": "我們如何互相支持？"
+      },
+      "explanations": {
+        "zh-TW": "詢問合作方式"
+      }
+    },
+    {
+      "id": "en-sales-6-01-5",
+      "pattern": "Let us draft a partnership agreement.",
+      "translations": {
+        "zh-TW": "讓我們起草合作夥伴協議。"
+      },
+      "explanations": {
+        "zh-TW": "提議具體行動"
+      }
+    }
+  ],
+  "hr-1": [
+    {
+      "id": "en-hr-1-01-1",
+      "pattern": "Thank you for applying to our company.",
+      "translations": {
+        "zh-TW": "感謝您應徵我們公司。"
+      },
+      "explanations": {
+        "zh-TW": "面試邀請的開場白"
+      }
+    },
+    {
+      "id": "en-hr-1-01-2",
+      "pattern": "We would like to schedule an interview.",
+      "translations": {
+        "zh-TW": "我們想安排一場面試。"
+      },
+      "explanations": {
+        "zh-TW": "提出面試邀請"
+      }
+    },
+    {
+      "id": "en-hr-1-01-3",
+      "pattern": "Are you available on...?",
+      "translations": {
+        "zh-TW": "您在...方便嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問可行時間"
+      }
+    },
+    {
+      "id": "en-hr-1-01-4",
+      "pattern": "The interview will take approximately...",
+      "translations": {
+        "zh-TW": "面試大約需要..."
+      },
+      "explanations": {
+        "zh-TW": "說明面試時長"
+      }
+    },
+    {
+      "id": "en-hr-1-01-5",
+      "pattern": "Please bring your portfolio.",
+      "translations": {
+        "zh-TW": "請攜帶您的作品集。"
+      },
+      "explanations": {
+        "zh-TW": "提醒準備事項"
+      }
+    }
+  ],
+  "hr-2": [
+    {
+      "id": "en-hr-2-01-1",
+      "pattern": "Let me explain our benefits package.",
+      "translations": {
+        "zh-TW": "讓我說明我們的福利方案。"
+      },
+      "explanations": {
+        "zh-TW": "開始福利說明的用語"
+      }
+    },
+    {
+      "id": "en-hr-2-01-2",
+      "pattern": "We offer health insurance.",
+      "translations": {
+        "zh-TW": "我們提供健康保險。"
+      },
+      "explanations": {
+        "zh-TW": "說明保險福利"
+      }
+    },
+    {
+      "id": "en-hr-2-01-3",
+      "pattern": "Employees get paid leave.",
+      "translations": {
+        "zh-TW": "員工享有帶薪休假。"
+      },
+      "explanations": {
+        "zh-TW": "說明休假制度"
+      }
+    },
+    {
+      "id": "en-hr-2-01-4",
+      "pattern": "The probation period is...",
+      "translations": {
+        "zh-TW": "試用期為..."
+      },
+      "explanations": {
+        "zh-TW": "說明試用期"
+      }
+    },
+    {
+      "id": "en-hr-2-01-5",
+      "pattern": "Do you have any questions?",
+      "translations": {
+        "zh-TW": "有任何問題嗎？"
+      },
+      "explanations": {
+        "zh-TW": "確認理解狀況"
+      }
+    }
+  ],
+  "hr-3": [
+    {
+      "id": "en-hr-3-01-1",
+      "pattern": "Tell me about yourself.",
+      "translations": {
+        "zh-TW": "請自我介紹。"
+      },
+      "explanations": {
+        "zh-TW": "面試開場的標準問題"
+      }
+    },
+    {
+      "id": "en-hr-3-01-2",
+      "pattern": "Why do you want to work here?",
+      "translations": {
+        "zh-TW": "為什麼想在這裡工作？"
+      },
+      "explanations": {
+        "zh-TW": "詢問求職動機"
+      }
+    },
+    {
+      "id": "en-hr-3-01-3",
+      "pattern": "What are your strengths?",
+      "translations": {
+        "zh-TW": "你的優點是什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問個人特質"
+      }
+    },
+    {
+      "id": "en-hr-3-01-4",
+      "pattern": "Describe a challenge you overcame.",
+      "translations": {
+        "zh-TW": "描述你克服過的挑戰。"
+      },
+      "explanations": {
+        "zh-TW": "行為面試問題"
+      }
+    },
+    {
+      "id": "en-hr-3-01-5",
+      "pattern": "Where do you see yourself in 5 years?",
+      "translations": {
+        "zh-TW": "你五年後想在哪裡？"
+      },
+      "explanations": {
+        "zh-TW": "詢問職涯規劃"
+      }
+    }
+  ],
+  "hr-4": [
+    {
+      "id": "en-hr-4-01-1",
+      "pattern": "Let us plan the onboarding program.",
+      "translations": {
+        "zh-TW": "我們來規劃入職培訓計畫。"
+      },
+      "explanations": {
+        "zh-TW": "開始討論的開場白"
+      }
+    },
+    {
+      "id": "en-hr-4-01-2",
+      "pattern": "New hires need orientation.",
+      "translations": {
+        "zh-TW": "新進員工需要入職培訓。"
+      },
+      "explanations": {
+        "zh-TW": "說明培訓需求"
+      }
+    },
+    {
+      "id": "en-hr-4-01-3",
+      "pattern": "The training lasts...",
+      "translations": {
+        "zh-TW": "培訓為期..."
+      },
+      "explanations": {
+        "zh-TW": "說明培訓時長"
+      }
+    },
+    {
+      "id": "en-hr-4-01-4",
+      "pattern": "We should assign a mentor.",
+      "translations": {
+        "zh-TW": "我們應該分配一位導師。"
+      },
+      "explanations": {
+        "zh-TW": "提出具體建議"
+      }
+    },
+    {
+      "id": "en-hr-4-01-5",
+      "pattern": "Let us review the schedule.",
+      "translations": {
+        "zh-TW": "我們來檢視時程表。"
+      },
+      "explanations": {
+        "zh-TW": "確認計畫細節"
+      }
+    }
+  ],
+  "hr-5": [
+    {
+      "id": "en-hr-5-01-1",
+      "pattern": "We need to address the conflict.",
+      "translations": {
+        "zh-TW": "我們需要處理這個衝突。"
+      },
+      "explanations": {
+        "zh-TW": "開始調解的開場白"
+      }
+    },
+    {
+      "id": "en-hr-5-01-2",
+      "pattern": "Please explain your side.",
+      "translations": {
+        "zh-TW": "請說明您的立場。"
+      },
+      "explanations": {
+        "zh-TW": "給予發言機會"
+      }
+    },
+    {
+      "id": "en-hr-5-01-3",
+      "pattern": "I understand your frustration.",
+      "translations": {
+        "zh-TW": "我理解您的挫折感。"
+      },
+      "explanations": {
+        "zh-TW": "展現同理心"
+      }
+    },
+    {
+      "id": "en-hr-5-01-4",
+      "pattern": "Let us find a solution.",
+      "translations": {
+        "zh-TW": "讓我們找到解決方案。"
+      },
+      "explanations": {
+        "zh-TW": "提議解決問題"
+      }
+    },
+    {
+      "id": "en-hr-5-01-5",
+      "pattern": "We expect professional behavior.",
+      "translations": {
+        "zh-TW": "我們期待專業的行為。"
+      },
+      "explanations": {
+        "zh-TW": "設定行為標準"
+      }
+    }
+  ],
+  "hr-6": [
+    {
+      "id": "en-hr-6-01-1",
+      "pattern": "We need to discuss talent retention.",
+      "translations": {
+        "zh-TW": "我們需要討論人才留任。"
+      },
+      "explanations": {
+        "zh-TW": "開始討論的開場白"
+      }
+    },
+    {
+      "id": "en-hr-6-01-2",
+      "pattern": "High performers need recognition.",
+      "translations": {
+        "zh-TW": "高績效員工需要認可。"
+      },
+      "explanations": {
+        "zh-TW": "說明留任策略"
+      }
+    },
+    {
+      "id": "en-hr-6-01-3",
+      "pattern": "We should review compensation.",
+      "translations": {
+        "zh-TW": "我們應該檢視薪酬。"
+      },
+      "explanations": {
+        "zh-TW": "提出具體建議"
+      }
+    },
+    {
+      "id": "en-hr-6-01-4",
+      "pattern": "Layoffs are a last resort.",
+      "translations": {
+        "zh-TW": "裁員是最後手段。"
+      },
+      "explanations": {
+        "zh-TW": "說明政策立場"
+      }
+    },
+    {
+      "id": "en-hr-6-01-5",
+      "pattern": "Let us create a transition plan.",
+      "translations": {
+        "zh-TW": "我們來制定過渡計畫。"
+      },
+      "explanations": {
+        "zh-TW": "提出行動方案"
+      }
+    }
+  ],
+  "legal-1": [
+    {
+      "id": "en-legal-1-01-1",
+      "pattern": "We need to confirm the signing date.",
+      "translations": {
+        "zh-TW": "我們需要確認簽署日期。"
+      },
+      "explanations": {
+        "zh-TW": "開始確認合約流程的用語"
+      }
+    },
+    {
+      "id": "en-legal-1-01-2",
+      "pattern": "Is the contract ready for signature?",
+      "translations": {
+        "zh-TW": "合約準備好簽署了嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問合約狀態"
+      }
+    },
+    {
+      "id": "en-legal-1-01-3",
+      "pattern": "Please review the draft before...",
+      "translations": {
+        "zh-TW": "請在...之前審閱草案。"
+      },
+      "explanations": {
+        "zh-TW": "設定審閱期限"
+      }
+    },
+    {
+      "id": "en-legal-1-01-4",
+      "pattern": "We need two witnesses.",
+      "translations": {
+        "zh-TW": "我們需要兩位見證人。"
+      },
+      "explanations": {
+        "zh-TW": "說明簽署要求"
+      }
+    },
+    {
+      "id": "en-legal-1-01-5",
+      "pattern": "Let us schedule the signing meeting.",
+      "translations": {
+        "zh-TW": "我們來安排簽署會議。"
+      },
+      "explanations": {
+        "zh-TW": "提議具體行動"
+      }
+    }
+  ],
+  "legal-2": [
+    {
+      "id": "en-legal-2-01-1",
+      "pattern": "What does this term mean?",
+      "translations": {
+        "zh-TW": "這個術語是什麼意思？"
+      },
+      "explanations": {
+        "zh-TW": "詢問法律術語定義的標準用語"
+      }
+    },
+    {
+      "id": "en-legal-2-01-2",
+      "pattern": "Could you clarify the definition of...?",
+      "translations": {
+        "zh-TW": "您能說明...的定義嗎？"
+      },
+      "explanations": {
+        "zh-TW": "禮貌請求解釋"
+      }
+    },
+    {
+      "id": "en-legal-2-01-3",
+      "pattern": "I am not familiar with this concept.",
+      "translations": {
+        "zh-TW": "我不熟悉這個概念。"
+      },
+      "explanations": {
+        "zh-TW": "坦承不了解的用語"
+      }
+    },
+    {
+      "id": "en-legal-2-01-4",
+      "pattern": "Please explain in plain language.",
+      "translations": {
+        "zh-TW": "請用簡單的語言解釋。"
+      },
+      "explanations": {
+        "zh-TW": "請求通俗解釋"
+      }
+    },
+    {
+      "id": "en-legal-2-01-5",
+      "pattern": "Does this have any legal implications?",
+      "translations": {
+        "zh-TW": "這有什麼法律含義嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問法律影響"
+      }
+    }
+  ],
+  "legal-3": [
+    {
+      "id": "en-legal-3-01-1",
+      "pattern": "I need to review the terms of service.",
+      "translations": {
+        "zh-TW": "我需要審查服務條款。"
+      },
+      "explanations": {
+        "zh-TW": "開始審查合約的用語"
+      }
+    },
+    {
+      "id": "en-legal-3-01-2",
+      "pattern": "This clause needs revision.",
+      "translations": {
+        "zh-TW": "這個條款需要修訂。"
+      },
+      "explanations": {
+        "zh-TW": "指出問題條款"
+      }
+    },
+    {
+      "id": "en-legal-3-01-3",
+      "pattern": "We cannot accept this term.",
+      "translations": {
+        "zh-TW": "我們無法接受此條款。"
+      },
+      "explanations": {
+        "zh-TW": "表達拒絕立場"
+      }
+    },
+    {
+      "id": "en-legal-3-01-4",
+      "pattern": "Please clarify the liability section.",
+      "translations": {
+        "zh-TW": "請說明責任歸屬部分。"
+      },
+      "explanations": {
+        "zh-TW": "要求具體說明"
+      }
+    },
+    {
+      "id": "en-legal-3-01-5",
+      "pattern": "Let us negotiate this provision.",
+      "translations": {
+        "zh-TW": "我們來協商此條款。"
+      },
+      "explanations": {
+        "zh-TW": "提議協商"
+      }
+    }
+  ],
+  "legal-4": [
+    {
+      "id": "en-legal-4-01-1",
+      "pattern": "We need to sign an NDA.",
+      "translations": {
+        "zh-TW": "我們需要簽署保密協議。"
+      },
+      "explanations": {
+        "zh-TW": "提出保密協議要求的用語"
+      }
+    },
+    {
+      "id": "en-legal-4-01-2",
+      "pattern": "What information is covered?",
+      "translations": {
+        "zh-TW": "涵蓋哪些資訊？"
+      },
+      "explanations": {
+        "zh-TW": "詢問保密範圍"
+      }
+    },
+    {
+      "id": "en-legal-4-01-3",
+      "pattern": "How long does this agreement last?",
+      "translations": {
+        "zh-TW": "此協議期限多久？"
+      },
+      "explanations": {
+        "zh-TW": "詢問有效期"
+      }
+    },
+    {
+      "id": "en-legal-4-01-4",
+      "pattern": "Are there any exceptions?",
+      "translations": {
+        "zh-TW": "有任何例外嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問豁免情況"
+      }
+    },
+    {
+      "id": "en-legal-4-01-5",
+      "pattern": "We need legal counsel to review.",
+      "translations": {
+        "zh-TW": "我們需要法律顧問審閱。"
+      },
+      "explanations": {
+        "zh-TW": "提出專業審查需求"
+      }
+    }
+  ],
+  "legal-5": [
+    {
+      "id": "en-legal-5-01-1",
+      "pattern": "There has been a breach of contract.",
+      "translations": {
+        "zh-TW": "發生了違約情況。"
+      },
+      "explanations": {
+        "zh-TW": "提出違約主張的開場白"
+      }
+    },
+    {
+      "id": "en-legal-5-01-2",
+      "pattern": "You failed to deliver as agreed.",
+      "translations": {
+        "zh-TW": "您未能依約交付。"
+      },
+      "explanations": {
+        "zh-TW": "說明具體違約事實"
+      }
+    },
+    {
+      "id": "en-legal-5-01-3",
+      "pattern": "We seek damages for...",
+      "translations": {
+        "zh-TW": "我們就...要求損害賠償。"
+      },
+      "explanations": {
+        "zh-TW": "提出賠償要求"
+      }
+    },
+    {
+      "id": "en-legal-5-01-4",
+      "pattern": "This constitutes a material breach.",
+      "translations": {
+        "zh-TW": "這構成重大違約。"
+      },
+      "explanations": {
+        "zh-TW": "說明違約嚴重程度"
+      }
+    },
+    {
+      "id": "en-legal-5-01-5",
+      "pattern": "We reserve our legal rights.",
+      "translations": {
+        "zh-TW": "我們保留法律追訴權。"
+      },
+      "explanations": {
+        "zh-TW": "法律聲明的標準用語"
+      }
+    }
+  ],
+  "legal-6": [
+    {
+      "id": "en-legal-6-01-1",
+      "pattern": "We need to protect our IP globally.",
+      "translations": {
+        "zh-TW": "我們需要全球保護我們的知識產權。"
+      },
+      "explanations": {
+        "zh-TW": "提出跨國知識產權議題的開場白"
+      }
+    },
+    {
+      "id": "en-legal-6-01-2",
+      "pattern": "Which countries should we file in?",
+      "translations": {
+        "zh-TW": "我們應該在哪些國家申請？"
+      },
+      "explanations": {
+        "zh-TW": "詢問保護範圍"
+      }
+    },
+    {
+      "id": "en-legal-6-01-3",
+      "pattern": "What is the filing deadline?",
+      "translations": {
+        "zh-TW": "申請期限是什麼時候？"
+      },
+      "explanations": {
+        "zh-TW": "詢問時程"
+      }
+    },
+    {
+      "id": "en-legal-6-01-4",
+      "pattern": "We need a local counsel in...",
+      "translations": {
+        "zh-TW": "我們需要在...的當地律師。"
+      },
+      "explanations": {
+        "zh-TW": "提出專業需求"
+      }
+    },
+    {
+      "id": "en-legal-6-01-5",
+      "pattern": "How do we enforce our rights?",
+      "translations": {
+        "zh-TW": "我們如何執行我們的權利？"
+      },
+      "explanations": {
+        "zh-TW": "詢問維權方式"
+      }
+    }
+  ],
+  "fin-1": [
+    {
+      "id": "en-fin-1-01-1",
+      "pattern": "I need to submit my expense report.",
+      "translations": {
+        "zh-TW": "我需要提交差旅費用報銷單。"
+      },
+      "explanations": {
+        "zh-TW": "開始報銷流程的標準用語"
+      }
+    },
+    {
+      "id": "en-fin-1-01-2",
+      "pattern": "Here are my receipts.",
+      "translations": {
+        "zh-TW": "這是我的收據。"
+      },
+      "explanations": {
+        "zh-TW": "提交證明文件"
+      }
+    },
+    {
+      "id": "en-fin-1-01-3",
+      "pattern": "The total amount is...",
+      "translations": {
+        "zh-TW": "總金額是..."
+      },
+      "explanations": {
+        "zh-TW": "說明報銷金額"
+      }
+    },
+    {
+      "id": "en-fin-1-01-4",
+      "pattern": "When will I be reimbursed?",
+      "translations": {
+        "zh-TW": "什麼時候會核銷？"
+      },
+      "explanations": {
+        "zh-TW": "詢問處理時程"
+      }
+    },
+    {
+      "id": "en-fin-1-01-5",
+      "pattern": "Is this expense covered?",
+      "translations": {
+        "zh-TW": "這筆費用有涵蓋嗎？"
+      },
+      "explanations": {
+        "zh-TW": "確認報銷資格"
+      }
+    }
+  ],
+  "fin-2": [
+    {
+      "id": "en-fin-2-01-1",
+      "pattern": "I need to verify this invoice.",
+      "translations": {
+        "zh-TW": "我需要核對這張發票。"
+      },
+      "explanations": {
+        "zh-TW": "開始核對發票的用語"
+      }
+    },
+    {
+      "id": "en-fin-2-01-2",
+      "pattern": "There is a discrepancy in the amount.",
+      "translations": {
+        "zh-TW": "金額有出入。"
+      },
+      "explanations": {
+        "zh-TW": "指出錯誤"
+      }
+    },
+    {
+      "id": "en-fin-2-01-3",
+      "pattern": "Could you check your records?",
+      "translations": {
+        "zh-TW": "您能查一下您的記錄嗎？"
+      },
+      "explanations": {
+        "zh-TW": "請求對方確認"
+      }
+    },
+    {
+      "id": "en-fin-2-01-4",
+      "pattern": "Please send a corrected invoice.",
+      "translations": {
+        "zh-TW": "請發送更正後的發票。"
+      },
+      "explanations": {
+        "zh-TW": "要求補救措施"
+      }
+    },
+    {
+      "id": "en-fin-2-01-5",
+      "pattern": "We need this resolved by...",
+      "translations": {
+        "zh-TW": "我們需要在...之前解決這個問題。"
+      },
+      "explanations": {
+        "zh-TW": "設定解決期限"
+      }
+    }
+  ],
+  "fin-3": [
+    {
+      "id": "en-fin-3-01-1",
+      "pattern": "We exceeded our budget this year.",
+      "translations": {
+        "zh-TW": "我們今年預算超支了。"
+      },
+      "explanations": {
+        "zh-TW": "報告預算問題的開場白"
+      }
+    },
+    {
+      "id": "en-fin-3-01-2",
+      "pattern": "The main reason was...",
+      "translations": {
+        "zh-TW": "主要原因是..."
+      },
+      "explanations": {
+        "zh-TW": "開始解釋原因"
+      }
+    },
+    {
+      "id": "en-fin-3-01-3",
+      "pattern": "We had unexpected costs for...",
+      "translations": {
+        "zh-TW": "我們有...的意外支出。"
+      },
+      "explanations": {
+        "zh-TW": "說明具體支出"
+      }
+    },
+    {
+      "id": "en-fin-3-01-4",
+      "pattern": "We have taken measures to...",
+      "translations": {
+        "zh-TW": "我們已採取措施..."
+      },
+      "explanations": {
+        "zh-TW": "說明應對行動"
+      }
+    },
+    {
+      "id": "en-fin-3-01-5",
+      "pattern": "We will be more careful next year.",
+      "translations": {
+        "zh-TW": "我們明年會更謹慎。"
+      },
+      "explanations": {
+        "zh-TW": "承諾改進"
+      }
+    }
+  ],
+  "fin-4": [
+    {
+      "id": "en-fin-4-01-1",
+      "pattern": "Let us analyze the quarterly report.",
+      "translations": {
+        "zh-TW": "我們來分析季度財務報表。"
+      },
+      "explanations": {
+        "zh-TW": "開始財報分析的開場白"
+      }
+    },
+    {
+      "id": "en-fin-4-01-2",
+      "pattern": "Revenue increased by...",
+      "translations": {
+        "zh-TW": "營收增加了..."
+      },
+      "explanations": {
+        "zh-TW": "報告營收變化"
+      }
+    },
+    {
+      "id": "en-fin-4-01-3",
+      "pattern": "Operating expenses rose due to...",
+      "translations": {
+        "zh-TW": "營業費用因...而上升。"
+      },
+      "explanations": {
+        "zh-TW": "解釋費用變化"
+      }
+    },
+    {
+      "id": "en-fin-4-01-4",
+      "pattern": "Net profit margin is...",
+      "translations": {
+        "zh-TW": "淨利率是..."
+      },
+      "explanations": {
+        "zh-TW": "報告利潤指標"
+      }
+    },
+    {
+      "id": "en-fin-4-01-5",
+      "pattern": "We should monitor cash flow closely.",
+      "translations": {
+        "zh-TW": "我們應密切監控現金流。"
+      },
+      "explanations": {
+        "zh-TW": "提出建議"
+      }
+    }
+  ],
+  "fin-5": [
+    {
+      "id": "en-fin-5-01-1",
+      "pattern": "We need to value the acquisition target.",
+      "translations": {
+        "zh-TW": "我們需要對併購標的進行估值。"
+      },
+      "explanations": {
+        "zh-TW": "開始併購討論的開場白"
+      }
+    },
+    {
+      "id": "en-fin-5-01-2",
+      "pattern": "What is their EBITDA?",
+      "translations": {
+        "zh-TW": "他們的 EBITDA 是多少？"
+      },
+      "explanations": {
+        "zh-TW": "詢問關鍵財務指標"
+      }
+    },
+    {
+      "id": "en-fin-5-01-3",
+      "pattern": "The goodwill should reflect...",
+      "translations": {
+        "zh-TW": "商譽應反映..."
+      },
+      "explanations": {
+        "zh-TW": "討論無形資產價值"
+      }
+    },
+    {
+      "id": "en-fin-5-01-4",
+      "pattern": "We need due diligence on...",
+      "translations": {
+        "zh-TW": "我們需要對...進行盡職調查。"
+      },
+      "explanations": {
+        "zh-TW": "提出調查需求"
+      }
+    },
+    {
+      "id": "en-fin-5-01-5",
+      "pattern": "The valuation range is...",
+      "translations": {
+        "zh-TW": "估值區間是..."
+      },
+      "explanations": {
+        "zh-TW": "報告估值結果"
+      }
+    }
+  ],
+  "fin-6": [
+    {
+      "id": "en-fin-6-01-1",
+      "pattern": "I will present the risk assessment.",
+      "translations": {
+        "zh-TW": "我將報告風險評估結果。"
+      },
+      "explanations": {
+        "zh-TW": "開始風險報告的開場白"
+      }
+    },
+    {
+      "id": "en-fin-6-01-2",
+      "pattern": "The main risks include...",
+      "translations": {
+        "zh-TW": "主要風險包括..."
+      },
+      "explanations": {
+        "zh-TW": "列出風險因素"
+      }
+    },
+    {
+      "id": "en-fin-6-01-3",
+      "pattern": "Market volatility may impact...",
+      "translations": {
+        "zh-TW": "市場波動可能影響..."
+      },
+      "explanations": {
+        "zh-TW": "說明市場風險"
+      }
+    },
+    {
+      "id": "en-fin-6-01-4",
+      "pattern": "We recommend diversification.",
+      "translations": {
+        "zh-TW": "我們建議分散投資。"
+      },
+      "explanations": {
+        "zh-TW": "提出風險對策"
+      }
+    },
+    {
+      "id": "en-fin-6-01-5",
+      "pattern": "The expected return is...",
+      "translations": {
+        "zh-TW": "預期報酬是..."
+      },
+      "explanations": {
+        "zh-TW": "報告預期收益"
+      }
+    }
+  ],
+  "crs-1": [
+    {
+      "id": "en-crs-1-01-1",
+      "pattern": "Excuse me, do you know where the classroom is?",
+      "translations": {
+        "zh-TW": "不好意思，請問教室在哪裡？"
+      },
+      "explanations": {
+        "zh-TW": "詢問教室位置的禮貌用語"
+      }
+    },
+    {
+      "id": "en-crs-1-01-2",
+      "pattern": "Which building is it in?",
+      "translations": {
+        "zh-TW": "在哪棟建築物？"
+      },
+      "explanations": {
+        "zh-TW": "詢問具體位置"
+      }
+    },
+    {
+      "id": "en-crs-1-01-3",
+      "pattern": "What time does class start?",
+      "translations": {
+        "zh-TW": "課程幾點開始？"
+      },
+      "explanations": {
+        "zh-TW": "詢問上課時間"
+      }
+    },
+    {
+      "id": "en-crs-1-01-4",
+      "pattern": "Is there a map available?",
+      "translations": {
+        "zh-TW": "有地圖嗎？"
+      },
+      "explanations": {
+        "zh-TW": "請求指引"
+      }
+    },
+    {
+      "id": "en-crs-1-01-5",
+      "pattern": "Thank you for your help.",
+      "translations": {
+        "zh-TW": "謝謝您的幫忙。"
+      },
+      "explanations": {
+        "zh-TW": "表達感謝"
+      }
+    }
+  ],
+  "crs-2": [
+    {
+      "id": "en-crs-2-01-1",
+      "pattern": "When is the assignment due?",
+      "translations": {
+        "zh-TW": "作業什麼時候到期？"
+      },
+      "explanations": {
+        "zh-TW": "詢問截止日期的標準用語"
+      }
+    },
+    {
+      "id": "en-crs-2-01-2",
+      "pattern": "Can I get an extension?",
+      "translations": {
+        "zh-TW": "我可以申請延期嗎？"
+      },
+      "explanations": {
+        "zh-TW": "請求寬限"
+      }
+    },
+    {
+      "id": "en-crs-2-01-3",
+      "pattern": "What format should I use?",
+      "translations": {
+        "zh-TW": "我應該用什麼格式？"
+      },
+      "explanations": {
+        "zh-TW": "詢問提交要求"
+      }
+    },
+    {
+      "id": "en-crs-2-01-4",
+      "pattern": "Where do I submit?",
+      "translations": {
+        "zh-TW": "我要在哪裡提交？"
+      },
+      "explanations": {
+        "zh-TW": "詢問提交地點"
+      }
+    },
+    {
+      "id": "en-crs-2-01-5",
+      "pattern": "Are there any late penalties?",
+      "translations": {
+        "zh-TW": "遲交會有處罰嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問遲交後果"
+      }
+    }
+  ],
+  "crs-3": [
+    {
+      "id": "en-crs-3-01-1",
+      "pattern": "I would like to discuss my research topic.",
+      "translations": {
+        "zh-TW": "我想討論我的研究主題。"
+      },
+      "explanations": {
+        "zh-TW": "開始學術討論的開場白"
+      }
+    },
+    {
+      "id": "en-crs-3-01-2",
+      "pattern": "My research question is...",
+      "translations": {
+        "zh-TW": "我的研究問題是..."
+      },
+      "explanations": {
+        "zh-TW": "說明研究重點"
+      }
+    },
+    {
+      "id": "en-crs-3-01-3",
+      "pattern": "I am considering...",
+      "translations": {
+        "zh-TW": "我正在考慮..."
+      },
+      "explanations": {
+        "zh-TW": "提出想法"
+      }
+    },
+    {
+      "id": "en-crs-3-01-4",
+      "pattern": "What literature should I review?",
+      "translations": {
+        "zh-TW": "我應該參考哪些文獻？"
+      },
+      "explanations": {
+        "zh-TW": "請求指導"
+      }
+    },
+    {
+      "id": "en-crs-3-01-5",
+      "pattern": "Thank you for your guidance.",
+      "translations": {
+        "zh-TW": "謝謝您的指導。"
+      },
+      "explanations": {
+        "zh-TW": "表達感謝"
+      }
+    }
+  ],
+  "crs-4": [
+    {
+      "id": "en-crs-4-01-1",
+      "pattern": "Let us start the group discussion.",
+      "translations": {
+        "zh-TW": "我們開始小組討論吧。"
+      },
+      "explanations": {
+        "zh-TW": "開始討論的用語"
+      }
+    },
+    {
+      "id": "en-crs-4-01-2",
+      "pattern": "What is your opinion on...?",
+      "translations": {
+        "zh-TW": "你對...有什麼看法？"
+      },
+      "explanations": {
+        "zh-TW": "徵求意見"
+      }
+    },
+    {
+      "id": "en-crs-4-01-3",
+      "pattern": "I agree with that point.",
+      "translations": {
+        "zh-TW": "我同意這一點。"
+      },
+      "explanations": {
+        "zh-TW": "表達贊同"
+      }
+    },
+    {
+      "id": "en-crs-4-01-4",
+      "pattern": "I have a different perspective.",
+      "translations": {
+        "zh-TW": "我有不同的觀點。"
+      },
+      "explanations": {
+        "zh-TW": "表達不同意見"
+      }
+    },
+    {
+      "id": "en-crs-4-01-5",
+      "pattern": "Let us summarize our points.",
+      "translations": {
+        "zh-TW": "讓我們總結我們的觀點。"
+      },
+      "explanations": {
+        "zh-TW": "歸納討論"
+      }
+    }
+  ],
+  "crs-5": [
+    {
+      "id": "en-crs-5-01-1",
+      "pattern": "Good morning, everyone.",
+      "translations": {
+        "zh-TW": "各位早安。"
+      },
+      "explanations": {
+        "zh-TW": "簡報開場的標準用語"
+      }
+    },
+    {
+      "id": "en-crs-5-01-2",
+      "pattern": "Today I will present...",
+      "translations": {
+        "zh-TW": "今天我將報告..."
+      },
+      "explanations": {
+        "zh-TW": "說明報告主題"
+      }
+    },
+    {
+      "id": "en-crs-5-01-3",
+      "pattern": "Let me move to the next slide.",
+      "translations": {
+        "zh-TW": "讓我進入下一張投影片。"
+      },
+      "explanations": {
+        "zh-TW": "轉場用語"
+      }
+    },
+    {
+      "id": "en-crs-5-01-4",
+      "pattern": "As shown in this chart...",
+      "translations": {
+        "zh-TW": "如這張圖表所示..."
+      },
+      "explanations": {
+        "zh-TW": "引用視覺資料"
+      }
+    },
+    {
+      "id": "en-crs-5-01-5",
+      "pattern": "Are there any questions?",
+      "translations": {
+        "zh-TW": "有任何問題嗎？"
+      },
+      "explanations": {
+        "zh-TW": "開放提問"
+      }
+    }
+  ],
+  "crs-6": [
+    {
+      "id": "en-crs-6-01-1",
+      "pattern": "I argue that...",
+      "translations": {
+        "zh-TW": "我主張..."
+      },
+      "explanations": {
+        "zh-TW": "提出論點的標準用語"
+      }
+    },
+    {
+      "id": "en-crs-6-01-2",
+      "pattern": "The evidence suggests...",
+      "translations": {
+        "zh-TW": "證據顯示..."
+      },
+      "explanations": {
+        "zh-TW": "引用證據"
+      }
+    },
+    {
+      "id": "en-crs-6-01-3",
+      "pattern": "I respectfully disagree.",
+      "translations": {
+        "zh-TW": "我禮貌地表示不同意。"
+      },
+      "explanations": {
+        "zh-TW": "表達反對意見"
+      }
+    },
+    {
+      "id": "en-crs-6-01-4",
+      "pattern": "Let us consider another angle.",
+      "translations": {
+        "zh-TW": "讓我們考慮另一個角度。"
+      },
+      "explanations": {
+        "zh-TW": "提出替代觀點"
+      }
+    },
+    {
+      "id": "en-crs-6-01-5",
+      "pattern": "In conclusion...",
+      "translations": {
+        "zh-TW": "總結來說..."
+      },
+      "explanations": {
+        "zh-TW": "總結用語"
+      }
+    }
+  ],
+  "clb-1": [
+    {
+      "id": "en-clb-1-01-1",
+      "pattern": "How can I join this club?",
+      "translations": {
+        "zh-TW": "我要怎麼加入這個社團？"
+      },
+      "explanations": {
+        "zh-TW": "詢問入社方式的標準用語"
+      }
+    },
+    {
+      "id": "en-clb-1-01-2",
+      "pattern": "Are there any requirements?",
+      "translations": {
+        "zh-TW": "有什麼要求嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問入社條件"
+      }
+    },
+    {
+      "id": "en-clb-1-01-3",
+      "pattern": "When is the orientation?",
+      "translations": {
+        "zh-TW": "迎新活動是什麼時候？"
+      },
+      "explanations": {
+        "zh-TW": "詢問活動時間"
+      }
+    },
+    {
+      "id": "en-clb-1-01-4",
+      "pattern": "Is there a membership fee?",
+      "translations": {
+        "zh-TW": "有會費嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問費用"
+      }
+    },
+    {
+      "id": "en-clb-1-01-5",
+      "pattern": "I would like to sign up.",
+      "translations": {
+        "zh-TW": "我想報名。"
+      },
+      "explanations": {
+        "zh-TW": "表達加入意願"
+      }
+    }
+  ],
+  "clb-2": [
+    {
+      "id": "en-clb-2-01-1",
+      "pattern": "I enjoy...",
+      "translations": {
+        "zh-TW": "我喜歡..."
+      },
+      "explanations": {
+        "zh-TW": "分享興趣的開場白"
+      }
+    },
+    {
+      "id": "en-clb-2-01-2",
+      "pattern": "My hobby is...",
+      "translations": {
+        "zh-TW": "我的愛好是..."
+      },
+      "explanations": {
+        "zh-TW": "說明興趣愛好"
+      }
+    },
+    {
+      "id": "en-clb-2-01-3",
+      "pattern": "I have been doing this for...",
+      "translations": {
+        "zh-TW": "我做這個已經...了。"
+      },
+      "explanations": {
+        "zh-TW": "說明經驗長度"
+      }
+    },
+    {
+      "id": "en-clb-2-01-4",
+      "pattern": "What do you like to do?",
+      "translations": {
+        "zh-TW": "你喜歡做什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問對方興趣"
+      }
+    },
+    {
+      "id": "en-clb-2-01-5",
+      "pattern": "We have a lot in common.",
+      "translations": {
+        "zh-TW": "我們有很多共同點。"
+      },
+      "explanations": {
+        "zh-TW": "建立連結"
+      }
+    }
+  ],
+  "clb-3": [
+    {
+      "id": "en-clb-3-01-1",
+      "pattern": "Let us plan the recruitment event.",
+      "translations": {
+        "zh-TW": "我們來規劃招生活動。"
+      },
+      "explanations": {
+        "zh-TW": "開始討論的開場白"
+      }
+    },
+    {
+      "id": "en-clb-3-01-2",
+      "pattern": "We need posters and flyers.",
+      "translations": {
+        "zh-TW": "我們需要海報和傳單。"
+      },
+      "explanations": {
+        "zh-TW": "列出所需物資"
+      }
+    },
+    {
+      "id": "en-clb-3-01-3",
+      "pattern": "Who can help with...?",
+      "translations": {
+        "zh-TW": "誰能幫忙...？"
+      },
+      "explanations": {
+        "zh-TW": "分配任務"
+      }
+    },
+    {
+      "id": "en-clb-3-01-4",
+      "pattern": "The deadline is...",
+      "translations": {
+        "zh-TW": "截止日期是..."
+      },
+      "explanations": {
+        "zh-TW": "說明時程"
+      }
+    },
+    {
+      "id": "en-clb-3-01-5",
+      "pattern": "Let us follow up next week.",
+      "translations": {
+        "zh-TW": "設定追蹤時間"
+      },
+      "explanations": {
+        "zh-TW": "我們下週再追蹤。"
+      }
+    }
+  ],
+  "clb-4": [
+    {
+      "id": "en-clb-4-01-1",
+      "pattern": "Let us discuss the budget.",
+      "translations": {
+        "zh-TW": "我們來討論預算。"
+      },
+      "explanations": {
+        "zh-TW": "開始財務討論的用語"
+      }
+    },
+    {
+      "id": "en-clb-4-01-2",
+      "pattern": "How much do we have?",
+      "translations": {
+        "zh-TW": "我們有多少預算？"
+      },
+      "explanations": {
+        "zh-TW": "詢問可用資金"
+      }
+    },
+    {
+      "id": "en-clb-4-01-3",
+      "pattern": "We should allocate more to...",
+      "translations": {
+        "zh-TW": "我們應該多分配給..."
+      },
+      "explanations": {
+        "zh-TW": "提出分配建議"
+      }
+    },
+    {
+      "id": "en-clb-4-01-4",
+      "pattern": "We need to save money.",
+      "translations": {
+        "zh-TW": "我們需要省錢。"
+      },
+      "explanations": {
+        "zh-TW": "提出節約需求"
+      }
+    },
+    {
+      "id": "en-clb-4-01-5",
+      "pattern": "Let us vote on this.",
+      "translations": {
+        "zh-TW": "我們來投票表決。"
+      },
+      "explanations": {
+        "zh-TW": "提議決策方式"
+      }
+    }
+  ],
+  "clb-5": [
+    {
+      "id": "en-clb-5-01-1",
+      "pattern": "I am running for...",
+      "translations": {
+        "zh-TW": "我正在競選..."
+      },
+      "explanations": {
+        "zh-TW": "宣布競選職位的用語"
+      }
+    },
+    {
+      "id": "en-clb-5-01-2",
+      "pattern": "If elected, I will...",
+      "translations": {
+        "zh-TW": "如果當選，我將..."
+      },
+      "explanations": {
+        "zh-TW": "提出政見"
+      }
+    },
+    {
+      "id": "en-clb-5-01-3",
+      "pattern": "My experience includes...",
+      "translations": {
+        "zh-TW": "我的經驗包括..."
+      },
+      "explanations": {
+        "zh-TW": "說明資歷"
+      }
+    },
+    {
+      "id": "en-clb-5-01-4",
+      "pattern": "I ask for your vote.",
+      "translations": {
+        "zh-TW": "我請求您的支持。"
+      },
+      "explanations": {
+        "zh-TW": "請求投票"
+      }
+    },
+    {
+      "id": "en-clb-5-01-5",
+      "pattern": "Thank you for listening.",
+      "translations": {
+        "zh-TW": "謝謝聆聽。"
+      },
+      "explanations": {
+        "zh-TW": "結束演說的用語"
+      }
+    }
+  ],
+  "clb-6": [
+    {
+      "id": "en-clb-6-01-1",
+      "pattern": "We need to resolve this conflict.",
+      "translations": {
+        "zh-TW": "我們需要解決這個衝突。"
+      },
+      "explanations": {
+        "zh-TW": "開始調解的開場白"
+      }
+    },
+    {
+      "id": "en-clb-6-01-2",
+      "pattern": "Let us hear both sides.",
+      "translations": {
+        "zh-TW": "讓我們聽聽雙方的說法。"
+      },
+      "explanations": {
+        "zh-TW": "給予發言機會"
+      }
+    },
+    {
+      "id": "en-clb-6-01-3",
+      "pattern": "I understand your frustration.",
+      "translations": {
+        "zh-TW": "我理解你的挫折感。"
+      },
+      "explanations": {
+        "zh-TW": "展現同理心"
+      }
+    },
+    {
+      "id": "en-clb-6-01-4",
+      "pattern": "Can we find a compromise?",
+      "translations": {
+        "zh-TW": "我們能找到折衷方案嗎？"
+      },
+      "explanations": {
+        "zh-TW": "提議解決方式"
+      }
+    },
+    {
+      "id": "en-clb-6-01-5",
+      "pattern": "Let us move forward.",
+      "translations": {
+        "zh-TW": "讓我們繼續前進。"
+      },
+      "explanations": {
+        "zh-TW": "結束調解的用語"
+      }
+    }
+  ],
+  "app-1": [
+    {
+      "id": "en-app-1-01-1",
+      "pattern": "What are the admission requirements?",
+      "translations": {
+        "zh-TW": "入學要求是什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問申請門檻的標準用語"
+      }
+    },
+    {
+      "id": "en-app-1-01-2",
+      "pattern": "Is there a minimum GPA?",
+      "translations": {
+        "zh-TW": "有最低 GPA 要求嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問成績要求"
+      }
+    },
+    {
+      "id": "en-app-1-01-3",
+      "pattern": "Do I need test scores?",
+      "translations": {
+        "zh-TW": "我需要考試成績嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問考試要求"
+      }
+    },
+    {
+      "id": "en-app-1-01-4",
+      "pattern": "What documents are required?",
+      "translations": {
+        "zh-TW": "需要哪些文件？"
+      },
+      "explanations": {
+        "zh-TW": "詢問文件清單"
+      }
+    },
+    {
+      "id": "en-app-1-01-5",
+      "pattern": "When is the application deadline?",
+      "translations": {
+        "zh-TW": "申請截止日期是什麼時候？"
+      },
+      "explanations": {
+        "zh-TW": "詢問截止日期"
+      }
+    }
+  ],
+  "app-2": [
+    {
+      "id": "en-app-2-01-1",
+      "pattern": "Could you write a recommendation letter?",
+      "translations": {
+        "zh-TW": "您能寫一封推薦信嗎？"
+      },
+      "explanations": {
+        "zh-TW": "請求推薦信的禮貌用語"
+      }
+    },
+    {
+      "id": "en-app-2-01-2",
+      "pattern": "What format do you prefer?",
+      "translations": {
+        "zh-TW": "您偏好什麼格式？"
+      },
+      "explanations": {
+        "zh-TW": "詢問格式偏好"
+      }
+    },
+    {
+      "id": "en-app-2-01-3",
+      "pattern": "When do you need it by?",
+      "translations": {
+        "zh-TW": "您什麼時候需要？"
+      },
+      "explanations": {
+        "zh-TW": "詢問時程"
+      }
+    },
+    {
+      "id": "en-app-2-01-4",
+      "pattern": "Should I provide any materials?",
+      "translations": {
+        "zh-TW": "我應該提供任何資料嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問需要準備的內容"
+      }
+    },
+    {
+      "id": "en-app-2-01-5",
+      "pattern": "Thank you for your support.",
+      "translations": {
+        "zh-TW": "謝謝您的支持。"
+      },
+      "explanations": {
+        "zh-TW": "表達感謝"
+      }
+    }
+  ],
+  "app-3": [
+    {
+      "id": "en-app-3-01-1",
+      "pattern": "My motivation for applying is...",
+      "translations": {
+        "zh-TW": "我申請的動機是..."
+      },
+      "explanations": {
+        "zh-TW": "開始個人陳述的用語"
+      }
+    },
+    {
+      "id": "en-app-3-01-2",
+      "pattern": "I am passionate about...",
+      "translations": {
+        "zh-TW": "我對...充滿熱情。"
+      },
+      "explanations": {
+        "zh-TW": "表達興趣"
+      }
+    },
+    {
+      "id": "en-app-3-01-3",
+      "pattern": "My background includes...",
+      "translations": {
+        "zh-TW": "我的背景包括..."
+      },
+      "explanations": {
+        "zh-TW": "說明經歷"
+      }
+    },
+    {
+      "id": "en-app-3-01-4",
+      "pattern": "I aim to...",
+      "translations": {
+        "zh-TW": "我的目標是..."
+      },
+      "explanations": {
+        "zh-TW": "說明目標"
+      }
+    },
+    {
+      "id": "en-app-3-01-5",
+      "pattern": "This program will help me...",
+      "translations": {
+        "zh-TW": "這個課程將幫助我..."
+      },
+      "explanations": {
+        "zh-TW": "說明為何選擇此課程"
+      }
+    }
+  ],
+  "app-4": [
+    {
+      "id": "en-app-4-01-1",
+      "pattern": "Let us discuss the school list.",
+      "translations": {
+        "zh-TW": "我們來討論學校清單。"
+      },
+      "explanations": {
+        "zh-TW": "開始討論的開場白"
+      }
+    },
+    {
+      "id": "en-app-4-01-2",
+      "pattern": "Which schools are reach schools?",
+      "translations": {
+        "zh-TW": "哪些是夢幻學校？"
+      },
+      "explanations": {
+        "zh-TW": "分類學校類型"
+      }
+    },
+    {
+      "id": "en-app-4-01-3",
+      "pattern": "I need safety schools.",
+      "translations": {
+        "zh-TW": "我需要保底學校。"
+      },
+      "explanations": {
+        "zh-TW": "表達需求"
+      }
+    },
+    {
+      "id": "en-app-4-01-4",
+      "pattern": "What is the ranking of...?",
+      "translations": {
+        "zh-TW": "...的排名是多少？"
+      },
+      "explanations": {
+        "zh-TW": "詢問排名"
+      }
+    },
+    {
+      "id": "en-app-4-01-5",
+      "pattern": "Let us narrow it down.",
+      "translations": {
+        "zh-TW": "我們來縮小範圍。"
+      },
+      "explanations": {
+        "zh-TW": "提議篩選"
+      }
+    }
+  ],
+  "app-5": [
+    {
+      "id": "en-app-5-01-1",
+      "pattern": "Tell me about yourself.",
+      "translations": {
+        "zh-TW": "請自我介紹。"
+      },
+      "explanations": {
+        "zh-TW": "面試開場問題"
+      }
+    },
+    {
+      "id": "en-app-5-01-2",
+      "pattern": "Why this school?",
+      "translations": {
+        "zh-TW": "為什麼選擇這所學校？"
+      },
+      "explanations": {
+        "zh-TW": "詢問選校原因"
+      }
+    },
+    {
+      "id": "en-app-5-01-3",
+      "pattern": "What are your weaknesses?",
+      "translations": {
+        "zh-TW": "你的缺點是什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問弱點"
+      }
+    },
+    {
+      "id": "en-app-5-01-4",
+      "pattern": "Describe a challenge you faced.",
+      "translations": {
+        "zh-TW": "描述你面臨過的挑戰。"
+      },
+      "explanations": {
+        "zh-TW": "行為面試問題"
+      }
+    },
+    {
+      "id": "en-app-5-01-5",
+      "pattern": "Do you have any questions?",
+      "translations": {
+        "zh-TW": "你有任何問題嗎？"
+      },
+      "explanations": {
+        "zh-TW": "結束面試的用語"
+      }
+    }
+  ],
+  "app-6": [
+    {
+      "id": "en-app-6-01-1",
+      "pattern": "I would like to appeal the decision.",
+      "translations": {
+        "zh-TW": "我想申訴這個決定。"
+      },
+      "explanations": {
+        "zh-TW": "開始申訴的用語"
+      }
+    },
+    {
+      "id": "en-app-6-01-2",
+      "pattern": "I have additional information.",
+      "translations": {
+        "zh-TW": "我有額外資訊。"
+      },
+      "explanations": {
+        "zh-TW": "說明新增內容"
+      }
+    },
+    {
+      "id": "en-app-6-01-3",
+      "pattern": "My circumstances have changed.",
+      "translations": {
+        "zh-TW": "我的情況已改變。"
+      },
+      "explanations": {
+        "zh-TW": "說明變化"
+      }
+    },
+    {
+      "id": "en-app-6-01-4",
+      "pattern": "I request reconsideration.",
+      "translations": {
+        "zh-TW": "我請求重新考量。"
+      },
+      "explanations": {
+        "zh-TW": "提出請求"
+      }
+    },
+    {
+      "id": "en-app-6-01-5",
+      "pattern": "Thank you for your time.",
+      "translations": {
+        "zh-TW": "謝謝您的時間。"
+      },
+      "explanations": {
+        "zh-TW": "表達感謝"
+      }
+    }
+  ],
+  "ths-1": [
+    {
+      "id": "en-ths-1-01-1",
+      "pattern": "I need to find references for...",
+      "translations": {
+        "zh-TW": "我需要為...找參考文獻。"
+      },
+      "explanations": {
+        "zh-TW": "開始文獻搜尋的用語"
+      }
+    },
+    {
+      "id": "en-ths-1-01-2",
+      "pattern": "Which databases should I use?",
+      "translations": {
+        "zh-TW": "我應該用哪些資料庫？"
+      },
+      "explanations": {
+        "zh-TW": "詢問資源來源"
+      }
+    },
+    {
+      "id": "en-ths-1-01-3",
+      "pattern": "How do I access full text?",
+      "translations": {
+        "zh-TW": "我如何取得全文？"
+      },
+      "explanations": {
+        "zh-TW": "詢問取得方式"
+      }
+    },
+    {
+      "id": "en-ths-1-01-4",
+      "pattern": "Can you recommend key papers?",
+      "translations": {
+        "zh-TW": "你能推薦關鍵論文嗎？"
+      },
+      "explanations": {
+        "zh-TW": "請求推薦"
+      }
+    },
+    {
+      "id": "en-ths-1-01-5",
+      "pattern": "How do I organize my sources?",
+      "translations": {
+        "zh-TW": "我如何整理我的文獻來源？"
+      },
+      "explanations": {
+        "zh-TW": "詢問管理方法"
+      }
+    }
+  ],
+  "ths-2": [
+    {
+      "id": "en-ths-2-01-1",
+      "pattern": "My research motivation is...",
+      "translations": {
+        "zh-TW": "我的研究動機是..."
+      },
+      "explanations": {
+        "zh-TW": "開始說明研究動機的用語"
+      }
+    },
+    {
+      "id": "en-ths-2-01-2",
+      "pattern": "This topic is important because...",
+      "translations": {
+        "zh-TW": "這個主題很重要，因為..."
+      },
+      "explanations": {
+        "zh-TW": "說明重要性"
+      }
+    },
+    {
+      "id": "en-ths-2-01-3",
+      "pattern": "I became interested in this because...",
+      "translations": {
+        "zh-TW": "我對此產生興趣是因為..."
+      },
+      "explanations": {
+        "zh-TW": "說明個人緣由"
+      }
+    },
+    {
+      "id": "en-ths-2-01-4",
+      "pattern": "This fills a gap in...",
+      "translations": {
+        "zh-TW": "這填補了...的空白。"
+      },
+      "explanations": {
+        "zh-TW": "說明學術貢獻"
+      }
+    },
+    {
+      "id": "en-ths-2-01-5",
+      "pattern": "I hope to contribute to...",
+      "translations": {
+        "zh-TW": "我希望能為...做出貢獻。"
+      },
+      "explanations": {
+        "zh-TW": "說明期望貢獻"
+      }
+    }
+  ],
+  "ths-3": [
+    {
+      "id": "en-ths-3-01-1",
+      "pattern": "I would like to report my progress.",
+      "translations": {
+        "zh-TW": "我想報告我的進度。"
+      },
+      "explanations": {
+        "zh-TW": "開始進度報告的用語"
+      }
+    },
+    {
+      "id": "en-ths-3-01-2",
+      "pattern": "I have completed...",
+      "translations": {
+        "zh-TW": "我已完成..."
+      },
+      "explanations": {
+        "zh-TW": "說明完成事項"
+      }
+    },
+    {
+      "id": "en-ths-3-01-3",
+      "pattern": "I am currently working on...",
+      "translations": {
+        "zh-TW": "我目前正在進行..."
+      },
+      "explanations": {
+        "zh-TW": "說明進行中的工作"
+      }
+    },
+    {
+      "id": "en-ths-3-01-4",
+      "pattern": "I encountered an issue with...",
+      "translations": {
+        "zh-TW": "我在...遇到問題。"
+      },
+      "explanations": {
+        "zh-TW": "說明遇到的困難"
+      }
+    },
+    {
+      "id": "en-ths-3-01-5",
+      "pattern": "What should I focus on next?",
+      "translations": {
+        "zh-TW": "我接下來應該專注於什麼？"
+      },
+      "explanations": {
+        "zh-TW": "請求指導"
+      }
+    }
+  ],
+  "ths-4": [
+    {
+      "id": "en-ths-4-01-1",
+      "pattern": "The data shows...",
+      "translations": {
+        "zh-TW": "數據顯示..."
+      },
+      "explanations": {
+        "zh-TW": "開始解釋數據的用語"
+      }
+    },
+    {
+      "id": "en-ths-4-01-2",
+      "pattern": "The results indicate...",
+      "translations": {
+        "zh-TW": "結果指出..."
+      },
+      "explanations": {
+        "zh-TW": "說明結果含義"
+      }
+    },
+    {
+      "id": "en-ths-4-01-3",
+      "pattern": "There is a correlation between...",
+      "translations": {
+        "zh-TW": "在...之間有相關性。"
+      },
+      "explanations": {
+        "zh-TW": "說明關聯性"
+      }
+    },
+    {
+      "id": "en-ths-4-01-4",
+      "pattern": "The findings suggest...",
+      "translations": {
+        "zh-TW": "研究結果建議..."
+      },
+      "explanations": {
+        "zh-TW": "推論結果"
+      }
+    },
+    {
+      "id": "en-ths-4-01-5",
+      "pattern": "This is consistent with...",
+      "translations": {
+        "zh-TW": "這與...一致。"
+      },
+      "explanations": {
+        "zh-TW": "對照文獻"
+      }
+    }
+  ],
+  "ths-5": [
+    {
+      "id": "en-ths-5-01-1",
+      "pattern": "Thank you for being here today.",
+      "translations": {
+        "zh-TW": "感謝各位今天蒞臨。"
+      },
+      "explanations": {
+        "zh-TW": "口試開場的用語"
+      }
+    },
+    {
+      "id": "en-ths-5-01-2",
+      "pattern": "My thesis is titled...",
+      "translations": {
+        "zh-TW": "我的論文題目是..."
+      },
+      "explanations": {
+        "zh-TW": "說明題目"
+      }
+    },
+    {
+      "id": "en-ths-5-01-3",
+      "pattern": "My research question is...",
+      "translations": {
+        "zh-TW": "我的研究問題是..."
+      },
+      "explanations": {
+        "zh-TW": "說明核心問題"
+      }
+    },
+    {
+      "id": "en-ths-5-01-4",
+      "pattern": "I would like to conclude that...",
+      "translations": {
+        "zh-TW": "我想總結..."
+      },
+      "explanations": {
+        "zh-TW": "總結用語"
+      }
+    },
+    {
+      "id": "en-ths-5-01-5",
+      "pattern": "I am ready for your questions.",
+      "translations": {
+        "zh-TW": "我準備好回答問題了。"
+      },
+      "explanations": {
+        "zh-TW": "開始答辯的用語"
+      }
+    }
+  ],
+  "ths-6": [
+    {
+      "id": "en-ths-6-01-1",
+      "pattern": "There are limitations to my methodology.",
+      "translations": {
+        "zh-TW": "我的方法論有限制。"
+      },
+      "explanations": {
+        "zh-TW": "開始討論限制的用語"
+      }
+    },
+    {
+      "id": "en-ths-6-01-2",
+      "pattern": "The sample size was...",
+      "translations": {
+        "zh-TW": "樣本大小為..."
+      },
+      "explanations": {
+        "zh-TW": "說明樣本限制"
+      }
+    },
+    {
+      "id": "en-ths-6-01-3",
+      "pattern": "This study cannot generalize to...",
+      "translations": {
+        "zh-TW": "本研究無法推廣至..."
+      },
+      "explanations": {
+        "zh-TW": "說明推論限制"
+      }
+    },
+    {
+      "id": "en-ths-6-01-4",
+      "pattern": "Future research should...",
+      "translations": {
+        "zh-TW": "未來研究應該..."
+      },
+      "explanations": {
+        "zh-TW": "提出未來方向"
+      }
+    },
+    {
+      "id": "en-ths-6-01-5",
+      "pattern": "These limitations do not invalidate...",
+      "translations": {
+        "zh-TW": "這些限制並不否定..."
+      },
+      "explanations": {
+        "zh-TW": "為研究辯護"
+      }
+    }
+  ],
+  "hom-1": [
+    {
+      "id": "en-hom-1-01-1",
+      "pattern": "I need to report a leak.",
+      "translations": {
+        "zh-TW": "我需要報修漏水。"
+      },
+      "explanations": {
+        "zh-TW": "開始報修的用語"
+      }
+    },
+    {
+      "id": "en-hom-1-01-2",
+      "pattern": "The leak is in...",
+      "translations": {
+        "zh-TW": "漏水位置在..."
+      },
+      "explanations": {
+        "zh-TW": "說明問題位置"
+      }
+    },
+    {
+      "id": "en-hom-1-01-3",
+      "pattern": "It started about...",
+      "translations": {
+        "zh-TW": "大約在...開始。"
+      },
+      "explanations": {
+        "zh-TW": "說明時間"
+      }
+    },
+    {
+      "id": "en-hom-1-01-4",
+      "pattern": "Can someone come to fix it?",
+      "translations": {
+        "zh-TW": "能派人來修理嗎？"
+      },
+      "explanations": {
+        "zh-TW": "請求維修"
+      }
+    },
+    {
+      "id": "en-hom-1-01-5",
+      "pattern": "When can you come?",
+      "translations": {
+        "zh-TW": "你們什麼時候能來？"
+      },
+      "explanations": {
+        "zh-TW": "詢問時間"
+      }
+    }
+  ],
+  "hom-2": [
+    {
+      "id": "en-hom-2-01-1",
+      "pattern": "How much is this sofa?",
+      "translations": {
+        "zh-TW": "這張沙發多少錢？"
+      },
+      "explanations": {
+        "zh-TW": "詢價的標準用語"
+      }
+    },
+    {
+      "id": "en-hom-2-01-2",
+      "pattern": "Do you have this in other colors?",
+      "translations": {
+        "zh-TW": "這個有其他顏色嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問款式選擇"
+      }
+    },
+    {
+      "id": "en-hom-2-01-3",
+      "pattern": "Is delivery included?",
+      "translations": {
+        "zh-TW": "包含運送嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問運送服務"
+      }
+    },
+    {
+      "id": "en-hom-2-01-4",
+      "pattern": "What is the warranty?",
+      "translations": {
+        "zh-TW": "保固期多久？"
+      },
+      "explanations": {
+        "zh-TW": "詢問售後服務"
+      }
+    },
+    {
+      "id": "en-hom-2-01-5",
+      "pattern": "Can I get a discount?",
+      "translations": {
+        "zh-TW": "能打折嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問折扣"
+      }
+    }
+  ],
+  "hom-3": [
+    {
+      "id": "en-hom-3-01-1",
+      "pattern": "We need to divide the chores.",
+      "translations": {
+        "zh-TW": "我們需要分擔家務。"
+      },
+      "explanations": {
+        "zh-TW": "開始討論的開場白"
+      }
+    },
+    {
+      "id": "en-hom-3-01-2",
+      "pattern": "I will take care of...",
+      "translations": {
+        "zh-TW": "我負責..."
+      },
+      "explanations": {
+        "zh-TW": "承擔責任"
+      }
+    },
+    {
+      "id": "en-hom-3-01-3",
+      "pattern": "Can you handle...?",
+      "translations": {
+        "zh-TW": "你能處理...嗎？"
+      },
+      "explanations": {
+        "zh-TW": "分配任務"
+      }
+    },
+    {
+      "id": "en-hom-3-01-4",
+      "pattern": "We should rotate duties.",
+      "translations": {
+        "zh-TW": "我們應該輪流負責。"
+      },
+      "explanations": {
+        "zh-TW": "提議制度"
+      }
+    },
+    {
+      "id": "en-hom-3-01-5",
+      "pattern": "Let us make a schedule.",
+      "translations": {
+        "zh-TW": "我們來做個時間表。"
+      },
+      "explanations": {
+        "zh-TW": "提議具體行動"
+      }
+    }
+  ],
+  "hom-4": [
+    {
+      "id": "en-hom-4-01-1",
+      "pattern": "I like modern style.",
+      "translations": {
+        "zh-TW": "我喜歡現代風格。"
+      },
+      "explanations": {
+        "zh-TW": "表達風格偏好"
+      }
+    },
+    {
+      "id": "en-hom-4-01-2",
+      "pattern": "What is your preference?",
+      "translations": {
+        "zh-TW": "你偏好什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問對方偏好"
+      }
+    },
+    {
+      "id": "en-hom-4-01-3",
+      "pattern": "This color does not match.",
+      "translations": {
+        "zh-TW": "這個顏色不搭。"
+      },
+      "explanations": {
+        "zh-TW": "提出意見"
+      }
+    },
+    {
+      "id": "en-hom-4-01-4",
+      "pattern": "We need more storage.",
+      "translations": {
+        "zh-TW": "我們需要更多收納空間。"
+      },
+      "explanations": {
+        "zh-TW": "提出需求"
+      }
+    },
+    {
+      "id": "en-hom-4-01-5",
+      "pattern": "Let us look at some options.",
+      "translations": {
+        "zh-TW": "我們來看些選項。"
+      },
+      "explanations": {
+        "zh-TW": "提議下一步"
+      }
+    }
+  ],
+  "hom-5": [
+    {
+      "id": "en-hom-5-01-1",
+      "pattern": "Is the rent negotiable?",
+      "translations": {
+        "zh-TW": "租金可議嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問談判空間的用語"
+      }
+    },
+    {
+      "id": "en-hom-5-01-2",
+      "pattern": "Can you lower the price?",
+      "translations": {
+        "zh-TW": "你能降價嗎？"
+      },
+      "explanations": {
+        "zh-TW": "提出降價要求"
+      }
+    },
+    {
+      "id": "en-hom-5-01-3",
+      "pattern": "What is included?",
+      "translations": {
+        "zh-TW": "包含什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問租約內容"
+      }
+    },
+    {
+      "id": "en-hom-5-01-4",
+      "pattern": "I can sign a longer lease.",
+      "translations": {
+        "zh-TW": "我可以簽更長的租約。"
+      },
+      "explanations": {
+        "zh-TW": "提出交換條件"
+      }
+    },
+    {
+      "id": "en-hom-5-01-5",
+      "pattern": "Let us meet halfway.",
+      "translations": {
+        "zh-TW": "我們各讓一步吧。"
+      },
+      "explanations": {
+        "zh-TW": "提議折衷"
+      }
+    }
+  ],
+  "hom-6": [
+    {
+      "id": "en-hom-6-01-1",
+      "pattern": "I need to talk about the noise.",
+      "translations": {
+        "zh-TW": "我需要談談噪音問題。"
+      },
+      "explanations": {
+        "zh-TW": "開始投訴的用語"
+      }
+    },
+    {
+      "id": "en-hom-6-01-2",
+      "pattern": "The noise is disturbing my sleep.",
+      "translations": {
+        "zh-TW": "噪音影響我的睡眠。"
+      },
+      "explanations": {
+        "zh-TW": "說明影響"
+      }
+    },
+    {
+      "id": "en-hom-6-01-3",
+      "pattern": "Could you keep it down?",
+      "translations": {
+        "zh-TW": "能請你小聲一點嗎？"
+      },
+      "explanations": {
+        "zh-TW": "禮貌請求"
+      }
+    },
+    {
+      "id": "en-hom-6-01-4",
+      "pattern": "I would appreciate your cooperation.",
+      "translations": {
+        "zh-TW": "感謝您的配合。"
+      },
+      "explanations": {
+        "zh-TW": "表達感謝"
+      }
+    },
+    {
+      "id": "en-hom-6-01-5",
+      "pattern": "Let us try to resolve this.",
+      "translations": {
+        "zh-TW": "讓我們試著解決這個問題。"
+      },
+      "explanations": {
+        "zh-TW": "提議解決方案"
+      }
+    }
+  ],
+  "shp-1": [
+    {
+      "id": "en-shp-1-01-1",
+      "pattern": "Do you have this in size...?",
+      "translations": {
+        "zh-TW": "這個有...尺寸嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問尺寸的標準用語"
+      }
+    },
+    {
+      "id": "en-shp-1-01-2",
+      "pattern": "What colors are available?",
+      "translations": {
+        "zh-TW": "有哪些顏色可選？"
+      },
+      "explanations": {
+        "zh-TW": "詢問顏色選項"
+      }
+    },
+    {
+      "id": "en-shp-1-01-3",
+      "pattern": "May I try this on?",
+      "translations": {
+        "zh-TW": "我可以試穿嗎？"
+      },
+      "explanations": {
+        "zh-TW": "請求試穿"
+      }
+    },
+    {
+      "id": "en-shp-1-01-4",
+      "pattern": "Where is the fitting room?",
+      "translations": {
+        "zh-TW": "試衣間在哪裡？"
+      },
+      "explanations": {
+        "zh-TW": "詢問位置"
+      }
+    },
+    {
+      "id": "en-shp-1-01-5",
+      "pattern": "This fits perfectly.",
+      "translations": {
+        "zh-TW": "這件很合身。"
+      },
+      "explanations": {
+        "zh-TW": "表達滿意"
+      }
+    }
+  ],
+  "shp-2": [
+    {
+      "id": "en-shp-2-01-1",
+      "pattern": "Is this on sale?",
+      "translations": {
+        "zh-TW": "這個有打折嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問折扣的用語"
+      }
+    },
+    {
+      "id": "en-shp-2-01-2",
+      "pattern": "Can I use a coupon?",
+      "translations": {
+        "zh-TW": "我能使用折價券嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問優惠方式"
+      }
+    },
+    {
+      "id": "en-shp-2-01-3",
+      "pattern": "What is the total?",
+      "translations": {
+        "zh-TW": "總共多少錢？"
+      },
+      "explanations": {
+        "zh-TW": "詢問總金額"
+      }
+    },
+    {
+      "id": "en-shp-2-01-4",
+      "pattern": "Do you accept credit cards?",
+      "translations": {
+        "zh-TW": "你們接受信用卡嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問付款方式"
+      }
+    },
+    {
+      "id": "en-shp-2-01-5",
+      "pattern": "Can I have a receipt?",
+      "translations": {
+        "zh-TW": "能給我收據嗎？"
+      },
+      "explanations": {
+        "zh-TW": "索取收據"
+      }
+    }
+  ],
+  "shp-3": [
+    {
+      "id": "en-shp-3-01-1",
+      "pattern": "I would like to return this.",
+      "translations": {
+        "zh-TW": "我想要退貨。"
+      },
+      "explanations": {
+        "zh-TW": "開始退貨流程的用語"
+      }
+    },
+    {
+      "id": "en-shp-3-01-2",
+      "pattern": "It does not fit.",
+      "translations": {
+        "zh-TW": "尺寸不合。"
+      },
+      "explanations": {
+        "zh-TW": "說明退貨原因"
+      }
+    },
+    {
+      "id": "en-shp-3-01-3",
+      "pattern": "Do you have the receipt?",
+      "translations": {
+        "zh-TW": "您有收據嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問證明文件"
+      }
+    },
+    {
+      "id": "en-shp-3-01-4",
+      "pattern": "Would you like a refund or exchange?",
+      "translations": {
+        "zh-TW": "您要退費還是換貨？"
+      },
+      "explanations": {
+        "zh-TW": "詢問處理方式"
+      }
+    },
+    {
+      "id": "en-shp-3-01-5",
+      "pattern": "The refund will take...",
+      "translations": {
+        "zh-TW": "退費需要..."
+      },
+      "explanations": {
+        "zh-TW": "說明處理時間"
+      }
+    }
+  ],
+  "shp-4": [
+    {
+      "id": "en-shp-4-01-1",
+      "pattern": "How long is the warranty?",
+      "translations": {
+        "zh-TW": "保固期多久？"
+      },
+      "explanations": {
+        "zh-TW": "詢問保固期限的用語"
+      }
+    },
+    {
+      "id": "en-shp-4-01-2",
+      "pattern": "What does it cover?",
+      "translations": {
+        "zh-TW": "涵蓋哪些項目？"
+      },
+      "explanations": {
+        "zh-TW": "詢問保固範圍"
+      }
+    },
+    {
+      "id": "en-shp-4-01-3",
+      "pattern": "Is accidental damage covered?",
+      "translations": {
+        "zh-TW": "意外損壞有涵蓋嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問特定項目"
+      }
+    },
+    {
+      "id": "en-shp-4-01-4",
+      "pattern": "How do I claim the warranty?",
+      "translations": {
+        "zh-TW": "我如何申請保固？"
+      },
+      "explanations": {
+        "zh-TW": "詢問申請流程"
+      }
+    },
+    {
+      "id": "en-shp-4-01-5",
+      "pattern": "Is there an extended warranty?",
+      "translations": {
+        "zh-TW": "有延長保固嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問加購選項"
+      }
+    }
+  ],
+  "shp-5": [
+    {
+      "id": "en-shp-5-01-1",
+      "pattern": "This product is defective.",
+      "translations": {
+        "zh-TW": "這個產品有瑕疵。"
+      },
+      "explanations": {
+        "zh-TW": "提出瑕疵投訴的用語"
+      }
+    },
+    {
+      "id": "en-shp-5-01-2",
+      "pattern": "I demand a refund.",
+      "translations": {
+        "zh-TW": "我要求退款。"
+      },
+      "explanations": {
+        "zh-TW": "提出具體要求"
+      }
+    },
+    {
+      "id": "en-shp-5-01-3",
+      "pattern": "This is unacceptable.",
+      "translations": {
+        "zh-TW": "這無法接受。"
+      },
+      "explanations": {
+        "zh-TW": "表達不滿"
+      }
+    },
+    {
+      "id": "en-shp-5-01-4",
+      "pattern": "I would like to speak to a manager.",
+      "translations": {
+        "zh-TW": "我想和經理談。"
+      },
+      "explanations": {
+        "zh-TW": "要求升級處理"
+      }
+    },
+    {
+      "id": "en-shp-5-01-5",
+      "pattern": "What compensation can you offer?",
+      "translations": {
+        "zh-TW": "你能提供什麼補償？"
+      },
+      "explanations": {
+        "zh-TW": "詢問補償方案"
+      }
+    }
+  ],
+  "shp-6": [
+    {
+      "id": "en-shp-6-01-1",
+      "pattern": "What are the differences between...?",
+      "translations": {
+        "zh-TW": "這兩款有什麼不同？"
+      },
+      "explanations": {
+        "zh-TW": "開始比較產品的用語"
+      }
+    },
+    {
+      "id": "en-shp-6-01-2",
+      "pattern": "Which has better performance?",
+      "translations": {
+        "zh-TW": "哪個性能更好？"
+      },
+      "explanations": {
+        "zh-TW": "詢問性能差異"
+      }
+    },
+    {
+      "id": "en-shp-6-01-3",
+      "pattern": "What are the specifications?",
+      "translations": {
+        "zh-TW": "規格是什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問技術細節"
+      }
+    },
+    {
+      "id": "en-shp-6-01-4",
+      "pattern": "Which would you recommend?",
+      "translations": {
+        "zh-TW": "你會推薦哪個？"
+      },
+      "explanations": {
+        "zh-TW": "請求建議"
+      }
+    },
+    {
+      "id": "en-shp-6-01-5",
+      "pattern": "Is the price difference worth it?",
+      "translations": {
+        "zh-TW": "價差值得嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問性價比"
+      }
+    }
+  ],
+  "din-1": [
+    {
+      "id": "en-din-1-01-1",
+      "pattern": "May I see the menu?",
+      "translations": {
+        "zh-TW": "能給我菜單嗎？"
+      },
+      "explanations": {
+        "zh-TW": "點餐的標準開場用語"
+      }
+    },
+    {
+      "id": "en-din-1-01-2",
+      "pattern": "I would like to order...",
+      "translations": {
+        "zh-TW": "我想要點..."
+      },
+      "explanations": {
+        "zh-TW": "開始點餐的用語"
+      }
+    },
+    {
+      "id": "en-din-1-01-3",
+      "pattern": "What do you recommend?",
+      "translations": {
+        "zh-TW": "你有什麼推薦嗎？"
+      },
+      "explanations": {
+        "zh-TW": "請求推薦"
+      }
+    },
+    {
+      "id": "en-din-1-01-4",
+      "pattern": "Is this dish spicy?",
+      "translations": {
+        "zh-TW": "這道菜辣嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問口味"
+      }
+    },
+    {
+      "id": "en-din-1-01-5",
+      "pattern": "That is all, thank you.",
+      "translations": {
+        "zh-TW": "這樣就好，謝謝。"
+      },
+      "explanations": {
+        "zh-TW": "結束點餐的用語"
+      }
+    }
+  ],
+  "din-2": [
+    {
+      "id": "en-din-2-01-1",
+      "pattern": "What is the special today?",
+      "translations": {
+        "zh-TW": "今日特餐是什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問特餐的標準用語"
+      }
+    },
+    {
+      "id": "en-din-2-01-2",
+      "pattern": "Is there a set menu?",
+      "translations": {
+        "zh-TW": "有套餐嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問套餐選項"
+      }
+    },
+    {
+      "id": "en-din-2-01-3",
+      "pattern": "What does it come with?",
+      "translations": {
+        "zh-TW": "這道菜附什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問配菜內容"
+      }
+    },
+    {
+      "id": "en-din-2-01-4",
+      "pattern": "Can I substitute...?",
+      "translations": {
+        "zh-TW": "我能把...換成...嗎？"
+      },
+      "explanations": {
+        "zh-TW": "請求替換"
+      }
+    },
+    {
+      "id": "en-din-2-01-5",
+      "pattern": "That sounds good.",
+      "translations": {
+        "zh-TW": "聽起來不錯。"
+      },
+      "explanations": {
+        "zh-TW": "表示有興趣"
+      }
+    }
+  ],
+  "din-3": [
+    {
+      "id": "en-din-3-01-1",
+      "pattern": "I have a food allergy.",
+      "translations": {
+        "zh-TW": "我有食物過敏。"
+      },
+      "explanations": {
+        "zh-TW": "告知過敏的開場用語"
+      }
+    },
+    {
+      "id": "en-din-3-01-2",
+      "pattern": "I am allergic to...",
+      "translations": {
+        "zh-TW": "我對...過敏。"
+      },
+      "explanations": {
+        "zh-TW": "說明過敏原"
+      }
+    },
+    {
+      "id": "en-din-3-01-3",
+      "pattern": "Does this contain...?",
+      "translations": {
+        "zh-TW": "這個含有...嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問成分"
+      }
+    },
+    {
+      "id": "en-din-3-01-4",
+      "pattern": "Can you prepare it without...?",
+      "translations": {
+        "zh-TW": "能不要加...嗎？"
+      },
+      "explanations": {
+        "zh-TW": "請求調整"
+      }
+    },
+    {
+      "id": "en-din-3-01-5",
+      "pattern": "Thank you for checking.",
+      "translations": {
+        "zh-TW": "謝謝你的確認。"
+      },
+      "explanations": {
+        "zh-TW": "表達感謝"
+      }
+    }
+  ],
+  "din-4": [
+    {
+      "id": "en-din-4-01-1",
+      "pattern": "I would like to make a reservation.",
+      "translations": {
+        "zh-TW": "我想要訂位。"
+      },
+      "explanations": {
+        "zh-TW": "開始預約的用語"
+      }
+    },
+    {
+      "id": "en-din-4-01-2",
+      "pattern": "For how many people?",
+      "translations": {
+        "zh-TW": "幾位？"
+      },
+      "explanations": {
+        "zh-TW": "詢問人數"
+      }
+    },
+    {
+      "id": "en-din-4-01-3",
+      "pattern": "What time is available?",
+      "translations": {
+        "zh-TW": "有什麼時間可選？"
+      },
+      "explanations": {
+        "zh-TW": "詢問可預約時間"
+      }
+    },
+    {
+      "id": "en-din-4-01-4",
+      "pattern": "Can I get a window seat?",
+      "translations": {
+        "zh-TW": "能給我靠窗的位子嗎？"
+      },
+      "explanations": {
+        "zh-TW": "提出座位偏好"
+      }
+    },
+    {
+      "id": "en-din-4-01-5",
+      "pattern": "I need to cancel my reservation.",
+      "translations": {
+        "zh-TW": "我需要取消預約。"
+      },
+      "explanations": {
+        "zh-TW": "取消預約的用語"
+      }
+    }
+  ],
+  "din-5": [
+    {
+      "id": "en-din-5-01-1",
+      "pattern": "I need to speak with the manager.",
+      "translations": {
+        "zh-TW": "我需要和經理談。"
+      },
+      "explanations": {
+        "zh-TW": "提出投訴的開場用語"
+      }
+    },
+    {
+      "id": "en-din-5-01-2",
+      "pattern": "The service has been unsatisfactory.",
+      "translations": {
+        "zh-TW": "服務令人不滿意。"
+      },
+      "explanations": {
+        "zh-TW": "說明問題"
+      }
+    },
+    {
+      "id": "en-din-5-01-3",
+      "pattern": "We have been waiting for...",
+      "translations": {
+        "zh-TW": "我們已經等了..."
+      },
+      "explanations": {
+        "zh-TW": "說明等待時間"
+      }
+    },
+    {
+      "id": "en-din-5-01-4",
+      "pattern": "This is not what I ordered.",
+      "translations": {
+        "zh-TW": "這不是我點的。"
+      },
+      "explanations": {
+        "zh-TW": "指出錯誤"
+      }
+    },
+    {
+      "id": "en-din-5-01-5",
+      "pattern": "How will you resolve this?",
+      "translations": {
+        "zh-TW": "你們如何解決這個問題？"
+      },
+      "explanations": {
+        "zh-TW": "詢問解決方案"
+      }
+    }
+  ],
+  "din-6": [
+    {
+      "id": "en-din-6-01-1",
+      "pattern": "The ambiance is...",
+      "translations": {
+        "zh-TW": "氛圍是..."
+      },
+      "explanations": {
+        "zh-TW": "評價用餐環境的用語"
+      }
+    },
+    {
+      "id": "en-din-6-01-2",
+      "pattern": "The presentation was beautiful.",
+      "translations": {
+        "zh-TW": "擺盤很漂亮。"
+      },
+      "explanations": {
+        "zh-TW": "評價外觀"
+      }
+    },
+    {
+      "id": "en-din-6-01-3",
+      "pattern": "The flavors were...",
+      "translations": {
+        "zh-TW": "口味..."
+      },
+      "explanations": {
+        "zh-TW": "評價味道"
+      }
+    },
+    {
+      "id": "en-din-6-01-4",
+      "pattern": "I would give it... stars.",
+      "translations": {
+        "zh-TW": "我會給它...顆星。"
+      },
+      "explanations": {
+        "zh-TW": "給出評分"
+      }
+    },
+    {
+      "id": "en-din-6-01-5",
+      "pattern": "I would definitely recommend.",
+      "translations": {
+        "zh-TW": "我絕對會推薦。"
+      },
+      "explanations": {
+        "zh-TW": "總結推薦"
+      }
+    }
+  ],
+  "pet-1": [
+    {
+      "id": "en-pet-1-01-1",
+      "pattern": "This is my pet...",
+      "translations": {
+        "zh-TW": "這是我的寵物..."
+      },
+      "explanations": {
+        "zh-TW": "介紹寵物的開場用語"
+      }
+    },
+    {
+      "id": "en-pet-1-01-2",
+      "pattern": "He/She is a...",
+      "translations": {
+        "zh-TW": "他/她是..."
+      },
+      "explanations": {
+        "zh-TW": "說明品種"
+      }
+    },
+    {
+      "id": "en-pet-1-01-3",
+      "pattern": "He/She is... years old.",
+      "translations": {
+        "zh-TW": "他/她...歲了。"
+      },
+      "explanations": {
+        "zh-TW": "說明年齡"
+      }
+    },
+    {
+      "id": "en-pet-1-01-4",
+      "pattern": "His/Her personality is...",
+      "translations": {
+        "zh-TW": "他/她的個性是..."
+      },
+      "explanations": {
+        "zh-TW": "描述性格"
+      }
+    },
+    {
+      "id": "en-pet-1-01-5",
+      "pattern": "Would you like to pet him/her?",
+      "translations": {
+        "zh-TW": "你想摸摸他/她嗎？"
+      },
+      "explanations": {
+        "zh-TW": "邀請互動"
+      }
+    }
+  ],
+  "pet-2": [
+    {
+      "id": "en-pet-2-01-1",
+      "pattern": "I need food for...",
+      "translations": {
+        "zh-TW": "我需要...的食物。"
+      },
+      "explanations": {
+        "zh-TW": "開始選購寵物食品的用語"
+      }
+    },
+    {
+      "id": "en-pet-2-01-2",
+      "pattern": "What brand do you recommend?",
+      "translations": {
+        "zh-TW": "你推薦什麼品牌？"
+      },
+      "explanations": {
+        "zh-TW": "請求推薦"
+      }
+    },
+    {
+      "id": "en-pet-2-01-3",
+      "pattern": "Is this suitable for...",
+      "translations": {
+        "zh-TW": "這個適合...嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問適用性"
+      }
+    },
+    {
+      "id": "en-pet-2-01-4",
+      "pattern": "What is the nutritional content?",
+      "translations": {
+        "zh-TW": "營養成分是什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問營養資訊"
+      }
+    },
+    {
+      "id": "en-pet-2-01-5",
+      "pattern": "Do you have any samples?",
+      "translations": {
+        "zh-TW": "有試吃包嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問試用品"
+      }
+    }
+  ],
+  "pet-3": [
+    {
+      "id": "en-pet-3-01-1",
+      "pattern": "I need to see the vet.",
+      "translations": {
+        "zh-TW": "我需要看獸醫。"
+      },
+      "explanations": {
+        "zh-TW": "開始就診的用語"
+      }
+    },
+    {
+      "id": "en-pet-3-01-2",
+      "pattern": "My pet has been...",
+      "translations": {
+        "zh-TW": "我的寵物一直在..."
+      },
+      "explanations": {
+        "zh-TW": "描述症狀"
+      }
+    },
+    {
+      "id": "en-pet-3-01-3",
+      "pattern": "It started about...",
+      "translations": {
+        "zh-TW": "大約在...開始。"
+      },
+      "explanations": {
+        "zh-TW": "說明時間"
+      }
+    },
+    {
+      "id": "en-pet-3-01-4",
+      "pattern": "He/She has been eating...",
+      "translations": {
+        "zh-TW": "他/她一直在吃..."
+      },
+      "explanations": {
+        "zh-TW": "說明食慾"
+      }
+    },
+    {
+      "id": "en-pet-3-01-5",
+      "pattern": "Is this an emergency?",
+      "translations": {
+        "zh-TW": "這是緊急情況嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問嚴重程度"
+      }
+    }
+  ],
+  "pet-4": [
+    {
+      "id": "en-pet-4-01-1",
+      "pattern": "I need help training my pet.",
+      "translations": {
+        "zh-TW": "我需要訓練寵物的幫助。"
+      },
+      "explanations": {
+        "zh-TW": "開始諮詢的用語"
+      }
+    },
+    {
+      "id": "en-pet-4-01-2",
+      "pattern": "He/She keeps...",
+      "translations": {
+        "zh-TW": "他/她一直..."
+      },
+      "explanations": {
+        "zh-TW": "描述問題行為"
+      }
+    },
+    {
+      "id": "en-pet-4-01-3",
+      "pattern": "What training methods work?",
+      "translations": {
+        "zh-TW": "什麼訓練方法有效？"
+      },
+      "explanations": {
+        "zh-TW": "詢問方法"
+      }
+    },
+    {
+      "id": "en-pet-4-01-4",
+      "pattern": "How long does training take?",
+      "translations": {
+        "zh-TW": "訓練需要多久？"
+      },
+      "explanations": {
+        "zh-TW": "詢問時間"
+      }
+    },
+    {
+      "id": "en-pet-4-01-5",
+      "pattern": "Can you recommend a trainer?",
+      "translations": {
+        "zh-TW": "你能推薦訓練師嗎？"
+      },
+      "explanations": {
+        "zh-TW": "請求推薦"
+      }
+    }
+  ],
+  "pet-5": [
+    {
+      "id": "en-pet-5-01-1",
+      "pattern": "I am moving abroad with my pet.",
+      "translations": {
+        "zh-TW": "我要帶寵物移民國外。"
+      },
+      "explanations": {
+        "zh-TW": "開始諮詢的用語"
+      }
+    },
+    {
+      "id": "en-pet-5-01-2",
+      "pattern": "What documents do I need?",
+      "translations": {
+        "zh-TW": "我需要哪些文件？"
+      },
+      "explanations": {
+        "zh-TW": "詢問所需文件"
+      }
+    },
+    {
+      "id": "en-pet-5-01-3",
+      "pattern": "Is quarantine required?",
+      "translations": {
+        "zh-TW": "需要隔離嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問檢疫要求"
+      }
+    },
+    {
+      "id": "en-pet-5-01-4",
+      "pattern": "Which airlines allow pets?",
+      "translations": {
+        "zh-TW": "哪些航空公司允許攜帶寵物？"
+      },
+      "explanations": {
+        "zh-TW": "詢問運輸選項"
+      }
+    },
+    {
+      "id": "en-pet-5-01-5",
+      "pattern": "What vaccinations are required?",
+      "translations": {
+        "zh-TW": "需要哪些疫苗？"
+      },
+      "explanations": {
+        "zh-TW": "詢問疫苗要求"
+      }
+    }
+  ],
+  "pet-6": [
+    {
+      "id": "en-pet-6-01-1",
+      "pattern": "My pet has behavioral issues.",
+      "translations": {
+        "zh-TW": "我的寵物有行為問題。"
+      },
+      "explanations": {
+        "zh-TW": "開始諮詢的用語"
+      }
+    },
+    {
+      "id": "en-pet-6-01-2",
+      "pattern": "He/She seems anxious when...",
+      "translations": {
+        "zh-TW": "當...時他/她似乎很焦慮。"
+      },
+      "explanations": {
+        "zh-TW": "描述症狀"
+      }
+    },
+    {
+      "id": "en-pet-6-01-3",
+      "pattern": "What could be the cause?",
+      "translations": {
+        "zh-TW": "可能的原因是什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問原因"
+      }
+    },
+    {
+      "id": "en-pet-6-01-4",
+      "pattern": "Are there treatments available?",
+      "translations": {
+        "zh-TW": "有可用的治療方法嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問解決方案"
+      }
+    },
+    {
+      "id": "en-pet-6-01-5",
+      "pattern": "How can I help at home?",
+      "translations": {
+        "zh-TW": "我在家能如何幫助？"
+      },
+      "explanations": {
+        "zh-TW": "詢問日常照護"
+      }
+    }
+  ],
+  "hlt-1": [
+    {
+      "id": "en-hlt-1-01-1",
+      "pattern": "I have pain in my...",
+      "translations": {
+        "zh-TW": "我的...會痛。"
+      },
+      "explanations": {
+        "zh-TW": "描述疼痛位置的基本用語"
+      }
+    },
+    {
+      "id": "en-hlt-1-01-2",
+      "pattern": "It hurts when I...",
+      "translations": {
+        "zh-TW": "當我...時會痛。"
+      },
+      "explanations": {
+        "zh-TW": "說明觸發疼痛的動作"
+      }
+    },
+    {
+      "id": "en-hlt-1-01-3",
+      "pattern": "The pain is...",
+      "translations": {
+        "zh-TW": "疼痛是..."
+      },
+      "explanations": {
+        "zh-TW": "描述疼痛性質（如刺痛、鈍痛）"
+      }
+    },
+    {
+      "id": "en-hlt-1-01-4",
+      "pattern": "It started about...",
+      "translations": {
+        "zh-TW": "大約在...開始的。"
+      },
+      "explanations": {
+        "zh-TW": "說明時間"
+      }
+    },
+    {
+      "id": "en-hlt-1-01-5",
+      "pattern": "On a scale of 1 to 10...",
+      "translations": {
+        "zh-TW": "以1到10分來評估..."
+      },
+      "explanations": {
+        "zh-TW": "描述疼痛程度"
+      }
+    }
+  ],
+  "hlt-2": [
+    {
+      "id": "en-hlt-2-01-1",
+      "pattern": "I need something for a cold.",
+      "translations": {
+        "zh-TW": "我需要感冒藥。"
+      },
+      "explanations": {
+        "zh-TW": "開始購藥的用語"
+      }
+    },
+    {
+      "id": "en-hlt-2-01-2",
+      "pattern": "My symptoms include...",
+      "translations": {
+        "zh-TW": "我的症狀包括..."
+      },
+      "explanations": {
+        "zh-TW": "描述症狀"
+      }
+    },
+    {
+      "id": "en-hlt-2-01-3",
+      "pattern": "What do you recommend?",
+      "translations": {
+        "zh-TW": "你推薦什麼？"
+      },
+      "explanations": {
+        "zh-TW": "請求推薦"
+      }
+    },
+    {
+      "id": "en-hlt-2-01-4",
+      "pattern": "Are there any side effects?",
+      "translations": {
+        "zh-TW": "有副作用嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問注意事項"
+      }
+    },
+    {
+      "id": "en-hlt-2-01-5",
+      "pattern": "How should I take this?",
+      "translations": {
+        "zh-TW": "我該如何服用？"
+      },
+      "explanations": {
+        "zh-TW": "詢問用法"
+      }
+    }
+  ],
+  "hlt-3": [
+    {
+      "id": "en-hlt-3-01-1",
+      "pattern": "I am here for my test results.",
+      "translations": {
+        "zh-TW": "我來看檢查結果。"
+      },
+      "explanations": {
+        "zh-TW": "開始就診的用語"
+      }
+    },
+    {
+      "id": "en-hlt-3-01-2",
+      "pattern": "What do the results show?",
+      "translations": {
+        "zh-TW": "結果顯示什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問結果"
+      }
+    },
+    {
+      "id": "en-hlt-3-01-3",
+      "pattern": "Is everything normal?",
+      "translations": {
+        "zh-TW": "一切正常嗎？"
+      },
+      "explanations": {
+        "zh-TW": "確認健康狀態"
+      }
+    },
+    {
+      "id": "en-hlt-3-01-4",
+      "pattern": "Do I need any treatment?",
+      "translations": {
+        "zh-TW": "我需要治療嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問下一步"
+      }
+    },
+    {
+      "id": "en-hlt-3-01-5",
+      "pattern": "When should I come back?",
+      "translations": {
+        "zh-TW": "我該什麼時候回診？"
+      },
+      "explanations": {
+        "zh-TW": "詢問回診時間"
+      }
+    }
+  ],
+  "hlt-4": [
+    {
+      "id": "en-hlt-4-01-1",
+      "pattern": "I would like to make an appointment.",
+      "translations": {
+        "zh-TW": "我想要預約門診。"
+      },
+      "explanations": {
+        "zh-TW": "開始預約的用語"
+      }
+    },
+    {
+      "id": "en-hlt-4-01-2",
+      "pattern": "Which doctor are you seeing?",
+      "translations": {
+        "zh-TW": "您要看哪位醫生？"
+      },
+      "explanations": {
+        "zh-TW": "詢問醫生偏好"
+      }
+    },
+    {
+      "id": "en-hlt-4-01-3",
+      "pattern": "When is the next available slot?",
+      "translations": {
+        "zh-TW": "下一個可預約時段是什麼時候？"
+      },
+      "explanations": {
+        "zh-TW": "詢問時間"
+      }
+    },
+    {
+      "id": "en-hlt-4-01-4",
+      "pattern": "I need a referral for...",
+      "translations": {
+        "zh-TW": "我需要...的轉診。"
+      },
+      "explanations": {
+        "zh-TW": "說明轉診需求"
+      }
+    },
+    {
+      "id": "en-hlt-4-01-5",
+      "pattern": "Please confirm the appointment.",
+      "translations": {
+        "zh-TW": "請確認預約。"
+      },
+      "explanations": {
+        "zh-TW": "請求確認"
+      }
+    }
+  ],
+  "hlt-5": [
+    {
+      "id": "en-hlt-5-01-1",
+      "pattern": "Let us discuss your treatment plan.",
+      "translations": {
+        "zh-TW": "我們來討論您的治療方案。"
+      },
+      "explanations": {
+        "zh-TW": "開始討論的開場白"
+      }
+    },
+    {
+      "id": "en-hlt-5-01-2",
+      "pattern": "You will need to take...",
+      "translations": {
+        "zh-TW": "您需要服用..."
+      },
+      "explanations": {
+        "zh-TW": "說明用藥"
+      }
+    },
+    {
+      "id": "en-hlt-5-01-3",
+      "pattern": "Lifestyle changes include...",
+      "translations": {
+        "zh-TW": "生活方式改變包括..."
+      },
+      "explanations": {
+        "zh-TW": "說明日常照護"
+      }
+    },
+    {
+      "id": "en-hlt-5-01-4",
+      "pattern": "We should monitor...",
+      "translations": {
+        "zh-TW": "我們應該監測..."
+      },
+      "explanations": {
+        "zh-TW": "說明追蹤項目"
+      }
+    },
+    {
+      "id": "en-hlt-5-01-5",
+      "pattern": "Do you have any questions?",
+      "translations": {
+        "zh-TW": "有任何問題嗎？"
+      },
+      "explanations": {
+        "zh-TW": "確認理解"
+      }
+    }
+  ],
+  "hlt-6": [
+    {
+      "id": "en-hlt-6-01-1",
+      "pattern": "I will explain the procedure.",
+      "translations": {
+        "zh-TW": "我將解釋手術流程。"
+      },
+      "explanations": {
+        "zh-TW": "開始說明的用語"
+      }
+    },
+    {
+      "id": "en-hlt-6-01-2",
+      "pattern": "The risks include...",
+      "translations": {
+        "zh-TW": "風險包括..."
+      },
+      "explanations": {
+        "zh-TW": "說明風險"
+      }
+    },
+    {
+      "id": "en-hlt-6-01-3",
+      "pattern": "The benefits are...",
+      "translations": {
+        "zh-TW": "好處是..."
+      },
+      "explanations": {
+        "zh-TW": "說明益處"
+      }
+    },
+    {
+      "id": "en-hlt-6-01-4",
+      "pattern": "Do you understand?",
+      "translations": {
+        "zh-TW": "您了解嗎？"
+      },
+      "explanations": {
+        "zh-TW": "確認理解"
+      }
+    },
+    {
+      "id": "en-hlt-6-01-5",
+      "pattern": "Please sign here.",
+      "translations": {
+        "zh-TW": "請在此簽名。"
+      },
+      "explanations": {
+        "zh-TW": "請求簽署"
+      }
+    }
+  ],
+  "trv-1": [
+    {
+      "id": "en-trv-1-01-1",
+      "pattern": "I would like to check in.",
+      "translations": {
+        "zh-TW": "我想要辦理登機。"
+      },
+      "explanations": {
+        "zh-TW": "機場報到的標準用語"
+      }
+    },
+    {
+      "id": "en-trv-1-01-2",
+      "pattern": "Here is my passport.",
+      "translations": {
+        "zh-TW": "這是我的護照。"
+      },
+      "explanations": {
+        "zh-TW": "出示證件"
+      }
+    },
+    {
+      "id": "en-trv-1-01-3",
+      "pattern": "I would like a window seat.",
+      "translations": {
+        "zh-TW": "我想要靠窗的位子。"
+      },
+      "explanations": {
+        "zh-TW": "選擇座位偏好"
+      }
+    },
+    {
+      "id": "en-trv-1-01-4",
+      "pattern": "How much luggage can I check?",
+      "translations": {
+        "zh-TW": "我能托運多少行李？"
+      },
+      "explanations": {
+        "zh-TW": "詢問行李限制"
+      }
+    },
+    {
+      "id": "en-trv-1-01-5",
+      "pattern": "When does boarding start?",
+      "translations": {
+        "zh-TW": "什麼時候開始登機？"
+      },
+      "explanations": {
+        "zh-TW": "詢問登機時間"
+      }
+    }
+  ],
+  "trv-2": [
+    {
+      "id": "en-trv-2-01-1",
+      "pattern": "Excuse me, how do I get to...?",
+      "translations": {
+        "zh-TW": "不好意思，我要怎麼去...？"
+      },
+      "explanations": {
+        "zh-TW": "詢問方向的標準用語"
+      }
+    },
+    {
+      "id": "en-trv-2-01-2",
+      "pattern": "Is it within walking distance?",
+      "translations": {
+        "zh-TW": "走路能到嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問距離"
+      }
+    },
+    {
+      "id": "en-trv-2-01-3",
+      "pattern": "Should I take a taxi?",
+      "translations": {
+        "zh-TW": "我應該搭計程車嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問交通選項"
+      }
+    },
+    {
+      "id": "en-trv-2-01-4",
+      "pattern": "Which bus should I take?",
+      "translations": {
+        "zh-TW": "我應該搭幾號公車？"
+      },
+      "explanations": {
+        "zh-TW": "詢問具體路線"
+      }
+    },
+    {
+      "id": "en-trv-2-01-5",
+      "pattern": "Thank you for your help.",
+      "translations": {
+        "zh-TW": "謝謝你的幫忙。"
+      },
+      "explanations": {
+        "zh-TW": "表達感謝"
+      }
+    }
+  ],
+  "trv-3": [
+    {
+      "id": "en-trv-3-01-1",
+      "pattern": "I have a reservation.",
+      "translations": {
+        "zh-TW": "我有預訂房間。"
+      },
+      "explanations": {
+        "zh-TW": "辦理入住的標準用語"
+      }
+    },
+    {
+      "id": "en-trv-3-01-2",
+      "pattern": "There seems to be a problem.",
+      "translations": {
+        "zh-TW": "似乎有個問題。"
+      },
+      "explanations": {
+        "zh-TW": "提出問題的開場白"
+      }
+    },
+    {
+      "id": "en-trv-3-01-3",
+      "pattern": "I booked a... room.",
+      "translations": {
+        "zh-TW": "我訂的是...房型。"
+      },
+      "explanations": {
+        "zh-TW": "說明訂房內容"
+      }
+    },
+    {
+      "id": "en-trv-3-01-4",
+      "pattern": "What are my options?",
+      "translations": {
+        "zh-TW": "我有什麼選擇？"
+      },
+      "explanations": {
+        "zh-TW": "詢問替代方案"
+      }
+    },
+    {
+      "id": "en-trv-3-01-5",
+      "pattern": "Can you find another hotel?",
+      "translations": {
+        "zh-TW": "你能幫我找其他飯店嗎？"
+      },
+      "explanations": {
+        "zh-TW": "請求協助"
+      }
+    }
+  ],
+  "trv-4": [
+    {
+      "id": "en-trv-4-01-1",
+      "pattern": "Let us plan our itinerary.",
+      "translations": {
+        "zh-TW": "我們來規劃行程。"
+      },
+      "explanations": {
+        "zh-TW": "開始討論的開場白"
+      }
+    },
+    {
+      "id": "en-trv-4-01-2",
+      "pattern": "What attractions should we visit?",
+      "translations": {
+        "zh-TW": "我們應該參觀哪些景點？"
+      },
+      "explanations": {
+        "zh-TW": "詢問景點建議"
+      }
+    },
+    {
+      "id": "en-trv-4-01-3",
+      "pattern": "How many days should we spend in...?",
+      "translations": {
+        "zh-TW": "我們應該在...待幾天？"
+      },
+      "explanations": {
+        "zh-TW": "討論時間分配"
+      }
+    },
+    {
+      "id": "en-trv-4-01-4",
+      "pattern": "Let us book tickets in advance.",
+      "translations": {
+        "zh-TW": "我們提前買票吧。"
+      },
+      "explanations": {
+        "zh-TW": "提議具體行動"
+      }
+    },
+    {
+      "id": "en-trv-4-01-5",
+      "pattern": "We should leave some flexibility.",
+      "translations": {
+        "zh-TW": "我們應該留點彈性。"
+      },
+      "explanations": {
+        "zh-TW": "提出規劃建議"
+      }
+    }
+  ],
+  "trv-5": [
+    {
+      "id": "en-trv-5-01-1",
+      "pattern": "I lost my passport.",
+      "translations": {
+        "zh-TW": "我弄丟了護照。"
+      },
+      "explanations": {
+        "zh-TW": "報案的開場白"
+      }
+    },
+    {
+      "id": "en-trv-5-01-2",
+      "pattern": "I need to report a lost passport.",
+      "translations": {
+        "zh-TW": "我需要報失護照。"
+      },
+      "explanations": {
+        "zh-TW": "說明需求"
+      }
+    },
+    {
+      "id": "en-trv-5-01-3",
+      "pattern": "Where is the nearest police station?",
+      "translations": {
+        "zh-TW": "最近的警察局在哪裡？"
+      },
+      "explanations": {
+        "zh-TW": "詢問位置"
+      }
+    },
+    {
+      "id": "en-trv-5-01-4",
+      "pattern": "How do I contact my embassy?",
+      "translations": {
+        "zh-TW": "我如何聯繫大使館？"
+      },
+      "explanations": {
+        "zh-TW": "詢問聯絡方式"
+      }
+    },
+    {
+      "id": "en-trv-5-01-5",
+      "pattern": "How long does it take to get a replacement?",
+      "translations": {
+        "zh-TW": "取得替代護照需要多久？"
+      },
+      "explanations": {
+        "zh-TW": "詢問處理時間"
+      }
+    }
+  ],
+  "trv-6": [
+    {
+      "id": "en-trv-6-01-1",
+      "pattern": "Welcome to...",
+      "translations": {
+        "zh-TW": "歡迎來到..."
+      },
+      "explanations": {
+        "zh-TW": "導覽開場的用語"
+      }
+    },
+    {
+      "id": "en-trv-6-01-2",
+      "pattern": "This building dates back to...",
+      "translations": {
+        "zh-TW": "這棟建築可以追溯到..."
+      },
+      "explanations": {
+        "zh-TW": "說明歷史年代"
+      }
+    },
+    {
+      "id": "en-trv-6-01-3",
+      "pattern": "It was built by...",
+      "translations": {
+        "zh-TW": "它是由...建造的。"
+      },
+      "explanations": {
+        "zh-TW": "說明建造者"
+      }
+    },
+    {
+      "id": "en-trv-6-01-4",
+      "pattern": "The architectural style is...",
+      "translations": {
+        "zh-TW": "建築風格是..."
+      },
+      "explanations": {
+        "zh-TW": "說明風格"
+      }
+    },
+    {
+      "id": "en-trv-6-01-5",
+      "pattern": "This site has significant cultural importance.",
+      "translations": {
+        "zh-TW": "這個地點具有重要的文化意義。"
+      },
+      "explanations": {
+        "zh-TW": "說明文化價值"
+      }
+    }
+  ],
+  "dat-1": [
+    {
+      "id": "en-dat-1-01-1",
+      "pattern": "Hi, I am [name]. Nice to meet you.",
+      "translations": {
+        "zh-TW": "嗨，我叫 [名字]。很高興認識你。"
+      },
+      "explanations": {
+        "zh-TW": "初次見面自我介紹的標準用語"
+      }
+    },
+    {
+      "id": "en-dat-1-01-2",
+      "pattern": "What do you do for fun?",
+      "translations": {
+        "zh-TW": "你平時喜歡做什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問興趣愛好"
+      }
+    },
+    {
+      "id": "en-dat-1-01-3",
+      "pattern": "This place looks nice.",
+      "translations": {
+        "zh-TW": "這地方看起來不錯。"
+      },
+      "explanations": {
+        "zh-TW": "開啟話題的寒暄語"
+      }
+    },
+    {
+      "id": "en-dat-1-01-4",
+      "pattern": "How did you hear about this event?",
+      "translations": {
+        "zh-TW": "你是怎麼知道這個活動的？"
+      },
+      "explanations": {
+        "zh-TW": "詢問相識由來"
+      }
+    },
+    {
+      "id": "en-dat-1-01-5",
+      "pattern": "So, what brings you here today?",
+      "translations": {
+        "zh-TW": "所以，你今天為什麼來這裡？"
+      },
+      "explanations": {
+        "zh-TW": "自然展開對話"
+      }
+    }
+  ],
+  "dat-2": [
+    {
+      "id": "en-dat-2-01-1",
+      "pattern": "I love your outfit!",
+      "translations": {
+        "zh-TW": "我喜歡你的穿著！"
+      },
+      "explanations": {
+        "zh-TW": "稱讚穿著的常用語"
+      }
+    },
+    {
+      "id": "en-dat-2-01-2",
+      "pattern": "That color really suits you.",
+      "translations": {
+        "zh-TW": "那個顏色真的很適合你。"
+      },
+      "explanations": {
+        "zh-TW": "具體稱讚穿著搭配"
+      }
+    },
+    {
+      "id": "en-dat-2-01-3",
+      "pattern": "You have great style.",
+      "translations": {
+        "zh-TW": "你的品味很好。"
+      },
+      "explanations": {
+        "zh-TW": "整體稱讚品味"
+      }
+    },
+    {
+      "id": "en-dat-2-01-4",
+      "pattern": "Where did you get that?",
+      "translations": {
+        "zh-TW": "你那是在哪買的？"
+      },
+      "explanations": {
+        "zh-TW": "自然延伸話題"
+      }
+    },
+    {
+      "id": "en-dat-2-01-5",
+      "pattern": "You look great tonight.",
+      "translations": {
+        "zh-TW": "你今晚真好看。"
+      },
+      "explanations": {
+        "zh-TW": "稱讚對方外貌"
+      }
+    }
+  ],
+  "dat-3": [
+    {
+      "id": "en-dat-3-01-1",
+      "pattern": "What matters most to you in life?",
+      "translations": {
+        "zh-TW": "對你來說人生最重要的是什麼？"
+      },
+      "explanations": {
+        "zh-TW": "深入交流的開場白"
+      }
+    },
+    {
+      "id": "en-dat-3-01-2",
+      "pattern": "Where do you see yourself in 5 years?",
+      "translations": {
+        "zh-TW": "五年後你想在哪裡？"
+      },
+      "explanations": {
+        "zh-TW": "討論未來規劃"
+      }
+    },
+    {
+      "id": "en-dat-3-01-3",
+      "pattern": "What is your dream?",
+      "translations": {
+        "zh-TW": "你的夢想是什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問人生目標"
+      }
+    },
+    {
+      "id": "en-dat-3-01-4",
+      "pattern": "What is your biggest regret?",
+      "translations": {
+        "zh-TW": "你最大的遺憾是什麼？"
+      },
+      "explanations": {
+        "zh-TW": "深入了解對方"
+      }
+    },
+    {
+      "id": "en-dat-3-01-5",
+      "pattern": "I value...",
+      "translations": {
+        "zh-TW": "我看重..."
+      },
+      "explanations": {
+        "zh-TW": "分享自己的價值觀"
+      }
+    }
+  ],
+  "dat-4": [
+    {
+      "id": "en-dat-4-01-1",
+      "pattern": "So, do you come here often?",
+      "translations": {
+        "zh-TW": "所以，你常來這裡嗎？"
+      },
+      "explanations": {
+        "zh-TW": "化解尷尬的經典問句"
+      }
+    },
+    {
+      "id": "en-dat-4-01-2",
+      "pattern": "Have you tried the food here?",
+      "translations": {
+        "zh-TW": "你有吃過這裡的東西嗎？"
+      },
+      "explanations": {
+        "zh-TW": "轉向食物話題"
+      }
+    },
+    {
+      "id": "en-dat-4-01-3",
+      "pattern": "What kind of music do you like?",
+      "translations": {
+        "zh-TW": "你喜歡什麼類型的音樂？"
+      },
+      "explanations": {
+        "zh-TW": "分享興趣"
+      }
+    },
+    {
+      "id": "en-dat-4-01-4",
+      "pattern": "Tell me about your hobbies.",
+      "translations": {
+        "zh-TW": "說說你的興趣愛好。"
+      },
+      "explanations": {
+        "zh-TW": "邀請對方分享"
+      }
+    },
+    {
+      "id": "en-dat-4-01-5",
+      "pattern": "This is a nice place to chat.",
+      "translations": {
+        "zh-TW": "這是個聊天的很棒的地方。"
+      },
+      "explanations": {
+        "zh-TW": "肯定當下氛圍"
+      }
+    }
+  ],
+  "dat-5": [
+    {
+      "id": "en-dat-5-01-1",
+      "pattern": "We need to talk about our relationship.",
+      "translations": {
+        "zh-TW": "我們需要談談我們的關係。"
+      },
+      "explanations": {
+        "zh-TW": "嚴肅討論的開場白"
+      }
+    },
+    {
+      "id": "en-dat-5-01-2",
+      "pattern": "Where is this going?",
+      "translations": {
+        "zh-TW": "這段關係要往哪裡走？"
+      },
+      "explanations": {
+        "zh-TW": "詢問未來方向"
+      }
+    },
+    {
+      "id": "en-dat-5-01-3",
+      "pattern": "I think we are on different pages.",
+      "translations": {
+        "zh-TW": "我覺得我們不在同一個頻道上。"
+      },
+      "explanations": {
+        "zh-TW": "表達認知差距"
+      }
+    },
+    {
+      "id": "en-dat-5-01-4",
+      "pattern": "What do you want from this relationship?",
+      "translations": {
+        "zh-TW": "你從這段關係中想要什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問對方期望"
+      }
+    },
+    {
+      "id": "en-dat-5-01-5",
+      "pattern": "I am looking for something serious.",
+      "translations": {
+        "zh-TW": "我在找認真的關係。"
+      },
+      "explanations": {
+        "zh-TW": "表明自己的意圖"
+      }
+    }
+  ],
+  "dat-6": [
+    {
+      "id": "en-dat-6-01-1",
+      "pattern": "I see your point, but I feel differently.",
+      "translations": {
+        "zh-TW": "我明白你的觀點，但我有不同的感受。"
+      },
+      "explanations": {
+        "zh-TW": "表達不同意見的禮貌方式"
+      }
+    },
+    {
+      "id": "en-dat-6-01-2",
+      "pattern": "Let us find a compromise.",
+      "translations": {
+        "zh-TW": "讓我們找個折衷方案。"
+      },
+      "explanations": {
+        "zh-TW": "尋求共識"
+      }
+    },
+    {
+      "id": "en-dat-6-01-3",
+      "pattern": "I understand where you are coming from.",
+      "translations": {
+        "zh-TW": "我理解你的出發點。"
+      },
+      "explanations": {
+        "zh-TW": "展現同理心"
+      }
+    },
+    {
+      "id": "en-dat-6-01-4",
+      "pattern": "Can we agree to disagree?",
+      "translations": {
+        "zh-TW": "我們能保留各自意見嗎？"
+      },
+      "explanations": {
+        "zh-TW": "接受分歧"
+      }
+    },
+    {
+      "id": "en-dat-6-01-5",
+      "pattern": "This is important to me.",
+      "translations": {
+        "zh-TW": "這對我很重要。"
+      },
+      "explanations": {
+        "zh-TW": "表達堅持"
+      }
+    }
+  ],
+  "fst-1": [
+    {
+      "id": "en-fst-1-01-1",
+      "pattern": "Happy New Year! Best wishes for the year ahead.",
+      "translations": {
+        "zh-TW": "新年快樂！祝新的一年一切順利。"
+      },
+      "explanations": {
+        "zh-TW": "新年祝福的基本用語"
+      }
+    },
+    {
+      "id": "en-fst-1-01-2",
+      "pattern": "Wishing you a joyful and prosperous holiday season.",
+      "translations": {
+        "zh-TW": "祝你有個歡樂繁榮的佳節。"
+      },
+      "explanations": {
+        "zh-TW": "節慶祝福的正式用語"
+      }
+    },
+    {
+      "id": "en-fst-1-01-3",
+      "pattern": "May this special day bring you happiness.",
+      "translations": {
+        "zh-TW": "願這特殊的日子帶給你幸福。"
+      },
+      "explanations": {
+        "zh-TW": "通用節慶祝願"
+      }
+    },
+    {
+      "id": "en-fst-1-01-4",
+      "pattern": "Warmest greetings for the festival.",
+      "translations": {
+        "zh-TW": "獻上最誠摯的節慶祝福。"
+      },
+      "explanations": {
+        "zh-TW": "正式場合的祝賀語"
+      }
+    },
+    {
+      "id": "en-fst-1-01-5",
+      "pattern": "Hope you have a wonderful celebration.",
+      "translations": {
+        "zh-TW": "希望你過個很棒的慶祝。"
+      },
+      "explanations": {
+        "zh-TW": "輕鬆友善的祝語"
+      }
+    }
+  ],
+  "fst-2": [
+    {
+      "id": "en-fst-2-01-1",
+      "pattern": "The parade is starting on Main Street.",
+      "translations": {
+        "zh-TW": "遊行在主街開始了。"
+      },
+      "explanations": {
+        "zh-TW": "告知遊行開始的地點與時間"
+      }
+    },
+    {
+      "id": "en-fst-2-01-2",
+      "pattern": "The floats look amazing this year!",
+      "translations": {
+        "zh-TW": "今年的花車看起來太讚了！"
+      },
+      "explanations": {
+        "zh-TW": "表達對遊行表演的驚艷"
+      }
+    },
+    {
+      "id": "en-fst-2-01-3",
+      "pattern": "Where is the best viewing spot?",
+      "translations": {
+        "zh-TW": "哪裡是最好的觀賞點？"
+      },
+      "explanations": {
+        "zh-TW": "詢問最佳觀賞位置"
+      }
+    },
+    {
+      "id": "en-fst-2-01-4",
+      "pattern": "Let me get a better view.",
+      "translations": {
+        "zh-TW": "讓我找個更好的視角。"
+      },
+      "explanations": {
+        "zh-TW": "尋找觀賞位置"
+      }
+    },
+    {
+      "id": "en-fst-2-01-5",
+      "pattern": "Do not miss the marching band!",
+      "translations": {
+        "zh-TW": "不要錯過行進樂隊！"
+      },
+      "explanations": {
+        "zh-TW": "推薦觀賞重點"
+      }
+    }
+  ],
+  "fst-3": [
+    {
+      "id": "en-fst-3-01-1",
+      "pattern": "What is the traditional food for this festival?",
+      "translations": {
+        "zh-TW": "這個節日的傳統食物是什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問節慶傳統食物"
+      }
+    },
+    {
+      "id": "en-fst-3-01-2",
+      "pattern": "My favorite is the...",
+      "translations": {
+        "zh-TW": "我最喜歡的是..."
+      },
+      "explanations": {
+        "zh-TW": "分享喜愛的食物"
+      }
+    },
+    {
+      "id": "en-fst-3-01-3",
+      "pattern": "The recipe has been passed down for generations.",
+      "translations": {
+        "zh-TW": "食譜代代相傳。"
+      },
+      "explanations": {
+        "zh-TW": "說明傳承意義"
+      }
+    },
+    {
+      "id": "en-fst-3-01-4",
+      "pattern": "Can you teach me how to make it?",
+      "translations": {
+        "zh-TW": "你能教我怎麼做嗎？"
+      },
+      "explanations": {
+        "zh-TW": "請求學習"
+      }
+    },
+    {
+      "id": "en-fst-3-01-5",
+      "pattern": "This reminds me of my childhood.",
+      "translations": {
+        "zh-TW": "這讓我想起我的童年。"
+      },
+      "explanations": {
+        "zh-TW": "表達懷舊情感"
+      }
+    }
+  ],
+  "fst-4": [
+    {
+      "id": "en-fst-4-01-1",
+      "pattern": "I am grateful for everyone here tonight.",
+      "translations": {
+        "zh-TW": "我很感謝今晚在場的每個人。"
+      },
+      "explanations": {
+        "zh-TW": "致謝的基本用語"
+      }
+    },
+    {
+      "id": "en-fst-4-01-2",
+      "pattern": "This tradition means so much to our family.",
+      "translations": {
+        "zh-TW": "這個傳統對我們家意義重大。"
+      },
+      "explanations": {
+        "zh-TW": "說明傳統的重要性"
+      }
+    },
+    {
+      "id": "en-fst-4-01-3",
+      "pattern": "I would like to share what I am thankful for.",
+      "translations": {
+        "zh-TW": "我想分享我的感恩之事。"
+      },
+      "explanations": {
+        "zh-TW": "開始感恩分享的標準句"
+      }
+    },
+    {
+      "id": "en-fst-4-01-4",
+      "pattern": "Thank you for being part of my life.",
+      "translations": {
+        "zh-TW": "謝謝你成為我生命的一部分。"
+      },
+      "explanations": {
+        "zh-TW": "表達深層感謝"
+      }
+    },
+    {
+      "id": "en-fst-4-01-5",
+      "pattern": "Let us raise a toast to our blessings.",
+      "translations": {
+        "zh-TW": "讓我們為祝福乾杯。"
+      },
+      "explanations": {
+        "zh-TW": "祝酒的標準用語"
+      }
+    }
+  ],
+  "fst-5": [
+    {
+      "id": "en-fst-5-01-1",
+      "pattern": "I would like to sign up as a volunteer.",
+      "translations": {
+        "zh-TW": "我想報名當志工。"
+      },
+      "explanations": {
+        "zh-TW": "表達參與意願的開場白"
+      }
+    },
+    {
+      "id": "en-fst-5-01-2",
+      "pattern": "What time should I arrive?",
+      "translations": {
+        "zh-TW": "我應該幾點到？"
+      },
+      "explanations": {
+        "zh-TW": "詢問集合時間"
+      }
+    },
+    {
+      "id": "en-fst-5-01-3",
+      "pattern": "What should I bring?",
+      "translations": {
+        "zh-TW": "我應該帶什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問準備物資"
+      }
+    },
+    {
+      "id": "en-fst-5-01-4",
+      "pattern": "Where do I check in?",
+      "translations": {
+        "zh-TW": "我在哪裡報到？"
+      },
+      "explanations": {
+        "zh-TW": "詢問報到地點"
+      }
+    },
+    {
+      "id": "en-fst-5-01-5",
+      "pattern": "Thank you for organizing this.",
+      "translations": {
+        "zh-TW": "謝謝你們舉辦這個活動。"
+      },
+      "explanations": {
+        "zh-TW": "向主辦單位致謝"
+      }
+    }
+  ],
+  "fst-6": [
+    {
+      "id": "en-fst-6-01-1",
+      "pattern": "Today, we honor the legacy of...",
+      "translations": {
+        "zh-TW": "今天，我們紀念...的 legacy。"
+      },
+      "explanations": {
+        "zh-TW": "紀念日致詞的標準開場"
+      }
+    },
+    {
+      "id": "en-fst-6-01-2",
+      "pattern": "Their contributions changed our world.",
+      "translations": {
+        "zh-TW": "他們的貢獻改變了我們的世界。"
+      },
+      "explanations": {
+        "zh-TW": "說明紀念人物的貢獻"
+      }
+    },
+    {
+      "id": "en-fst-6-01-3",
+      "pattern": "Let us remember their courage.",
+      "translations": {
+        "zh-TW": "讓我們記住他們的勇氣。"
+      },
+      "explanations": {
+        "zh-TW": "號召紀念"
+      }
+    },
+    {
+      "id": "en-fst-6-01-4",
+      "pattern": "Their spirit lives on in all of us.",
+      "translations": {
+        "zh-TW": "他們的精神在我們每個人身上延續。"
+      },
+      "explanations": {
+        "zh-TW": "說明精神的傳承"
+      }
+    },
+    {
+      "id": "en-fst-6-01-5",
+      "pattern": "We will never forget.",
+      "translations": {
+        "zh-TW": "我們永遠不會忘記。"
+      },
+      "explanations": {
+        "zh-TW": "結束致詞的總結語"
+      }
+    }
+  ],
+  "soc-1": [
+    {
+      "id": "en-soc-1-01-1",
+      "pattern": "This is [name], a friend of mine.",
+      "translations": {
+        "zh-TW": "這是 [名字]，我的朋友。"
+      },
+      "explanations": {
+        "zh-TW": "介紹新朋友的基本用語"
+      }
+    },
+    {
+      "id": "en-soc-1-01-2",
+      "pattern": "[Name] is a [profession].",
+      "translations": {
+        "zh-TW": "[名字] 是 [職業]。"
+      },
+      "explanations": {
+        "zh-TW": "說明新朋友的背景"
+      }
+    },
+    {
+      "id": "en-soc-1-01-3",
+      "pattern": "[Name], this is [other person].",
+      "translations": {
+        "zh-TW": "[名字]，這位是 [其他人]。"
+      },
+      "explanations": {
+        "zh-TW": "進行雙向介紹"
+      }
+    },
+    {
+      "id": "en-soc-1-01-4",
+      "pattern": "We are both into [hobby].",
+      "translations": {
+        "zh-TW": "我們都對 [興趣] 有興趣。"
+      },
+      "explanations": {
+        "zh-TW": "說明共同點"
+      }
+    },
+    {
+      "id": "en-soc-1-01-5",
+      "pattern": "Nice to meet you, [name].",
+      "translations": {
+        "zh-TW": "很高興認識你，[名字]。"
+      },
+      "explanations": {
+        "zh-TW": "見面的問候語"
+      }
+    }
+  ],
+  "soc-2": [
+    {
+      "id": "en-soc-2-01-1",
+      "pattern": "I brought this as a gift for the host.",
+      "translations": {
+        "zh-TW": "我帶了這個當作給主人的禮物。"
+      },
+      "explanations": {
+        "zh-TW": "說明伴手禮的來意"
+      }
+    },
+    {
+      "id": "en-soc-2-01-2",
+      "pattern": "I hope you like wine.",
+      "translations": {
+        "zh-TW": "希望你喜歡紅酒。"
+      },
+      "explanations": {
+        "zh-TW": "說明禮物的內容"
+      }
+    },
+    {
+      "id": "en-soc-2-01-3",
+      "pattern": "I was not sure what to bring, so flowers seemed safe.",
+      "translations": {
+        "zh-TW": "我不確定該帶什麼，所以帶花比較保險。"
+      },
+      "explanations": {
+        "zh-TW": "解釋選擇伴手禮的考量"
+      }
+    },
+    {
+      "id": "en-soc-2-01-4",
+      "pattern": "Thank you for having us over.",
+      "translations": {
+        "zh-TW": "謝謝你邀請我們來。"
+      },
+      "explanations": {
+        "zh-TW": "向主人致謝"
+      }
+    },
+    {
+      "id": "en-soc-2-01-5",
+      "pattern": "Please let me know if you would like me to bring anything.",
+      "translations": {
+        "zh-TW": "如果需要我帶什麼請告訴我。"
+      },
+      "explanations": {
+        "zh-TW": "表示願意幫忙"
+      }
+    }
+  ],
+  "soc-3": [
+    {
+      "id": "en-soc-3-01-1",
+      "pattern": "Welcome! So glad you could make it.",
+      "translations": {
+        "zh-TW": "歡迎！很高興你能來。"
+      },
+      "explanations": {
+        "zh-TW": "招呼客人的標準用語"
+      }
+    },
+    {
+      "id": "en-soc-3-01-2",
+      "pattern": "Can I get you something to drink?",
+      "translations": {
+        "zh-TW": "我能給你拿點喝的嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問飲料需求"
+      }
+    },
+    {
+      "id": "en-soc-3-01-3",
+      "pattern": "The food is over here, help yourself.",
+      "translations": {
+        "zh-TW": "食物在這裡，請自便。"
+      },
+      "explanations": {
+        "zh-TW": "指引食物位置"
+      }
+    },
+    {
+      "id": "en-soc-3-01-4",
+      "pattern": "Feel free to mingle around.",
+      "translations": {
+        "zh-TW": "請自由和其他人交流。"
+      },
+      "explanations": {
+        "zh-TW": "邀請社交"
+      }
+    },
+    {
+      "id": "en-soc-3-01-5",
+      "pattern": "Let me introduce you to some people.",
+      "translations": {
+        "zh-TW": "讓我介紹你認識一些人。"
+      },
+      "explanations": {
+        "zh-TW": "主動安排認識"
+      }
+    }
+  ],
+  "soc-4": [
+    {
+      "id": "en-soc-4-01-1",
+      "pattern": "I am really sorry about what I said earlier.",
+      "translations": {
+        "zh-TW": "真的很抱歉我之前說的話。"
+      },
+      "explanations": {
+        "zh-TW": "為失言道歉的開場白"
+      }
+    },
+    {
+      "id": "en-soc-4-01-2",
+      "pattern": "It came out wrong.",
+      "translations": {
+        "zh-TW": "那不是我原本的意思。"
+      },
+      "explanations": {
+        "zh-TW": "解釋失言的原因"
+      }
+    },
+    {
+      "id": "en-soc-4-01-3",
+      "pattern": "I did not mean to offend you.",
+      "translations": {
+        "zh-TW": "我不是故意冒犯你的。"
+      },
+      "explanations": {
+        "zh-TW": "表明無意冒犯"
+      }
+    },
+    {
+      "id": "en-soc-4-01-4",
+      "pattern": "I hope you can forgive me.",
+      "translations": {
+        "zh-TW": "希望你能原諒我。"
+      },
+      "explanations": {
+        "zh-TW": "請求原諒"
+      }
+    },
+    {
+      "id": "en-soc-4-01-5",
+      "pattern": "I will be more careful with my words.",
+      "translations": {
+        "zh-TW": "我會更注意我的言行。"
+      },
+      "explanations": {
+        "zh-TW": "承諾改進"
+      }
+    }
+  ],
+  "soc-5": [
+    {
+      "id": "en-soc-5-01-1",
+      "pattern": "When you visit my hometown, you must try...",
+      "translations": {
+        "zh-TW": "你來我家鄉的話，一定要試試..."
+      },
+      "explanations": {
+        "zh-TW": "推薦家鄉料理的開場白"
+      }
+    },
+    {
+      "id": "en-soc-5-01-2",
+      "pattern": "It is famous for its local cuisine.",
+      "translations": {
+        "zh-TW": "它以當地美食聞名。"
+      },
+      "explanations": {
+        "zh-TW": "說明家鄉特色"
+      }
+    },
+    {
+      "id": "en-soc-5-01-3",
+      "pattern": "My grandmother makes the best version.",
+      "translations": {
+        "zh-TW": "我祖母做的最好吃。"
+      },
+      "explanations": {
+        "zh-TW": "分享家族記憶"
+      }
+    },
+    {
+      "id": "en-soc-5-01-4",
+      "pattern": "It is a must-try for food lovers.",
+      "translations": {
+        "zh-TW": "美食愛好者必嚐。"
+      },
+      "explanations": {
+        "zh-TW": "強調推薦度"
+      }
+    },
+    {
+      "id": "en-soc-5-01-5",
+      "pattern": "The recipe varies by region.",
+      "translations": {
+        "zh-TW": "每個地方的食譜都不太一樣。"
+      },
+      "explanations": {
+        "zh-TW": "說明地域差異"
+      }
+    }
+  ],
+  "soc-6": [
+    {
+      "id": "en-soc-6-01-1",
+      "pattern": "In my culture, it is customary to...",
+      "translations": {
+        "zh-TW": "在我的文化裡，習俗是..."
+      },
+      "explanations": {
+        "zh-TW": "介紹文化習俗的開場白"
+      }
+    },
+    {
+      "id": "en-soc-6-01-2",
+      "pattern": "I find the differences fascinating.",
+      "translations": {
+        "zh-TW": "我覺得這些差異很有趣。"
+      },
+      "explanations": {
+        "zh-TW": "表達對文化交流的興趣"
+      }
+    },
+    {
+      "id": "en-soc-6-01-3",
+      "pattern": "It is interesting how we do it differently.",
+      "translations": {
+        "zh-TW": "我們的做法不同這點很有趣。"
+      },
+      "explanations": {
+        "zh-TW": "比較文化差異"
+      }
+    },
+    {
+      "id": "en-soc-6-01-4",
+      "pattern": "Could you teach me more about that?",
+      "translations": {
+        "zh-TW": "你能多教我一些嗎？"
+      },
+      "explanations": {
+        "zh-TW": "請求深入了解"
+      }
+    },
+    {
+      "id": "en-soc-6-01-5",
+      "pattern": "I would love to learn more about your customs.",
+      "translations": {
+        "zh-TW": "我很想知道更多你們的習俗。"
+      },
+      "explanations": {
+        "zh-TW": "表達學習意願"
+      }
+    }
+  ],
+  "spt-1": [
+    {
+      "id": "en-spt-1-01-1",
+      "pattern": "What is the score?",
+      "translations": {
+        "zh-TW": "現在比分是多少？"
+      },
+      "explanations": {
+        "zh-TW": "詢問比分的常用語"
+      }
+    },
+    {
+      "id": "en-spt-1-01-2",
+      "pattern": "That was an incredible play!",
+      "translations": {
+        "zh-TW": "那球打得太棒了！"
+      },
+      "explanations": {
+        "zh-TW": "讚嘆精彩表現"
+      }
+    },
+    {
+      "id": "en-spt-1-01-3",
+      "pattern": "The home team is winning.",
+      "translations": {
+        "zh-TW": "主隊現在領先。"
+      },
+      "explanations": {
+        "zh-TW": "說明目前比分狀況"
+      }
+    },
+    {
+      "id": "en-spt-1-01-4",
+      "pattern": "Who do you think will take the championship?",
+      "translations": {
+        "zh-TW": "你覺得誰會拿下冠軍？"
+      },
+      "explanations": {
+        "zh-TW": "預測比賽結果"
+      }
+    },
+    {
+      "id": "en-spt-1-01-5",
+      "pattern": "This is a must-win game for them.",
+      "translations": {
+        "zh-TW": "這場對他們來說是非贏不可的比賽。"
+      },
+      "explanations": {
+        "zh-TW": "強調比賽重要性"
+      }
+    }
+  ],
+  "spt-2": [
+    {
+      "id": "en-spt-2-01-1",
+      "pattern": "I would like to join the league.",
+      "translations": {
+        "zh-TW": "我想加入聯賽。"
+      },
+      "explanations": {
+        "zh-TW": "表達參賽意願的開場白"
+      }
+    },
+    {
+      "id": "en-spt-2-01-2",
+      "pattern": "When does the season start?",
+      "translations": {
+        "zh-TW": "賽季什麼時候開始？"
+      },
+      "explanations": {
+        "zh-TW": "詢問賽季時間"
+      }
+    },
+    {
+      "id": "en-spt-2-01-3",
+      "pattern": "Where are the sign-up forms?",
+      "translations": {
+        "zh-TW": "報名表在哪裡？"
+      },
+      "explanations": {
+        "zh-TW": "詢問報名地點"
+      }
+    },
+    {
+      "id": "en-spt-2-01-4",
+      "pattern": "What is the registration fee?",
+      "translations": {
+        "zh-TW": "報名費多少？"
+      },
+      "explanations": {
+        "zh-TW": "詢問費用"
+      }
+    },
+    {
+      "id": "en-spt-2-01-5",
+      "pattern": "Are there any skill-level requirements?",
+      "translations": {
+        "zh-TW": "有技術門檻要求嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問參賽資格"
+      }
+    }
+  ],
+  "spt-3": [
+    {
+      "id": "en-spt-3-01-1",
+      "pattern": "Let me warm up before we start.",
+      "translations": {
+        "zh-TW": "讓我熱身一下再開始。"
+      },
+      "explanations": {
+        "zh-TW": "開始健身的標準用語"
+      }
+    },
+    {
+      "id": "en-spt-3-01-2",
+      "pattern": "What is your training routine?",
+      "translations": {
+        "zh-TW": "你的訓練流程是什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問訓練方式"
+      }
+    },
+    {
+      "id": "en-spt-3-01-3",
+      "pattern": "Can I spot you on that lift?",
+      "translations": {
+        "zh-TW": "我能幫你護槓嗎？"
+      },
+      "explanations": {
+        "zh-TW": "請求協助健身"
+      }
+    },
+    {
+      "id": "en-spt-3-01-4",
+      "pattern": "Let us aim for three sets of ten.",
+      "translations": {
+        "zh-TW": "我們目標三組各十下。"
+      },
+      "explanations": {
+        "zh-TW": "設定訓練目標"
+      }
+    },
+    {
+      "id": "en-spt-3-01-5",
+      "pattern": "Remember to hydrate.",
+      "translations": {
+        "zh-TW": "記得多喝水。"
+      },
+      "explanations": {
+        "zh-TW": "健身提醒"
+      }
+    }
+  ],
+  "spt-4": [
+    {
+      "id": "en-spt-4-01-1",
+      "pattern": "Let us discuss the game plan.",
+      "translations": {
+        "zh-TW": "我們來討論作戰策略。"
+      },
+      "explanations": {
+        "zh-TW": "開始討論的比賽用語"
+      }
+    },
+    {
+      "id": "en-spt-4-01-2",
+      "pattern": "We need to exploit their weakness on the left side.",
+      "translations": {
+        "zh-TW": "我們需要利用他們左側的弱點。"
+      },
+      "explanations": {
+        "zh-TW": "提出戰術建議"
+      }
+    },
+    {
+      "id": "en-spt-4-01-3",
+      "pattern": "Who is covering the striker?",
+      "translations": {
+        "zh-TW": "誰來看守前鋒？"
+      },
+      "explanations": {
+        "zh-TW": "分配防守任務"
+      }
+    },
+    {
+      "id": "en-spt-4-01-4",
+      "pattern": "We should press high from the start.",
+      "translations": {
+        "zh-TW": "我們從開局就應該高壓迫搶。"
+      },
+      "explanations": {
+        "zh-TW": "提出比賽策略"
+      }
+    },
+    {
+      "id": "en-spt-4-01-5",
+      "pattern": "Remember to stay compact.",
+      "translations": {
+        "zh-TW": "記得保持緊密陣型。"
+      },
+      "explanations": {
+        "zh-TW": "提醒戰術紀律"
+      }
+    }
+  ],
+  "spt-5": [
+    {
+      "id": "en-spt-5-01-1",
+      "pattern": "I am scheduling a personal training session.",
+      "translations": {
+        "zh-TW": "我在安排個人訓練課程。"
+      },
+      "explanations": {
+        "zh-TW": "開始預約教練的用語"
+      }
+    },
+    {
+      "id": "en-spt-5-01-2",
+      "pattern": "What are your credentials?",
+      "translations": {
+        "zh-TW": "你的資歷是什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問教練資格"
+      }
+    },
+    {
+      "id": "en-spt-5-01-3",
+      "pattern": "I want to improve my technique.",
+      "translations": {
+        "zh-TW": "我想改進我的技術。"
+      },
+      "explanations": {
+        "zh-TW": "說明訓練目標"
+      }
+    },
+    {
+      "id": "en-spt-5-01-4",
+      "pattern": "What would a typical session look like?",
+      "translations": {
+        "zh-TW": "一堂典型的課程會是什麼樣子？"
+      },
+      "explanations": {
+        "zh-TW": "詢問課程內容"
+      }
+    },
+    {
+      "id": "en-spt-5-01-5",
+      "pattern": "Do you offer online coaching?",
+      "translations": {
+        "zh-TW": "你有提供線上教練嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問線上選項"
+      }
+    }
+  ],
+  "spt-6": [
+    {
+      "id": "en-spt-6-01-1",
+      "pattern": "The referee made a controversial call.",
+      "translations": {
+        "zh-TW": "裁判做了一個有爭議的判罰。"
+      },
+      "explanations": {
+        "zh-TW": "對裁判決定的反應"
+      }
+    },
+    {
+      "id": "en-spt-6-01-2",
+      "pattern": "That was clearly offside.",
+      "translations": {
+        "zh-TW": "那球明顯越位了。"
+      },
+      "explanations": {
+        "zh-TW": "表達對規則的看法"
+      }
+    },
+    {
+      "id": "en-spt-6-01-3",
+      "pattern": "I think the penalty was too harsh.",
+      "translations": {
+        "zh-TW": "我覺得處罰太重了。"
+      },
+      "explanations": {
+        "zh-TW": "對處罰的意見"
+      }
+    },
+    {
+      "id": "en-spt-6-01-4",
+      "pattern": "Can we ask for a video review?",
+      "translations": {
+        "zh-TW": "我們能要求影像重播嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問挑戰規則"
+      }
+    },
+    {
+      "id": "en-spt-6-01-5",
+      "pattern": "Let us hear what the other team has to say.",
+      "translations": {
+        "zh-TW": "讓我們聽聽另一隊怎麼說。"
+      },
+      "explanations": {
+        "zh-TW": "要求公平看待"
+      }
+    }
+  ],
+  "gln-1": [
+    {
+      "id": "en-gln-1-01-1",
+      "pattern": "Did you hear about the breaking news?",
+      "translations": {
+        "zh-TW": "你有聽到突發新聞嗎？"
+      },
+      "explanations": {
+        "zh-TW": "開始討論新聞的開場白"
+      }
+    },
+    {
+      "id": "en-gln-1-01-2",
+      "pattern": "The situation is developing rapidly.",
+      "translations": {
+        "zh-TW": "情況正在快速發展中。"
+      },
+      "explanations": {
+        "zh-TW": "描述新聞進度"
+      }
+    },
+    {
+      "id": "en-gln-1-01-3",
+      "pattern": "What do you think caused this?",
+      "translations": {
+        "zh-TW": "你覺得是什麼造成的？"
+      },
+      "explanations": {
+        "zh-TW": "詢問看法"
+      }
+    },
+    {
+      "id": "en-gln-1-01-4",
+      "pattern": "Where did you get this information?",
+      "translations": {
+        "zh-TW": "你從哪裡獲得這個資訊的？"
+      },
+      "explanations": {
+        "zh-TW": "詢問消息來源"
+      }
+    },
+    {
+      "id": "en-gln-1-01-5",
+      "pattern": "We should verify this before sharing.",
+      "translations": {
+        "zh-TW": "我們分享前應該先驗證這個。"
+      },
+      "explanations": {
+        "zh-TW": "提醒訊息驗證"
+      }
+    }
+  ],
+  "gln-2": [
+    {
+      "id": "en-gln-2-01-1",
+      "pattern": "The article reports that...",
+      "translations": {
+        "zh-TW": "文章報導..."
+      },
+      "explanations": {
+        "zh-TW": "開始轉述新聞的標準句型"
+      }
+    },
+    {
+      "id": "en-gln-2-01-2",
+      "pattern": "According to official sources...",
+      "translations": {
+        "zh-TW": "根據官方消息..."
+      },
+      "explanations": {
+        "zh-TW": "引用消息來源"
+      }
+    },
+    {
+      "id": "en-gln-2-01-3",
+      "pattern": "This marks the first time since...",
+      "translations": {
+        "zh-TW": "這是自...以來第一次。"
+      },
+      "explanations": {
+        "zh-TW": "強調新聞重要性"
+      }
+    },
+    {
+      "id": "en-gln-2-01-4",
+      "pattern": "The implications could be significant.",
+      "translations": {
+        "zh-TW": "其影響可能相當重大。"
+      },
+      "explanations": {
+        "zh-TW": "表達對影響的看法"
+      }
+    },
+    {
+      "id": "en-gln-2-01-5",
+      "pattern": "Further details are expected to emerge.",
+      "translations": {
+        "zh-TW": "預計會有更多細節浮現。"
+      },
+      "explanations": {
+        "zh-TW": "預測後續發展"
+      }
+    }
+  ],
+  "gln-3": [
+    {
+      "id": "en-gln-3-01-1",
+      "pattern": "The vote is taking place next month.",
+      "translations": {
+        "zh-TW": "投票將在下個月舉行。"
+      },
+      "explanations": {
+        "zh-TW": "說明選舉時間"
+      }
+    },
+    {
+      "id": "en-gln-3-01-2",
+      "pattern": "Who are the leading candidates?",
+      "translations": {
+        "zh-TW": "目前領先的候選人是誰？"
+      },
+      "explanations": {
+        "zh-TW": "詢問候選人情況"
+      }
+    },
+    {
+      "id": "en-gln-3-01-3",
+      "pattern": "What are the key policy differences?",
+      "translations": {
+        "zh-TW": "主要的政策差異是什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問政策立場"
+      }
+    },
+    {
+      "id": "en-gln-3-01-4",
+      "pattern": "Early polling shows...",
+      "translations": {
+        "zh-TW": "早期民調顯示..."
+      },
+      "explanations": {
+        "zh-TW": "引用民調數據"
+      }
+    },
+    {
+      "id": "en-gln-3-01-5",
+      "pattern": "The election outcome could reshape the political landscape.",
+      "translations": {
+        "zh-TW": "選舉結果可能重塑政治局面。"
+      },
+      "explanations": {
+        "zh-TW": "預測選舉影響"
+      }
+    }
+  ],
+  "gln-4": [
+    {
+      "id": "en-gln-4-01-1",
+      "pattern": "Climate change is accelerating.",
+      "translations": {
+        "zh-TW": "氣候變遷正在加速。"
+      },
+      "explanations": {
+        "zh-TW": "報告環境現狀的用語"
+      }
+    },
+    {
+      "id": "en-gln-4-01-2",
+      "pattern": "The latest report shows...",
+      "translations": {
+        "zh-TW": "最新報告顯示..."
+      },
+      "explanations": {
+        "zh-TW": "引用研究數據"
+      }
+    },
+    {
+      "id": "en-gln-4-01-3",
+      "pattern": "We need urgent action on...",
+      "translations": {
+        "zh-TW": "我們需要對...採取緊急行動。"
+      },
+      "explanations": {
+        "zh-TW": "呼籲行動"
+      }
+    },
+    {
+      "id": "en-gln-4-01-4",
+      "pattern": "The carbon footprint of...",
+      "translations": {
+        "zh-TW": "...的碳足跡..."
+      },
+      "explanations": {
+        "zh-TW": "討論排放問題"
+      }
+    },
+    {
+      "id": "en-gln-4-01-5",
+      "pattern": "What can individuals do?",
+      "translations": {
+        "zh-TW": "個人能做什麼？"
+      },
+      "explanations": {
+        "zh-TW": "詢問解決方案"
+      }
+    }
+  ],
+  "gln-5": [
+    {
+      "id": "en-gln-5-01-1",
+      "pattern": "The summit brought together...",
+      "translations": {
+        "zh-TW": "這次峰會聚集了..."
+      },
+      "explanations": {
+        "zh-TW": "報導國際會議的用語"
+      }
+    },
+    {
+      "id": "en-gln-5-01-2",
+      "pattern": "Key agreements include...",
+      "translations": {
+        "zh-TW": "主要協議包括..."
+      },
+      "explanations": {
+        "zh-TW": "列出會議成果"
+      }
+    },
+    {
+      "id": "en-gln-5-01-3",
+      "pattern": "The negotiations focused on...",
+      "translations": {
+        "zh-TW": "談判聚焦於..."
+      },
+      "explanations": {
+        "zh-TW": "說明談判重點"
+      }
+    },
+    {
+      "id": "en-gln-5-01-4",
+      "pattern": "Diplomatic relations have...",
+      "translations": {
+        "zh-TW": "外交關係已..."
+      },
+      "explanations": {
+        "zh-TW": "說明關係變化"
+      }
+    },
+    {
+      "id": "en-gln-5-01-5",
+      "pattern": "This could reshape global alliances.",
+      "translations": {
+        "zh-TW": "這可能重塑全球同盟。"
+      },
+      "explanations": {
+        "zh-TW": "預測影響"
+      }
+    }
+  ],
+  "gln-6": [
+    {
+      "id": "en-gln-6-01-1",
+      "pattern": "The trade dispute escalated.",
+      "translations": {
+        "zh-TW": "貿易爭端升級了。"
+      },
+      "explanations": {
+        "zh-TW": "報導貿易衝突的用語"
+      }
+    },
+    {
+      "id": "en-gln-6-01-2",
+      "pattern": "Tariffs were imposed on...",
+      "translations": {
+        "zh-TW": "對...徵收了關稅。"
+      },
+      "explanations": {
+        "zh-TW": "說明貿易措施"
+      }
+    },
+    {
+      "id": "en-gln-6-01-3",
+      "pattern": "The economic impact could be...",
+      "translations": {
+        "zh-TW": "經濟影響可能是..."
+      },
+      "explanations": {
+        "zh-TW": "預測經濟後果"
+      }
+    },
+    {
+      "id": "en-gln-6-01-4",
+      "pattern": "Negotiations are ongoing.",
+      "translations": {
+        "zh-TW": "談判正在進行中。"
+      },
+      "explanations": {
+        "zh-TW": "說明當前狀態"
+      }
+    },
+    {
+      "id": "en-gln-6-01-5",
+      "pattern": "Both sides need a compromise.",
+      "translations": {
+        "zh-TW": "雙方都需要妥協。"
+      },
+      "explanations": {
+        "zh-TW": "提出解決方向"
+      }
+    }
+  ],
+  "pop-1": [
+    {
+      "id": "en-pop-1-01-1",
+      "pattern": "I watched this movie last weekend.",
+      "translations": {
+        "zh-TW": "我上週末看了這部電影。"
+      },
+      "explanations": {
+        "zh-TW": "分享電影經驗的開場白"
+      }
+    },
+    {
+      "id": "en-pop-1-01-2",
+      "pattern": "The plot was...",
+      "translations": {
+        "zh-TW": "劇情是..."
+      },
+      "explanations": {
+        "zh-TW": "開始描述劇情"
+      }
+    },
+    {
+      "id": "en-pop-1-01-3",
+      "pattern": "The acting was superb.",
+      "translations": {
+        "zh-TW": "演技精湛。"
+      },
+      "explanations": {
+        "zh-TW": "稱讚演員表現"
+      }
+    },
+    {
+      "id": "en-pop-1-01-4",
+      "pattern": "I give it... stars.",
+      "translations": {
+        "zh-TW": "我給它...顆星。"
+      },
+      "explanations": {
+        "zh-TW": "給出評分"
+      }
+    },
+    {
+      "id": "en-pop-1-01-5",
+      "pattern": "You should definitely watch it.",
+      "translations": {
+        "zh-TW": "你一定要看。"
+      },
+      "explanations": {
+        "zh-TW": "推薦觀看"
+      }
+    }
+  ],
+  "pop-2": [
+    {
+      "id": "en-pop-2-01-1",
+      "pattern": "I am a huge fan of [artist].",
+      "translations": {
+        "zh-TW": "我是 [藝術家] 的超級粉絲。"
+      },
+      "explanations": {
+        "zh-TW": "表達對藝術家喜愛的標準用語"
+      }
+    },
+    {
+      "id": "en-pop-2-01-2",
+      "pattern": "Their latest album is fire.",
+      "translations": {
+        "zh-TW": "他們的最新專輯太讚了。"
+      },
+      "explanations": {
+        "zh-TW": "稱讚新專輯"
+      }
+    },
+    {
+      "id": "en-pop-2-01-3",
+      "pattern": "Have you heard their new single?",
+      "translations": {
+        "zh-TW": "你有聽他們的新單曲嗎？"
+      },
+      "explanations": {
+        "zh-TW": "詢問新作品"
+      }
+    },
+    {
+      "id": "en-pop-2-01-4",
+      "pattern": "I got tickets to their concert!",
+      "translations": {
+        "zh-TW": "我買到他們演唱會的票了！"
+      },
+      "explanations": {
+        "zh-TW": "分享好消息"
+      }
+    },
+    {
+      "id": "en-pop-2-01-5",
+      "pattern": "They are going on tour.",
+      "translations": {
+        "zh-TW": "他們要進行巡演了。"
+      },
+      "explanations": {
+        "zh-TW": "分享巡演消息"
+      }
+    }
+  ],
+  "pop-3": [
+    {
+      "id": "en-pop-3-01-1",
+      "pattern": "Did you see that plot twist coming?",
+      "translations": {
+        "zh-TW": "你有料到那個劇情反轉嗎？"
+      },
+      "explanations": {
+        "zh-TW": "討論劇情的用語"
+      }
+    },
+    {
+      "id": "en-pop-3-01-2",
+      "pattern": "I did not expect that ending.",
+      "translations": {
+        "zh-TW": "我沒料到那個結局。"
+      },
+      "explanations": {
+        "zh-TW": "表達驚訝"
+      }
+    },
+    {
+      "id": "en-pop-3-01-3",
+      "pattern": "The character development was...",
+      "translations": {
+        "zh-TW": "角色發展是..."
+      },
+      "explanations": {
+        "zh-TW": "評論角色塑造"
+      }
+    },
+    {
+      "id": "en-pop-3-01-4",
+      "pattern": "Season... was the best.",
+      "translations": {
+        "zh-TW": "第...季是最棒的。"
+      },
+      "explanations": {
+        "zh-TW": "比較季度"
+      }
+    },
+    {
+      "id": "en-pop-3-01-5",
+      "pattern": "I cannot wait for the next season.",
+      "translations": {
+        "zh-TW": "我迫不及待等下一季。"
+      },
+      "explanations": {
+        "zh-TW": "表達期待"
+      }
+    }
+  ],
+  "pop-4": [
+    {
+      "id": "en-pop-4-01-1",
+      "pattern": "This trend is going viral.",
+      "translations": {
+        "zh-TW": "這個趨勢正在爆紅。"
+      },
+      "explanations": {
+        "zh-TW": "描述網路現象的用語"
+      }
+    },
+    {
+      "id": "en-pop-4-01-2",
+      "pattern": "The hashtag... is trending.",
+      "translations": {
+        "zh-TW": "標籤...正在熱門。"
+      },
+      "explanations": {
+        "zh-TW": "報導社交媒體趨勢"
+      }
+    },
+    {
+      "id": "en-pop-4-01-3",
+      "pattern": "Everyone is talking about...",
+      "translations": {
+        "zh-TW": "大家都在討論..."
+      },
+      "explanations": {
+        "zh-TW": "說明話題熱度"
+      }
+    },
+    {
+      "id": "en-pop-4-01-4",
+      "pattern": "The meme is hilarious.",
+      "translations": {
+        "zh-TW": "那個迷因太有趣了。"
+      },
+      "explanations": {
+        "zh-TW": "評論網路文化"
+      }
+    },
+    {
+      "id": "en-pop-4-01-5",
+      "pattern": "This will be forgotten in a week.",
+      "translations": {
+        "zh-TW": "這一週後就會被遺忘。"
+      },
+      "explanations": {
+        "zh-TW": "預測話題壽命"
+      }
+    }
+  ],
+  "pop-5": [
+    {
+      "id": "en-pop-5-01-1",
+      "pattern": "The art exhibit features...",
+      "translations": {
+        "zh-TW": "這個藝術展覽展示了..."
+      },
+      "explanations": {
+        "zh-TW": "介紹展覽內容的用語"
+      }
+    },
+    {
+      "id": "en-pop-5-01-2",
+      "pattern": "The artist explores themes of...",
+      "translations": {
+        "zh-TW": "藝術家探索...的主題。"
+      },
+      "explanations": {
+        "zh-TW": "說明藝術主題"
+      }
+    },
+    {
+      "id": "en-pop-5-01-3",
+      "pattern": "The technique used is...",
+      "translations": {
+        "zh-TW": "使用的技法是..."
+      },
+      "explanations": {
+        "zh-TW": "討論藝術技法"
+      }
+    },
+    {
+      "id": "en-pop-5-01-4",
+      "pattern": "I find this piece thought-provoking.",
+      "translations": {
+        "zh-TW": "我覺得這件作品發人深省。"
+      },
+      "explanations": {
+        "zh-TW": "表達個人看法"
+      }
+    },
+    {
+      "id": "en-pop-5-01-5",
+      "pattern": "This challenges traditional concepts.",
+      "translations": {
+        "zh-TW": "這挑戰了傳統概念。"
+      },
+      "explanations": {
+        "zh-TW": "評論藝術價值"
+      }
+    }
+  ],
+  "pop-6": [
+    {
+      "id": "en-pop-6-01-1",
+      "pattern": "The gala attracted...",
+      "translations": {
+        "zh-TW": "這場盛會吸引了..."
+      },
+      "explanations": {
+        "zh-TW": "報導活動的用語"
+      }
+    },
+    {
+      "id": "en-pop-6-01-2",
+      "pattern": "Celebrities wore...",
+      "translations": {
+        "zh-TW": "名人穿著..."
+      },
+      "explanations": {
+        "zh-TW": "描述紅毯時尚"
+      }
+    },
+    {
+      "id": "en-pop-6-01-3",
+      "pattern": "The highlight was...",
+      "translations": {
+        "zh-TW": "亮點是..."
+      },
+      "explanations": {
+        "zh-TW": "指出精彩時刻"
+      }
+    },
+    {
+      "id": "en-pop-6-01-4",
+      "pattern": "Social media reacted with...",
+      "translations": {
+        "zh-TW": "社交媒體的反應是..."
+      },
+      "explanations": {
+        "zh-TW": "報導網路反應"
+      }
+    },
+    {
+      "id": "en-pop-6-01-5",
+      "pattern": "This set a new trend.",
+      "translations": {
+        "zh-TW": "這開啟了新潮流。"
+      },
+      "explanations": {
+        "zh-TW": "說明影響"
+      }
+    }
+  ],
+  "tec-1": [
+    {
+      "id": "en-tec-1-01-1",
+      "pattern": "Have you tried the new AI tool?",
+      "translations": {
+        "zh-TW": "你有試過新的 AI 工具嗎？"
+      },
+      "explanations": {
+        "zh-TW": "開始討論新技術的標準用語"
+      }
+    },
+    {
+      "id": "en-tec-1-01-2",
+      "pattern": "It is a game-changer for productivity.",
+      "translations": {
+        "zh-TW": "這對生產力來說是個遊戲規則改變者。"
+      },
+      "explanations": {
+        "zh-TW": "說明技術影響"
+      }
+    },
+    {
+      "id": "en-tec-1-01-3",
+      "pattern": "How does it compare to the previous version?",
+      "translations": {
+        "zh-TW": "和前一版本比起來如何？"
+      },
+      "explanations": {
+        "zh-TW": "比較版本差異"
+      }
+    },
+    {
+      "id": "en-tec-1-01-4",
+      "pattern": "The learning curve is steep but worth it.",
+      "translations": {
+        "zh-TW": "學習曲線很陡但值得。"
+      },
+      "explanations": {
+        "zh-TW": "分享使用經驗"
+      }
+    },
+    {
+      "id": "en-tec-1-01-5",
+      "pattern": "It is revolutionizing the industry.",
+      "translations": {
+        "zh-TW": "這正在徹底改變這個產業。"
+      },
+      "explanations": {
+        "zh-TW": "預測技術影響"
+      }
+    }
+  ],
+  "tec-2": [
+    {
+      "id": "en-tec-2-01-1",
+      "pattern": "The new smartphone features...",
+      "translations": {
+        "zh-TW": "新款智慧型手機配備..."
+      },
+      "explanations": {
+        "zh-TW": "介紹新產品的用語"
+      }
+    },
+    {
+      "id": "en-tec-2-01-2",
+      "pattern": "The camera has been improved.",
+      "translations": {
+        "zh-TW": "相機已經升級。"
+      },
+      "explanations": {
+        "zh-TW": "說明具體功能"
+      }
+    },
+    {
+      "id": "en-tec-2-01-3",
+      "pattern": "Battery life is now...",
+      "translations": {
+        "zh-TW": "電池續航力現在..."
+      },
+      "explanations": {
+        "zh-TW": "報導電池表現"
+      }
+    },
+    {
+      "id": "en-tec-2-01-4",
+      "pattern": "The price is competitive.",
+      "translations": {
+        "zh-TW": "價格有競爭力。"
+      },
+      "explanations": {
+        "zh-TW": "評論定價"
+      }
+    },
+    {
+      "id": "en-tec-2-01-5",
+      "pattern": "Is it worth upgrading?",
+      "translations": {
+        "zh-TW": "值得升級嗎？"
+      },
+      "explanations": {
+        "zh-TW": "提出討論問題"
+      }
+    }
+  ],
+  "tec-3": [
+    {
+      "id": "en-tec-3-01-1",
+      "pattern": "Generative AI can...",
+      "translations": {
+        "zh-TW": "生成式 AI 能夠..."
+      },
+      "explanations": {
+        "zh-TW": "介紹 AI 能力的用語"
+      }
+    },
+    {
+      "id": "en-tec-3-01-2",
+      "pattern": "It has transformed how I...",
+      "translations": {
+        "zh-TW": "它改變了我如何..."
+      },
+      "explanations": {
+        "zh-TW": "分享個人經驗"
+      }
+    },
+    {
+      "id": "en-tec-3-01-3",
+      "pattern": "The potential applications include...",
+      "translations": {
+        "zh-TW": "潛在應用包括..."
+      },
+      "explanations": {
+        "zh-TW": "列舉使用場景"
+      }
+    },
+    {
+      "id": "en-tec-3-01-4",
+      "pattern": "There are concerns about...",
+      "translations": {
+        "zh-TW": "有一些關於...的擔憂。"
+      },
+      "explanations": {
+        "zh-TW": "討論風險"
+      }
+    },
+    {
+      "id": "en-tec-3-01-5",
+      "pattern": "We should regulate...",
+      "translations": {
+        "zh-TW": "我們應該規範..."
+      },
+      "explanations": {
+        "zh-TW": "提出政策建議"
+      }
+    }
+  ],
+  "tec-4": [
+    {
+      "id": "en-tec-4-01-1",
+      "pattern": "VR offers immersive experiences.",
+      "translations": {
+        "zh-TW": "VR 提供沉浸式體驗。"
+      },
+      "explanations": {
+        "zh-TW": "描述 VR 特點的用語"
+      }
+    },
+    {
+      "id": "en-tec-4-01-2",
+      "pattern": "The technology has advanced significantly.",
+      "translations": {
+        "zh-TW": "這項技術已顯著進步。"
+      },
+      "explanations": {
+        "zh-TW": "說明技術發展"
+      }
+    },
+    {
+      "id": "en-tec-4-01-3",
+      "pattern": "Applications range from...",
+      "translations": {
+        "zh-TW": "應用範圍從..."
+      },
+      "explanations": {
+        "zh-TW": "列舉應用領域"
+      }
+    },
+    {
+      "id": "en-tec-4-01-4",
+      "pattern": "The market is growing.",
+      "translations": {
+        "zh-TW": "市場正在成長。"
+      },
+      "explanations": {
+        "zh-TW": "報導市場趨勢"
+      }
+    },
+    {
+      "id": "en-tec-4-01-5",
+      "pattern": "This could revolutionize...",
+      "translations": {
+        "zh-TW": "這可能徹底改變..."
+      },
+      "explanations": {
+        "zh-TW": "預測未來影響"
+      }
+    }
+  ],
+  "tec-5": [
+    {
+      "id": "en-tec-5-01-1",
+      "pattern": "Self-driving cars raise ethical questions.",
+      "translations": {
+        "zh-TW": "自駕車引發倫理問題。"
+      },
+      "explanations": {
+        "zh-TW": "提出科技倫理議題的用語"
+      }
+    },
+    {
+      "id": "en-tec-5-01-2",
+      "pattern": "Who is responsible when...",
+      "translations": {
+        "zh-TW": "當...時，誰該負責？"
+      },
+      "explanations": {
+        "zh-TW": "提出責任歸屬問題"
+      }
+    },
+    {
+      "id": "en-tec-5-01-3",
+      "pattern": "The technology is not perfect.",
+      "translations": {
+        "zh-TW": "這項技術並不完美。"
+      },
+      "explanations": {
+        "zh-TW": "指出技術限制"
+      }
+    },
+    {
+      "id": "en-tec-5-01-4",
+      "pattern": "We need more testing.",
+      "translations": {
+        "zh-TW": "我們需要更多測試。"
+      },
+      "explanations": {
+        "zh-TW": "提出建議"
+      }
+    },
+    {
+      "id": "en-tec-5-01-5",
+      "pattern": "Public trust is essential.",
+      "translations": {
+        "zh-TW": "公眾信任是必要的。"
+      },
+      "explanations": {
+        "zh-TW": "說明採用條件"
+      }
+    }
+  ],
+  "tec-6": [
+    {
+      "id": "en-tec-6-01-1",
+      "pattern": "Blockchain enables decentralized...",
+      "translations": {
+        "zh-TW": "區塊鏈實現去中心化的..."
+      },
+      "explanations": {
+        "zh-TW": "介紹區塊鏈概念的用語"
+      }
+    },
+    {
+      "id": "en-tec-6-01-2",
+      "pattern": "Smart contracts can...",
+      "translations": {
+        "zh-TW": "智慧合約能夠..."
+      },
+      "explanations": {
+        "zh-TW": "說明具體應用"
+      }
+    },
+    {
+      "id": "en-tec-6-01-3",
+      "pattern": "Cryptocurrency has...",
+      "translations": {
+        "zh-TW": "加密貨幣有..."
+      },
+      "explanations": {
+        "zh-TW": "描述加密貨幣特點"
+      }
+    },
+    {
+      "id": "en-tec-6-01-4",
+      "pattern": "DeFi could disrupt...",
+      "translations": {
+        "zh-TW": "DeFi 可能顛覆..."
+      },
+      "explanations": {
+        "zh-TW": "預測金融影響"
+      }
+    },
+    {
+      "id": "en-tec-6-01-5",
+      "pattern": "Regulation is catching up.",
+      "translations": {
+        "zh-TW": "監管正在追趕。"
+      },
+      "explanations": {
+        "zh-TW": "說明政策現狀"
+      }
+    }
+  ]
+}
