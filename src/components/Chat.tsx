@@ -8,6 +8,7 @@ import { useAppState } from '../contexts/AppStateContext';
 import ChatExportModal from './ChatExportModal';
 import ChatLearningModal from './ChatLearningModal';
 import confetti from 'canvas-confetti';
+import { getScenarioPatterns } from '../data/scenarioPatterns/index.js';
 
 interface ChatMessage {
   role: 'user' | 'assistant' | 'system';
@@ -39,6 +40,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
   const { state: { apiProvider, apiModel, apiKey, targetLanguage, userCategory, userRole, userLevel, speechRate, autoRead, patternVersion, androidSmartSpeech, correctionMode }, setVocabulary, setSavedPatterns } = useAppState();
   const [input, setInput] = useState('');
   const [showPatternHints, setShowPatternHints] = useState(false);
+  const [scenarioHintPatterns, setScenarioHintPatterns] = useState([]);
   const [isTyping, setIsTyping] = useState(false);
   const [translatedIndexes, setTranslatedIndexes] = useState(new Set());
   const messagesEndRef = useRef(null);
@@ -66,6 +68,23 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
   const transcriptBuffer = useRef('');
   const lastFinalTranscriptRef = useRef('');
   const [hasSeenMockWarning, setHasSeenMockWarning] = useState(false);
+
+  // Load scenario hint patterns when scenario changes
+  useEffect(() => {
+    if (!scenario?.id || scenario.id === 'free-mode' || scenario.id === 'pattern-drill' || scenario.id === 'curriculum-drill') {
+      setScenarioHintPatterns([]);
+      return;
+    }
+    const loadPatterns = async () => {
+      const data = await getScenarioPatterns(targetLanguage, patternVersion);
+      if (data && data[scenario.id]) {
+        setScenarioHintPatterns(data[scenario.id]);
+      } else {
+        setScenarioHintPatterns([]);
+      }
+    };
+    loadPatterns();
+  }, [scenario?.id, targetLanguage, patternVersion]);
 
   const blobToBase64 = (blob: Blob): Promise<string> => {
     return new Promise((resolve, reject) => {
@@ -779,8 +798,16 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
                );
             }
 
-            const patterns = [];
-            if (patterns.length === 0) return null;
+            const patterns = scenarioHintPatterns || [];
+            if (patterns.length === 0) return (
+              <div className="glass-panel animate-slide-in" style={{ 
+                marginTop: '8px', 
+                padding: '16px 20px', 
+                background: 'rgba(255,255,255,0.02)'
+              }}>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>{t('此情境尚無推薦句型')}</p>
+              </div>
+            );
 
             return (
               <div className="glass-panel animate-slide-in" style={{ 
@@ -802,8 +829,8 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
                       borderRadius: '8px',
                       borderLeft: '2px solid var(--accent-color)'
                     }}>
-                      <div style={{ fontWeight: 'bold', marginBottom: '4px', color: 'var(--text-primary)' }}>{p.pattern}</div>
-                      <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{t(p.explanation)}</div>
+                      <div style={{ fontWeight: 'bold', marginBottom: '4px', color: 'var(--text-primary)' }}>{p.pattern || p.translations?.[uiLang] || p.translations?.['en']}</div>
+                      <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{p.explanations?.[uiLang] || p.explanations?.['en'] || p.explanation}</div>
                     </div>
                   ))}
                 </div>
