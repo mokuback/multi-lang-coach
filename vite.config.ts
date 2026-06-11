@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import viteCompression from 'vite-plugin-compression'
 import packageJson from './package.json'
 
 const buildDate = new Date().toISOString().split('T')[0];
@@ -10,7 +11,11 @@ export default defineConfig({
     __APP_VERSION__: JSON.stringify(packageJson.version),
     __BUILD_DATE__: JSON.stringify(buildDate),
   },
-  plugins: [react()],
+  plugins: [
+    react(),
+    viteCompression({ algorithm: 'brotliCompress', ext: '.br', threshold: 1024 }),
+    viteCompression({ algorithm: 'gzip', ext: '.gz', threshold: 1024 }),
+  ],
   build: {
     rollupOptions: {
       output: {

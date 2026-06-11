@@ -1,6 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
-import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
-import * as OpenCC from 'opencc-js';
+import React, { createContext, useContext, useState, useEffect, useMemo, useRef } from 'react';
 
 interface I18nContextType {
   uiLang: string;
@@ -97,16 +96,27 @@ export const I18nProvider = ({ children }) => {
     }
   };
 
-  const converter = useMemo(() => {
-    if (activeLang === 'zh-CN') {
-      try {
-        return OpenCC.Converter({ from: 'tw', to: 'cn' });
-      } catch (e) {
-        console.error("OpenCC initialization failed:", e);
-        return (text) => text;
-      }
+  const [converter, setConverter] = useState<((text: string) => string) | null>(null);
+  const converterLoadedRef = useRef(false);
+
+  useEffect(() => {
+    if (activeLang === 'zh-CN' && !converterLoadedRef.current) {
+      converterLoadedRef.current = true;
+      import('opencc-js').then((OpenCC) => {
+        try {
+          setConverter(() => OpenCC.Converter({ from: 'tw', to: 'cn' }));
+        } catch (e) {
+          console.error("OpenCC initialization failed:", e);
+          setConverter(() => (text: string) => text);
+        }
+      }).catch((e) => {
+        console.error("OpenCC load failed:", e);
+        setConverter(() => (text: string) => text);
+      });
+    } else if (activeLang !== 'zh-CN') {
+      setConverter(null);
+      converterLoadedRef.current = false;
     }
-    return null;
   }, [activeLang]);
 
   const t = (text) => {
