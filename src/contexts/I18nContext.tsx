@@ -1,5 +1,14 @@
 /* eslint-disable react-refresh/only-export-components */
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useRef } from 'react';
+
+// Eagerly preload all locale modules so dict is available synchronously on first render
+const allLocales = import.meta.glob('../locales/*.json', { eager: true, import: 'default' });
+
+function loadLocaleSync(lang) {
+  const key = `../locales/${lang}.json`;
+  const mod = allLocales[key];
+  return (mod && typeof mod === 'object') ? mod : {};
+}
 
 interface I18nContextType {
   uiLang: string;
@@ -41,38 +50,46 @@ export const I18nProvider = ({ children }) => {
   });
 
   const [activeLang, setActiveLang] = useState(uiLang);
-  const [dict, setDict] = useState({});
+  const [dict, setDict] = useState(() => loadLocaleSync(uiLang));
   const [enDict, setEnDict] = useState({});
   const [isLoading, setIsLoading] = useState(false);
+  const langRef = useRef(uiLang);
+  const versionRef = useRef(0);
 
+  // Locale switch: cancel in-flight loads via version bump, load new locale async
   useEffect(() => {
-    let isMounted = true;
+    langRef.current = uiLang;
+    versionRef.current += 1;
+    const myVersion = versionRef.current;
+
     const loadTranslations = async () => {
-      // 只有在真的改變語系才需要顯示 loading
+      if (langRef.current !== uiLang) return;
+      if (myVersion !== versionRef.current) return;
+
       if (uiLang !== activeLang) {
         setIsLoading(true);
       }
       try {
-        let loadedDict = {};
         const module = await import(`../locales/${uiLang}.json`);
-        loadedDict = module.default || module;
-        
+        const loadedDict = module.default || module;
+
+        if (langRef.current !== uiLang) return;
+        if (myVersion !== versionRef.current) return;
+
         let loadedEnDict = enDict;
         if (uiLang !== 'en' && uiLang !== 'zh-TW' && uiLang !== 'zh-CN' && Object.keys(enDict).length === 0) {
           const enModule = await import(`../locales/en.json`);
           loadedEnDict = enModule.default || enModule;
-          if (isMounted) setEnDict(loadedEnDict);
+          setEnDict(loadedEnDict);
         }
 
-        if (isMounted) {
-          setDict(loadedDict);
-          setActiveLang(uiLang);
-          localStorage.setItem(UI_LANG_STORAGE_KEY, uiLang);
-          setIsLoading(false);
-        }
+        setDict(loadedDict);
+        setActiveLang(uiLang);
+        localStorage.setItem(UI_LANG_STORAGE_KEY, uiLang);
+        setIsLoading(false);
       } catch (error) {
         console.error(`Failed to load translations for ${uiLang}:`, error);
-        if (isMounted) {
+        if (langRef.current === uiLang) {
           setActiveLang(uiLang);
           localStorage.setItem(UI_LANG_STORAGE_KEY, uiLang);
           setIsLoading(false);
@@ -81,10 +98,6 @@ export const I18nProvider = ({ children }) => {
     };
 
     loadTranslations();
-    
-    return () => {
-      isMounted = false;
-    };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [uiLang]);
 
