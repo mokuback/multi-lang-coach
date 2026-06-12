@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+﻿import React, { useState, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { Send, AlertCircle, CheckCircle, Info, Lightbulb, X, Wand2, Volume2, Mic, Square, RefreshCw, Download, Loader2 } from 'lucide-react';
 import { callLLMAPI, analyzeSentenceAPI, polishSentenceAPI, analyzeConversationAPI, transcribeAudio } from '../utils/llmClient';
@@ -473,26 +473,25 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
         if (targetLanguage === 'ja') {
           if (userText.includes('進捗') || userText.includes('しんちょく') || userText.toLowerCase().includes('progress')) {
             aiMessage.content = "進捗の共有ありがとうございます。しかし、ブロッカーとなっている詳細を共有してください。また、文法に少し不自然なところがありました。";
-            aiMessage.translation = "謝謝您分享進度。不過，請您分享造成阻礙的詳細原因。另外，文法上有一點不自然的地方。";
+            aiMessage.translation = t('mock_trans_ja_progress');
             aiMessage.correction = {
               original: userText,
               error: "進捗を報告するつもりです...",
               fixed: "進捗を報告いたします...",
-              explanation: "對上司或客戶報告時，使用謙讓語「いたします」會更專業且禮貌。"
+              explanation: t('mock_exp_ja_itasu')
             };
-            extractedVocab = { term: "ブロッカー (Blocker)", meaning: "阻礙 / 障礙物", example: "リリースを妨げている重大なブロッカーがあります。", phonetic: "blɒk.ər", partOfSpeech: "n." };
+            extractedVocab = { term: "ブロッカー (Blocker)", meaning: t('mock_vocab_blocker'), example: "リリースを妨げている重大なブロッカーがあります。", phonetic: "blɒk.ər", partOfSpeech: "n." };
           } else if (userText.includes('データベース') || userText.includes('サーバー') || userText.toLowerCase().includes('database') || userText.toLowerCase().includes('server')) {
              aiMessage.content = "バックエンドの問題のようですね。非技術者の上司や顧客に説明するときは、『インフラストラクチャーの遅延が発生しています』と伝えると分かりやすいです。";
-             aiMessage.translation = "聽起來像是後端的問題。向非技術主管或客戶說明時，可以說『我們遇到了基礎設施的延遲』會更容易理解。";
-             extractedVocab = { term: "インフラ (Infrastructure)", meaning: "基礎設施 / 架構", example: "当社のITインフラにはアップグレードが必要です。", phonetic: "ɪn.frəˌstrʌk.tʃər", partOfSpeech: "n." };
+             aiMessage.translation = t('mock_trans_ja_database');
+             extractedVocab = { term: "インフラ (Infrastructure)", meaning: t('mock_vocab_infrastructure'), example: "当社のITインフラにはアップグレードが必要です。", phonetic: "ɪn.frəˌstrʌk.tʃər", partOfSpeech: "n." };
           } else {
              aiMessage.content = "なるほど。あなたが焦点を当てている「特定のソフトウェア要件」や「スケジュール」について、もう少し詳しく説明していただけますか？";
-             aiMessage.translation = "原來如此。關於您正在關注的「特定軟體需求」或「時程」，能請您再稍微詳細說明一下嗎？";
+             aiMessage.translation = t('mock_trans_ja_default');
              aiMessage.correction = null;
-             extractedVocab = { term: "詳しく説明する", meaning: "詳細說明", example: "その点について、詳しく説明していただけますか？", phonetic: "kuwashiku setsumei suru", partOfSpeech: "v." };
+             extractedVocab = { term: "詳しく説明する", meaning: t('mock_vocab_elaborate'), example: "その点について、詳しく説明していただけますか？", phonetic: "kuwashiku setsumei suru", partOfSpeech: "v." };
           }
-          aiMessage.content += "\n\n(💡【系統提示】這是供體驗用的模擬回覆。若要讓 AI 根據您的話語動態回應，強烈建議您參考左側「使用說明」，快速申請**免費**的 Gemini API 金鑰！)";
-          aiMessage.translation += "\n\n(💡【系統提示】這是供體驗用的模擬回覆。若要讓 AI 根據您的話語動態回應，強烈建議您參考左側「使用說明」，快速申請**免費**的 Gemini API 金鑰！)";
+          aiMessage.translation += "\n\n" + t('mockSystemNote');
         } else {
           // English mock logic
           if (userText.toLowerCase().includes('progress')) {
@@ -502,26 +501,25 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
                original: userText,
                error: "I am report the progress...",
                fixed: "I am reporting the progress...",
-               explanation: "對於正在進行的動作，請使用現在進行式 'reporting'。"
+               explanation: t('mock_exp_report_ing')
              };
-             extractedVocab = { term: "Blocker", meaning: "阻礙 / 障礙物", example: "We have a critical blocker preventing the release.", phonetic: "ˈblɑː.kɚ", partOfSpeech: "n." };
+             extractedVocab = { term: "Blocker", meaning: t('mock_vocab_blocker'), example: "We have a critical blocker preventing the release.", phonetic: "ˈblɑː.kɚ", partOfSpeech: "n." };
           } else if (userText.toLowerCase().includes('database') || userText.toLowerCase().includes('server')) {
              aiMessage.content = "That sounds like a backend issue. When explaining this to a non-technical boss or client, you might want to simplify it. You can say 'We are experiencing infrastructure delays'.";
-             aiMessage.translation = "聽起來像是後端基礎設施的問題。在向非技術背景的老闆或客戶解釋時，您可以簡化說法。例如您可以說 'We are experiencing infrastructure delays'。";
-             extractedVocab = { term: "Infrastructure", meaning: "基礎設施 / 架構", example: "Our IT infrastructure needs an upgrade.", phonetic: "ˈɪn.frəˌstrʌk.tʃɚ", partOfSpeech: "n." };
+             aiMessage.translation = t('mock_trans_database');
+             extractedVocab = { term: "Infrastructure", meaning: t('mock_vocab_infrastructure'), example: "Our IT infrastructure needs an upgrade.", phonetic: "ˈɪn.frəˌstrʌk.tʃɚ", partOfSpeech: "n." };
           } else {
              aiMessage.content = "I understand. Could you elaborate more on the specific software requirements or timelines you are focusing on?";
-             aiMessage.translation = "我明白。您能針對特定的軟體需求或專案時程「進一步詳細說明」嗎？";
+             aiMessage.translation = t('mock_trans_default');
              aiMessage.correction = {
                original: userText,
                error: "I will do it until tomorrow.",
                fixed: "I will do it by tomorrow.",
-               explanation: "'By' 用於說明截止期限，而 'until' 則是用於表示持續的一段期間。"
+               explanation: t('mock_exp_by_until')
              };
-             extractedVocab = { term: "Elaborate", meaning: "詳細說明", example: "Could you elaborate on that point?", phonetic: "iˈlæb.ə.reɪt", partOfSpeech: "vi." };
+             extractedVocab = { term: "Elaborate", meaning: t('mock_vocab_elaborate'), example: "Could you elaborate on that point?", phonetic: "iˈlæb.ə.reɪt", partOfSpeech: "vi." };
           }
-          aiMessage.content += "\n\n(💡 [System Note] This is a static demo response. To experience dynamic AI conversations, please refer to the User Guide to easily get your **FREE** Gemini API key!)";
-          aiMessage.translation += "\n\n(💡【系統提示】這是供體驗用的模擬回覆。若要讓 AI 根據您的話語動態回應，強烈建議您參考左側「使用說明」，快速申請**免費**的 Gemini API 金鑰！)";
+          aiMessage.translation += "\n\n" + t('mockSystemNote');
         }
 
         resolve({ aiMessage, extractedVocab });
@@ -775,7 +773,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
                               borderLeft: '2px solid var(--accent-color)'
                             }}>
                               <div style={{ fontWeight: 'bold', color: 'var(--text-primary)' }}>{v.word}</div>
-                              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{t(v.zh)}</div>
+                              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{getLocalizedContent(v.meanings)}</div>
                             </div>
                           ))}
                         </div>

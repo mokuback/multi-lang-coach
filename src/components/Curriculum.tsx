@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { BookOpen, Play, Volume2, ArrowRight, Sparkles } from 'lucide-react';
 import { curriculumData } from '../data/curriculumData';
@@ -135,7 +135,7 @@ const Curriculum = () => {
               <div key={`vocab-${idx}`} className="glass-panel" style={{ padding: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div>
                   <div style={{ fontWeight: 600, color: 'var(--text-primary)' }}>{item.word}</div>
-                  <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>{item.zh} {item.phonetic ? `(${item.phonetic})` : ''}</div>
+                  <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>{getLocalizedContent(item.meanings)} {item.phonetic ? `(${item.phonetic})` : ''}</div>
                 </div>
                 <div style={{ display: 'flex', gap: '8px' }}>
                   <button className="glass-button" onClick={() => handleSpeak(item.word)} style={{ padding: '6px', borderRadius: '6px' }}>
@@ -162,8 +162,8 @@ const Curriculum = () => {
             {(unit.patterns || []).map((item, idx) => (
               <div key={`pattern-${idx}`} className="glass-panel" style={{ padding: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div>
-                  <div style={{ fontWeight: 600, color: 'var(--accent-color)', marginBottom: '4px' }}>{item.pattern}</div>
-                  <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>{item.explanation}</div>
+                  <div style={{ fontWeight: 600, color: 'var(--accent-color)', marginBottom: '4px' }}>{t(item.pattern)}</div>
+                  <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>{t(item.explanation)}</div>
                 </div>
                 <button
                   className="glass-button active"
@@ -195,3 +195,4 @@ const Curriculum = () => {
 };
 
 export default Curriculum;
+

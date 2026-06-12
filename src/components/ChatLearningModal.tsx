@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { createPortal } from 'react-dom';
 import { Lightbulb, Loader2, Wand2, CheckCircle, X } from 'lucide-react';
 import { useI18n } from '../contexts/I18nContext';
@@ -126,7 +126,7 @@ const ChatLearningModal = ({
                         <span style={{ color: 'var(--accent-color)', fontWeight: 700, fontSize: '1.1rem' }}>
                           {v.phonetic ? `${v.word} [${v.phonetic}]` : v.word}
                         </span>
-                        <span style={{ color: 'var(--text-secondary)', marginLeft: '12px' }}>{v.zh}</span>
+                        <span style={{ color: 'var(--text-secondary)', marginLeft: '12px' }}>{getLocalizedContent(v.meanings)}</span>
                         {v.partOfSpeech && (
                           <span style={{
                             marginLeft: '8px', fontSize: '0.8rem',
@@ -207,7 +207,7 @@ const ChatLearningModal = ({
                     if (learningModalData.vocab) {
                       const newVocab = learningModalData.vocab
                         .filter(v => v.checked !== false)
-                        .map(v => ({ term: v.word, meaning: v.zh, example: v.example || '', phonetic: v.phonetic || '', partOfSpeech: v.partOfSpeech || '', lang: targetLanguage }));
+                        .map(v => ({ term: v.word, meaning: getLocalizedContent(v.meanings), example: v.example || '', phonetic: v.phonetic || '', partOfSpeech: v.partOfSpeech || '', lang: targetLanguage }));
                       setVocabulary(prev => {
                         const existing = [...prev];
                         for (const item of newVocab) {
@@ -251,3 +251,4 @@ const ChatLearningModal = ({
 };
 
 export default ChatLearningModal;
+

@@ -77,7 +77,8 @@ export async function migrateFromLocalStorage(): Promise<void> {
     chatHistory: '', // no LS counterpart yet
   };
 
-  for (const [store, lsKey] of Object.entries(lsKeyMap)) {
+  for (const store of Object.keys(lsKeyMap) as IDBStoreName[]) {
+    const lsKey = lsKeyMap[store];
     if (!lsKey) continue;
     const existing = await idbGet(store, store);
     if (existing) continue; // already migrated

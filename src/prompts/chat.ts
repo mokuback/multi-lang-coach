@@ -7,12 +7,22 @@ export function buildChatSystemPrompt(ctx: PromptContext): string {
   const uiLangNameMap: Record<string, string> = { 'zh-TW': '繁體中文', 'zh-CN': '簡體中文', 'en': 'English', 'ja': '日本語', 'ko': '한국어', 'es': 'Español', 'fr': 'Français' };
   const uiLangName = uiLangNameMap[ctx.uiLang] || 'English';
 
-  // 明確指定中文簡繁體回覆
-  const chineseScriptRule = ctx.uiLang === 'zh-CN'
-    ? '【非常重要】你的所有中文回覆（包括翻譯、解釋、引導、說明等）必須使用簡體中文。'
+  // 明確指定回覆語言
+  const responseLangRule = ctx.uiLang === 'zh-CN'
+    ? '【非常重要】你的所有回覆（包括翻譯、解釋、引導、說明等）必須使用簡體中文。'
     : ctx.uiLang === 'zh-TW'
-    ? '【重要】你的所有中文回覆必須使用繁體中文。'
-    : '';
+    ? '【重要】你的所有回覆必須使用繁體中文。'
+    : ctx.uiLang === 'en'
+    ? '【Important】All your responses (including translations, explanations, guidance, descriptions, etc.) must be in English.'
+    : ctx.uiLang === 'ja'
+    ? '【重要】あなたの全ての返信（翻訳、説明、ガイダンス、説明などを含む）は日本語でなければなりません。'
+    : ctx.uiLang === 'ko'
+    ? '【중요】당신의 모든 응답(번역, 설명, 안내, 설명 등 포함)은 한국어여야 합니다.'
+    : ctx.uiLang === 'es'
+    ? '【Importante】Todas tus respuestas (incluyendo traducciones, explicaciones, orientación, descripciones, etc.) deben estar en Español.'
+    : ctx.uiLang === 'fr'
+    ? '【Important】Toutes vos réponses (y compris les traductions, explications, orientations, descriptions, etc.) doivent être en français.'
+    : '【Important】All your responses must be in the language of the user interface.';
 
   const strictnessRule =
     ctx.correctionMode === 'strict'
@@ -42,7 +52,7 @@ export function buildChatSystemPrompt(ctx: PromptContext): string {
     systemInstruction = `
       你是一個嚴格但友善的語言測驗教練。我們正在進行 ${langName} 的闖關練習。
       ${ctx.isCurriculumDrill ? "你必須嚴格遵守系統提示中給定的單元主題、單字與句型限制，不可超綱。" : ""}
-      ${chineseScriptRule}
+      ${responseLangRule}
       目前的文法糾錯標準為：${strictnessRule}
 
       你必須嚴格回傳 JSON 格式，不允許 Markdown 代碼塊標記 (例如 \`\`\`json)。
@@ -66,7 +76,7 @@ export function buildChatSystemPrompt(ctx: PromptContext): string {
       目前你們對話的情境脈絡是【${ctx.userCategory} - ${ctx.userRole}】。
       使用者的程度設定為【${ctx.userLevel}】，請務必使用符合該程度的字彙與文法結構進行對話。絕對避免使用超過使用者程度太多的生僻詞或複雜句型。
       ${lengthInstruction}
-      ${chineseScriptRule}
+      ${responseLangRule}
       目前的文法糾錯標準為：${strictnessRule}
       
       你必須嚴格回傳 JSON 格式，且「絕對不能」包含任何 Markdown 代碼塊標記 (例如 \`\`\`json) ，請直接給出純 JSON 物件。

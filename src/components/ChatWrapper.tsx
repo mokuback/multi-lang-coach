@@ -36,7 +36,7 @@ const ChatWrapper = () => {
   useEffect(() => {
     if (initializedRef.current) return;
 
-    const langName = targetLanguage === 'en' ? '英文' : '日文';
+    const langName = targetLanguage === 'en' ? t('英文') : t('日文');
     const levelLabel = categoryData.levels.find(l => l.id === userLevel)?.label || userLevel;
 
     // Pattern drill initialization

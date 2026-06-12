@@ -23,11 +23,56 @@ export const curriculumData = {
         'de': 'Meistern Sie die gebräuchlichsten Begrüßungs- und Abschiedsfloskeln.'
       },
       vocab: [
-        { word: 'おはようございます', zh: '早安', phonetic: '[0]' },
-        { word: 'こんにちは', zh: '你好', phonetic: '[0]' },
-        { word: 'こんばんは', zh: '晚安', phonetic: '[0]' },
-        { word: 'ありがとう', zh: '謝謝', phonetic: '[2]' },
-        { word: 'さようなら', zh: '再見', phonetic: '[4]' }
+        { word: 'おはようございます', meanings: {
+      'zh-TW': '早安',
+      'zh-CN': '早安',
+      'en': '早安',
+      'ja': '早安',
+      'ko': '早安',
+      'es': '早安',
+      'fr': '早安',
+      'de': '早安'
+    }, phonetic: '[0]' },
+        { word: 'こんにちは', meanings: {
+      'zh-TW': '你好',
+      'zh-CN': '你好',
+      'en': '你好',
+      'ja': '你好',
+      'ko': '你好',
+      'es': '你好',
+      'fr': '你好',
+      'de': '你好'
+    }, phonetic: '[0]' },
+        { word: 'こんばんは', meanings: {
+      'zh-TW': '晚安',
+      'zh-CN': '晚安',
+      'en': '晚安',
+      'ja': '晚安',
+      'ko': '晚安',
+      'es': '晚安',
+      'fr': '晚安',
+      'de': '晚安'
+    }, phonetic: '[0]' },
+        { word: 'ありがとう', meanings: {
+      'zh-TW': '謝謝',
+      'zh-CN': '謝謝',
+      'en': '謝謝',
+      'ja': '謝謝',
+      'ko': '謝謝',
+      'es': '謝謝',
+      'fr': '謝謝',
+      'de': '謝謝'
+    }, phonetic: '[2]' },
+        { word: 'さようなら', meanings: {
+      'zh-TW': '再見',
+      'zh-CN': '再見',
+      'en': '再見',
+      'ja': '再見',
+      'ko': '再見',
+      'es': '再見',
+      'fr': '再見',
+      'de': '再見'
+    }, phonetic: '[4]' }
       ],
       patterns: [
         { pattern: '基本問候 (無特定句型)', explanation: '依據時間不同使用對應的打招呼用語。' }
@@ -56,11 +101,56 @@ export const curriculumData = {
         'de': 'Lernen Sie, Ihre Identität auf Japanisch anzugeben und andere danach zu fragen.'
       },
       vocab: [
-        { word: 'わたし', zh: '我', phonetic: '私 [0]' },
-        { word: 'あなた', zh: '你', phonetic: '貴方 [2]' },
-        { word: 'がくせい', zh: '學生', phonetic: '学生 [0]' },
-        { word: 'かいしゃいん', zh: '上班族', phonetic: '会社員 [3]' },
-        { word: 'せんせい', zh: '老師', phonetic: '先生 [3]' }
+        { word: 'わたし', meanings: {
+      'zh-TW': '我',
+      'zh-CN': '我',
+      'en': '我',
+      'ja': '我',
+      'ko': '我',
+      'es': '我',
+      'fr': '我',
+      'de': '我'
+    }, phonetic: '私 [0]' },
+        { word: 'あなた', meanings: {
+      'zh-TW': '你',
+      'zh-CN': '你',
+      'en': '你',
+      'ja': '你',
+      'ko': '你',
+      'es': '你',
+      'fr': '你',
+      'de': '你'
+    }, phonetic: '貴方 [2]' },
+        { word: 'がくせい', meanings: {
+      'zh-TW': '學生',
+      'zh-CN': '學生',
+      'en': '學生',
+      'ja': '學生',
+      'ko': '學生',
+      'es': '學生',
+      'fr': '學生',
+      'de': '學生'
+    }, phonetic: '学生 [0]' },
+        { word: 'かいしゃいん', meanings: {
+      'zh-TW': '上班族',
+      'zh-CN': '上班族',
+      'en': '上班族',
+      'ja': '上班族',
+      'ko': '上班族',
+      'es': '上班族',
+      'fr': '上班族',
+      'de': '上班族'
+    }, phonetic: '会社員 [3]' },
+        { word: 'せんせい', meanings: {
+      'zh-TW': '老師',
+      'zh-CN': '老師',
+      'en': '老師',
+      'ja': '老師',
+      'ko': '老師',
+      'es': '老師',
+      'fr': '老師',
+      'de': '老師'
+    }, phonetic: '先生 [3]' }
       ],
       patterns: [
         { pattern: 'わたしは [名詞] です。', explanation: '我是...' },
@@ -90,12 +180,66 @@ export const curriculumData = {
         'de': 'Lernen Sie, auf Gegenstände zu zeigen und nach ihren Namen zu fragen.'
       },
       vocab: [
-        { word: 'これ', zh: '這個', phonetic: '[0]' },
-        { word: 'それ', zh: '那個', phonetic: '[0]' },
-        { word: 'あれ', zh: '那個(遠處)', phonetic: '[0]' },
-        { word: 'ほん', zh: '書本', phonetic: '本 [1]' },
-        { word: 'ペン', zh: '筆', phonetic: '[1]' },
-        { word: 'パソコン', zh: '電腦', phonetic: '[0]' }
+        { word: 'これ', meanings: {
+      'zh-TW': '這個',
+      'zh-CN': '這個',
+      'en': '這個',
+      'ja': '這個',
+      'ko': '這個',
+      'es': '這個',
+      'fr': '這個',
+      'de': '這個'
+    }, phonetic: '[0]' },
+        { word: 'それ', meanings: {
+      'zh-TW': '那個',
+      'zh-CN': '那個',
+      'en': '那個',
+      'ja': '那個',
+      'ko': '那個',
+      'es': '那個',
+      'fr': '那個',
+      'de': '那個'
+    }, phonetic: '[0]' },
+        { word: 'あれ', meanings: {
+      'zh-TW': '那個(遠處)',
+      'zh-CN': '那個(遠處)',
+      'en': '那個(遠處)',
+      'ja': '那個(遠處)',
+      'ko': '那個(遠處)',
+      'es': '那個(遠處)',
+      'fr': '那個(遠處)',
+      'de': '那個(遠處)'
+    }, phonetic: '[0]' },
+        { word: 'ほん', meanings: {
+      'zh-TW': '書本',
+      'zh-CN': '書本',
+      'en': '書本',
+      'ja': '書本',
+      'ko': '書本',
+      'es': '書本',
+      'fr': '書本',
+      'de': '書本'
+    }, phonetic: '本 [1]' },
+        { word: 'ペン', meanings: {
+      'zh-TW': '筆',
+      'zh-CN': '筆',
+      'en': '筆',
+      'ja': '筆',
+      'ko': '筆',
+      'es': '筆',
+      'fr': '筆',
+      'de': '筆'
+    }, phonetic: '[1]' },
+        { word: 'パソコン', meanings: {
+      'zh-TW': '電腦',
+      'zh-CN': '電腦',
+      'en': '電腦',
+      'ja': '電腦',
+      'ko': '電腦',
+      'es': '電腦',
+      'fr': '電腦',
+      'de': '電腦'
+    }, phonetic: '[0]' }
       ],
       patterns: [
         { pattern: 'これは [名詞] です。', explanation: '這是...' },
@@ -125,12 +269,66 @@ export const curriculumData = {
         'de': 'Lernen Sie, nach Orten zu fragen und diese im physischen Raum zu zeigen.'
       },
       vocab: [
-        { word: 'ここ', zh: '這裡', phonetic: '[0]' },
-        { word: 'そこ', zh: '那裡', phonetic: '[0]' },
-        { word: 'あそこ', zh: '那裡(遠處)', phonetic: '[0]' },
-        { word: 'トイレ', zh: '廁所', phonetic: '[1]' },
-        { word: 'かいしゃ', zh: '公司', phonetic: '会社 [0]' },
-        { word: 'どこ', zh: '哪裡', phonetic: '[1]' }
+        { word: 'ここ', meanings: {
+      'zh-TW': '這裡',
+      'zh-CN': '這裡',
+      'en': '這裡',
+      'ja': '這裡',
+      'ko': '這裡',
+      'es': '這裡',
+      'fr': '這裡',
+      'de': '這裡'
+    }, phonetic: '[0]' },
+        { word: 'そこ', meanings: {
+      'zh-TW': '那裡',
+      'zh-CN': '那裡',
+      'en': '那裡',
+      'ja': '那裡',
+      'ko': '那裡',
+      'es': '那裡',
+      'fr': '那裡',
+      'de': '那裡'
+    }, phonetic: '[0]' },
+        { word: 'あそこ', meanings: {
+      'zh-TW': '那裡(遠處)',
+      'zh-CN': '那裡(遠處)',
+      'en': '那裡(遠處)',
+      'ja': '那裡(遠處)',
+      'ko': '那裡(遠處)',
+      'es': '那裡(遠處)',
+      'fr': '那裡(遠處)',
+      'de': '那裡(遠處)'
+    }, phonetic: '[0]' },
+        { word: 'トイレ', meanings: {
+      'zh-TW': '廁所',
+      'zh-CN': '廁所',
+      'en': '廁所',
+      'ja': '廁所',
+      'ko': '廁所',
+      'es': '廁所',
+      'fr': '廁所',
+      'de': '廁所'
+    }, phonetic: '[1]' },
+        { word: 'かいしゃ', meanings: {
+      'zh-TW': '公司',
+      'zh-CN': '公司',
+      'en': '公司',
+      'ja': '公司',
+      'ko': '公司',
+      'es': '公司',
+      'fr': '公司',
+      'de': '公司'
+    }, phonetic: '会社 [0]' },
+        { word: 'どこ', meanings: {
+      'zh-TW': '哪裡',
+      'zh-CN': '哪裡',
+      'en': '哪裡',
+      'ja': '哪裡',
+      'ko': '哪裡',
+      'es': '哪裡',
+      'fr': '哪裡',
+      'de': '哪裡'
+    }, phonetic: '[1]' }
       ],
       patterns: [
         { pattern: '[名詞] は どこ ですか。', explanation: '...在哪裡？' },
@@ -160,12 +358,66 @@ export const curriculumData = {
         'de': 'Lernen Sie die grundlegenden japanischen Zahlen und wie man die Zeit angibt.'
       },
       vocab: [
-        { word: 'いち', zh: '一', phonetic: '一 [2]' },
-        { word: 'に', zh: '二', phonetic: '二 [1]' },
-        { word: 'さん', zh: '三', phonetic: '三 [0]' },
-        { word: 'いま', zh: '現在', phonetic: '今 [1]' },
-        { word: '～じ', zh: '～點', phonetic: '～時' },
-        { word: '～ふん', zh: '～分', phonetic: '～分' }
+        { word: 'いち', meanings: {
+      'zh-TW': '一',
+      'zh-CN': '一',
+      'en': '一',
+      'ja': '一',
+      'ko': '一',
+      'es': '一',
+      'fr': '一',
+      'de': '一'
+    }, phonetic: '一 [2]' },
+        { word: 'に', meanings: {
+      'zh-TW': '二',
+      'zh-CN': '二',
+      'en': '二',
+      'ja': '二',
+      'ko': '二',
+      'es': '二',
+      'fr': '二',
+      'de': '二'
+    }, phonetic: '二 [1]' },
+        { word: 'さん', meanings: {
+      'zh-TW': '三',
+      'zh-CN': '三',
+      'en': '三',
+      'ja': '三',
+      'ko': '三',
+      'es': '三',
+      'fr': '三',
+      'de': '三'
+    }, phonetic: '三 [0]' },
+        { word: 'いま', meanings: {
+      'zh-TW': '現在',
+      'zh-CN': '現在',
+      'en': '現在',
+      'ja': '現在',
+      'ko': '現在',
+      'es': '現在',
+      'fr': '現在',
+      'de': '現在'
+    }, phonetic: '今 [1]' },
+        { word: '～じ', meanings: {
+      'zh-TW': '～點',
+      'zh-CN': '～點',
+      'en': '～點',
+      'ja': '～點',
+      'ko': '～點',
+      'es': '～點',
+      'fr': '～點',
+      'de': '～點'
+    }, phonetic: '～時' },
+        { word: '～ふん', meanings: {
+      'zh-TW': '～分',
+      'zh-CN': '～分',
+      'en': '～分',
+      'ja': '～分',
+      'ko': '～分',
+      'es': '～分',
+      'fr': '～分',
+      'de': '～分'
+    }, phonetic: '～分' }
       ],
       patterns: [
         { pattern: '今、何時ですか。', explanation: '現在幾點？' },
@@ -195,11 +447,56 @@ export const curriculumData = {
         'de': 'Lernen Sie, im Restaurant zu bestellen oder im Geschäft nach Preisen zu fragen.'
       },
       vocab: [
-        { word: 'いくら', zh: '多少錢', phonetic: '[1]' },
-        { word: 'メニュー', zh: '菜單', phonetic: '[1]' },
-        { word: 'みず', zh: '水', phonetic: '水 [0]' },
-        { word: 'コーヒー', zh: '咖啡', phonetic: '[3]' },
-        { word: 'えん', zh: '日圓', phonetic: '円 [1]' }
+        { word: 'いくら', meanings: {
+      'zh-TW': '多少錢',
+      'zh-CN': '多少錢',
+      'en': '多少錢',
+      'ja': '多少錢',
+      'ko': '多少錢',
+      'es': '多少錢',
+      'fr': '多少錢',
+      'de': '多少錢'
+    }, phonetic: '[1]' },
+        { word: 'メニュー', meanings: {
+      'zh-TW': '菜單',
+      'zh-CN': '菜單',
+      'en': '菜單',
+      'ja': '菜單',
+      'ko': '菜單',
+      'es': '菜單',
+      'fr': '菜單',
+      'de': '菜單'
+    }, phonetic: '[1]' },
+        { word: 'みず', meanings: {
+      'zh-TW': '水',
+      'zh-CN': '水',
+      'en': '水',
+      'ja': '水',
+      'ko': '水',
+      'es': '水',
+      'fr': '水',
+      'de': '水'
+    }, phonetic: '水 [0]' },
+        { word: 'コーヒー', meanings: {
+      'zh-TW': '咖啡',
+      'zh-CN': '咖啡',
+      'en': '咖啡',
+      'ja': '咖啡',
+      'ko': '咖啡',
+      'es': '咖啡',
+      'fr': '咖啡',
+      'de': '咖啡'
+    }, phonetic: '[3]' },
+        { word: 'えん', meanings: {
+      'zh-TW': '日圓',
+      'zh-CN': '日圓',
+      'en': '日圓',
+      'ja': '日圓',
+      'ko': '日圓',
+      'es': '日圓',
+      'fr': '日圓',
+      'de': '日圓'
+    }, phonetic: '円 [1]' }
       ],
       patterns: [
         { pattern: 'これは いくら ですか。', explanation: '這個多少錢？' },
@@ -229,11 +526,56 @@ export const curriculumData = {
         'de': 'Beschreiben Sie gewohnheitsmäßige Handlungen oder Dinge, die Sie tun werden.'
       },
       vocab: [
-        { word: 'たべます', zh: '吃', phonetic: '食べます [3]' },
-        { word: 'のみます', zh: '喝', phonetic: '飲みます [3]' },
-        { word: 'みます', zh: '看', phonetic: '見ます [2]' },
-        { word: 'あさごはん', zh: '早餐', phonetic: '朝ごはん [3]' },
-        { word: 'おちゃ', zh: '茶', phonetic: 'お茶 [0]' }
+        { word: 'たべます', meanings: {
+      'zh-TW': '吃',
+      'zh-CN': '吃',
+      'en': '吃',
+      'ja': '吃',
+      'ko': '吃',
+      'es': '吃',
+      'fr': '吃',
+      'de': '吃'
+    }, phonetic: '食べます [3]' },
+        { word: 'のみます', meanings: {
+      'zh-TW': '喝',
+      'zh-CN': '喝',
+      'en': '喝',
+      'ja': '喝',
+      'ko': '喝',
+      'es': '喝',
+      'fr': '喝',
+      'de': '喝'
+    }, phonetic: '飲みます [3]' },
+        { word: 'みます', meanings: {
+      'zh-TW': '看',
+      'zh-CN': '看',
+      'en': '看',
+      'ja': '看',
+      'ko': '看',
+      'es': '看',
+      'fr': '看',
+      'de': '看'
+    }, phonetic: '見ます [2]' },
+        { word: 'あさごはん', meanings: {
+      'zh-TW': '早餐',
+      'zh-CN': '早餐',
+      'en': '早餐',
+      'ja': '早餐',
+      'ko': '早餐',
+      'es': '早餐',
+      'fr': '早餐',
+      'de': '早餐'
+    }, phonetic: '朝ごはん [3]' },
+        { word: 'おちゃ', meanings: {
+      'zh-TW': '茶',
+      'zh-CN': '茶',
+      'en': '茶',
+      'ja': '茶',
+      'ko': '茶',
+      'es': '茶',
+      'fr': '茶',
+      'de': '茶'
+    }, phonetic: 'お茶 [0]' }
       ],
       patterns: [
         { pattern: 'わたしは [名詞] を [動詞ます]。', explanation: '我要/我習慣做...' },
@@ -263,10 +605,46 @@ export const curriculumData = {
         'de': 'Lernen Sie, jemanden einzuladen, etwas gemeinsam zu machen.'
       },
       vocab: [
-        { word: 'いっしょに', zh: '一起', phonetic: '一緒に [0]' },
-        { word: 'えいが', zh: '電影', phonetic: '映画 [0]' },
-        { word: 'あした', zh: '明天', phonetic: '明日 [3]' },
-        { word: 'いきます', zh: '去', phonetic: '行きます [3]' }
+        { word: 'いっしょに', meanings: {
+      'zh-TW': '一起',
+      'zh-CN': '一起',
+      'en': '一起',
+      'ja': '一起',
+      'ko': '一起',
+      'es': '一起',
+      'fr': '一起',
+      'de': '一起'
+    }, phonetic: '一緒に [0]' },
+        { word: 'えいが', meanings: {
+      'zh-TW': '電影',
+      'zh-CN': '電影',
+      'en': '電影',
+      'ja': '電影',
+      'ko': '電影',
+      'es': '電影',
+      'fr': '電影',
+      'de': '電影'
+    }, phonetic: '映画 [0]' },
+        { word: 'あした', meanings: {
+      'zh-TW': '明天',
+      'zh-CN': '明天',
+      'en': '明天',
+      'ja': '明天',
+      'ko': '明天',
+      'es': '明天',
+      'fr': '明天',
+      'de': '明天'
+    }, phonetic: '明日 [3]' },
+        { word: 'いきます', meanings: {
+      'zh-TW': '去',
+      'zh-CN': '去',
+      'en': '去',
+      'ja': '去',
+      'ko': '去',
+      'es': '去',
+      'fr': '去',
+      'de': '去'
+    }, phonetic: '行きます [3]' }
       ],
       patterns: [
         { pattern: '一緒に [動詞] ませんか。', explanation: '要不要一起...？' },
@@ -296,10 +674,46 @@ export const curriculumData = {
         'de': 'Beschreiben Sie Dinge, die gestern oder in der Vergangenheit passiert sind.'
       },
       vocab: [
-        { word: 'きのう', zh: '昨天', phonetic: '昨日 [2]' },
-        { word: 'せんしゅう', zh: '上週', phonetic: '先週 [0]' },
-        { word: 'いそがしい', zh: '忙碌的', phonetic: '忙しい [4]' },
-        { word: 'ひま', zh: '閒暇的', phonetic: '暇 [0]' }
+        { word: 'きのう', meanings: {
+      'zh-TW': '昨天',
+      'zh-CN': '昨天',
+      'en': '昨天',
+      'ja': '昨天',
+      'ko': '昨天',
+      'es': '昨天',
+      'fr': '昨天',
+      'de': '昨天'
+    }, phonetic: '昨日 [2]' },
+        { word: 'せんしゅう', meanings: {
+      'zh-TW': '上週',
+      'zh-CN': '上週',
+      'en': '上週',
+      'ja': '上週',
+      'ko': '上週',
+      'es': '上週',
+      'fr': '上週',
+      'de': '上週'
+    }, phonetic: '先週 [0]' },
+        { word: 'いそがしい', meanings: {
+      'zh-TW': '忙碌的',
+      'zh-CN': '忙碌的',
+      'en': '忙碌的',
+      'ja': '忙碌的',
+      'ko': '忙碌的',
+      'es': '忙碌的',
+      'fr': '忙碌的',
+      'de': '忙碌的'
+    }, phonetic: '忙しい [4]' },
+        { word: 'ひま', meanings: {
+      'zh-TW': '閒暇的',
+      'zh-CN': '閒暇的',
+      'en': '閒暇的',
+      'ja': '閒暇的',
+      'ko': '閒暇的',
+      'es': '閒暇的',
+      'fr': '閒暇的',
+      'de': '閒暇的'
+    }, phonetic: '暇 [0]' }
       ],
       patterns: [
         { pattern: '[名詞/形容詞] でした。', explanation: '當時是...' },
@@ -329,10 +743,46 @@ export const curriculumData = {
         'de': 'Drücken Sie Dinge aus, die Sie wollen oder tun möchten.'
       },
       vocab: [
-        { word: 'ほしい', zh: '想要的', phonetic: '欲しい [2]' },
-        { word: 'くるま', zh: '車子', phonetic: '車 [0]' },
-        { word: 'あたらしい', zh: '新的', phonetic: '新しい [4]' },
-        { word: 'かいます', zh: '買', phonetic: '買います [3]' }
+        { word: 'ほしい', meanings: {
+      'zh-TW': '想要的',
+      'zh-CN': '想要的',
+      'en': '想要的',
+      'ja': '想要的',
+      'ko': '想要的',
+      'es': '想要的',
+      'fr': '想要的',
+      'de': '想要的'
+    }, phonetic: '欲しい [2]' },
+        { word: 'くるま', meanings: {
+      'zh-TW': '車子',
+      'zh-CN': '車子',
+      'en': '車子',
+      'ja': '車子',
+      'ko': '車子',
+      'es': '車子',
+      'fr': '車子',
+      'de': '車子'
+    }, phonetic: '車 [0]' },
+        { word: 'あたらしい', meanings: {
+      'zh-TW': '新的',
+      'zh-CN': '新的',
+      'en': '新的',
+      'ja': '新的',
+      'ko': '新的',
+      'es': '新的',
+      'fr': '新的',
+      'de': '新的'
+    }, phonetic: '新しい [4]' },
+        { word: 'かいます', meanings: {
+      'zh-TW': '買',
+      'zh-CN': '買',
+      'en': '買',
+      'ja': '買',
+      'ko': '買',
+      'es': '買',
+      'fr': '買',
+      'de': '買'
+    }, phonetic: '買います [3]' }
       ],
       patterns: [
         { pattern: 'わたしは [名詞] が 欲しいです。', explanation: '我想要某物' },
@@ -362,11 +812,56 @@ export const curriculumData = {
         'de': 'Lernen Sie grundlegende Ausdrücke für das Telefonieren und Hinterlassen von Nachrichten.'
       },
       vocab: [
-        { word: 'もしもし', zh: '喂', phonetic: '[1]' },
-        { word: 'でんわ', zh: '電話', phonetic: '電話 [0]' },
-        { word: 'おねがいします', zh: '麻煩您了', phonetic: 'お願いします [4]' },
-        { word: 'いま', zh: '現在', phonetic: '今 [1]' },
-        { word: 'かいぎ', zh: '會議', phonetic: '会議 [1]' }
+        { word: 'もしもし', meanings: {
+      'zh-TW': '喂',
+      'zh-CN': '喂',
+      'en': '喂',
+      'ja': '喂',
+      'ko': '喂',
+      'es': '喂',
+      'fr': '喂',
+      'de': '喂'
+    }, phonetic: '[1]' },
+        { word: 'でんわ', meanings: {
+      'zh-TW': '電話',
+      'zh-CN': '電話',
+      'en': '電話',
+      'ja': '電話',
+      'ko': '電話',
+      'es': '電話',
+      'fr': '電話',
+      'de': '電話'
+    }, phonetic: '電話 [0]' },
+        { word: 'おねがいします', meanings: {
+      'zh-TW': '麻煩您了',
+      'zh-CN': '麻煩您了',
+      'en': '麻煩您了',
+      'ja': '麻煩您了',
+      'ko': '麻煩您了',
+      'es': '麻煩您了',
+      'fr': '麻煩您了',
+      'de': '麻煩您了'
+    }, phonetic: 'お願いします [4]' },
+        { word: 'いま', meanings: {
+      'zh-TW': '現在',
+      'zh-CN': '現在',
+      'en': '現在',
+      'ja': '現在',
+      'ko': '現在',
+      'es': '現在',
+      'fr': '現在',
+      'de': '現在'
+    }, phonetic: '今 [1]' },
+        { word: 'かいぎ', meanings: {
+      'zh-TW': '會議',
+      'zh-CN': '會議',
+      'en': '會議',
+      'ja': '會議',
+      'ko': '會議',
+      'es': '會議',
+      'fr': '會議',
+      'de': '會議'
+    }, phonetic: '会議 [1]' }
       ],
       patterns: [
         { pattern: '[名詞] を お願いします。', explanation: '請找某人聽電話' },
@@ -396,10 +891,46 @@ export const curriculumData = {
         'de': 'Bitten Sie höflich jemanden um Hilfe oder fragen Sie, ob Sie etwas tun dürfen.'
       },
       vocab: [
-        { word: 'てつだいます', zh: '幫忙', phonetic: '手伝います [4]' },
-        { word: 'つかいます', zh: '使用', phonetic: '使います [4]' },
-        { word: 'どうぞ', zh: '請', phonetic: '[1]' },
-        { word: 'いいですか', zh: '可以嗎', phonetic: '[1]' }
+        { word: 'てつだいます', meanings: {
+      'zh-TW': '幫忙',
+      'zh-CN': '幫忙',
+      'en': '幫忙',
+      'ja': '幫忙',
+      'ko': '幫忙',
+      'es': '幫忙',
+      'fr': '幫忙',
+      'de': '幫忙'
+    }, phonetic: '手伝います [4]' },
+        { word: 'つかいます', meanings: {
+      'zh-TW': '使用',
+      'zh-CN': '使用',
+      'en': '使用',
+      'ja': '使用',
+      'ko': '使用',
+      'es': '使用',
+      'fr': '使用',
+      'de': '使用'
+    }, phonetic: '使います [4]' },
+        { word: 'どうぞ', meanings: {
+      'zh-TW': '請',
+      'zh-CN': '請',
+      'en': '請',
+      'ja': '請',
+      'ko': '請',
+      'es': '請',
+      'fr': '請',
+      'de': '請'
+    }, phonetic: '[1]' },
+        { word: 'いいですか', meanings: {
+      'zh-TW': '可以嗎',
+      'zh-CN': '可以嗎',
+      'en': '可以嗎',
+      'ja': '可以嗎',
+      'ko': '可以嗎',
+      'es': '可以嗎',
+      'fr': '可以嗎',
+      'de': '可以嗎'
+    }, phonetic: '[1]' }
       ],
       patterns: [
         { pattern: '[動詞て形] も いいですか。', explanation: '我可以...嗎？' },
@@ -429,10 +960,46 @@ export const curriculumData = {
         'de': 'Beschreiben Sie Änderungen des Wetters oder des Zustands von Dingen.'
       },
       vocab: [
-        { word: 'てんき', zh: '天氣', phonetic: '天気 [1]' },
-        { word: 'あつい', zh: '熱的', phonetic: '暑い [2]' },
-        { word: 'さむい', zh: '冷的', phonetic: '寒い [2]' },
-        { word: 'なります', zh: '變成', phonetic: '[3]' }
+        { word: 'てんき', meanings: {
+      'zh-TW': '天氣',
+      'zh-CN': '天氣',
+      'en': '天氣',
+      'ja': '天氣',
+      'ko': '天氣',
+      'es': '天氣',
+      'fr': '天氣',
+      'de': '天氣'
+    }, phonetic: '天気 [1]' },
+        { word: 'あつい', meanings: {
+      'zh-TW': '熱的',
+      'zh-CN': '熱的',
+      'en': '熱的',
+      'ja': '熱的',
+      'ko': '熱的',
+      'es': '熱的',
+      'fr': '熱的',
+      'de': '熱的'
+    }, phonetic: '暑い [2]' },
+        { word: 'さむい', meanings: {
+      'zh-TW': '冷的',
+      'zh-CN': '冷的',
+      'en': '冷的',
+      'ja': '冷的',
+      'ko': '冷的',
+      'es': '冷的',
+      'fr': '冷的',
+      'de': '冷的'
+    }, phonetic: '寒い [2]' },
+        { word: 'なります', meanings: {
+      'zh-TW': '變成',
+      'zh-CN': '變成',
+      'en': '變成',
+      'ja': '變成',
+      'ko': '變成',
+      'es': '變成',
+      'fr': '變成',
+      'de': '變成'
+    }, phonetic: '[3]' }
       ],
       patterns: [
         { pattern: '[形容詞/名詞] に なります。', explanation: '變得...' },
@@ -462,10 +1029,46 @@ export const curriculumData = {
         'de': 'Lernen Sie, zwei Dinge zu vergleichen und Vorlieben auszudrücken.'
       },
       vocab: [
-        { word: 'おおきい', zh: '大的', phonetic: '大きい [3]' },
-        { word: 'ちいさい', zh: '小的', phonetic: '小さい [3]' },
-        { word: 'どちら', zh: '哪一邊', phonetic: '[1]' },
-        { word: 'より', zh: '比...', phonetic: '[1]' }
+        { word: 'おおきい', meanings: {
+      'zh-TW': '大的',
+      'zh-CN': '大的',
+      'en': '大的',
+      'ja': '大的',
+      'ko': '大的',
+      'es': '大的',
+      'fr': '大的',
+      'de': '大的'
+    }, phonetic: '大きい [3]' },
+        { word: 'ちいさい', meanings: {
+      'zh-TW': '小的',
+      'zh-CN': '小的',
+      'en': '小的',
+      'ja': '小的',
+      'ko': '小的',
+      'es': '小的',
+      'fr': '小的',
+      'de': '小的'
+    }, phonetic: '小さい [3]' },
+        { word: 'どちら', meanings: {
+      'zh-TW': '哪一邊',
+      'zh-CN': '哪一邊',
+      'en': '哪一邊',
+      'ja': '哪一邊',
+      'ko': '哪一邊',
+      'es': '哪一邊',
+      'fr': '哪一邊',
+      'de': '哪一邊'
+    }, phonetic: '[1]' },
+        { word: 'より', meanings: {
+      'zh-TW': '比...',
+      'zh-CN': '比...',
+      'en': '比...',
+      'ja': '比...',
+      'ko': '比...',
+      'es': '比...',
+      'fr': '比...',
+      'de': '比...'
+    }, phonetic: '[1]' }
       ],
       patterns: [
         { pattern: 'Aは Bより [形容詞] です。', explanation: 'A比B更...' },
@@ -495,10 +1098,46 @@ export const curriculumData = {
         'de': 'Teilen Sie Dinge, die Sie getan haben, und geben Sie anderen Ratschläge.'
       },
       vocab: [
-        { word: '日本', zh: '日本', phonetic: '[2]' },
-        { word: 'べんきょう', zh: '學習', phonetic: '勉強 [0]' },
-        { word: 'ほうがいい', zh: '比較好', phonetic: '[1]' },
-        { word: 'あります', zh: '有', phonetic: '[3]' }
+        { word: '日本', meanings: {
+      'zh-TW': '日本',
+      'zh-CN': '日本',
+      'en': '日本',
+      'ja': '日本',
+      'ko': '日本',
+      'es': '日本',
+      'fr': '日本',
+      'de': '日本'
+    }, phonetic: '[2]' },
+        { word: 'べんきょう', meanings: {
+      'zh-TW': '學習',
+      'zh-CN': '學習',
+      'en': '學習',
+      'ja': '學習',
+      'ko': '學習',
+      'es': '學習',
+      'fr': '學習',
+      'de': '學習'
+    }, phonetic: '勉強 [0]' },
+        { word: 'ほうがいい', meanings: {
+      'zh-TW': '比較好',
+      'zh-CN': '比較好',
+      'en': '比較好',
+      'ja': '比較好',
+      'ko': '比較好',
+      'es': '比較好',
+      'fr': '比較好',
+      'de': '比較好'
+    }, phonetic: '[1]' },
+        { word: 'あります', meanings: {
+      'zh-TW': '有',
+      'zh-CN': '有',
+      'en': '有',
+      'ja': '有',
+      'ko': '有',
+      'es': '有',
+      'fr': '有',
+      'de': '有'
+    }, phonetic: '[3]' }
       ],
       patterns: [
         { pattern: '[動詞た形] ことが あります。', explanation: '曾經有...的經驗' },
@@ -530,11 +1169,56 @@ export const curriculumData = {
         'de': 'Grüßen Sie selbstbewusst auf Englisch.'
       },
       vocab: [
-        { word: 'Hello', zh: '你好', phonetic: '/həˈloʊ/' },
-        { word: 'Good morning', zh: '早安', phonetic: '/ɡʊd ˈmɔːrnɪŋ/' },
-        { word: 'Name', zh: '名字', phonetic: '/neɪm/' },
-        { word: 'Nice', zh: '好的/高興的', phonetic: '/naɪs/' },
-        { word: 'Meet', zh: '遇見', phonetic: '/miːt/' }
+        { word: 'Hello', meanings: {
+      'zh-TW': '你好',
+      'zh-CN': '你好',
+      'en': '你好',
+      'ja': '你好',
+      'ko': '你好',
+      'es': '你好',
+      'fr': '你好',
+      'de': '你好'
+    }, phonetic: '/həˈloʊ/' },
+        { word: 'Good morning', meanings: {
+      'zh-TW': '早安',
+      'zh-CN': '早安',
+      'en': '早安',
+      'ja': '早安',
+      'ko': '早安',
+      'es': '早安',
+      'fr': '早安',
+      'de': '早安'
+    }, phonetic: '/ɡʊd ˈmɔːrnɪŋ/' },
+        { word: 'Name', meanings: {
+      'zh-TW': '名字',
+      'zh-CN': '名字',
+      'en': '名字',
+      'ja': '名字',
+      'ko': '名字',
+      'es': '名字',
+      'fr': '名字',
+      'de': '名字'
+    }, phonetic: '/neɪm/' },
+        { word: 'Nice', meanings: {
+      'zh-TW': '好的/高興的',
+      'zh-CN': '好的/高興的',
+      'en': '好的/高興的',
+      'ja': '好的/高興的',
+      'ko': '好的/高興的',
+      'es': '好的/高興的',
+      'fr': '好的/高興的',
+      'de': '好的/高興的'
+    }, phonetic: '/naɪs/' },
+        { word: 'Meet', meanings: {
+      'zh-TW': '遇見',
+      'zh-CN': '遇見',
+      'en': '遇見',
+      'ja': '遇見',
+      'ko': '遇見',
+      'es': '遇見',
+      'fr': '遇見',
+      'de': '遇見'
+    }, phonetic: '/miːt/' }
       ],
       patterns: [
         { pattern: 'My name is [Name].', explanation: '我的名字是...' },
@@ -564,11 +1248,56 @@ export const curriculumData = {
         'de': 'Verwenden Sie das Verb "to be", um Status und Identität zu beschreiben.'
       },
       vocab: [
-        { word: 'Teacher', zh: '老師', phonetic: '/ˈtiːtʃər/' },
-        { word: 'Student', zh: '學生', phonetic: '/ˈstjuːdənt/' },
-        { word: 'Engineer', zh: '工程師', phonetic: '/ˌendʒɪˈnɪr/' },
-        { word: 'Taiwan', zh: '台灣', phonetic: '/taɪˈwɑːn/' },
-        { word: 'America', zh: '美國', phonetic: '/əˈmerɪkə/' }
+        { word: 'Teacher', meanings: {
+      'zh-TW': '老師',
+      'zh-CN': '老師',
+      'en': '老師',
+      'ja': '老師',
+      'ko': '老師',
+      'es': '老師',
+      'fr': '老師',
+      'de': '老師'
+    }, phonetic: '/ˈtiːtʃər/' },
+        { word: 'Student', meanings: {
+      'zh-TW': '學生',
+      'zh-CN': '學生',
+      'en': '學生',
+      'ja': '學生',
+      'ko': '學生',
+      'es': '學生',
+      'fr': '學生',
+      'de': '學生'
+    }, phonetic: '/ˈstjuːdənt/' },
+        { word: 'Engineer', meanings: {
+      'zh-TW': '工程師',
+      'zh-CN': '工程師',
+      'en': '工程師',
+      'ja': '工程師',
+      'ko': '工程師',
+      'es': '工程師',
+      'fr': '工程師',
+      'de': '工程師'
+    }, phonetic: '/ˌendʒɪˈnɪr/' },
+        { word: 'Taiwan', meanings: {
+      'zh-TW': '台灣',
+      'zh-CN': '台灣',
+      'en': '台灣',
+      'ja': '台灣',
+      'ko': '台灣',
+      'es': '台灣',
+      'fr': '台灣',
+      'de': '台灣'
+    }, phonetic: '/taɪˈwɑːn/' },
+        { word: 'America', meanings: {
+      'zh-TW': '美國',
+      'zh-CN': '美國',
+      'en': '美國',
+      'ja': '美國',
+      'ko': '美國',
+      'es': '美國',
+      'fr': '美國',
+      'de': '美國'
+    }, phonetic: '/əˈmerɪkə/' }
       ],
       patterns: [
         { pattern: 'I am a [Noun].', explanation: '我是一個...' },
@@ -598,11 +1327,56 @@ export const curriculumData = {
         'de': 'Zeigen Sie auf Gegenstände in Ihrer Umgebung und identifizieren Sie diese.'
       },
       vocab: [
-        { word: 'This', zh: '這個', phonetic: '/ðɪs/' },
-        { word: 'That', zh: '那個', phonetic: '/ðæt/' },
-        { word: 'Pen', zh: '筆', phonetic: '/pen/' },
-        { word: 'Computer', zh: '電腦', phonetic: '/kəmˈpjuːtər/' },
-        { word: 'Phone', zh: '電話', phonetic: '/foʊn/' }
+        { word: 'This', meanings: {
+      'zh-TW': '這個',
+      'zh-CN': '這個',
+      'en': '這個',
+      'ja': '這個',
+      'ko': '這個',
+      'es': '這個',
+      'fr': '這個',
+      'de': '這個'
+    }, phonetic: '/ðɪs/' },
+        { word: 'That', meanings: {
+      'zh-TW': '那個',
+      'zh-CN': '那個',
+      'en': '那個',
+      'ja': '那個',
+      'ko': '那個',
+      'es': '那個',
+      'fr': '那個',
+      'de': '那個'
+    }, phonetic: '/ðæt/' },
+        { word: 'Pen', meanings: {
+      'zh-TW': '筆',
+      'zh-CN': '筆',
+      'en': '筆',
+      'ja': '筆',
+      'ko': '筆',
+      'es': '筆',
+      'fr': '筆',
+      'de': '筆'
+    }, phonetic: '/pen/' },
+        { word: 'Computer', meanings: {
+      'zh-TW': '電腦',
+      'zh-CN': '電腦',
+      'en': '電腦',
+      'ja': '電腦',
+      'ko': '電腦',
+      'es': '電腦',
+      'fr': '電腦',
+      'de': '電腦'
+    }, phonetic: '/kəmˈpjuːtər/' },
+        { word: 'Phone', meanings: {
+      'zh-TW': '電話',
+      'zh-CN': '電話',
+      'en': '電話',
+      'ja': '電話',
+      'ko': '電話',
+      'es': '電話',
+      'fr': '電話',
+      'de': '電話'
+    }, phonetic: '/foʊn/' }
       ],
       patterns: [
         { pattern: 'What is this?', explanation: '這是什麼？' },
@@ -632,11 +1406,56 @@ export const curriculumData = {
         'de': 'Fragen Sie, wo sich die Toilette oder das Büro befindet.'
       },
       vocab: [
-        { word: 'Here', zh: '這裡', phonetic: '/hɪr/' },
-        { word: 'There', zh: '那裡', phonetic: '/ðer/' },
-        { word: 'Restroom', zh: '廁所', phonetic: '/ˈrestruːm/' },
-        { word: 'Office', zh: '辦公室', phonetic: '/ˈɔːfɪs/' },
-        { word: 'Where', zh: '哪裡', phonetic: '/wer/' }
+        { word: 'Here', meanings: {
+      'zh-TW': '這裡',
+      'zh-CN': '這裡',
+      'en': '這裡',
+      'ja': '這裡',
+      'ko': '這裡',
+      'es': '這裡',
+      'fr': '這裡',
+      'de': '這裡'
+    }, phonetic: '/hɪr/' },
+        { word: 'There', meanings: {
+      'zh-TW': '那裡',
+      'zh-CN': '那裡',
+      'en': '那裡',
+      'ja': '那裡',
+      'ko': '那裡',
+      'es': '那裡',
+      'fr': '那裡',
+      'de': '那裡'
+    }, phonetic: '/ðer/' },
+        { word: 'Restroom', meanings: {
+      'zh-TW': '廁所',
+      'zh-CN': '廁所',
+      'en': '廁所',
+      'ja': '廁所',
+      'ko': '廁所',
+      'es': '廁所',
+      'fr': '廁所',
+      'de': '廁所'
+    }, phonetic: '/ˈrestruːm/' },
+        { word: 'Office', meanings: {
+      'zh-TW': '辦公室',
+      'zh-CN': '辦公室',
+      'en': '辦公室',
+      'ja': '辦公室',
+      'ko': '辦公室',
+      'es': '辦公室',
+      'fr': '辦公室',
+      'de': '辦公室'
+    }, phonetic: '/ˈɔːfɪs/' },
+        { word: 'Where', meanings: {
+      'zh-TW': '哪裡',
+      'zh-CN': '哪裡',
+      'en': '哪裡',
+      'ja': '哪裡',
+      'ko': '哪裡',
+      'es': '哪裡',
+      'fr': '哪裡',
+      'de': '哪裡'
+    }, phonetic: '/wer/' }
       ],
       patterns: [
         { pattern: 'Where is the [Noun]?', explanation: '...在哪裡？' },
@@ -666,11 +1485,56 @@ export const curriculumData = {
         'de': 'Fragen Sie nach Preisen und geben Sie einfache Bestellungen auf.'
       },
       vocab: [
-        { word: 'How much', zh: '多少錢', phonetic: '/haʊ mʌtʃ/' },
-        { word: 'Dollar', zh: '元', phonetic: '/ˈdɑːlər/' },
-        { word: 'Coffee', zh: '咖啡', phonetic: '/ˈkɔːfi/' },
-        { word: 'Menu', zh: '菜單', phonetic: '/ˈmenjuː/' },
-        { word: 'Receipt', zh: '收據', phonetic: '/rɪˈsiːt/' }
+        { word: 'How much', meanings: {
+      'zh-TW': '多少錢',
+      'zh-CN': '多少錢',
+      'en': '多少錢',
+      'ja': '多少錢',
+      'ko': '多少錢',
+      'es': '多少錢',
+      'fr': '多少錢',
+      'de': '多少錢'
+    }, phonetic: '/haʊ mʌtʃ/' },
+        { word: 'Dollar', meanings: {
+      'zh-TW': '元',
+      'zh-CN': '元',
+      'en': '元',
+      'ja': '元',
+      'ko': '元',
+      'es': '元',
+      'fr': '元',
+      'de': '元'
+    }, phonetic: '/ˈdɑːlər/' },
+        { word: 'Coffee', meanings: {
+      'zh-TW': '咖啡',
+      'zh-CN': '咖啡',
+      'en': '咖啡',
+      'ja': '咖啡',
+      'ko': '咖啡',
+      'es': '咖啡',
+      'fr': '咖啡',
+      'de': '咖啡'
+    }, phonetic: '/ˈkɔːfi/' },
+        { word: 'Menu', meanings: {
+      'zh-TW': '菜單',
+      'zh-CN': '菜單',
+      'en': '菜單',
+      'ja': '菜單',
+      'ko': '菜單',
+      'es': '菜單',
+      'fr': '菜單',
+      'de': '菜單'
+    }, phonetic: '/ˈmenjuː/' },
+        { word: 'Receipt', meanings: {
+      'zh-TW': '收據',
+      'zh-CN': '收據',
+      'en': '收據',
+      'ja': '收據',
+      'ko': '收據',
+      'es': '收據',
+      'fr': '收據',
+      'de': '收據'
+    }, phonetic: '/rɪˈsiːt/' }
       ],
       patterns: [
         { pattern: 'How much is [Noun]?', explanation: '...多少錢？' },
@@ -700,11 +1564,56 @@ export const curriculumData = {
         'de': 'Lesen Sie die Uhrzeit und beschreiben Sie tägliche feste Zeitpläne.'
       },
       vocab: [
-        { word: 'Time', zh: '時間', phonetic: '/taɪm/' },
-        { word: 'Clock', zh: '時鐘', phonetic: '/klɑːk/' },
-        { word: 'Breakfast', zh: '早餐', phonetic: '/ˈbrekfəst/' },
-        { word: 'Work', zh: '工作', phonetic: '/wɜːrk/' },
-        { word: 'Sleep', zh: '睡覺', phonetic: '/sliːp/' }
+        { word: 'Time', meanings: {
+      'zh-TW': '時間',
+      'zh-CN': '時間',
+      'en': '時間',
+      'ja': '時間',
+      'ko': '時間',
+      'es': '時間',
+      'fr': '時間',
+      'de': '時間'
+    }, phonetic: '/taɪm/' },
+        { word: 'Clock', meanings: {
+      'zh-TW': '時鐘',
+      'zh-CN': '時鐘',
+      'en': '時鐘',
+      'ja': '時鐘',
+      'ko': '時鐘',
+      'es': '時鐘',
+      'fr': '時鐘',
+      'de': '時鐘'
+    }, phonetic: '/klɑːk/' },
+        { word: 'Breakfast', meanings: {
+      'zh-TW': '早餐',
+      'zh-CN': '早餐',
+      'en': '早餐',
+      'ja': '早餐',
+      'ko': '早餐',
+      'es': '早餐',
+      'fr': '早餐',
+      'de': '早餐'
+    }, phonetic: '/ˈbrekfəst/' },
+        { word: 'Work', meanings: {
+      'zh-TW': '工作',
+      'zh-CN': '工作',
+      'en': '工作',
+      'ja': '工作',
+      'ko': '工作',
+      'es': '工作',
+      'fr': '工作',
+      'de': '工作'
+    }, phonetic: '/wɜːrk/' },
+        { word: 'Sleep', meanings: {
+      'zh-TW': '睡覺',
+      'zh-CN': '睡覺',
+      'en': '睡覺',
+      'ja': '睡覺',
+      'ko': '睡覺',
+      'es': '睡覺',
+      'fr': '睡覺',
+      'de': '睡覺'
+    }, phonetic: '/sliːp/' }
       ],
       patterns: [
         { pattern: 'What time is it?', explanation: '現在幾點？' },
@@ -734,11 +1643,56 @@ export const curriculumData = {
         'de': 'Drücken Sie Dinge aus, die Sie mögen oder nicht mögen.'
       },
       vocab: [
-        { word: 'Like', zh: '喜歡', phonetic: '/laɪk/' },
-        { word: 'Love', zh: '愛/很喜歡', phonetic: '/lʌv/' },
-        { word: 'Hate', zh: '討厭', phonetic: '/heɪt/' },
-        { word: 'Food', zh: '食物', phonetic: '/fuːd/' },
-        { word: 'Music', zh: '音樂', phonetic: '/ˈmjuːzɪk/' }
+        { word: 'Like', meanings: {
+      'zh-TW': '喜歡',
+      'zh-CN': '喜歡',
+      'en': '喜歡',
+      'ja': '喜歡',
+      'ko': '喜歡',
+      'es': '喜歡',
+      'fr': '喜歡',
+      'de': '喜歡'
+    }, phonetic: '/laɪk/' },
+        { word: 'Love', meanings: {
+      'zh-TW': '愛/很喜歡',
+      'zh-CN': '愛/很喜歡',
+      'en': '愛/很喜歡',
+      'ja': '愛/很喜歡',
+      'ko': '愛/很喜歡',
+      'es': '愛/很喜歡',
+      'fr': '愛/很喜歡',
+      'de': '愛/很喜歡'
+    }, phonetic: '/lʌv/' },
+        { word: 'Hate', meanings: {
+      'zh-TW': '討厭',
+      'zh-CN': '討厭',
+      'en': '討厭',
+      'ja': '討厭',
+      'ko': '討厭',
+      'es': '討厭',
+      'fr': '討厭',
+      'de': '討厭'
+    }, phonetic: '/heɪt/' },
+        { word: 'Food', meanings: {
+      'zh-TW': '食物',
+      'zh-CN': '食物',
+      'en': '食物',
+      'ja': '食物',
+      'ko': '食物',
+      'es': '食物',
+      'fr': '食物',
+      'de': '食物'
+    }, phonetic: '/fuːd/' },
+        { word: 'Music', meanings: {
+      'zh-TW': '音樂',
+      'zh-CN': '音樂',
+      'en': '音樂',
+      'ja': '音樂',
+      'ko': '音樂',
+      'es': '音樂',
+      'fr': '音樂',
+      'de': '音樂'
+    }, phonetic: '/ˈmjuːzɪk/' }
       ],
       patterns: [
         { pattern: 'Do you like [Noun]?', explanation: '你喜歡...嗎？' },
@@ -768,11 +1722,56 @@ export const curriculumData = {
         'de': 'Erklären Sie, was Sie tun können, und bitten Sie andere um Hilfe.'
       },
       vocab: [
-        { word: 'Can', zh: '會/能夠', phonetic: '/kæn/' },
-        { word: 'Speak', zh: '說', phonetic: '/spiːk/' },
-        { word: 'Swim', zh: '游泳', phonetic: '/swɪm/' },
-        { word: 'Play', zh: '玩/演奏', phonetic: '/pleɪ/' },
-        { word: 'English', zh: '英文', phonetic: '/ˈɪŋɡlɪʃ/' }
+        { word: 'Can', meanings: {
+      'zh-TW': '會/能夠',
+      'zh-CN': '會/能夠',
+      'en': '會/能夠',
+      'ja': '會/能夠',
+      'ko': '會/能夠',
+      'es': '會/能夠',
+      'fr': '會/能夠',
+      'de': '會/能夠'
+    }, phonetic: '/kæn/' },
+        { word: 'Speak', meanings: {
+      'zh-TW': '說',
+      'zh-CN': '說',
+      'en': '說',
+      'ja': '說',
+      'ko': '說',
+      'es': '說',
+      'fr': '說',
+      'de': '說'
+    }, phonetic: '/spiːk/' },
+        { word: 'Swim', meanings: {
+      'zh-TW': '游泳',
+      'zh-CN': '游泳',
+      'en': '游泳',
+      'ja': '游泳',
+      'ko': '游泳',
+      'es': '游泳',
+      'fr': '游泳',
+      'de': '游泳'
+    }, phonetic: '/swɪm/' },
+        { word: 'Play', meanings: {
+      'zh-TW': '玩/演奏',
+      'zh-CN': '玩/演奏',
+      'en': '玩/演奏',
+      'ja': '玩/演奏',
+      'ko': '玩/演奏',
+      'es': '玩/演奏',
+      'fr': '玩/演奏',
+      'de': '玩/演奏'
+    }, phonetic: '/pleɪ/' },
+        { word: 'English', meanings: {
+      'zh-TW': '英文',
+      'zh-CN': '英文',
+      'en': '英文',
+      'ja': '英文',
+      'ko': '英文',
+      'es': '英文',
+      'fr': '英文',
+      'de': '英文'
+    }, phonetic: '/ˈɪŋɡlɪʃ/' }
       ],
       patterns: [
         { pattern: 'Can you [Verb]?', explanation: '你會...嗎？' },
@@ -802,11 +1801,56 @@ export const curriculumData = {
         'de': 'Beschreiben Sie, wo Sie gestern waren oder was Sie gemacht haben.'
       },
       vocab: [
-        { word: 'Yesterday', zh: '昨天', phonetic: '/ˈjestərdeɪ/' },
-        { word: 'Last week', zh: '上週', phonetic: '/læst wiːk/' },
-        { word: 'Went', zh: '去(過去式)', phonetic: '/went/' },
-        { word: 'Saw', zh: '看(過去式)', phonetic: '/sɔː/' },
-        { word: 'Ate', zh: '吃(過去式)', phonetic: '/eɪt/' }
+        { word: 'Yesterday', meanings: {
+      'zh-TW': '昨天',
+      'zh-CN': '昨天',
+      'en': '昨天',
+      'ja': '昨天',
+      'ko': '昨天',
+      'es': '昨天',
+      'fr': '昨天',
+      'de': '昨天'
+    }, phonetic: '/ˈjestərdeɪ/' },
+        { word: 'Last week', meanings: {
+      'zh-TW': '上週',
+      'zh-CN': '上週',
+      'en': '上週',
+      'ja': '上週',
+      'ko': '上週',
+      'es': '上週',
+      'fr': '上週',
+      'de': '上週'
+    }, phonetic: '/læst wiːk/' },
+        { word: 'Went', meanings: {
+      'zh-TW': '去(過去式)',
+      'zh-CN': '去(過去式)',
+      'en': '去(過去式)',
+      'ja': '去(過去式)',
+      'ko': '去(過去式)',
+      'es': '去(過去式)',
+      'fr': '去(過去式)',
+      'de': '去(過去式)'
+    }, phonetic: '/went/' },
+        { word: 'Saw', meanings: {
+      'zh-TW': '看(過去式)',
+      'zh-CN': '看(過去式)',
+      'en': '看(過去式)',
+      'ja': '看(過去式)',
+      'ko': '看(過去式)',
+      'es': '看(過去式)',
+      'fr': '看(過去式)',
+      'de': '看(過去式)'
+    }, phonetic: '/sɔː/' },
+        { word: 'Ate', meanings: {
+      'zh-TW': '吃(過去式)',
+      'zh-CN': '吃(過去式)',
+      'en': '吃(過去式)',
+      'ja': '吃(過去式)',
+      'ko': '吃(過去式)',
+      'es': '吃(過去式)',
+      'fr': '吃(過去式)',
+      'de': '吃(過去式)'
+    }, phonetic: '/eɪt/' }
       ],
       patterns: [
         { pattern: 'Did you [Verb]?', explanation: '你有...嗎？' },
@@ -836,11 +1880,56 @@ export const curriculumData = {
         'de': 'Sprechen Sie über die Pläne für das kommende Wochenende oder morgen.'
       },
       vocab: [
-        { word: 'Tomorrow', zh: '明天', phonetic: '/təˈmɔːroʊ/' },
-        { word: 'Next year', zh: '明年', phonetic: '/nekst jɪr/' },
-        { word: 'Going to', zh: '將要', phonetic: '/ˈɡoʊɪŋ tu/' },
-        { word: 'Will', zh: '將會', phonetic: '/wɪl/' },
-        { word: 'Travel', zh: '旅行', phonetic: '/ˈtrævl/' }
+        { word: 'Tomorrow', meanings: {
+      'zh-TW': '明天',
+      'zh-CN': '明天',
+      'en': '明天',
+      'ja': '明天',
+      'ko': '明天',
+      'es': '明天',
+      'fr': '明天',
+      'de': '明天'
+    }, phonetic: '/təˈmɔːroʊ/' },
+        { word: 'Next year', meanings: {
+      'zh-TW': '明年',
+      'zh-CN': '明年',
+      'en': '明年',
+      'ja': '明年',
+      'ko': '明年',
+      'es': '明年',
+      'fr': '明年',
+      'de': '明年'
+    }, phonetic: '/nekst jɪr/' },
+        { word: 'Going to', meanings: {
+      'zh-TW': '將要',
+      'zh-CN': '將要',
+      'en': '將要',
+      'ja': '將要',
+      'ko': '將要',
+      'es': '將要',
+      'fr': '將要',
+      'de': '將要'
+    }, phonetic: '/ˈɡoʊɪŋ tu/' },
+        { word: 'Will', meanings: {
+      'zh-TW': '將會',
+      'zh-CN': '將會',
+      'en': '將會',
+      'ja': '將會',
+      'ko': '將會',
+      'es': '將會',
+      'fr': '將會',
+      'de': '將會'
+    }, phonetic: '/wɪl/' },
+        { word: 'Travel', meanings: {
+      'zh-TW': '旅行',
+      'zh-CN': '旅行',
+      'en': '旅行',
+      'ja': '旅行',
+      'ko': '旅行',
+      'es': '旅行',
+      'fr': '旅行',
+      'de': '旅行'
+    }, phonetic: '/ˈtrævl/' }
       ],
       patterns: [
         { pattern: 'What are you going to do?', explanation: '你打算做什麼？' },
@@ -870,11 +1959,56 @@ export const curriculumData = {
         'de': 'Lernen Sie einfache englische Telefongespräche und Nachrichtenübermittlung.'
       },
       vocab: [
-        { word: 'Call', zh: '打電話', phonetic: '/kɔːl/' },
-        { word: 'Message', zh: '訊息/留言', phonetic: '/ˈmesɪdʒ/' },
-        { word: 'Speak', zh: '說話', phonetic: '/spiːk/' },
-        { word: 'Busy', zh: '忙碌的', phonetic: '/ˈbɪzi/' },
-        { word: 'Meeting', zh: '會議', phonetic: '/ˈmiːtɪŋ/' }
+        { word: 'Call', meanings: {
+      'zh-TW': '打電話',
+      'zh-CN': '打電話',
+      'en': '打電話',
+      'ja': '打電話',
+      'ko': '打電話',
+      'es': '打電話',
+      'fr': '打電話',
+      'de': '打電話'
+    }, phonetic: '/kɔːl/' },
+        { word: 'Message', meanings: {
+      'zh-TW': '訊息/留言',
+      'zh-CN': '訊息/留言',
+      'en': '訊息/留言',
+      'ja': '訊息/留言',
+      'ko': '訊息/留言',
+      'es': '訊息/留言',
+      'fr': '訊息/留言',
+      'de': '訊息/留言'
+    }, phonetic: '/ˈmesɪdʒ/' },
+        { word: 'Speak', meanings: {
+      'zh-TW': '說話',
+      'zh-CN': '說話',
+      'en': '說話',
+      'ja': '說話',
+      'ko': '說話',
+      'es': '說話',
+      'fr': '說話',
+      'de': '說話'
+    }, phonetic: '/spiːk/' },
+        { word: 'Busy', meanings: {
+      'zh-TW': '忙碌的',
+      'zh-CN': '忙碌的',
+      'en': '忙碌的',
+      'ja': '忙碌的',
+      'ko': '忙碌的',
+      'es': '忙碌的',
+      'fr': '忙碌的',
+      'de': '忙碌的'
+    }, phonetic: '/ˈbɪzi/' },
+        { word: 'Meeting', meanings: {
+      'zh-TW': '會議',
+      'zh-CN': '會議',
+      'en': '會議',
+      'ja': '會議',
+      'ko': '會議',
+      'es': '會議',
+      'fr': '會議',
+      'de': '會議'
+    }, phonetic: '/ˈmiːtɪŋ/' }
       ],
       patterns: [
         { pattern: 'May I speak to [Name]?', explanation: '我可以和...通話嗎？' },
@@ -904,11 +2038,56 @@ export const curriculumData = {
         'de': 'Bitten Sie höflich oder fragen Sie, ob Sie etwas tun dürfen.'
       },
       vocab: [
-        { word: 'Borrow', zh: '借(入)', phonetic: '/ˈbɔːroʊ/' },
-        { word: 'Use', zh: '使用', phonetic: '/juːz/' },
-        { word: 'Help', zh: '幫助', phonetic: '/help/' },
-        { word: 'Sure', zh: '當然', phonetic: '/ʃʊr/' },
-        { word: 'Problem', zh: '問題', phonetic: '/ˈprɑːbləm/' }
+        { word: 'Borrow', meanings: {
+      'zh-TW': '借(入)',
+      'zh-CN': '借(入)',
+      'en': '借(入)',
+      'ja': '借(入)',
+      'ko': '借(入)',
+      'es': '借(入)',
+      'fr': '借(入)',
+      'de': '借(入)'
+    }, phonetic: '/ˈbɔːroʊ/' },
+        { word: 'Use', meanings: {
+      'zh-TW': '使用',
+      'zh-CN': '使用',
+      'en': '使用',
+      'ja': '使用',
+      'ko': '使用',
+      'es': '使用',
+      'fr': '使用',
+      'de': '使用'
+    }, phonetic: '/juːz/' },
+        { word: 'Help', meanings: {
+      'zh-TW': '幫助',
+      'zh-CN': '幫助',
+      'en': '幫助',
+      'ja': '幫助',
+      'ko': '幫助',
+      'es': '幫助',
+      'fr': '幫助',
+      'de': '幫助'
+    }, phonetic: '/help/' },
+        { word: 'Sure', meanings: {
+      'zh-TW': '當然',
+      'zh-CN': '當然',
+      'en': '當然',
+      'ja': '當然',
+      'ko': '當然',
+      'es': '當然',
+      'fr': '當然',
+      'de': '當然'
+    }, phonetic: '/ʃʊr/' },
+        { word: 'Problem', meanings: {
+      'zh-TW': '問題',
+      'zh-CN': '問題',
+      'en': '問題',
+      'ja': '問題',
+      'ko': '問題',
+      'es': '問題',
+      'fr': '問題',
+      'de': '問題'
+    }, phonetic: '/ˈprɑːbləm/' }
       ],
       patterns: [
         { pattern: 'Could you help me [Verb]?', explanation: '你能幫我...嗎？' },
@@ -938,11 +2117,56 @@ export const curriculumData = {
         'de': 'Vergleichen Sie zwei Dinge und drücken Sie ihre Unterschiede aus.'
       },
       vocab: [
-        { word: 'Better', zh: '更好的', phonetic: '/ˈbetər/' },
-        { word: 'Faster', zh: '更快的', phonetic: '/ˈfæstər/' },
-        { word: 'Cheap', zh: '便宜的', phonetic: '/tʃiːp/' },
-        { word: 'Expensive', zh: '昂貴的', phonetic: '/ɪkˈspensɪv/' },
-        { word: 'Than', zh: '比', phonetic: '/ðæn/' }
+        { word: 'Better', meanings: {
+      'zh-TW': '更好的',
+      'zh-CN': '更好的',
+      'en': '更好的',
+      'ja': '更好的',
+      'ko': '更好的',
+      'es': '更好的',
+      'fr': '更好的',
+      'de': '更好的'
+    }, phonetic: '/ˈbetər/' },
+        { word: 'Faster', meanings: {
+      'zh-TW': '更快的',
+      'zh-CN': '更快的',
+      'en': '更快的',
+      'ja': '更快的',
+      'ko': '更快的',
+      'es': '更快的',
+      'fr': '更快的',
+      'de': '更快的'
+    }, phonetic: '/ˈfæstər/' },
+        { word: 'Cheap', meanings: {
+      'zh-TW': '便宜的',
+      'zh-CN': '便宜的',
+      'en': '便宜的',
+      'ja': '便宜的',
+      'ko': '便宜的',
+      'es': '便宜的',
+      'fr': '便宜的',
+      'de': '便宜的'
+    }, phonetic: '/tʃiːp/' },
+        { word: 'Expensive', meanings: {
+      'zh-TW': '昂貴的',
+      'zh-CN': '昂貴的',
+      'en': '昂貴的',
+      'ja': '昂貴的',
+      'ko': '昂貴的',
+      'es': '昂貴的',
+      'fr': '昂貴的',
+      'de': '昂貴的'
+    }, phonetic: '/ɪkˈspensɪv/' },
+        { word: 'Than', meanings: {
+      'zh-TW': '比',
+      'zh-CN': '比',
+      'en': '比',
+      'ja': '比',
+      'ko': '比',
+      'es': '比',
+      'fr': '比',
+      'de': '比'
+    }, phonetic: '/ðæn/' }
       ],
       patterns: [
         { pattern: '[A] is better than [B].', explanation: 'A比B更好。' },
@@ -972,11 +2196,56 @@ export const curriculumData = {
         'de': 'Geben Sie einfache Ratschläge für die Situationen anderer Leute.'
       },
       vocab: [
-        { word: 'Should', zh: '應該', phonetic: '/ʃʊd/' },
-        { word: 'Idea', zh: '主意', phonetic: '/aɪˈdiːə/' },
-        { word: 'Maybe', zh: '也許', phonetic: '/ˈmeɪbi/' },
-        { word: 'Try', zh: '嘗試', phonetic: '/traɪ/' },
-        { word: 'Rest', zh: '休息', phonetic: '/rest/' }
+        { word: 'Should', meanings: {
+      'zh-TW': '應該',
+      'zh-CN': '應該',
+      'en': '應該',
+      'ja': '應該',
+      'ko': '應該',
+      'es': '應該',
+      'fr': '應該',
+      'de': '應該'
+    }, phonetic: '/ʃʊd/' },
+        { word: 'Idea', meanings: {
+      'zh-TW': '主意',
+      'zh-CN': '主意',
+      'en': '主意',
+      'ja': '主意',
+      'ko': '主意',
+      'es': '主意',
+      'fr': '主意',
+      'de': '主意'
+    }, phonetic: '/aɪˈdiːə/' },
+        { word: 'Maybe', meanings: {
+      'zh-TW': '也許',
+      'zh-CN': '也許',
+      'en': '也許',
+      'ja': '也許',
+      'ko': '也許',
+      'es': '也許',
+      'fr': '也許',
+      'de': '也許'
+    }, phonetic: '/ˈmeɪbi/' },
+        { word: 'Try', meanings: {
+      'zh-TW': '嘗試',
+      'zh-CN': '嘗試',
+      'en': '嘗試',
+      'ja': '嘗試',
+      'ko': '嘗試',
+      'es': '嘗試',
+      'fr': '嘗試',
+      'de': '嘗試'
+    }, phonetic: '/traɪ/' },
+        { word: 'Rest', meanings: {
+      'zh-TW': '休息',
+      'zh-CN': '休息',
+      'en': '休息',
+      'ja': '休息',
+      'ko': '休息',
+      'es': '休息',
+      'fr': '休息',
+      'de': '休息'
+    }, phonetic: '/rest/' }
       ],
       patterns: [
         { pattern: 'You should [Verb].', explanation: '你應該...' },
@@ -1006,11 +2275,56 @@ export const curriculumData = {
         'de': 'Beschreiben Sie vergangene Erfahrungen und drücken Sie Ihre eigenen Gefühle aus.'
       },
       vocab: [
-        { word: 'Experience', zh: '經驗', phonetic: '/ɪkˈspɪriəns/' },
-        { word: 'Feel', zh: '感覺', phonetic: '/fiːl/' },
-        { word: 'Tired', zh: '疲倦的', phonetic: '/ˈtaɪərd/' },
-        { word: 'Excited', zh: '興奮的', phonetic: '/ɪkˈsaɪtɪd/' },
-        { word: 'Ever', zh: '曾經', phonetic: '/ˈevər/' }
+        { word: 'Experience', meanings: {
+      'zh-TW': '經驗',
+      'zh-CN': '經驗',
+      'en': '經驗',
+      'ja': '經驗',
+      'ko': '經驗',
+      'es': '經驗',
+      'fr': '經驗',
+      'de': '經驗'
+    }, phonetic: '/ɪkˈspɪriəns/' },
+        { word: 'Feel', meanings: {
+      'zh-TW': '感覺',
+      'zh-CN': '感覺',
+      'en': '感覺',
+      'ja': '感覺',
+      'ko': '感覺',
+      'es': '感覺',
+      'fr': '感覺',
+      'de': '感覺'
+    }, phonetic: '/fiːl/' },
+        { word: 'Tired', meanings: {
+      'zh-TW': '疲倦的',
+      'zh-CN': '疲倦的',
+      'en': '疲倦的',
+      'ja': '疲倦的',
+      'ko': '疲倦的',
+      'es': '疲倦的',
+      'fr': '疲倦的',
+      'de': '疲倦的'
+    }, phonetic: '/ˈtaɪərd/' },
+        { word: 'Excited', meanings: {
+      'zh-TW': '興奮的',
+      'zh-CN': '興奮的',
+      'en': '興奮的',
+      'ja': '興奮的',
+      'ko': '興奮的',
+      'es': '興奮的',
+      'fr': '興奮的',
+      'de': '興奮的'
+    }, phonetic: '/ɪkˈsaɪtɪd/' },
+        { word: 'Ever', meanings: {
+      'zh-TW': '曾經',
+      'zh-CN': '曾經',
+      'en': '曾經',
+      'ja': '曾經',
+      'ko': '曾經',
+      'es': '曾經',
+      'fr': '曾經',
+      'de': '曾經'
+    }, phonetic: '/ˈevər/' }
       ],
       patterns: [
         { pattern: 'Have you ever [Past Participle]?', explanation: '你曾經...過嗎？' },
