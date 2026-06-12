@@ -49,6 +49,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
   // States for Learning Modal & Dynamic Text Selection
   const [learningModalData, setLearningModalData] = useState(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
+  const [analyzingSentenceIndex, setAnalyzingSentenceIndex] = useState(null);
   const [isPolishing, setIsPolishing] = useState(false);
   const [selectedTextData, setSelectedTextData] = useState({ index: null, text: '' });
 
@@ -210,14 +211,15 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
     };
   }, [targetLanguage]);
 
-  const handleLearnClick = async (sentence) => {
+  const handleLearnClick = async (sentence, msgIndex = null) => {
     if (!apiKey) {
       alert(t("請先在「設定與 API」中輸入 Gemini API Key，才能解鎖智能解析功能。"));
       return;
     }
     
-    setLearningModalData(null);
+    setLearningModalData({}); // 立即显示弹窗
     setIsAnalyzing(true);
+    setAnalyzingSentenceIndex(msgIndex);
     try {
       const result = await analyzeSentenceAPI(sentence, apiProvider, apiModel, apiKey, targetLanguage, uiLang);
       
@@ -230,6 +232,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
       }
       
       setLearningModalData(result);
+      setAnalyzingSentenceIndex(null);
       
       // 🎉 Trigger Confetti!
       confetti({
@@ -242,6 +245,8 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
     } catch (error) {
       console.error(error);
       alert(t(`解析發生錯誤: `) + error.message + t(`，請確認網路連線或金鑰是否正確。`));
+      setLearningModalData(null);
+      setAnalyzingSentenceIndex(null);
       setIsAnalyzing(false);
     } finally {
       setIsAnalyzing(false);
@@ -985,7 +990,8 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
                     )}
 
                     <button 
-                      onClick={() => handleLearnClick(msg.content)}
+                      onClick={() => handleLearnClick(msg.content, index)}
+                      disabled={isAnalyzing && analyzingSentenceIndex === index}
                       style={{
                         background: 'rgba(0, 240, 255, 0.1)',
                         border: '1px solid var(--accent-color)',
@@ -993,23 +999,35 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
                         padding: '4px 12px',
                         borderRadius: '16px',
                         fontSize: '0.8rem',
-                        cursor: 'pointer',
-                        transition: 'all 0.2s'
+                        cursor: isAnalyzing && analyzingSentenceIndex === index ? 'wait' : 'pointer',
+                        transition: 'all 0.2s',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '4px',
+                        opacity: isAnalyzing && analyzingSentenceIndex === index ? 0.7 : 1
                       }}
                       onMouseEnter={(e) => {
-                        e.currentTarget.style.background = 'rgba(0, 240, 255, 0.2)';
+                        if (!(isAnalyzing && analyzingSentenceIndex === index)) {
+                          e.currentTarget.style.background = 'rgba(0, 240, 255, 0.2)';
+                        }
                       }}
                       onMouseLeave={(e) => {
-                        e.currentTarget.style.background = 'rgba(0, 240, 255, 0.1)';
+                        if (!(isAnalyzing && analyzingSentenceIndex === index)) {
+                          e.currentTarget.style.background = 'rgba(0, 240, 255, 0.1)';
+                        }
                       }}
                     >
+                      {isAnalyzing && analyzingSentenceIndex === index ? (
+                        <Loader2 size={14} style={{ animation: 'spin 1s linear infinite' }} />
+                      ) : null}
                       {t('當句解析')}
                     </button>
                     
                     {/* Dynamic highlighted text parsing button */}
                     {selectedTextData.index === index && selectedTextData.text && (
                       <button 
-                        onClick={() => handleLearnClick(selectedTextData.text)}
+                        onClick={() => handleLearnClick(selectedTextData.text, index)}
+                        disabled={isAnalyzing && analyzingSentenceIndex === index}
                         style={{
                           background: 'rgba(255, 171, 0, 0.1)',
                           border: '1px solid #FFAB00',
@@ -1017,16 +1035,27 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
                           padding: '4px 12px',
                           borderRadius: '16px',
                           fontSize: '0.8rem',
-                          cursor: 'pointer',
-                          transition: 'all 0.2s'
+                          cursor: isAnalyzing && analyzingSentenceIndex === index ? 'wait' : 'pointer',
+                          transition: 'all 0.2s',
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '4px',
+                          opacity: isAnalyzing && analyzingSentenceIndex === index ? 0.7 : 1
                         }}
                         onMouseEnter={(e) => {
-                          e.currentTarget.style.background = 'rgba(255, 171, 0, 0.2)';
+                          if (!(isAnalyzing && analyzingSentenceIndex === index)) {
+                            e.currentTarget.style.background = 'rgba(255, 171, 0, 0.2)';
+                          }
                         }}
                         onMouseLeave={(e) => {
-                          e.currentTarget.style.background = 'rgba(255, 171, 0, 0.1)';
+                          if (!(isAnalyzing && analyzingSentenceIndex === index)) {
+                            e.currentTarget.style.background = 'rgba(255, 171, 0, 0.1)';
+                          }
                         }}
                       >
+                        {isAnalyzing && analyzingSentenceIndex === index ? (
+                          <Loader2 size={14} style={{ animation: 'spin 1s linear infinite' }} />
+                        ) : null}
                         {t('標記解析')}
                       </button>
                     )}
