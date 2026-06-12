@@ -26,52 +26,52 @@ export const curriculumData = {
         { word: 'おはようございます', meanings: {
       'zh-TW': '早安',
       'zh-CN': '早安',
-      'en': '早安',
-      'ja': '早安',
-      'ko': '早安',
-      'es': '早安',
-      'fr': '早安',
-      'de': '早安'
+      'en': 'Good morning',
+      'ja': 'おはようございます',
+      'ko': '좋은 아침',
+      'es': 'Buenos días',
+      'fr': 'Bonjour',
+      'de': 'Guten Morgen'
     }, phonetic: '[0]' },
         { word: 'こんにちは', meanings: {
       'zh-TW': '你好',
       'zh-CN': '你好',
-      'en': '你好',
-      'ja': '你好',
-      'ko': '你好',
-      'es': '你好',
-      'fr': '你好',
-      'de': '你好'
+      'en': 'Hello',
+      'ja': 'こんにちは',
+      'ko': '안녕하세요',
+      'es': 'Hola',
+      'fr': 'Bonjour',
+      'de': 'Hallo'
     }, phonetic: '[0]' },
         { word: 'こんばんは', meanings: {
-      'zh-TW': '晚安',
-      'zh-CN': '晚安',
-      'en': '晚安',
-      'ja': '晚安',
-      'ko': '晚安',
-      'es': '晚安',
-      'fr': '晚安',
-      'de': '晚安'
+      'zh-TW': '晚上好',
+      'zh-CN': '晚上好',
+      'en': 'Good evening',
+      'ja': 'こんばんは',
+      'ko': '좋은 저녁',
+      'es': 'Buenas noches',
+      'fr': 'Bonsoir',
+      'de': 'Guten Abend'
     }, phonetic: '[0]' },
         { word: 'ありがとう', meanings: {
       'zh-TW': '謝謝',
-      'zh-CN': '謝謝',
-      'en': '謝謝',
-      'ja': '謝謝',
-      'ko': '謝謝',
-      'es': '謝謝',
-      'fr': '謝謝',
-      'de': '謝謝'
+      'zh-CN': '谢谢',
+      'en': 'Thank you',
+      'ja': 'ありがとう',
+      'ko': '감사합니다',
+      'es': 'Gracias',
+      'fr': 'Merci',
+      'de': 'Danke'
     }, phonetic: '[2]' },
         { word: 'さようなら', meanings: {
       'zh-TW': '再見',
-      'zh-CN': '再見',
-      'en': '再見',
-      'ja': '再見',
-      'ko': '再見',
-      'es': '再見',
-      'fr': '再見',
-      'de': '再見'
+      'zh-CN': '再见',
+      'en': 'Goodbye',
+      'ja': 'さようなら',
+      'ko': '안녕히 가세요',
+      'es': 'Adiós',
+      'fr': 'Au revoir',
+      'de': 'Auf Wiedersehen'
     }, phonetic: '[4]' }
       ],
       patterns: [
@@ -114,12 +114,12 @@ export const curriculumData = {
         { word: 'あなた', meanings: {
       'zh-TW': '你',
       'zh-CN': '你',
-      'en': '你',
-      'ja': '你',
-      'ko': '你',
-      'es': '你',
-      'fr': '你',
-      'de': '你'
+      'en': 'You',
+      'ja': 'あなた',
+      'ko': '너',
+      'es': 'Tú',
+      'fr': 'Tu',
+      'de': 'Du'
     }, phonetic: '貴方 [2]' },
         { word: 'がくせい', meanings: {
       'zh-TW': '學生',
@@ -182,33 +182,33 @@ export const curriculumData = {
       vocab: [
         { word: 'これ', meanings: {
       'zh-TW': '這個',
-      'zh-CN': '這個',
-      'en': '這個',
-      'ja': '這個',
-      'ko': '這個',
-      'es': '這個',
-      'fr': '這個',
-      'de': '這個'
+      'zh-CN': '这个',
+      'en': 'This',
+      'ja': 'これ',
+      'ko': '이것',
+      'es': 'Esto',
+      'fr': 'Ceci',
+      'de': 'Dieses'
     }, phonetic: '[0]' },
         { word: 'それ', meanings: {
       'zh-TW': '那個',
-      'zh-CN': '那個',
-      'en': '那個',
-      'ja': '那個',
-      'ko': '那個',
-      'es': '那個',
-      'fr': '那個',
-      'de': '那個'
+      'zh-CN': '那个',
+      'en': 'That',
+      'ja': 'それ',
+      'ko': '저것',
+      'es': 'Eso',
+      'fr': 'Cela',
+      'de': 'Jenes'
     }, phonetic: '[0]' },
         { word: 'あれ', meanings: {
-      'zh-TW': '那個(遠處)',
-      'zh-CN': '那個(遠處)',
-      'en': '那個(遠處)',
-      'ja': '那個(遠處)',
-      'ko': '那個(遠處)',
-      'es': '那個(遠處)',
-      'fr': '那個(遠處)',
-      'de': '那個(遠處)'
+      'zh-TW': '那個（遠稱）',
+      'zh-CN': '那个（远称）',
+      'en': 'That over there',
+      'ja': 'あれ',
+      'ko': '저기',
+      'es': 'Aquello',
+      'fr': 'Ça',
+      'de': 'Dort drüben'
     }, phonetic: '[0]' },
         { word: 'ほん', meanings: {
       'zh-TW': '書本',
