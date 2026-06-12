@@ -26,52 +26,52 @@ export const curriculumData = {
         { word: 'おはようございます', meanings: {
       'zh-TW': '早安',
       'zh-CN': '早安',
-      'en': '早安',
-      'ja': '早安',
-      'ko': '早安',
-      'es': '早安',
-      'fr': '早安',
-      'de': '早安'
+      'en': 'good morning',
+      'ja': 'おはようございます',
+      'ko': '좋은 아침',
+      'es': 'buenos días',
+      'fr': 'bonjour',
+      'de': 'guten Morgen'
     }, phonetic: '[0]' },
         { word: 'こんにちは', meanings: {
       'zh-TW': '你好',
       'zh-CN': '你好',
-      'en': '你好',
-      'ja': '你好',
-      'ko': '你好',
-      'es': '你好',
-      'fr': '你好',
-      'de': '你好'
+      'en': 'hello / good afternoon',
+      'ja': 'こんにちは',
+      'ko': '안녕하세요',
+      'es': 'hola / buenas tardes',
+      'fr': 'bonjour / bon après-midi',
+      'de': 'hallo / guten Tag'
     }, phonetic: '[0]' },
         { word: 'こんばんは', meanings: {
       'zh-TW': '晚安',
       'zh-CN': '晚安',
-      'en': '晚安',
-      'ja': '晚安',
-      'ko': '晚安',
-      'es': '晚安',
-      'fr': '晚安',
-      'de': '晚安'
+      'en': 'good evening',
+      'ja': 'こんばんは',
+      'ko': '안녕하세요 (저녁)',
+      'es': 'buenas noches',
+      'fr': 'bonsoir',
+      'de': 'guten Abend'
     }, phonetic: '[0]' },
         { word: 'ありがとう', meanings: {
       'zh-TW': '謝謝',
-      'zh-CN': '謝謝',
-      'en': '謝謝',
-      'ja': '謝謝',
-      'ko': '謝謝',
-      'es': '謝謝',
-      'fr': '謝謝',
-      'de': '謝謝'
+      'zh-CN': '谢谢',
+      'en': 'thank you',
+      'ja': 'ありがとう',
+      'ko': '감사합니다',
+      'es': 'gracias',
+      'fr': 'merci',
+      'de': 'danke'
     }, phonetic: '[2]' },
         { word: 'さようなら', meanings: {
       'zh-TW': '再見',
-      'zh-CN': '再見',
-      'en': '再見',
-      'ja': '再見',
-      'ko': '再見',
-      'es': '再見',
-      'fr': '再見',
-      'de': '再見'
+      'zh-CN': '再见',
+      'en': 'goodbye',
+      'ja': 'さようなら',
+      'ko': '안녕히 가세요',
+      'es': 'adiós',
+      'fr': 'au revoir',
+      'de': 'auf Wiedersehen'
     }, phonetic: '[4]' }
       ],
       patterns: [
@@ -104,52 +104,52 @@ export const curriculumData = {
         { word: 'わたし', meanings: {
       'zh-TW': '我',
       'zh-CN': '我',
-      'en': '我',
-      'ja': '我',
-      'ko': '我',
-      'es': '我',
-      'fr': '我',
-      'de': '我'
+      'en': 'I / me',
+      'ja': '私（わたし）',
+      'ko': '나',
+      'es': 'yo',
+      'fr': 'je',
+      'de': 'ich'
     }, phonetic: '私 [0]' },
         { word: 'あなた', meanings: {
       'zh-TW': '你',
       'zh-CN': '你',
-      'en': '你',
-      'ja': '你',
-      'ko': '你',
-      'es': '你',
-      'fr': '你',
-      'de': '你'
+      'en': 'you',
+      'ja': 'あなた（貴方）',
+      'ko': '당신',
+      'es': 'tú / usted',
+      'fr': 'tu / vous',
+      'de': 'du / Sie'
     }, phonetic: '貴方 [2]' },
         { word: 'がくせい', meanings: {
       'zh-TW': '學生',
-      'zh-CN': '學生',
-      'en': '學生',
-      'ja': '學生',
-      'ko': '學生',
-      'es': '學生',
-      'fr': '學生',
-      'de': '學生'
+      'zh-CN': '学生',
+      'en': 'student',
+      'ja': '学生（がくせい）',
+      'ko': '학생',
+      'es': 'estudiante',
+      'fr': 'étudiant',
+      'de': 'Student'
     }, phonetic: '学生 [0]' },
         { word: 'かいしゃいん', meanings: {
       'zh-TW': '上班族',
       'zh-CN': '上班族',
-      'en': '上班族',
-      'ja': '上班族',
-      'ko': '上班族',
-      'es': '上班族',
-      'fr': '上班族',
-      'de': '上班族'
+      'en': 'company employee',
+      'ja': '会社員（かいしゃいん）',
+      'ko': '직장인',
+      'es': 'empleado de empresa',
+      'fr': 'employé de société',
+      'de': 'Unternehmensmitarbeiter'
     }, phonetic: '会社員 [3]' },
         { word: 'せんせい', meanings: {
       'zh-TW': '老師',
-      'zh-CN': '老師',
-      'en': '老師',
-      'ja': '老師',
-      'ko': '老師',
-      'es': '老師',
-      'fr': '老師',
-      'de': '老師'
+      'zh-CN': '老师',
+      'en': 'teacher',
+      'ja': '先生（せんせい）',
+      'ko': '선생님',
+      'es': 'profesor',
+      'fr': 'professeur',
+      'de': 'Lehrer'
     }, phonetic: '先生 [3]' }
       ],
       patterns: [
