@@ -56,48 +56,45 @@ export const I18nProvider = ({ children }) => {
   const langRef = useRef(uiLang);
   const versionRef = useRef(0);
 
-  // Locale switch: cancel in-flight loads via version bump, load new locale async
+  // Locale switch: synchronous lookup from eager-loaded modules
   useEffect(() => {
+    const myVersion = ++versionRef.current;
     langRef.current = uiLang;
-    versionRef.current += 1;
-    const myVersion = versionRef.current;
 
-    const loadTranslations = async () => {
+    if (uiLang !== activeLang) {
+      setIsLoading(true);
+    }
+
+    const timer = setTimeout(() => {
+      if (versionRef.current !== myVersion) return;
       if (langRef.current !== uiLang) return;
-      if (myVersion !== versionRef.current) return;
 
-      if (uiLang !== activeLang) {
-        setIsLoading(true);
+      const key = `../locales/${uiLang}.json`;
+      const loadedDict = allLocales[key];
+
+      if (loadedDict && typeof loadedDict === 'object') {
+        setDict(loadedDict);
+      } else {
+        console.error(`Locale ${uiLang} not found in eager-loaded modules`);
       }
-      try {
-        const module = await import(`../locales/${uiLang}.json`);
-        const loadedDict = module.default || module;
 
-        if (langRef.current !== uiLang) return;
-        if (myVersion !== versionRef.current) return;
-
-        let loadedEnDict = enDict;
-        if (uiLang !== 'en' && uiLang !== 'zh-TW' && uiLang !== 'zh-CN' && Object.keys(enDict).length === 0) {
-          const enModule = await import(`../locales/en.json`);
-          loadedEnDict = enModule.default || enModule;
+      // Load enDict if needed (for fallback translations)
+      if (uiLang !== 'en' && uiLang !== 'zh-TW' && uiLang !== 'zh-CN' && Object.keys(enDict).length === 0) {
+        const enKey = '../locales/en.json';
+        const loadedEnDict = allLocales[enKey];
+        if (loadedEnDict && typeof loadedEnDict === 'object') {
           setEnDict(loadedEnDict);
         }
-
-        setDict(loadedDict);
-        setActiveLang(uiLang);
-        localStorage.setItem(UI_LANG_STORAGE_KEY, uiLang);
-        setIsLoading(false);
-      } catch (error) {
-        console.error(`Failed to load translations for ${uiLang}:`, error);
-        if (langRef.current === uiLang) {
-          setActiveLang(uiLang);
-          localStorage.setItem(UI_LANG_STORAGE_KEY, uiLang);
-          setIsLoading(false);
-        }
       }
-    };
 
-    loadTranslations();
+      setActiveLang(uiLang);
+      localStorage.setItem(UI_LANG_STORAGE_KEY, uiLang);
+      setIsLoading(false);
+    }, 0);
+
+    return () => {
+      clearTimeout(timer);
+    };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [uiLang]);
 
