@@ -6,7 +6,7 @@ import { useI18n } from '../contexts/I18nContext';
 import { categoryData } from '../data/categoryData';
 
 const ChatWrapper = () => {
-  const { t, uiLang } = useI18n();
+  const { t, uiLang, getLocalizedContent } = useI18n();
   const { state: { 
     targetLanguage, 
     userLevel
