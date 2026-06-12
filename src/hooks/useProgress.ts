@@ -1,6 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
+import { idbGet, idbSet } from '../utils/idbStorage';
 
-const PROGRESS_KEY = 'APP_LEARNING_PROGRESS';
+const STORE: import('../utils/idbStorage').IDBStoreName = 'progress';
+const KEY = 'progress';
 
 export interface Progress {
   streak: number;
@@ -8,24 +10,25 @@ export interface Progress {
   lastDate: string | null;
 }
 
-function getInitialProgress(): Progress {
-  const saved = localStorage.getItem(PROGRESS_KEY);
-  if (saved) {
-    try {
-      return JSON.parse(saved);
-    } catch {
-      /* fall through */
-    }
-  }
-  return { streak: 0, completedScenarios: 0, lastDate: null };
-}
+const DEFAULT: Progress = { streak: 0, completedScenarios: 0, lastDate: null };
 
 export function useProgress() {
-  const [progress, setProgress] = useState<Progress>(getInitialProgress);
+  const [progress, setProgress] = useState<Progress>(DEFAULT);
+  const [loaded, setLoaded] = useState(false);
 
+  // Async load from IDB on mount
   useEffect(() => {
-    localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
-  }, [progress]);
+    idbGet<Progress>(STORE, KEY).then(data => {
+      setProgress(data ?? DEFAULT);
+      setLoaded(true);
+    });
+  }, []);
+
+  // Persist to IDB on change
+  useEffect(() => {
+    if (!loaded) return;
+    idbSet(STORE, KEY, progress);
+  }, [progress, loaded]);
 
   const updateProgress = useCallback(() => {
     setProgress(prev => {

@@ -1,6 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
+import { idbGet, idbSet } from '../utils/idbStorage';
 
-const VOCABULARY_KEY = 'IT_ENGLISH_APP_VOCABULARY';
+const STORE: import('../utils/idbStorage').IDBStoreName = 'vocabulary';
+const KEY = 'vocabulary';
 
 export interface VocabularyItem {
   id: string;
@@ -12,21 +14,22 @@ export interface VocabularyItem {
 }
 
 export function useVocabulary() {
-  const [vocabulary, setVocabulary] = useState<VocabularyItem[]>(() => {
-    const saved = localStorage.getItem(VOCABULARY_KEY);
-    if (saved) {
-      try {
-        return JSON.parse(saved);
-      } catch {
-        return [];
-      }
-    }
-    return [];
-  });
+  const [vocabulary, setVocabulary] = useState<VocabularyItem[]>([]);
+  const [loaded, setLoaded] = useState(false);
 
+  // Async load from IDB on mount
   useEffect(() => {
-    localStorage.setItem(VOCABULARY_KEY, JSON.stringify(vocabulary));
-  }, [vocabulary]);
+    idbGet<VocabularyItem[]>(STORE, KEY).then(data => {
+      setVocabulary(data ?? []);
+      setLoaded(true);
+    });
+  }, []);
+
+  // Persist to IDB on change (skip initial empty write before load)
+  useEffect(() => {
+    if (!loaded) return;
+    idbSet(STORE, KEY, vocabulary);
+  }, [vocabulary, loaded]);
 
   return { vocabulary, setVocabulary };
 }

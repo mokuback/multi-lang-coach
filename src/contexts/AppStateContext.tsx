@@ -4,6 +4,7 @@ import { categoryData } from '../data/categoryData';
 import { useVocabulary } from '../hooks/useVocabulary';
 import { usePatterns } from '../hooks/usePatterns';
 import { useProgress } from '../hooks/useProgress';
+import { migrateFromLocalStorage } from '../utils/idbStorage';
 
 // 临时类型定义（后续优化）
 interface AppState {
@@ -83,6 +84,9 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
   const { vocabulary, setVocabulary } = useVocabulary();
   const { savedPatterns, setSavedPatterns } = usePatterns();
   const { progress, updateProgress } = useProgress();
+
+  // One-shot migration: copy old localStorage data into IndexedDB
+  useEffect(() => { migrateFromLocalStorage(); }, []);
 
   // 从 localStorage 初始化状态（简化版，后续优化）
   const [state, setState] = useState<AppState>(() => ({

@@ -1,6 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
+import { idbGet, idbSet } from '../utils/idbStorage';
 
-const PATTERNS_KEY = 'IT_ENGLISH_APP_PATTERNS';
+const STORE: import('../utils/idbStorage').IDBStoreName = 'patterns';
+const KEY = 'patterns';
 
 export interface PatternItem {
   id: string;
@@ -10,21 +12,22 @@ export interface PatternItem {
 }
 
 export function usePatterns() {
-  const [savedPatterns, setSavedPatterns] = useState<PatternItem[]>(() => {
-    const saved = localStorage.getItem(PATTERNS_KEY);
-    if (saved) {
-      try {
-        return JSON.parse(saved);
-      } catch {
-        return [];
-      }
-    }
-    return [];
-  });
+  const [savedPatterns, setSavedPatterns] = useState<PatternItem[]>([]);
+  const [loaded, setLoaded] = useState(false);
 
+  // Async load from IDB on mount
   useEffect(() => {
-    localStorage.setItem(PATTERNS_KEY, JSON.stringify(savedPatterns));
-  }, [savedPatterns]);
+    idbGet<PatternItem[]>(STORE, KEY).then(data => {
+      setSavedPatterns(data ?? []);
+      setLoaded(true);
+    });
+  }, []);
+
+  // Persist to IDB on change
+  useEffect(() => {
+    if (!loaded) return;
+    idbSet(STORE, KEY, savedPatterns);
+  }, [savedPatterns, loaded]);
 
   return { savedPatterns, setSavedPatterns };
 }

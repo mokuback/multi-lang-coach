@@ -1,7 +1,9 @@
-import { describe, it, expect } from 'vitest';
-import { renderHook, act } from '@testing-library/react';
+import { describe, it, expect, beforeEach } from 'vitest';
+import { renderHook, act, waitFor } from '@testing-library/react';
 import React from 'react';
 import { AppStateProvider, useAppState } from './AppStateContext';
+import { idbSet, idbGet, idbDelete } from '../utils/idbStorage';
+import 'fake-indexeddb/auto';
 
 // Helper: wrap hook with provider
 function wrapper({ children }: { children: React.ReactNode }) {
@@ -9,8 +11,12 @@ function wrapper({ children }: { children: React.ReactNode }) {
 }
 
 describe('updateProgress', () => {
-  beforeEach(() => {
+  beforeEach(async () => {
     localStorage.clear();
+    // Clear IDB stores
+    await idbDelete('vocabulary', 'vocabulary');
+    await idbDelete('patterns', 'patterns');
+    await idbDelete('progress', 'progress');
   });
 
   it('first completion sets streak to 1', () => {
@@ -28,14 +34,8 @@ describe('updateProgress', () => {
     expect(result.current.state.progress.completedScenarios).toBe(2);
   });
 
-  it('consecutive days increase streak', () => {
-    const { result } = renderHook(() => useAppState(), { wrapper });
-
-    // First completion on today
-    act(() => { result.current.updateProgress(); });
-    expect(result.current.state.progress.streak).toBe(1);
-
-    // Manually set progress to simulate yesterday's completion
+  it('consecutive days increase streak', async () => {
+    // Set yesterday's progress in IDB before mounting
     const yesterday = new Date();
     yesterday.setDate(yesterday.getDate() - 1);
     const mockProgress = {
@@ -43,15 +43,20 @@ describe('updateProgress', () => {
       completedScenarios: 1,
       lastDate: yesterday.toDateString(),
     };
-    localStorage.setItem('APP_LEARNING_PROGRESS', JSON.stringify(mockProgress));
+    await idbSet('progress', 'progress', mockProgress);
 
-    // Re-render hook with the manipulated localStorage
-    const { result: result2 } = renderHook(() => useAppState(), { wrapper });
+    // Mount hook — useProgress will async-load the mock from IDB
+    const { result } = renderHook(() => useAppState(), { wrapper });
 
-    // updateProgress should detect yesterday as lastDate and increment streak
-    act(() => { result2.current.updateProgress(); });
-    expect(result2.current.state.progress.streak).toBe(2);
-    expect(result2.current.state.progress.completedScenarios).toBe(2);
+    // Wait for IDB async load to populate progress state
+    await waitFor(() => {
+      expect(result.current.state.progress.lastDate).toBe(yesterday.toDateString());
+    });
+
+    // Today's updateProgress should detect yesterday and increment streak
+    act(() => { result.current.updateProgress(); });
+    expect(result.current.state.progress.streak).toBe(2);
+    expect(result.current.state.progress.completedScenarios).toBe(2);
   });
 });
 
