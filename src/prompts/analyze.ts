@@ -8,6 +8,12 @@ export function buildAnalyzeSentencePrompt(ctx: AnalyzeSentenceContext): string 
   const uiLangNameMap: Record<string, string> = { 'zh-TW': '繁體中文', 'zh-CN': '簡體中文', 'en': 'English', 'ja': '日本語', 'ko': '한국어', 'es': 'Español', 'fr': 'Français' };
   const uiLangName = uiLangNameMap[ctx.uiLang] || 'English';
 
+  const chineseScriptRule = ctx.uiLang === 'zh-CN'
+    ? '【非常重要】你的所有中文回覆（包括翻譯、解釋、例句說明等）必須使用簡體中文。'
+    : ctx.uiLang === 'zh-TW'
+    ? '【重要】你的所有中文回覆必須使用繁體中文。'
+    : '';
+
   const vocabFormatInstruction = ctx.targetLanguage === 'en' 
     ? `"phonetic": "KK音標", "zh": "${uiLangName}解釋", "partOfSpeech": "英文詞性簡寫(如 n., vi.)"`
     : `"phonetic": "平假名拼音加重音數字(如：きのう [0])，純假名則只留重音(如：[1])", "zh": "${uiLangName}解釋", "partOfSpeech": "日文詞性簡寫(如 名, 動, 形)"`;
@@ -15,6 +21,7 @@ export function buildAnalyzeSentencePrompt(ctx: AnalyzeSentenceContext): string 
   const systemInstruction = `
     你是一個專精於多情境${langName}教學的資深教練。
     請分析以下句子，並提供具有「實戰性」的教學解析。
+    ${chineseScriptRule}
     
     JSON 格式必須精確符合以下結構：
     {

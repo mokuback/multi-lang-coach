@@ -9,7 +9,8 @@
         "ja": "[Software/Tool]を使っています。",
         "ko": "[Software/Tool]을 사용합니다.",
         "es": "Uso [Software/Tool].",
-        "fr": "J'utilise [Software/Tool]."
+        "fr": "J'utilise [Software/Tool].",
+        "zh-CN": "我使用 [某个软件/工具]。"
       },
       "explanations": {
         "zh-TW": "用來簡單介紹自己熟悉的工具。",
@@ -17,7 +18,8 @@
         "ja": "使い慣れたツールを簡単に紹介する。",
         "ko": "익숙한 도구 간단히 소개.",
         "es": "Presentar simplemente herramientas familiares.",
-        "fr": "Présenter simplement les outils familiers."
+        "fr": "Présenter simplement les outils familiers.",
+        "zh-CN": "用來简单介紹自己熟悉的工具。"
       }
     },
     {
@@ -29,7 +31,8 @@
         "ja": "[Device/System]が動作しません。",
         "ko": "[Device/System]이 작동하지 않습니다.",
         "es": "[Device/System] no funciona.",
-        "fr": "[Device/System] ne fonctionne pas."
+        "fr": "[Device/System] ne fonctionne pas.",
+        "zh-CN": "[某个设备/系统] 坏了/无法运作。"
       },
       "explanations": {
         "zh-TW": "最基本回報問題的句型。",
@@ -37,7 +40,8 @@
         "ja": "最も基本的な問題報告フレーズ。",
         "ko": "가장 기본적인 문제 보고 문구.",
         "es": "Frase de informe de problema más básica.",
-        "fr": "Phrase de signalement de problème la plus basique."
+        "fr": "Phrase de signalement de problème la plus basique.",
+        "zh-CN": "最基本回报问题的句型。"
       }
     }
   ],
@@ -51,7 +55,8 @@
         "ja": "[Task/Project]に取り組んでいます。",
         "ko": "[Task/Project]을 작업 중입니다.",
         "es": "Estoy trabajando en [Task/Project].",
-        "fr": "Je travaille sur [Task/Project]."
+        "fr": "Je travaille sur [Task/Project].",
+        "zh-CN": "我正在处理 [某个任务/专案]。"
       },
       "explanations": {
         "zh-TW": "報告目前的進度與焦點。",
@@ -59,7 +64,8 @@
         "ja": "現在の進捗と焦点を報告する。",
         "ko": "현재 진행 상황과 초점 보고.",
         "es": "Reportar el progreso y enfoque actual.",
-        "fr": "Rapporter les progrès et l'focus actuels."
+        "fr": "Rapporter les progrès et l'focus actuels.",
+        "zh-CN": "报告目前的进度与焦点。"
       }
     },
     {
@@ -71,7 +77,8 @@
         "ja": "[Task]を手伝っていただけますか？",
         "ko": "[Task]을 도와주시겠습니까?",
         "es": "¿Podría ayudarme con [Task]?",
-        "fr": "Pourriez-vous m'aider avec [Task] ?"
+        "fr": "Pourriez-vous m'aider avec [Task] ?",
+        "zh-CN": "你能帮我处理 [某个任务] 嗎？"
       },
       "explanations": {
         "zh-TW": "委婉尋求協助。",
@@ -79,7 +86,8 @@
         "ja": "控えめに支援を求める。",
         "ko": "완곡하게 지원 요청.",
         "es": "Buscar ayuda tácticamente.",
-        "fr": "Chercher de l'aide tacticement."
+        "fr": "Chercher de l'aide tacticement.",
+        "zh-CN": "委婉尋求协助。"
       }
     },
     {
@@ -91,7 +99,8 @@
         "ja": "今日[Task]を完了しました。",
         "ko": "오늘 [Task]을 완료했습니다.",
         "es": "He terminado [Task] hoy.",
-        "fr": "J'ai terminé [Task] aujourd'hui."
+        "fr": "J'ai terminé [Task] aujourd'hui.",
+        "zh-CN": "我今天完成了 [某个任务]。"
       },
       "explanations": {
         "zh-TW": "每日站會 (Daily Standup) 常用的回報完成句型。",
@@ -99,7 +108,8 @@
         "ja": "デイリースタンドアップでよく使う完了報告フレーズ。",
         "ko": "데일리 스탠드업에서 자주 쓰는 완료 보고 문구.",
         "es": "Frase común de informe de finalización en daily standup.",
-        "fr": "Phrase commune de rapport d'achèvement en daily standup."
+        "fr": "Phrase commune de rapport d'achèvement en daily standup.",
+        "zh-CN": "每日站会 (Daily Standup) 常用的回报完成句型。"
       }
     },
     {
@@ -111,7 +121,8 @@
         "ja": "[Component]を修正するにもう少し時間が必要です。",
         "ko": "[Component]을 수정하려면 더 많은 시간이 필요합니다.",
         "es": "Necesitamos más tiempo para arreglar [Component].",
-        "fr": "Nous avons besoin de plus de temps pour réparer [Component]."
+        "fr": "Nous avons besoin de plus de temps pour réparer [Component].",
+        "zh-CN": "我们需要多一点时間來修复 [某组件]。"
       },
       "explanations": {
         "zh-TW": "說明延遲並爭取時間的用法。",
@@ -119,7 +130,8 @@
         "ja": "遅延を説明し、時間を稼ぐための用法。",
         "ko": "지연 설명하고 시간 벌기 위한 용법.",
         "es": "Frase para explicar retrasos y ganar tiempo.",
-        "fr": "Phrase pour expliquer les retards et gagner du temps."
+        "fr": "Phrase pour expliquer les retards et gagner du temps.",
+        "zh-CN": "说明延遲並争取时間的用法。"
       }
     },
     {
@@ -131,7 +143,8 @@
         "ja": "[File/Module]にエラーがあります。",
         "ko": "[File/Module]에 오류가 있습니다.",
         "es": "Hay un error en [File/Module].",
-        "fr": "Il y a une erreur dans [File/Module]."
+        "fr": "Il y a une erreur dans [File/Module].",
+        "zh-CN": "[某文件/模组] 裡有一个错误。"
       },
       "explanations": {
         "zh-TW": "指出版版錯誤發生地點的情境。",
@@ -139,7 +152,8 @@
         "ja": "エラー発生場所を指摘する状況。",
         "ko": "오류 발생 위치 지적하는 상황.",
         "es": "Situación señalando dónde ocurrió el error.",
-        "fr": "Situation pointant où l'erreur s'est produite."
+        "fr": "Situation pointant où l'erreur s'est produite.",
+        "zh-CN": "指出版版错误发生地点的情境。"
       }
     },
     {
@@ -151,7 +165,8 @@
         "ja": "[Feature]のコードレビューをしていただけますか？",
         "ko": "[Feature]에 대한 제 코드 리뷰를 해주시겠습니까?",
         "es": "¿Puedes revisar mi código para [Feature]?",
-        "fr": "Peux-tu relire mon code pour [Feature] ?"
+        "fr": "Peux-tu relire mon code pour [Feature] ?",
+        "zh-CN": "你能帮我 code review [某功能] 嗎？"
       },
       "explanations": {
         "zh-TW": "請求同事進行代碼審查的標準說法。",
@@ -159,7 +174,8 @@
         "ja": "同僚にコードレビューを依頼する標準的な表現。",
         "ko": "동료에게 코드 리뷰 요청하는 표준적인 표현.",
         "es": "Frase estándar para solicitar revisión de código a colegas.",
-        "fr": "Phrase standard pour demander une révision de code aux collègues."
+        "fr": "Phrase standard pour demander une révision de code aux collègues.",
+        "zh-CN": "请求同事进行代码審查的标准说法。"
       }
     },
     {
@@ -171,7 +187,8 @@
         "ja": "[Database/Server]に接続しようとしています。",
         "ko": "[Database/Server]에 연결하려고 시도 중입니다.",
         "es": "Estoy intentando conectar a [Database/Server].",
-        "fr": "J'essaie de me connecter à [Database/Server]."
+        "fr": "J'essaie de me connecter à [Database/Server].",
+        "zh-CN": "我正尝试连线至 [资料库/伺服器]。"
       },
       "explanations": {
         "zh-TW": "描述正在進行的單一連線任務。",
@@ -179,7 +196,8 @@
         "ja": "進行中の単一接続タスクを説明する。",
         "ko": "진행 중인 단일 연결 작업 설명.",
         "es": "Describir una sola tarea de conexión en progreso.",
-        "fr": "Décrire une seule tâche de connexion en cours."
+        "fr": "Décrire une seule tâche de connexion en cours.",
+        "zh-CN": "描述正在进行的单一连线任务。"
       }
     },
     {
@@ -191,7 +209,8 @@
         "ja": "[Reason]のため、サーバーがダウンしています。",
         "ko": "[Reason] 때문에 서버가 다운되었습니다.",
         "es": "El servidor está caído debido a [Reason].",
-        "fr": "Le serveur est tombé à cause de [Reason]."
+        "fr": "Le serveur est tombé à cause de [Reason].",
+        "zh-CN": "伺服器因为 [某个原因] 停机了。"
       },
       "explanations": {
         "zh-TW": "說明服務中斷原因。",
@@ -199,7 +218,8 @@
         "ja": "サービス中断の原因を説明する。",
         "ko": "서비스 중단 원인 설명.",
         "es": "Explicar la causa de la interrupción del servicio.",
-        "fr": "Expliquer la cause de l'interruption du service."
+        "fr": "Expliquer la cause de l'interruption du service.",
+        "zh-CN": "说明服务中断原因。"
       }
     },
     {
@@ -211,7 +231,8 @@
         "ja": "[Software]を再インストールしてください。",
         "ko": "[Software]을 다시 설치해 주세요.",
         "es": "Por favor, reinstale [Software].",
-        "fr": "Veuillez réinstaller [Software]."
+        "fr": "Veuillez réinstaller [Software].",
+        "zh-CN": "请重新安装 [某个软件]。"
       },
       "explanations": {
         "zh-TW": "給予用戶或同事基礎排解建議。",
@@ -219,7 +240,8 @@
         "ja": "ユーザーや同僚に基本的なトラブルシューティング助言を与える。",
         "ko": "사용자나 동료에게 기본 문제 해결 조언 제공.",
         "es": "Dar consejos básicos de solución de problemas a usuarios o colegas.",
-        "fr": "Donner des conseils de dépannage de base aux utilisateurs ou collègues."
+        "fr": "Donner des conseils de dépannage de base aux utilisateurs ou collègues.",
+        "zh-CN": "给予用户或同事基礎排解建议。"
       }
     },
     {
@@ -231,7 +253,8 @@
         "ja": "[Environment]にデプロイします。",
         "ko": "[Environment]에 배포하겠습니다.",
         "es": "Lo desplegaré a [Environment].",
-        "fr": "Je vais le déployer sur [Environment]."
+        "fr": "Je vais le déployer sur [Environment].",
+        "zh-CN": "我会把它部署到 [某环境 (如 staging/production)]。"
       },
       "explanations": {
         "zh-TW": "描述程式碼部署流向。",
@@ -239,7 +262,8 @@
         "ja": "コードデプロイメントの流れを説明する。",
         "ko": "코드 배포 흐름 설명.",
         "es": "Describir el flujo de despliegue de código.",
-        "fr": "Décrire le flux de déploiement de code."
+        "fr": "Décrire le flux de déploiement de code.",
+        "zh-CN": "描述程序码部署流向。"
       }
     }
   ],
@@ -253,7 +277,8 @@
         "ja": "[Module]のバグを修正する必要があります。",
         "ko": "[Module]의 버그를 수정해야 합니다.",
         "es": "Necesitamos arreglar el error en [Module].",
-        "fr": "Nous devons corriger le bug dans [Module]."
+        "fr": "Nous devons corriger le bug dans [Module].",
+        "zh-CN": "我们需要修复 [某模组] 裡的错误。"
       },
       "explanations": {
         "zh-TW": "討論要解決的技術問題。",
@@ -261,7 +286,8 @@
         "ja": "解決すべき技術的問題を議論する。",
         "ko": "해결해야 할 기술적 문제 논의.",
         "es": "Discutir problemas técnicos que deben resolverse.",
-        "fr": "Discuter des problèmes techniques à résoudre."
+        "fr": "Discuter des problèmes techniques à résoudre.",
+        "zh-CN": "討论要解决的技术问题。"
       }
     },
     {
@@ -273,7 +299,8 @@
         "ja": "[Project]のステータスはどうなっていますか？",
         "ko": "[Project]의 상태는 어떻게 됩니까?",
         "es": "¿Cuál es el estado de [Project]?",
-        "fr": "Quel est le statut de [Project] ?"
+        "fr": "Quel est le statut de [Project] ?",
+        "zh-CN": "[某专案] 狀态如何了？"
       },
       "explanations": {
         "zh-TW": "向同事或下屬詢問進度。",
@@ -281,7 +308,8 @@
         "ja": "同僚や部下に進捗を尋ねる。",
         "ko": "동료나 부하에게 진행 상황 질문.",
         "es": "Preguntar a colegas o subordinados sobre el progreso.",
-        "fr": "Demander aux collègues ou subordonnés sur les progrès."
+        "fr": "Demander aux collègues ou subordonnés sur les progrès.",
+        "zh-CN": "向同事或下属詢问进度。"
       }
     },
     {
@@ -293,7 +321,8 @@
         "ja": "この問題の根本原因は[Technical Cause]にあります。",
         "ko": "이 문제의 근본 원인은 [Technical Cause]에 있습니다.",
         "es": "La causa raíz del problema es [Technical Cause].",
-        "fr": "La cause racine du problème est [Technical Cause]."
+        "fr": "La cause racine du problème est [Technical Cause].",
+        "zh-CN": "这个问题的根本原因在於 [技术性原因]。"
       },
       "explanations": {
         "zh-TW": "深入分析問題發生點的道地句型 (Root cause)。",
@@ -301,7 +330,8 @@
         "ja": "問題発生点を深く分析するための道地的なフレーズ（Root cause）。",
         "ko": "문제 발생 지점 심층 분석 위한 도착적인 문구 (Root cause).",
         "es": "Frase idiomática para análisis en profundidad del punto de ocurrencia del problema (Root cause).",
-        "fr": "Phrase idiomatique pour l'analyse approfondie du point de survenue du problème (Root cause)."
+        "fr": "Phrase idiomatique pour l'analyse approfondie du point de survenue du problème (Root cause).",
+        "zh-CN": "深入分析问题发生点的道地句型 (Root cause)。"
       }
     },
     {
@@ -313,7 +343,8 @@
         "ja": "デプロイメントを[Previous Version]にロールバックしましょう。",
         "ko": "배포를 [Previous Version]으로 롤백합시다.",
         "es": "Vamos a revertir el despliegue a [Previous Version].",
-        "fr": "Revenons au déploiement précédent [Previous Version]."
+        "fr": "Revenons au déploiement précédent [Previous Version].",
+        "zh-CN": "我们把部署退版到 [上一个版本] 吧。"
       },
       "explanations": {
         "zh-TW": "危機處理時常用的退版建議。",
@@ -321,7 +352,8 @@
         "ja": "危機処理でよく使われるロールバック提案。",
         "ko": "위기 처리에서 자주 쓰이는 롤백 제안.",
         "es": "Sugerencia de reversión frecuentemente usada en manejo de crisis.",
-        "fr": "Suggestion de retour en arrière fréquemment utilisée dans la gestion de crise."
+        "fr": "Suggestion de retour en arrière fréquemment utilisée dans la gestion de crise.",
+        "zh-CN": "危机处理时常用的退版建议。"
       }
     },
     {
@@ -333,7 +365,8 @@
         "ja": "この機能は[API/Service]に依存しています。",
         "ko": "이 기능은 [API/Service]에 의존합니다.",
         "es": "Esta función depende de [API/Service].",
-        "fr": "Cette fonctionnalité dépend de [API/Service]."
+        "fr": "Cette fonctionnalité dépend de [API/Service].",
+        "zh-CN": "这个功能依賴於 [某个 API / 服务]。"
       },
       "explanations": {
         "zh-TW": "說明系統間耦合與依賴關係。",
@@ -341,7 +374,8 @@
         "ja": "システムの結合と依存関係を説明する。",
         "ko": "시스템 결합과 의존 관계 설명.",
         "es": "Explicar el acoplamiento y las relaciones de dependencia del sistema.",
-        "fr": "Expliquer le couplage et les relations de dépendance du système."
+        "fr": "Expliquer le couplage et les relations de dépendance du système.",
+        "zh-CN": "说明系统間耦合与依賴关係。"
       }
     },
     {
@@ -353,7 +387,8 @@
         "ja": "[Feature]のプルリクエストを送信しようとしています。",
         "ko": "[Feature]에 대한 풀 리퀘스트를 제출하려고 합니다.",
         "es": "Voy a enviar una pull request para [Feature].",
-        "fr": "Je vais soumettre une pull request pour [Feature]."
+        "fr": "Je vais soumettre une pull request pour [Feature].",
+        "zh-CN": "我准备為 [某功能] 提交 PR (Pull Request)。"
       },
       "explanations": {
         "zh-TW": "日常開發中送交合併請求的標準句。",
@@ -361,7 +396,8 @@
         "ja": "日常開発でマージリクエストを送信する標準的なフレーズ。",
         "ko": "일상 개발에서 병합 요청 제출하는 표준 문구.",
         "es": "Frase estándar para enviar solicitud de fusión en desarrollo diario.",
-        "fr": "Phrase standard pour soumettre une demande de fusion dans le développement quotidien."
+        "fr": "Phrase standard pour soumettre une demande de fusion dans le développement quotidien.",
+        "zh-CN": "日常开发中送交合併请求的标准句。"
       }
     },
     {
@@ -373,7 +409,8 @@
         "ja": "[System/Repository]へのアクセス権限を付与していただけますか？",
         "ko": "[System/Repository]에 대한 접근 권한을 부여해 주시겠습니까?",
         "es": "¿Podría otorgarme acceso a [System/Repository]?",
-        "fr": "Pourriez-vous m'accorder l'accès à [System/Repository] ?"
+        "fr": "Pourriez-vous m'accorder l'accès à [System/Repository] ?",
+        "zh-CN": "您可以开通 [某系统/库] 的权限给我嗎？"
       },
       "explanations": {
         "zh-TW": "向維運人員索要權限。",
@@ -381,7 +418,8 @@
         "ja": "運用担当者に権限を要求する。",
         "ko": "운영 담당자에게 권한 요청.",
         "es": "Solicitar permisos al personal de operaciones.",
-        "fr": "Demander des permissions au personnel des opérations."
+        "fr": "Demander des permissions au personnel des opérations.",
+        "zh-CN": "向维运人员索要权限。"
       }
     },
     {
@@ -393,7 +431,8 @@
         "ja": "[Service]でレイテンシーの問題が発生しています。",
         "ko": "[Service]에서 대기 시간 문제가 발생하고 있습니다.",
         "es": "Estamos experimentando problemas de latencia con [Service].",
-        "fr": "Nous expérimentons des problèmes de latence avec [Service]."
+        "fr": "Nous expérimentons des problèmes de latence avec [Service].",
+        "zh-CN": "我们目前遇到 [某服务] 的延遲问题。"
       },
       "explanations": {
         "zh-TW": "向客戶或高層報告突發的系統不穩狀況。",
@@ -401,7 +440,8 @@
         "ja": "クライアントや経営陣に突発的なシステム不安定状況を報告する。",
         "ko": "클라이언트나 경영진에게 돌발적인 시스템 불안정 상황 보고.",
         "es": "Reportar situación repentina de inestabilidad del sistema a clientes o gerencia.",
-        "fr": "Rapporter une situation soudaine d'instabilité du système aux clients ou à la direction."
+        "fr": "Rapporter une situation soudaine d'instabilité du système aux clients ou à la direction.",
+        "zh-CN": "向客户或高层报告突发的系统不稳狀況。"
       }
     },
     {
@@ -413,7 +453,8 @@
         "ja": "[Component]でメモリリークが発生しているようです。",
         "ko": "[Component]에서 메모리 누수가 있는 것 같습니다.",
         "es": "Parece una fuga de memoria en [Component].",
-        "fr": "On dirait une fuite de mémoire dans [Component]."
+        "fr": "On dirait une fuite de mémoire dans [Component].",
+        "zh-CN": "看起來像是 [某个组件] 发生了記忆体流失。"
       },
       "explanations": {
         "zh-TW": "推測系統效能問題的常見說法。",
@@ -421,7 +462,8 @@
         "ja": "システムパフォーマンス問題を推測するための一般的なフレーズ。",
         "ko": "시스템 성능 문제 추측하기 위한 일반적인 문구.",
         "es": "Frase común para adivinar problemas de rendimiento del sistema.",
-        "fr": "Phrase commune pour deviner les problèmes de performance du système."
+        "fr": "Phrase commune pour deviner les problèmes de performance du système.",
+        "zh-CN": "推測系统效能问题的常见说法。"
       }
     },
     {
@@ -433,7 +475,8 @@
         "ja": "[Microservice]のインスタンス数を増やしましょう。",
         "ko": "[Microservice]의 인스턴스 수를 늘립시다.",
         "es": "Vamos a escalar las instancias para [Microservice].",
-        "fr": "Augmentons les instances pour [Microservice]."
+        "fr": "Augmentons les instances pour [Microservice].",
+        "zh-CN": "我们來為主机上的 [某微服务] 增加实例数量（扩容）吧。"
       },
       "explanations": {
         "zh-TW": "討論系統流量與伺服器乘載。",
@@ -441,7 +484,8 @@
         "ja": "システムトラフィックとサーバーキャパシティを議論する。",
         "ko": "시스템 트래픽과 서버 용량 논의.",
         "es": "Discutir el tráfico del sistema y la capacidad del servidor.",
-        "fr": "Discuter du trafic système et de la capacité du serveur."
+        "fr": "Discuter du trafic système et de la capacité du serveur.",
+        "zh-CN": "討论系统流量与伺服器乘載。"
       }
     }
   ]

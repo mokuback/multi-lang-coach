@@ -9,7 +9,8 @@
         "ja": "[Day]の日は空いていますか？",
         "ko": "[Day]에 시간 있으신가요?",
         "es": "¿Estás libre el [Day]?",
-        "fr": "Êtes-vous libre le [Day] ?"
+        "fr": "Êtes-vous libre le [Day] ?",
+        "zh-CN": "你 [某天] 有空嗎？"
       },
       "explanations": {
         "zh-TW": "邀約起始句。",
@@ -17,7 +18,8 @@
         "ja": "招待を始めるためのフレーズ。",
         "ko": "초대를 시작하는 문구입니다.",
         "es": "Frase de apertura para una invitación.",
-        "fr": "Phrase d'ouverture pour une invitation."
+        "fr": "Phrase d'ouverture pour une invitation.",
+        "zh-CN": "邀约起始句。"
       }
     },
     {
@@ -29,7 +31,8 @@
         "ja": "[Food/Drink]を一緒にどうですか？",
         "ko": "[Food/Drink] 함께 하실래요?",
         "es": "Me preguntaba si te gustaría ir a tomar [Food/Drink] conmigo.",
-        "fr": "Je me demandais si tu voulais aller prendre [Food/Drink] avec moi."
+        "fr": "Je me demandais si tu voulais aller prendre [Food/Drink] avec moi.",
+        "zh-CN": "我想知道你是否有意愿和我一起去吃/喝 [某食物/饮料]。"
       },
       "explanations": {
         "zh-TW": "不帶壓力的委婉約會邀請。",
@@ -37,7 +40,8 @@
         "ja": "プレッシャーをかけない控えめなデートの誘い方。",
         "ko": "부담 없이 청혼하는 데이트 초대 문구입니다.",
         "es": "Invitación de cita relajada y sin presión.",
-        "fr": "Invitation à un rendez-vous détendue et sans pression."
+        "fr": "Invitation à un rendez-vous détendue et sans pression.",
+        "zh-CN": "不带压力的委婉约会邀请。"
       }
     },
     {
@@ -49,7 +53,8 @@
         "ja": "あなたの[Feature/Clothing]が本当に好きです。",
         "ko": "당신의 [Feature/Clothing] 정말 마음에 듭니다.",
         "es": "Me gusta mucho tu [Feature/Clothing].",
-        "fr": "J'aime vraiment ton [Feature/Clothing]."
+        "fr": "J'aime vraiment ton [Feature/Clothing].",
+        "zh-CN": "我真的很喜欢你的 [某个五官特徵或穿搭]。"
       },
       "explanations": {
         "zh-TW": "給出真誠的讚美 (Compliment)。",
@@ -57,7 +62,8 @@
         "ja": "心からの賛辞を贈る表現。",
         "ko": "진심 어린 칭찬을 건네는 표현입니다.",
         "es": "Dar un cumplido sincero.",
-        "fr": "Faire un compliment sincère."
+        "fr": "Faire un compliment sincère.",
+        "zh-CN": "给出真誠的赞美 (Compliment)。"
       }
     },
     {
@@ -69,7 +75,8 @@
         "ja": "どんな[Movie/Music]がお好きですか？",
         "ko": "어떤 [Movie/Music] 좋아하세요?",
         "es": "¿Qué tipo de [Movie/Music] te gusta?",
-        "fr": "Tu es plutôt fan de quel genre de [Movie/Music] ?"
+        "fr": "Tu es plutôt fan de quel genre de [Movie/Music] ?",
+        "zh-CN": "你比較喜欢哪种类型的 [电影/音乐]？"
       },
       "explanations": {
         "zh-TW": "開啟興趣話題，挖掘共同點。",
@@ -77,7 +84,8 @@
         "ja": "興味のある話題を広げ、共通点を見つける。",
         "ko": "관심 주제를 열어 공통점을 찾습니다.",
         "es": "Abrir temas de interés, encontrar puntos en común.",
-        "fr": "Ouvrir des sujets d'intérêt, trouver des points communs."
+        "fr": "Ouvrir des sujets d'intérêt, trouver des points communs.",
+        "zh-CN": "开啟兴趣话题，挖掘共同点。"
       }
     },
     {
@@ -89,7 +97,8 @@
         "ja": "[Place]であなたと過ごした時間は本当に楽しかったです。",
         "ko": "[Place]에서 당신과 함께해서 정말 즐거웠습니다.",
         "es": "Lo pasé muy bien contigo en [Place].",
-        "fr": "J'ai passé un super moment avec toi à [Place]."
+        "fr": "J'ai passé un super moment avec toi à [Place].",
+        "zh-CN": "和你一起在 [某地] 共度的时光非常愉快。"
       },
       "explanations": {
         "zh-TW": "約會結束後傳訊息道別的好用法。",
@@ -97,7 +106,8 @@
         "ja": "デート後にメッセージを送るのに最適な表現。",
         "ko": "데이트 후 메시지를 보내기에 좋은 표현입니다.",
         "es": "Gran frase para un mensaje después de la cita.",
-        "fr": "Excellente phrase pour un message après le rendez-vous."
+        "fr": "Excellente phrase pour un message après le rendez-vous.",
+        "zh-CN": "约会结束後传讯息道别的好用法。"
       }
     },
     {
@@ -109,7 +119,8 @@
         "ja": "[Place]に行ったことはありますか？",
         "ko": "[Place]에 가본 적 있으신가요?",
         "es": "¿Has estado alguna vez en [Place]?",
-        "fr": "Tu es déjà allé(e) à [Place] ?"
+        "fr": "Tu es déjà allé(e) à [Place] ?",
+        "zh-CN": "你曾经去过 [某个地方] 嗎？"
       },
       "explanations": {
         "zh-TW": "為下一次邀約鋪路的探詢。",
@@ -117,7 +128,8 @@
         "ja": "次の誘いの足がかりを作るための質問。",
         "ko": "다음 초대를 위한 발판을 마련하는 질문입니다.",
         "es": "Pregunta de sondeo para allanar el camino para la próxima invitación.",
-        "fr": "Question de sondage pour préparer le terrain pour la prochaine invitation."
+        "fr": "Question de sondage pour préparer le terrain pour la prochaine invitation.",
+        "zh-CN": "為下一次邀约鋪路的探詢。"
       }
     },
     {
@@ -129,7 +141,8 @@
         "ja": "一緒に[Doing Something]している時、とてもリラックスできます。",
         "ko": "[Doing Something]할 때 정말 편안하게 느껴집니다.",
         "es": "Me siento muy cómodo/a cuando estamos [Doing Something].",
-        "fr": "Je me sens très à l'aise quand on est en train de [Doing Something]."
+        "fr": "Je me sens très à l'aise quand on est en train de [Doing Something].",
+        "zh-CN": "当我们一起 [做某事] 时，我感到非常自在舒适。"
       },
       "explanations": {
         "zh-TW": "進一步表達好感與安心感。",
@@ -137,7 +150,8 @@
         "ja": "好意と安心感をさらに表現する。",
         "ko": "호감과 안심을 더욱 표현합니다.",
         "es": "Expresar más afecto y sensación de seguridad.",
-        "fr": "Exprimer davantage d'affection et un sentiment de sécurité."
+        "fr": "Exprimer davantage d'affection et un sentiment de sécurité.",
+        "zh-CN": "进一步表达好感与安心感。"
       }
     },
     {
@@ -149,7 +163,8 @@
         "ja": "[Contact Info]を教えてもらえますか？",
         "ko": "[Contact Info] 받아도 될까요?",
         "es": "¿Puedo tener tu [Contact Info]?",
-        "fr": "Je peux avoir ton [Contact Info] ?"
+        "fr": "Je peux avoir ton [Contact Info] ?",
+        "zh-CN": "我可以跟你要你的 [某种联络方式 (如 IG/Phone number)] 嗎？"
       },
       "explanations": {
         "zh-TW": "初次見面交換聯絡方式用的標準說法。",
@@ -157,7 +172,8 @@
         "ja": "初対面で連絡先を交換する際の標準的な表現。",
         "ko": "첫 만남에서 연락처를 교환할 때의 표준 표현입니다.",
         "es": "Frase estándar para intercambiar información de contacto en la primera reunión.",
-        "fr": "Phrase standard pour échanger des coordonnées lors de la première rencontre."
+        "fr": "Phrase standard pour échanger des coordonnées lors de la première rencontre.",
+        "zh-CN": "初次见面交換联络方式用的标准说法。"
       }
     },
     {
@@ -169,7 +185,8 @@
         "ja": "[Hobby]に本当に情熱的ですね。",
         "ko": "[Hobby]에 정말 열정적이시네요.",
         "es": "Pareces muy apasionado/a por [Hobby].",
-        "fr": "On dirait que tu es vraiment passionné(e) par [Hobby]."
+        "fr": "On dirait que tu es vraiment passionné(e) par [Hobby].",
+        "zh-CN": "你看起來对 [某个兴趣] 真的充滿熱情呢。"
       },
       "explanations": {
         "zh-TW": "展現傾聽與共情的讚美方式。",
@@ -177,7 +194,8 @@
         "ja": "傾聴と共感を示す賛辞。",
         "ko": "경청과 공감을 보여주는 칭찬입니다.",
         "es": "Cumplido que muestra escucha y empatía.",
-        "fr": "Compliment qui montre l'écoute et l'empathie."
+        "fr": "Compliment qui montre l'écoute et l'empathie.",
+        "zh-CN": "展现傾听与共情的赞美方式。"
       }
     },
     {
@@ -189,7 +207,8 @@
         "ja": "来週[Event]に行きませんか？",
         "ko": "다음 주 [Event]에 관심 있으신가요?",
         "es": "¿Te interesaría ir a [Event] la próxima semana?",
-        "fr": "Est-ce que ça te dirait d'aller à [Event] la semaine prochaine ?"
+        "fr": "Est-ce que ça te dirait d'aller à [Event] la semaine prochaine ?",
+        "zh-CN": "你下週会有兴趣一起去 [某个活动] 嗎？"
       },
       "explanations": {
         "zh-TW": "具體的進階邀約。",
@@ -197,7 +216,8 @@
         "ja": "具体的な発展的な誘い。",
         "ko": "구체적인 발전된 초대입니다.",
         "es": "Invitación avanzada específica.",
-        "fr": "Invitation avancée spécifique."
+        "fr": "Invitation avancée spécifique.",
+        "zh-CN": "具体的进阶邀约。"
       }
     }
   ]
