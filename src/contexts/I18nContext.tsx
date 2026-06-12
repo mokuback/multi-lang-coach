@@ -1,5 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
-import React, { createContext, useContext, useState, useEffect, useMemo, useRef } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
 interface I18nContextType {
   uiLang: string;
@@ -96,45 +96,20 @@ export const I18nProvider = ({ children }) => {
     }
   };
 
-  const [converter, setConverter] = useState<((text: string) => string) | null>(null);
-  const converterLoadedRef = useRef(false);
-
-  useEffect(() => {
-    if (activeLang === 'zh-CN' && !converterLoadedRef.current) {
-      converterLoadedRef.current = true;
-      import('opencc-js').then((OpenCC) => {
-        try {
-          setConverter(() => OpenCC.Converter({ from: 'tw', to: 'cn' }));
-        } catch (e) {
-          console.error("OpenCC initialization failed:", e);
-          setConverter(() => (text: string) => text);
-        }
-      }).catch((e) => {
-        console.error("OpenCC load failed:", e);
-        setConverter(() => (text: string) => text);
-      });
-    } else if (activeLang !== 'zh-CN') {
-      setConverter(null);
-      converterLoadedRef.current = false;
-    }
-  }, [activeLang]);
-
   const t = (text) => {
     if (typeof text !== 'string' || !text) return text;
-    
-    if (activeLang === 'zh-CN' && converter) {
-      return converter(text);
+
+    if (activeLang === 'zh-TW' || activeLang === 'zh-CN') {
+      return text;
     }
-    
-    if (activeLang !== 'zh-TW' && activeLang !== 'zh-CN') {
-      if (dict[text]) {
-        return dict[text];
-      }
-      if (activeLang !== 'en' && enDict[text]) {
-        return enDict[text];
-      }
+
+    if (dict[text]) {
+      return dict[text];
     }
-    
+    if (activeLang !== 'en' && enDict[text]) {
+      return enDict[text];
+    }
+
     return text;
   };
 
@@ -146,8 +121,11 @@ export const I18nProvider = ({ children }) => {
     const prefix = activeLang.split('-')[0];
     if (contentObj[prefix]) return contentObj[prefix];
     
-    if (activeLang === 'zh-CN' && contentObj['zh-TW'] && converter) {
-      return converter(contentObj['zh-TW']);
+    if (activeLang === 'zh-CN' && contentObj['zh-CN']) {
+      return contentObj['zh-CN'];
+    }
+    if (activeLang === 'zh-CN' && contentObj['zh-TW']) {
+      return contentObj['zh-TW'];
     }
     
     if (contentObj['en']) return contentObj['en'];

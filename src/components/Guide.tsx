@@ -13,19 +13,8 @@ const Guide = () => {
   useEffect(() => {
     const loadGuide = async () => {
       try {
-        let langToLoad = uiLang;
-        if (uiLang === 'zh-CN') {
-          langToLoad = 'zh-TW';
-        }
-        const module = await import(`../data/user_guide_${langToLoad}.md?raw`);
-        let content = module.default;
-        
-        // Use t() to apply OpenCC conversion to the entire markdown text
-        if (uiLang === 'zh-CN') {
-          content = t(content);
-        }
-        
-        setGuideContent(content);
+        const module = await import(`../data/user_guide_${uiLang}.md?raw`);
+        setGuideContent(module.default);
       } catch (e) {
         try {
           const fallback = await import(`../data/user_guide_en.md?raw`);
