@@ -33,7 +33,14 @@ const Dashboard = () => {
 
   const handleStart = (scenario) => {
     updateProgress();
-    navigate('/chat', { state: { scenario } });
+    navigate('/chat', { state: {
+      scenario: {
+        ...scenario,
+        title: t(scenario.title),
+        desc: t(scenario.desc),
+        difficulty: t(scenario.difficulty)
+      }
+    }});
   };
 
   return (
