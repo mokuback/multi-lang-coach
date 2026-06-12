@@ -39,12 +39,14 @@ const Curriculum = () => {
   };
 
   const handleStartDrill = (unit, type, item) => {
+    const localizedTitle = getLocalizedContent(unit.title);
+    const localizedDesc = getLocalizedContent(unit.description);
     navigate('/chat', {
       state: {
         scenario: {
           id: 'curriculum-drill',
-          title: unit.title,
-          desc: unit.description,
+          title: localizedTitle,
+          desc: localizedDesc,
           unit: { ...unit, drillType: type, drillItem: item }
         }
       }
@@ -84,7 +86,7 @@ const Curriculum = () => {
               e.currentTarget.style.borderColor = 'var(--glass-border)';
             }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
-                <h3 style={{ fontSize: '1.25rem' }}>{t(unit.title)}</h3>
+                <h3 style={{ fontSize: '1.25rem' }}>{getLocalizedContent(unit.title)}</h3>
                 <span style={{ 
                   background: 'var(--panel-bg-light)', 
                   padding: '4px 12px', 
@@ -95,7 +97,7 @@ const Curriculum = () => {
                   {unit.vocab?.length || 0} {t('單字')} · {unit.patterns?.length || 0} {t('句型')}
                 </span>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>{t(unit.description)}</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>{getLocalizedContent(unit.description)}</p>
             </div>
           ))}
         </div>
@@ -116,8 +118,8 @@ const Curriculum = () => {
           <ArrowRight size={20} style={{ transform: 'rotate(180deg)' }} />
         </button>
         <div>
-          <h2 style={{ fontSize: '2rem', marginBottom: '4px' }}>{t(unit.title)}</h2>
-          <p className="text-muted">{t(unit.description)}</p>
+          <h2 style={{ fontSize: '2rem', marginBottom: '4px' }}>{getLocalizedContent(unit.title)}</h2>
+          <p className="text-muted">{getLocalizedContent(unit.description)}</p>
         </div>
       </header>
 

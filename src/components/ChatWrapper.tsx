@@ -66,8 +66,9 @@ const ChatWrapper = () => {
       const unit = scenario.unit;
       const vocabList = unit.vocab ? unit.vocab.map(v => v.word).join(', ') : '';
       const patternList = unit.patterns ? unit.patterns.map(p => p.pattern).join(', ') : '';
+      const unitTitle = getLocalizedContent(unit.title);
 
-      const systemPrompt = t(`我們正在進行【${unit.title}】的零基礎基礎訓練。
+      const systemPrompt = t(`我們正在進行【${unitTitle}】的零基礎基礎訓練。
 目標語言：${langName}。
 本課重點單字：${vocabList}。
 本課核心句型：${patternList}。
@@ -79,10 +80,10 @@ const ChatWrapper = () => {
 4. 全程使用【${uiLang === 'zh-CN' ? '簡體中文' : '繁體中文'}】進行解說與引導。`);
 
       const aiGreeting = targetLanguage === 'en'
-        ? `Welcome to the unit: "${unit.title}". I am your AI coach. Let's start the training!`
-        : `ユニット「${unit.title}」へようこそ。私はあなたのAIコーチです。特訓を始めましょう！`;
+        ? `Welcome to the unit: "${scenario.title}". I am your AI coach. Let's start the training!`
+        : `ユニット「${scenario.title}」へようこそ。私はあなたのAIコーチです。特訓を始めましょう！`;
 
-      const aiTranslation = t(`歡迎來到「${unit.title}」單元。我是你的 AI 教練，我們開始特訓吧！請準備好，我會出一個中文情境考你。`);
+      const aiTranslation = t(`歡迎來到「${scenario.title}」單元。我是你的 AI 教練，我們開始特訓吧！請準備好，我會出一個中文情境考你。`);
 
       setChatHistory([
         { role: 'system', content: systemPrompt },
@@ -118,12 +119,12 @@ const ChatWrapper = () => {
     // General scenario initialization (for scenarios from Dashboard)
     if (scenario.id && scenario.title && scenario.desc) {
       const aiGreeting = targetLanguage === 'en'
-        ? `Hello! Let's start practicing the scenario: "${t(scenario.title)}". ${t(scenario.desc)}`
-        : `こんにちは！「${t(scenario.title)}」のシナリオを練習しましょう。${t(scenario.desc)}`;
-      const aiTranslation = t(`您好！我們開始練習「${t(scenario.title)}」情境。${t(scenario.desc)}`);
+        ? `Hello! Let's start practicing the scenario: "${scenario.title}". ${scenario.desc}`
+        : `こんにちは！「${scenario.title}」のシナリオを練習しましょう。${scenario.desc}`;
+      const aiTranslation = t(`您好！我們開始練習「${scenario.title}」情境。${scenario.desc}`);
 
       setChatHistory([
-        { role: 'system', content: t(`我們正在進行情境對話練習。情境主題是：【${t(scenario.title)}】。情境描述：${t(scenario.desc)}。請扮演對話對象，使用符合【${levelLabel}】程度規格的${langName}與我進行自然的對話練習。對話開始時，請先用${langName}主動開啟話題。後續解說與翻譯請全程使用【${uiLang === 'zh-CN' ? '簡體中文' : '繁體中文'}】。`) },
+        { role: 'system', content: t(`我們正在進行情境對話練習。情境主題是：【${scenario.title}】。情境描述：${scenario.desc}。請扮演對話對象，使用符合【${levelLabel}】程度規格的${langName}與我進行自然的對話練習。對話開始時，請先用${langName}主動開啟話題。後續解說與翻譯請全程使用【${uiLang === 'zh-CN' ? '簡體中文' : '繁體中文'}】。`) },
         {
           role: 'assistant',
           content: aiGreeting,
