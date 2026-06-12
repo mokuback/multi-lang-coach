@@ -168,6 +168,7 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     localStorage.setItem('APP_UI_THEME', state.uiTheme);
+    document.documentElement.setAttribute('data-theme', state.uiTheme);
   }, [state.uiTheme]);
 
   useEffect(() => {
