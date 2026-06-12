@@ -10,7 +10,7 @@
         "ko": "이것은 [Noun] 입니다.",
         "es": "Esto es [Noun].",
         "fr": "Ceci est [Noun].",
-        "zh-CN": "这是 [某名詞]。"
+        "zh-CN": "这是 [某名词]。"
       },
       "explanations": {
         "zh-TW": "最基礎的指稱。",
@@ -19,7 +19,7 @@
         "ko": "가장 기본적인 지칭.",
         "es": "Identificación más básica.",
         "fr": "Identification la plus basique.",
-        "zh-CN": "最基礎的指称。"
+        "zh-CN": "最基础的指称。"
       }
     },
     {
@@ -56,7 +56,7 @@
         "ko": "한가할 때는 often [Verb] 합니다.",
         "es": "A menudo [Verb] en mi tiempo libre.",
         "fr": "Souvent, je [Verb] pendant mon temps libre.",
-        "zh-CN": "空閒时我经常 [做某事]。"
+        "zh-CN": "空闲时我经常 [做某事]。"
       },
       "explanations": {
         "zh-TW": "描述自己的休閒生活。",
@@ -65,7 +65,7 @@
         "ko": "여가 활동 묘사.",
         "es": "Describir actividades de ocio.",
         "fr": "Décrire les activités de loisir.",
-        "zh-CN": "描述自己的休閒生活。"
+        "zh-CN": "描述自己的休闲生活。"
       }
     },
     {
@@ -87,7 +87,7 @@
         "ko": "동배간에서의 부탁의 뢰는 방식.",
         "es": "Forma educada de pedir favores entre pares.",
         "fr": "Façon polie de demander des faveurs entre pairs.",
-        "zh-CN": "同儕間好用的请托方式。"
+        "zh-CN": "同侪间好用的请托方式。"
       }
     },
     {
@@ -100,7 +100,7 @@
         "ko": "출신은 [Place] 입니다.",
         "es": "Soy de [Place].",
         "fr": "Je suis de [Place].",
-        "zh-CN": "我的家鄉（出身）是 [某地]。"
+        "zh-CN": "我的家乡（出身）是 [某地]。"
       },
       "explanations": {
         "zh-TW": "自我介紹必備句。",
@@ -109,7 +109,7 @@
         "ko": "자기소개 필수구.",
         "es": "Frase esencial de auto-presentación.",
         "fr": "Phrase essentielle d'auto-présentation.",
-        "zh-CN": "自我介紹必备句。"
+        "zh-CN": "自我介绍必备句。"
       }
     },
     {
@@ -122,7 +122,7 @@
         "ko": "[Action] 방법을 아시나요?",
         "es": "¿Sabes cómo [Action]?",
         "fr": "Est-ce que tu sais comment [Action] ?",
-        "zh-CN": "你知道 [做某动作] 的方法嗎？"
+        "zh-CN": "你知道 [做某动作] 的方法吗？"
       },
       "explanations": {
         "zh-TW": "詢問他人技術或方法。",
@@ -131,7 +131,7 @@
         "ko": "타인의 기술이나 방법을 묻다.",
         "es": "Preguntar sobre las habilidades o métodos de otros.",
         "fr": "Demander les compétences ou méthodes des autres.",
-        "zh-CN": "詢问他人技术或方法。"
+        "zh-CN": "询问他人技术或方法。"
       }
     },
     {
@@ -153,7 +153,7 @@
         "ko": "일본의 완곡 거절의 예술, 나머지는 말하지 않고 보류.",
         "es": "Arte japonés de rechazo táctico, dejando el resto sin decir.",
         "fr": "Art japonais de refus tactueux, laissant le reste sans dire.",
-        "zh-CN": "日本人婉转拒绝的藝术，後面常留白不说死。"
+        "zh-CN": "日本人婉转拒绝的艺术，后面常留白不说死。"
       }
     }
   ],
@@ -168,7 +168,7 @@
         "ko": "[Topic] 에 대해, 더 자세히 알려주실 수 있나요?",
         "es": "¿Podría decirme más sobre [Topic]?",
         "fr": "Pourriez-vous me dire plus sur [Topic] ?",
-        "zh-CN": "关於 [某主题]，能请您更詳細地告訴我嗎？"
+        "zh-CN": "关于 [某主题]，能请您更详细地告诉我吗？"
       },
       "explanations": {
         "zh-TW": "引導話題深入的客氣用法。",
@@ -177,7 +177,7 @@
         "ko": "화제를 깊이 이끄는 예를 든 문구.",
         "es": "Frase educada para guiar el tema más profundo.",
         "fr": "Phrase polie pour guider le sujet plus profondément.",
-        "zh-CN": "引导话题深入的客氣用法。"
+        "zh-CN": "引导话题深入的客气用法。"
       }
     },
     {
@@ -190,7 +190,7 @@
         "ko": "이미 [Duration] 동안 계속 [V-ing] 하고 있습니다.",
         "es": "Ya he estado [V-ing] durante [Duration].",
         "fr": "J'ai été [V-ing] pendant [Duration].",
-        "zh-CN": "我已经连续 [做某动作] 长达 [某段时間] 了。"
+        "zh-CN": "我已经连续 [做某动作] 长达 [某段时间] 了。"
       },
       "explanations": {
         "zh-TW": "表達某個長期持續的狀態。",
@@ -199,7 +199,7 @@
         "ko": "장기 지속 상태 표현.",
         "es": "Expresar un estado que continúa por largo tiempo.",
         "fr": "Exprimer un état qui continue depuis longtemps.",
-        "zh-CN": "表达某个长期持续的狀态。"
+        "zh-CN": "表达某个长期持续的状态。"
       }
     }
   ],
@@ -223,7 +223,7 @@
         "ko": "절대 단언을 피하고, 완곡하게 견해를 제시하는 - 일본 커뮤니케이션 정수.",
         "es": "Evitar aserciones absolitas, presentar puntos de vista tácticamente - esencia de la comunicación japonesa.",
         "fr": "Éviter les assertions absolues, présenter des points de vue tactueusement - essence de la communication japonaise.",
-        "zh-CN": "避开绝对断言，委婉提出看法的日式溝通精髓。"
+        "zh-CN": "避开绝对断言，委婉提出看法的日式沟通精髓。"
       }
     }
   ],
@@ -238,7 +238,7 @@
         "ko": "제반 사정을 종합적으로 감안합니다면, [Conclusion] 에 이릅니다.",
         "es": "Después de considerar completamente todas las circunstancias, llegamos a [Conclusion].",
         "fr": "Après avoir considéré complètement toutes les circonstances, nous arrivons à [Conclusion].",
-        "zh-CN": "综合考量各种情況後，得出了 [结论]。"
+        "zh-CN": "综合考量各种情况后，得出了 [结论]。"
       },
       "explanations": {
         "zh-TW": "極致官方、商業信函的高階用字遣詞。",
@@ -247,7 +247,7 @@
         "ko": "극치 공식, 상업 서간의 고급 어휘 사용.",
         "es": "Última formal, redacción de carta comercial de alto nivel.",
         "fr": "Formelle ultime, rédaction de lettre commerciale de haut niveau.",
-        "zh-CN": "极致官方、商业信函的高阶用字遣詞。"
+        "zh-CN": "极致官方、商业信函的高阶用字遣词。"
       }
     }
   ]

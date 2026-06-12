@@ -10,7 +10,7 @@
         "ko": "[Topic]에 대해 논의할 필요가 있습니다.",
         "es": "Necesitamos discutir [Topic].",
         "fr": "Nous devons discuter de [Topic].",
-        "zh-CN": "我们需要討论 [某主题]。"
+        "zh-CN": "我们需要讨论 [某主题]。"
       },
       "explanations": {
         "zh-TW": "召開會議或開啟話題的基礎句型。",
@@ -19,7 +19,7 @@
         "ko": "회의 소집 또는 주제 열기 위한 기초 문구.",
         "es": "Frase básica para convocar una reunión o abrir un tema.",
         "fr": "Phrase de base pour convoquer une réunion ou ouvrir un sujet.",
-        "zh-CN": "召开会议或开啟话题的基礎句型。"
+        "zh-CN": "召开会议或开启话题的基础句型。"
       }
     },
     {
@@ -41,7 +41,7 @@
         "ko": "부하나 동료에게 의견 질문.",
         "es": "Preguntar a subordinados o colegas por opiniones.",
         "fr": "Demander l'opinion aux subordonnés ou collègues.",
-        "zh-CN": "詢问下属或同事意见。"
+        "zh-CN": "询问下属或同事意见。"
       }
     },
     {
@@ -54,7 +54,7 @@
         "ko": "[Day/Time]에 회의를 일정잡읍시다.",
         "es": "Agendemos una reunión el [Day/Time].",
         "fr": "Planifions une réunion le [Day/Time].",
-        "zh-CN": "我们安排在 [某日/时間] 开个会吧。"
+        "zh-CN": "我们安排在 [某日/时间] 开个会吧。"
       },
       "explanations": {
         "zh-TW": "敲定會議時間用。",
@@ -63,7 +63,7 @@
         "ko": "회의 시간 결정.",
         "es": "Fijar el tiempo de la reunión.",
         "fr": "Fixer l'heure de la réunion.",
-        "zh-CN": "敲定会议时間用。"
+        "zh-CN": "敲定会议时间用。"
       }
     },
     {
@@ -76,7 +76,7 @@
         "ko": "[Time]까지 보고서를 보내주세요.",
         "es": "Por favor, envíeme el informe antes de [Time].",
         "fr": "Veuillez m'envoyer le rapport avant [Time].",
-        "zh-CN": "请在 [某时間] 前回传报告给我。"
+        "zh-CN": "请在 [某时间] 前回传报告给我。"
       },
       "explanations": {
         "zh-TW": "交代死線 (deadline) 給部屬的說法。",
@@ -107,7 +107,7 @@
         "ko": "찬성 표현하기 위한 기본적인 표현.",
         "es": "Frase básica para expresar acuerdo.",
         "fr": "Phrase de base pour exprimer l'accord.",
-        "zh-CN": "表达贊同的基本说法。"
+        "zh-CN": "表达赞同的基本说法。"
       }
     },
     {
@@ -129,7 +129,7 @@
         "ko": "경영진에게 운용 장애 보고.",
         "es": "Reportar obstáculos operacionales a la gerencia.",
         "fr": "Rapporter des obstacles opérationnels à la direction.",
-        "zh-CN": "向管理层提报营运障礙。"
+        "zh-CN": "向管理层提报营运障碍。"
       }
     },
     {
@@ -164,7 +164,7 @@
         "ko": "[Project]에서의 노고에 감사드립니다.",
         "es": "Gracias por su arduo trabajo en [Project].",
         "fr": "Merci pour votre travail acharné sur [Project].",
-        "zh-CN": "感謝你在 [某专案] 上的辛勤工作。"
+        "zh-CN": "感谢你在 [某专案] 上的辛勤工作。"
       },
       "explanations": {
         "zh-TW": "對團隊表達常見的感謝鼓勵。",
@@ -173,7 +173,7 @@
         "ko": "팀에 대한 흔한 격려와 감사.",
         "es": "Estímulo y agradecimiento común al equipo.",
         "fr": "Encouragement et remerciement commun à l'équipe.",
-        "zh-CN": "对团队表达常见的感謝鼓励。"
+        "zh-CN": "对团队表达常见的感谢鼓励。"
       }
     },
     {
@@ -195,7 +195,7 @@
         "ko": "팀에게 비용 상황 상기시킴.",
         "es": "Recordar al equipo sobre el estado de gastos.",
         "fr": "Rappeler à l'équipe l'état des dépenses.",
-        "zh-CN": "提醒团队开销狀況。"
+        "zh-CN": "提醒团队开销状况。"
       }
     },
     {
@@ -208,7 +208,7 @@
         "ko": "오늘 [Task]을 최우선으로 할 수 있습니까?",
         "es": "¿Puedes priorizar [Task] hoy?",
         "fr": "Peux-tu prioriser [Task] aujourd'hui ?",
-        "zh-CN": "你今天可以將 [某任务] 列為第一优先嗎？"
+        "zh-CN": "你今天可以将 [某任务] 列为第一优先吗？"
       },
       "explanations": {
         "zh-TW": "調整團隊成員的任務排序。",

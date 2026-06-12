@@ -10,7 +10,7 @@
         "ko": "이것은 [Noun]입니다.",
         "es": "Esto es un [Noun].",
         "fr": "Ceci est un [Noun].",
-        "zh-CN": "这是一个 [名詞]。"
+        "zh-CN": "这是一个 [名词]。"
       },
       "explanations": {
         "zh-TW": "基礎單字學習。",
@@ -19,7 +19,7 @@
         "ko": "기초 단어 학습.",
         "es": "Aprendizaje básico de vocabulario.",
         "fr": "Apprentissage de base du vocabulaire.",
-        "zh-CN": "基礎单字学习。"
+        "zh-CN": "基础单字学习。"
       }
     },
     {
@@ -56,7 +56,7 @@
         "ko": "저는 자유 시간에 [Verb]하는 것을 좋아합니다.",
         "es": "Me gusta [Verb] en mi tiempo libre.",
         "fr": "J'aime [Verb] pendant mon temps libre.",
-        "zh-CN": "我喜欢在空閒时間 [做某事]。"
+        "zh-CN": "我喜欢在空闲时间 [做某事]。"
       },
       "explanations": {
         "zh-TW": "介紹自己的興趣。",
@@ -65,7 +65,7 @@
         "ko": "자신의 관심사 소개.",
         "es": "Presentar los propios intereses.",
         "fr": "Présenter ses propres intérêts.",
-        "zh-CN": "介紹自己的兴趣。"
+        "zh-CN": "介绍自己的兴趣。"
       }
     },
     {
@@ -78,7 +78,7 @@
         "ko": "[Action]해 주시겠습니까?",
         "es": "¿Podría [Action], por favor?",
         "fr": "Pourriez-vous [Action], s'il vous plaît ?",
-        "zh-CN": "可以请你 [做某事] 嗎？"
+        "zh-CN": "可以请你 [做某事] 吗？"
       },
       "explanations": {
         "zh-TW": "禮貌性的基本請求。",
@@ -87,7 +87,7 @@
         "ko": "정중한 기본 요청.",
         "es": "Solicitud básica educada.",
         "fr": "Demande basique polie.",
-        "zh-CN": "禮貌性的基本请求。"
+        "zh-CN": "礼貌性的基本请求。"
       }
     },
     {
@@ -100,7 +100,7 @@
         "ko": "저는 원래 [Place] 출신입니다.",
         "es": "Soy originalmente de [Place].",
         "fr": "Je suis originaire de [Place].",
-        "zh-CN": "我原本來自於 [某地]。"
+        "zh-CN": "我原本来自于 [某地]。"
       },
       "explanations": {
         "zh-TW": "自我介紹家鄉或出處。",
@@ -109,7 +109,7 @@
         "ko": "고향이나 출신지 자기소개.",
         "es": "Auto-presentación del pueblo natal o origen.",
         "fr": "Auto-présentation du village natal ou de l'origine.",
-        "zh-CN": "自我介紹家鄉或出处。"
+        "zh-CN": "自我介绍家乡或出处。"
       }
     },
     {
@@ -122,7 +122,7 @@
         "ko": "[Action]하는 방법을 아시나요?",
         "es": "¿Sabes cómo [Action]?",
         "fr": "Est-ce que tu sais comment [Action] ?",
-        "zh-CN": "你知道要如何 [做某事] 嗎？"
+        "zh-CN": "你知道要如何 [做某事] 吗？"
       },
       "explanations": {
         "zh-TW": "詢問他人的技能或知識。",
@@ -131,7 +131,7 @@
         "ko": "타인의 기술이나 지식 질문.",
         "es": "Preguntar sobre las habilidades o conocimientos de otros.",
         "fr": "Demander les compétences ou connaissances des autres.",
-        "zh-CN": "詢问他人的技能或知識。"
+        "zh-CN": "询问他人的技能或知识。"
       }
     },
     {
@@ -153,7 +153,7 @@
         "ko": "거절을 위한 만능 어조.",
         "es": "Tono versátil para declinar.",
         "fr": "Ton polyvalent pour refuser.",
-        "zh-CN": "婉拒的萬用语氣。"
+        "zh-CN": "婉拒的万用语气。"
       }
     }
   ],
@@ -168,7 +168,7 @@
         "ko": "[Topic]에 대해 더 자세히 알려주시겠습니까?",
         "es": "¿Podría decirme más sobre [Topic]?",
         "fr": "Pourriez-vous m'en dire plus sur [Topic] ?",
-        "zh-CN": "您可以多告訴我一些关於 [某主题] 的事嗎？"
+        "zh-CN": "您可以多告诉我一些关于 [某主题] 的事吗？"
       },
       "explanations": {
         "zh-TW": "延續話題的實用句型。",
@@ -190,7 +190,7 @@
         "ko": "[Duration] 동안 [V-ing]해 오고 있습니다.",
         "es": "He estado [V-ing] durante [Duration].",
         "fr": "J'ai été en train de [V-ing] pendant [Duration].",
-        "zh-CN": "我已经 [做某动作] 长达 [某段时間] 了。"
+        "zh-CN": "我已经 [做某动作] 长达 [某段时间] 了。"
       },
       "explanations": {
         "zh-TW": "表達持續狀態（現在完成進行式）。",
@@ -199,7 +199,7 @@
         "ko": "지속 상태 표현 (현재 완료 진행형).",
         "es": "Expresar estado continuo (presente perfecto continuo).",
         "fr": "Exprimer un état continu (présent perfect continu).",
-        "zh-CN": "表达持续狀态（现在完成进行式）。"
+        "zh-CN": "表达持续状态（现在完成进行式）。"
       }
     }
   ],
@@ -238,7 +238,7 @@
         "ko": "모든 요인을 고려할 때, [Conclusion]입니다.",
         "es": "Tomando en consideración todos los factores, [Conclusion].",
         "fr": "En prenant tous les facteurs en considération, [Conclusion].",
-        "zh-CN": "综合评估所有因素後可以得出，[结论]。"
+        "zh-CN": "综合评估所有因素后可以得出，[结论]。"
       },
       "explanations": {
         "zh-TW": "高階且正式的總結用語。",

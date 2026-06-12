@@ -10,7 +10,7 @@
         "ko": "[Day]에 시간 있으신가요?",
         "es": "¿Estás libre el [Day]?",
         "fr": "Êtes-vous libre le [Day] ?",
-        "zh-CN": "你 [某天] 有空嗎？"
+        "zh-CN": "你 [某天] 有空吗？"
       },
       "explanations": {
         "zh-TW": "邀約起始句。",
@@ -54,7 +54,7 @@
         "ko": "당신의 [Feature/Clothing] 정말 마음에 듭니다.",
         "es": "Me gusta mucho tu [Feature/Clothing].",
         "fr": "J'aime vraiment ton [Feature/Clothing].",
-        "zh-CN": "我真的很喜欢你的 [某个五官特徵或穿搭]。"
+        "zh-CN": "我真的很喜欢你的 [某个五官特征或穿搭]。"
       },
       "explanations": {
         "zh-TW": "給出真誠的讚美 (Compliment)。",
@@ -63,7 +63,7 @@
         "ko": "진심 어린 칭찬을 건네는 표현입니다.",
         "es": "Dar un cumplido sincero.",
         "fr": "Faire un compliment sincère.",
-        "zh-CN": "给出真誠的赞美 (Compliment)。"
+        "zh-CN": "给出真诚的赞美 (Compliment)。"
       }
     },
     {
@@ -76,7 +76,7 @@
         "ko": "어떤 [Movie/Music] 좋아하세요?",
         "es": "¿Qué tipo de [Movie/Music] te gusta?",
         "fr": "Tu es plutôt fan de quel genre de [Movie/Music] ?",
-        "zh-CN": "你比較喜欢哪种类型的 [电影/音乐]？"
+        "zh-CN": "你比较喜欢哪种类型的 [电影/音乐]？"
       },
       "explanations": {
         "zh-TW": "開啟興趣話題，挖掘共同點。",
@@ -85,7 +85,7 @@
         "ko": "관심 주제를 열어 공통점을 찾습니다.",
         "es": "Abrir temas de interés, encontrar puntos en común.",
         "fr": "Ouvrir des sujets d'intérêt, trouver des points communs.",
-        "zh-CN": "开啟兴趣话题，挖掘共同点。"
+        "zh-CN": "开启兴趣话题，挖掘共同点。"
       }
     },
     {
@@ -107,7 +107,7 @@
         "ko": "데이트 후 메시지를 보내기에 좋은 표현입니다.",
         "es": "Gran frase para un mensaje después de la cita.",
         "fr": "Excellente phrase pour un message après le rendez-vous.",
-        "zh-CN": "约会结束後传讯息道别的好用法。"
+        "zh-CN": "约会结束后传讯息道别的好用法。"
       }
     },
     {
@@ -120,7 +120,7 @@
         "ko": "[Place]에 가본 적 있으신가요?",
         "es": "¿Has estado alguna vez en [Place]?",
         "fr": "Tu es déjà allé(e) à [Place] ?",
-        "zh-CN": "你曾经去过 [某个地方] 嗎？"
+        "zh-CN": "你曾经去过 [某个地方] 吗？"
       },
       "explanations": {
         "zh-TW": "為下一次邀約鋪路的探詢。",
@@ -129,7 +129,7 @@
         "ko": "다음 초대를 위한 발판을 마련하는 질문입니다.",
         "es": "Pregunta de sondeo para allanar el camino para la próxima invitación.",
         "fr": "Question de sondage pour préparer le terrain pour la prochaine invitation.",
-        "zh-CN": "為下一次邀约鋪路的探詢。"
+        "zh-CN": "为下一次邀约铺路的探询。"
       }
     },
     {
@@ -164,7 +164,7 @@
         "ko": "[Contact Info] 받아도 될까요?",
         "es": "¿Puedo tener tu [Contact Info]?",
         "fr": "Je peux avoir ton [Contact Info] ?",
-        "zh-CN": "我可以跟你要你的 [某种联络方式 (如 IG/Phone number)] 嗎？"
+        "zh-CN": "我可以跟你要你的 [某种联络方式 (如 IG/Phone number)] 吗？"
       },
       "explanations": {
         "zh-TW": "初次見面交換聯絡方式用的標準說法。",
@@ -173,7 +173,7 @@
         "ko": "첫 만남에서 연락처를 교환할 때의 표준 표현입니다.",
         "es": "Frase estándar para intercambiar información de contacto en la primera reunión.",
         "fr": "Phrase standard pour échanger des coordonnées lors de la première rencontre.",
-        "zh-CN": "初次见面交換联络方式用的标准说法。"
+        "zh-CN": "初次见面交换联络方式用的标准说法。"
       }
     },
     {
@@ -186,7 +186,7 @@
         "ko": "[Hobby]에 정말 열정적이시네요.",
         "es": "Pareces muy apasionado/a por [Hobby].",
         "fr": "On dirait que tu es vraiment passionné(e) par [Hobby].",
-        "zh-CN": "你看起來对 [某个兴趣] 真的充滿熱情呢。"
+        "zh-CN": "你看起来对 [某个兴趣] 真的充满热情呢。"
       },
       "explanations": {
         "zh-TW": "展現傾聽與共情的讚美方式。",
@@ -195,7 +195,7 @@
         "ko": "경청과 공감을 보여주는 칭찬입니다.",
         "es": "Cumplido que muestra escucha y empatía.",
         "fr": "Compliment qui montre l'écoute et l'empathie.",
-        "zh-CN": "展现傾听与共情的赞美方式。"
+        "zh-CN": "展现倾听与共情的赞美方式。"
       }
     },
     {
@@ -208,7 +208,7 @@
         "ko": "다음 주 [Event]에 관심 있으신가요?",
         "es": "¿Te interesaría ir a [Event] la próxima semana?",
         "fr": "Est-ce que ça te dirait d'aller à [Event] la semaine prochaine ?",
-        "zh-CN": "你下週会有兴趣一起去 [某个活动] 嗎？"
+        "zh-CN": "你下周会有兴趣一起去 [某个活动] 吗？"
       },
       "explanations": {
         "zh-TW": "具體的進階邀約。",

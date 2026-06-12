@@ -10,7 +10,7 @@
         "ko": "[Topic] 에 대해 이야기할 필요가 있습니다.",
         "es": "Necesitamos discutir [Topic].",
         "fr": "Nous devons discuter de [Topic].",
-        "zh-CN": "我们需要針对 [某主题] 进行討论。"
+        "zh-CN": "我们需要针对 [某主题] 进行讨论。"
       },
       "explanations": {
         "zh-TW": "發起議案的安全說法。",
@@ -41,7 +41,7 @@
         "ko": "의견을 구하는 간단한 방법.",
         "es": "Forma simple de solicitar opiniones.",
         "fr": "Façon simple de soliciter des opinions.",
-        "zh-CN": "徵詢意见的简单问法。"
+        "zh-CN": "征询意见的简单问法。"
       }
     },
     {
@@ -54,7 +54,7 @@
         "ko": "[Day/Time] 에 회의를 잡읍시다.",
         "es": "Agendemos una reunión para [Day/Time].",
         "fr": "Planifions une réunion pour [Day/Time].",
-        "zh-CN": "我们安排在 [某日/时間] 开会吧。"
+        "zh-CN": "我们安排在 [某日/时间] 开会吧。"
       },
       "explanations": {
         "zh-TW": "日系職場常見排定會議的句型。",
@@ -76,7 +76,7 @@
         "ko": "[Time] 까지 보고서를 보내주세요.",
         "es": "Por favor, envíeme el informe antes de [Time].",
         "fr": "Veuillez m'envoyer le rapport avant [Time].",
-        "zh-CN": "请在 [某时間] 前將报告发给我。"
+        "zh-CN": "请在 [某时间] 前将报告发给我。"
       },
       "explanations": {
         "zh-TW": "交代截止時間的指令。",
@@ -85,7 +85,7 @@
         "ko": "마감 기한을 지정하는 지시.",
         "es": "Instrucción especificando fecha límite.",
         "fr": "Instruction spécifiant la date limite.",
-        "zh-CN": "交代截止时間的指令。"
+        "zh-CN": "交代截止时间的指令。"
       }
     },
     {
@@ -98,7 +98,7 @@
         "ko": "[Person/Idea] 에 동의합니다.",
         "es": "Estoy de acuerdo con [Person/Idea].",
         "fr": "Je suis d'accord avec [Person/Idea].",
-        "zh-CN": "我贊成 [某人/某想法]。"
+        "zh-CN": "我赞成 [某人/某想法]。"
       },
       "explanations": {
         "zh-TW": "開會時表態支持。",
@@ -164,7 +164,7 @@
         "ko": "[Project] 에서의 노고에 감사드립니다.",
         "es": "Gracias por su arduo trabajo en [Project].",
         "fr": "Merci pour votre travail acharné sur [Project].",
-        "zh-CN": "感謝各位在 [某专案] 上的努力。"
+        "zh-CN": "感谢各位在 [某专案] 上的努力。"
       },
       "explanations": {
         "zh-TW": "犒賞或感謝團隊的用詞。",
@@ -173,7 +173,7 @@
         "ko": "팀을 격려하고 감사하는 흔한 문구.",
         "es": "Frase común para estimular y agradecer al equipo.",
         "fr": "Phrase commune pour encourager et remercier l'équipe.",
-        "zh-CN": "犒赏或感謝团队的用詞。"
+        "zh-CN": "犒赏或感谢团队的用词。"
       }
     },
     {
@@ -208,7 +208,7 @@
         "ko": "오늘은 [Task] 을 최우선으로 해주실 수 있나요?",
         "es": "¿Podrías priorizar [Task] hoy?",
         "fr": "Pourrais-tu prioriser [Task] aujourd'hui ?",
-        "zh-CN": "可以请您今天把 [某任务] 擺在最优先嗎？"
+        "zh-CN": "可以请您今天把 [某任务] 摆在最优先吗？"
       },
       "explanations": {
         "zh-TW": "請託部屬調整順序的禮貌說法。",
@@ -217,7 +217,7 @@
         "ko": "작업 순서를 조정하는 정중한 요청.",
         "es": "Solicitud educada para ajustar el orden de tareas.",
         "fr": "Demande polie pour ajuster l'ordre des tâches.",
-        "zh-CN": "请托部属调整順序的禮貌说法。"
+        "zh-CN": "请托部属调整顺序的礼貌说法。"
       }
     }
   ]
