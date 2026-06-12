@@ -233,6 +233,7 @@ const ChatLearningModal = ({
                       });
                     }
                     setIsAnalyzing(false);
+                    closeModal();
                   }}
                   className="glass-button active"
                   style={{ padding: '12px 24px', fontSize: '1.1rem', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '8px' }}
