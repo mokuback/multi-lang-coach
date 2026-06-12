@@ -54,10 +54,8 @@ export const I18nProvider = ({ children }) => {
       }
       try {
         let loadedDict = {};
-        if (uiLang !== 'zh-TW' && uiLang !== 'zh-CN') {
-          const module = await import(`../locales/${uiLang}.json`);
-          loadedDict = module.default || module;
-        }
+        const module = await import(`../locales/${uiLang}.json`);
+        loadedDict = module.default || module;
         
         let loadedEnDict = enDict;
         if (uiLang !== 'en' && uiLang !== 'zh-TW' && uiLang !== 'zh-CN' && Object.keys(enDict).length === 0) {
@@ -98,10 +96,6 @@ export const I18nProvider = ({ children }) => {
 
   const t = (text) => {
     if (typeof text !== 'string' || !text) return text;
-
-    if (activeLang === 'zh-TW' || activeLang === 'zh-CN') {
-      return text;
-    }
 
     if (dict[text]) {
       return dict[text];
