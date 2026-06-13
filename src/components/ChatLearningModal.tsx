@@ -6,7 +6,8 @@ import { useAppState } from '../contexts/AppStateContext';
 
 interface VocabItem {
   word: string;
-  zh: string;
+  meanings?: Record<string, string>;
+  zh?: string;
   example?: string;
   phonetic?: string;
   partOfSpeech?: string;
@@ -128,7 +129,7 @@ const ChatLearningModal = ({
                             {v.word}
                           </span>
                           <span style={{ color: 'var(--text-secondary)', fontWeight: 600, fontSize: '1rem' }}>
-                            {getLocalizedContent(v.meanings)}
+                            {v.meanings ? getLocalizedContent(v.meanings) : v.zh || ''}
                           </span>
                           {v.phonetic && (
                             <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
@@ -220,7 +221,14 @@ const ChatLearningModal = ({
                     if (learningModalData.vocab) {
                       const newVocab = learningModalData.vocab
                         .filter(v => v.checked !== false)
-                        .map(v => ({ term: v.word, meaning: getLocalizedContent(v.meanings), example: v.example || '', phonetic: v.phonetic || '', partOfSpeech: v.partOfSpeech || '', lang: targetLanguage }));
+                        .map(v => ({ 
+                          term: v.word, 
+                          meaning: v.meanings ? getLocalizedContent(v.meanings) : (v.zh || ''), 
+                          example: v.example || '', 
+                          phonetic: v.phonetic || '', 
+                          partOfSpeech: v.partOfSpeech || '', 
+                          lang: targetLanguage 
+                        }));
                       setVocabulary(prev => {
                         const existing = [...prev];
                         for (const item of newVocab) {
