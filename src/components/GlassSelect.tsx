@@ -12,6 +12,7 @@ interface GlassSelectProps {
   options: GlassSelectOption[];
   placeholder?: string;
   style?: React.CSSProperties;
+  theme?: string; // 新增：當前主題，用於判斷 hover 顏色
 }
 
 const GlassSelect: React.FC<GlassSelectProps> = ({
@@ -20,6 +21,7 @@ const GlassSelect: React.FC<GlassSelectProps> = ({
   options,
   placeholder = '',
   style: outerStyle = {},
+  theme = 'dark', // 默認深色主題
 }) => {
   const [open, setOpen] = useState(false);
   const [hoveredValue, setHoveredValue] = useState<string | null>(null);
@@ -34,6 +36,12 @@ const GlassSelect: React.FC<GlassSelectProps> = ({
     document.addEventListener('mousedown', handler);
     return () => document.removeEventListener('mousedown', handler);
   }, []);
+
+  // 根據主題判斷 hover/選中背景色
+  const isLightTheme = theme.includes('light') || theme === 'SaaS';
+  const hoverBg = isLightTheme ? 'rgba(0,0,0,0.08)' : 'rgba(255,255,255,0.1)';
+  const selectedBg = isLightTheme ? 'rgba(0,0,0,0.12)' : 'rgba(255,255,255,0.15)';
+  const selectedHoverBg = isLightTheme ? 'rgba(0,0,0,0.15)' : 'rgba(255,255,255,0.18)';
 
   const current = options.find(o => o.value === value);
 
@@ -103,9 +111,9 @@ const GlassSelect: React.FC<GlassSelectProps> = ({
                   gap: '0.6rem',
                   padding: '0.6rem 0.75rem',
                   background: isSelected
-                    ? 'rgba(255,255,255,0.15)'
+                    ? selectedBg
                     : isHovered
-                    ? 'rgba(255,255,255,0.1)'
+                    ? hoverBg
                     : 'transparent',
                   color: 'var(--text-primary)',
                   cursor: 'pointer',

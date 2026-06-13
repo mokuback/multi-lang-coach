@@ -96,11 +96,12 @@ const Settings = () => {
             onChange={setUiLang}
             options={LANG_OPTIONS.map(l => ({ value: l.value, label: l.label, icon: l.flag }))}
             style={{ fontSize: '1.2rem', fontFamily: '"Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif' } as React.CSSProperties}
+            theme={uiTheme}
           />
         </div>
         <div>
           <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('介面風格 (UI Theme)')}</label>
-          <GlassSelect value={uiTheme} onChange={setUiTheme} options={themeOptions} />
+          <GlassSelect value={uiTheme} onChange={setUiTheme} options={themeOptions} theme={uiTheme} />
         </div>
       </div>
 
@@ -108,11 +109,11 @@ const Settings = () => {
       <div style={{ marginBottom: '1.5rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
         <div>
           <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('主類別')}</label>
-          <GlassSelect value={userCategory} onChange={handleCategoryChange} options={categoryOptions} />
+          <GlassSelect value={userCategory} onChange={handleCategoryChange} options={categoryOptions} theme={uiTheme} />
         </div>
         <div>
           <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('主題與職務')}</label>
-          <GlassSelect value={userRole} onChange={setUserRole} options={roleOptions} />
+          <GlassSelect value={userRole} onChange={setUserRole} options={roleOptions} theme={uiTheme} />
         </div>
       </div>
 
@@ -120,11 +121,11 @@ const Settings = () => {
       <div style={{ marginBottom: '1.5rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
         <div>
           <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('學習語言目標')}</label>
-          <GlassSelect value={targetLanguage} onChange={setTargetLanguage} options={targetLangOptions} />
+          <GlassSelect value={targetLanguage} onChange={setTargetLanguage} options={targetLangOptions} theme={uiTheme} />
         </div>
         <div>
           <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('語言程度')}</label>
-          <GlassSelect value={userLevel} onChange={setUserLevel} options={levelOptions} />
+          <GlassSelect value={userLevel} onChange={setUserLevel} options={levelOptions} theme={uiTheme} />
         </div>
       </div>
 
@@ -132,11 +133,11 @@ const Settings = () => {
       <div style={{ marginBottom: '1.5rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
         <div>
           <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('文法糾錯嚴格度')}</label>
-          <GlassSelect value={correctionMode} onChange={setCorrectionMode} options={correctionModeOptions} />
+          <GlassSelect value={correctionMode} onChange={setCorrectionMode} options={correctionModeOptions} theme={uiTheme} />
         </div>
         <div>
           <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('句型資料庫版本')}</label>
-          <GlassSelect value={patternVersion} onChange={setPatternVersion} options={patternVersionOptions} />
+          <GlassSelect value={patternVersion} onChange={setPatternVersion} options={patternVersionOptions} theme={uiTheme} />
         </div>
       </div>
 
@@ -177,7 +178,7 @@ const Settings = () => {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
           <div>
             <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('AI 服務商')}</label>
-            <GlassSelect value={apiProvider} onChange={setApiProvider} options={providerOptions} />
+            <GlassSelect value={apiProvider} onChange={setApiProvider} options={providerOptions} theme={uiTheme} />
           </div>
           {apiProvider !== 'gemini' && (
             <div>
