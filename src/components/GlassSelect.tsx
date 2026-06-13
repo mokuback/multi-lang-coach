@@ -103,15 +103,17 @@ const GlassSelect: React.FC<GlassSelectProps> = ({
                   gap: '0.6rem',
                   padding: '0.6rem 0.75rem',
                   background: isSelected
-                    ? 'rgba(255,255,255,0.12)'
+                    ? 'rgba(255,255,255,0.15)'
                     : isHovered
-                    ? 'rgba(255,255,255,0.08)'
+                    ? 'rgba(255,255,255,0.1)'
                     : 'transparent',
                   color: 'var(--text-primary)',
                   cursor: 'pointer',
                   fontSize: '0.95rem',
                   textAlign: 'left',
-                  transition: 'background 0.12s',
+                  transition: 'background 0.15s, padding-left 0.15s',
+                  borderLeft: isHovered ? '3px solid var(--accent-color)' : '3px solid transparent',
+                  paddingLeft: isHovered ? '0.65rem' : '0.75rem',
                 }}
               >
                 {opt.icon && <span style={{ fontSize: '1.1rem', display: 'flex', alignItems: 'center' }}>{opt.icon}</span>}
