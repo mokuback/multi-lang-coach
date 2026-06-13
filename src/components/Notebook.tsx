@@ -2,6 +2,7 @@ import React from 'react';
 import { Trash2, Volume2, Download } from 'lucide-react';
 import { useI18n } from '../contexts/I18nContext';
 import { useAppState } from '../contexts/AppStateContext';
+import { exportToPDF } from '../utils/pdfExporter';
 
 const Notebook = () => {
   const { t, uiLang } = useI18n();
@@ -27,25 +28,10 @@ const Notebook = () => {
     setVocabulary(vocabulary.filter(item => item.id !== id));
   };
 
-  // 匯出為 JSON 檔案
+  // 匯出為 PDF
   const handleExport = () => {
-    const data = {
-      exportedAt: new Date().toISOString(),
-      count: vocabulary.length,
-      vocabulary: vocabulary.map(item => ({
-        term: item.term,
-        meaning: item.meaning,
-        example: item.example || '',
-        createdAt: item.createdAt
-      }))
-    };
-    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `vocabulary_${new Date().toISOString().split('T')[0]}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
+    const title = `${t('生詞筆記')} - ${new Date().toLocaleDateString()}`;
+    exportToPDF('vocabulary', vocabulary, title);
   };
 
   if (vocabulary.length === 0) {

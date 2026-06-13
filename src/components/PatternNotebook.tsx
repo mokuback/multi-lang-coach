@@ -2,6 +2,7 @@ import React from 'react';
 import { Trash2, Volume2, Download } from 'lucide-react';
 import { useI18n } from '../contexts/I18nContext';
 import { useAppState } from '../contexts/AppStateContext';
+import { exportToPDF } from '../utils/pdfExporter';
 
 const PatternNotebook = () => {
   const { t, uiLang } = useI18n();
@@ -27,25 +28,10 @@ const PatternNotebook = () => {
     setSavedPatterns(savedPatterns.filter(item => item.id !== id));
   };
 
-  // 匯出為 JSON 檔案
+  // 匯出為 PDF
   const handleExport = () => {
-    const data = {
-      exportedAt: new Date().toISOString(),
-      count: savedPatterns.length,
-      patterns: savedPatterns.map(item => ({
-        pattern: item.pattern,
-        explanation: item.explanation,
-        example: item.example || '',
-        createdAt: item.createdAt
-      }))
-    };
-    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `patterns_${new Date().toISOString().split('T')[0]}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
+    const title = `${t('句型庫')} - ${new Date().toLocaleDateString()}`;
+    exportToPDF('pattern', savedPatterns, title);
   };
 
   if (savedPatterns.length === 0) {
