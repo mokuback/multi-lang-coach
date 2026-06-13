@@ -22,6 +22,7 @@ const GlassSelect: React.FC<GlassSelectProps> = ({
   style: outerStyle = {},
 }) => {
   const [open, setOpen] = useState(false);
+  const [hoveredValue, setHoveredValue] = useState<string | null>(null);
   const dropRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -86,37 +87,45 @@ const GlassSelect: React.FC<GlassSelectProps> = ({
           overflow: 'hidden',
           boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
         }}>
-          {options.map(opt => (
-            <div
-              key={opt.value}
-              onClick={() => { onChange(opt.value); setOpen(false); }}
-              style={{
-                width: '100%',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.6rem',
-                padding: '0.6rem 0.75rem',
-                background: opt.value === value ? 'rgba(255,255,255,0.12)' : 'transparent',
-                color: 'var(--text-primary)',
-                cursor: 'pointer',
-                fontSize: '0.95rem',
-                textAlign: 'left',
-                transition: 'background 0.12s',
-              }}
-              onMouseEnter={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.08)')}
-              onMouseLeave={e => (e.currentTarget.style.background = opt.value === value ? 'rgba(255,255,255,0.12)' : 'transparent')}
-            >
-              {opt.icon && <span style={{ fontSize: '1.1rem', display: 'flex', alignItems: 'center' }}>{opt.icon}</span>}
-              <span>{opt.label}</span>
-              {opt.value === value && (
-                <span style={{ marginLeft: 'auto', color: 'var(--accent-color)', display: 'flex', alignItems: 'center' }}>
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
-                    <path d="M2 7l3.5 3.5L12 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </span>
-              )}
-            </div>
-          ))}
+          {options.map(opt => {
+            const isHovered = hoveredValue === opt.value;
+            const isSelected = opt.value === value;
+            return (
+              <div
+                key={opt.value}
+                onClick={() => { onChange(opt.value); setOpen(false); }}
+                onMouseEnter={() => setHoveredValue(opt.value)}
+                onMouseLeave={() => setHoveredValue(null)}
+                style={{
+                  width: '100%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.6rem',
+                  padding: '0.6rem 0.75rem',
+                  background: isSelected
+                    ? 'rgba(255,255,255,0.12)'
+                    : isHovered
+                    ? 'rgba(255,255,255,0.08)'
+                    : 'transparent',
+                  color: 'var(--text-primary)',
+                  cursor: 'pointer',
+                  fontSize: '0.95rem',
+                  textAlign: 'left',
+                  transition: 'background 0.12s',
+                }}
+              >
+                {opt.icon && <span style={{ fontSize: '1.1rem', display: 'flex', alignItems: 'center' }}>{opt.icon}</span>}
+                <span>{opt.label}</span>
+                {isSelected && (
+                  <span style={{ marginLeft: 'auto', color: 'var(--accent-color)', display: 'flex', alignItems: 'center' }}>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+                      <path d="M2 7l3.5 3.5L12 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </span>
+                )}
+              </div>
+            );
+          })}
         </div>
       )}
     </div>

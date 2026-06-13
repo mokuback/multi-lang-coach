@@ -65,6 +65,7 @@ interface AppStateContextType {
   setAutoRead: (value: boolean) => void;
   setPatternVersion: (value: string) => void;
   setAndroidSmartSpeech: (value: boolean) => void;
+  setCorrectionMode: (value: string) => void;
   setHasSeenWelcome: (value: boolean) => void;
   
   // Vocabulary & Patterns - support both direct value and functional update
@@ -98,7 +99,7 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
     })(),
     apiKey: localStorage.getItem('APP_GEMINI_API_KEY') || '',
     androidSmartSpeech: localStorage.getItem('APP_ANDROID_SMART_SPEECH') !== 'false',
-    correctionMode: 'communicative',
+    correctionMode: localStorage.getItem('APP_CORRECTION_MODE') || 'communicative',
     speechRate: parseInt(localStorage.getItem('APP_SPEECH_RATE') || '5', 10),
     autoRead: localStorage.getItem('APP_AUTO_READ') === 'true',
     uiTheme: localStorage.getItem('APP_UI_THEME') || 'glass',
@@ -184,6 +185,10 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
   }, [state.patternVersion]);
 
   useEffect(() => {
+    localStorage.setItem('APP_CORRECTION_MODE', state.correctionMode);
+  }, [state.correctionMode]);
+
+  useEffect(() => {
     localStorage.setItem('APP_ANDROID_SMART_SPEECH', state.androidSmartSpeech.toString());
   }, [state.androidSmartSpeech]);
 
@@ -236,6 +241,10 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
     setState(prev => ({ ...prev, patternVersion: value }));
   }, []);
 
+  const setCorrectionMode = useCallback((value: string) => {
+    setState(prev => ({ ...prev, correctionMode: value }));
+  }, []);
+
   const setAndroidSmartSpeech = useCallback((value: boolean) => {
     setState(prev => ({ ...prev, androidSmartSpeech: value }));
   }, []);
@@ -260,6 +269,7 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
         setSpeechRate,
         setAutoRead,
         setPatternVersion,
+        setCorrectionMode,
         setAndroidSmartSpeech,
         setHasSeenWelcome,
         updateProgress,
