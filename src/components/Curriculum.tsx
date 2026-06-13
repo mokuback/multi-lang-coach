@@ -39,18 +39,33 @@ const Curriculum = () => {
   };
 
   const handleStartDrill = (unit, type, item) => {
-    const localizedTitle = getLocalizedContent(unit.title);
-    const localizedDesc = getLocalizedContent(unit.description);
-    navigate('/chat', {
-      state: {
-        scenario: {
-          id: 'curriculum-drill',
-          title: localizedTitle,
-          desc: localizedDesc,
-          unit: { ...unit, drillType: type, drillItem: item }
+    if (type === 'pattern' && item) {
+      // 句型代換練習 - 與 Patterns 頁面的行為一致
+      navigate('/chat', {
+        state: {
+          scenario: {
+            id: 'pattern-drill',
+            title: t('句型代換練習'),
+            desc: t('教練給予情境，使用者填入代換詞彙'),
+            patternItem: item
+          }
         }
-      }
-    });
+      });
+    } else {
+      // 其他練習類型（單字、完整單元）
+      const localizedTitle = getLocalizedContent(unit.title);
+      const localizedDesc = getLocalizedContent(unit.description);
+      navigate('/chat', {
+        state: {
+          scenario: {
+            id: 'curriculum-drill',
+            title: localizedTitle,
+            desc: localizedDesc,
+            unit: { ...unit, drillType: type, drillItem: item }
+          }
+        }
+      });
+    }
   };
 
   if (!selectedUnit) {
