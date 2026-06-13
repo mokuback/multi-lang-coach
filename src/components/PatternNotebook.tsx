@@ -1,5 +1,5 @@
 import React from 'react';
-import { Trash2, Volume2 } from 'lucide-react';
+import { Trash2, Volume2, Download } from 'lucide-react';
 import { useI18n } from '../contexts/I18nContext';
 import { useAppState } from '../contexts/AppStateContext';
 
@@ -27,6 +27,27 @@ const PatternNotebook = () => {
     setSavedPatterns(savedPatterns.filter(item => item.id !== id));
   };
 
+  // 匯出為 JSON 檔案
+  const handleExport = () => {
+    const data = {
+      exportedAt: new Date().toISOString(),
+      count: savedPatterns.length,
+      patterns: savedPatterns.map(item => ({
+        pattern: item.pattern,
+        explanation: item.explanation,
+        example: item.example || '',
+        createdAt: item.createdAt
+      }))
+    };
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `patterns_${new Date().toISOString().split('T')[0]}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
   if (savedPatterns.length === 0) {
     return (
       <div className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '900px', margin: '0 auto' }}>
@@ -45,7 +66,7 @@ const PatternNotebook = () => {
 
   return (
     <div className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '900px', margin: '0 auto' }}>
-      <header style={{ marginBottom: '40px' }}>
+      <header style={{ marginBottom: '40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
         <h2 style={{ fontSize: '2rem', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '12px' }}>
           📖 {t('句型庫')}
           <span style={{ 
@@ -58,6 +79,21 @@ const PatternNotebook = () => {
             {savedPatterns.length} {t('個句型')}
           </span>
         </h2>
+        <button
+          className="glass-button"
+          onClick={handleExport}
+          style={{ 
+            padding: '8px 16px', 
+            borderRadius: '8px', 
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: '6px',
+            fontSize: '0.9rem'
+          }}
+          title={t('匯出句型庫')}
+        >
+          <Download size={16} /> {t('匯出')}
+        </button>
       </header>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
