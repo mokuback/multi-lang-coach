@@ -32,6 +32,7 @@ const Settings = () => {
       targetLanguage, patternVersion, userCategory, userRole, userLevel
     },
     setApiProvider, setApiModel, setApiKey, setAndroidSmartSpeech,
+    setCorrectionMode,
     setSpeechRate, setAutoRead, setUiTheme,
     setTargetLanguage, setPatternVersion, setUserCategory, setUserRole, setUserLevel
   } = useAppState();
