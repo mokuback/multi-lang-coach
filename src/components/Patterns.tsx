@@ -6,10 +6,11 @@ import { useI18n } from '../contexts/I18nContext';
 import { useAppState } from '../contexts/AppStateContext';
 import { categoryData, getDefaultRole } from '../data/categoryData';
 import { getScenariosByRole } from '../data/scenariosData';
+import GlassSelect from './GlassSelect';
 
 const Patterns = () => {
   const { t, getLocalizedContent } = useI18n();
-  const { state: { targetLanguage, patternVersion, userCategory, userRole } } = useAppState();
+  const { state: { targetLanguage, patternVersion, userCategory, userRole, uiTheme } } = useAppState();
   const navigate = useNavigate();
 
   const [allPatternsData, setAllPatternsData] = useState({});
@@ -19,10 +20,9 @@ const Patterns = () => {
   const [selectedCategory, setSelectedCategory] = useState(userCategory || 'business');
   const [selectedRole, setSelectedRole] = useState(userRole || 'it');
 
-  const handleCategoryChange = (e) => {
-    const newCat = e.target.value;
-    setSelectedCategory(newCat);
-    setSelectedRole(getDefaultRole(newCat));
+  const handleCategoryChange = (value: string) => {
+    setSelectedCategory(value);
+    setSelectedRole(getDefaultRole(value));
   };
 
   useEffect(() => {
@@ -107,22 +107,20 @@ const Patterns = () => {
         <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '8px', width: '100%' }}>
           <Filter size={20} className="text-accent" style={{ flexShrink: 0 }} />
           <span style={{ fontWeight: 500, color: 'var(--text-primary)', whiteSpace: 'nowrap' }}>{t('情境篩選：')}</span>
-          <select 
-            className="glass-input" 
-            value={selectedCategory} 
+          <GlassSelect
+            value={selectedCategory}
             onChange={handleCategoryChange}
-            style={{ padding: '6px 12px', appearance: 'auto', flex: '1 1 auto', minWidth: '150px' }}
-          >
-            {categoryData.categories.map(c => <option key={c.id} value={c.id}>{t(c.label)}</option>)}
-          </select>
-          <select 
-            className="glass-input" 
+            options={categoryData.categories.map(c => ({ value: c.id, label: t(c.label) }))}
+            theme={uiTheme}
+            style={{ flex: '1 1 auto', minWidth: '150px' }}
+          />
+          <GlassSelect 
             value={selectedRole} 
-            onChange={(e) => setSelectedRole(e.target.value)}
-            style={{ padding: '6px 12px', appearance: 'auto', flex: '1 1 auto', minWidth: '150px' }}
-          >
-            {categoryData.roles[selectedCategory]?.map(r => <option key={r.id} value={r.id}>{t(r.label)}</option>)}
-          </select>
+            onChange={setSelectedRole}
+            options={(categoryData.roles[selectedCategory] || []).map(r => ({ value: r.id, label: t(r.label) }))}
+            theme={uiTheme}
+            style={{ flex: '1 1 auto', minWidth: '150px' }}
+          />
         </div>
       </div>
 
