@@ -9,16 +9,20 @@ import { categoryData, getDefaultRole } from '../data/categoryData';
 declare const __APP_VERSION__: string;
 declare const __BUILD_DATE__: string;
 
-  // Language options with native names and flags
-  const LANGUAGES = [
-    { value: 'zh-TW', label: '繁體中文', flag: '🇹🇼' },
-    { value: 'zh-CN', label: '簡體中文', flag: '🇨🇳' },
-    { value: 'en',    label: 'English',    flag: '🇬🇧' },
-    { value: 'ja',    label: '日本語',    flag: '🇯🇵' },
-    { value: 'ko',    label: '한국어',    flag: '🇰🇷' },
-    { value: 'es',    label: 'Español',    flag: '🇪🇸' },
-    { value: 'fr',    label: 'Français',   flag: '🇫🇷' },
-  ];
+// Language options with native names and flags
+const LANGUAGES = [
+  { value: 'zh-TW', label: '繁體中文', flag: '🇹🇼' },
+  { value: 'zh-CN', label: '簡體中文', flag: '🇨🇳' },
+  { value: 'en',    label: 'English',    flag: '🇬🇧' },
+  { value: 'ja',    label: '日本語',    flag: '🇯🇵' },
+  { value: 'ko',    label: '한국어',    flag: '🇰🇷' },
+  { value: 'es',    label: 'Español',    flag: '🇪🇸' },
+  { value: 'fr',    label: 'Français',   flag: '🇫🇷' },
+];
+
+const Settings = () => {
+  const { t, uiLang, setUiLang } = useI18n();
+  const navigate = useNavigate();
 
   const [langOpen, setLangOpen] = useState(false);
   const langDropRef = useRef<HTMLDivElement>(null);
@@ -34,10 +38,6 @@ declare const __BUILD_DATE__: string;
   }, []);
 
   const currentLang = LANGUAGES.find(l => l.value === uiLang) || LANGUAGES[0];
-
-  const Settings = () => {
-  const { t, uiLang, setUiLang } = useI18n();
-  const navigate = useNavigate();
 
   const { 
     state: {
