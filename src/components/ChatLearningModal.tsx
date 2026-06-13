@@ -124,28 +124,28 @@ const ChatLearningModal = ({
                         style={{ width: '18px', height: '18px', cursor: 'pointer', accentColor: 'var(--accent-color)' }}
                       />
                       <div style={{ flex: 1 }}>
-                        <div style={{ display: 'flex', alignItems: 'baseline', gap: '4px', flexWrap: 'wrap' }}>
+                        <div style={{ display: 'flex', alignItems: 'baseline', gap: '4px', flexWrap: 'wrap', marginBottom: '2px' }}>
                           <span style={{ color: 'var(--accent-color)', fontWeight: 700, fontSize: '1.1rem' }}>
                             {v.word}
                           </span>
                           <span style={{ color: 'var(--text-secondary)', fontWeight: 600, fontSize: '1rem' }}>
                             {v.meanings ? getLocalizedContent(v.meanings) : v.zh || ''}
                           </span>
-                          {v.phonetic && (
-                            <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-                              [{v.phonetic}]
-                            </span>
-                          )}
-                          {v.partOfSpeech && (
-                            <span style={{
-                              fontSize: '0.8rem',
-                              background: 'rgba(255,255,255,0.1)', padding: '2px 8px',
-                              borderRadius: '4px', color: 'var(--text-muted)'
-                            }}>{v.partOfSpeech}</span>
-                          )}
                         </div>
+                        {(v.phonetic || v.partOfSpeech) && (
+                          <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '2px' }}>
+                            {v.phonetic && <span style={{ marginRight: '8px' }}>[{v.phonetic}]</span>}
+                            {v.partOfSpeech && (
+                              <span style={{
+                                fontSize: '0.8rem',
+                                background: 'rgba(255,255,255,0.1)', padding: '2px 8px',
+                                borderRadius: '4px', color: 'var(--text-muted)'
+                              }}>{v.partOfSpeech}</span>
+                            )}
+                          </div>
+                        )}
                         {v.example && (
-                          <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '4px' }}>
+                          <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
                             {v.example}
                           </div>
                         )}
@@ -182,13 +182,13 @@ const ChatLearningModal = ({
                         style={{ width: '18px', height: '18px', cursor: 'pointer', marginTop: '4px', accentColor: 'var(--accent-color)' }}
                       />
                       <div style={{ flex: 1 }}>
-                        <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', flexWrap: 'wrap', marginBottom: '4px' }}>
+                        <div style={{ marginBottom: '4px' }}>
                           <span style={{ color: 'var(--accent-color)', fontWeight: 600, fontSize: '1.05rem' }}>
                             {p.pattern}
                           </span>
-                          <span style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', fontWeight: 400 }}>
-                            {getLocalizedContent(p.explanations || { 'zh-TW': p.explanation || '' })}
-                          </span>
+                        </div>
+                        <div style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', fontWeight: 400 }}>
+                          {getLocalizedContent(p.explanations || { 'zh-TW': p.explanation || '' })}
                         </div>
                       </div>
                     </label>

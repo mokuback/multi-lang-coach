@@ -93,14 +93,8 @@ const PatternNotebook = () => {
             gap: '12px'
           }}>
             <div style={{ flex: 1 }}>
-              <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', flexWrap: 'wrap', marginBottom: '4px' }}>
-                <span style={{ color: 'var(--accent-color)', fontWeight: 600, fontSize: '1.05rem' }}>
-                  {item.pattern}
-                </span>
-                <span style={{ color: 'var(--text-primary)', fontSize: '0.95rem' }}>
-                  {item.explanation}
-                </span>
-              </div>
+              <h4 style={{ fontSize: '1.1rem', marginBottom: '4px', color: 'var(--accent-color)' }}>{item.pattern}</h4>
+              <p style={{ color: 'var(--text-primary)', marginBottom: '4px' }}>{item.explanation}</p>
               {item.example && (
                 <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontStyle: 'italic' }}>"{item.example}"</p>
               )}

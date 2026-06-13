@@ -93,8 +93,10 @@ const Notebook = () => {
             gap: '12px'
           }}>
             <div style={{ flex: 1 }}>
-              <h4 style={{ fontSize: '1.1rem', marginBottom: '4px', color: 'var(--accent-color)' }}>{item.term}</h4>
-              <p style={{ color: 'var(--text-primary)', marginBottom: '4px' }}>{item.meaning}</p>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', flexWrap: 'wrap', marginBottom: '4px' }}>
+                <h4 style={{ fontSize: '1.1rem', color: 'var(--accent-color)', margin: 0 }}>{item.term}</h4>
+                <span style={{ color: 'var(--text-primary)', fontSize: '1rem' }}>{item.meaning}</span>
+              </div>
               {(item.phonetic || item.partOfSpeech) && (
                 <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginBottom: '4px' }}>
                   {item.phonetic && <span style={{ marginRight: '8px' }}>[{item.phonetic}]</span>}
