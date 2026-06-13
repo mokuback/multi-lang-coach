@@ -95,6 +95,12 @@ const Notebook = () => {
             <div style={{ flex: 1 }}>
               <h4 style={{ fontSize: '1.1rem', marginBottom: '4px', color: 'var(--accent-color)' }}>{item.term}</h4>
               <p style={{ color: 'var(--text-primary)', marginBottom: '4px' }}>{item.meaning}</p>
+              {(item.phonetic || item.partOfSpeech) && (
+                <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginBottom: '4px' }}>
+                  {item.phonetic && <span style={{ marginRight: '8px' }}>[{item.phonetic}]</span>}
+                  {item.partOfSpeech && <span style={{ background: 'rgba(255,255,255,0.1)', padding: '2px 8px', borderRadius: '4px' }}>{item.partOfSpeech}</span>}
+                </p>
+              )}
               {item.example && (
                 <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontStyle: 'italic' }}>"{item.example}"</p>
               )}
