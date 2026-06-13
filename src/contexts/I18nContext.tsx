@@ -52,7 +52,6 @@ export const I18nProvider = ({ children }) => {
   const [activeLang, setActiveLang] = useState(uiLang);
   const [dict, setDict] = useState(() => loadLocaleSync(uiLang));
   const [enDict, setEnDict] = useState({});
-  const [isLoading, setIsLoading] = useState(false);
   const langRef = useRef(uiLang);
   const versionRef = useRef(0);
 
@@ -60,10 +59,6 @@ export const I18nProvider = ({ children }) => {
   useEffect(() => {
     const myVersion = ++versionRef.current;
     langRef.current = uiLang;
-
-    if (uiLang !== activeLang) {
-      setIsLoading(true);
-    }
 
     const timer = setTimeout(() => {
       if (versionRef.current !== myVersion) return;
@@ -89,7 +84,6 @@ export const I18nProvider = ({ children }) => {
 
       setActiveLang(uiLang);
       localStorage.setItem(UI_LANG_STORAGE_KEY, uiLang);
-      setIsLoading(false);
     }, 0);
 
     return () => {
@@ -139,31 +133,6 @@ export const I18nProvider = ({ children }) => {
 
   return (
     <I18nContext.Provider value={{ uiLang: activeLang, setUiLang, t, getLocalizedContent }}>
-      {isLoading && (
-        <div style={{
-          position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh',
-          background: 'rgba(0,0,0,0.5)', zIndex: 99999,
-          display: 'flex', justifyContent: 'center', alignItems: 'center',
-          backdropFilter: 'blur(5px)', color: '#fff', fontSize: '1.2rem',
-          flexDirection: 'column', gap: '16px'
-        }}>
-          <style>
-            {`
-              @keyframes spin {
-                0% { transform: rotate(0deg); }
-                100% { transform: rotate(360deg); }
-              }
-            `}
-          </style>
-          <div style={{ 
-            width: '40px', height: '40px', 
-            border: '4px solid rgba(255,255,255,0.3)', 
-            borderTopColor: '#fff', borderRadius: '50%',
-            animation: 'spin 1s linear infinite'
-          }} />
-          <p>Switching language...</p>
-        </div>
-      )}
       {children}
     </I18nContext.Provider>
   );

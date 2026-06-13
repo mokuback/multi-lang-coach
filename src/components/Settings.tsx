@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Settings as SettingsIcon } from 'lucide-react';
 import { useI18n } from '../contexts/I18nContext';
@@ -9,7 +9,33 @@ import { categoryData, getDefaultRole } from '../data/categoryData';
 declare const __APP_VERSION__: string;
 declare const __BUILD_DATE__: string;
 
-const Settings = () => {
+  // Language options with native names and flags
+  const LANGUAGES = [
+    { value: 'zh-TW', label: '繁體中文', flag: '🇹🇼' },
+    { value: 'zh-CN', label: '簡體中文', flag: '🇨🇳' },
+    { value: 'en',    label: 'English',    flag: '🇬🇧' },
+    { value: 'ja',    label: '日本語',    flag: '🇯🇵' },
+    { value: 'ko',    label: '한국어',    flag: '🇰🇷' },
+    { value: 'es',    label: 'Español',    flag: '🇪🇸' },
+    { value: 'fr',    label: 'Français',   flag: '🇫🇷' },
+  ];
+
+  const [langOpen, setLangOpen] = useState(false);
+  const langDropRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (langDropRef.current && !langDropRef.current.contains(e.target as Node)) {
+        setLangOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
+  const currentLang = LANGUAGES.find(l => l.value === uiLang) || LANGUAGES[0];
+
+  const Settings = () => {
   const { t, uiLang, setUiLang } = useI18n();
   const navigate = useNavigate();
 
@@ -37,15 +63,92 @@ const Settings = () => {
       <div className="form-group-mobile" style={{ marginBottom: '1.5rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
         <div>
           <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('介面與母語語言')}</label>
-          <select className="glass-input" value={uiLang} onChange={(e) => setUiLang(e.target.value)} style={{ appearance: 'auto' }}>
-            <option value="zh-TW">{t('繁體中文')}</option>
-            <option value="zh-CN">{t('簡體中文')}</option>
-            <option value="en">{t('英文 (English)')}</option>
-            <option value="ja">{t('日文 (日本語)')}</option>
-            <option value="ko">{t('韓文 (한국어)')}</option>
-            <option value="es">{t('西班牙文 (Español)')}</option>
-            <option value="fr">{t('法文 (Français)')}</option>
-          </select>
+          <div ref={langDropRef} style={{ position: 'relative' }}>
+            <button
+              type="button"
+              onClick={() => setLangOpen(o => !o)}
+              className="glass-button"
+              style={{
+                width: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                padding: '0.5rem 0.75rem',
+                gap: '0.5rem',
+                background: 'var(--glass-bg)',
+                border: '1px solid var(--glass-border)',
+                borderRadius: '0.5rem',
+                color: 'var(--text-primary)',
+                cursor: 'pointer',
+                fontSize: '0.95rem',
+                backdropFilter: 'blur(10px)',
+              }}
+            >
+              <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <span style={{ fontSize: '1.2rem' }}>{currentLang.flag}</span>
+                <span>{currentLang.label}</span>
+              </span>
+              <span style={{
+                transition: 'transform 0.2s',
+                transform: langOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+                display: 'flex',
+                alignItems: 'center',
+              }}>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                  <path d="M2 4l4 4 4-4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            {langOpen && (
+              <div style={{
+                position: 'absolute',
+                top: 'calc(100% + 4px)',
+                left: 0,
+                right: 0,
+                background: 'var(--glass-bg)',
+                border: '1px solid var(--glass-border)',
+                borderRadius: '0.5rem',
+                backdropFilter: 'blur(20px)',
+                zIndex: 1000,
+                overflow: 'hidden',
+                boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
+              }}>
+                {LANGUAGES.map(lang => (
+                  <button
+                    key={lang.value}
+                    type="button"
+                    onClick={() => { setUiLang(lang.value); setLangOpen(false); }}
+                    style={{
+                      width: '100%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.6rem',
+                      padding: '0.6rem 0.75rem',
+                      background: lang.value === uiLang ? 'rgba(255,255,255,0.12)' : 'transparent',
+                      border: 'none',
+                      color: 'var(--text-primary)',
+                      cursor: 'pointer',
+                      fontSize: '0.95rem',
+                      textAlign: 'left',
+                      transition: 'background 0.15s',
+                    }}
+                    onMouseEnter={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.08)')}
+                    onMouseLeave={e => (e.currentTarget.style.background = lang.value === uiLang ? 'rgba(255,255,255,0.12)' : 'transparent')}
+                  >
+                    <span style={{ fontSize: '1.1rem' }}>{lang.flag}</span>
+                    <span>{lang.label}</span>
+                    {lang.value === uiLang && (
+                      <span style={{ marginLeft: 'auto', color: 'var(--accent-color)' }}>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+                          <path d="M2 7l3.5 3.5L12 4" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      </span>
+                    )}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
         <div>
           <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>{t('介面風格 (UI Theme)')}</label>
