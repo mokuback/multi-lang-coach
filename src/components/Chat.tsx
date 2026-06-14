@@ -335,16 +335,73 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
     const isJa = targetLanguage === 'ja';
     const voices = window.speechSynthesis.getVoices();
 
-    // 如果是學習英文，為了避免英文語音引擎硬唸中文，我們將中英文切開，依序放入播放佇列
+    // 輔助函數：轉換 uiLang 為語音引擎可用的 BCP 47 語言標籤
+    const getLangCode = (lang) => {
+      const langMap = {
+        'zh-TW': 'zh-TW',
+        'zh-CN': 'zh-CN',
+        'en': 'en-US',
+        'ja': 'ja-JP',
+        'ko': 'ko-KR',
+        'es': 'es-ES',
+        'fr': 'fr-FR'
+      };
+      return langMap[lang] || lang;
+    };
+
+    // 輔助函數：取得語言前綴（用於語音搜尋）
+    const getLangPrefix = (lang) => {
+      const prefixMap = {
+        'zh-TW': 'zh',
+        'zh-CN': 'zh',
+        'en': 'en',
+        'ja': 'ja',
+        'ko': 'ko',
+        'es': 'es',
+        'fr': 'fr'
+      };
+      return prefixMap[lang] || lang;
+    };
+
+    // 輔助函數：跳脫正則特殊字元
+    const escapeRegex = (str) => {
+      return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    };
+
+    // 嘗試根據 UI 語言切割文本
     let segments = [text];
-    if (!isJa) {
-      // 根據中文漢字與全形標點符號進行切割
+    let useUILangDetection = false;
+
+    // 取得 UI 語言的 title 和 desc
+    const titleStr = scenario?.title ? getLocalizedContent(scenario.title) : '';
+    const descStr = scenario?.desc ? getLocalizedContent(scenario.desc) : '';
+
+    // 建立可能的分隔符號（包含常見的包裝符號）
+    const delimiters = [];
+    if (titleStr) {
+      delimiters.push(titleStr);
+      delimiters.push(`"${titleStr}"`);  // 英文引號
+      delimiters.push(`「${titleStr}」`);  // 日文/中文書名號
+    }
+    if (descStr) {
+      delimiters.push(descStr);
+    }
+
+    // 過濾出實際出現在文本中的分隔符號
+    const matchedDelimiters = delimiters.filter(d => text.includes(d));
+
+    if (matchedDelimiters.length > 0) {
+      // 根據匹配的分隔符號切割文本
+      const delimiterRegex = new RegExp(`(${matchedDelimiters.map(d => escapeRegex(d)).join('|')})`, 'g');
+      segments = text.split(delimiterRegex).filter(s => s.trim().length > 0);
+      useUILangDetection = true;
+    } else if (!isJa) {
+      // 回退到原有邏輯：根據中文漢字與全形標點符號進行切割
       segments = text.split(/([\u4e00-\u9fa5\u3000-\u303F\uFF00-\uFFEF]+)/g).filter(s => s.trim().length > 0);
     } else if (scenario && scenario.title) {
-      // 日文模式：只針對「情境標題」進行切割，使其能用中文語音朗讀
+      // 回退到原有邏輯：日文模式，只針對「情境標題」進行切割
       const translatedTitle = t(scenario.title);
       if (text.includes(translatedTitle)) {
-        // 使用 split 切割，保留情境標題作為獨立片段
         segments = text.split(new RegExp(`(${translatedTitle})`, 'g')).filter(s => s.trim().length > 0);
       }
     }
@@ -352,28 +409,42 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
     segments.forEach((segment, i) => {
       const utterance = new SpeechSynthesisUtterance(segment);
       
-      let isChineseSegment = false;
-      if (!isJa) {
-        isChineseSegment = /[\u4e00-\u9fa5]/.test(segment);
-      } else if (scenario && scenario.title) {
-        // 日文模式下，只有完全等於情境標題的片段，才判定為中文
-        isChineseSegment = (segment === t(scenario.title));
+      let useUILang = false;
+      if (useUILangDetection) {
+        // 檢查此片段是否為 UI 語言字串
+        useUILang = (titleStr && (segment === titleStr || segment === `"${titleStr}"` || segment === `「${titleStr}」`)) ||
+                     (descStr && segment === descStr);
+      } else {
+        // 使用原有邏輯
+        if (!isJa) {
+          useUILang = /[\u4e00-\u9fa5]/.test(segment);
+        } else if (scenario && scenario.title) {
+          useUILang = (segment === t(scenario.title));
+        }
       }
 
-      if (isChineseSegment) {
-        utterance.lang = 'zh-TW';
-        const zhVoice = voices.find(v => v.lang.includes('zh') && (v.name.includes('Google') || v.name.includes('Microsoft') || v.name.includes('Yating') || v.name.includes('Hanhan') || v.name.includes('Hsiao'))) || voices.find(v => v.lang.includes('zh'));
-        if (zhVoice) utterance.voice = zhVoice;
+      if (useUILang) {
+        // 使用 UI 語言朗讀
+        const uiLangCode = getLangCode(uiLang);
+        utterance.lang = uiLangCode;
+        const uiLangPrefix = getLangPrefix(uiLang);
+        // 尋找合適的語音
+        const uiLangVoice = voices.find(v => 
+          v.lang.startsWith(uiLangPrefix) && 
+          (v.name.includes('Google') || v.name.includes('Microsoft') || v.name.includes('Siri'))
+        ) || voices.find(v => v.lang.startsWith(uiLangPrefix));
+        if (uiLangVoice) utterance.voice = uiLangVoice;
       } else {
-        utterance.lang = isJa ? 'ja-JP' : 'en-US';
-        const langPrefix = isJa ? 'ja' : 'en';
-        const optimalVoice = 
-          voices.find(v => v.lang.startsWith(langPrefix) && (v.name.includes('Google') || v.name.includes('Microsoft') || v.name.includes('Siri') || v.name.includes('Nanami') || v.name.includes('Keita') || v.name.includes('Ayumi'))) || 
-          voices.find(v => v.lang.startsWith(langPrefix));
-          
-        if (optimalVoice) {
-          utterance.voice = optimalVoice;
-        }
+        // 使用目標語言朗讀
+        const targetLangCode = isJa ? 'ja-JP' : (targetLanguage === 'en' ? 'en-US' : getLangCode(targetLanguage));
+        utterance.lang = targetLangCode;
+        const targetLangPrefix = isJa ? 'ja' : (targetLanguage === 'en' ? 'en' : getLangPrefix(targetLanguage));
+        const targetLangVoice = voices.find(v => 
+          v.lang.startsWith(targetLangPrefix) && 
+          (v.name.includes('Google') || v.name.includes('Microsoft') || v.name.includes('Siri') || 
+           v.name.includes('Nanami') || v.name.includes('Keita') || v.name.includes('Ayumi'))
+        ) || voices.find(v => v.lang.startsWith(targetLangPrefix));
+        if (targetLangVoice) utterance.voice = targetLangVoice;
       }
 
       utterance.rate = 0.5 + (speechRate * 0.1);
