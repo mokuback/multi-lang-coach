@@ -379,12 +379,16 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
     // 建立可能的分隔符號（包含常見的包裝符號）
     const delimiters = [];
     if (titleStr) {
-      delimiters.push(titleStr);
-      delimiters.push(`"${titleStr}"`);  // 英文引號
+      // title 的各種包裝形式
+      delimiters.push(`"${titleStr}"`);  // 英文引號（優先匹配，避免被單獨匹配）
       delimiters.push(`「${titleStr}」`);  // 日文/中文書名號
+      delimiters.push(titleStr);  // 無包裝
     }
     if (descStr) {
-      delimiters.push(descStr);
+      // desc 的各種包裝形式（通常前面有標點符號）
+      delimiters.push(`. ${descStr}`);  // 英文句點 + 空格 + desc
+      delimiters.push(`。${descStr}`);  // 中文句點 + desc
+      delimiters.push(descStr);  // 無包裝
     }
 
     // 過濾出實際出現在文本中的分隔符號
@@ -411,9 +415,17 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
       
       let useUILang = false;
       if (useUILangDetection) {
-        // 檢查此片段是否為 UI 語言字串
-        useUILang = (titleStr && (segment === titleStr || segment === `"${titleStr}"` || segment === `「${titleStr}」`)) ||
-                     (descStr && segment === descStr);
+        // 檢查此片段是否為 UI 語言字串（包含各種包裝形式）
+        useUILang = (titleStr && (
+                      segment === titleStr || 
+                      segment === `"${titleStr}"` || 
+                      segment === `「${titleStr}」`
+                    )) ||
+                     (descStr && (
+                       segment === descStr ||
+                       segment === `. ${descStr}` ||
+                       segment === `。${descStr}`
+                     ));
       } else {
         // 使用原有邏輯
         if (!isJa) {
