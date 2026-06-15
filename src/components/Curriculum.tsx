@@ -4,6 +4,7 @@ import { BookOpen, Play, Volume2, ArrowRight, Sparkles } from 'lucide-react';
 import { curriculumData } from '../data/curriculumData';
 import { useI18n } from '../contexts/I18nContext';
 import { useAppState } from '../contexts/AppStateContext';
+import { getGoogleTtsLang, getTtsCode } from '../utils/languageMap';
 
 const Curriculum = () => {
   const { t, getLocalizedContent } = useI18n();
@@ -14,21 +15,22 @@ const Curriculum = () => {
   const units = curriculumData[targetLanguage] || [];
 
   const handleSpeak = (text, lang = targetLanguage) => {
-    const isJa = lang === 'ja';
-    const langCode = isJa ? 'ja' : 'en-US';
-    
-    const url = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=${langCode}&q=${encodeURIComponent(text)}`;
+    const googleLang = getGoogleTtsLang(lang);
+    const bcpLang = getTtsCode(lang);
+    const langPrefix = googleLang;
+
+    const url = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=${googleLang}&q=${encodeURIComponent(text)}`;
     const audio = new Audio(url);
-    
+
+
     audio.play().catch(() => {
       if ('speechSynthesis' in window) {
         window.speechSynthesis.cancel();
         const utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = isJa ? 'ja-JP' : 'en-US';
+        utterance.lang = bcpLang;
         const voices = window.speechSynthesis.getVoices();
-        const langPrefix = isJa ? 'ja' : 'en';
-        const naturalVoice = voices.find(v => 
-          v.lang.startsWith(langPrefix) && 
+        const naturalVoice = voices.find(v =>
+          v.lang.startsWith(langPrefix) &&
           (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Premium'))
         ) || voices.find(v => v.lang.startsWith(langPrefix));
         if (naturalVoice) utterance.voice = naturalVoice;

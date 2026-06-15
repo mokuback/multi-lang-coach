@@ -1204,7 +1204,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
                   
                   <div style={{ display: 'flex', gap: '8px', alignItems: 'flex-start', marginTop: '4px' }}>
                     <Lightbulb size={18} className="text-accent" style={{ marginTop: '2px' }} />
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>{t(msg.correction.explanation)}</p>
+                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>{msg.correction.explanation}</p>
                   </div>
                 </div>
               )}

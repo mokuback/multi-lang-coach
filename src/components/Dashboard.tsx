@@ -5,10 +5,11 @@ import { getScenariosByRole } from '../data/scenariosData';
 import { categoryData } from '../data/categoryData';
 import { useI18n } from '../contexts/I18nContext';
 import { useAppState } from '../contexts/AppStateContext';
+import { getLangName } from '../utils/languageMap';
 import Footer from './Footer';
 
 const Dashboard = () => {
-  const { t } = useI18n();
+  const { t, uiLang } = useI18n();
   const { state: { targetLanguage, userRole, userCategory, vocabulary, progress }, updateProgress } = useAppState();
   const navigate = useNavigate();
 
@@ -48,7 +49,7 @@ const Dashboard = () => {
       <header style={{ marginBottom: '40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
         <div>
           <h2 style={{ fontSize: '2rem', marginBottom: '8px' }}>{t('歡迎回來！')}</h2>
-          <p className="text-muted">{t('這是專為您')}（{t(roleLabel)}）{t('量身打造的每日')}{targetLanguage === 'en' ? t('英語') : t('日語')}{t('口語挑戰。')}</p>
+          <p className="text-muted">{t('這是專為您')}（{t(roleLabel)}）{t('量身打造的每日')}{getLangName(targetLanguage, uiLang)}{t('口語挑戰。')}</p>
         </div>
         <button 
           className="glass-button active" 
