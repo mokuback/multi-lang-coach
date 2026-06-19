@@ -1,28 +1,27 @@
 import { PromptContext } from './types';
+import { getLangName, getUiLangName, getPhoneticFormat, getPartOfSpeechFormat } from '../utils/languageMap';
 
 export function buildChatSystemPrompt(ctx: PromptContext): string {
   const version = 'v1.0.0';
-  const langName = ctx.targetLanguage === 'en' ? '英文' : '日文';
+  const langName = getLangName(ctx.targetLanguage, ctx.uiLang);
+  const uiLangName = getUiLangName(ctx.uiLang);
 
-  const uiLangNameMap: Record<string, string> = { 'zh-TW': '繁體中文', 'zh-CN': '簡體中文', 'en': 'English', 'ja': '日本語', 'ko': '한국어', 'es': 'Español', 'fr': 'Français' };
-  const uiLangName = uiLangNameMap[ctx.uiLang] || 'English';
-
-  // 明確指定回覆語言
-  const responseLangRule = ctx.uiLang === 'zh-CN'
-    ? '【非常重要】你的所有回覆（包括翻譯、解釋、引導、說明等）必須使用簡體中文。'
-    : ctx.uiLang === 'zh-TW'
-    ? '【重要】你的所有回覆必須使用繁體中文。'
-    : ctx.uiLang === 'en'
-    ? '【Important】All your responses (including translations, explanations, guidance, descriptions, etc.) must be in English.'
-    : ctx.uiLang === 'ja'
-    ? '【重要】あなたの全ての返信（翻訳、説明、ガイダンス、説明などを含む）は日本語でなければなりません。'
-    : ctx.uiLang === 'ko'
-    ? '【중요】당신의 모든 응답(번역, 설명, 안내, 설명 등 포함)은 한국어여야 합니다.'
-    : ctx.uiLang === 'es'
-    ? '【Importante】Todas tus respuestas (incluyendo traducciones, explicaciones, orientación, descripciones, etc.) deben estar en Español.'
-    : ctx.uiLang === 'fr'
-    ? '【Important】Toutes vos réponses (y compris les traductions, explications, orientations, descriptions, etc.) doivent être en français.'
-    : '【Important】All your responses must be in the language of the user interface.';
+  const responseLangRule =
+    ctx.uiLang === 'zh-CN'
+      ? '【非常重要】你的所有回覆（包括翻譯、解釋、引導、說明等）必須使用簡體中文。'
+      : ctx.uiLang === 'zh-TW'
+      ? '【重要】你的所有回覆必須使用繁體中文。'
+      : ctx.uiLang === 'en'
+      ? '【Important】All your responses (including translations, explanations, guidance, descriptions, etc.) must be in English.'
+      : ctx.uiLang === 'ja'
+      ? '【重要】あなたの全ての返信（翻訳、説明、ガイダンス、説明などを含む）は日本語でなければなりません。'
+      : ctx.uiLang === 'ko'
+      ? '【중요】당신의 모든 응답(번역, 설명, 안내, 설명 등 포함)은 한국어여야 합니다.'
+      : ctx.uiLang === 'es'
+      ? '【Importante】Todas tus respuestas (incluyendo traducciones, explicaciones, orientación, descripciones, etc.) deben estar en Español.'
+      : ctx.uiLang === 'fr'
+      ? '【Important】Toutes vos réponses (y compris les traductions, explications, orientations, descriptions, etc.) doivent être en français.'
+      : '【Important】All your responses must be in the language of the user interface.';
 
   const strictnessRule =
     ctx.correctionMode === 'strict'
@@ -40,11 +39,7 @@ export function buildChatSystemPrompt(ctx: PromptContext): string {
     lengthInstruction = "【長度限制】：可根據話題自然展開對話，長度不限。";
   }
 
-  const vocabFormatInstruction = ctx.targetLanguage === 'en' 
-    ? `"phonetic": "該單字的KK音標，若為長句可為空字串",
-        "partOfSpeech": "該單字的詞性簡寫(如 n., vi., adj.)，若非單一字彙則可為空字串"`
-    : `"phonetic": "該單字的平假名拼音，並在後方括號內標註重音數字(例如：きのう [0])。如果單字本身為純假名，請只保留重音數字(例如：[1])",
-        "partOfSpeech": "該單字的日文詞性簡寫(如 名, 動, 形, 副)，若非單一字彙則可為空字串"`;
+  const vocabFormatInstruction = `"phonetic": "${getPhoneticFormat(ctx.targetLanguage)}",\n        "partOfSpeech": "${getPartOfSpeechFormat(ctx.targetLanguage)}"`;
 
   let systemInstruction = "";
 
@@ -55,7 +50,7 @@ export function buildChatSystemPrompt(ctx: PromptContext): string {
       ${responseLangRule}
       目前的文法糾錯標準為：${strictnessRule}
 
-      你必須嚴格回傳 JSON 格式，不允許 Markdown 代碼塊標記 (例如 \`\`\`json)。
+      你必須嚴格回傳 JSON 格式，不允許 Markdown 程式碼區塊標記 (例如 \`\`\`json)。
       JSON 格式必須精確符合以下結構：
       {
         "content": "教練的鼓勵與下一個測試情境的中文引導 (例如：「很好！現在請用這個句型告訴我...」)",
@@ -79,7 +74,7 @@ export function buildChatSystemPrompt(ctx: PromptContext): string {
       ${responseLangRule}
       目前的文法糾錯標準為：${strictnessRule}
       
-      你必須嚴格回傳 JSON 格式，且「絕對不能」包含任何 Markdown 代碼塊標記 (例如 \`\`\`json) ，請直接給出純 JSON 物件。
+      你必須嚴格回傳 JSON 格式，且「絕對不能」包含任何 Markdown 程式碼區塊標記 (例如 \`\`\`json) ，請直接給出純 JSON 物件。
       JSON 格式必須精確符合以下結構（所有欄位名稱必須一致）：
       {
         "content": "你的真實對白回應（請扮演對話夥伴，用流利的${langName}回覆）。",

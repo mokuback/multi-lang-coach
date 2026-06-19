@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { LayoutDashboard, MessageSquare, BookOpen, Settings, BookMarked, FileText, Palette, GraduationCap } from 'lucide-react';
+import { LayoutDashboard, MessageSquare, BookOpen, Settings, BookMarked, FileText, Palette, GraduationCap, Menu, X } from 'lucide-react';
 import { categoryData } from '../data/categoryData';
 import { useI18n } from '../contexts/I18nContext';
-import { useAppState } from '../contexts/AppStateContext';
+import { useSettingsStore } from '../store/useSettingsStore';
 
 const Sidebar = () => {
   const { t } = useI18n();
-  const { uiTheme, setUiTheme, userRole, userLevel } = useAppState();
+  const uiTheme = useSettingsStore(s => s.uiTheme);
+  const setUiTheme = useSettingsStore(s => s.setUiTheme);
+  const userRole = useSettingsStore(s => s.userRole);
+  const userLevel = useSettingsStore(s => s.userLevel);
   const location = useLocation();
   const navigate = useNavigate();
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
+
+  // 當路由改變時，自動關閉手機版選單
+  useEffect(() => {
+    setIsMobileOpen(false);
+  }, [location.pathname]);
 
   // Determine active tab from URL path
   const getActiveTabFromPath = (path: string) => {
@@ -27,10 +36,10 @@ const Sidebar = () => {
     { id: 'curriculum', label: t('基礎訓練'), icon: GraduationCap, path: '/curriculum' },
     { id: 'dashboard', label: t('每日任務'), icon: LayoutDashboard, path: '/dashboard' },
     { id: 'chat', label: t('對話練習'), icon: MessageSquare, path: '/chat' },
-    { id: 'notebook', label: t('生詞筆記'), icon: BookOpen, path: '/notebook' },
-    { id: 'pattern-notebook', label: t('句型筆記'), icon: FileText, path: '/pattern-notebook' },
     { id: 'patterns', label: t('常用句型'), icon: BookMarked, path: '/patterns' },
-    { id: 'settings', label: t('設定與 API'), icon: Settings, path: '/settings' }
+    { id: 'notebook', label: t('生詞筆記'), icon: BookOpen, path: '/notebook', isPersonal: true },
+    { id: 'pattern-notebook', label: t('句型筆記'), icon: FileText, path: '/pattern-notebook', isPersonal: true },
+    { id: 'settings', label: t('設定與 API'), icon: Settings, path: '/settings', isSystem: true }
   ];
 
   const cycleTheme = () => {
@@ -40,15 +49,76 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="glass-panel sidebar-container" style={{ 
-      width: '260px', 
-      margin: '16px', 
-      display: 'flex', 
-      flexDirection: 'column',
-      padding: '24px 16px',
-      position: 'relative'
-    }}>
-      <div className="sidebar-header" style={{ marginBottom: '40px', padding: '0 10px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+    <>
+      {/* 手機版頂部導覽列 */}
+      <div className="mobile-topbar glass-panel">
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <div style={{
+            width: '32px', height: '32px', borderRadius: '8px',
+            background: 'linear-gradient(135deg, var(--accent-color), var(--magic-color, #d946ef))',
+            display: 'flex', alignItems: 'center', justifyContent: 'center'
+          }}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+              <line x1="12" y1="19" x2="12" y2="22"></line>
+            </svg>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <h1 style={{ fontSize: '1.2rem', fontWeight: '700', color: 'var(--text-primary)', margin: 0, lineHeight: '1.2' }}>
+              Multi-Lang
+            </h1>
+            <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: '600', letterSpacing: '0.5px' }}>
+              {t('大數據語音教練')}
+            </span>
+          </div>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <button 
+            onClick={cycleTheme}
+            title={t("切換介面風格")}
+            style={{ background: 'transparent', border: 'none', color: 'var(--text-primary)', cursor: 'pointer', padding: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+          >
+            <Palette size={20} />
+          </button>
+          <button 
+            onClick={() => setIsMobileOpen(!isMobileOpen)}
+            style={{ background: 'transparent', border: 'none', color: 'var(--text-primary)', cursor: 'pointer', padding: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.2s' }}
+          >
+            {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+      </div>
+
+      {/* 手機版半透明遮罩 */}
+      {isMobileOpen && (
+        <div 
+          className="sidebar-overlay" 
+          onClick={() => setIsMobileOpen(false)}
+        />
+      )}
+
+      {/* 側邊欄本體 */}
+      <aside className={`glass-panel sidebar-container ${isMobileOpen ? 'open' : ''}`} style={{ 
+        width: '260px', 
+        margin: '16px', 
+        display: 'flex', 
+        flexDirection: 'column',
+        padding: '24px 16px',
+        position: 'relative',
+        height: 'calc(100vh - 32px)', // 確保側邊欄不會超過螢幕高度
+        overflow: 'hidden', // 防止整個側邊欄產生外部捲動
+        flexShrink: 0
+      }}>
+        {/* 手機版專用關閉按鈕 */}
+        <button 
+          className="mobile-close-btn"
+          onClick={() => setIsMobileOpen(false)}
+        >
+          <X size={20} />
+        </button>
+
+        <div className="sidebar-header" style={{ marginBottom: '40px', padding: '0 10px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px' }}>
             <div style={{
@@ -78,6 +148,7 @@ const Sidebar = () => {
           </div>
         </div>
         <button 
+          className="desktop-theme-toggle"
           onClick={cycleTheme}
           title={t("切換介面風格")}
           style={{
@@ -105,27 +176,55 @@ const Sidebar = () => {
         </button>
       </div>
 
-      <nav className="sidebar-nav" style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '8px' }}>
-        {navItems.map(item => {
+      <nav className="sidebar-nav custom-scrollbar" style={{ 
+        flex: 1, 
+        display: 'flex', 
+        flexDirection: 'column', 
+        gap: '8px',
+        overflowY: 'auto', // 允許選單內容獨立捲動
+        paddingRight: '4px', // 避免捲軸擋住內容
+        marginBottom: '16px'
+      }}>
+        {navItems.map((item, index) => {
           const isActive = activeTab === item.id;
           const Icon = item.icon;
+          const isPersonal = item.isPersonal;
+          const isSystem = item.isSystem;
+          
           return (
-            <button
-              key={item.id}
-              onClick={() => navigate(item.path)}
-              className={`glass-button ${isActive ? 'active' : ''}`}
-              style={{
-                justifyContent: 'flex-start',
-                padding: '12px 16px',
-                border: isActive ? '1px solid var(--accent-color)' : '1px solid transparent',
-                borderRadius: '8px',
-                background: isActive ? 'rgba(0, 240, 255, 0.1)' : 'transparent',
-                color: isActive ? 'var(--accent-color)' : 'var(--text-secondary)'
-              }}
-            >
-              <Icon size={20} strokeWidth={isActive ? 2.5 : 2} />
-              <span style={{ fontWeight: isActive ? 600 : 500 }}>{item.label}</span>
-            </button>
+            <React.Fragment key={item.id}>
+              {(isPersonal && !navItems[index - 1]?.isPersonal) || (isSystem && !navItems[index - 1]?.isSystem) ? (
+                <div style={{ height: '1px', background: 'var(--glass-border)', margin: '8px 4px' }} />
+              ) : null}
+              <button
+                onClick={() => navigate(item.path)}
+                className={`glass-button ${isActive ? 'active' : ''}`}
+                style={{
+                  justifyContent: 'flex-start',
+                  padding: '12px 16px',
+                  border: isActive 
+                    ? (isPersonal ? '1px solid var(--magic-color, #d946ef)' : (isSystem ? '1px solid var(--text-muted)' : '1px solid var(--accent-color)')) 
+                    : '1px solid transparent',
+                  borderRadius: '8px',
+                  background: isActive 
+                    ? (isPersonal ? 'rgba(217, 70, 239, 0.1)' : (isSystem ? 'rgba(255, 255, 255, 0.05)' : 'rgba(0, 240, 255, 0.1)')) 
+                    : 'transparent',
+                  color: isActive 
+                    ? (isPersonal ? 'var(--magic-color, #d946ef)' : (isSystem ? 'var(--text-primary)' : 'var(--accent-color)')) 
+                    : (isPersonal ? 'var(--magic-color, #d946ef)' : (isSystem ? 'var(--text-muted)' : 'var(--text-secondary)')),
+                  opacity: (!isActive && isPersonal) ? 0.85 : 1
+                }}
+              >
+                <Icon 
+                  size={20} 
+                  strokeWidth={isActive ? 2.5 : 2} 
+                  style={{ 
+                    color: !isActive && isPersonal ? 'var(--magic-color, #d946ef)' : undefined 
+                  }} 
+                />
+                <span style={{ fontWeight: isActive ? 600 : 500 }}>{item.label}</span>
+              </button>
+            </React.Fragment>
           );
         })}
       </nav>
@@ -150,6 +249,7 @@ const Sidebar = () => {
         </div>
       </div>
     </aside>
+  </>
   );
 };
 

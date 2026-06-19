@@ -13,7 +13,7 @@ import AboutUs from './components/pages/AboutUs';
 import PrivacyPolicy from './components/pages/PrivacyPolicy';
 import ContactUs from './components/pages/ContactUs';
 import { I18nProvider, useI18n } from './contexts/I18nContext';
-import { AppStateProvider, useAppState } from './contexts/AppStateContext';
+import { useSettingsStore } from './store/useSettingsStore';
 import './App.css';
 import './index.css';
 
@@ -35,7 +35,7 @@ function RouteTracker() {
 /** Performs the initial redirect after mount (avoiding render-phase navigation conflicts) */
 function InitialRedirect() {
   const navigate = useNavigate();
-  const { state: { hasSeenWelcome } } = useAppState();
+  const hasSeenWelcome = useSettingsStore(s => s.hasSeenWelcome);
   const done = useRef(false);
 
   useEffect(() => {
@@ -57,7 +57,7 @@ function InitialRedirect() {
 function WelcomeModal() {
   const { t } = useI18n();
   const navigate = useNavigate();
-  const { setHasSeenWelcome } = useAppState();
+  const setHasSeenWelcome = useSettingsStore(s => s.setHasSeenWelcome);
 
   const handleDismiss = () => {
     setHasSeenWelcome(true);
@@ -96,7 +96,7 @@ function WelcomeModal() {
 }
 
 function AppLayout() {
-  const { state: { hasSeenWelcome } } = useAppState();
+  const hasSeenWelcome = useSettingsStore(s => s.hasSeenWelcome);
 
   return (
     <div className="app-container">
@@ -126,11 +126,11 @@ function AppRouter() {
   return (
     <BrowserRouter>
       <I18nProvider>
-        <AppStateProvider>
+        <>
           <RouteTracker />
           <InitialRedirect />
           <AppLayout />
-        </AppStateProvider>
+        </>
       </I18nProvider>
     </BrowserRouter>
   );

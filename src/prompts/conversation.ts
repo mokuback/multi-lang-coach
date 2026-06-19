@@ -1,11 +1,10 @@
 import { ConversationAnalysisContext } from './types';
+import { getLangName, getUiLangName } from '../utils/languageMap';
 
 export function buildConversationAnalysisPrompt(ctx: ConversationAnalysisContext): string {
   const version = 'v1.0.0';
-  const langName = ctx.targetLanguage === 'en' ? '英文' : '日文';
-
-  const uiLangNameMap: Record<string, string> = { 'zh-TW': '繁體中文', 'zh-CN': '簡體中文', 'en': 'English', 'ja': '日本語', 'ko': '한국어', 'es': 'Español', 'fr': 'Français' };
-  const uiLangName = uiLangNameMap[ctx.uiLang] || 'English';
+  const langName = getLangName(ctx.targetLanguage, ctx.uiLang);
+  const uiLangName = getUiLangName(ctx.uiLang);
 
   const responseLangRule = ctx.uiLang === 'zh-CN'
     ? '【非常重要】你的所有回覆必須使用簡體中文。'

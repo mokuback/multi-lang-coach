@@ -4,14 +4,7 @@ import { idbGet, idbSet } from '../utils/idbStorage';
 const STORE: import('../utils/idbStorage').IDBStoreName = 'vocabulary';
 const KEY = 'vocabulary';
 
-export interface VocabularyItem {
-  id: string;
-  term: string;
-  meaning: string;
-  example?: string;
-  phonetic?: string;
-  partOfSpeech?: string;
-}
+import { VocabularyItem } from '../types';
 
 export function useVocabulary() {
   const [vocabulary, setVocabulary] = useState<VocabularyItem[]>([]);

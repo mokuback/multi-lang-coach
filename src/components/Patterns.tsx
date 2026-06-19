@@ -3,14 +3,22 @@ import { useNavigate } from 'react-router-dom';
 import { BookMarked, Play, Info, Filter } from 'lucide-react';
 import { getScenarioPatterns } from '../data/scenarioPatterns/index.js';
 import { useI18n } from '../contexts/I18nContext';
-import { useAppState } from '../contexts/AppStateContext';
+import { useSettingsStore } from '../store/useSettingsStore';
+import { useSessionStore } from '../store/useSessionStore';
+import { useVocabulary } from '../hooks/useVocabulary';
+import { usePatterns } from '../hooks/usePatterns';
+import { useProgress } from '../hooks/useProgress';
 import { categoryData, getDefaultRole } from '../data/categoryData';
 import { getScenariosByRole } from '../data/scenariosData';
 import GlassSelect from './GlassSelect';
 
 const Patterns = () => {
   const { t, getLocalizedContent } = useI18n();
-  const { state: { targetLanguage, patternVersion, userCategory, userRole, uiTheme } } = useAppState();
+  const targetLanguage = useSettingsStore(s => s.targetLanguage);
+  const patternVersion = useSettingsStore(s => s.patternVersion);
+  const userCategory = useSettingsStore(s => s.userCategory);
+  const userRole = useSettingsStore(s => s.userRole);
+  const uiTheme = useSettingsStore(s => s.uiTheme);
   const navigate = useNavigate();
 
   const [allPatternsData, setAllPatternsData] = useState({});
@@ -29,7 +37,7 @@ const Patterns = () => {
     let isMounted = true;
     const loadPatterns = async () => {
       setIsLoading(true);
-      const data = await getScenarioPatterns(targetLanguage, patternVersion);
+      const data = await getScenarioPatterns(patternVersion);
       if (isMounted) {
         if (data) {
           setAllPatternsData(data);
@@ -70,10 +78,10 @@ const Patterns = () => {
           style={{ padding: '20px', cursor: 'pointer', display: 'flex', flexDirection: 'column' }}
           onClick={() => handleStartPatternDrill(item)}
         >
-          <h3 style={{ fontSize: '1.2rem', color: 'var(--accent-color)', marginBottom: '8px' }}>
-            {item.pattern}
+          <h3 style={{ fontSize: '1.2rem', color: 'var(--accent-color)', marginBottom: '8px', lineHeight: '1.4' }}>
+            {item.translations?.[targetLanguage] || item.pattern || ''}
           </h3>
-          <p style={{ color: 'var(--text-primary)', marginBottom: '8px', fontWeight: 500 }}>
+          <p style={{ color: 'var(--text-primary)', marginBottom: '8px', fontWeight: 500, fontSize: '1.05rem' }}>
             {getLocalizedContent(item.translations || { 'zh-TW': item.translation || '' })}
           </p>
           <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', flex: 1, marginTop: '8px', borderTop: '1px solid var(--glass-border)', paddingTop: '12px' }}>

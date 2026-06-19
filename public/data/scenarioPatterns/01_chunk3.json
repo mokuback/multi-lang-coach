@@ -1,0 +1,3863 @@
+{
+  "din-1": [
+    {
+      "id": "din-1-01-1",
+      "translations": {
+        "zh-TW": "能給我菜單嗎？",
+        "en": "May I see the menu?",
+        "ja": "メニューを見てもいいですか？",
+        "ko": "메뉴 봐도 되나요?",
+        "es": "Puedo ver el menu?",
+        "fr": "Puis-je voir le menu?",
+        "zh-CN": "能给我菜单吗？",
+        "de": "Kann ich die Speisekarte sehen?"
+      },
+      "explanations": {
+        "zh-TW": "點餐的標準開場用語",
+        "en": "Requesting to see the restaurant menu",
+        "ja": "餐厅メニュー閲覧の依頼",
+        "ko": "레스토랑 메뉴 열람 요청",
+        "es": "Solicitando ver el menu del restaurante",
+        "fr": "Demander a voir le menu du restaurant",
+        "zh-CN": "点餐的标准开场用语",
+        "de": "Aufforderung, die Speisekarte des Restaurants zu sehen"
+      }
+    },
+    {
+      "id": "din-1-01-2",
+      "translations": {
+        "zh-TW": "我想要點...",
+        "en": "I would like to order...",
+        "ja": "...を注文したいです",
+        "ko": "...을 주문하고 싶습니다",
+        "es": "Me gustaria ordenar...",
+        "fr": "Je voudrais commander...",
+        "zh-CN": "我想要点...",
+        "de": "Ich möchte bestellen..."
+      },
+      "explanations": {
+        "zh-TW": "開始點餐的用語",
+        "en": "Placing an order at a restaurant",
+        "ja": "レストランでの注文",
+        "ko": "레스토랑에서 주문",
+        "es": "Haciendo un pedido en el restaurante",
+        "fr": "Passer une commande au restaurant",
+        "zh-CN": "开始点餐的用语",
+        "de": "Eine Bestellung in einem Restaurant aufgeben"
+      }
+    },
+    {
+      "id": "din-1-01-3",
+      "translations": {
+        "zh-TW": "你有什麼推薦嗎？",
+        "en": "What do you recommend?",
+        "ja": "何をお勧めしますか？",
+        "ko": "뭐를 추천하시겠어요?",
+        "es": "Que recomienda?",
+        "fr": "Que recommandez-vous?",
+        "zh-CN": "你有什么推荐吗？",
+        "de": "Was empfehlen Sie?"
+      },
+      "explanations": {
+        "zh-TW": "請求推薦",
+        "en": "Asking the server for a recommendation",
+        "ja": "店員への推薦依頼",
+        "ko": "종업원에게 추천 요청",
+        "es": "Pidiendo una recomendacion al mesero",
+        "fr": "Demander une recommandation au serveur",
+        "zh-CN": "请求推荐",
+        "de": "Den Kellner um eine Empfehlung bitten"
+      }
+    },
+    {
+      "id": "din-1-01-4",
+      "translations": {
+        "zh-TW": "這道菜辣嗎？",
+        "en": "Is this dish spicy?",
+        "ja": "この料理は辛いですか？",
+        "ko": "이 요리가 매운데요?",
+        "es": "Este plato es picante?",
+        "fr": "Ce plat est-il epice?",
+        "zh-CN": "这道菜辣吗？",
+        "de": "Ist dieses Gericht scharf?"
+      },
+      "explanations": {
+        "zh-TW": "詢問口味",
+        "en": "Asking about the spice level of a dish",
+        "ja": "料理の辛さについての質問",
+        "ko": "요리의 매운 정도 질문",
+        "es": "Preguntando sobre el nivel de picante",
+        "fr": "Demander le niveau depice dun plat",
+        "zh-CN": "询问口味",
+        "de": "Fragen nach dem Schärfegrad eines Gerichts"
+      }
+    },
+    {
+      "id": "din-1-01-5",
+      "translations": {
+        "zh-TW": "這樣就好，謝謝。",
+        "en": "That is all, thank you.",
+        "ja": "以上です、ありがとうございます",
+        "ko": "여기까지입니다, 감사합니다",
+        "es": "Eso es todo, gracias",
+        "fr": "Cest tout, merci",
+        "zh-CN": "这样就好，谢谢。",
+        "de": "Das ist alles, danke."
+      },
+      "explanations": {
+        "zh-TW": "結束點餐的用語",
+        "en": "Indicating the order is complete",
+        "ja": "注文完了の表明",
+        "ko": "주문 완료 알림",
+        "es": "Indicando que el pedido esta completo",
+        "fr": "Indiquer que la commande est complete",
+        "zh-CN": "结束点餐的用语",
+        "de": "Anzeigen, dass die Bestellung abgeschlossen ist"
+      }
+    }
+  ],
+  "din-2": [
+    {
+      "id": "din-2-01-1",
+      "translations": {
+        "zh-TW": "今日特餐是什麼？",
+        "en": "What is the special today?",
+        "ja": "今日の specials は何ですか？",
+        "ko": "오늘 specialty 뭐예요?",
+        "es": "Cual es la especialidad hoy?",
+        "fr": "Quelle est la specialite du jour?",
+        "zh-CN": "今日特餐是什么？",
+        "de": "Was ist das Tagesgericht?"
+      },
+      "explanations": {
+        "zh-TW": "詢問特餐的標準用語",
+        "en": "Asking about the daily special",
+        "ja": "日替わり套餐の質問",
+        "ko": "일일 specialty 질문",
+        "es": "Preguntando sobre la especialidad del dia",
+        "fr": "Demander la specialite du jour",
+        "zh-CN": "询问特餐的标准用语",
+        "de": "Fragen nach dem Tagesgericht"
+      }
+    },
+    {
+      "id": "din-2-01-2",
+      "translations": {
+        "zh-TW": "有套餐嗎？",
+        "en": "Is there a set menu?",
+        "ja": "定食はありますか？",
+        "ko": "정식 있나요?",
+        "es": "Hay un menu del dia?",
+        "fr": "Y a-t-il un menu du jour?",
+        "zh-CN": "有套餐吗？",
+        "de": "Gibt es ein Menü?"
+      },
+      "explanations": {
+        "zh-TW": "詢問套餐選項",
+        "en": "Asking about fixed-price menu options",
+        "ja": "定食オプションの質問",
+        "ko": "정식 옵션 질문",
+        "es": "Preguntando sobre opciones de menu fijo",
+        "fr": "Demander les options du menu a prix fixe",
+        "zh-CN": "询问套餐选项",
+        "de": "Fragen nach Menüoptionen zum Festpreis"
+      }
+    },
+    {
+      "id": "din-2-01-3",
+      "translations": {
+        "zh-TW": "這道菜附什麼？",
+        "en": "What does it come with?",
+        "ja": "それには何が付いてきますか？",
+        "ko": "그거에 뭐가 딸려오나요?",
+        "es": "Con que viene?",
+        "fr": "Avec quoi cela vient-il?",
+        "zh-CN": "这道菜附什么？",
+        "de": "Was ist dabei?"
+      },
+      "explanations": {
+        "zh-TW": "詢問配菜內容",
+        "en": "Asking about side dishes or accompaniments",
+        "ja": "付け合わせについての質問",
+        "ko": "곁들임/사이드 질문",
+        "es": "Preguntando sobre acompanamientos",
+        "fr": "Demander les accompagnements",
+        "zh-CN": "询问配菜内容",
+        "de": "Fragen nach Beilagen oder Beilagen"
+      }
+    },
+    {
+      "id": "din-2-01-4",
+      "translations": {
+        "zh-TW": "我能把...換成...嗎？",
+        "en": "Can I substitute...?",
+        "ja": "...に替换できますか？",
+        "ko": "...으로 ...를 대체할 수 있나요?",
+        "es": "Puedo sustituir ... por ...?",
+        "fr": "Puis-je substituer ... par ...?",
+        "zh-CN": "我能把...换成...吗？",
+        "de": "Kann ich ... ersetzen?"
+      },
+      "explanations": {
+        "zh-TW": "請求替換",
+        "en": "Requesting a substitution in the meal",
+        "ja": "食事の代替を依頼",
+        "ko": "식사 대체 요청",
+        "es": "Solicitando una sustitucion en la comida",
+        "fr": "Demander une substitution dans le repas",
+        "zh-CN": "请求替换",
+        "de": "Einen Austausch in der Mahlzeit anfordern"
+      }
+    },
+    {
+      "id": "din-2-01-5",
+      "translations": {
+        "zh-TW": "聽起來不錯。",
+        "en": "That sounds good.",
+        "ja": "それは良さそうです",
+        "ko": "그거 좋아보이네요",
+        "es": "Eso suena bien",
+        "fr": "Ca a lair bon",
+        "zh-CN": "听起来不错。",
+        "de": "Das klingt gut."
+      },
+      "explanations": {
+        "zh-TW": "表示有興趣",
+        "en": "Expressing approval of a menu item",
+        "ja": "メニューへの同意表示",
+        "ko": "메뉴 항목에 대한 동의 표현",
+        "es": "Expresando aprobacion de un plat",
+        "fr": "Exprimer son approbation pour un plat",
+        "zh-CN": "表示有兴趣",
+        "de": "Zustimmung zu einem Menüpunkt ausdrücken"
+      }
+    }
+  ],
+  "din-3": [
+    {
+      "id": "din-3-01-1",
+      "translations": {
+        "zh-TW": "我有食物過敏。",
+        "en": "I have a food allergy.",
+        "ja": "食物アレルギーがあります",
+        "ko": "식품 알레르기가 있습니다",
+        "es": "Tengo alergia alimentaria",
+        "fr": "Jai une allergie alimentaire",
+        "zh-CN": "我有食物过敏。",
+        "de": "Ich habe eine Lebensmittelallergie."
+      },
+      "explanations": {
+        "zh-TW": "告知過敏的開場用語",
+        "en": "Disclosing a food allergy to restaurant staff",
+        "ja": "レストラン店員への食物アレルギー告白",
+        "ko": "레스토랑 직원에게 식품 알레르기 고지",
+        "es": "Divulgando una alergia alimentaria al personal",
+        "fr": "Divulguer une allergie alimentaire au personnel",
+        "zh-CN": "告知过敏的开场用语",
+        "de": "Offenlegung einer Lebensmittelallergie gegenüber dem Restaurantpersonal"
+      }
+    },
+    {
+      "id": "din-3-01-2",
+      "translations": {
+        "zh-TW": "我對...過敏。",
+        "en": "I am allergic to...",
+        "ja": "...にアレルギーがあります",
+        "ko": "...에 알레르기가 있습니다",
+        "es": "Soy alergico a...",
+        "fr": "Je suis allergique a...",
+        "zh-CN": "我对...过敏。",
+        "de": "Ich bin allergisch gegen..."
+      },
+      "explanations": {
+        "zh-TW": "說明過敏原",
+        "en": "Specifying a food allergen",
+        "ja": "特定アレルゲン特定",
+        "ko": "특정 알레르겐 특정",
+        "es": "Especificando un alérgeno alimentario",
+        "fr": "Specifier un allergene alimentaire",
+        "zh-CN": "说明过敏原",
+        "de": "Einen Lebensmittelallergen spezifizieren"
+      }
+    },
+    {
+      "id": "din-3-01-3",
+      "translations": {
+        "zh-TW": "這個含有...嗎？",
+        "en": "Does this contain...?",
+        "ja": "これには...が含まれていますか？",
+        "ko": "여기 ...이 들어있나요?",
+        "es": "Contiene esto...?",
+        "fr": "Ceci contient-il...?",
+        "zh-CN": "这个含有...吗？",
+        "de": "Enthält das ...?"
+      },
+      "explanations": {
+        "zh-TW": "詢問成分",
+        "en": "Asking if a dish contains a specific ingredient",
+        "ja": "特定材料の使用確認",
+        "ko": "특정 재료 사용 확인",
+        "es": "Preguntando si un plat contiene un ingrediente especifico",
+        "fr": "Demander si un plat contient un ingredient specifique",
+        "zh-CN": "询问成分",
+        "de": "Fragen, ob ein Gericht eine bestimmte Zutat enthält"
+      }
+    },
+    {
+      "id": "din-3-01-4",
+      "translations": {
+        "zh-TW": "能不要加...嗎？",
+        "en": "Can you prepare it without...?",
+        "ja": "... 없이作ってもらえますか？",
+        "ko": "... 없이 만들어 주시겠어요?",
+        "es": "Puede prepararlo sin...?",
+        "fr": "Pouvez-vous le preparer sans...?",
+        "zh-CN": "能不要加...吗？",
+        "de": "Können Sie es ohne ... zubereiten?"
+      },
+      "explanations": {
+        "zh-TW": "請求調整",
+        "en": "Requesting a dish to be prepared without an allergen",
+        "ja": "アレルゲン除去調理の依頼",
+        "ko": "알레르겐 제외 조리 요청",
+        "es": "Solicitando que se prepare un plato sin un alérgeno",
+        "fr": "Demander quun plat soit prepare sans un allergen",
+        "zh-CN": "请求调整",
+        "de": "Anfordern, dass ein Gericht ohne einen Allergen zubereitet wird"
+      }
+    },
+    {
+      "id": "din-3-01-5",
+      "translations": {
+        "zh-TW": "謝謝你的確認。",
+        "en": "Thank you for checking.",
+        "ja": "確認해주셔서ありがとうございます",
+        "ko": "확인해 주셔서 감사합니다",
+        "es": "Gracias por verificar",
+        "fr": "Merci davoir verifie",
+        "zh-CN": "谢谢你的确认。",
+        "de": "Danke fürs Nachsehen."
+      },
+      "explanations": {
+        "zh-TW": "表達感謝",
+        "en": "Expressing gratitude for restaurant staff checking ingredients",
+        "ja": "材料確認への感謝表示",
+        "ko": "재료 확인에 대한 감사 표현",
+        "es": "Expresando gratitud por verificar ingredientes",
+        "fr": "Exprimer sa gratitude pour la verification des ingredients",
+        "zh-CN": "表达感谢",
+        "de": "Dankbarkeit für das Überprüfen der Zutaten durch das Restaurantpersonal ausdrücken"
+      }
+    }
+  ],
+  "din-4": [
+    {
+      "id": "din-4-01-1",
+      "translations": {
+        "zh-TW": "我想要訂位。",
+        "en": "I would like to make a reservation.",
+        "ja": "予約をしたいのですが",
+        "ko": "예약을 하고 싶습니다",
+        "es": "Me gustaria hacer una reservacion",
+        "fr": "Je voudrais faire une reservation",
+        "zh-CN": "我想要订位。",
+        "de": "Ich möchte eine Reservierung vornehmen."
+      },
+      "explanations": {
+        "zh-TW": "開始預約的用語",
+        "en": "Requesting to make a restaurant reservation",
+        "ja": "餐厅预约の依頼",
+        "ko": "레스토랑 예약 요청",
+        "es": "Solicitando hacer una reservacion",
+        "fr": "Demander a faire une reservation au restaurant",
+        "zh-CN": "开始预约的用语",
+        "de": "Anfrage, eine Restaurantreservierung vorzunehmen"
+      }
+    },
+    {
+      "id": "din-4-01-2",
+      "translations": {
+        "zh-TW": "幾位？",
+        "en": "For how many people?",
+        "ja": "何人様でしょうか？",
+        "ko": "몇 분이신가요?",
+        "es": "Para cuantas personas?",
+        "fr": "Pour combien de personnes?",
+        "zh-CN": "几位？",
+        "de": "Für wie viele Personen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問人數",
+        "en": "Asking about the number of diners",
+        "ja": "人数確認の質問",
+        "ko": "인원 확인 질문",
+        "es": "Preguntando sobre el numero de comensales",
+        "fr": "Demander le nombre de convives",
+        "zh-CN": "询问人数",
+        "de": "Fragen nach der Anzahl der Gäste"
+      }
+    },
+    {
+      "id": "din-4-01-3",
+      "translations": {
+        "zh-TW": "有什麼時間可選？",
+        "en": "What time is available?",
+        "ja": "いつ空いていますか？",
+        "ko": "언제가 비어있나요?",
+        "es": "Que hora esta disponible?",
+        "fr": "Quelle heure est disponible?",
+        "zh-CN": "有什么时间可选？",
+        "de": "Wann ist etwas frei?"
+      },
+      "explanations": {
+        "zh-TW": "詢問可預約時間",
+        "en": "Asking about available reservation times",
+        "ja": "予約可能時間の質問",
+        "ko": "예약 가능 시간 질문",
+        "es": "Preguntando sobre horarios disponibles",
+        "fr": "Demander les horaires disponibles",
+        "zh-CN": "询问可预约时间",
+        "de": "Fragen nach verfügbaren Reservierungszeiten"
+      }
+    },
+    {
+      "id": "din-4-01-4",
+      "translations": {
+        "zh-TW": "能給我靠窗的位子嗎？",
+        "en": "Can I get a window seat?",
+        "ja": "窓際の席にお願いできますか？",
+        "ko": "창가 자리 가능하나요?",
+        "es": "Puedo tener un asiento junto a la ventana?",
+        "fr": "Puis-je avoir une place pres de la fenêtre?",
+        "zh-CN": "能给我靠窗的位子吗？",
+        "de": "Kann ich einen Fensterplatz bekommen?"
+      },
+      "explanations": {
+        "zh-TW": "提出座位偏好",
+        "en": "Requesting a table near the window",
+        "ja": "窓際席の依頼",
+        "ko": "창가 자리 요청",
+        "es": "Solicitando una mesa junto a la ventana",
+        "fr": "Demander une table pres de la fenetre",
+        "zh-CN": "提出座位偏好",
+        "de": "Anfordern eines Tisches am Fenster"
+      }
+    },
+    {
+      "id": "din-4-01-5",
+      "translations": {
+        "zh-TW": "我需要取消預約。",
+        "en": "I need to cancel my reservation.",
+        "ja": "予約をキャンセルする必要があります",
+        "ko": "예약을 취소해야 합니다",
+        "es": "Necesito cancelar mi reservacion",
+        "fr": "Je dois annuler ma reservation",
+        "zh-CN": "我需要取消预约。",
+        "de": "Ich muss meine Reservierung stornieren."
+      },
+      "explanations": {
+        "zh-TW": "取消預約的用語",
+        "en": "Stating intent to cancel a reservation",
+        "ja": "予約キャンセル意思表示",
+        "ko": "예약 취소 의향",
+        "es": "Afirmando la intencion de cancelar",
+        "fr": "Affirmer lintention dannuler",
+        "zh-CN": "取消预约的用语",
+        "de": "Absicht erklären, eine Reservierung zu stornieren"
+      }
+    }
+  ],
+  "din-5": [
+    {
+      "id": "din-5-01-1",
+      "translations": {
+        "zh-TW": "我需要和經理談。",
+        "en": "I need to speak with the manager.",
+        "ja": "マネージャーと話したいのですが",
+        "ko": "매니저와 이야기하고 싶습니다",
+        "es": "Necesito hablar con el gerente",
+        "fr": "Je dois parler au gestionnaire",
+        "zh-CN": "我需要和经理谈。",
+        "de": "Ich muss mit dem Manager sprechen."
+      },
+      "explanations": {
+        "zh-TW": "提出投訴的開場用語",
+        "en": "Requesting to speak with the restaurant manager",
+        "ja": "餐厅マネージャーとの面会を求める",
+        "ko": "레스토랑 관리자와的面회 요청",
+        "es": "Solicitando hablar con el gerente del restaurante",
+        "fr": "Demander a parler au directeur du restaurant",
+        "zh-CN": "提出投诉的开场用语",
+        "de": "Anfrage, mit dem Restaurantmanager zu sprechen"
+      }
+    },
+    {
+      "id": "din-5-01-2",
+      "translations": {
+        "zh-TW": "服務令人不滿意。",
+        "en": "The service has been unsatisfactory.",
+        "ja": "サービスに満足できませんでした",
+        "ko": "서비스에 불만족했습니다",
+        "es": "El servicio ha sido insatisfactorio",
+        "fr": "Le service a ete insatisfaisant",
+        "zh-CN": "服务令人不满意。",
+        "de": "Der Service war unzufriedenstellend."
+      },
+      "explanations": {
+        "zh-TW": "說明問題",
+        "en": "Expressing dissatisfaction with restaurant service",
+        "ja": "餐厅サービスへの不满表明",
+        "ko": "레스토랑 서비스 불만 표현",
+        "es": "Expresando insatisfaccion con el servicio",
+        "fr": "Exprimer linsatisfaction avec le service",
+        "zh-CN": "说明问题",
+        "de": "Unzufriedenheit mit dem Restaurantservice ausdrücken"
+      }
+    },
+    {
+      "id": "din-5-01-3",
+      "translations": {
+        "zh-TW": "我們已經等了...",
+        "en": "We have been waiting for...",
+        "ja": "...待っています",
+        "ko": "...을 기다리고 있었습니다",
+        "es": "Hemos estado esperando por...",
+        "fr": "Nous attendons depuis...",
+        "zh-CN": "我们已经等了...",
+        "de": "Wir haben seit ... gewartet."
+      },
+      "explanations": {
+        "zh-TW": "說明等待時間",
+        "en": "Complaining about long wait times",
+        "ja": "長時間待機への抱怨",
+        "ko": "오래 기다림에 대한 불만",
+        "es": "Quejandose del tiempo de espera",
+        "fr": "Se plaindre du temps dattente",
+        "zh-CN": "说明等待时间",
+        "de": "Sich über lange Wartezeiten beschweren"
+      }
+    },
+    {
+      "id": "din-5-01-4",
+      "translations": {
+        "zh-TW": "這不是我點的。",
+        "en": "This is not what I ordered.",
+        "ja": "注文したものと違います",
+        "ko": "주문한 것과 다릅니다",
+        "es": "Esto no es lo que ordene",
+        "fr": "Ce nest pas ce que jai commande",
+        "zh-CN": "这不是我点的。",
+        "de": "Das ist nicht das, was ich bestellt habe."
+      },
+      "explanations": {
+        "zh-TW": "指出錯誤",
+        "en": "Complaining about an incorrect order",
+        "ja": "誤った注文への抱怨",
+        "ko": "잘못된 주문에 대한 불만",
+        "es": "Quejandose de una orden incorrecta",
+        "fr": "Se plaindre dune commande incorrecte",
+        "zh-CN": "指出错误",
+        "de": "Sich über eine falsche Bestellung beschweren"
+      }
+    },
+    {
+      "id": "din-5-01-5",
+      "translations": {
+        "zh-TW": "你們如何解決這個問題？",
+        "en": "How will you resolve this?",
+        "ja": "どのように解決していただけますか？",
+        "ko": "어떻게 해결해 주시겠어요?",
+        "es": "Como resolvera esto?",
+        "fr": "Comment allez-vous resoudre cela?",
+        "zh-CN": "你们如何解决这个问题？",
+        "de": "Wie werden Sie das lösen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問解決方案",
+        "en": "Asking about compensation or resolution",
+        "ja": "解決方法の質問",
+        "ko": "해결 방법 질문",
+        "es": "Preguntando sobre resolucion o compensacion",
+        "fr": "Demander la resolution ou la compensation",
+        "zh-CN": "询问解决方案",
+        "de": "Fragen nach Entschädigung oder Lösung"
+      }
+    }
+  ],
+  "din-6": [
+    {
+      "id": "din-6-01-1",
+      "translations": {
+        "zh-TW": "氛圍是...",
+        "en": "The ambiance is...",
+        "ja": "雰囲囈は...",
+        "ko": "분위기가...",
+        "es": "El ambiente es...",
+        "fr": "Latmosphere est...",
+        "zh-CN": "氛围是...",
+        "de": "Die Atmosphäre ist..."
+      },
+      "explanations": {
+        "zh-TW": "評價用餐環境的用語",
+        "en": "Commenting on the restaurant ambiance",
+        "ja": "餐厅雰囲圍の感想",
+        "ko": "레스토랑 분위기 감상",
+        "es": "Comentando el ambiente del restaurante",
+        "fr": "Commenter latmosphere du restaurant",
+        "zh-CN": "评价用餐环境的用语",
+        "de": "Kommentar zur Atmosphäre des Restaurants"
+      }
+    },
+    {
+      "id": "din-6-01-2",
+      "translations": {
+        "zh-TW": "擺盤很漂亮。",
+        "en": "The presentation was beautiful.",
+        "ja": "盛り付けが美しかったです",
+        "ko": "플레이팅이 아름다웠습니다",
+        "es": "La presentacion fue hermosa",
+        "fr": "La presentation etait magnifique",
+        "zh-CN": "摆盘很漂亮。",
+        "de": "Die Präsentation war wunderschön."
+      },
+      "explanations": {
+        "zh-TW": "評價外觀",
+        "en": "Complimenting the plating of a dish",
+        "ja": "料理盛り付けへの稱賛",
+        "ko": "요리 플레이팅 찬사",
+        "es": "Elogiando la presentacion de un plato",
+        "fr": "Complimenter la presentation dun plat",
+        "zh-CN": "评价外观",
+        "de": "Das Anrichten eines Gerichts loben"
+      }
+    },
+    {
+      "id": "din-6-01-3",
+      "translations": {
+        "zh-TW": "口味...",
+        "en": "The flavors were...",
+        "ja": "味は...",
+        "ko": "맛이...",
+        "es": "Los sabores fueron...",
+        "fr": "Les saveurs etaient...",
+        "zh-CN": "口味...",
+        "de": "Die Aromen waren..."
+      },
+      "explanations": {
+        "zh-TW": "評價味道",
+        "en": "Describing the taste of food",
+        "ja": "食事の味を描述",
+        "ko": "음식 맛 기술",
+        "es": "Describiendo el sabor de la comida",
+        "fr": "Decrire la saveur de la nourriture",
+        "zh-CN": "评价味道",
+        "de": "Den Geschmack von Essen beschreiben"
+      }
+    },
+    {
+      "id": "din-6-01-4",
+      "translations": {
+        "zh-TW": "我會給它...顆星。",
+        "en": "I would give it... stars.",
+        "ja": "...星を付けます",
+        "ko": "...星을 드리겠습니다",
+        "es": "Le dare... estrellas",
+        "fr": "Je lui donnerais... etoiles",
+        "zh-CN": "我会给它...颗星。",
+        "de": "Ich würde ihm ... Sterne geben."
+      },
+      "explanations": {
+        "zh-TW": "給出評分",
+        "en": "Providing a star rating for a restaurant",
+        "ja": "餐厅への星評価",
+        "ko": "레스토랑 별점 평가",
+        "es": "Dando una calificacion de estrellas",
+        "fr": "Donner une note en etoiles",
+        "zh-CN": "给出评分",
+        "de": "Eine Sternebewertung für ein Restaurant abgeben"
+      }
+    },
+    {
+      "id": "din-6-01-5",
+      "translations": {
+        "zh-TW": "我絕對會推薦。",
+        "en": "I would definitely recommend.",
+        "ja": "是非をお勧めします",
+        "ko": "꼭 추천하겠습니다",
+        "es": "Definitivamente lo recomendaria",
+        "fr": "Je le recommanderais certainement",
+        "zh-CN": "我绝对会推荐。",
+        "de": "Ich würde definitiv empfehlen."
+      },
+      "explanations": {
+        "zh-TW": "總結推薦",
+        "en": "Stating intent to recommend the restaurant",
+        "ja": "餐厅推薦の意思表示",
+        "ko": "레스토랑 추천 의향",
+        "es": "Afirmando la intencion de recomendar",
+        "fr": "Affirmer lintention de recommander",
+        "zh-CN": "总结推荐",
+        "de": "Absicht erklären, das Restaurant zu empfehlen"
+      }
+    }
+  ],
+  "pet-1": [
+    {
+      "id": "pet-1-01-1",
+      "translations": {
+        "zh-TW": "這是我的寵物...",
+        "en": "This is my pet...",
+        "ja": "これが私のペットです...",
+        "ko": "이것은 제 반려동물입니다...",
+        "es": "Este es mi mascota...",
+        "fr": "Ceci est mon animal de compagnie...",
+        "zh-CN": "这是我的宠物...",
+        "de": "Das ist mein Haustier..."
+      },
+      "explanations": {
+        "zh-TW": "介紹寵物的開場用語",
+        "en": "Introducing one's pet",
+        "ja": "ペットの紹介",
+        "ko": "반려동물 소개",
+        "es": "Presentando a su mascota",
+        "fr": "Presenter son animal de compagnie",
+        "zh-CN": "介绍宠物的开场用语",
+        "de": "Vorstellung des eigenen Haustiers"
+      }
+    },
+    {
+      "id": "pet-1-01-2",
+      "translations": {
+        "zh-TW": "他/她是...",
+        "en": "He/She is a...",
+        "ja": "彼/彼女は...です",
+        "ko": "그/그녀는...입니다",
+        "es": "El/La es un...",
+        "fr": "Il/Elle est un...",
+        "zh-CN": "他/她是...",
+        "de": "Er/Sie ist ein/eine..."
+      },
+      "explanations": {
+        "zh-TW": "說明品種",
+        "en": "Describing the type or breed of a pet",
+        "ja": "ペットの種類の説明",
+        "ko": "반려동물 종류 설명",
+        "es": "Describiendo el tipo o raza de la mascota",
+        "fr": "Decrire le type ou la race de lanimal",
+        "zh-CN": "说明品种",
+        "de": "Beschreibung der Art oder Rasse eines Haustiers"
+      }
+    },
+    {
+      "id": "pet-1-01-3",
+      "translations": {
+        "zh-TW": "他/她...歲了。",
+        "en": "He/She is... years old.",
+        "ja": "彼/彼女は...歳です",
+        "ko": "그/그녀는...살입니다",
+        "es": "El/La tiene...anos",
+        "fr": "Il/Elle a...ans",
+        "zh-CN": "他/她...岁了。",
+        "de": "Er/Sie ist ... Jahre alt."
+      },
+      "explanations": {
+        "zh-TW": "說明年齡",
+        "en": "Stating the age of a pet",
+        "ja": "ペットの年齢を述べる",
+        "ko": "반려동물 나이 알림",
+        "es": "Indicando la edad de la mascota",
+        "fr": "Indiquer lage de lanimal",
+        "zh-CN": "说明年龄",
+        "de": "Das Alter eines Haustiers angeben"
+      }
+    },
+    {
+      "id": "pet-1-01-4",
+      "translations": {
+        "zh-TW": "他/她的個性是...",
+        "en": "His/Her personality is...",
+        "ja": "彼/彼女の性格は...です",
+        "ko": "그/그녀 성격은...입니다",
+        "es": "Su personalidad es...",
+        "fr": "Sa personnalite est...",
+        "zh-CN": "他/她的个性是...",
+        "de": "Sein/Ihr Charakter ist..."
+      },
+      "explanations": {
+        "zh-TW": "描述性格",
+        "en": "Describing a pet's personality",
+        "ja": "ペットの性格を描述",
+        "ko": "반려동물 성격 설명",
+        "es": "Describiendo la personalidad de la mascota",
+        "fr": "Decrire la personnalite de lanimal",
+        "zh-CN": "描述性格",
+        "de": "Den Charakter eines Haustiers beschreiben"
+      }
+    },
+    {
+      "id": "pet-1-01-5",
+      "translations": {
+        "zh-TW": "你想摸摸他/她嗎？",
+        "en": "Would you like to pet him/her?",
+        "ja": "撫でてみますか？",
+        "ko": "쓰다듬어 볼래요?",
+        "es": "Te gustaria acariciarlo/la?",
+        "fr": "Voulez-vous le/la caresser?",
+        "zh-CN": "你想摸摸他/她吗？",
+        "de": "Möchten Sie ihn/sie streicheln?"
+      },
+      "explanations": {
+        "zh-TW": "邀請互動",
+        "en": "Offering someone to pet an animal",
+        "ja": "動物撫での誘い",
+        "ko": "동물 쓰다듬기 권유",
+        "es": "Ofreciendo acariciar a un animal",
+        "fr": "Offrir de caresser un animal",
+        "zh-CN": "邀请交互",
+        "de": "Jemandem anbieten, ein Tier zu streicheln"
+      }
+    }
+  ],
+  "pet-2": [
+    {
+      "id": "pet-2-01-1",
+      "translations": {
+        "zh-TW": "我需要...的食物。",
+        "en": "I need food for...",
+        "ja": "...用のフードが必要です",
+        "ko": "...용 사료가 필요합니다",
+        "es": "Necesito comida para...",
+        "fr": "Jai besoin de nourriture pour...",
+        "zh-CN": "我需要...的食物。",
+        "de": "Ich brauche Futter für..."
+      },
+      "explanations": {
+        "zh-TW": "開始選購寵物食品的用語",
+        "en": "Stating need for pet food",
+        "ja": "ペットフードの必要性を述べる",
+        "ko": "반려동물 사료 필요성 알림",
+        "es": "Afirmando la necesidad de comida para mascotas",
+        "fr": "Affirmer le besoin de nourriture pour animaux",
+        "zh-CN": "开始选购宠物食品的用语",
+        "de": "Bedarf an Haustierfutter angeben"
+      }
+    },
+    {
+      "id": "pet-2-01-2",
+      "translations": {
+        "zh-TW": "你推薦什麼品牌？",
+        "en": "What brand do you recommend?",
+        "ja": "どのブランドをお勧めしますか？",
+        "ko": "어떤 브랜드를 추천하시겠어요?",
+        "es": "Que marca recomienda?",
+        "fr": "Quelle marque recommandez-vous?",
+        "zh-CN": "你推荐什么品牌？",
+        "de": "Welche Marke empfehlen Sie?"
+      },
+      "explanations": {
+        "zh-TW": "請求推薦",
+        "en": "Asking for a pet food brand recommendation",
+        "ja": "ペットフードブランドの推薦依頼",
+        "ko": "반려동물 사료 브랜드 추천 요청",
+        "es": "Pidiendo recomendacion de marca de comida",
+        "fr": "Demander une recommandation de marque",
+        "zh-CN": "请求推荐",
+        "de": "Um eine Empfehlung für eine Haustierfuttermarke bitten"
+      }
+    },
+    {
+      "id": "pet-2-01-3",
+      "translations": {
+        "zh-TW": "這個適合...嗎？",
+        "en": "Is this suitable for...",
+        "ja": "...に適していますか？",
+        "ko": "...에 적합한가요?",
+        "es": "Es suitable para...?",
+        "fr": "Est-ce adapte pour...?",
+        "zh-CN": "这个适合...吗？",
+        "de": "Ist das geeignet für..."
+      },
+      "explanations": {
+        "zh-TW": "詢問適用性",
+        "en": "Asking if a product is appropriate for a specific pet",
+        "ja": "製品適合性の質問",
+        "ko": "제품 적합성 질문",
+        "es": "Preguntando si un producto es apropiado",
+        "fr": "Demander si un produit est adapte",
+        "zh-CN": "询问适用性",
+        "de": "Fragen, ob ein Produkt für ein bestimmtes Haustier geeignet ist"
+      }
+    },
+    {
+      "id": "pet-2-01-4",
+      "translations": {
+        "zh-TW": "營養成分是什麼？",
+        "en": "What is the nutritional content?",
+        "ja": "栄養内容はどのようなものですか？",
+        "ko": "영양 함량은 어떻게 되나요?",
+        "es": "Cual es el contenido nutricional?",
+        "fr": "Quelle est la composition nutritionnelle?",
+        "zh-CN": "营养成分是什么？",
+        "de": "Was ist der Nährwert?"
+      },
+      "explanations": {
+        "zh-TW": "詢問營養資訊",
+        "en": "Asking about the nutritional information of pet food",
+        "ja": "ペットフード栄養情報の質問",
+        "ko": "반려동물 사료 영양 정보 질문",
+        "es": "Preguntando sobre la informacion nutricional",
+        "fr": "Demander les informations nutritionnelles",
+        "zh-CN": "询问营养资讯",
+        "de": "Fragen nach den Nährwertinformationen von Haustierfutter"
+      }
+    },
+    {
+      "id": "pet-2-01-5",
+      "translations": {
+        "zh-TW": "有試吃包嗎？",
+        "en": "Do you have any samples?",
+        "ja": "サンプルはありますか？",
+        "ko": "샘플 있나요?",
+        "es": "Tiene muestras?",
+        "fr": "Avez-vous des echantillons?",
+        "zh-CN": "有试吃包吗？",
+        "de": "Haben Sie Proben?"
+      },
+      "explanations": {
+        "zh-TW": "詢問試用品",
+        "en": "Requesting pet food samples",
+        "ja": "ペットフードサンプル依頼",
+        "ko": "반려동물 사료 샘플 요청",
+        "es": "Solicitando muestras de comida",
+        "fr": "Demander des echantillons de nourriture",
+        "zh-CN": "询问试用品",
+        "de": "Haustierfutterproben anfordern"
+      }
+    }
+  ],
+  "pet-3": [
+    {
+      "id": "pet-3-01-1",
+      "translations": {
+        "zh-TW": "我需要看獸醫。",
+        "en": "I need to see the vet.",
+        "ja": "獣医に診てもらいたいです",
+        "ko": "수의사에게 보여주고 싶습니다",
+        "es": "Necesito ver al veterinario",
+        "fr": "Je dois voir le veterinaire",
+        "zh-CN": "我需要看兽医。",
+        "de": "Ich muss zum Tierarzt."
+      },
+      "explanations": {
+        "zh-TW": "開始就診的用語",
+        "en": "Stating need to see a veterinarian",
+        "ja": "兽医就诊の必要性を述べる",
+        "ko": "수의사 진찰 필요성 알림",
+        "es": "Afirmando la necesidad de ver un veterinario",
+        "fr": "Affirmer la necessite de voir un veterinaire",
+        "zh-CN": "开始就诊的用语",
+        "de": "Bedarf anzeigen, einen Tierarzt aufzusuchen"
+      }
+    },
+    {
+      "id": "pet-3-01-2",
+      "translations": {
+        "zh-TW": "我的寵物一直在...",
+        "en": "My pet has been...",
+        "ja": "私のペットは...",
+        "ko": "제 반려동물은...",
+        "es": "Mi mascota ha estado...",
+        "fr": "Mon animal de compagnie a ete...",
+        "zh-CN": "我的宠物一直在...",
+        "de": "Mein Haustier ist..."
+      },
+      "explanations": {
+        "zh-TW": "描述症狀",
+        "en": "Describing a pet's symptoms",
+        "ja": "宠物の症状を描述",
+        "ko": "반려동물 증상 설명",
+        "es": "Describiendo los sintomas de la mascota",
+        "fr": "Decrire les symptomes de lanimal",
+        "zh-CN": "描述症状",
+        "de": "Die Symptome eines Haustiers beschreiben"
+      }
+    },
+    {
+      "id": "pet-3-01-3",
+      "translations": {
+        "zh-TW": "大約在...開始。",
+        "en": "It started about...",
+        "ja": "約...から始まりました",
+        "ko": "약...때부터 시작됐습니다",
+        "es": "Comenz hace...",
+        "fr": "Cela a commence il y a...",
+        "zh-CN": "大约在...开始。",
+        "de": "Es begann vor etwa..."
+      },
+      "explanations": {
+        "zh-TW": "說明時間",
+        "en": "Stating when symptoms began",
+        "ja": "症状開始時期の述明",
+        "ko": "증상 시작 시기 알림",
+        "es": "Indicando cuando comenzaron los sintomas",
+        "fr": "Indiquer quand les symptomes ont commence",
+        "zh-CN": "说明时间",
+        "de": "Angeben, wann die Symptome begannen"
+      }
+    },
+    {
+      "id": "pet-3-01-4",
+      "translations": {
+        "zh-TW": "他/她一直在吃...",
+        "en": "He/She has been eating...",
+        "ja": "彼/彼女は...食べていました",
+        "ko": "그/그녀는...을 먹고 있었습니다",
+        "es": "El/La ha estado comiendo...",
+        "fr": "Il/Elle a mange...",
+        "zh-CN": "他/她一直在吃...",
+        "de": "Er/Sie hat ... gegessen."
+      },
+      "explanations": {
+        "zh-TW": "說明食慾",
+        "en": "Reporting what a pet has been eating",
+        "ja": "最近の食事内容を報告",
+        "ko": "최근 식사 내용 보고",
+        "es": "Reportando lo que ha comido la mascota",
+        "fr": "Signaler ce que lanimal a mange",
+        "zh-CN": "说明食欲",
+        "de": "Berichten, was ein Haustier gefressen hat"
+      }
+    },
+    {
+      "id": "pet-3-01-5",
+      "translations": {
+        "zh-TW": "這是緊急情況嗎？",
+        "en": "Is this an emergency?",
+        "ja": "これは緊急ですか？",
+        "ko": "이게 응급인가요?",
+        "es": "Es una emergencia?",
+        "fr": "Est-ce une urgence?",
+        "zh-CN": "这是紧急情况吗？",
+        "de": "Ist das ein Notfall?"
+      },
+      "explanations": {
+        "zh-TW": "詢問嚴重程度",
+        "en": "Asking if the situation requires emergency care",
+        "ja": "応急治療の要否質問",
+        "ko": "응급 치료 필요 여부 질문",
+        "es": "Preguntando si la situacion requiere atencion de emergencia",
+        "fr": "Demander si la situation necessite des soins durgence",
+        "zh-CN": "询问严重程度",
+        "de": "Fragen, ob die Situation eine Notfallversorgung erfordert"
+      }
+    }
+  ],
+  "pet-4": [
+    {
+      "id": "pet-4-01-1",
+      "translations": {
+        "zh-TW": "我需要訓練寵物的幫助。",
+        "en": "I need help training my pet.",
+        "ja": "ペットのお的训练に困っています",
+        "ko": "반려동물 훈련 도와주세요",
+        "es": "Necesito ayuda entrenando a mi mascota",
+        "fr": "Jai besoin daide pour dresser mon animal",
+        "zh-CN": "我需要训练宠物的帮助。",
+        "de": "Ich brauche Hilfe bei der Erziehung meines Haustiers."
+      },
+      "explanations": {
+        "zh-TW": "開始諮詢的用語",
+        "en": "Requesting help with pet training",
+        "ja": "ペットトレーニングの支援依頼",
+        "ko": "반려동물 훈련 지원 요청",
+        "es": "Solicitando ayuda con el entrenamiento",
+        "fr": "Demander de laide pour le dressage",
+        "zh-CN": "开始咨询的用语",
+        "de": "Hilfe bei der Haustiererziehung anfordern"
+      }
+    },
+    {
+      "id": "pet-4-01-2",
+      "translations": {
+        "zh-TW": "他/她一直...",
+        "en": "He/She keeps...",
+        "ja": "彼/彼女はいつも...",
+        "ko": "그/그녀가 계속...",
+        "es": "El/La sigue...",
+        "fr": "Il/Elle ne cesse de...",
+        "zh-CN": "他/她一直...",
+        "de": "Er/Sie macht immer wieder..."
+      },
+      "explanations": {
+        "zh-TW": "描述問題行為",
+        "en": "Describing a recurring pet behavior problem",
+        "ja": "繰り返しペット行動問題の描述",
+        "ko": "반복 반려동물 행동 문제 설명",
+        "es": "Describiendo un problema de conducta recurrente",
+        "fr": "Decrire un probleme de comportement recurrent",
+        "zh-CN": "描述问题行为",
+        "de": "Ein wiederkehrendes Verhaltensproblem eines Haustiers beschreiben"
+      }
+    },
+    {
+      "id": "pet-4-01-3",
+      "translations": {
+        "zh-TW": "什麼訓練方法有效？",
+        "en": "What training methods work?",
+        "ja": "どのような訓練方法が效きますか？",
+        "ko": "어떤 훈련 방법이 효과적인가요?",
+        "es": "Que metodos de entrenamiento funcionan?",
+        "fr": "Quelles methodes de dressage fonctionnent?",
+        "zh-CN": "什么训练方法有效？",
+        "de": "Welche Trainingsmethoden funktionieren?"
+      },
+      "explanations": {
+        "zh-TW": "詢問方法",
+        "en": "Asking about effective training methods",
+        "ja": "効果的な訓練方法について質問",
+        "ko": "효과적인 훈련 방법 질문",
+        "es": "Preguntando sobre metodos de entrenamiento efectivos",
+        "fr": "Demander les methodes de dressage efficaces",
+        "zh-CN": "询问方法",
+        "de": "Fragen nach effektiven Trainingsmethoden"
+      }
+    },
+    {
+      "id": "pet-4-01-4",
+      "translations": {
+        "zh-TW": "訓練需要多久？",
+        "en": "How long does training take?",
+        "ja": "訓練にはどのくらい時間がかかりますか？",
+        "ko": "훈련에 시간이 얼마나 걸리나요?",
+        "es": "Cuanto dura el entrenamiento?",
+        "fr": "Combien de temps dure le dressage?",
+        "zh-CN": "训练需要多久？",
+        "de": "Wie lange dauert das Training?"
+      },
+      "explanations": {
+        "zh-TW": "詢問時間",
+        "en": "Asking about the duration of pet training",
+        "ja": "訓練期間の質問",
+        "ko": "훈련 기간 질문",
+        "es": "Preguntando sobre la duracion del entrenamiento",
+        "fr": "Demander la duree du dressage",
+        "zh-CN": "询问时间",
+        "de": "Fragen nach der Dauer der Haustiererziehung"
+      }
+    },
+    {
+      "id": "pet-4-01-5",
+      "translations": {
+        "zh-TW": "你能推薦訓練師嗎？",
+        "en": "Can you recommend a trainer?",
+        "ja": "訓練士を紹介していただけますか？",
+        "ko": "훈련사를 추천해 주시겠어요?",
+        "es": "Puede recomendar un entrenador?",
+        "fr": "Pouvez-vous recommander un dresseur?",
+        "zh-CN": "你能推荐训练师吗？",
+        "de": "Können Sie einen Trainer empfehlen?"
+      },
+      "explanations": {
+        "zh-TW": "請求推薦",
+        "en": "Requesting a referral to a pet trainer",
+        "ja": "ペット訓練士の推薦依頼",
+        "ko": "반려동물 훈련사 추천 요청",
+        "es": "Solicitando una referencia a un entrenador",
+        "fr": "Demander une recommandation de dresseur",
+        "zh-CN": "请求推荐",
+        "de": "Um eine Überweisung an einen Haustiertrainer bitten"
+      }
+    }
+  ],
+  "pet-5": [
+    {
+      "id": "pet-5-01-1",
+      "translations": {
+        "zh-TW": "我要帶寵物移民國外。",
+        "en": "I am moving abroad with my pet.",
+        "ja": "ペットを連れて海外に移住します",
+        "ko": "반려동물을 데리고 해외로 이민갑니다",
+        "es": "Me mudo al extranjero con mi mascota",
+        "fr": "Je demenage a letranger avec mon animal",
+        "zh-CN": "我要带宠物移民国外。",
+        "de": "Ich ziehe mit meinem Haustier ins Ausland."
+      },
+      "explanations": {
+        "zh-TW": "開始諮詢的用語",
+        "en": "Stating intent to relocate with a pet",
+        "ja": "ペット連れ海外移転の意思表示",
+        "ko": "반려동물 동반 해외 이전 의향",
+        "es": "Afirmando la intencion de mudarse con la mascota",
+        "fr": "Affirmer lintention de demenager avec son animal",
+        "zh-CN": "开始咨询的用语",
+        "de": "Absicht erklären, mit einem Haustier umzuziehen"
+      }
+    },
+    {
+      "id": "pet-5-01-2",
+      "translations": {
+        "zh-TW": "我需要哪些文件？",
+        "en": "What documents do I need?",
+        "ja": "必要な書類は何ですか？",
+        "ko": "필요한 서류는 뭐가 있나요?",
+        "es": "Que documentos necesito?",
+        "fr": "De quels documents ai-je besoin?",
+        "zh-CN": "我需要哪些文档？",
+        "de": "Welche Dokumente brauche ich?"
+      },
+      "explanations": {
+        "zh-TW": "詢問所需文件",
+        "en": "Asking about required paperwork for pet travel",
+        "ja": "ペット旅行の必要書類質問",
+        "ko": "반려동물 여행 필요 서류 질문",
+        "es": "Preguntando sobre los papeles requeridos",
+        "fr": "Demander les documents requis",
+        "zh-CN": "询问所需文档",
+        "de": "Fragen nach erforderlichen Papieren für Haustierreisen"
+      }
+    },
+    {
+      "id": "pet-5-01-3",
+      "translations": {
+        "zh-TW": "需要隔離嗎？",
+        "en": "Is quarantine required?",
+        "ja": "检疫は必要がありますか？",
+        "ko": "검역이 필요한가요?",
+        "es": "Se requiere cuarentena?",
+        "fr": "La quarenten est-elle requise?",
+        "zh-CN": "需要隔离吗？",
+        "de": "Ist Quarantäne erforderlich?"
+      },
+      "explanations": {
+        "zh-TW": "詢問檢疫要求",
+        "en": "Asking about quarantine regulations for pets",
+        "ja": "ペット检疫要件質問",
+        "ko": "반려동물 검역 요건 질문",
+        "es": "Preguntando sobre regulaciones de cuarentena",
+        "fr": "Demander les reglementations de quarentine",
+        "zh-CN": "询问检疫要求",
+        "de": "Fragen nach Quarantänevorschriften für Haustiere"
+      }
+    },
+    {
+      "id": "pet-5-01-4",
+      "translations": {
+        "zh-TW": "哪些航空公司允許攜帶寵物？",
+        "en": "Which airlines allow pets?",
+        "ja": "ペットを連れて乗れる航空会社は？",
+        "ko": "반려동물 허용 항공사는 어디인가요?",
+        "es": "Que aerolineas permiten mascotas?",
+        "fr": "Quelles compagnies aeriennes acceptent les animaux?",
+        "zh-CN": "哪些航空公司允许携带宠物？",
+        "de": "Welche Fluggesellschaften erlauben Haustiere?"
+      },
+      "explanations": {
+        "zh-TW": "詢問運輸選項",
+        "en": "Asking about pet-friendly airlines",
+        "ja": "ペット同伴可能航空会社の質問",
+        "ko": "반려동물 동반 가능 항공사 질문",
+        "es": "Preguntando sobre aerolineas que admiten mascotas",
+        "fr": "Demander les compagnies aeriennes qui acceptent les animaux",
+        "zh-CN": "询问运输选项",
+        "de": "Fragen nach haustierfreundlichen Fluggesellschaften"
+      }
+    },
+    {
+      "id": "pet-5-01-5",
+      "translations": {
+        "zh-TW": "需要哪些疫苗？",
+        "en": "What vaccinations are required?",
+        "ja": "必要なワクチン接種は何ですか？",
+        "ko": "필요한 예방접종은 뭐가 있나요?",
+        "es": "Que vacunas se requieren?",
+        "fr": "Quels vaccins sont requis?",
+        "zh-CN": "需要哪些疫苗？",
+        "de": "Welche Impfungen sind erforderlich?"
+      },
+      "explanations": {
+        "zh-TW": "詢問疫苗要求",
+        "en": "Asking about required vaccinations for pet travel",
+        "ja": "ペット旅行の必要ワクチン接種質問",
+        "ko": "반려동물 여행 예방접종 질문",
+        "es": "Preguntando sobre vacunas requeridas",
+        "fr": "Demander les vaccinations requises",
+        "zh-CN": "询问疫苗要求",
+        "de": "Fragen nach erforderlichen Impfungen für Haustierreisen"
+      }
+    }
+  ],
+  "pet-6": [
+    {
+      "id": "pet-6-01-1",
+      "translations": {
+        "zh-TW": "我的寵物有行為問題。",
+        "en": "My pet has behavioral issues.",
+        "ja": "ペットに問題行動があります",
+        "ko": "반려동물에게 행동 문제가 있습니다",
+        "es": "Mi mascota tiene problemas de conducta",
+        "fr": "Mon animal a des problemes de comportement",
+        "zh-CN": "我的宠物有行为问题。",
+        "de": "Mein Haustier hat Verhaltensprobleme."
+      },
+      "explanations": {
+        "zh-TW": "開始諮詢的用語",
+        "en": "Stating that a pet has behavioral problems",
+        "ja": "ペットの問題行動の報告",
+        "ko": "반려동물 행동 문제 보고",
+        "es": "Informando que la mascota tiene problemas",
+        "fr": "Signaler que lanimal a des problemes",
+        "zh-CN": "开始咨询的用语",
+        "de": "Feststellen, dass ein Haustier Verhaltensprobleme hat"
+      }
+    },
+    {
+      "id": "pet-6-01-2",
+      "translations": {
+        "zh-TW": "當...時他/她似乎很焦慮。",
+        "en": "He/She seems anxious when...",
+        "ja": "彼/彼女は...のとき不安そうです",
+        "ko": "그/그녀는...때 불안해합니다",
+        "es": "El/La parece ansioso/a cuando...",
+        "fr": "Il/Elle semble anxieux/se quand...",
+        "zh-CN": "当...时他/她似乎很焦虑。",
+        "de": "Er/Sie scheint ängstlich zu sein, wenn..."
+      },
+      "explanations": {
+        "zh-TW": "描述症狀",
+        "en": "Describing a pet's anxiety trigger",
+        "ja": "ペット不安トリガーの描述",
+        "ko": "반려동물 불안 유발 요인 설명",
+        "es": "Describiendo un disparador de ansiedad",
+        "fr": "Decrire un declencheur danxiete",
+        "zh-CN": "描述症状",
+        "de": "Einen Auslöser für die Angst eines Haustiers beschreiben"
+      }
+    },
+    {
+      "id": "pet-6-01-3",
+      "translations": {
+        "zh-TW": "可能的原因是什麼？",
+        "en": "What could be the cause?",
+        "ja": "原因は何ですか？",
+        "ko": "원인이 뭘가요?",
+        "es": "Cual podria ser la causa?",
+        "fr": "Quelle pourrait etre la cause?",
+        "zh-CN": "可能的原因是什么？",
+        "de": "Was könnte die Ursache sein?"
+      },
+      "explanations": {
+        "zh-TW": "詢問原因",
+        "en": "Asking about possible causes of behavioral issues",
+        "ja": "問題行動の原因質問",
+        "ko": "행동 문제 원인 질문",
+        "es": "Preguntando sobre posibles causas",
+        "fr": "Demander les causes possibles",
+        "zh-CN": "询问原因",
+        "de": "Fragen nach möglichen Ursachen für Verhaltensprobleme"
+      }
+    },
+    {
+      "id": "pet-6-01-4",
+      "translations": {
+        "zh-TW": "有可用的治療方法嗎？",
+        "en": "Are there treatments available?",
+        "ja": "利用可能な治療はありますか？",
+        "ko": "이용 가능한 치료가 있나요?",
+        "es": "Hay tratamientos disponibles?",
+        "fr": "Y a-t-il des traitements disponibles?",
+        "zh-CN": "有可用的治疗方法吗？",
+        "de": "Gibt es Behandlungen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問解決方案",
+        "en": "Asking about available treatment options",
+        "ja": "利用可能な治療オプション質問",
+        "ko": "이용 가능한 치료 옵션 질문",
+        "es": "Preguntando sobre opciones de tratamiento",
+        "fr": "Demander les options de traitement disponibles",
+        "zh-CN": "询问解决方案",
+        "de": "Fragen nach verfügbaren Behandlungsoptionen"
+      }
+    },
+    {
+      "id": "pet-6-01-5",
+      "translations": {
+        "zh-TW": "我在家能如何幫助？",
+        "en": "How can I help at home?",
+        "ja": "家で 어떻게 도와줄 수 있나요?",
+        "ko": "집에서 어떻게 도와줄 수 있나요?",
+        "es": "Como puedo ayudar en casa?",
+        "fr": "Comment puis-je aider a la maison?",
+        "zh-CN": "我在家能如何帮助？",
+        "de": "Wie kann ich zu Hause helfen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問日常照護",
+        "en": "Asking how to support a pet's treatment at home",
+        "ja": "家庭でのペット支援 방법을質問",
+        "ko": "집에서의 반려동물 치료 지원 방법 질문",
+        "es": "Preguntando como apoyar en casa",
+        "fr": "Demander comment aider a la maison",
+        "zh-CN": "询问日常照护",
+        "de": "Fragen, wie man die Behandlung eines Haustiers zu Hause unterstützen kann"
+      }
+    }
+  ],
+  "hlt-1": [
+    {
+      "id": "hlt-1-01-1",
+      "translations": {
+        "zh-TW": "我的...會痛。",
+        "en": "I have pain in my...",
+        "ja": "...に痛みがあります",
+        "ko": "...에 통증이 있습니다",
+        "es": "Tengo dolor en...",
+        "fr": "Jai mal a...",
+        "zh-CN": "我的...会痛。",
+        "de": "Ich habe Schmerzen in meinem..."
+      },
+      "explanations": {
+        "zh-TW": "描述疼痛位置的基本用語",
+        "en": "Describing the location of physical pain",
+        "ja": "疼痛部位の描述",
+        "ko": "통증 부위 설명",
+        "es": "Describiendo la ubicacion del dolor",
+        "fr": "Decrire la localisation de la douleur",
+        "zh-CN": "描述疼痛位置的基本用语",
+        "de": "Beschreibung des Ortes von körperlichen Schmerzen"
+      }
+    },
+    {
+      "id": "hlt-1-01-2",
+      "translations": {
+        "zh-TW": "當我...時會痛。",
+        "en": "It hurts when I...",
+        "ja": "...ときに痛みます",
+        "ko": "...때에 아픕니다",
+        "es": "Me duele cuando...",
+        "fr": "Ca me fait mal quand je...",
+        "zh-CN": "当我...时会痛。",
+        "de": "Es tut weh, wenn ich..."
+      },
+      "explanations": {
+        "zh-TW": "說明觸發疼痛的動作",
+        "en": "Describing what triggers the pain",
+        "ja": "疼痛誘発動作の描述",
+        "ko": "통증 유발 동작 설명",
+        "es": "Describiendo que provoca el dolor",
+        "fr": "Decrire ce qui declenche la douleur",
+        "zh-CN": "说明触发疼痛的动作",
+        "de": "Beschreibung, was den Schmerz auslöst"
+      }
+    },
+    {
+      "id": "hlt-1-01-3",
+      "translations": {
+        "zh-TW": "疼痛是...",
+        "en": "The pain is...",
+        "ja": "痛みは...です",
+        "ko": "통증이...입니다",
+        "es": "El dolor es...",
+        "fr": "La douleur est...",
+        "zh-CN": "疼痛是...",
+        "de": "Der Schmerz ist..."
+      },
+      "explanations": {
+        "zh-TW": "描述疼痛性質（如刺痛、鈍痛）",
+        "en": "Describing the nature or intensity of pain",
+        "ja": "疼痛性状・程度の描述",
+        "ko": "통증 성상/정도 설명",
+        "es": "Describiendo la naturaleza del dolor",
+        "fr": "Decrire la nature ou lintensite de la douleur",
+        "zh-CN": "描述疼痛性质（如刺痛、钝痛）",
+        "de": "Beschreibung der Art oder Intensität von Schmerzen"
+      }
+    },
+    {
+      "id": "hlt-1-01-4",
+      "translations": {
+        "zh-TW": "大約在...開始的。",
+        "en": "It started about...",
+        "ja": "約...から始まりました",
+        "ko": "약...때부터 시작됐습니다",
+        "es": "Comenz hace...",
+        "fr": "Cela a commence il y a...",
+        "zh-CN": "大约在...开始的。",
+        "de": "Es begann vor etwa..."
+      },
+      "explanations": {
+        "zh-TW": "說明時間",
+        "en": "Stating when the pain began",
+        "ja": "疼痛開始時期の述明",
+        "ko": "통증 시작 시기 알림",
+        "es": "Indicando cuando comenzo el dolor",
+        "fr": "Indiquer quand la douleur a commence",
+        "zh-CN": "说明时间",
+        "de": "Angeben, wann der Schmerz begann"
+      }
+    },
+    {
+      "id": "hlt-1-01-5",
+      "translations": {
+        "zh-TW": "以1到10分來評估...",
+        "en": "On a scale of 1 to 10...",
+        "ja": "1から10で...",
+        "ko": "1에서 10으로...",
+        "es": "En una escala del 1 al 10...",
+        "fr": "Sur une echelle de 1 a 10...",
+        "zh-CN": "以1到10分来评估...",
+        "de": "Auf einer Skala von 1 bis 10..."
+      },
+      "explanations": {
+        "zh-TW": "描述疼痛程度",
+        "en": "Rating pain on a numerical scale",
+        "ja": "疼痛数値評価スケール",
+        "ko": "통증 수치 평가 척도",
+        "es": "Calificando el dolor en una escala numerica",
+        "fr": "Evaluer la douleur sur une echelle numerique",
+        "zh-CN": "描述疼痛程度",
+        "de": "Bewertung von Schmerzen auf einer numerischen Skala"
+      }
+    }
+  ],
+  "hlt-2": [
+    {
+      "id": "hlt-2-01-1",
+      "translations": {
+        "zh-TW": "我需要感冒藥。",
+        "en": "I need something for a cold.",
+        "ja": "風邪薬を必要があります",
+        "ko": "감기약을 필요로 합니다",
+        "es": "Necesito algo para un resfriado",
+        "fr": "Jai besoin de quelque chose pour un rhume",
+        "zh-CN": "我需要感冒药。",
+        "de": "Ich brauche etwas gegen eine Erkältung."
+      },
+      "explanations": {
+        "zh-TW": "開始購藥的用語",
+        "en": "Stating need for cold medicine at a pharmacy",
+        "ja": "薬局での風邪薬購入の必要性表明",
+        "ko": "약국에서 감기약 필요성 알림",
+        "es": "Afirmando necesidad de medicina para resfriado",
+        "fr": "Affirmer le besoin de medicaments pour un rhume",
+        "zh-CN": "开始购药的用语",
+        "de": "Bedarf an Erkältungsmedizin in der Apotheke angeben"
+      }
+    },
+    {
+      "id": "hlt-2-01-2",
+      "translations": {
+        "zh-TW": "我的症狀包括...",
+        "en": "My symptoms include...",
+        "ja": "症状は...を含みます",
+        "ko": "증상에...이 포함됩니다",
+        "es": "Mis sintomas incluyen...",
+        "fr": "Mes symptomes incluent...",
+        "zh-CN": "我的症状包括...",
+        "de": "Meine Symptome umfassen..."
+      },
+      "explanations": {
+        "zh-TW": "描述症狀",
+        "en": "Listing symptoms to a pharmacist",
+        "ja": "症状の一覧提示",
+        "ko": "증상 목록 제시",
+        "es": "Enumerando sintomas al farmaceutico",
+        "fr": "Enumener les symptomes au pharmacien",
+        "zh-CN": "描述症状",
+        "de": "Aufzählung von Symptomen für einen Apotheker"
+      }
+    },
+    {
+      "id": "hlt-2-01-3",
+      "translations": {
+        "zh-TW": "你推薦什麼？",
+        "en": "What do you recommend?",
+        "ja": "何をお勧めしますか？",
+        "ko": "뭐를 추천하시겠어요?",
+        "es": "Que recomienda?",
+        "fr": "Que recommandez-vous?",
+        "zh-CN": "你推荐什么？",
+        "de": "Was empfehlen Sie?"
+      },
+      "explanations": {
+        "zh-TW": "請求推薦",
+        "en": "Asking a pharmacist for a recommendation",
+        "ja": "Pharmacistへの推薦依頼",
+        "ko": "약사에게 추천 요청",
+        "es": "Pidiendo una recomendacion al farmaceutico",
+        "fr": "Demander une recommandation au pharmacien",
+        "zh-CN": "请求推荐",
+        "de": "Einen Apotheker um eine Empfehlung bitten"
+      }
+    },
+    {
+      "id": "hlt-2-01-4",
+      "translations": {
+        "zh-TW": "有副作用嗎？",
+        "en": "Are there any side effects?",
+        "ja": "副作用はありますか？",
+        "ko": "부작용이 있나요?",
+        "es": "Hay efectos secundarios?",
+        "fr": "Y a-t-il des effets secondaires?",
+        "zh-CN": "有副作用吗？",
+        "de": "Gibt es Nebenwirkungen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問注意事項",
+        "en": "Asking about possible side effects of medicine",
+        "ja": "薬の副作用質問",
+        "ko": "약물 부작용 질문",
+        "es": "Preguntando sobre posibles efectos secundarios",
+        "fr": "Demander les effets secondaires possibles",
+        "zh-CN": "询问注意事项",
+        "de": "Fragen nach möglichen Nebenwirkungen von Medikamenten"
+      }
+    },
+    {
+      "id": "hlt-2-01-5",
+      "translations": {
+        "zh-TW": "我該如何服用？",
+        "en": "How should I take this?",
+        "ja": "これはどのように服用すれば良いですか？",
+        "ko": "이거 어떻게 복용해야 하나요?",
+        "es": "Como debo tomar esto?",
+        "fr": "Comment dois-je prendre ceci?",
+        "zh-CN": "我该如何服用？",
+        "de": "Wie soll ich das einnehmen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問用法",
+        "en": "Asking about dosage and usage instructions",
+        "ja": "服用方法質問",
+        "ko": "복용 방법 질문",
+        "es": "Preguntando sobre dosis e instrucciones",
+        "fr": "Demander la posologie et les instructions",
+        "zh-CN": "询问用法",
+        "de": "Fragen nach Dosierung und Anwendungshinweisen"
+      }
+    }
+  ],
+  "hlt-3": [
+    {
+      "id": "hlt-3-01-1",
+      "translations": {
+        "zh-TW": "我來看檢查結果。",
+        "en": "I am here for my test results.",
+        "ja": "検査結果をもらうために来ました",
+        "ko": "검사 결과를 받으러 왔습니다",
+        "es": "Estoy aqui por mis resultados",
+        "fr": "Je suis ici pour mes resultats",
+        "zh-CN": "我来看检查结果。",
+        "de": "Ich bin hier für meine Testergebnisse."
+      },
+      "explanations": {
+        "zh-TW": "開始就診的用語",
+        "en": "Stating purpose of a doctor visit for test results",
+        "ja": "検査結果受け取り目的の来院",
+        "ko": "검사 결과 수령 목적 내원",
+        "es": "Afirmando el proposito de la visita",
+        "fr": "Affirmer le but de la visite medicale",
+        "zh-CN": "开始就诊的用语",
+        "de": "Angabe des Zwecks eines Arztbesuchs für Testergebnisse"
+      }
+    },
+    {
+      "id": "hlt-3-01-2",
+      "translations": {
+        "zh-TW": "結果顯示什麼？",
+        "en": "What do the results show?",
+        "ja": "結果はどうでしたか？",
+        "ko": "결과가 어떻게 나왔나요?",
+        "es": "Que muestran los resultados?",
+        "fr": "Que montrent les resultats?",
+        "zh-CN": "结果显示什么？",
+        "de": "Was zeigen die Ergebnisse?"
+      },
+      "explanations": {
+        "zh-TW": "詢問結果",
+        "en": "Asking about the outcome of medical test results",
+        "ja": "検査結果の内容質問",
+        "ko": "검사 결과 내용 질문",
+        "es": "Preguntando sobre el contenido de los resultados",
+        "fr": "Demander le contenu des resultats",
+        "zh-CN": "询问结果",
+        "de": "Fragen über das Ergebnis medizinischer Testergebnisse"
+      }
+    },
+    {
+      "id": "hlt-3-01-3",
+      "translations": {
+        "zh-TW": "一切正常嗎？",
+        "en": "Is everything normal?",
+        "ja": "全て正常ですか？",
+        "ko": "다 정상인가요?",
+        "es": "Esta todo normal?",
+        "fr": "Tout est-il normal?",
+        "zh-CN": "一切正常吗？",
+        "de": "Ist alles normal?"
+      },
+      "explanations": {
+        "zh-TW": "確認健康狀態",
+        "en": "Asking if test results are within normal ranges",
+        "ja": "検査値が正常範囲かの質問",
+        "ko": "검사 수치 정상 범위 여부 질문",
+        "es": "Preguntando si los resultados son normales",
+        "fr": "Demander si les resultats sont normaux",
+        "zh-CN": "确认健康状态",
+        "de": "Fragen, ob Testergebnisse im normalen Bereich liegen"
+      }
+    },
+    {
+      "id": "hlt-3-01-4",
+      "translations": {
+        "zh-TW": "我需要治療嗎？",
+        "en": "Do I need any treatment?",
+        "ja": "何か治療が必要ですか？",
+        "ko": "치료가 필요한가요?",
+        "es": "Necesito algun tratamiento?",
+        "fr": "Ai-je besoin dun traitement?",
+        "zh-CN": "我需要治疗吗？",
+        "de": "Brauche ich eine Behandlung?"
+      },
+      "explanations": {
+        "zh-TW": "詢問下一步",
+        "en": "Asking if follow-up treatment is necessary",
+        "ja": "追加治療の要否質問",
+        "ko": "추가 치료 필요 여부 질문",
+        "es": "Preguntando si se necesita tratamiento",
+        "fr": "Demander si un traitement est necessaire",
+        "zh-CN": "询问下一步",
+        "de": "Fragen, ob eine Folgebehandlung notwendig ist"
+      }
+    },
+    {
+      "id": "hlt-3-01-5",
+      "translations": {
+        "zh-TW": "我該什麼時候回診？",
+        "en": "When should I come back?",
+        "ja": "いつまた来ればいいですか？",
+        "ko": "언제 다시 오면 되나요?",
+        "es": "Cuando debo volver?",
+        "fr": "Quand dois-je revenir?",
+        "zh-CN": "我该什么时候回诊？",
+        "de": "Wann soll ich wiederkommen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問回診時間",
+        "en": "Asking about follow-up appointment timing",
+        "ja": "次回予約時期質問",
+        "ko": "다음 예약 시기 질문",
+        "es": "Preguntando sobre la proxima cita",
+        "fr": "Demander quand revenir",
+        "zh-CN": "询问回诊时间",
+        "de": "Fragen nach dem Zeitpunkt des Folgetermins"
+      }
+    }
+  ],
+  "hlt-4": [
+    {
+      "id": "hlt-4-01-1",
+      "translations": {
+        "zh-TW": "我想要預約門診。",
+        "en": "I would like to make an appointment.",
+        "ja": "予約を取りたいのですが",
+        "ko": "예약을 하고 싶습니다",
+        "es": "Me gustaria hacer una cita",
+        "fr": "Je voudrais prendre un rendez-vous",
+        "zh-CN": "我想要预约门诊。",
+        "de": "Ich möchte einen Termin vereinbaren."
+      },
+      "explanations": {
+        "zh-TW": "開始預約的用語",
+        "en": "Requesting to schedule a medical appointment",
+        "ja": "診察予約の依頼",
+        "ko": "진료 예약 요청",
+        "es": "Solicitando programar una cita medica",
+        "fr": "Demander a programmer un rendez-vous medical",
+        "zh-CN": "开始预约的用语",
+        "de": "Anfrage zur Planung eines medizinischen Termins"
+      }
+    },
+    {
+      "id": "hlt-4-01-2",
+      "translations": {
+        "zh-TW": "您要看哪位醫生？",
+        "en": "Which doctor are you seeing?",
+        "ja": "どの先生に見てもらいますか？",
+        "ko": "어떤 선생님에게 볼 건가요?",
+        "es": "Que doctor esta viendo?",
+        "fr": "Quel medecin voyez-vous?",
+        "zh-CN": "您要看哪位医生？",
+        "de": "Welchen Arzt sehen Sie?"
+      },
+      "explanations": {
+        "zh-TW": "詢問醫生偏好",
+        "en": "Asking which doctor the patient will see",
+        "ja": "担当医確認の質問",
+        "ko": "담당 의사 확인 질문",
+        "es": "Preguntando que medico vera",
+        "fr": "Demander quel medecin vous verrez",
+        "zh-CN": "询问医生偏好",
+        "de": "Fragen, welchen Arzt der Patient sehen wird"
+      }
+    },
+    {
+      "id": "hlt-4-01-3",
+      "translations": {
+        "zh-TW": "下一個可預約時段是什麼時候？",
+        "en": "When is the next available slot?",
+        "ja": "次に空いている時間はいつですか？",
+        "ko": "다음 빈 시간은 언제인가요?",
+        "es": "Cuando es el proximo horario disponible?",
+        "fr": "Quand est le prochain creneau disponible?",
+        "zh-CN": "下一个可预约时段是什么时候？",
+        "de": "Wann ist der nächste verfügbare Termin?"
+      },
+      "explanations": {
+        "zh-TW": "詢問時間",
+        "en": "Asking about the next available appointment time",
+        "ja": "次利用可能時間の質問",
+        "ko": "다음 이용 가능 시간 질문",
+        "es": "Preguntando por el siguiente horario",
+        "fr": "Demander le prochain creneau disponible",
+        "zh-CN": "询问时间",
+        "de": "Fragen nach dem nächsten verfügbaren Termin"
+      }
+    },
+    {
+      "id": "hlt-4-01-4",
+      "translations": {
+        "zh-TW": "我需要...的轉診。",
+        "en": "I need a referral for...",
+        "ja": "...への紹介状が必要です",
+        "ko": "...으로의 소개장이 필요합니다",
+        "es": "Necesito una derivacion para...",
+        "fr": "Jai besoin dune recommandation pour...",
+        "zh-CN": "我需要...的转诊。",
+        "de": "Ich brauche eine Überweisung für..."
+      },
+      "explanations": {
+        "zh-TW": "說明轉診需求",
+        "en": "Requesting a referral letter to a specialist",
+        "ja": "专科紹介状の依頼",
+        "ko": "전문의 소개장 요청",
+        "es": "Solicitando una carta de derivacion",
+        "fr": "Demander une lettre de recommandation",
+        "zh-CN": "说明转诊需求",
+        "de": "Anfrage nach einem Überweisungsschreiben an einen Spezialisten"
+      }
+    },
+    {
+      "id": "hlt-4-01-5",
+      "translations": {
+        "zh-TW": "請確認預約。",
+        "en": "Please confirm the appointment.",
+        "ja": "予約を確認してください",
+        "ko": "예약을 확인해 주세요",
+        "es": "Por favor confirme la cita",
+        "fr": "Veuillez confirmer le rendez-vous",
+        "zh-CN": "请确认预约。",
+        "de": "Bitte bestätigen Sie den Termin."
+      },
+      "explanations": {
+        "zh-TW": "請求確認",
+        "en": "Requesting confirmation of the appointment",
+        "ja": "予約確認のお願い",
+        "ko": "예약 확인 요청",
+        "es": "Pidiendo confirmacion de la cita",
+        "fr": "Demander la confirmation du rendez-vous",
+        "zh-CN": "请求确认",
+        "de": "Anfrage nach Bestätigung des Termins"
+      }
+    }
+  ],
+  "hlt-5": [
+    {
+      "id": "hlt-5-01-1",
+      "translations": {
+        "zh-TW": "我們來討論您的治療方案。",
+        "en": "Let us discuss your treatment plan.",
+        "ja": "治療計画についてお話しましょう",
+        "ko": "치료 계획에 대해 이야기해 봅시다",
+        "es": "Discutamos su plan de tratamiento",
+        "fr": "Discutons de votre plan de traitement",
+        "zh-CN": "我们来讨论您的治疗方案。",
+        "de": "Lassen Sie uns Ihren Behandlungsplan besprechen."
+      },
+      "explanations": {
+        "zh-TW": "開始討論的開場白",
+        "en": "Doctor initiating discussion of a treatment plan",
+        "ja": "治療計画Discussの開始",
+        "ko": "치료 계획 논의 시작",
+        "es": "Iniciando la discusion del plan",
+        "fr": "Le medecin initie la discussion du plan",
+        "zh-CN": "开始讨论的开场白",
+        "de": "Arzt beginnt die Besprechung eines Behandlungsplans"
+      }
+    },
+    {
+      "id": "hlt-5-01-2",
+      "translations": {
+        "zh-TW": "您需要服用...",
+        "en": "You will need to take...",
+        "ja": "...を飲む必要があります",
+        "ko": "...을 복용해야 합니다",
+        "es": "Necesitara tomar...",
+        "fr": "Vous devrez prendre...",
+        "zh-CN": "您需要服用...",
+        "de": "Sie müssen ... einnehmen."
+      },
+      "explanations": {
+        "zh-TW": "說明用藥",
+        "en": "Doctor prescribing medication or therapy",
+        "ja": "薬剤・療法の処方",
+        "ko": "약물/치료 처방",
+        "es": "Medico prescribiendo medicamentos",
+        "fr": "Le medecin prescrivant des medicaments",
+        "zh-CN": "说明用药",
+        "de": "Arzt verschreibt Medikamente oder Therapie"
+      }
+    },
+    {
+      "id": "hlt-5-01-3",
+      "translations": {
+        "zh-TW": "生活方式改變包括...",
+        "en": "Lifestyle changes include...",
+        "ja": "ライフスタイル改变としては...があります",
+        "ko": "라이프스타일 변화로는...이 있습니다",
+        "es": "Los cambios de estilo de vida incluyen...",
+        "fr": "Les changements de mode de vie incluent...",
+        "zh-CN": "生活方式改变包括...",
+        "de": "Lebensstiländerungen umfassen..."
+      },
+      "explanations": {
+        "zh-TW": "說明日常照護",
+        "en": "Doctor recommending lifestyle modifications",
+        "ja": "ライフスタイル改變の指導",
+        "ko": "생활 습관 변화 지도",
+        "es": "Recomendando modificaciones del estilo de vida",
+        "fr": "Recommander des modifications du mode de vie",
+        "zh-CN": "说明日常照护",
+        "de": "Arzt empfiehlt Lebensstiländerungen"
+      }
+    },
+    {
+      "id": "hlt-5-01-4",
+      "translations": {
+        "zh-TW": "我們應該監測...",
+        "en": "We should monitor...",
+        "ja": "...をモニターしましょう",
+        "ko": "...을 모니터해야 합니다",
+        "es": "Deberiamos monitorear...",
+        "fr": "Nous devrions surveiller...",
+        "zh-CN": "我们应该监测...",
+        "de": "Wir sollten ... überwachen."
+      },
+      "explanations": {
+        "zh-TW": "說明追蹤項目",
+        "en": "Doctor suggesting ongoing monitoring of health indicators",
+        "ja": "健康指標モニター提案",
+        "ko": "건강 지표 모니터 제안",
+        "es": "Sugiriendo monitoreo continuo",
+        "fr": "Proposer une surveillance continue",
+        "zh-CN": "说明追踪项目",
+        "de": "Arzt schlägt fortlaufende Überwachung von Gesundheitsindikatoren vor"
+      }
+    },
+    {
+      "id": "hlt-5-01-5",
+      "translations": {
+        "zh-TW": "有任何問題嗎？",
+        "en": "Do you have any questions?",
+        "ja": "ご質問はありますか？",
+        "ko": "질문 있으신가요?",
+        "es": "Tiene alguna pregunta?",
+        "fr": "Avez-vous des questions?",
+        "zh-CN": "有任何问题吗？",
+        "de": "Haben Sie Fragen?"
+      },
+      "explanations": {
+        "zh-TW": "確認理解",
+        "en": "Doctor asking if the patient has questions",
+        "ja": "患者への質問投げかけ",
+        "ko": "환자에게 질문 던지기",
+        "es": "Medico preguntando si hay preguntas",
+        "fr": "Le medecin demandant sil y a des questions",
+        "zh-CN": "确认理解",
+        "de": "Arzt fragt, ob der Patient Fragen hat"
+      }
+    }
+  ],
+  "hlt-6": [
+    {
+      "id": "hlt-6-01-1",
+      "translations": {
+        "zh-TW": "我將解釋手術流程。",
+        "en": "I will explain the procedure.",
+        "ja": "手技について説明します",
+        "ko": "시술에 대해 설명해 드리겠습니다",
+        "es": "Voy a explicar el procedimiento",
+        "fr": "Je vais expliquer la procedure",
+        "zh-CN": "我将解释手术流程。",
+        "de": "Ich werde den Eingriff erklären."
+      },
+      "explanations": {
+        "zh-TW": "開始說明的用語",
+        "en": "Doctor beginning to explain a medical procedure",
+        "ja": "医療手技の説明開始",
+        "ko": "의료 시술 설명 시작",
+        "es": "Medico iniciando la explicacion del procedimiento",
+        "fr": "Le medecin commene a expliquer la procedure",
+        "zh-CN": "开始说明的用语",
+        "de": "Arzt beginnt, einen medizinischen Eingriff zu erklären"
+      }
+    },
+    {
+      "id": "hlt-6-01-2",
+      "translations": {
+        "zh-TW": "風險包括...",
+        "en": "The risks include...",
+        "ja": "リスクには...があります",
+        "ko": "위험에는...이 포함됩니다",
+        "es": "Los riesgos incluyen...",
+        "fr": "Les risques incluent...",
+        "zh-CN": "风险包括...",
+        "de": "Die Risiken umfassen..."
+      },
+      "explanations": {
+        "zh-TW": "說明風險",
+        "en": "Doctor describing potential risks of a procedure",
+        "ja": "手技リスクの説明",
+        "ko": "시술 위험 설명",
+        "es": "Describiendo los riesgos del procedimiento",
+        "fr": "Decrire les risques de la procedure",
+        "zh-CN": "说明风险",
+        "de": "Arzt beschreibt potenzielle Risiken eines Eingriffs"
+      }
+    },
+    {
+      "id": "hlt-6-01-3",
+      "translations": {
+        "zh-TW": "好處是...",
+        "en": "The benefits are...",
+        "ja": "ベネフィットは...です",
+        "ko": "이점은...입니다",
+        "es": "Los beneficios son...",
+        "fr": "Les avantages sont...",
+        "zh-CN": "好处是...",
+        "de": "Die Vorteile sind..."
+      },
+      "explanations": {
+        "zh-TW": "說明益處",
+        "en": "Doctor describing the expected benefits of treatment",
+        "ja": "治疗的便益の説明",
+        "ko": "치료 이점 설명",
+        "es": "Describiendo los beneficios esperados",
+        "fr": "Decrire les avantages attendue",
+        "zh-CN": "说明益处",
+        "de": "Arzt beschreibt die erwarteten Vorteile der Behandlung"
+      }
+    },
+    {
+      "id": "hlt-6-01-4",
+      "translations": {
+        "zh-TW": "您了解嗎？",
+        "en": "Do you understand?",
+        "ja": "ご理解いただけましたか？",
+        "ko": "이해하셨나요?",
+        "es": "Entiende?",
+        "fr": "Comprenez-vous?",
+        "zh-CN": "您了解吗？",
+        "de": "Verstehen Sie?"
+      },
+      "explanations": {
+        "zh-TW": "確認理解",
+        "en": "Doctor checking patient comprehension",
+        "ja": "患者理解度確認",
+        "ko": "환자 이해도 확인",
+        "es": "Verificando la comprension del paciente",
+        "fr": "Verifier la comprehension du patient",
+        "zh-CN": "确认理解",
+        "de": "Arzt prüft das Verständnis des Patienten"
+      }
+    },
+    {
+      "id": "hlt-6-01-5",
+      "translations": {
+        "zh-TW": "請在此簽名。",
+        "en": "Please sign here.",
+        "ja": "ここに署名してください",
+        "ko": "여기에 서명해 주세요",
+        "es": "Por favor firme aqui",
+        "fr": "Veuillez signer ici",
+        "zh-CN": "请在此签名。",
+        "de": "Bitte unterschreiben Sie hier."
+      },
+      "explanations": {
+        "zh-TW": "請求簽署",
+        "en": "Doctor requesting consent signature",
+        "ja": "同意書署名の依頼",
+        "ko": "동의서 서명 요청",
+        "es": "Solicitando firma de consentimiento",
+        "fr": "Demander la signature du consentement",
+        "zh-CN": "请求签署",
+        "de": "Arzt bittet um Einverständnisunterschrift"
+      }
+    }
+  ],
+  "trv-1": [
+    {
+      "id": "trv-1-01-1",
+      "translations": {
+        "zh-TW": "我想要辦理登機。",
+        "en": "I would like to check in.",
+        "ja": "チェックインをお願いします",
+        "ko": "체크인하고 싶습니다",
+        "es": "Me gustaria registrarme",
+        "fr": "Je voudrais menregistrer",
+        "zh-CN": "我想要办理登机。",
+        "de": "Ich möchte einchecken."
+      },
+      "explanations": {
+        "zh-TW": "機場報到的標準用語",
+        "en": "Stating intent to check in at airport or hotel",
+        "ja": "チェックイン意思表示",
+        "ko": "체크인 의향",
+        "es": "Afirmando la intencion de registrarse",
+        "fr": "Affirmer lintention de senregistrer",
+        "zh-CN": "机场报到的标准用语",
+        "de": "Absicht erklären, am Flughafen oder Hotel einzuchecken"
+      }
+    },
+    {
+      "id": "trv-1-01-2",
+      "translations": {
+        "zh-TW": "這是我的護照。",
+        "en": "Here is my passport.",
+        "ja": "パスポートです",
+        "ko": "여기 여권입니다",
+        "es": "Aqui esta mi pasaporte",
+        "fr": "Voici mon passeport",
+        "zh-CN": "这是我的护照。",
+        "de": "Hier ist mein Reisepass."
+      },
+      "explanations": {
+        "zh-TW": "出示證件",
+        "en": "Presenting passport for check-in",
+        "ja": "チェックイン時のパスポート提示",
+        "ko": "체크인 시 여권 제시",
+        "es": "Presentando el pasaporte al registrarse",
+        "fr": "Presenter le passeport lors de lenregistrement",
+        "zh-CN": "出示证件",
+        "de": "Vorlage des Reisepasses für den Check-in"
+      }
+    },
+    {
+      "id": "trv-1-01-3",
+      "translations": {
+        "zh-TW": "我想要靠窗的位子。",
+        "en": "I would like a window seat.",
+        "ja": "窓際の席をお願いします",
+        "ko": "창가 좌석 부탁드립니다",
+        "es": "Me gustaria un asiento junto a la ventana",
+        "fr": "Je voudrais une place pres du hublot",
+        "zh-CN": "我想要靠窗的位子。",
+        "de": "Ich hätte gerne einen Fensterplatz."
+      },
+      "explanations": {
+        "zh-TW": "選擇座位偏好",
+        "en": "Requesting a window seat on a flight",
+        "ja": "フライトの窓際席依頼",
+        "ko": "비행기 창가 좌석 요청",
+        "es": "Solicitando un asiento junto a la ventana",
+        "fr": "Demander une place pres du hublot",
+        "zh-CN": "选择座位偏好",
+        "de": "Anfrage nach einem Fensterplatz im Flugzeug"
+      }
+    },
+    {
+      "id": "trv-1-01-4",
+      "translations": {
+        "zh-TW": "我能托運多少行李？",
+        "en": "How much luggage can I check?",
+        "ja": "預けられる荷物はどのくらいですか？",
+        "ko": "부칠 수 있는 수하물은 얼마나 되나요?",
+        "es": "Cuanta equipacion puedo registrar?",
+        "fr": "Combien de bagages puis-je enregistrer?",
+        "zh-CN": "我能托运多少行李？",
+        "de": "Wie viel Gepäck kann ich aufgeben?"
+      },
+      "explanations": {
+        "zh-TW": "詢問行李限制",
+        "en": "Asking about luggage allowance",
+        "ja": "手荷物許容量質問",
+        "ko": "수하물 허용량 질문",
+        "es": "Preguntando sobre el limite de equipacion",
+        "fr": "Demander la franchise de bagages",
+        "zh-CN": "询问行李限制",
+        "de": "Fragen nach dem Gepäckkontingent"
+      }
+    },
+    {
+      "id": "trv-1-01-5",
+      "translations": {
+        "zh-TW": "什麼時候開始登機？",
+        "en": "When does boarding start?",
+        "ja": "搭乗はいつからですか？",
+        "ko": "탑승이 언제부터인가요?",
+        "es": "Cuando comienza el embarque?",
+        "fr": "Quand commence lembarquement?",
+        "zh-CN": "什么时候开始登机？",
+        "de": "Wann beginnt das Boarding?"
+      },
+      "explanations": {
+        "zh-TW": "詢問登機時間",
+        "en": "Asking about boarding time",
+        "ja": "搭乗開始時間の質問",
+        "ko": "탑승 시작 시간 질문",
+        "es": "Preguntando sobre la hora de embarque",
+        "fr": "Demander lheure dembarquement",
+        "zh-CN": "询问登机时间",
+        "de": "Fragen nach der Boarding-Zeit"
+      }
+    }
+  ],
+  "trv-2": [
+    {
+      "id": "trv-2-01-1",
+      "translations": {
+        "zh-TW": "不好意思，我要怎麼去...？",
+        "en": "Excuse me, how do I get to...?",
+        "ja": "すみません、...への行き方を教えてください",
+        "ko": "실례합니다, ...까지 어떻게 가나요?",
+        "es": "Disculpe, como llego a...?",
+        "fr": "Excusez-moi, comment aller a...?",
+        "zh-CN": "不好意思，我要怎么去...？",
+        "de": "Entschuldigung, wie komme ich zu...?"
+      },
+      "explanations": {
+        "zh-TW": "詢問方向的標準用語",
+        "en": "Asking for directions to a destination",
+        "ja": "目的地への道順質問",
+        "ko": "목적지까지 길 질문",
+        "es": "Pidiendo direcciones a un destino",
+        "fr": "Demander son chemin vers une destination",
+        "zh-CN": "询问方向的标准用语",
+        "de": "Fragen nach dem Weg zu einem Reiseziel"
+      }
+    },
+    {
+      "id": "trv-2-01-2",
+      "translations": {
+        "zh-TW": "走路能到嗎？",
+        "en": "Is it within walking distance?",
+        "ja": "步行可能ですか？",
+        "ko": "걸어서 갈 수 있는 거리인가요?",
+        "es": "Esta a distancia caminable?",
+        "fr": "Est-ce a distance de marche?",
+        "zh-CN": "走路能到吗？",
+        "de": "Ist es zu Fuß erreichbar?"
+      },
+      "explanations": {
+        "zh-TW": "詢問距離",
+        "en": "Asking if a destination is reachable on foot",
+        "ja": "步行可能的かの質問",
+        "ko": "도보 가능 여부 질문",
+        "es": "Preguntando si es accesible a pie",
+        "fr": "Demander si cest accessible a pied",
+        "zh-CN": "询问距离",
+        "de": "Fragen, ob ein Reiseziel zu Fuß erreichbar ist"
+      }
+    },
+    {
+      "id": "trv-2-01-3",
+      "translations": {
+        "zh-TW": "我應該搭計程車嗎？",
+        "en": "Should I take a taxi?",
+        "ja": "タクシーを使った方がいいですか？",
+        "ko": "택시를 타는 게 좋겠어요?",
+        "es": "Deberia tomar un taxi?",
+        "fr": "Devrais-je prendre un taxi?",
+        "zh-CN": "我应该搭出租车吗？",
+        "de": "Sollte ich ein Taxi nehmen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問交通選項",
+        "en": "Asking for advice on taking a taxi",
+        "ja": "タクシー利用のadvice質問",
+        "ko": "택시 이용 조언 질문",
+        "es": "Pidiendo consejo sobre tomar un taxi",
+        "fr": "Demander un conseil sur prendre un taxi",
+        "zh-CN": "询问交通选项",
+        "de": "Umfrage nach Ratschlag zur Taxinahme"
+      }
+    },
+    {
+      "id": "trv-2-01-4",
+      "translations": {
+        "zh-TW": "我應該搭幾號公車？",
+        "en": "Which bus should I take?",
+        "ja": "どのバスに乗ればいいですか？",
+        "ko": "어떤 버스를 타야 하나요?",
+        "es": "Que autobus debo tomar?",
+        "fr": "Quel bus dois-je prendre?",
+        "zh-CN": "我应该搭几号公车？",
+        "de": "Welchen Bus soll ich nehmen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問具體路線",
+        "en": "Asking which bus line to take",
+        "ja": "バス路線の質問",
+        "ko": "버스 노선 질문",
+        "es": "Preguntando que linea de autobus",
+        "fr": "Demander quelle ligne de bus",
+        "zh-CN": "询问具体路线",
+        "de": "Fragen, welche Buslinie man nehmen soll"
+      }
+    },
+    {
+      "id": "trv-2-01-5",
+      "translations": {
+        "zh-TW": "謝謝你的幫忙。",
+        "en": "Thank you for your help.",
+        "ja": "ご協力ありがとうございます",
+        "ko": "도움 감사합니다",
+        "es": "Gracias por su ayuda",
+        "fr": "Merci pour votre aide",
+        "zh-CN": "谢谢你的帮忙。",
+        "de": "Vielen Dank für Ihre Hilfe."
+      },
+      "explanations": {
+        "zh-TW": "表達感謝",
+        "en": "Expressing gratitude for directions help",
+        "ja": "道案内への感謝",
+        "ko": "길 안내에 대한 감사",
+        "es": "Expresando gratitud por la ayuda",
+        "fr": "Exprimer sa gratitude pour laide",
+        "zh-CN": "表达感谢",
+        "de": "Ausdruck des Dankes für Wegbeschreibungen"
+      }
+    }
+  ],
+  "trv-3": [
+    {
+      "id": "trv-3-01-1",
+      "translations": {
+        "zh-TW": "我有預訂房間。",
+        "en": "I have a reservation.",
+        "ja": "予約があります",
+        "ko": "예약이 있습니다",
+        "es": "Tengo una reservacion",
+        "fr": "Jai une reservation",
+        "zh-CN": "我有预订房间。",
+        "de": "Ich habe eine Reservierung."
+      },
+      "explanations": {
+        "zh-TW": "辦理入住的標準用語",
+        "en": "Stating that one has a hotel reservation",
+        "ja": "ホテル予約の保有を述べる",
+        "ko": "호텔 예약 보유 알림",
+        "es": "Afirmando tener una reservacion",
+        "fr": "Affirmer avoir une reservation",
+        "zh-CN": "办理入住的标准用语",
+        "de": "Angabe, dass man eine Hotelreservierung hat"
+      }
+    },
+    {
+      "id": "trv-3-01-2",
+      "translations": {
+        "zh-TW": "似乎有個問題。",
+        "en": "There seems to be a problem.",
+        "ja": "問題があるようです",
+        "ko": "문제가 있는 것 같습니다",
+        "es": "Parece que hay un problema",
+        "fr": "Il semble y avoir un probleme",
+        "zh-CN": "似乎有个问题。",
+        "de": "Es scheint ein Problem zu geben."
+      },
+      "explanations": {
+        "zh-TW": "提出問題的開場白",
+        "en": "Indicating there is an issue with the reservation",
+        "ja": "予約に問題があることを指摘",
+        "ko": "예약에 문제가 있다고 지적",
+        "es": "Sealando un problema con la reservacion",
+        "fr": "Signaler un probleme avec la reservation",
+        "zh-CN": "提出问题的开场白",
+        "de": "Hinweis auf ein Problem mit der Reservierung"
+      }
+    },
+    {
+      "id": "trv-3-01-3",
+      "translations": {
+        "zh-TW": "我訂的是...房型。",
+        "en": "I booked a... room.",
+        "ja": "...部屋を予約しました",
+        "ko": "...방을 예약했습니다",
+        "es": "Reserve una habitacion...",
+        "fr": "Jai reserve une chambre...",
+        "zh-CN": "我订的是...房型。",
+        "de": "Ich habe ein ... Zimmer gebucht."
+      },
+      "explanations": {
+        "zh-TW": "說明訂房內容",
+        "en": "Specifying the type of room booked",
+        "ja": "予約ルーム种別の述明",
+        "ko": "예약 객실 유형 알림",
+        "es": "Especificando el tipo de habitacion",
+        "fr": "Specifier le type de chambre",
+        "zh-CN": "说明订房内容",
+        "de": "Angabe der gebuchten Zimmerkategorie"
+      }
+    },
+    {
+      "id": "trv-3-01-4",
+      "translations": {
+        "zh-TW": "我有什麼選擇？",
+        "en": "What are my options?",
+        "ja": "オプションは何ですか？",
+        "ko": "옵션이 뭐가 있나요?",
+        "es": "Cuales son mis opciones?",
+        "fr": "Quelles sont mes options?",
+        "zh-CN": "我有什么选择？",
+        "de": "Welche Möglichkeiten habe ich?"
+      },
+      "explanations": {
+        "zh-TW": "詢問替代方案",
+        "en": "Asking about available alternatives",
+        "ja": "代替案的質問",
+        "ko": "대안 옵션 질문",
+        "es": "Preguntando sobre alternativas disponibles",
+        "fr": "Demander les alternatives disponibles",
+        "zh-CN": "询问替代方案",
+        "de": "Fragen nach verfügbaren Alternativen"
+      }
+    },
+    {
+      "id": "trv-3-01-5",
+      "translations": {
+        "zh-TW": "你能幫我找其他飯店嗎？",
+        "en": "Can you find another hotel?",
+        "ja": "他のホテルを探していただけますか？",
+        "ko": "다른 호텔을 찾아주실 수 있나요?",
+        "es": "Puede encontrar otro hotel?",
+        "fr": "Pouvez-vous trouver un autre hotel?",
+        "zh-CN": "你能帮我找其他饭店吗？",
+        "de": "Können Sie ein anderes Hotel finden?"
+      },
+      "explanations": {
+        "zh-TW": "請求協助",
+        "en": "Requesting assistance finding alternative accommodation",
+        "ja": "替代ホテルの探しの依頼",
+        "ko": "대체 호텔 탐색 요청",
+        "es": "Solicitando ayuda para encontrar otro alojamiento",
+        "fr": "Demander de laide pour trouver un autre hebergement",
+        "zh-CN": "请求协助",
+        "de": "Anfrage nach Hilfe bei der Suche nach alternativer Unterkunft"
+      }
+    }
+  ],
+  "trv-4": [
+    {
+      "id": "trv-4-01-1",
+      "translations": {
+        "zh-TW": "我們來規劃行程。",
+        "en": "Let us plan our itinerary.",
+        "ja": "旅程を計画しましょう",
+        "ko": "여정을 계획해 봅시다",
+        "es": "Planeemos nuestro itinerario",
+        "fr": "Planifions notre itineraire",
+        "zh-CN": "我们来规划进程。",
+        "de": "Lassen Sie uns unseren Reiseplan erstellen."
+      },
+      "explanations": {
+        "zh-TW": "開始討論的開場白",
+        "en": "Proposing to plan a travel itinerary",
+        "ja": "旅行旅程の計画を提案",
+        "ko": "여행 여정 계획 제안",
+        "es": "Proponiendo planificar el itinerario",
+        "fr": "Proposer de planifier un itineraire",
+        "zh-CN": "开始讨论的开场白",
+        "de": "Vorschlag, einen Reiseplan zu erstellen"
+      }
+    },
+    {
+      "id": "trv-4-01-2",
+      "translations": {
+        "zh-TW": "我們應該參觀哪些景點？",
+        "en": "What attractions should we visit?",
+        "ja": "どの景点に行くべきですか？",
+        "ko": "어떤 명소를 방문해야 하나요?",
+        "es": "Que atractivos debemos visitar?",
+        "fr": "Quels sites devons-nous visiter?",
+        "zh-CN": "我们应该参观哪些景点？",
+        "de": "Welche Sehenswürdigkeiten sollten wir besuchen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問景點建議",
+        "en": "Asking for recommendations on tourist attractions",
+        "ja": "Tourist attractions 추천 질문",
+        "ko": "관광 명소 추천 질문",
+        "es": "Pidiendo recomendaciones sobre atractivos",
+        "fr": "Demander des recommandations sur les sites touristiques",
+        "zh-CN": "询问景点建议",
+        "de": "Fragen nach Empfehlungen für Touristenattraktionen"
+      }
+    },
+    {
+      "id": "trv-4-01-3",
+      "translations": {
+        "zh-TW": "我們應該在...待幾天？",
+        "en": "How many days should we spend in...?",
+        "ja": "...には何日滞在すべきですか？",
+        "ko": "...에 며칠 머물러야 하나요?",
+        "es": "Cuantos dias debemos pasar en...?",
+        "fr": "Combien de jours devons-nous passer a...?",
+        "zh-CN": "我们应该在...待几天？",
+        "de": "Wie viele Tage sollten wir in ... verbringen?"
+      },
+      "explanations": {
+        "zh-TW": "討論時間分配",
+        "en": "Asking how many days to allocate to a destination",
+        "ja": "目的地での滞在日数の質問",
+        "ko": "목적지 체재 일수 질문",
+        "es": "Preguntando quantos dias dedicar",
+        "fr": "Demander combien de jours consacrer a",
+        "zh-CN": "讨论时间分配",
+        "de": "Fragen, wie viele Tage man für ein Reiseziel einplanen sollte"
+      }
+    },
+    {
+      "id": "trv-4-01-4",
+      "translations": {
+        "zh-TW": "我們提前買票吧。",
+        "en": "Let us book tickets in advance.",
+        "ja": "事前にチケットを予約しましょう",
+        "ko": "미리 표를 예약합시다",
+        "es": "Reservemos boletos con anticipacion",
+        "fr": "Reservons les billets a lavance",
+        "zh-CN": "我们提前买票吧。",
+        "de": "Lassen Sie uns die Tickets im Voraus buchen."
+      },
+      "explanations": {
+        "zh-TW": "提議具體行動",
+        "en": "Proposing to purchase tickets ahead of time",
+        "ja": "チケット事前予約を提案",
+        "ko": "티켓 사전 예약 제안",
+        "es": "Proponiendo comprar entradas por adelantado",
+        "fr": "Proposer dacheter des billets a lavance",
+        "zh-CN": "提议具体行动",
+        "de": "Vorschlag, Tickets im Voraus zu kaufen"
+      }
+    },
+    {
+      "id": "trv-4-01-5",
+      "translations": {
+        "zh-TW": "我們應該留點彈性。",
+        "en": "We should leave some flexibility.",
+        "ja": "少し融通を持たせましょう",
+        "ko": "여유를 좀 두는 게 좋겠어요",
+        "es": "Deberiamos dejar algo de flexibilidad",
+        "fr": "Nous devrions garder une certaine flexibilite",
+        "zh-CN": "我们应该留点弹性。",
+        "de": "Wir sollten etwas Flexibilität lassen."
+      },
+      "explanations": {
+        "zh-TW": "提出規劃建議",
+        "en": "Suggesting building flexibility into the itinerary",
+        "ja": "旅程に融通を持たせることを提案",
+        "ko": "여정에 유연성 두기 제안",
+        "es": "Sugiriendo tener flexibilidad",
+        "fr": "Proposer de garder de la flexibilite",
+        "zh-CN": "提出规划建议",
+        "de": "Vorschlag, Flexibilität in den Reiseplan einzubauen"
+      }
+    }
+  ],
+  "trv-5": [
+    {
+      "id": "trv-5-01-1",
+      "translations": {
+        "zh-TW": "我弄丟了護照。",
+        "en": "I lost my passport.",
+        "ja": "パスポートをなくしました",
+        "ko": "여권을 잃어버렸습니다",
+        "es": "Perdi mi pasaporte",
+        "fr": "Jai perdu mon passeport",
+        "zh-CN": "我弄丢了护照。",
+        "de": "Ich habe meinen Reisepass verloren."
+      },
+      "explanations": {
+        "zh-TW": "報案的開場白",
+        "en": "Stating that one has lost their passport",
+        "ja": "パスポート喪失の報告",
+        "ko": "여권 분실 보고",
+        "es": "Informando la perdida del pasaporte",
+        "fr": "Signaler la perte de son passeport",
+        "zh-CN": "报案的开场白",
+        "de": "Angabe, dass man seinen Reisepass verloren hat"
+      }
+    },
+    {
+      "id": "trv-5-01-2",
+      "translations": {
+        "zh-TW": "我需要報失護照。",
+        "en": "I need to report a lost passport.",
+        "ja": "パスポート喪失を届け出る必要があります",
+        "ko": "여권 분실을 신고해야 합니다",
+        "es": "Necesito reportar la perdida del pasaporte",
+        "fr": "Je dois signaler la perte du passeport",
+        "zh-CN": "我需要报失护照。",
+        "de": "Ich muss einen verlorenen Reisepass melden."
+      },
+      "explanations": {
+        "zh-TW": "說明需求",
+        "en": "Stating need to file a lost passport report",
+        "ja": "パスポート喪失届の必要性",
+        "ko": "여권 분실 신고 필요성",
+        "es": "Afirmando la necesidad de reportar",
+        "fr": "Affirmer la necessite de signaler",
+        "zh-CN": "说明需求",
+        "de": "Angabe des Bedarfs, einen Verlustbericht für den Reisepass einzureichen"
+      }
+    },
+    {
+      "id": "trv-5-01-3",
+      "translations": {
+        "zh-TW": "最近的警察局在哪裡？",
+        "en": "Where is the nearest police station?",
+        "ja": "一番近い警察署はどこですか？",
+        "ko": "가장 가까운 경찰서는 어디인가요?",
+        "es": "Donde esta la comisaria mas cercana?",
+        "fr": "Ou est le commissariat le plus proche?",
+        "zh-CN": "最近的警察局在哪里？",
+        "de": "Wo ist die nächste Polizeistation?"
+      },
+      "explanations": {
+        "zh-TW": "詢問位置",
+        "en": "Asking for the location of the nearest police station",
+        "ja": "最寄りの警察署場所を質問",
+        "ko": "가장 가까운 경찰서 위치 질문",
+        "es": "Preguntando por la comisaria mas cercana",
+        "fr": "Demander le commissariat le plus proche",
+        "zh-CN": "询问位置",
+        "de": "Fragen nach dem Standort der nächsten Polizeistation"
+      }
+    },
+    {
+      "id": "trv-5-01-4",
+      "translations": {
+        "zh-TW": "我如何聯繫大使館？",
+        "en": "How do I contact my embassy?",
+        "ja": "大使館にはどう連絡すればいいですか？",
+        "ko": "대사관에 어떻게 연락해야 하나요?",
+        "es": "Como contacto a mi embajada?",
+        "fr": "Comment contacter mon ambassade?",
+        "zh-CN": "我如何联系大使馆？",
+        "de": "Wie kontaktiere ich meine Botschaft?"
+      },
+      "explanations": {
+        "zh-TW": "詢問聯絡方式",
+        "en": "Asking how to reach one's embassy",
+        "ja": "大使館への連絡方法を質問",
+        "ko": "대사관 연락 방법 질문",
+        "es": "Preguntando como contactar",
+        "fr": "Demander comment contacter son ambassade",
+        "zh-CN": "询问联络方式",
+        "de": "Fragen, wie man seine Botschaft erreicht"
+      }
+    },
+    {
+      "id": "trv-5-01-5",
+      "translations": {
+        "zh-TW": "取得替代護照需要多久？",
+        "en": "How long does it take to get a replacement?",
+        "ja": "代替品を受け取るまでどのくらい時間がかかりますか？",
+        "ko": "대체 여권을 받기까지 시간이 얼마나 걸리나요?",
+        "es": "Cuanto tiempo toma obtener un reemplazo?",
+        "fr": "Combien de temps faut-il pour obtenir un remplacement?",
+        "zh-CN": "取得替代护照需要多久？",
+        "de": "Wie lange dauert es, einen Ersatz zu bekommen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問處理時間",
+        "en": "Asking about the timeline for getting a replacement passport",
+        "ja": "代替パスポート取得所要時間の質問",
+        "ko": "대체 여권 취득 소요 시간 질문",
+        "es": "Preguntando sobre el tiempo para reemplazo",
+        "fr": "Demander le delai pour un remplacement",
+        "zh-CN": "询问处理时间",
+        "de": "Fragen nach dem Zeitplan für einen Ersatzreisepass"
+      }
+    }
+  ],
+  "trv-6": [
+    {
+      "id": "trv-6-01-1",
+      "translations": {
+        "zh-TW": "歡迎來到...",
+        "en": "Welcome to...",
+        "ja": "...へようこそ",
+        "ko": "...에 오신 것을 환영합니다",
+        "es": "Bienvenidos a...",
+        "fr": "Bienvenue a...",
+        "zh-CN": "欢迎来到...",
+        "de": "Willkommen in ..."
+      },
+      "explanations": {
+        "zh-TW": "導覽開場的用語",
+        "en": "Welcoming visitors to a tourist attraction",
+        "ja": "tourist attractionへの歓迎",
+        "ko": "관광 명소 방문객 환영",
+        "es": "Dando la bienvenida a visitantes",
+        "fr": "Accueillir les visiteurs dun site",
+        "zh-CN": "导览开场的用语",
+        "de": "Begrüßung von Besuchern einer Touristenattraktion"
+      }
+    },
+    {
+      "id": "trv-6-01-2",
+      "translations": {
+        "zh-TW": "這棟建築可以追溯到...",
+        "en": "This building dates back to...",
+        "ja": "この建物は...に遡ります",
+        "ko": "이 건물은...로 거슬러 올라갑니다",
+        "es": "Este edificio se remonta a...",
+        "fr": "Ce batiment remonte a...",
+        "zh-CN": "这栋建筑可以追溯到...",
+        "de": "Dieses Gebäude stammt aus ..."
+      },
+      "explanations": {
+        "zh-TW": "說明歷史年代",
+        "en": "Providing the historical date of a building",
+        "ja": "建物の歴史年月の説明",
+        "ko": "건물 역사 연월 설명",
+        "es": "Dando la fecha historica de un edificio",
+        "fr": "Donner la date historique dun batiment",
+        "zh-CN": "说明历史年代",
+        "de": "Angabe des historischen Datums eines Gebäudes"
+      }
+    },
+    {
+      "id": "trv-6-01-3",
+      "translations": {
+        "zh-TW": "它是由...建造的。",
+        "en": "It was built by...",
+        "ja": "これは...によって建設されました",
+        "ko": "이것은...에 의해 지어졌습니다",
+        "es": "Fue construido por...",
+        "fr": "Il a ete construit par...",
+        "zh-CN": "它是由...建造的。",
+        "de": "Es wurde von ... erbaut."
+      },
+      "explanations": {
+        "zh-TW": "說明建造者",
+        "en": "Attributing the construction of a building to an architect or patron",
+        "ja": "建物の設計者/依頼主の説明",
+        "ko": "건물 설계자/의뢰주 설명",
+        "es": "Atribuyendo la construccion",
+        "fr": "Attribuer la construction",
+        "zh-CN": "说明建造者",
+        "de": "Zuschreibung des Baus eines Gebäudes an einen Architekten oder Mäzen"
+      }
+    },
+    {
+      "id": "trv-6-01-4",
+      "translations": {
+        "zh-TW": "建築風格是...",
+        "en": "The architectural style is...",
+        "ja": "建築様式は...です",
+        "ko": "건축 양식은...입니다",
+        "es": "El estilo arquitectonico es...",
+        "fr": "Le style architectural est...",
+        "zh-CN": "建筑风格是...",
+        "de": "Der architektonische Stil ist ..."
+      },
+      "explanations": {
+        "zh-TW": "說明風格",
+        "en": "Describing the architectural style of a building",
+        "ja": "建物の建築様式を描述",
+        "ko": "건물 건축 양식 설명",
+        "es": "Describiendo el estilo arquitectonico",
+        "fr": "Decrire le style architectural",
+        "zh-CN": "说明风格",
+        "de": "Beschreibung des architektonischen Stils eines Gebäudes"
+      }
+    },
+    {
+      "id": "trv-6-01-5",
+      "translations": {
+        "zh-TW": "這個地點具有重要的文化意義。",
+        "en": "This site has significant cultural importance.",
+        "ja": "この遗址は重要な文化的価値があります",
+        "ko": "이 유적은 중요한 문화적 가치가 있습니다",
+        "es": "Este sitio tiene gran importancia cultural",
+        "fr": "Ce site a une importance culturelle significative",
+        "zh-CN": "这个地点具有重要的文化意义。",
+        "de": "Diese Stätte hat eine bedeutende kulturelle Wichtigkeit."
+      },
+      "explanations": {
+        "zh-TW": "說明文化價值",
+        "en": "Emphasizing the cultural significance of a tourist site",
+        "ja": "tourist siteの文化的重要性を強調",
+        "ko": "관광 유적의 문화적 중요성 강조",
+        "es": "Enfatizando la importancia cultural",
+        "fr": "Souligner limportance culturelle dun site",
+        "zh-CN": "说明文化价值",
+        "de": "Hervorhebung der kulturellen Bedeutung einer Touristenattraktion"
+      }
+    }
+  ],
+  "dat-1": [
+    {
+      "id": "dat-1-01-1",
+      "translations": {
+        "zh-TW": "嗨，我叫 [名字]。很高興認識你。",
+        "en": "Hi, I am [name]. Nice to meet you.",
+        "ja": "はじめまして、[name]です。",
+        "ko": "안녕하세요, [name]입니다. 잘 부탁드립니다.",
+        "es": "Hola, soy [name]. Mucho gusto.",
+        "fr": "Bonjour, je suis [name]. Enchanté.",
+        "zh-CN": "嗨，我叫 [名字]。很高兴认识你。",
+        "de": "Hallo, ich bin [name]. Schön, dich kennenzulernen."
+      },
+      "explanations": {
+        "zh-TW": "初次見面自我介紹的標準用語",
+        "en": "Introducing oneself in a first-date scenario",
+        "ja": "初次约会场景中的自我介绍",
+        "ko": "첫 데이트 장면에서의 자기소개",
+        "es": "Presentandose en un escenario de primera cita",
+        "fr": "Se presenter dans un scenario de premier rendez-vous",
+        "zh-CN": "初次见面自我介绍的标准用语",
+        "de": "Vorstellung seiner selbst in einem ersten Date-Szenario"
+      }
+    },
+    {
+      "id": "dat-1-01-2",
+      "translations": {
+        "zh-TW": "你平時喜歡做什麼？",
+        "en": "What do you do for fun?",
+        "ja": "普段はどういうことを楽しみますか？",
+        "ko": "여가에 뭐를 하시나요?",
+        "es": "Que haces para divertirte?",
+        "fr": "Quest-ce que tu fais pour t amuser?",
+        "zh-CN": "你平时喜欢做什么？",
+        "de": "Was machst du zum Spaß?"
+      },
+      "explanations": {
+        "zh-TW": "詢問興趣愛好",
+        "en": "Asking about hobbies and interests on a date",
+        "ja": "デートでの趣味・興味質問",
+        "ko": "데이트에서의 취미/흥미 질문",
+        "es": "Preguntando sobre pasatiempos e intereses",
+        "fr": "Demander les passe-temps et interets",
+        "zh-CN": "询问兴趣爱好",
+        "de": "Fragen nach Hobbys und Interessen bei einem Date"
+      }
+    },
+    {
+      "id": "dat-1-01-3",
+      "translations": {
+        "zh-TW": "這地方看起來不錯。",
+        "en": "This place looks nice.",
+        "ja": "这个地方看起来不错",
+        "ko": "이 곳이 좋아 보여요",
+        "es": "Este lugar se ve bien",
+        "fr": "Cet endroit a lair bien",
+        "zh-CN": "这地方看起来不错。",
+        "de": "Dieser Ort sieht schön aus."
+      },
+      "explanations": {
+        "zh-TW": "開啟話題的寒暄語",
+        "en": "Making a positive comment about the venue",
+        "ja": "约会场所の好意的なコメント",
+        "ko": "만남 장소에 대한 호의적 코멘트",
+        "es": "Haciendo un comentario positivo sobre el lugar",
+        "fr": "Faire un commentaire positif sur le lieu",
+        "zh-CN": "开启话题的寒暄语",
+        "de": "Einen positiven Kommentar über den Ort abgeben"
+      }
+    },
+    {
+      "id": "dat-1-01-4",
+      "translations": {
+        "zh-TW": "你是怎麼知道這個活動的？",
+        "en": "How did you hear about this event?",
+        "ja": "このイベントをどうやって知りましたか？",
+        "ko": "이 이벤트를 어떻게 알게 되셨나요?",
+        "es": "Como te enteraste de este evento?",
+        "fr": "Comment as-tu connu cet evenement?",
+        "zh-CN": "你是怎么知道这个活动的？",
+        "de": "Wie hast du von dieser Veranstaltung gehört?"
+      },
+      "explanations": {
+        "zh-TW": "詢問相識由來",
+        "en": "Asking how someone learned about the event",
+        "ja": "イベント認知経路の質問",
+        "ko": "이벤트 인지 경로 질문",
+        "es": "Preguntando como supo del evento",
+        "fr": "Demander comment elle a connu levenement",
+        "zh-CN": "询问相识由来",
+        "de": "Fragen, wie jemand von der Veranstaltung erfahren hat"
+      }
+    },
+    {
+      "id": "dat-1-01-5",
+      "translations": {
+        "zh-TW": "所以，你今天為什麼來這裡？",
+        "en": "So, what brings you here today?",
+        "ja": "今日はどうされましたか？",
+        "ko": "오늘 무엇이 당신을 여기까지 오게 했나요?",
+        "es": "Entonces, que te trae por aqui hoy?",
+        "fr": "Alors, quest-ce qui vous amene ici aujourdhui?",
+        "zh-CN": "所以，你今天为什么来这里？",
+        "de": "Was führt dich heute hierher?"
+      },
+      "explanations": {
+        "zh-TW": "自然展開對話",
+        "en": "Asking what motivated someone to attend the event",
+        "ja": "イベント参加動機の質問",
+        "ko": "이벤트 참여 동기 질문",
+        "es": "Preguntando la motivacion para asistir",
+        "fr": "Demander la motivation pour assister",
+        "zh-CN": "自然展开对话",
+        "de": "Fragen, was jemanden motiviert hat, an der Veranstaltung teilzunehmen"
+      }
+    }
+  ],
+  "dat-2": [
+    {
+      "id": "dat-2-01-1",
+      "translations": {
+        "zh-TW": "我喜歡你的穿著！",
+        "en": "I love your outfit!",
+        "ja": "その装いが好き！",
+        "ko": "그 옷 정말 예쁘다!",
+        "es": "Me encanta tu outfit!",
+        "fr": "Jadore ta tenue!",
+        "zh-CN": "我喜欢你的穿着！",
+        "de": "Ich liebe dein Outfit!"
+      },
+      "explanations": {
+        "zh-TW": "稱讚穿著的常用語",
+        "en": "Genuinely complimenting someone's clothing choice",
+        "ja": "相手の衣装への本物の稱賛",
+        "ko": "상대방 의상에 대한 진심 어린 칭찬",
+        "es": "Elogiando sinceramente la eleccion de ropa",
+        "fr": "Complimenter sincerement le choix de vetements",
+        "zh-CN": "称赞穿着的常用语",
+        "de": "Aufrichtiges Lob der Kleiderwahl von jemandem"
+      }
+    },
+    {
+      "id": "dat-2-01-2",
+      "translations": {
+        "zh-TW": "那個顏色真的很適合你。",
+        "en": "That color really suits you.",
+        "ja": "その色がとても似合う",
+        "ko": "그 색이 정말 잘 어울려요",
+        "es": "Ese color te queda muy bien",
+        "fr": "Cette couleur vous va vraiment bien",
+        "zh-CN": "那个颜色真的很适合你。",
+        "de": "Diese Farbe steht dir wirklich gut."
+      },
+      "explanations": {
+        "zh-TW": "具體稱讚穿著搭配",
+        "en": "Genuinely complimenting how a color complements someone",
+        "ja": "色の似合う褒め言葉",
+        "ko": "색상이 어울린다는 칭찬",
+        "es": "Elogiando como un color complementa a alguien",
+        "fr": "Complimenter la facon dont une couleur met en valeur",
+        "zh-CN": "具体称赞穿着搭配",
+        "de": "Aufrichtiges Lob, wie eine Farbe jemanden ergänzt"
+      }
+    },
+    {
+      "id": "dat-2-01-3",
+      "translations": {
+        "zh-TW": "你的品味很好。",
+        "en": "You have great style.",
+        "ja": "とても时尚な方ですね",
+        "ko": "스타일이 참 좋아요",
+        "es": "Tienes un gran estilo",
+        "fr": "Vous avez un excellent style",
+        "zh-CN": "你的品味很好。",
+        "de": "Du hast einen tollen Stil."
+      },
+      "explanations": {
+        "zh-TW": "整體稱讚品味",
+        "en": "Genuinely complimenting someone's overall fashion sense",
+        "ja": " 전반적인ファッション感覚への稱賛",
+        "ko": "전반적인 패션 감각 칭찬",
+        "es": "Elogiando el sentido de la moda general",
+        "fr": "Complimenter le sens de la mode en general",
+        "zh-CN": "整体称赞品味",
+        "de": "Aufrichtiges Lob des allgemeinen Modestils von jemandem"
+      }
+    },
+    {
+      "id": "dat-2-01-4",
+      "translations": {
+        "zh-TW": "你那是在哪買的？",
+        "en": "Where did you get that?",
+        "ja": "それはどこで手に入れましたか？",
+        "ko": "그거 어디서 구했어요?",
+        "es": "Donde conseguiste eso?",
+        "fr": "Ouf avez-vous eu ca?",
+        "zh-CN": "你那是在哪买的？",
+        "de": "Wo hast du das her?"
+      },
+      "explanations": {
+        "zh-TW": "自然延伸話題",
+        "en": "Asking where someone purchased an item",
+        "ja": "アイテムの購的路質問",
+        "ko": "아이템 구매처 질문",
+        "es": "Preguntando donde compro algo",
+        "fr": "Demander ou quelquun a achete quelque chose",
+        "zh-CN": "自然延伸话题",
+        "de": "Fragen, wo jemand ein Item gekauft hat"
+      }
+    },
+    {
+      "id": "dat-2-01-5",
+      "translations": {
+        "zh-TW": "你今晚真好看。",
+        "en": "You look great tonight.",
+        "ja": "今夜很漂亮",
+        "ko": "오늘 밤 정말 예쁘다",
+        "es": "Te ves genial esta noche",
+        "fr": "Vous êtes magnifique ce soir.",
+        "zh-CN": "你今晚真好看。",
+        "de": "Du siehst heute Abend toll aus."
+      },
+      "explanations": {
+        "zh-TW": "稱讚對方外貌",
+        "en": "Genuinely complimenting someone's appearance for the occasion",
+        "ja": "その場の相手の容姿を稱賛",
+        "ko": "그 자리에서 상대방의 용모 칭찬",
+        "es": "Elogiando la apariencia de alguien para la occasion",
+        "fr": "Complimenter lapparence de quelquun pour loccasion",
+        "zh-CN": "称赞对方外貌",
+        "de": "Aufrichtiges Lob des Aussehens von jemandem für den Anlass"
+      }
+    }
+  ],
+  "dat-3": [
+    {
+      "id": "dat-3-01-1",
+      "translations": {
+        "zh-TW": "對你來說人生最重要的是什麼？",
+        "en": "What matters most to you in life?",
+        "ja": "人生で最も大切なことは何ですか？",
+        "ko": "인생에서 가장 중요한 것은 무엇인가요?",
+        "es": "Que es lo mas importante para ti en la vida?",
+        "fr": "Quest-ce qui compte le plus pour vous dans la vie?",
+        "zh-CN": "对你来说人生最重要的是什么？",
+        "de": "Was ist dir im Leben am wichtigsten?"
+      },
+      "explanations": {
+        "zh-TW": "深入交流的開場白",
+        "en": "Asking about deep values in life",
+        "ja": "人生の深層価値観の質問",
+        "ko": "인생의 깊은 가치관 질문",
+        "es": "Preguntando sobre valores profundos",
+        "fr": "Demander les valeurs profondes dans la vie",
+        "zh-CN": "深入交流的开场白",
+        "de": "Fragen nach tiefen Werten im Leben"
+      }
+    },
+    {
+      "id": "dat-3-01-2",
+      "translations": {
+        "zh-TW": "五年後你想在哪裡？",
+        "en": "Where do you see yourself in 5 years?",
+        "ja": "5年後にはどこいたいですか？",
+        "ko": "5년 후에는 어떻게 보고 싶으신가요?",
+        "es": "Donde te ves en 5 anos?",
+        "fr": "Ou vous voyez-vous dans 5 ans?",
+        "zh-CN": "五年后你想在哪里？",
+        "de": "Wo siehst du dich in 5 Jahren?"
+      },
+      "explanations": {
+        "zh-TW": "討論未來規劃",
+        "en": "Asking about long-term life goals",
+        "ja": " 장기人生目標の質問",
+        "ko": "장기 인생 목표 질문",
+        "es": "Preguntando sobre metas a largo plazo",
+        "fr": "Demander les objectifs a long terme",
+        "zh-CN": "讨论未来规划",
+        "de": "Fragen nach langfristigen Lebenszielen"
+      }
+    },
+    {
+      "id": "dat-3-01-3",
+      "translations": {
+        "zh-TW": "你的夢想是什麼？",
+        "en": "What is your dream?",
+        "ja": "夢は何ですか？",
+        "ko": "꿈은 무엇인가요?",
+        "es": "Cual es tu sueno?",
+        "fr": "Quest-ce que votre reve?",
+        "zh-CN": "你的梦想是什么？",
+        "de": "Was ist dein Traum?"
+      },
+      "explanations": {
+        "zh-TW": "詢問人生目標",
+        "en": "Asking about someone's personal dreams and aspirations",
+        "ja": "個人の夢と野心の質問",
+        "ko": "개인적인 꿈과 야망 질문",
+        "es": "Preguntando sobre los suenos personales",
+        "fr": "Demander les reveils et ambitions personnels",
+        "zh-CN": "询问人生目标",
+        "de": "Fragen nach den persönlichen Träumen und Aspirationen von jemandem"
+      }
+    },
+    {
+      "id": "dat-3-01-4",
+      "translations": {
+        "zh-TW": "你最大的遺憾是什麼？",
+        "en": "What is your biggest regret?",
+        "ja": "最大の後悔は何ですか？",
+        "ko": "가장 큰 후회는 무엇인가요?",
+        "es": "Cual es tu mayor arrepentimiento?",
+        "fr": "Quel est votre plus grand regret?",
+        "zh-CN": "你最大的遗憾是什么？",
+        "de": "Was ist dein größter Fehler?"
+      },
+      "explanations": {
+        "zh-TW": "深入了解對方",
+        "en": "Asking about a significant life regret",
+        "ja": "重大な人生の後悔の質問",
+        "ko": "중대한 인생 후회 질문",
+        "es": "Preguntando sobre un arrepentimiento significativo",
+        "fr": "Demander un regret significatif dans la vie",
+        "zh-CN": "深入了解对方",
+        "de": "Fragen nach einer bedeutenden Lebensreue"
+      }
+    },
+    {
+      "id": "dat-3-01-5",
+      "translations": {
+        "zh-TW": "我看重...",
+        "en": "I value...",
+        "ja": "私は...を、大切にしています",
+        "ko": "나는...을 소중히 여기고 있습니다",
+        "es": "Yo valoro...",
+        "fr": "Je valorise...",
+        "zh-CN": "我看重...",
+        "de": "Ich schätze..."
+      },
+      "explanations": {
+        "zh-TW": "分享自己的價值觀",
+        "en": "Sharing one's own core values",
+        "ja": "自身の核心価値観の共有",
+        "ko": "스스로의 핵심 가치관 공유",
+        "es": "Compartiendo los propios valores",
+        "fr": "Partager ses propres valeurs",
+        "zh-CN": "分享自己的价值观",
+        "de": "Teilen der eigenen Kernwerte"
+      }
+    }
+  ],
+  "dat-4": [
+    {
+      "id": "dat-4-01-1",
+      "translations": {
+        "zh-TW": "所以，你常來這裡嗎？",
+        "en": "So, do you come here often?",
+        "ja": "よくここに来るの？",
+        "ko": "여기 자주 오세요?",
+        "es": "Entonces, vienes aqui a menudo?",
+        "fr": "Alors, tu viens souvent ici?",
+        "zh-CN": "所以，你常来这里吗？",
+        "de": "Kommst du hier oft her?"
+      },
+      "explanations": {
+        "zh-TW": "化解尷尬的經典問句",
+        "en": "Classic conversation starter in a dating context",
+        "ja": "デートでの经典的开场白",
+        "ko": "데이트에서의 클래식한 오프닝",
+        "es": "Apertura de conversacion clasica en contexto de citas",
+        "fr": "Ouverture de conversation classique dans un contexte de rencontre",
+        "zh-CN": "化解尴尬的经典问句",
+        "de": "Klassischer Gesprächseröffner in einem Dating-Kontext"
+      }
+    },
+    {
+      "id": "dat-4-01-2",
+      "translations": {
+        "zh-TW": "你有吃過這裡的東西嗎？",
+        "en": "Have you tried the food here?",
+        "ja": "この店の料理、食べたことある？",
+        "ko": "여기 음식 먹어보셨어요?",
+        "es": "Has probado la comida aqui?",
+        "fr": "Tu as deja essaye la nourriture ici?",
+        "zh-CN": "你有吃过这里的东西吗？",
+        "de": "Hast du das Essen hier schon probiert?"
+      },
+      "explanations": {
+        "zh-TW": "轉向食物話題",
+        "en": "Making conversation about the shared dining experience",
+        "ja": "共に食事をしながらの会話",
+        "ko": " 함께 먹는 환경에서의 대화",
+        "es": "Haciendo conversacion sobre la experiencia compartida",
+        "fr": "Faire la conversation sur le lieu de repas partage",
+        "zh-CN": "转向食物话题",
+        "de": "Konversation über die gemeinsame Essenserfahrung führen"
+      }
+    },
+    {
+      "id": "dat-4-01-3",
+      "translations": {
+        "zh-TW": "你喜歡什麼類型的音樂？",
+        "en": "What kind of music do you like?",
+        "ja": "どんな音楽が好き？",
+        "ko": "어떤 음악 좋아하세요?",
+        "es": "Que tipo de musica te gusta?",
+        "fr": "Quel type de musique aimes-tu?",
+        "zh-CN": "你喜欢什么类型的音乐？",
+        "de": "Was für Musik magst du?"
+      },
+      "explanations": {
+        "zh-TW": "分享興趣",
+        "en": "Asking about music taste on a date",
+        "ja": "デートでの音楽趣昧質問",
+        "ko": "데이트에서의 음악 취향 질문",
+        "es": "Preguntando sobre el gusto musical",
+        "fr": "Demander le gout musical",
+        "zh-CN": "分享兴趣",
+        "de": "Fragen nach dem Musikgeschmack bei einem Date"
+      }
+    },
+    {
+      "id": "dat-4-01-4",
+      "translations": {
+        "zh-TW": "說說你的興趣愛好。",
+        "en": "Tell me about your hobbies.",
+        "ja": "趣味について教えて",
+        "ko": "취미에 대해 이야기해 주세요",
+        "es": "Cuentame sobre tus pasatiempos",
+        "fr": "Parle-moi de tes passe-temps",
+        "zh-CN": "说说你的兴趣爱好。",
+        "de": "Erzähl mir von deinen Hobbys."
+      },
+      "explanations": {
+        "zh-TW": "邀請對方分享",
+        "en": "Showing interest in someone's hobbies",
+        "ja": "趣味への興味を示す",
+        "ko": "취미에 대한 관심 표현",
+        "es": "Mostrando interes en los pasatiempos de alguien",
+        "fr": "Montrer de linteret pour les passe-temps",
+        "zh-CN": "邀请对方分享",
+        "de": "Interesse an den Hobbys von jemandem zeigen"
+      }
+    },
+    {
+      "id": "dat-4-01-5",
+      "translations": {
+        "zh-TW": "這是個聊天的很棒的地方。",
+        "en": "This is a nice place to chat.",
+        "ja": "雰囲圍 хорошее место для разговора",
+        "ko": "여기 이야기하기 좋은 곳이에요",
+        "es": "Este es un buen lugar para charlar",
+        "fr": "Cest un bel endroit pour papoter",
+        "zh-CN": "这是个聊天的很棒的地方。",
+        "de": "Dies ist ein schöner Ort zum Plaudern."
+      },
+      "explanations": {
+        "zh-TW": "肯定當下氛圍",
+        "en": "Making a positive comment about the conversation atmosphere",
+        "ja": "会話雾囲气への肯定コメント",
+        "ko": "대화 분위기에 대한 긍정 코멘트",
+        "es": "Haciendo un comentario positivo sobre la atmosfera",
+        "fr": "Faire un commentaire positif sur latmosphere",
+        "zh-CN": "肯定当下氛围",
+        "de": "Einen positiven Kommentar über die Gesprächsatmosphäre abgeben"
+      }
+    }
+  ],
+  "dat-5": [
+    {
+      "id": "dat-5-01-1",
+      "translations": {
+        "zh-TW": "我們需要談談我們的關係。",
+        "en": "We need to talk about our relationship.",
+        "ja": "私たちのこと、話しましょう",
+        "ko": "우리 관계에 대해 이야기해야 할 것 같아요",
+        "es": "Necesitamos hablar sobre nuestra relacion",
+        "fr": "Nous devons parler de notre relation",
+        "zh-CN": "我们需要谈谈我们的关系。",
+        "de": "Wir müssen über unsere Beziehung reden."
+      },
+      "explanations": {
+        "zh-TW": "嚴肅討論的開場白",
+        "en": "Initiating a serious conversation about the relationship status",
+        "ja": "関係性についての真面目な会話を始める",
+        "ko": "관계에 대한 진지한 대화 시작",
+        "es": "Iniciando una conversacion seria sobre la relacion",
+        "fr": "Engager une conversation serieuse sur la relation",
+        "zh-CN": "严肃讨论的开场白",
+        "de": "Eine ernste Unterhaltung über den Beziehungsstatus beginnen"
+      }
+    },
+    {
+      "id": "dat-5-01-2",
+      "translations": {
+        "zh-TW": "這段關係要往哪裡走？",
+        "en": "Where is this going?",
+        "ja": "これはどこに向かうの？",
+        "ko": "이게 어디로 향하는 거예요?",
+        "es": "Hacia donde va esto?",
+        "fr": "Ou va tout cela?",
+        "zh-CN": "这段关系要往哪里走？",
+        "de": "Wo soll das hinführen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問未來方向",
+        "en": "Asking about the future direction of the relationship",
+        "ja": "関係の将来性への問いかけ",
+        "ko": "관계의 향후 방향 질문",
+        "es": "Preguntando sobre la direccion futura",
+        "fr": "Demander la direction future de la relation",
+        "zh-CN": "询问未来方向",
+        "de": "Fragen nach der zukünftigen Richtung der Beziehung"
+      }
+    },
+    {
+      "id": "dat-5-01-3",
+      "translations": {
+        "zh-TW": "我覺得我們不在同一個頻道上。",
+        "en": "I think we are on different pages.",
+        "ja": "私たち、方向性が違う気がする",
+        "ko": "우리 생각하는 방향이 다른 것 같아요",
+        "es": "Creo que estamos en paginas diferentes",
+        "fr": "Je crois que nous ne sommes pas sur la meme page",
+        "zh-CN": "我觉得我们不在同一个频道上。",
+        "de": "Ich glaube, wir sind auf verschiedenen Wellenlängen."
+      },
+      "explanations": {
+        "zh-TW": "表達認知差距",
+        "en": "Expressing belief that partners have different expectations",
+        "ja": "パートナーとの期待のズレを表現",
+        "ko": "파트너와 기대의 차이 표현",
+        "es": "Expresando que hay expectativas diferentes",
+        "fr": "Exprimer que les attentes sont differentes",
+        "zh-CN": "表达认知差距",
+        "de": "Ausdruck der Überzeugung, dass Partner unterschiedliche Erwartungen haben"
+      }
+    },
+    {
+      "id": "dat-5-01-4",
+      "translations": {
+        "zh-TW": "你從這段關係中想要什麼？",
+        "en": "What do you want from this relationship?",
+        "ja": "この関係に何を求めてるの？",
+        "ko": "이 관계에서 뭐를 원하세요?",
+        "es": "Que quieres de esta relacion?",
+        "fr": "Que veux-tu de cette relation?",
+        "zh-CN": "你从这段关系中想要什么？",
+        "de": "Was willst du von dieser Beziehung?"
+      },
+      "explanations": {
+        "zh-TW": "詢問對方期望",
+        "en": "Asking directly what someone seeks in the relationship",
+        "ja": "関係において对方の要望を直接質問",
+        "ko": "관계에서 상대방의 소망을 직접 질문",
+        "es": "Preguntando directamente que busca alguien",
+        "fr": "Demander directement ce que quelquun recherche",
+        "zh-CN": "询问对方期望",
+        "de": "Jemanden direkt fragen, was er/sie in der Beziehung sucht"
+      }
+    },
+    {
+      "id": "dat-5-01-5",
+      "translations": {
+        "zh-TW": "我在找認真的關係。",
+        "en": "I am looking for something serious.",
+        "ja": "真剣な関係がほしい",
+        "ko": "진지한 관계를 찾고 있어요",
+        "es": "Estoy buscando algo serio",
+        "fr": "Je cherche quelque chose de serieux",
+        "zh-CN": "我在找认真的关系。",
+        "de": "Ich suche etwas Ernstes."
+      },
+      "explanations": {
+        "zh-TW": "表明自己的意圖",
+        "en": "Stating one is seeking a committed relationship",
+        "ja": "真剣な交際を求めることを表明",
+        "ko": "진지한 만남을 원함 알림",
+        "es": "Afirmando buscar una relacion comprometida",
+        "fr": "Affirmer chercher une relation serieuse",
+        "zh-CN": "表明自己的意图",
+        "de": "Erklären, dass man eine feste Beziehung sucht"
+      }
+    }
+  ],
+  "dat-6": [
+    {
+      "id": "dat-6-01-1",
+      "translations": {
+        "zh-TW": "我明白你的觀點，但我有不同的感受。",
+        "en": "I see your point, but I feel differently.",
+        "ja": "あなたの言うこともわかります。でも私は...</",
+        "ko": "당신 말이 이해는 됩니다. 근데 저는 differently",
+        "es": "Veo tu punto, pero yo siento diferente",
+        "fr": "Je vois ton point, mais je ressens differently",
+        "zh-CN": "我明白你的观点，但我有不同的感受。",
+        "de": "Ich verstehe deinen Punkt, aber ich fühle anders."
+      },
+      "explanations": {
+        "zh-TW": "表達不同意見的禮貌方式",
+        "en": "Disagreeing respectfully in a relationship discussion",
+        "ja": "関係Discussでの敬意を伴う不同意",
+        "ko": "관계 논의에서의 존중을 담은 반대",
+        "es": "En desacuerdo con respeto",
+        "fr": "Desaccord respectueux",
+        "zh-CN": "表达不同意见的礼貌方式",
+        "de": "Respektvoll in einer Beziehungsdiskussion nicht zustimmen"
+      }
+    },
+    {
+      "id": "dat-6-01-2",
+      "translations": {
+        "zh-TW": "讓我們找個折衷方案。",
+        "en": "Let us find a compromise.",
+        "ja": "折衷案を見つけましょう",
+        "ko": "절충안을 찾아봐요",
+        "es": "Encontremos un compromiso",
+        "fr": "Trouvons un compromis",
+        "zh-CN": "让我们找个折衷方案。",
+        "de": "Lassen Sie uns einen Kompromiss finden."
+      },
+      "explanations": {
+        "zh-TW": "尋求共識",
+        "en": "Proposing to seek middle ground in a disagreement",
+        "ja": "不一致での妥協案の提案",
+        "ko": "불일치 시 절충안 제안",
+        "es": "Proponiendo buscar un punto medio",
+        "fr": "Proposer de trouver un compromis",
+        "zh-CN": "寻求共识",
+        "de": "Vorschlagen, einen Mittelweg in einer Meinungsverschiedenheit zu suchen"
+      }
+    },
+    {
+      "id": "dat-6-01-3",
+      "translations": {
+        "zh-TW": "我理解你的出發點。",
+        "en": "I understand where you are coming from.",
+        "ja": "あなたの気持ちはわかります",
+        "ko": "당신이 생각하는 게 이해돼요",
+        "es": "Entiendo de donde vienes",
+        "fr": "Je comprends dovenance tu",
+        "zh-CN": "我理解你的出发点。",
+        "de": "Ich verstehe, woher du kommst."
+      },
+      "explanations": {
+        "zh-TW": "展現同理心",
+        "en": "Demonstrating empathy and understanding",
+        "ja": "共感と理解を示す",
+        "ko": "공감과 이해 표현",
+        "es": "Demostrando empatia y comprension",
+        "fr": "Demontrer empathie et comprehension",
+        "zh-CN": "展现同理心",
+        "de": "Empathie und Verständnis demonstrieren"
+      }
+    },
+    {
+      "id": "dat-6-01-4",
+      "translations": {
+        "zh-TW": "我們能保留各自意見嗎？",
+        "en": "Can we agree to disagree?",
+        "ja": "同意できない部分はあるけど、認める？",
+        "ko": "동의할 수 없는 부분이 있지만, 인정할 수 있나요?",
+        "es": "Podemos estar en desacuerdo?",
+        "fr": "Peut-on accepter nos desaccords?",
+        "zh-CN": "我们能保留各自意见吗？",
+        "de": "Können wir uns darauf einigen, unterschiedlicher Meinung zu sein?"
+      },
+      "explanations": {
+        "zh-TW": "接受分歧",
+        "en": "Proposing to respectfully accept remaining disagreements",
+        "ja": "が残る不一致を互いに受け入れることを提案",
+        "ko": "남는 불일치를 상호 수용 제안",
+        "es": "Proponiendo aceptar los desacks restante",
+        "fr": "Proposer daccepter les desaccords restants",
+        "zh-CN": "接受分歧",
+        "de": "Vorschlagen, verbleibende Meinungsverschiedenheiten respektvoll zu akzeptieren"
+      }
+    },
+    {
+      "id": "dat-6-01-5",
+      "translations": {
+        "zh-TW": "這對我很重要。",
+        "en": "This is important to me.",
+        "ja": "これは私にとって重要です",
+        "ko": "이건 저에게 중요합니다",
+        "es": "Esto es importante para mi",
+        "fr": "Ceci est important pour moi",
+        "zh-CN": "这对我很重要。",
+        "de": "Das ist mir wichtig."
+      },
+      "explanations": {
+        "zh-TW": "表達堅持",
+        "en": "Emphasizing the significance of a matter in the relationship",
+        "ja": "関係における重要事项を強調",
+        "ko": "관계에서의 중요 사안 강조",
+        "es": "Enfatizando la importancia de un asunto",
+        "fr": "Souligner limportance dun enjeu",
+        "zh-CN": "表达坚持",
+        "de": "Die Bedeutung einer Angelegenheit in der Beziehung hervorheben"
+      }
+    }
+  ],
+  "fst-1": [
+    {
+      "id": "fst-1-01-1",
+      "translations": {
+        "zh-TW": "新年快樂！祝新的一年一切順利。",
+        "en": "Happy New Year! Best wishes for the year ahead.",
+        "ja": "明けましておめでとうございます。本年もよろしくお願いいたします。",
+        "ko": "새해 복 많이 받으세요. 올 한 해도 좋은 한 해가 되시길 바랍니다.",
+        "es": "Feliz Ano Nuevo! Mis mejores deseos para el ano que viene.",
+        "fr": "Bonne Annee! Mes meilleurs voeux pour lannee a venir.",
+        "zh-CN": "新年快乐！祝新的一年一切顺利。",
+        "de": "Frohes neues Jahr! Die besten Wünsche für das kommende Jahr."
+      },
+      "explanations": {
+        "zh-TW": "新年祝福的基本用語",
+        "en": "New Year greeting wishing well for the coming year",
+        "ja": "新年の祝福と今後の良い願い",
+        "ko": "새해 축하와 올 한 해도 좋은 해가 되길 바람",
+        "es": "Saludo de Ano Nuevo deseando lo mejor",
+        "fr": "Salut de nouvelle annee avec des voeux pour la nouvelle annee",
+        "zh-CN": "新年祝福的基本用语",
+        "de": "Neujahrsgruß mit Wünschen für das kommende Jahr"
+      }
+    },
+    {
+      "id": "fst-1-01-2",
+      "translations": {
+        "zh-TW": "祝你有個歡樂繁榮的佳節。",
+        "en": "Wishing you a joyful and prosperous holiday season.",
+        "ja": "楽しい Holiday Season をお過ごしください。",
+        "ko": "환상적인 휴일 시즌 보내시길 바랍니다.",
+        "es": "Deseandole una temporada navideÃ±a alegre y prospera.",
+        "fr": "Joyeux Noel et bonne et fin dannee.",
+        "zh-CN": "祝你有个欢乐繁荣的佳节。",
+        "de": "Ich wünsche Ihnen eine freudige und erfolgreiche Urlaubszeit."
+      },
+      "explanations": {
+        "zh-TW": "節慶祝福的正式用語",
+        "en": "Holiday season greeting wishing joy and prosperity",
+        "ja": "Holiday Season の祝福",
+        "ko": "휴일 시즌 축복",
+        "es": "Saludo de temporada navideña",
+        "fr": "Salut de saison holiday",
+        "zh-CN": "节庆祝福的正式用语",
+        "de": "Urlaubszeitgruß mit Wünschen für Freude und Wohlstand"
+      }
+    },
+    {
+      "id": "fst-1-01-3",
+      "translations": {
+        "zh-TW": "願這特殊的日子帶給你幸福。",
+        "en": "May this special day bring you happiness.",
+        "ja": "この特別な一日が幸せをもたらしますように",
+        "ko": "이 특별한 날이 행복을 가져다주길 바랍니다",
+        "es": "Que este dia especial le traiga felicidad.",
+        "fr": "Puisse ce jour special vous apporter du bonheur.",
+        "zh-CN": "愿这特殊的日子带给你幸福。",
+        "de": "Möge dieser besondere Tag Ihnen Glück bringen."
+      },
+      "explanations": {
+        "zh-TW": "通用節慶祝願",
+        "en": "Festival greeting wishing happiness on a special occasion",
+        "ja": "祝祭日への幸せの願い",
+        "ko": "특별한 날에 대한 행복 소원",
+        "es": "Deseando felicidad en una occasion especial",
+        "fr": "Souhaiter du bonheur pour une occasion speciale",
+        "zh-CN": "通用节庆祝愿",
+        "de": "Festgruß mit Wünschen für Glück an einem besonderen Anlass"
+      }
+    },
+    {
+      "id": "fst-1-01-4",
+      "translations": {
+        "zh-TW": "獻上最誠摯的節慶祝福。",
+        "en": "Warmest greetings for the festival.",
+        "ja": "Festival の warmest な挨拶を",
+        "ko": "축제의 따뜻한 인사",
+        "es": "Los mas cordiales saludos para la fiesta.",
+        "fr": "Les salutations les plus chaleureuses pour la fete.",
+        "zh-CN": "献上最诚挚的节庆祝福。",
+        "de": "Herzlichste Grüße zum Fest."
+      },
+      "explanations": {
+        "zh-TW": "正式場合的祝賀語",
+        "en": "Warm festival greeting",
+        "ja": "Warm festival 挨拶",
+        "ko": "따뜻한 축제 인사",
+        "es": "Saludo calido de festival",
+        "fr": "Salut chaleureux de fete",
+        "zh-CN": "正式场合的祝贺语",
+        "de": "Warmer Festgruß"
+      }
+    },
+    {
+      "id": "fst-1-01-5",
+      "translations": {
+        "zh-TW": "希望你過個很棒的慶祝。",
+        "en": "Hope you have a wonderful celebration.",
+        "ja": "素敵なcelebration をお過ごしください",
+        "ko": "환상적인 축하 보내시길 바랍니다",
+        "es": "Espero que tenga una celebracion maravillosa.",
+        "fr": "Jespere que vous ayez une merveilleuse celebration.",
+        "zh-CN": "希望你过个很棒的庆祝。",
+        "de": "Ich hoffe, Sie haben eine wunderbare Feier."
+      },
+      "explanations": {
+        "zh-TW": "輕鬆友善的祝語",
+        "en": "Wishing someone a wonderful celebration",
+        "ja": "素晴らしいcelebration の願い",
+        "ko": "환상적인 축하 소원",
+        "es": "Deseando una maravillosa celebracion",
+        "fr": "Souhaiter une merveilleuse celebration",
+        "zh-CN": "轻松友善的祝语",
+        "de": "Jemandem eine wunderbare Feier wünschen"
+      }
+    }
+  ],
+  "fst-2": [
+    {
+      "id": "fst-2-01-1",
+      "translations": {
+        "zh-TW": "遊行在主街開始了。",
+        "en": "The parade is starting on Main Street.",
+        "ja": "パレードがメインストリートで始まります",
+        "ko": "퍼레이드가 메인 스트리트에서 시작합니다",
+        "es": "El parades esta comenzando en Main Street.",
+        "fr": "Le defile commence sur Main Street.",
+        "zh-CN": "游行在主街开始了。",
+        "de": "Der Umzug beginnt auf der Hauptstraße."
+      },
+      "explanations": {
+        "zh-TW": "告知遊行開始的地點與時間",
+        "en": "Announcing the start of a parade",
+        "ja": "パレード開始の通知",
+        "ko": "퍼레이드 시작 알림",
+        "es": "Anunciando el inicio del parades",
+        "fr": "Annoncer le debut du defile",
+        "zh-CN": "告知游行开始的地点与时间",
+        "de": "Ankündigung des Beginns eines Umzugs"
+      }
+    },
+    {
+      "id": "fst-2-01-2",
+      "translations": {
+        "zh-TW": "今年的花車看起來太讚了！",
+        "en": "The floats look amazing this year!",
+        "ja": "今年のフロートは見事です！",
+        "ko": "올해 플로트 정말 멋있어요!",
+        "es": "Los carros alegoricos se ven increibles este ano!",
+        "fr": "Les chars ont lair magnificents cette annee!",
+        "zh-CN": "今年的花车看起来太赞了！",
+        "de": "Die Festwagen sehen dieses Jahr fantastisch aus!"
+      },
+      "explanations": {
+        "zh-TW": "表達對遊行表演的驚艷",
+        "en": "Expressing admiration for parade floats",
+        "ja": "パレードのフロートの賞賛",
+        "ko": "퍼레이드 플로트 찬사",
+        "es": "Expresando admiracion por los carros",
+        "fr": "Exprimer ladmiration pour les chars",
+        "zh-CN": "表达对游行表演的惊艳",
+        "de": "Bewunderung für Festwagen eines Umzugs ausdrücken"
+      }
+    },
+    {
+      "id": "fst-2-01-3",
+      "translations": {
+        "zh-TW": "哪裡是最好的觀賞點？",
+        "en": "Where is the best viewing spot?",
+        "ja": "最佳の観覧場所はどこですか？",
+        "ko": "최고의观看 장소가 어디예요?",
+        "es": "Donde esta el mejor lugar para ver?",
+        "fr": "Ou est le meilleur endroit pour regarder?",
+        "zh-CN": "哪里是最好的观赏点？",
+        "de": "Wo ist der beste Aussichtspunkt?"
+      },
+      "explanations": {
+        "zh-TW": "詢問最佳觀賞位置",
+        "en": "Asking about the best location to view a parade",
+        "ja": "パレード觀覧の最良位置質問",
+        "ko": "퍼레이드 관람 최적 위치 질문",
+        "es": "Preguntando por el mejor lugar para ver",
+        "fr": "Demander le meilleur endroit pour regarder",
+        "zh-CN": "询问最佳观赏位置",
+        "de": "Fragen nach dem besten Ort, um einen Umzug zu sehen"
+      }
+    },
+    {
+      "id": "fst-2-01-4",
+      "translations": {
+        "zh-TW": "讓我找個更好的視角。",
+        "en": "Let me get a better view.",
+        "ja": "もっとよく見えるところに移動します",
+        "ko": "더 잘 보이는 곳으로 갈게요",
+        "es": "Permitame buscar un mejor lugar para ver.",
+        "fr": "Laissez-moi trouver une meilleure vue.",
+        "zh-CN": "让我找个更好的视角。",
+        "de": "Lass mich einen besseren Blickwinkel finden."
+      },
+      "explanations": {
+        "zh-TW": "尋找觀賞位置",
+        "en": "Moving to get a better view of the parade",
+        "ja": "パレードによりよく見える位置に移動",
+        "ko": "퍼레이드를 더 잘 볼 수 있는 위치로 이동",
+        "es": "Moviendose para ver mejor el parades",
+        "fr": "Se deplacer pour mieux voir le defile",
+        "zh-CN": "寻找观赏位置",
+        "de": "Sich bewegen, um einen besseren Blick auf den Umzug zu bekommen"
+      }
+    },
+    {
+      "id": "fst-2-01-5",
+      "translations": {
+        "zh-TW": "不要錯過行進樂隊！",
+        "en": "Do not miss the marching band!",
+        "ja": "マーチングバンドは見逃さないで！",
+        "ko": "마칭밴드 놓치지 마세요!",
+        "es": "No se pierda la banda de marcha!",
+        "fr": "Ne ratez pas le fanfare!",
+        "zh-CN": "不要错过行进乐队！",
+        "de": "Verpassen Sie nicht die Marschkapelle!"
+      },
+      "explanations": {
+        "zh-TW": "推薦觀賞重點",
+        "en": "Urging someone not to miss the marching band performance",
+        "ja": "マーチングバンドの見逃しの注意を喚起",
+        "ko": "마칭밴드 공연 놓치지 말라는 권유",
+        "es": "Animando a no perderse la banda",
+        "fr": "Encourager a ne pas manquer le fanfare",
+        "zh-CN": "推荐观赏重点",
+        "de": "Jemanden drängen, die Marschkapelle nicht zu verpassen"
+      }
+    }
+  ],
+  "fst-3": [
+    {
+      "id": "fst-3-01-1",
+      "translations": {
+        "zh-TW": "這個節日的傳統食物是什麼？",
+        "en": "What is the traditional food for this festival?",
+        "ja": "このFestival の伝統的な食べ物は何ですか？",
+        "ko": "이 축제의 전통 음식이 뭐예요?",
+        "es": "Cual es la comida tradicional de esta fiesta?",
+        "fr": "Quelle est la nourriture traditionnelle de cette fete?",
+        "zh-CN": "这个节日的传统食物是什么？",
+        "de": "Was ist das traditionelle Essen für dieses Fest?"
+      },
+      "explanations": {
+        "zh-TW": "詢問節慶傳統食物",
+        "en": "Asking about traditional festival food",
+        "ja": "伝統的な祝祭料理の質問",
+        "ko": "전통 축제 음식 질문",
+        "es": "Preguntando sobre la comida tradicional",
+        "fr": "Demander la nourriture traditionnelle de la fete",
+        "zh-CN": "询问节庆传统食物",
+        "de": "Fragen nach traditionellem Festessen"
+      }
+    },
+    {
+      "id": "fst-3-01-2",
+      "translations": {
+        "zh-TW": "我最喜歡的是...",
+        "en": "My favorite is the...",
+        "ja": "私のお気に入りは...です",
+        "ko": "제 favorite는...입니다",
+        "es": "Mi favorito es el...",
+        "fr": "Mon favori est le...",
+        "zh-CN": "我最喜欢的是...",
+        "de": "Mein Favorit ist der/die..."
+      },
+      "explanations": {
+        "zh-TW": "分享喜愛的食物",
+        "en": "Stating which traditional dish one likes best",
+        "ja": "お気に入りの传统菜的表明",
+        "ko": "가장 좋아하는 전통 요리 알림",
+        "es": "Afirmando el plato tradicional favorito",
+        "fr": "Affirmer le plat traditionnel prefere",
+        "zh-CN": "分享喜爱的食物",
+        "de": "Angeben, welches traditionelle Gericht man am meisten mag"
+      }
+    },
+    {
+      "id": "fst-3-01-3",
+      "translations": {
+        "zh-TW": "食譜代代相傳。",
+        "en": "The recipe has been passed down for generations.",
+        "ja": "このレシピは何世代にもわたって受け継がれてきました",
+        "ko": "이 레시피는 몇 세대에 걸쳐 전해져 왔습니다",
+        "es": "La receta se ha transmitido por generaciones.",
+        "fr": "La recette sest transmise de generation en generation.",
+        "zh-CN": "食谱代代相传。",
+        "de": "Das Rezept wird seit Generationen weitergegeben."
+      },
+      "explanations": {
+        "zh-TW": "說明傳承意義",
+        "en": "Mentioning that a recipe has been in the family for generations",
+        "ja": "レシピが世代を超えて受け継がれてきたこと",
+        "ko": "레시피가 세대를 걸쳐 전해져 온 것",
+        "es": "Mencionando la receta familiar",
+        "fr": "Mentionner la recette familiale transmise",
+        "zh-CN": "说明传承意义",
+        "de": "Erwähnung, dass ein Rezept seit Generationen in der Familie ist"
+      }
+    },
+    {
+      "id": "fst-3-01-4",
+      "translations": {
+        "zh-TW": "你能教我怎麼做嗎？",
+        "en": "Can you teach me how to make it?",
+        "ja": "作り方を教えてもらえますか？",
+        "ko": "만들어주는 거 가르쳐 주시겠어요?",
+        "es": "Puedes ensenarmelo a preparar?",
+        "fr": "Pouvez-vous mapprendre a le preparer?",
+        "zh-CN": "你能教我怎么做吗？",
+        "de": "Können Sie mir beibringen, wie man es macht?"
+      },
+      "explanations": {
+        "zh-TW": "請求學習",
+        "en": "Requesting to learn how to make a traditional dish",
+        "ja": "伝統料理の作り方教授依頼",
+        "ko": "전통 요리 제조법 배우기 요청",
+        "es": "Pidiendo que le ensenen a preparar",
+        "fr": "Demander a apprendre a preparer",
+        "zh-CN": "请求学习",
+        "de": "Anfrage, zu lernen, wie man ein traditionelles Gericht zubereitet"
+      }
+    },
+    {
+      "id": "fst-3-01-5",
+      "translations": {
+        "zh-TW": "這讓我想起我的童年。",
+        "en": "This reminds me of my childhood.",
+        "ja": "これは幼い頃を思い出させます",
+        "ko": "이게 어릴 적을 생각나게 해요",
+        "es": "Esto me recuerda a mi infancia.",
+        "fr": "Cela me rappelle mon enfance.",
+        "zh-CN": "这让我想起我的童年。",
+        "de": "Das erinnert mich an meine Kindheit."
+      },
+      "explanations": {
+        "zh-TW": "表達懷舊情感",
+        "en": "Expressing nostalgia tied to festival food memories",
+        "ja": "祝祭料理への幼い頃の記憶の思い出",
+        "ko": "축제 음식과 연결된 어린 시절 추억",
+        "es": "Expresando nostalgia ligada a recuerdos",
+        "fr": "Exprimer la nostalgie liee aux souvenirs",
+        "zh-CN": "表达怀旧情感",
+        "de": "Nostalgie ausdrücken, die mit Festessenerinnerungen verbunden ist"
+      }
+    }
+  ]
+}

@@ -4,12 +4,7 @@ import { idbGet, idbSet } from '../utils/idbStorage';
 const STORE: import('../utils/idbStorage').IDBStoreName = 'patterns';
 const KEY = 'patterns';
 
-export interface PatternItem {
-  id: string;
-  pattern: string;
-  explanation?: string;
-  example?: string;
-}
+import { PatternItem } from '../types';
 
 export function usePatterns() {
   const [savedPatterns, setSavedPatterns] = useState<PatternItem[]>([]);

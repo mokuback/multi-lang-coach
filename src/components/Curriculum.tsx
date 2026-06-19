@@ -3,12 +3,17 @@ import { useNavigate } from 'react-router-dom';
 import { BookOpen, Play, Volume2, ArrowRight, Sparkles } from 'lucide-react';
 import { curriculumData } from '../data/curriculumData';
 import { useI18n } from '../contexts/I18nContext';
-import { useAppState } from '../contexts/AppStateContext';
+import { useSettingsStore } from '../store/useSettingsStore';
+import { useSessionStore } from '../store/useSessionStore';
+import { useVocabulary } from '../hooks/useVocabulary';
+import { usePatterns } from '../hooks/usePatterns';
+import { useProgress } from '../hooks/useProgress';
 import { getGoogleTtsLang, getTtsCode } from '../utils/languageMap';
 
 const Curriculum = () => {
   const { t, getLocalizedContent } = useI18n();
-  const { state: { targetLanguage, speechRate } } = useAppState();
+  const targetLanguage = useSettingsStore(s => s.targetLanguage);
+  const speechRate = useSettingsStore(s => s.speechRate);
   const navigate = useNavigate();
   const [selectedUnit, setSelectedUnit] = useState(null);
 
@@ -180,7 +185,7 @@ const Curriculum = () => {
               <div key={`pattern-${idx}`} className="glass-panel" style={{ padding: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div>
                   <div style={{ fontWeight: 600, color: 'var(--accent-color)', marginBottom: '4px' }}>{t(item.pattern)}</div>
-                  <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>{t(item.explanation)}</div>
+                  <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>{getLocalizedContent(item.explanations) || item.explanation}</div>
                 </div>
                 <button
                   className="glass-button active"

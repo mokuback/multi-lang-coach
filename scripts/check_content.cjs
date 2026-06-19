@@ -1,0 +1,10 @@
+const en01 = require('D:/Antigravity_data/src/data/scenarioPatterns/en/01.json');
+const ja01 = require('D:/Antigravity_data/src/data/scenarioPatterns/ja/01.json');
+const enItem = en01['it-1'][0];
+const jaItem = ja01['it-1'][0];
+console.log('en pattern:', (enItem.pattern || '').slice(0, 60));
+console.log('ja pattern:', (jaItem.pattern || '').slice(0, 60));
+console.log('en translations.en:', (enItem.translations.en || '').slice(0, 60));
+console.log('ja translations.en:', (jaItem.translations.en || '').slice(0, 60));
+console.log('pattern same?', enItem.pattern === jaItem.pattern);
+console.log('translations.en same?', enItem.translations.en === jaItem.translations.en);

@@ -1,0 +1,770 @@
+Basic Greetings & Polite Expressions
+Master the most common greetings and farewells.
+Good morning
+Hello
+Good evening
+Thank you
+Goodbye
+Basic Greetings (No specific pattern)
+Use appropriate greetings based on the time of day.
+Self-Introduction & Identity
+State your identity in Japanese and ask others.
+I / Me
+You
+Student
+Office Worker
+Teacher
+I am...
+Are you...?
+What is this? (Demonstratives)
+Learn to point to objects and ask their names.
+This one
+That one
+That one (over there)
+Book
+Pen
+Computer
+This is...
+Is that...?
+Locations & Existence
+Ask for and point out locations in physical space.
+Here
+There
+Restroom
+Company
+Where
+Where is...?
+...is located at...
+Numbers & Time
+Learn basic Japanese numbers and tell time.
+One
+Two
+Three
+Now
+...o'clock
+...minute(s)
+What time is it now?
+It is now ... o'clock
+Ordering & Shopping
+Order food at restaurants or ask prices at stores.
+How much
+Menu
+Water
+Coffee
+Yen
+How much is this?
+I would like..., please.
+Daily Actions
+Describe habitual actions or things you are about to do.
+Eat
+Drink
+Watch / Look
+Breakfast
+Tea
+I will / I usually do...
+What will you do?
+Invitations & Proposals
+Learn to invite others to do something together.
+Together
+Movie
+Tomorrow
+Go
+Would you like to... together?
+Let's...
+Past Experiences
+Describe what happened yesterday or in the past.
+Yesterday
+Last week
+Busy
+Free / Not busy
+At that time it was...
+Already did...
+Desires & Wishes
+Express what you want or want to do.
+Want (adjective)
+Car
+New
+Buy
+I want something
+I want to do something
+Phone Calls & Messages
+Learn basic phone answering and leaving messages.
+Hello (on phone)
+Phone
+Please (do me a favor)
+Meeting
+May I speak to...
+Currently in the middle of...
+Requests & Permission
+Politely ask for help or permission to do something.
+Help
+Use
+Please (go ahead)
+Is it okay?
+May I...?
+Please help me...
+States & Changes
+Describe the weather or changes in states of things.
+Weather
+Hot
+Cold
+Become
+Becomes...
+Very...
+Comparisons & Choices
+Learn to compare two things and express preference.
+Big
+Small
+Which one
+Compared to...
+A is more... than B
+Between A and B, which one is more...?
+Experiences & Advice
+Share past experiences and give advice.
+Japan
+Study
+Had better
+Have / Exist
+Have the experience of...
+It is better to...
+Basic Greetings & Meetings
+Greet confidently in English.
+Name
+Nice / Glad
+Meet
+My name is...
+Nice to meet you.
+Professions & Nationalities
+Use Be verbs to describe states and identities.
+Engineer
+Taiwan
+America
+I am a...
+Are you a...?
+Demonstratives & Objects
+Identify surrounding objects.
+This is a...
+Locations & Directions
+Ask where the restroom or office is.
+Office
+It is at...
+Numbers & Shopping
+Ask for prices and basic ordering.
+Dollar
+Receipt
+Time & Daily Routines
+Understand time and describe daily routines.
+Time
+Clock
+Work
+Sleep
+I ... at ... o'clock
+Likes & Dislikes
+Express what you like or dislike.
+Like
+Love / Really like
+Hate
+Food
+Music
+Do you like...?
+I like...
+Abilities & Requests
+Explain what you can do and ask for help.
+Can / Able to
+Speak
+Swim
+Play
+Can you...?
+I can...
+Past Events
+Describe where you went or what you did yesterday.
+Went
+Saw
+Ate
+Did you...?
+I did...
+Future Plans
+Explain plans for the upcoming weekend or tomorrow.
+Next year
+Going to
+Will
+Travel
+What are you going to do?
+I am going to...
+Phone Etiquette & Messages
+Learn basic English phone conversations and leaving messages.
+Call
+Message
+Speak
+May I speak to...?
+Can I leave a message?
+Politely make requests or ask if you can do something.
+Borrow
+Sure
+Problem
+Could you help me...?
+Comparisons & Descriptions
+Compare two things and express their differences.
+Better
+Faster
+Cheap
+Expensive
+Which one is more...?
+Giving Advice & Opinions
+Give simple advice on others' situations.
+Should
+Idea
+Maybe
+Try
+Rest
+You should...
+That is a good idea.
+Experiences & Feelings
+Describe past experiences and express feelings.
+Experience
+Feel
+Tired
+Excited
+Ever
+Have you ever...?
+I feel...
+Easy
+Medium
+Hard
+Any
+Write Software Requirements Email
+Write an email outlining the specific requirements for the system update.
+Inquire About Software Features
+Inquire about software features to understand system operations and details.
+Report IT Project Progress
+Report the current IT project progress and obstacles to the manager.
+Discuss Software Development Project
+Discuss new features and modification requirements with the dev team.
+Video Conference with Foreign Team
+Have a video conference with a foreign team to discuss tech and collaboration.
+Discuss System Architecture & Security
+Discuss system architecture design and basic information security measures.
+Product Opening Introduction
+Give a basic product opening and introduction to the customer.
+Inquire About Customer Needs
+Ask and understand the customer's basic business pain points and needs.
+Handle Price Objections
+Handle and address customer concerns about high quotes.
+Conduct Product Demo
+Show the customer a live demo of the product and its advantages.
+High-Level Contract Negotiation
+Negotiate complex contracts and terms details with the customer.
+Establish Strategic Partnerships
+Discuss and establish a long-term strategic partnership framework.
+Confirm Interview Time
+Contact the candidate and confirm the interview schedule.
+Explain Basic Company Benefits
+Explain basic company benefits and policies to new employees.
+Conduct Junior Role Interview
+Act as an interviewer for a junior position.
+Discuss Onboarding Plan
+Plan and discuss onboarding arrangements for new employees.
+Workplace Conflict Mediation
+Mediate conflicts between employees or labor-management.
+Discuss Retention & Layoff Strategy
+Formulate and discuss the company's talent retention and layoff strategy.
+Confirm Contract Signing Date
+Ensure the draft contract signing date and related processes.
+Ask for Legal Term Definitions
+Ask for clear definitions of unfamiliar legal terms in the contract.
+Review Terms of Service
+Carefully review the TOS details and liabilities.
+Discuss NDA Details
+Discuss and confirm the coverage of the NDA.
+Legal Debate on Breach of Contract
+Debate legally regarding the other party's breach of contract.
+Discuss Transnational IP Protection
+Discuss how to protect company IP under a multinational framework.
+Submit Travel Expenses
+Fill out and submit personal business travel expense reports.
+Verify Invoice Amounts
+Verify current invoice amounts and accounts with vendors or customers.
+Explain Budget Overrun
+Explain the reasons for the department's budget overrun to management.
+Analyze Quarterly Financials
+Interpret and analyze this quarter's income and cash flow statements.
+Discuss M&A Valuation
+Conduct asset and goodwill valuation for potential M&A targets.
+Conduct Investment Risk Report
+Present potential risks and return evaluations for a new investment.
+Ask for Classroom Location
+Ask classmates or TAs for the exact classroom location in the new semester.
+Confirm Assignment Deadline
+Confirm the midterm assignment deadline with the TA.
+Discuss Research Topic with Professor
+Consult the professor during office hours about research topics.
+Participate in Group Discussion
+Express opinions and participate in class group discussions.
+Give a 15-Minute Academic Presentation
+Give an independent 15-minute academic presentation to the class.
+Debate Social Issues
+Debate controversial social issues in class.
+Ask How to Join a Club
+Ask how to join a club at the club fair.
+Introduce Your Hobbies
+Briefly share your hobbies with new club friends.
+Plan Club Recruitment
+Plan new semester recruitment with club officers.
+Discuss Event Budget Allocation
+Discuss and decide on the budget for club events.
+Run for Club Officer
+Give a speech to run for a key officer position in the club assembly.
+Handle Club Member Conflicts
+Mediate conflicts among members organizing events.
+Ask for Basic Application Requirements
+Email the department asking about language and grade requirements.
+Confirm Recommendation Letter Format
+Confirm upload method and format with the recommender.
+Rehearse Personal Statement
+Orally practice your application motives with an advisor or friend.
+Discuss School Choices
+Discuss and decide on the final school list based on your profile.
+Mock Admission Interview
+Participate in a rigorous mock interview and answer tough questions.
+Appeal for Full Scholarship
+Appeal the scholarship decision to seek more funding.
+Search for References
+Ask librarians or seniors for literature search tips.
+Explain Research Motivation
+Briefly explain to others why you chose this thesis topic.
+Report Research Progress to Advisor
+Report this week's research progress during the regular meeting.
+Explain Experimental Data
+Clearly explain the meaning of the experimental data obtained.
+Thesis Oral Defense
+Formally present your thesis and defend it before the committee.
+Discuss Methodology Limitations
+Deeply analyze and discuss the limitations of the research methodology.
+Report a Leak to the Landlord
+Call the landlord to report a leak and request repairs.
+Inquire About Furniture Prices
+Ask about sofa/wardrobe prices and delivery services at a store.
+Split Chores with Roommates
+Discuss and assign daily chores like sweeping and trash with roommates.
+Discuss Interior Design
+Discuss the desired interior design style with a designer or family.
+Negotiate Rent with Agent
+Try to haggle with the agent or landlord for better lease terms.
+Handle Noisy Neighbors
+Politely and rationally ask neighbors to turn down the volume at night.
+Ask About Size & Color
+Ask a store clerk if they have other sizes or colors.
+Confirm Checkout Amount
+Confirm purchase details and the final total at the checkout counter.
+Process Returns/Exchanges
+Bring your receipt to the service desk to exchange the wrong size.
+Ask About Warranty Details
+Ask in detail about the warranty period and coverage for electronics.
+Demand Refund for Defective Good
+Strongly demand a refund or compensation for severely defective goods.
+Compare Complex Specs
+Carefully compare the detailed specs of two high-end cameras or PCs.
+Order at a Restaurant
+Look at the menu and order main courses and drinks from the waiter.
+Ask About Today's Specials
+Ask the restaurant about secret menus or today's chef specials.
+Describe Food Allergies
+Explain in detail to the waiter your allergy to peanuts or seafood.
+Book a Popular Restaurant
+Call to reserve a table at a popular restaurant during peak hours.
+Complain About Poor Service
+Complain to the manager about slow serving and bad service attitude.
+Write an In-Depth Food Review
+Verbally share an in-depth review of a Michelin-starred restaurant.
+Describe Pet Breed & Features
+Introduce your pet's breed and cute features to a friend.
+Buy Pet Food
+Choose suitable dry food or canned food at a pet store.
+Explain Pet Illness to Vet
+Take your pet to the vet and describe its abnormal symptoms.
+Discuss Pet Training Methods
+Discuss how to stop your dog from biting things with a trainer.
+Consult on Pet Immigration
+Inquire about quarantine procedures for moving abroad with your pet.
+Discuss Pet Psychology
+Explore causes and psychological treatments for pet separation anxiety.
+Describe Where It Hurts
+Point out the painful body parts to a doctor or nurse.
+Buy Cold Medicine
+Describe your cold symptoms to a pharmacist and buy OTC meds.
+Ask the Doctor About Test Results
+Ask about blood or X-ray results from a few days ago during a visit.
+Book a Specialist Appointment
+Call the hospital to book an appointment with a specific specialist.
+Discuss Chronic Disease Treatment
+Discuss long-term control plans for diabetes or high blood pressure.
+Understand & Sign Surgery Consent
+Understand the surgery risks and sign the consent form with the doctor.
+Airport Counter Check-in
+Check in and drop off luggage at the airport counter.
+Ask for Directions to Attractions
+Ask a passerby for directions to famous tourist attractions.
+Handle Hotel Overbooking
+Negotiate a solution with the front desk when arriving at an overbooked hotel.
+Plan a Backpacking Trip
+Discuss and arrange a 1-week independent trip with your travel buddy.
+Emergency Report for Lost Passport
+Seek emergency help from police and embassy for a lost passport abroad.
+In-Depth Local History Tour
+Explain the history of historical sites in-depth as a local guide.
+First Meeting Self-Introduction
+Introduce yourself on a first date from a matchmaking site.
+Compliment Their Outfit
+Generously and decently compliment the other person's fashion taste.
+Share Values and Dreams
+Share life values and future blueprints with a romantic interest.
+Break the Awkward Silence
+Cleverly start a new topic to break the awkward silence on a date.
+Serious Relationship Talk
+Seriously discuss future relationship progress and commitments with a partner.
+Handle Disagreements on Dates
+Rationally handle disagreements on date itineraries or concepts.
+Give Holiday Greetings
+Send warm holiday greetings to friends for Christmas or New Year.
+Ask About Local Customs
+Ask foreign friends about their traditional ways of celebrating holidays.
+Invite Friends to a Party
+Enthusiastically invite friends to a weekend Halloween costume party.
+Gift Exchange Conversation
+Interact and say thanks during the gift exchange segment at a party.
+Explain Cultural Holiday Meaning
+Deeply explain the origins of Lunar New Year or Thanksgiving to others.
+Organize a Big Festival Gala
+Discuss NYE gala workflows and contingency plans with the team.
+Party Small Talk
+Engage in light, informal small talk with acquaintances at a party.
+Introduce Friends
+Act as a middleman and introduce two friends who don't know each other.
+Join a Strangers' Conversation
+Appropriately step in and join a group's conversation at a social event.
+Catch Up on Life
+Share recent life changes with an old friend you haven't seen in a while.
+Lead Popular Topic Discussions
+Guide and lead a lively discussion on trending topics in a gathering.
+Politely Decline Invitations
+Gracefully decline a party you don't want to attend without hurting feelings.
+Ask About Gym Fees
+Ask about pricing plans and member benefits at a nearby gym.
+Invite a Friend to Play Sports
+Call and invite a friend to play basketball or tennis over the weekend.
+Discuss Game Rules
+Explain basic rules to a friend unfamiliar with the sport.
+Describe Sports Injuries
+Explain to a coach or trainer where you pulled a muscle during sports.
+Analyze Team Tactics
+Deeply analyze tactics of both teams with fans during the finals.
+Comment on Athletes' Performance
+Discuss and comment on a famous star's recent slump and professionalism.
+Describe a Simple News Event
+Brief a friend on a breaking international news story seen this morning.
+Ask for Their Opinion
+Ask for a friend's personal viewpoint and feelings about the news event.
+Discuss Environmental Issues
+Discuss the worsening global warming situation and carbon reduction policies.
+Analyze Economic News Impact
+Discuss the potential impact of Fed interest rate changes on the economy.
+Delve Into Geopolitical Conflicts
+Deeply analyze sensitive geopolitical conflicts involving multiple interests.
+Debate International Trade Policy
+Debate tariff wars and trade protectionism between two countries.
+Share a Recently Watched Movie
+Recommend a great movie you just watched over the weekend to a colleague.
+Introduce Your Favorite Idol
+Share your favorite singer or actor and explain why you like them.
+Discuss TV Show Plot Twists
+Enthusiastically discuss a shocking finale twist of a hit TV show with a friend.
+Analyze Social Media Trends
+Discuss why a certain TikTok dance video suddenly went viral.
+Discuss Meme Psychology
+Analyze how meme culture subtly influences public psychology.
+Review Modern Artworks
+Express professional views on abstract postmodern art at an exhibition.
+Introduce a New App
+Demonstrate and introduce a very useful new phone app to your family.
+Discuss New Smartphone Features
+Chat about the new tech equipped in a recently released flagship phone.
+Share Generative AI Experience
+Share the changes brought to daily work after using ChatGPT.
+Discuss VR Applications
+Explore the potential of VR/AR in the future of entertainment and education.
+Debate Autonomous Driving Morals
+Debate moral choices of autonomous vehicles in unavoidable accidents.
+Explore Blockchain's Impact
+Discuss how decentralized finance (DeFi) will change traditional banking.
+Casual Daily Chat
+Free chat on any topic. You can talk about your life or the latest trends.
+Simple Self-Introduction
+Introduce your name, job, and hobbies to someone you just met.
+Home
+Daily Tasks
+Chat Practice
+Vocabulary
+Pattern Notes
+Common Patterns
+Common Patterns
+Curriculum
+Guide
+Settings & API
+About Us
+Privacy Policy
+Contact Us
+Big Data Voice Coach
+Toggle UI Theme
+Level
+Topic
+Settings
+UI & Native Language
+UI Theme
+Main Category
+Topic & Role
+Target Learning Language
+Language Level
+Grammar Strictness
+Pattern Library Version
+Speech Rate (1-10)
+Auto-Read (Conversation)
+AI Provider
+Model Name (Model ID)
+Gemini API Key
+Groq API Key
+Save & Return
+Glassmorphism
+SaaS Dark
+SaaS Light
+Communication First (only major errors)
+Super Strict (all minor flaws)
+On
+Off
+Google Gemini
+Groq (Fast open source)
+Key entered, real AI mode activated.
+Currently using
+Mock Conversation Mode
+Mock Chat Experience
+running.
+Enable smart speech recognition for Android
+English
+English
+English
+English
+Japanese
+Japanese
+Japanese
+Japanese
+Traditional Chinese
+Simplified Chinese
+Korean
+Spanish
+French
+German
+Business
+Academic
+Lifestyle
+Social & Travel
+Trends
+Information Technology (IT)
+Sales
+Human Resources (HR)
+Legal
+Finance
+Courses
+Clubs
+Applications
+Thesis
+Home
+Shopping
+Dining
+Pets
+Healthcare
+Travel
+Dating
+Festivals
+Socializing
+Sports
+Global News
+Pop Culture
+Tech Trends
+Beginner
+Pre-Intermediate
+Intermediate
+Upper-Intermediate
+Advanced
+Review useful patterns you collected during your speaking practice.
+Review vocabulary and patterns collected from your conversations.
+Your pattern notebook is empty. Use "Analyze" in practice to collect patterns!
+Your vocabulary notebook is empty. Collect words during practice!
+Selected key native patterns based on your daily tasks. Click to practice!
+No patterns for this task yet, or big data is still generating.
+This is an intelligent language coach. To experience full AI features, we recommend you spend
+The vocabulary and sentence patterns provided in each unit are just a starting point to get you rolling. When you practice chatting with the AI, it will suggest a richer variety of authentic expressions based on your responses. Be sure to make good use of the [Add to Notebook] feature to save those helpful new words and phrases, and build your own personalized language library!
+minute(s)
+reading the background guide and getting a free API key!
+Learn how to maximize your learning with Multi-Lang Coach.
+Step-by-step from basic words to core patterns with 1-on-1 AI coaching.
+Talk with AI about any topic naturally to train your on-the-spot reaction.
+Welcome to Multi-Lang Coach!
+Welcome back!
+This is a daily
+speaking challenge tailored
+for you.
+Learning Progress
+Consecutive Practice Days
+Completed Scenarios
+Learned Vocabulary
+Coach's Advice
+Vocabulary
+Core Patterns
+Please select a scenario from "Daily Tasks" first.
+You are experiencing fixed scripts. For dynamic AI responses, see the
+apply in just 1 minute for a
+free
+Gemini API Key!
+AI is carefully analyzing your performance, please wait...
+AI is processing...
+Your original input:
+Important Vocabulary
+Practical Patterns
+Grammar Nuances
+AI coach thinking...
+AI Polish
+Listening...
+Stop Recording
+Voice Input
+Listening... or type native draft and click magic wand ✨
+Click to toggle microphone
+Cannot access microphone. Please check browser permissions.
+Browser does not support voice input. Chrome or Edge is recommended.
+Please enter Gemini API Key in "Settings & API" to use this feature.
+Please enter Gemini API Key in "Settings & API" to unlock smart analysis.
+Please enter Gemini API Key in "Settings & API" to use AI polish/translate.
+Let AI provide more native and professional suggestions
+Coach gives context, user fills in vocabulary
+Recommended Patterns
+Pattern Database Version:
+Textbook Version (Beginner)
+Advanced Business (Native Thinking)
+Textbook Version
+Advanced Business Version
+OK, show me the guide!
+Start Learning
+Start Practice
+Pattern Practice
+Pattern Substitution Practice
+Free Chat Mode
+Free Chat Mode
+Search patterns...
+Search words...
+Export to PDF
+Export
+Export & Analyze
+Export Conversation
+Export History Only
+Remove Pattern
+Remove Word
+Listen to Audio
+Analyze Sentence
+Save to Notebook
+Save checked & Close
+Cancel
+Expand
+Collapse
+Regenerate Response
+Regenerate
+Translate
+Mark Analyzed
+Saved
+Conversation History
+Are you sure you want to remove word "
+" permanently from vocabulary?
+Are you sure you want to remove pattern "
+" permanently from notes?
+Data Collection & Usage
+and Tracking Technologies
+Advertising Statement
+Policy Updates
+Official Support Email
+Curriculum (From Scratch)
+Vocabulary Notebook
+Pattern Notebook
+A group of tech enthusiasts who love learning languages
+Our Original Intention: Breaking the Framework of Traditional Language Learning
+Learning a foreign language, the most difficult part is often not memorizing thousands of words or complex grammar rules, but the lack of a "real, immersive, and stress-free conversation environment".
+We are a group of developers who love language learning and the latest technology. In our past learning experiences, we deeply realized that Asian students generally perform excellently in reading and writing, but when it comes to speaking, they often face pain points such as "fear of making mistakes", "inability to find practice partners", or "expensive tutoring fees". These obstacles keep many people in the "mute foreign language" stage, unable to convert years of learning into actual communication skills. Thus, Multi-Lang Coach was born.
+AI-Driven Learning Revolution: Your Exclusive 24-Hour Coach
+Through the latest generation of generative AI technology and big data corpora, we have built this intelligent voice coach available 24 hours a day. It can not only simulate various real scenarios from "high-level business negotiations", "academic paper discussions" to "daily outing orders", but also instantly transcribe and correct your pronunciation and grammar with high patience and professionalism.
+In traditional tutoring sessions, students often feel discouraged by frequent corrections; but here, you face a virtual coach with no critical eye and always patient guidance. It can customize exclusive dialogue scripts based on your job needs (e.g., IT engineer, sales representative) and provide the most native vocabulary suggestions that fit local cultural habits, multiplying your learning efficiency.
+Future Vision: Making Language No Longer a Barrier to Communication
+Language is a bridge to explore the world and understand different cultures. Our team is committed to continuously optimizing the inference capabilities of AI language models and continuously expanding the learning scenario library. We hope that through the power of technology, breaking the boundaries of geography and resources, everyone—no matter where they are, no matter how much learning budget they have—can have a stress-free, highly interactive immersive language practice experience. We believe that the moment you speak confidently, opportunities around the world will open up for you.
+Read Aloud
+Start AI Basic Training
+API Chat Mode
+Stop
+Original Text
+Grammar & Correction
+New Vocabulary
+AI Suggestions
+Got it
+Vocabulary & Patterns for this Lesson
+Try using the following patterns to sound more natural:
+All Rights Reserved
+You can directly export the chat log, or let AI summarize your performance first and export to PDF.
+Reminder: Currently in Mock Chat Experience
+Analysis error: 
+, please check network or API key.
+Polishing error: 
+Suggestion error: 
+Export failed: 
+Sorry, AI call failed: 
+Please confirm your network or API key is correct.
+We are always ready to hear your voice
+Whether you have encountered a technical issue, have new feature suggestions, or wish to provide any feedback or suggestions, we welcome your emails.
+Generally, our team will reply to your email as soon as possible. Thank you for your support!
+Protecting your personal data and privacy is our top priority
+We only collect the minimum data required when you use this service. Your voice inputs and conversation records are solely used to provide real-time AI language correction and feedback services. We will not sell these personal conversation records to any third party. Your learning progress (such as vocabulary list, pattern records) will be securely stored to ensure you can continue your learning experience across devices.
+This website uses Cookies and similar tracking technologies to maintain your login status, remember your preferences (such as dark/light themes, learning language), and help us analyze website traffic to improve user experience. You can refuse Cookies through your browser settings at any time, but this may cause some features of the website to not function properly.
+To maintain operations, this website may use Google AdSense to serve ads. Google and third-party vendors use Cookies to serve relevant ads based on your past visits to this or other websites. Users can go to Google's "Ad Settings" to disable personalized ads. We comply with Google AdSense policies to ensure we do not use improper means to click on ads or provide violating content.
+We reserve the right to modify this privacy policy at any time. Major changes will be notified to users through website announcements. Continuing to use this service means you agree to the latest version of the privacy policy.
+Loading...
+Scenario Filter:
+Selected essential patterns used by native speakers. Click to enter drill mode!
+Choose a unit to start your learning journey.
+No courses available. Please select a learning language in Settings first.
+Vocabulary
+Patterns
+Key Vocabulary
+Start Unit Comprehensive Drill
+Your vocabulary notebook is empty.
+AI will automatically save new words for you during conversation practice.
+words
+Play Audio
+Delete
+Pattern Library
+Your pattern library is empty.
+AI will automatically save useful patterns for you during conversation practice.
+patterns
+Loading patterns...
+No pattern database has been generated for this topic yet.
+AI is polishing your sentence...
+AI is analyzing your sentence...
+AI Analysis Suggestions
+Useful Vocabulary
+No recommended patterns for this scenario yet.
+Error loading guide
+(💡 [System Note] This is a static demo response. To experience dynamic AI conversations, please refer to the User Guide to easily get your **FREE** Gemini API key!)
+'By' is used to indicate a deadline, while 'until' is used to indicate a continuous period.
+For ongoing actions, please use the present continuous form 'reporting'.
+Great, I understand the progress status. However, please make sure you detail any potential blockers. Also, I noticed a minor grammar mistake.
+That sounds like a backend infrastructure issue. When explaining to a non-technical boss or client, you can simplify it. For example, you can say 'We are experiencing infrastructure delays'.
+I understand. Could you elaborate more on the specific software requirements or project timelines?
+Obstacle / Barrier
+Infrastructure / Framework
+Explain in detail
+When reporting to a boss or client, using the humble form 'itasu' sounds more professional and polite.
+Thank you for the progress update. However, please make sure you detail any potential blockers. Also, I noticed a minor grammar mistake.
+That sounds like a backend issue. When explaining to a non-technical boss or client, you can say 'We are experiencing infrastructure delays' for easier understanding.
+I see. Could you elaborate a bit more on the 'specific software requirements' or 'schedules' you are focusing on?

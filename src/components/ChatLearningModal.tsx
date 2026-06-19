@@ -2,7 +2,11 @@
 import { createPortal } from 'react-dom';
 import { Lightbulb, Loader2, Wand2, CheckCircle, X } from 'lucide-react';
 import { useI18n } from '../contexts/I18nContext';
-import { useAppState } from '../contexts/AppStateContext';
+import { useSettingsStore } from '../store/useSettingsStore';
+import { useSessionStore } from '../store/useSessionStore';
+import { useVocabulary } from '../hooks/useVocabulary';
+import { usePatterns } from '../hooks/usePatterns';
+import { useProgress } from '../hooks/useProgress';
 
 interface VocabItem {
   word: string;
@@ -50,7 +54,9 @@ const ChatLearningModal = ({
   isPolishing
 }: Props) => {
   const { t, getLocalizedContent } = useI18n();
-  const { state: { targetLanguage }, setVocabulary, setSavedPatterns } = useAppState();
+  const targetLanguage = useSettingsStore(s => s.targetLanguage);
+  const { setVocabulary } = useVocabulary();
+  const { setSavedPatterns } = usePatterns();
 
   if (!learningModalData) return null;
 

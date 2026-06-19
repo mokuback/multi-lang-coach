@@ -1,12 +1,11 @@
 import { AnalyzeSentenceContext } from './types';
+import { getLangName, getTermLabel, getPhoneticFormat, getPartOfSpeechFormat, getUiLangName } from '../utils/languageMap';
 
 export function buildAnalyzeSentencePrompt(ctx: AnalyzeSentenceContext): string {
   const version = 'v1.0.0';
-  const langName = ctx.targetLanguage === 'en' ? '美語' : '日語';
-  const termName = ctx.targetLanguage === 'en' ? '英文單字或片語' : '日文單字、假名或片語';
-
-  const uiLangNameMap: Record<string, string> = { 'zh-TW': '繁體中文', 'zh-CN': '簡體中文', 'en': 'English', 'ja': '日本語', 'ko': '한국어', 'es': 'Español', 'fr': 'Français' };
-  const uiLangName = uiLangNameMap[ctx.uiLang] || 'English';
+  const langName = getLangName(ctx.targetLanguage, ctx.uiLang);
+  const termName = getTermLabel(ctx.targetLanguage, ctx.uiLang);
+  const uiLangName = getUiLangName(ctx.uiLang);
 
   const responseLangRule = ctx.uiLang === 'zh-CN'
     ? '【非常重要】你的所有回覆（包括翻譯、解釋、例句說明等）必須使用簡體中文。'
@@ -24,9 +23,7 @@ export function buildAnalyzeSentencePrompt(ctx: AnalyzeSentenceContext): string 
     ? '【Important】Toutes vos réponses (y compris les traductions, explications, descriptions d\'exemples, etc.) doivent être en français.'
     : '【Important】All your responses must be in the language of the user interface.';
 
-  const vocabFormatInstruction = ctx.targetLanguage === 'en' 
-    ? `"phonetic": "KK音標", "zh": "${uiLangName}解釋", "partOfSpeech": "英文詞性簡寫(如 n., vi.)"`
-    : `"phonetic": "平假名拼音加重音數字(如：きのう [0])，純假名則只留重音(如：[1])", "zh": "${uiLangName}解釋", "partOfSpeech": "日文詞性簡寫(如 名, 動, 形)"`;
+  const vocabFormatInstruction = `"phonetic": "${getPhoneticFormat(ctx.targetLanguage)}", "zh": "${uiLangName}解釋", "partOfSpeech": "${getPartOfSpeechFormat(ctx.targetLanguage)}"`;
 
   const systemInstruction = `
     你是一個專精於多情境${langName}教學的資深教練。

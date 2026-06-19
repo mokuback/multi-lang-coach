@@ -4,13 +4,21 @@ import { Play, TrendingUp, Calendar, Zap, MessageSquare } from 'lucide-react';
 import { getScenariosByRole } from '../data/scenariosData';
 import { categoryData } from '../data/categoryData';
 import { useI18n } from '../contexts/I18nContext';
-import { useAppState } from '../contexts/AppStateContext';
+import { useSettingsStore } from '../store/useSettingsStore';
+import { useSessionStore } from '../store/useSessionStore';
+import { useVocabulary } from '../hooks/useVocabulary';
+import { usePatterns } from '../hooks/usePatterns';
+import { useProgress } from '../hooks/useProgress';
 import { getLangName } from '../utils/languageMap';
 import Footer from './Footer';
 
 const Dashboard = () => {
   const { t, uiLang } = useI18n();
-  const { state: { targetLanguage, userRole, userCategory, vocabulary, progress }, updateProgress } = useAppState();
+  const targetLanguage = useSettingsStore(s => s.targetLanguage);
+  const userRole = useSettingsStore(s => s.userRole);
+  const userCategory = useSettingsStore(s => s.userCategory);
+  const { vocabulary } = useVocabulary();
+  const { progress, updateProgress } = useProgress();
   const navigate = useNavigate();
 
   const [scenarios, setScenarios] = useState([]);

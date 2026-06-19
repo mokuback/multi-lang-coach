@@ -1,0 +1,3863 @@
+{
+  "fst-4": [
+    {
+      "id": "fst-4-01-1",
+      "translations": {
+        "zh-TW": "我很感謝今晚在場的每個人。",
+        "en": "I am grateful for everyone here tonight.",
+        "ja": "今夜ここにいる皆に感謝します",
+        "ko": "오늘 밤 여기 있는 모든 분들에게 감사합니다",
+        "es": "Estoy agradecido con todos los aqui esta noche.",
+        "fr": "Je suis reconnaissant envers tous ceux presents ce soir.",
+        "zh-CN": "我很感谢今晚在场的每个人。",
+        "de": "Ich bin dankbar für alle, die heute Abend hier sind."
+      },
+      "explanations": {
+        "zh-TW": "致謝的基本用語",
+        "en": "Expressing gratitude toward people gathered at a festival",
+        "ja": "Festival参加者への感謝表明",
+        "ko": "축제 참석자들에 대한 감사 표현",
+        "es": "Expresando gratitud hacia los presentes",
+        "fr": "Exprimer de la reconnaissance envers les presents",
+        "zh-CN": "致谢的基本用语",
+        "de": "Dankbarkeit gegenüber Menschen ausdrücken, die bei einem Fest versammelt sind"
+      }
+    },
+    {
+      "id": "fst-4-01-2",
+      "translations": {
+        "zh-TW": "這個傳統對我們家意義重大。",
+        "en": "This tradition means so much to our family.",
+        "ja": "この慣習は家族にとって深い意味があります",
+        "ko": "이 전통은 우리 가족에게 많은 의미를 가집니다",
+        "es": "Esta tradicion significa mucho para nuestra familia.",
+        "fr": "Cette tradition signifie beaucoup pour notre famille.",
+        "zh-CN": "这个传统对我们家意义重大。",
+        "de": "Diese Tradition bedeutet unserer Familie so viel."
+      },
+      "explanations": {
+        "zh-TW": "說明傳統的重要性",
+        "en": "Explaining the significance of a family tradition",
+        "ja": "家族伝統の意味の説明",
+        "ko": "가족 전통의 의미 설명",
+        "es": "Explicando el significado de una tradicion familiar",
+        "fr": "Expliquer la signification dune tradition familiale",
+        "zh-CN": "说明传统的重要性",
+        "de": "Die Bedeutung einer Familientradition erklären"
+      }
+    },
+    {
+      "id": "fst-4-01-3",
+      "translations": {
+        "zh-TW": "我想分享我的感恩之事。",
+        "en": "I would like to share what I am thankful for.",
+        "ja": "感謝していることを share したいです",
+        "ko": "감사하는 바를 나누고 싶습니다",
+        "es": "Me gustaria compartir por lo que estoy agradecido.",
+        "fr": "Je voudrais partager ce dont je suis reconnaissant.",
+        "zh-CN": "我想分享我的感恩之事。",
+        "de": "Ich möchte teilen, wofür ich dankbar bin."
+      },
+      "explanations": {
+        "zh-TW": "開始感恩分享的標準句",
+        "en": "Offering to share things one is grateful for",
+        "ja": "感謝 사항の共有を申し出る",
+        "ko": "감사 사항 공유 제안",
+        "es": "Ofreciendo compartir lo que se agradece",
+        "fr": "Proposer de partager ce dont on est reconnaissant",
+        "zh-CN": "开始感恩分享的标准句",
+        "de": "Anbieten, Dinge zu teilen, für die man dankbar ist"
+      }
+    },
+    {
+      "id": "fst-4-01-4",
+      "translations": {
+        "zh-TW": "謝謝你成為我生命的一部分。",
+        "en": "Thank you for being part of my life.",
+        "ja": "私の人生に含まれてくれてありがとう",
+        "ko": "내 인생의 일부가 되어줘서 고마워",
+        "es": "Gracias por ser parte de mi vida.",
+        "fr": "Merci detre partie de ma vie.",
+        "zh-CN": "谢谢你成为我生命的一部分。",
+        "de": "Danke, dass du Teil meines Lebens bist."
+      },
+      "explanations": {
+        "zh-TW": "表達深層感謝",
+        "en": "Expressing gratitude to someone for their presence in one's life",
+        "ja": "人生における相手の存在への感謝",
+        "ko": "인생에서 상대방의 존재에 대한 감사",
+        "es": "Expresando gratitud por la presencia en la vida",
+        "fr": "Exprimer de la reconnaissance pour la presence dans sa vie",
+        "zh-CN": "表达深层感谢",
+        "de": "Jemandem Dankbarkeit ausdrücken für seine Präsenz im eigenen Leben"
+      }
+    },
+    {
+      "id": "fst-4-01-5",
+      "translations": {
+        "zh-TW": "讓我們為祝福乾杯。",
+        "en": "Let us raise a toast to our blessings.",
+        "ja": "祝福に乾杯しましょう",
+        "ko": "축복에 건배합시다",
+        "es": "Brindemos por nuestras bendiciones.",
+        "fr": "Trinquons a nos bienfaits.",
+        "zh-CN": "让我们为祝福干杯。",
+        "de": "Lassen Sie uns auf unseren Segen anstoßen."
+      },
+      "explanations": {
+        "zh-TW": "祝酒的標準用語",
+        "en": "Proposing a toast to blessings during a festival gathering",
+        "ja": "Festivalでの祝福への乾杯提案",
+        "ko": "축제 모임에서의 축복 건배 제안",
+        "es": "Proponiendo un brindis por las bendiciones",
+        "fr": "Proposer un toast aux bienfaits",
+        "zh-CN": "祝酒的标准用语",
+        "de": "Einen Trinkspruch auf den Segen bei einer Festversammlung vorschlagen"
+      }
+    }
+  ],
+  "fst-5": [
+    {
+      "id": "fst-5-01-1",
+      "translations": {
+        "zh-TW": "我想報名當志工。",
+        "en": "I would like to sign up as a volunteer.",
+        "ja": "ボランティアとして登録したいです",
+        "ko": "자원봉사자로 등록하고 싶습니다",
+        "es": "Me gustaria registrarme como voluntario.",
+        "fr": "Je voudrais menregistrer comme benevole.",
+        "zh-CN": "我想报名当志工。",
+        "de": "Ich möchte mich als Freiwillige/r registrieren."
+      },
+      "explanations": {
+        "zh-TW": "表達參與意願的開場白",
+        "en": "Expressing intent to volunteer at a festival event",
+        "ja": "Festivalイベントでのボランティア登録意思表示",
+        "ko": "축제 이벤트 자원봉사 등록 의향",
+        "es": "Afirmando la intencion de registrarse como voluntario",
+        "fr": "Affirmer lintention de senregistrer comme benevole",
+        "zh-CN": "表达参与意愿的开场白",
+        "de": "Die Absicht ausdrücken, bei einem Festeignis mitzuhelfen"
+      }
+    },
+    {
+      "id": "fst-5-01-2",
+      "translations": {
+        "zh-TW": "我應該幾點到？",
+        "en": "What time should I arrive?",
+        "ja": "何時に到着すればいいですか？",
+        "ko": "몇 시에 도착하면 되나요?",
+        "es": "A que hora debo llegar?",
+        "fr": "A quelle heure dois-je arriver?",
+        "zh-CN": "我应该几点到？",
+        "de": "Um wie viel Uhr soll ich ankommen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問集合時間",
+        "en": "Asking about volunteer arrival time",
+        "ja": "ボランティア到着時間の質問",
+        "ko": "자원봉사 도착 시간 질문",
+        "es": "Preguntando sobre la hora de llegada",
+        "fr": "Demander lheure darrivee",
+        "zh-CN": "询问集合时间",
+        "de": "Nach der Ankunftszeit für Freiwillige fragen"
+      }
+    },
+    {
+      "id": "fst-5-01-3",
+      "translations": {
+        "zh-TW": "我應該帶什麼？",
+        "en": "What should I bring?",
+        "ja": "何を持って来ればいいですか？",
+        "ko": "뭐 가지고 오면 되나요?",
+        "es": "Que debo traer?",
+        "fr": "Que dois-je apporter?",
+        "zh-CN": "我应该带什么？",
+        "de": "Was soll ich mitbringen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問準備物資",
+        "en": "Asking about what to bring as a volunteer",
+        "ja": "ボランティア必携物品の質問",
+        "ko": "자원봉사 시 지참物品 질문",
+        "es": "Preguntando que llevar como voluntario",
+        "fr": "Demander quoi apporter comme benevole",
+        "zh-CN": "询问准备物资",
+        "de": "Fragen, was man als Freiwillige/r mitbringen soll"
+      }
+    },
+    {
+      "id": "fst-5-01-4",
+      "translations": {
+        "zh-TW": "我在哪裡報到？",
+        "en": "Where do I check in?",
+        "ja": "どこでチェックインすればいいですか？",
+        "ko": "어디서 체크인하면 되나요?",
+        "es": "Donde me registro?",
+        "fr": "Ou dois-je menregistrer?",
+        "zh-CN": "我在哪里报到？",
+        "de": "Wo melde ich mich an?"
+      },
+      "explanations": {
+        "zh-TW": "詢問報到地點",
+        "en": "Asking where to check in as a volunteer",
+        "ja": "ボランティアチェックイン場所を質問",
+        "ko": "자원봉사 체크인 장소 질문",
+        "es": "Preguntando donde registrarse",
+        "fr": "Demander ou senregistrer",
+        "zh-CN": "询问报到地点",
+        "de": "Fragen, wo man sich als Freiwillige/r anmeldet"
+      }
+    },
+    {
+      "id": "fst-5-01-5",
+      "translations": {
+        "zh-TW": "謝謝你們舉辦這個活動。",
+        "en": "Thank you for organizing this.",
+        "ja": "こうして<Event>を開いてくれてありがとうございます",
+        "ko": "이벤트를 조직해 주셔서 감사합니다",
+        "es": "Gracias por organizar esto.",
+        "fr": "Merci davoir organise ceci.",
+        "zh-CN": "谢谢你们举办这个活动。",
+        "de": "Danke für die Organisation."
+      },
+      "explanations": {
+        "zh-TW": "向主辦單位致謝",
+        "en": "Expressing gratitude to event organizers",
+        "ja": "イベント主催者への感謝",
+        "ko": "이벤트 개최자에 대한 감사",
+        "es": "Expresando gratitud hacia los organizadores",
+        "fr": "Exprimer de la reconnaissance envers les organisateurs",
+        "zh-CN": "向主办单位致谢",
+        "de": "Dankbarkeit gegenüber den Veranstaltern ausdrücken"
+      }
+    }
+  ],
+  "fst-6": [
+    {
+      "id": "fst-6-01-1",
+      "translations": {
+        "zh-TW": "今天，我們紀念...的 legacy。",
+        "en": "Today, we honor the legacy of...",
+        "ja": "今日は...の功績を称えます",
+        "ko": "오늘 우리는...의 유지를 기립니다",
+        "es": "Hoy honramos el legado de...",
+        "fr": "Aujourdhui, nous honorons lheritage de...",
+        "zh-CN": "今天，我们纪念...的 legacy。",
+        "de": "Heute ehren wir das Vermächtnis von..."
+      },
+      "explanations": {
+        "zh-TW": "紀念日致詞的標準開場",
+        "en": "Ceremonial speech honoring someone's legacy",
+        "ja": "功績称える ceremonial speech",
+        "ko": "유지енноей Legacy 기리는 ceremony",
+        "es": "Discurso ceremonial honrarando el legado",
+        "fr": "Discours ceremonial honorant lheritage",
+        "zh-CN": "纪念日致词的标准开场",
+        "de": "Feierliche Rede, die jemandes Vermächtnis ehrt"
+      }
+    },
+    {
+      "id": "fst-6-01-2",
+      "translations": {
+        "zh-TW": "他們的貢獻改變了我們的世界。",
+        "en": "Their contributions changed our world.",
+        "ja": "彼/彼女の功績は私たちの世界を変えました",
+        "ko": "그들의 기여가 우리의 세계를 바꿨습니다",
+        "es": "Sus contribuciones cambiaron nuestro mundo.",
+        "fr": "Leurs contributions ont change notre monde.",
+        "zh-CN": "他们的贡献改变了我们的世界。",
+        "de": "Ihre Beiträge haben unsere Welt verändert."
+      },
+      "explanations": {
+        "zh-TW": "說明紀念人物的貢獻",
+        "en": "Acknowledging the impact of someone's contributions",
+        "ja": "功績の影響力への 인정",
+        "ko": "기여의 영향력 인정",
+        "es": "Reconociendo el impacto de las contribuciones",
+        "fr": "Reconnaître limpact des contributions",
+        "zh-CN": "说明纪念人物的贡献",
+        "de": "Die Auswirkungen von jemandes Beiträgen anerkennen"
+      }
+    },
+    {
+      "id": "fst-6-01-3",
+      "translations": {
+        "zh-TW": "讓我們記住他們的勇氣。",
+        "en": "Let us remember their courage.",
+        "ja": "その勇気を覚えましょう",
+        "ko": "그들의 용기를 기억합시다",
+        "es": "Recordemos su coraje.",
+        "fr": "Souvenons-nous de leur courage.",
+        "zh-CN": "让我们记住他们的勇气。",
+        "de": "Lassen Sie uns an ihren Mut erinnern."
+      },
+      "explanations": {
+        "zh-TW": "號召紀念",
+        "en": "Ceremonial call to remember someone's bravery",
+        "ja": "勇気を振り返る ceremony",
+        "ko": "용기를 회상하는 ceremony",
+        "es": "Llamada ceremonial a recordar",
+        "fr": "Appel ceremonial a se souvenir du courage",
+        "zh-CN": "号召纪念",
+        "de": "Feierlicher Aufruf, sich an jemandes Mut zu erinnern"
+      }
+    },
+    {
+      "id": "fst-6-01-4",
+      "translations": {
+        "zh-TW": "他們的精神在我們每個人身上延續。",
+        "en": "Their spirit lives on in all of us.",
+        "ja": "その精神は私たちの間に生きています",
+        "ko": "그들의 정신은 우리 모두 안에 살아 있습니다",
+        "es": "Su espiritu vive en todos nosotros.",
+        "fr": "Leur esprit vit en nous tous.",
+        "zh-CN": "他们的精神在我们每个人身上延续。",
+        "de": "Ihr Geist lebt in uns allen weiter."
+      },
+      "explanations": {
+        "zh-TW": "說明精神的傳承",
+        "en": "Stating that someone's spirit continues to inspire",
+        "ja": "精神が生き続けるという表明",
+        "ko": "정신이 계속 영향을 준다는 표현",
+        "es": "Afirmando que el espiritu sigue inspirando",
+        "fr": "Affirmer que lesprit continue a inspirer",
+        "zh-CN": "说明精神的传承",
+        "de": "Feststellen, dass jemandes Geist weiterhin inspiriert"
+      }
+    },
+    {
+      "id": "fst-6-01-5",
+      "translations": {
+        "zh-TW": "我們永遠不會忘記。",
+        "en": "We will never forget.",
+        "ja": "私たちは決して忘れません",
+        "ko": "우리는 결코 잊지 않을 것입니다",
+        "es": "Nunca olvidaremos.",
+        "fr": "Nous noublierons jamais.",
+        "zh-CN": "我们永远不会忘记。",
+        "de": "Wir werden niemals vergessen."
+      },
+      "explanations": {
+        "zh-TW": "結束致詞的總結語",
+        "en": "Solemn vow to remember",
+        "ja": "忘れないという厳肃な誓い",
+        "ko": "잊지 않겠다는 엄숙한 맹세",
+        "es": "Promesa solemn de recordar",
+        "fr": "Voeu solennel de se souvenir",
+        "zh-CN": "结束致词的总结语",
+        "de": "Feierliches Gelübde zu erinnern"
+      }
+    }
+  ],
+  "soc-1": [
+    {
+      "id": "soc-1-01-1",
+      "translations": {
+        "zh-TW": "這是 [名字]，我的朋友。",
+        "en": "This is [name], a friend of mine.",
+        "ja": "こちらは[name]、私の友人です",
+        "ko": "이쪽은 [name], 제 친구입니다",
+        "es": "Este es [name], un amigo mio.",
+        "fr": "Ceci est [name], un ami a moi.",
+        "zh-CN": "这是 [名字]，我的朋友。",
+        "de": "Das ist [name], ein Freund/eine Freundin von mir."
+      },
+      "explanations": {
+        "zh-TW": "介紹新朋友的基本用語",
+        "en": "Introducing a friend to another person",
+        "ja": "朋友を他の人へ紹介",
+        "ko": "친구를 다른 사람에게 소개",
+        "es": "Presentando a un amigo a otra persona",
+        "fr": "Presenter un ami a une autre personne",
+        "zh-CN": "介绍新朋友的基本用语",
+        "de": "Einen Freund/eine Freundin einer anderen Person vorstellen"
+      }
+    },
+    {
+      "id": "soc-1-01-2",
+      "translations": {
+        "zh-TW": "[名字] 是 [職業]。",
+        "en": "[Name] is a [profession].",
+        "ja": "[name]は[职业]です",
+        "ko": "[name]은 [职业]입니다",
+        "es": "[name] es un/una [profesion].",
+        "fr": "[name] est un/une [profession].",
+        "zh-CN": "[名字] 是 [职业]。",
+        "de": "[Name] ist [Beruf]."
+      },
+      "explanations": {
+        "zh-TW": "說明新朋友的背景",
+        "en": "Describing a person's profession during introduction",
+        "ja": "紹介時の職業描述",
+        "ko": "소개 시 직업 설명",
+        "es": "Describiendo la profesion durante la introduccion",
+        "fr": "Decrire la profession lors de lintroduction",
+        "zh-CN": "说明新朋友的背景",
+        "de": "Den Beruf einer Person bei der Vorstellung beschreiben"
+      }
+    },
+    {
+      "id": "soc-1-01-3",
+      "translations": {
+        "zh-TW": "[名字]，這位是 [其他人]。",
+        "en": "[Name], this is [other person].",
+        "ja": "[name]さん、こっち向いて。[other person]です",
+        "ko": "[name]씨, 이쪽은 [other person]입니다",
+        "es": "[name], este es [other person].",
+        "fr": "[name], ceci est [other person].",
+        "zh-CN": "[名字]，这位是 [其他人]。",
+        "de": "[Name], das ist [andere Person]."
+      },
+      "explanations": {
+        "zh-TW": "進行雙向介紹",
+        "en": "Formally introducing two people to each other",
+        "ja": "二人の正式紹介",
+        "ko": "두 사람을 서로 소개",
+        "es": "Introduciendo formalmente a dos personas",
+        "fr": "Presenter formellement deux personnes",
+        "zh-CN": "进行双向介绍",
+        "de": "Zwei Personen förmllich einander vorstellen"
+      }
+    },
+    {
+      "id": "soc-1-01-4",
+      "translations": {
+        "zh-TW": "我們都對 [興趣] 有興趣。",
+        "en": "We are both into [hobby].",
+        "ja": "私たちは二人とも[hobby]に興味があります",
+        "ko": "우리 둘 다 [취미]에 관심이 있습니다",
+        "es": "Los dos estamos interesados en [hobby].",
+        "fr": "Nous sommes tous les deux interesses par [hobby].",
+        "zh-CN": "我们都对 [兴趣] 有兴趣。",
+        "de": "Wir sind beide an [Hobby] interessiert."
+      },
+      "explanations": {
+        "zh-TW": "說明共同點",
+        "en": "Highlighting a shared interest between people being introduced",
+        "ja": "紹介時の共通趣味の強調",
+        "ko": "소개 시 공통 취미 강조",
+        "es": "Resaltando un interes comun",
+        "fr": "Souligner un interet commun",
+        "zh-CN": "说明共同点",
+        "de": "Ein gemeinsames Interesse zwischen vorzustellenden Personen hervorheben"
+      }
+    },
+    {
+      "id": "soc-1-01-5",
+      "translations": {
+        "zh-TW": "很高興認識你，[名字]。",
+        "en": "Nice to meet you, [name].",
+        "ja": "はじめまして、[name]さん",
+        "ko": "처음 뵙겠습니다, [name]씨",
+        "es": "Mucho gusto, [name].",
+        "fr": "Enchante, [name].",
+        "zh-CN": "很高兴认识你，[名字]。",
+        "de": "Schön, Sie kennenzulernen, [name]."
+      },
+      "explanations": {
+        "zh-TW": "見面的問候語",
+        "en": "Polite response upon meeting someone new",
+        "ja": "新出逢いへの禮儀正しい応答",
+        "ko": "새로운 사람 만남에 대한 예의바른 대응",
+        "es": "Respuesta educada al conocer a alguien nuevo",
+        "fr": "Reponse polie lors dune nouvelle rencontre",
+        "zh-CN": "见面的问候语",
+        "de": "Höfliche Antwort beim Kennenlernen einer neuen Person"
+      }
+    }
+  ],
+  "soc-2": [
+    {
+      "id": "soc-2-01-1",
+      "translations": {
+        "zh-TW": "我帶了這個當作給主人的禮物。",
+        "en": "I brought this as a gift for the host.",
+        "ja": "-Host へのgift を持ってきました",
+        "ko": "호스트에게 gift 가져왔어요",
+        "es": "Traje esto como regalo para el anfitrion.",
+        "fr": "Jai apporte ceci en cadeau pour hotesse.",
+        "zh-CN": "我带了这个当作给主人的礼物。",
+        "de": "Ich habe das als Geschenk für den Gastgeber mitgebracht."
+      },
+      "explanations": {
+        "zh-TW": "說明伴手禮的來意",
+        "en": "Explaining that one brought a gift for the host",
+        "ja": "ホストへのgift 持参の理由",
+        "ko": "호스트에게 선물 지참 이유",
+        "es": "Explicando que se trajo un regalo",
+        "fr": "Expliquer quon a apporte un cadeau",
+        "zh-CN": "说明伴手礼的来意",
+        "de": "Erklären, dass man ein Geschenk für den Gastgeber mitgebracht hat"
+      }
+    },
+    {
+      "id": "soc-2-01-2",
+      "translations": {
+        "zh-TW": "希望你喜歡紅酒。",
+        "en": "I hope you like wine.",
+        "ja": "ワインが好きだと 좋んですけど",
+        "ko": "葡萄酒 좋아하시면 좋겠어요",
+        "es": "Espero que le guste el vino.",
+        "fr": "Jespere que vous aimiez le vin.",
+        "zh-CN": "希望你喜欢红酒。",
+        "de": "Ich hoffe, Sie mögen Wein."
+      },
+      "explanations": {
+        "zh-TW": "說明禮物的內容",
+        "en": "Presenting wine as a gift and hoping it is welcome",
+        "ja": "ワインをgift として提示",
+        "ko": "와인을 선물로 제시",
+        "es": "Presentando vino como regalo",
+        "fr": "Presenter du vin comme cadeau",
+        "zh-CN": "说明礼物的内容",
+        "de": "Wein als Geschenk präsentieren und hoffen, dass er willkommen ist"
+      }
+    },
+    {
+      "id": "soc-2-01-3",
+      "translations": {
+        "zh-TW": "我不確定該帶什麼，所以帶花比較保險。",
+        "en": "I was not sure what to bring, so flowers seemed safe.",
+        "ja": "何を持ってくるか迷ったので、花にしています",
+        "ko": "뭐 가져올지 몰라서花로 했어요",
+        "es": "No estaba seguro de que traer, asi que las flores parecian seguras.",
+        "fr": "Je netais pas sur quoi apporter, alors les fleurs semblaient un choix safe.",
+        "zh-CN": "我不确定该带什么，所以带花比较保险。",
+        "de": "Ich war mir nicht sicher, was ich mitbringen soll, also schienen Blumen sicher."
+      },
+      "explanations": {
+        "zh-TW": "解釋選擇伴手禮的考量",
+        "en": "Apologetically explaining one brought flowers as a gift",
+        "ja": "花を持参したことの謝罪説明",
+        "ko": "꽃을 지참한 것에 대한 사과 설명",
+        "es": "Explicando con disculpas que se trajeron flores",
+        "fr": "Expliquer avec des excuses quon a apporte des fleurs",
+        "zh-CN": "解释选择伴手礼的考量",
+        "de": "Sich entschuldigen und erklären, dass man Blumen als Geschenk mitgebracht hat"
+      }
+    },
+    {
+      "id": "soc-2-01-4",
+      "translations": {
+        "zh-TW": "謝謝你邀請我們來。",
+        "en": "Thank you for having us over.",
+        "ja": "私たちを招いてくれてありがとうございます",
+        "ko": "초대해 주셔서 감사합니다",
+        "es": "Gracias por invitarnos.",
+        "fr": "Merci de nous avoir invites.",
+        "zh-CN": "谢谢你邀请我们来。",
+        "de": "Danke, dass Sie uns eingeladen haben."
+      },
+      "explanations": {
+        "zh-TW": "向主人致謝",
+        "en": "Expressing gratitude for being invited to someone's home",
+        "ja": "家に招待されたことへの感謝",
+        "ko": "집에 초대받은 것에 대한 감사",
+        "es": "Expresando gratitud por ser invitado",
+        "fr": "Exprimer de la reconnaissance pour avoir ete invite",
+        "zh-CN": "向主人致谢",
+        "de": "Dankbarkeit ausdrücken, dass man in jemandes Zuhause eingeladen wurde"
+      }
+    },
+    {
+      "id": "soc-2-01-5",
+      "translations": {
+        "zh-TW": "如果需要我帶什麼請告訴我。",
+        "en": "Please let me know if you would like me to bring anything.",
+        "ja": "何か持ってくるものが必要であれば言ってください",
+        "ko": "뭐라도 가져올 것 있으면 말씀해 주세요",
+        "es": "Por favor hagame saber si necesita que traiga algo.",
+        "fr": "Faites-moi savoir si vous voulez que jappporte quelque chose.",
+        "zh-CN": "如果需要我带什么请告诉我。",
+        "de": "Bitte lassen Sie mich wissen, ob Sie möchten, dass ich etwas mitbringe."
+      },
+      "explanations": {
+        "zh-TW": "表示願意幫忙",
+        "en": "Offering to bring something to a gathering",
+        "ja": "集まりへの持参展示",
+        "ko": "모임에 지참할 물건 제시",
+        "es": "Ofreciendo traer algo",
+        "fr": "Offrir dapporter quelque chose",
+        "zh-CN": "表示愿意帮忙",
+        "de": "Anbieten, etwas zu einer Zusammenkunft mitzubringen"
+      }
+    }
+  ],
+  "soc-3": [
+    {
+      "id": "soc-3-01-1",
+      "translations": {
+        "zh-TW": "歡迎！很高興你能來。",
+        "en": "Welcome! So glad you could make it.",
+        "ja": "ようこそ！来てもらえて嬉しいです",
+        "ko": "어서 오세요! 오셔서 정말 기뻐요",
+        "es": "Bienvenido! Me alegro tanto de que hayas podido venir.",
+        "fr": "Bienvenue! Je suis si heureux que vous ayez pu venir.",
+        "zh-CN": "欢迎！很高兴你能来。",
+        "de": "Willkommen! Ich freue mich sehr, dass Sie kommen konnten."
+      },
+      "explanations": {
+        "zh-TW": "招呼客人的標準用語",
+        "en": "Warmly greeting a guest who has arrived",
+        "ja": "到着ゲストへの温かい挨拶",
+        "ko": "도착한 게스트에 대한 따뜻한 인사",
+        "es": "Saludando calurosamente a un invitado",
+        "fr": "Saluer chaleureusement un invite qui arrive",
+        "zh-CN": "招呼客人的标准用语",
+        "de": "Einen Gast, der angekommen ist, herzlich begrüßen"
+      }
+    },
+    {
+      "id": "soc-3-01-2",
+      "translations": {
+        "zh-TW": "我能給你拿點喝的嗎？",
+        "en": "Can I get you something to drink?",
+        "ja": "何か drink を取ってきましょうか？",
+        "ko": "음료 뭐 가져다 드릴까요?",
+        "es": "Puedo traerle algo de beber?",
+        "fr": "Puis-je vous apporter quelque chose a boire?",
+        "zh-CN": "我能给你拿点喝的吗？",
+        "de": "Kann ich Ihnen etwas zu trinken holen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問飲料需求",
+        "en": "Offering to get a drink for a guest",
+        "ja": "ゲストへの饮料提供の申し入れ",
+        "ko": "게스트에게 음료 제공 제안",
+        "es": "Ofreciendo traer una bebida",
+        "fr": "Offrir dapporter une boisson",
+        "zh-CN": "询问饮料需求",
+        "de": "Anbieten, einem Gast etwas zu trinken zu holen"
+      }
+    },
+    {
+      "id": "soc-3-01-3",
+      "translations": {
+        "zh-TW": "食物在這裡，請自便。",
+        "en": "The food is over here, help yourself.",
+        "ja": "食べ物はこっちにあります。自由にどうぞ",
+        "ko": "음식은 여기 있어요. 편하게 드세요",
+        "es": "La comida esta alla, sirvete.",
+        "fr": "La nourriture est la-bas, servez-vous.",
+        "zh-CN": "食物在这里，请自便。",
+        "de": "Das Essen ist hier drüben, bedienen Sie sich."
+      },
+      "explanations": {
+        "zh-TW": "指引食物位置",
+        "en": "Directing guests to the food table",
+        "ja": "食べ物テーブルへの誘導",
+        "ko": "음식 테이블로 유도",
+        "es": "Dirigiendo a los invitados a la comida",
+        "fr": "Diriger les invites vers la nourriture",
+        "zh-CN": "指引食物位置",
+        "de": "Gäste zur Speisetafel führen"
+      }
+    },
+    {
+      "id": "soc-3-01-4",
+      "translations": {
+        "zh-TW": "請自由和其他人交流。",
+        "en": "Feel free to mingle around.",
+        "ja": "自由に他の方と話してください",
+        "ko": "마음껏 돌아다니며 이야기하세요",
+        "es": "Sientete libre de mezclarte con los demas.",
+        "fr": "Nhesitez pas a discuter avec les autres.",
+        "zh-CN": "请自由和其他人交流。",
+        "de": "Fühlen Sie sich frei, sich umzusehen und zu plaudern."
+      },
+      "explanations": {
+        "zh-TW": "邀請社交",
+        "en": "Encouraging guests to socialize with each other",
+        "ja": "ゲスト同士の交流を促す",
+        "ko": "게스트 간 교류 장려",
+        "es": "Animando a los invitados a socializar",
+        "fr": "Encourager les invites a socialiser",
+        "zh-CN": "邀请社交",
+        "de": "Gäste ermutigen, miteinander zu sozialisieren"
+      }
+    },
+    {
+      "id": "soc-3-01-5",
+      "translations": {
+        "zh-TW": "讓我介紹你認識一些人。",
+        "en": "Let me introduce you to some people.",
+        "ja": "いくつかの人を紹介させてください",
+        "ko": "몇 분을 소개해 드릴게요",
+        "es": "Permitame presentarle a algunas personas.",
+        "fr": "Laissez-moi vous presenter a quelques personnes.",
+        "zh-CN": "让我介绍你认识一些人。",
+        "de": "Lassen Sie mich Sie einigen Leuten vorstellen."
+      },
+      "explanations": {
+        "zh-TW": "主動安排認識",
+        "en": "Offering to introduce a guest to others",
+        "ja": "他のゲストへの紹介を申し出る",
+        "ko": "다른 게스트에게 소개 제안",
+        "es": "Ofreciendo presentar a alguien",
+        "fr": "Offrir de presenter quelquun",
+        "zh-CN": "主动安排认识",
+        "de": "Anbieten, einen Gast anderen vorzustellen"
+      }
+    }
+  ],
+  "soc-4": [
+    {
+      "id": "soc-4-01-1",
+      "translations": {
+        "zh-TW": "真的很抱歉我之前說的話。",
+        "en": "I am really sorry about what I said earlier.",
+        "ja": "先ほど言ったこと、本当に sorry です",
+        "ko": "앞서 말씀드린 것 정말 죄송합니다",
+        "es": "Lo siento mucho por lo que dije antes.",
+        "fr": "Je suis vraiment desole pour ce que jai dit plus tot.",
+        "zh-CN": "真的很抱歉我之前说的话。",
+        "de": "Es tut mir wirklich leid, was ich vorhin gesagt habe."
+      },
+      "explanations": {
+        "zh-TW": "為失言道歉的開場白",
+        "en": "Apologizing for something said earlier in a social setting",
+        "ja": "先前発言への謝罪",
+        "ko": "이전 발언에 대한 사과",
+        "es": "Disculpandose por algo dicho antes",
+        "fr": "Sexcuser pour quelque chose dit plus tot",
+        "zh-CN": "为失言道歉的开场白",
+        "de": "Sich für etwas entschuldigen, das vorher in einer sozialen Situation gesagt wurde"
+      }
+    },
+    {
+      "id": "soc-4-01-2",
+      "translations": {
+        "zh-TW": "那不是我原本的意思。",
+        "en": "It came out wrong.",
+        "ja": "传达の仕方が恶かった",
+        "ko": "전해지는 방식이 잘못됐어요",
+        "es": "Salio mal lo que quise decir.",
+        "fr": "Ce nest pas sortit comme je le voulais.",
+        "zh-CN": "那不是我原本的意思。",
+        "de": "Es kam falsch rüber."
+      },
+      "explanations": {
+        "zh-TW": "解釋失言的原因",
+        "en": "Clarifying that one's words did not convey the intended meaning",
+        "ja": "言葉が意図を正確に伝えなかったことへの言い訳",
+        "ko": "말이 의도를 정확히 전달하지 못했음",
+        "es": "Aclarando que las palabras no expresaron lo intendedo",
+        "fr": "Clarifier que les mots nont pas exprime lintention",
+        "zh-CN": "解释失言的原因",
+        "de": "Klären, dass die eigenen Worte nicht die beabsichtigte Bedeutung vermittelten"
+      }
+    },
+    {
+      "id": "soc-4-01-3",
+      "translations": {
+        "zh-TW": "我不是故意冒犯你的。",
+        "en": "I did not mean to offend you.",
+        "ja": "不快にさせるつもりはなかったです",
+        "ko": "불快하게 드릴 생각은 없었습니다",
+        "es": "No fue mi intencion ofenderte.",
+        "fr": "Je navais pas lintention de vous offender.",
+        "zh-CN": "我不是故意冒犯你的。",
+        "de": "Ich wollte Sie nicht beleidigen."
+      },
+      "explanations": {
+        "zh-TW": "表明無意冒犯",
+        "en": "Expressing that the offense was unintentional",
+        "ja": "意図しない不快にさせたことの釋明",
+        "ko": "비자발적 불쾌감 알림",
+        "es": "Expresando que la ofensa fue no intencional",
+        "fr": "Exprimer que loffense etait non intentionnelle",
+        "zh-CN": "表明无意冒犯",
+        "de": "Ausdrücken, dass die Beleidigung unbeabsichtigt war"
+      }
+    },
+    {
+      "id": "soc-4-01-4",
+      "translations": {
+        "zh-TW": "希望你能原諒我。",
+        "en": "I hope you can forgive me.",
+        "ja": "許していただければ幸いです",
+        "ko": "용서해 주시면 좋겠습니다",
+        "es": "Espero que puedas perdonarme.",
+        "fr": "Jespere que vous puissiez me pardonner.",
+        "zh-CN": "希望你能原谅我。",
+        "de": "Ich hoffe, Sie können mir verzeihen."
+      },
+      "explanations": {
+        "zh-TW": "請求原諒",
+        "en": "Humbly asking for forgiveness",
+        "ja": "許しを求める",
+        "ko": "용서 요청",
+        "es": "Pidiendo perdon con humildad",
+        "fr": "Demander pardon avec humilite",
+        "zh-CN": "请求原谅",
+        "de": "Demütig um Vergebung bitten"
+      }
+    },
+    {
+      "id": "soc-4-01-5",
+      "translations": {
+        "zh-TW": "我會更注意我的言行。",
+        "en": "I will be more careful with my words.",
+        "ja": "言葉にはもっと注意します",
+        "ko": "말에 더 주의할게요",
+        "es": "Tendere mas cuidado con mis palabras.",
+        "fr": "Je ferai plus attention a mes mots.",
+        "zh-CN": "我会更注意我的言行。",
+        "de": "Ich werde mit meinen Worten vorsichtiger sein."
+      },
+      "explanations": {
+        "zh-TW": "承諾改進",
+        "en": "Promising to be more careful with wording going forward",
+        "ja": "今後の言葉遣いへの注意約束",
+        "ko": "향후 말 조심 약속",
+        "es": "Prometiendo tener mas cuidado",
+        "fr": "Promettre de faire plus attention",
+        "zh-CN": "承诺改进",
+        "de": "Versprechen, in Zukunft vorsichtiger mit der Wortwahl zu sein"
+      }
+    }
+  ],
+  "soc-5": [
+    {
+      "id": "soc-5-01-1",
+      "translations": {
+        "zh-TW": "你來我家鄉的話，一定要試試...",
+        "en": "When you visit my hometown, you must try...",
+        "ja": "私の故郷に来たら、...を試してほしい",
+        "ko": "제故乡에 오시면 ...을 반드시 맛보세요",
+        "es": "Cuando visites mi pueblo natal, debes probar...",
+        "fr": "Quand vous visiterez ma ville natale, vous devez essayer...",
+        "zh-CN": "你来我家乡的话，一定要试试...",
+        "de": "Wenn Sie meine Heimatstadt besuchen, müssen Sie... probieren"
+      },
+      "explanations": {
+        "zh-TW": "推薦家鄉料理的開場白",
+        "en": "Recommending a local specialty to a visitor",
+        "ja": "旅行者に在地名物を推介",
+        "ko": "방문자에게 현지 음식 추천",
+        "es": "Recomendando una especialidad local",
+        "fr": "Recommander une specialite locale",
+        "zh-CN": "推荐家乡料理的开场白",
+        "de": "Einen lokalen Spezialität einem Besucher empfehlen"
+      }
+    },
+    {
+      "id": "soc-5-01-2",
+      "translations": {
+        "zh-TW": "它以當地美食聞名。",
+        "en": "It is famous for its local cuisine.",
+        "ja": "在那里以其当地美食而闻名",
+        "ko": "그곳은 현지 요리로 유명합니다",
+        "es": "Es famoso por su cocina local.",
+        "fr": "Il est repute pour sa cuisine locale.",
+        "zh-CN": "它以当地美食闻名。",
+        "de": "Sie ist für ihre lokale Küche bekannt."
+      },
+      "explanations": {
+        "zh-TW": "說明家鄉特色",
+        "en": "Explaining that the hometown is known for its food",
+        "ja": "故郷の美食の説明",
+        "ko": "고향의 미식 설명",
+        "es": "Explicando que el pueblo es connu pour sa nourriture",
+        "fr": "Expliquer que la ville est connue pour sa nourriture",
+        "zh-CN": "说明家乡特色",
+        "de": "Erklären, dass die Heimatstadt für ihr Essen bekannt ist"
+      }
+    },
+    {
+      "id": "soc-5-01-3",
+      "translations": {
+        "zh-TW": "我祖母做的最好吃。",
+        "en": "My grandmother makes the best version.",
+        "ja": "おばあちゃんの作ったものが最高です",
+        "ko": "제 할머니가 만든 게 최고예요",
+        "es": "Mi abuela hace la mejor version.",
+        "fr": "Ma grand-mere fait la meilleure version.",
+        "zh-CN": "我祖母做的最好吃。",
+        "de": "Meine Großmutter macht die beste Version."
+      },
+      "explanations": {
+        "zh-TW": "分享家族記憶",
+        "en": "Sharing that one's grandmother makes exceptional local food",
+        "ja": "祖母の料理への賞賛",
+        "ko": "할머니 요리에 대한 칭찬",
+        "es": "Compartiendo que la abuela hace comida excepcional",
+        "fr": "Partager que grand-mere fait une nourriture exceptionnelle",
+        "zh-CN": "分享家族记忆",
+        "de": "Teilen, dass die eigene Großmutter außergewöhnliches lokales Essen zubereitet"
+      }
+    },
+    {
+      "id": "soc-5-01-4",
+      "translations": {
+        "zh-TW": "美食愛好者必嚐。",
+        "en": "It is a must-try for food lovers.",
+        "ja": "美食家には必须です",
+        "ko": "음식 애호가분들에게는 필수예요",
+        "es": "Es una obligacion para los amantes de la comida.",
+        "fr": "Cest un incontournable pour les amoureux de la nourriture.",
+        "zh-CN": "美食爱好者必尝。",
+        "de": "Das ist ein Muss für Essensliebhaber."
+      },
+      "explanations": {
+        "zh-TW": "強調推薦度",
+        "en": "Strongly recommending a dish to food enthusiasts",
+        "ja": "食事愛好家への strongly 推荐",
+        "ko": "음식 애호가에게 강력 추천",
+        "es": "Recomendando fuertemente un plato",
+        "fr": "Recommander fortement un plat",
+        "zh-CN": "强调推荐度",
+        "de": "Ein Gericht Essensenthusiasten nachdrücklich empfehlen"
+      }
+    },
+    {
+      "id": "soc-5-01-5",
+      "translations": {
+        "zh-TW": "每個地方的食譜都不太一樣。",
+        "en": "The recipe varies by region.",
+        "ja": "レシピは地域によって异なります",
+        "ko": "레시피는 지역마다 다릅니다",
+        "es": "La receta vara segun la region.",
+        "fr": "La recette varie selon la region.",
+        "zh-CN": "每个地方的食谱都不太一样。",
+        "de": "Das Rezept variiert je nach Region."
+      },
+      "explanations": {
+        "zh-TW": "說明地域差異",
+        "en": "Noting that a dish has regional variations",
+        "ja": "料理的地方差の指摘",
+        "ko": "요리의 지역별 차이 지적",
+        "es": "Notando que un plato tiene variaciones",
+        "fr": "Notifier quun plat a des variations",
+        "zh-CN": "说明地域差异",
+        "de": "Feststellen, dass ein Gericht regionale Variationen hat"
+      }
+    }
+  ],
+  "soc-6": [
+    {
+      "id": "soc-6-01-1",
+      "translations": {
+        "zh-TW": "在我的文化裡，習俗是...",
+        "en": "In my culture, it is customary to...",
+        "ja": "私の文化では...するのが慣例です",
+        "ko": "제 문화에서는 ...하는 것이 관례입니다",
+        "es": "En mi cultura, es costumbre...",
+        "fr": "Dans ma culture, il est coutume de...",
+        "zh-CN": "在我的文化里，习俗是...",
+        "de": "In meiner Kultur ist es üblich, zu..."
+      },
+      "explanations": {
+        "zh-TW": "介紹文化習俗的開場白",
+        "en": "Sharing a cultural custom in a cross-cultural conversation",
+        "ja": "異文化 Discuss での文化的慣習共有",
+        "ko": "이문화 대화에서 문화적 관습 공유",
+        "es": "Compartiendo una costumbre cultural",
+        "fr": "Partager une coutume culturelle",
+        "zh-CN": "介绍文化习俗的开场白",
+        "de": "Einen kulturellen Brauch in einem interkulturellen Gespräch teilen"
+      }
+    },
+    {
+      "id": "soc-6-01-2",
+      "translations": {
+        "zh-TW": "我覺得這些差異很有趣。",
+        "en": "I find the differences fascinating.",
+        "ja": "違いが興味深いと思います",
+        "ko": "차이점이 흥미롭습니다",
+        "es": "Encuentro fascinantes las diferencias.",
+        "fr": "Je trouve les differences fascinantes.",
+        "zh-CN": "我觉得这些差异很有趣。",
+        "de": "Ich finde die Unterschiede faszinierend."
+      },
+      "explanations": {
+        "zh-TW": "表達對文化交流的興趣",
+        "en": "Expressing admiration for cultural differences",
+        "ja": "文化差への賞嘆",
+        "ko": "문화 차이에 대한 찬사",
+        "es": "Expresando admiracion por las diferencias",
+        "fr": "Exprimer de ladmiration pour les differences",
+        "zh-CN": "表达对文化交流的兴趣",
+        "de": "Bewunderung für kulturelle Unterschiede ausdrücken"
+      }
+    },
+    {
+      "id": "soc-6-01-3",
+      "translations": {
+        "zh-TW": "我們的做法不同這點很有趣。",
+        "en": "It is interesting how we do it differently.",
+        "ja": "やり方が違うのが興味深いですね",
+        "ko": "하는 방식이 다른 게 흥미롭죠",
+        "es": "Es interesante como lo hacemos diferente.",
+        "fr": "Cest interessant comme nous le faisons differemment.",
+        "zh-CN": "我们的做法不同这点很有趣。",
+        "de": "Es ist interessant, wie wir es unterschiedlich machen."
+      },
+      "explanations": {
+        "zh-TW": "比較文化差異",
+        "en": "Observing that cultures approach things differently",
+        "ja": "文化间的アプローチの違いを指摘",
+        "ko": "문화별 접근 방식 차이 지적",
+        "es": "Observando que las culturas abordan las cosas diferente",
+        "fr": "Observer que les cultures abordent les choses differemment",
+        "zh-CN": "比较文化差异",
+        "de": "Beobachten, dass Kulturen Dinge unterschiedlich angehen"
+      }
+    },
+    {
+      "id": "soc-6-01-4",
+      "translations": {
+        "zh-TW": "你能多教我一些嗎？",
+        "en": "Could you teach me more about that?",
+        "ja": "もっと詳しく教えてもらえますか？",
+        "ko": "그것에 대해 더 자세히 알려주실 수 있나요?",
+        "es": "Podrias ensenarmelo mas sobre eso?",
+        "fr": "Pourriez-vous men apprendre plus?",
+        "zh-CN": "你能多教我一些吗？",
+        "de": "Könnten Sie mir mehr darüber beibringen?"
+      },
+      "explanations": {
+        "zh-TW": "請求深入了解",
+        "en": "Expressing curiosity and asking to learn more about another culture",
+        "ja": "他の文化への学習欲",
+        "ko": "다른 문화에 대한 배움 욕구 표현",
+        "es": "Expresando curiosidad por aprender mas",
+        "fr": "Exprimer de la curiosite pour apprendre",
+        "zh-CN": "请求深入了解",
+        "de": "Neugier ausdrücken und fragen, mehr über eine andere Kultur zu lernen"
+      }
+    },
+    {
+      "id": "soc-6-01-5",
+      "translations": {
+        "zh-TW": "我很想知道更多你們的習俗。",
+        "en": "I would love to learn more about your customs.",
+        "ja": "あなたの文化ならもっと知りたいです",
+        "ko": "당신의 문화에 대해 더 알고 싶어요",
+        "es": "Me encantaria aprender mas sobre sus costumbres.",
+        "fr": "Jadorerais en apprendre plus sur vos coutumes.",
+        "zh-CN": "我很想知道更多你们的习俗。",
+        "de": "Ich würde liebend gern mehr über Ihre Bräuche lernen."
+      },
+      "explanations": {
+        "zh-TW": "表達學習意願",
+        "en": "Expressing genuine interest in learning about another culture",
+        "ja": "他文化への genuine な興味",
+        "ko": "다른 문화에 대한 진심 어린 관심",
+        "es": "Expresando interes genuino en la otra cultura",
+        "fr": "Exprimer un interet sincere pour une autre culture",
+        "zh-CN": "表达学习意愿",
+        "de": "Echtes Interesse am Lernen über eine andere Kultur ausdrücken"
+      }
+    }
+  ],
+  "spt-1": [
+    {
+      "id": "spt-1-01-1",
+      "translations": {
+        "zh-TW": "現在比分是多少？",
+        "en": "What is the score?",
+        "ja": "今何対何ですか？",
+        "ko": "지금 스코어가 어떻게 돼요?",
+        "es": "Cual es el marcador?",
+        "fr": "Quel est le score?",
+        "zh-CN": "现在比分是多少？",
+        "de": "Wie ist der Spielstand?"
+      },
+      "explanations": {
+        "zh-TW": "詢問比分的常用語",
+        "en": "Asking about the current score in a sports game",
+        "ja": "試合スコアの質問",
+        "ko": "경기 스코어 질문",
+        "es": "Preguntando por el marcador actual",
+        "fr": "Demander le score actuel",
+        "zh-CN": "询问比分的常用语",
+        "de": "Nach dem aktuellen Spielstand bei einem Sportspiel fragen"
+      }
+    },
+    {
+      "id": "spt-1-01-2",
+      "translations": {
+        "zh-TW": "那球打得太棒了！",
+        "en": "That was an incredible play!",
+        "ja": "あのプレーは见事でした！",
+        "ko": "그 플레이 정말 멋있었어요!",
+        "es": "Esa fue una jugada increible!",
+        "fr": "Ceetait une action incroyable!",
+        "zh-CN": "那球打得太棒了！",
+        "de": "Das war ein unglaublicher Spielzug!"
+      },
+      "explanations": {
+        "zh-TW": "讚嘆精彩表現",
+        "en": "Exclaiming excitement about an impressive play in a game",
+        "ja": "プレーの見事さへの感嘆",
+        "ko": "플레이에 대한 감탄",
+        "es": "Exclamando emocion por una jugada",
+        "fr": "Sexclamer dexcitement pour une action",
+        "zh-CN": "赞叹精彩表现",
+        "de": "Begeisterung über einen beeindruckenden Spielzug ausrufen"
+      }
+    },
+    {
+      "id": "spt-1-01-3",
+      "translations": {
+        "zh-TW": "主隊現在領先。",
+        "en": "The home team is winning.",
+        "ja": "ホームチームがリードしています",
+        "ko": "홈팀이 리드하고 있어요",
+        "es": "El equipo local va ganando.",
+        "fr": "Lequipe a domicile gagne.",
+        "zh-CN": "主队现在领先。",
+        "de": "Die Heimmannschaft gewinnt."
+      },
+      "explanations": {
+        "zh-TW": "說明目前比分狀況",
+        "en": "Reporting that the home team has the lead",
+        "ja": "ホームチームの優位を報告",
+        "ko": "홈팀 우위 보고",
+        "es": "Reportando que el equipo local lidera",
+        "fr": "Signaler que lequipe a domicile mene",
+        "zh-CN": "说明目前比分状况",
+        "de": "Berichten, dass die Heimmannschaft in Führung liegt"
+      }
+    },
+    {
+      "id": "spt-1-01-4",
+      "translations": {
+        "zh-TW": "你覺得誰會拿下冠軍？",
+        "en": "Who do you think will take the championship?",
+        "ja": "誰がchampionship を取ると思いますか？",
+        "ko": "누가 챔피언십을 땄을 것 같아요?",
+        "es": "Quien crees que ganara el campeonato?",
+        "fr": "Qui pensez-vous gagnera le championat?",
+        "zh-CN": "你觉得谁会拿下冠军？",
+        "de": "Wer wird Ihrer Meinung nach die Meisterschaft gewinnen?"
+      },
+      "explanations": {
+        "zh-TW": "預測比賽結果",
+        "en": "Asking for predictions about the championship outcome",
+        "ja": "Championship 結果 predictionへの質問",
+        "ko": "챔피언십 결과 예측 질문",
+        "es": "Pidiendo predicciones sobre el campeonato",
+        "fr": "Demander des predictions sur le championat",
+        "zh-CN": "预测比赛结果",
+        "de": "Nach Vorhersagen über den Ausgang der Meisterschaft fragen"
+      }
+    },
+    {
+      "id": "spt-1-01-5",
+      "translations": {
+        "zh-TW": "這場對他們來說是非贏不可的比賽。",
+        "en": "This is a must-win game for them.",
+        "ja": "これは彼らの必須勝利ゲームです",
+        "ko": "이건 그들에게 반드시 해야 하는 경기예요",
+        "es": "Este es un juego que deben ganar.",
+        "fr": "Cest un match a gagner pour eux.",
+        "zh-CN": "这场对他们来说是非赢不可的比赛。",
+        "de": "Das ist ein Spiel, das sie unbedingt gewinnen müssen."
+      },
+      "explanations": {
+        "zh-TW": "強調比賽重要性",
+        "en": "Stating that a game is crucial for a team to win",
+        "ja": "チームの死活をかけたゲームの重要性表明",
+        "ko": "팀의 사활이 걸린 경기 중요성 알림",
+        "es": "Afirmando la importancia de un juego para el equipo",
+        "fr": "Affirmer limportance dun match pour une equipe",
+        "zh-CN": "强调比赛重要性",
+        "de": "Feststellen, dass ein Spiel entscheidend für den Sieg eines Teams ist"
+      }
+    }
+  ],
+  "spt-2": [
+    {
+      "id": "spt-2-01-1",
+      "translations": {
+        "zh-TW": "我想加入聯賽。",
+        "en": "I would like to join the league.",
+        "ja": "リーグに参加したいです",
+        "ko": "리그에 참가하고 싶습니다",
+        "es": "Me gustaria unirme a la liga.",
+        "fr": "Je voudrais rejoindre la ligue.",
+        "zh-CN": "我想加入联赛。",
+        "de": "Ich möchte der Liga beitreten."
+      },
+      "explanations": {
+        "zh-TW": "表達參賽意願的開場白",
+        "en": "Expressing intent to register for a sports league",
+        "ja": "スポーツ league への参加意思表明",
+        "ko": "스포츠 리그 참가 의향",
+        "es": "Afirmando la intencion de registrarse",
+        "fr": "Affirmer lintention de sinscrire",
+        "zh-CN": "表达参赛意愿的开场白",
+        "de": "Die Absicht ausdrücken, sich für eine Sportliga zu registrieren"
+      }
+    },
+    {
+      "id": "spt-2-01-2",
+      "translations": {
+        "zh-TW": "賽季什麼時候開始？",
+        "en": "When does the season start?",
+        "ja": "シーズンはいつ始まりますか？",
+        "ko": "시즌이 언제 시작되나요?",
+        "es": "Cuando comienza la temporada?",
+        "fr": "Quand commence la saison?",
+        "zh-CN": "赛季什么时候开始？",
+        "de": "Wann beginnt die Saison?"
+      },
+      "explanations": {
+        "zh-TW": "詢問賽季時間",
+        "en": "Asking about the start date of the sports season",
+        "ja": "シーズン开幕日の質問",
+        "ko": "시즌 개막일 질문",
+        "es": "Preguntando por la fecha de inicio",
+        "fr": "Demander la date de debut",
+        "zh-CN": "询问赛季时间",
+        "de": "Nach dem Startdatum der Sportssaison fragen"
+      }
+    },
+    {
+      "id": "spt-2-01-3",
+      "translations": {
+        "zh-TW": "報名表在哪裡？",
+        "en": "Where are the sign-up forms?",
+        "ja": "参加用紙はどこですか？",
+        "ko": "신청서는 어디 있나요?",
+        "es": "Donde estan los formularios de inscripcion?",
+        "fr": "Ou sont les formulaires?",
+        "zh-CN": "报名表在哪里？",
+        "de": "Wo sind die Anmeldeformulare?"
+      },
+      "explanations": {
+        "zh-TW": "詢問報名地點",
+        "en": "Asking where to find league registration forms",
+        "ja": "League 登録フォームの場所質問",
+        "ko": "리그 등록 양식 위치 질문",
+        "es": "Preguntando donde encontrar formularios",
+        "fr": "Demander ou trouver les formulaires",
+        "zh-CN": "询问报名地点",
+        "de": "Fragen, wo man Liga-Anmeldeformulare findet"
+      }
+    },
+    {
+      "id": "spt-2-01-4",
+      "translations": {
+        "zh-TW": "報名費多少？",
+        "en": "What is the registration fee?",
+        "ja": "参加費用はいくらですか？",
+        "ko": "등록 비용이 얼마인가요?",
+        "es": "Cual es la cuota de inscripcion?",
+        "fr": "Quelle est la redevance?",
+        "zh-CN": "报名费多少？",
+        "de": "Wie hoch ist die Anmeldegebühr?"
+      },
+      "explanations": {
+        "zh-TW": "詢問費用",
+        "en": "Asking about the cost to join the league",
+        "ja": "League 参加費用の質問",
+        "ko": "리그 참가 비용 질문",
+        "es": "Preguntando sobre el costo de inscripcion",
+        "fr": "Demander le cout de la participation",
+        "zh-CN": "询问费用",
+        "de": "Nach den Kosten für den Beitritt zur Liga fragen"
+      }
+    },
+    {
+      "id": "spt-2-01-5",
+      "translations": {
+        "zh-TW": "有技術門檻要求嗎？",
+        "en": "Are there any skill-level requirements?",
+        "ja": "スキルレベルの要件はありますか？",
+        "ko": "스킬 레벨 요구사항이 있나요?",
+        "es": "Hay requisitos de nivel de habilidad?",
+        "fr": "Y a-t-il des exigences de niveau?",
+        "zh-CN": "有技术门槛要求吗？",
+        "de": "Gibt es irgendwelche Anforderungen an das Skill-Level?"
+      },
+      "explanations": {
+        "zh-TW": "詢問參賽資格",
+        "en": "Asking about minimum skill requirements to join",
+        "ja": "参加スキル要件の質問",
+        "ko": "참가 스킬 요건 질문",
+        "es": "Preguntando sobre requisitos minimos",
+        "fr": "Demander les exigences minimales",
+        "zh-CN": "询问参赛资格",
+        "de": "Nach minimalen Skill-Anforderungen für den Beitritt fragen"
+      }
+    }
+  ],
+  "spt-3": [
+    {
+      "id": "spt-3-01-1",
+      "translations": {
+        "zh-TW": "讓我熱身一下再開始。",
+        "en": "Let me warm up before we start.",
+        "ja": "始める前にウォームアップします",
+        "ko": "시작하기 전에 워밍업할게요",
+        "es": "Dejame calentar antes de empezar.",
+        "fr": "Laissez-moi mechauffer avant de commencer.",
+        "zh-CN": "让我热身一下再开始。",
+        "de": "Lassen Sie mich aufwärmen, bevor wir anfangen."
+      },
+      "explanations": {
+        "zh-TW": "開始健身的標準用語",
+        "en": "Stating intent to warm up before exercise",
+        "ja": "運動前のウォームアップ意思表示",
+        "ko": "운동 전 워밍업 의향",
+        "es": "Afirmando la intencion de calentar",
+        "fr": "Affirmer lintention de schauffer",
+        "zh-CN": "开始健身的标准用语",
+        "de": "Die Absicht äußern, vor dem Training aufzuwärmen"
+      }
+    },
+    {
+      "id": "spt-3-01-2",
+      "translations": {
+        "zh-TW": "你的訓練流程是什麼？",
+        "en": "What is your training routine?",
+        "ja": "トレーニングルーティンは何ですか？",
+        "ko": "트레이닝 루틴이 어떻게 되세요?",
+        "es": "Cual es tu rutina de entrenamiento?",
+        "fr": "Quest-ce que ta routine dentrainement?",
+        "zh-CN": "你的训练流程是什么？",
+        "de": "Was ist Ihre Trainingsroutine?"
+      },
+      "explanations": {
+        "zh-TW": "詢問訓練方式",
+        "en": "Asking about someone's regular training habits",
+        "ja": "トレーニングルーティンの質問",
+        "ko": "트레이닝 루틴 질문",
+        "es": "Preguntando sobre habitos de entrenamiento",
+        "fr": "Demander la routine dentrainement",
+        "zh-CN": "询问训练方式",
+        "de": "Nach den regelmäßigen Traininggewohnheiten einer Person fragen"
+      }
+    },
+    {
+      "id": "spt-3-01-3",
+      "translations": {
+        "zh-TW": "我能幫你護槓嗎？",
+        "en": "Can I spot you on that lift?",
+        "ja": "そのリフティングでspot してもいいですか？",
+        "ko": "그 리프트에서 스팟 해드릴까요?",
+        "es": "Puedo hacerte de apoyo en ese press?",
+        "fr": "Puis-je te seconder sur ce developpe?",
+        "zh-CN": "我能帮你护杠吗？",
+        "de": "Kann ich dich bei diesem Hebel sichern?"
+      },
+      "explanations": {
+        "zh-TW": "請求協助健身",
+        "en": "Offering to be a spotter for a weightlifting exercise",
+        "ja": "筋力トレーニングのスポットマー意思表示",
+        "ko": "근력 훈련 스팟 희망",
+        "es": "Ofreciendo ser vigilante de seguridad",
+        "fr": "Offrir detre le gardien de securite",
+        "zh-CN": "请求协助健身",
+        "de": "Anbieten, bei einer Gewichthebeübung als Ablöser zu fungieren"
+      }
+    },
+    {
+      "id": "spt-3-01-4",
+      "translations": {
+        "zh-TW": "我們目標三組各十下。",
+        "en": "Let us aim for three sets of ten.",
+        "ja": "3セット10回を目指しましょう",
+        "ko": "3세트 10회 목표합시다",
+        "es": "Apuntemos a tres series de diez.",
+        "fr": "Viser trois series de dix.",
+        "zh-CN": "我们目标三组各十下。",
+        "de": "Lassen Sie uns auf drei Sätze zu je zehn abzielen."
+      },
+      "explanations": {
+        "zh-TW": "設定訓練目標",
+        "en": "Setting a specific exercise target",
+        "ja": "具体的な運動目標の設定",
+        "ko": "구체적인 운동 목표 설정",
+        "es": "Estableciendo un objetivo especifico",
+        "fr": "Fixer un objectif specifique",
+        "zh-CN": "设置训练目标",
+        "de": "Ein spezifisches Trainingsziel setzen"
+      }
+    },
+    {
+      "id": "spt-3-01-5",
+      "translations": {
+        "zh-TW": "記得多喝水。",
+        "en": "Remember to hydrate.",
+        "ja": "水分補給を忘れずに",
+        "ko": "수분 보충 잊지 마세요",
+        "es": "Recuerda hidratarte.",
+        "fr": "Pense a t hydratez.",
+        "zh-CN": "记得多喝水。",
+        "de": "Vergessen Sie nicht, hydriert zu bleiben."
+      },
+      "explanations": {
+        "zh-TW": "健身提醒",
+        "en": "Reminding someone to drink water during exercise",
+        "ja": "運動中の水分補給リマインダー",
+        "ko": "운동 중 수분 보충 상기",
+        "es": "Recordando hidratarse",
+        "fr": "Rappeler de s hydrater",
+        "zh-CN": "健身提醒",
+        "de": "Jemanden daran erinnern, während des Trainings Wasser zu trinken"
+      }
+    }
+  ],
+  "spt-4": [
+    {
+      "id": "spt-4-01-1",
+      "translations": {
+        "zh-TW": "我們來討論作戰策略。",
+        "en": "Let us discuss the game plan.",
+        "ja": "ゲームプランをdiscussしましょう",
+        "ko": "게임 플랜에 대해 이야기해 봅시다",
+        "es": "Discutamos el plan de juego.",
+        "fr": "Discutons du plan de jeu.",
+        "zh-CN": "我们来讨论作战策略。",
+        "de": "Lassen Sie uns den Spielplan besprechen."
+      },
+      "explanations": {
+        "zh-TW": "開始討論的比賽用語",
+        "en": "Proposing to discuss strategy before a game",
+        "ja": "試合前strategy discussの開始",
+        "ko": "경기 전 전략 논의 시작",
+        "es": "Proponiendo discutir la estrategia",
+        "fr": "Proposer de discuter de la strategie",
+        "zh-CN": "开始讨论的比赛用语",
+        "de": "Vorschlagen, vor einem Spiel die Strategie zu besprechen"
+      }
+    },
+    {
+      "id": "spt-4-01-2",
+      "translations": {
+        "zh-TW": "我們需要利用他們左側的弱點。",
+        "en": "We need to exploit their weakness on the left side.",
+        "ja": "彼らの左側の弱点を exploit する必要があります",
+        "ko": "상대방 왼쪽 약점을 利用해야 합니다",
+        "es": "Necesitamos explotar su debilidad en el lado izquierdo.",
+        "fr": "Nous devons exploiter leur faiblesse sur le cote gauche.",
+        "zh-CN": "我们需要利用他们左侧的弱点。",
+        "de": "Wir müssen ihre Schwäche auf der linken Seite ausnutzen."
+      },
+      "explanations": {
+        "zh-TW": "提出戰術建議",
+        "en": "Proposing to target an opponent's weak spot on the left",
+        "ja": "对手の左サイド弱点突きの提案",
+        "ko": "상대방 왼쪽 측면 약점 집중 제안",
+        "es": "Proponiendo explotar un punto debil",
+        "fr": "Proposer dexploiter un point faible",
+        "zh-CN": "提出战术建议",
+        "de": "Vorschlagen, auf einen schwachen Punkt des Gegners auf der linken Seite abzuzielen"
+      }
+    },
+    {
+      "id": "spt-4-01-3",
+      "translations": {
+        "zh-TW": "誰來看守前鋒？",
+        "en": "Who is covering the striker?",
+        "ja": "誰がストリーカーをマークしていますか？",
+        "ko": "누가 스트라이커를 마크하나요?",
+        "es": "Quien esta cubriendo al delantero?",
+        "fr": "Qui couvre lattaquant?",
+        "zh-CN": "谁来看守前锋？",
+        "de": "Wer deckt den Stürmer?"
+      },
+      "explanations": {
+        "zh-TW": "分配防守任務",
+        "en": "Asking about defensive assignment on the striker",
+        "ja": "ストリーカー守り担当質問",
+        "ko": "스트라이커 수비 담당 질문",
+        "es": "Preguntando sobre la asignacion defensiva",
+        "fr": "Demander qui couvre lattaquant",
+        "zh-CN": "分配防守任务",
+        "de": "Nach der defensiven Zuweisung für den Stürmer fragen"
+      }
+    },
+    {
+      "id": "spt-4-01-4",
+      "translations": {
+        "zh-TW": "我們從開局就應該高壓迫搶。",
+        "en": "We should press high from the start.",
+        "ja": "最初からhigh pressすべきです",
+        "ko": "처음부터 높이 프레싱해야 합니다",
+        "es": "Deberiamos presionar alto desde el inicio.",
+        "fr": "Nous devrions presser haut des le debut.",
+        "zh-CN": "我们从开局就应该高压迫抢。",
+        "de": "Wir sollten von Beginn an hoch pressen."
+      },
+      "explanations": {
+        "zh-TW": "提出比賽策略",
+        "en": "Proposing an aggressive high-press strategy from kickoff",
+        "ja": "早期的高度プレス戦略の提案",
+        "ko": "조기 높이 프레싱 전략 제안",
+        "es": "Proponiendo una estrategia de press alta",
+        "fr": "Proposer une strategie de press haute",
+        "zh-CN": "提出比赛策略",
+        "de": "Eine aggressive Hochpress-Strategie ab Anpfiff vorschlagen"
+      }
+    },
+    {
+      "id": "spt-4-01-5",
+      "translations": {
+        "zh-TW": "記得保持緊密陣型。",
+        "en": "Remember to stay compact.",
+        "ja": "コンパクトに保つことを覚えておいてください",
+        "ko": "밀집하게 유지하는 것 잊지 마세요",
+        "es": "Recuerden mantenerse compactos.",
+        "fr": "Souvenez-vous de rester compact.",
+        "zh-CN": "记得保持紧密阵型。",
+        "de": "Denken Sie daran, kompakt zu bleiben."
+      },
+      "explanations": {
+        "zh-TW": "提醒戰術紀律",
+        "en": "Reminding teammates to maintain a compact formation",
+        "ja": "コンパクトな队形維持の指示",
+        "ko": "밀집한 포메이션 유지 지시",
+        "es": "Recordando mantener una formacion compacta",
+        "fr": "Rappeler de maintenir une formation compacte",
+        "zh-CN": "提醒战术纪律",
+        "de": "Mitspieler daran erinnern, eine kompakte Formation beizubehalten"
+      }
+    }
+  ],
+  "spt-5": [
+    {
+      "id": "spt-5-01-1",
+      "translations": {
+        "zh-TW": "我在安排個人訓練課程。",
+        "en": "I am scheduling a personal training session.",
+        "ja": "パーソナルトレーニングのセッションをスケジュールしています",
+        "ko": "퍼스널 트레이닝 세션을 스케줄하고 있습니다",
+        "es": "Estoy programando una sesion de entrenamiento personal.",
+        "fr": "Je programme une session dentrainement personnel.",
+        "zh-CN": "我在安排个人训练课程。",
+        "de": "Ich plane eine Personal-Training-Sitzung ein."
+      },
+      "explanations": {
+        "zh-TW": "開始預約教練的用語",
+        "en": "Stating intent to schedule personal training",
+        "ja": "パーソナルトレーニングの目的を述べる",
+        "ko": "퍼스널 트레이닝 목적 알림",
+        "es": "Afirmando la intencion de programar",
+        "fr": "Affirmer lintention de programmer",
+        "zh-CN": "开始预约教练的用语",
+        "de": "Die Absicht äußern, Personal Training zu planen"
+      }
+    },
+    {
+      "id": "spt-5-01-2",
+      "translations": {
+        "zh-TW": "你的資歷是什麼？",
+        "en": "What are your credentials?",
+        "ja": "資格は何ですか？",
+        "ko": "자격이 어떻게 되시나요?",
+        "es": "Cuales son sus credenciales?",
+        "fr": "Quelles sont vos credentiales?",
+        "zh-CN": "你的资历是什么？",
+        "de": "Was sind Ihre Qualifikationen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問教練資格",
+        "en": "Asking about a trainer's qualifications and certifications",
+        "ja": "トレーナー資格・認定の質問",
+        "ko": "트레이너 자격/인증 질문",
+        "es": "Preguntando sobre las credenciales del entrenador",
+        "fr": "Demander les credentiales du coach",
+        "zh-CN": "询问教练资格",
+        "de": "Nach den Qualifikationen und Zertifizierungen eines Trainers fragen"
+      }
+    },
+    {
+      "id": "spt-5-01-3",
+      "translations": {
+        "zh-TW": "我想改進我的技術。",
+        "en": "I want to improve my technique.",
+        "ja": "テクニックを向上させたいです",
+        "ko": "기술을 향상시키고 싶습니다",
+        "es": "Quiero mejorar mi tecnica.",
+        "fr": "Je veux ameliorer ma technique.",
+        "zh-CN": "我想改进我的技术。",
+        "de": "Ich möchte meine Technik verbessern."
+      },
+      "explanations": {
+        "zh-TW": "說明訓練目標",
+        "en": "Stating a goal to improve specific sports skills",
+        "ja": "特定スポーツ技術の向上目標を述べる",
+        "ko": "특정 스포츠 기술 향상 목표 알림",
+        "es": "Afirmando un objetivo de mejora",
+        "fr": "Affirmer un objectif damelioration",
+        "zh-CN": "说明训练目标",
+        "de": "Ein Ziel äußern, spezifische Sportskills zu verbessern"
+      }
+    },
+    {
+      "id": "spt-5-01-4",
+      "translations": {
+        "zh-TW": "一堂典型的課程會是什麼樣子？",
+        "en": "What would a typical session look like?",
+        "ja": "一般的なセッションはどのようなものですか？",
+        "ko": "일반적인 세션은 어떤 식으로 진행되나요?",
+        "es": "Como seria una sesion tipica?",
+        "fr": "A quoi ressemble une session typique?",
+        "zh-CN": "一堂典型的课程会是什么样子？",
+        "de": "Wie sieht eine typische Sitzung aus?"
+      },
+      "explanations": {
+        "zh-TW": "詢問課程內容",
+        "en": "Asking about the structure of a training session",
+        "ja": "トレーニングセッション構成の質問",
+        "ko": "트레이닝 세션 구성 질문",
+        "es": "Preguntando sobre la estructura",
+        "fr": "Demander la structure de la session",
+        "zh-CN": "询问课程内容",
+        "de": "Nach der Struktur einer Trainingssitzung fragen"
+      }
+    },
+    {
+      "id": "spt-5-01-5",
+      "translations": {
+        "zh-TW": "你有提供線上教練嗎？",
+        "en": "Do you offer online coaching?",
+        "ja": "オンラインコーチングはありますか？",
+        "ko": "온라인 코칭 가능한가요?",
+        "es": "Ofrecen entrenamiento en linea?",
+        "fr": "Offrez-vous du coaching en ligne?",
+        "zh-CN": "你有提供在线教练吗？",
+        "de": "Bieten Sie Online-Coaching an?"
+      },
+      "explanations": {
+        "zh-TW": "詢問線上選項",
+        "en": "Asking if the trainer provides remote coaching",
+        "ja": "オンライン教练提供可否質問",
+        "ko": "온라인 코칭 제공 여부 질문",
+        "es": "Preguntando si hay coaching remoto",
+        "fr": "Demander si le coaching a distance est disponible",
+        "zh-CN": "询问在线选项",
+        "de": "Fragen, ob der Trainer Fern-Coaching anbietet"
+      }
+    }
+  ],
+  "spt-6": [
+    {
+      "id": "spt-6-01-1",
+      "translations": {
+        "zh-TW": "裁判做了一個有爭議的判罰。",
+        "en": "The referee made a controversial call.",
+        "ja": "レフェリーは論争的な判定をしました",
+        "ko": "심판이 논란의 판정을 내렸습니다",
+        "es": "El arbitro hizo una decision controversial.",
+        "fr": "Larbre a fait un appel contverse.",
+        "zh-CN": "裁判做了一个有争议的判罚。",
+        "de": "Der Schiedsrichter hat eine umstrittene Entscheidung getroffen."
+      },
+      "explanations": {
+        "zh-TW": "對裁判決定的反應",
+        "en": "Expressing disagreement with a referee's decision",
+        "ja": "レフェリー判定への不同意表明",
+        "ko": "심판 판정에 대한不同意 표현",
+        "es": "Expresando desacuerdo con el arbitre",
+        "fr": "Exprimer un desaccord avec larbre",
+        "zh-CN": "对裁判决定的反应",
+        "de": "Unstimmigkeit mit einer Schiedsrichterentscheidung ausdrücken"
+      }
+    },
+    {
+      "id": "spt-6-01-2",
+      "translations": {
+        "zh-TW": "那球明顯越位了。",
+        "en": "That was clearly offside.",
+        "ja": "あれは明らかにオフサイドでした",
+        "ko": "저건 분명히 오프사이드였어요",
+        "es": "Eso estaba claramente fuera de juego.",
+        "fr": "Cetait clairement hors jeu.",
+        "zh-CN": "那球明显越位了。",
+        "de": "Das war eindeutig Abseits."
+      },
+      "explanations": {
+        "zh-TW": "表達對規則的看法",
+        "en": "Asserting that an offside call was correct or should have been called",
+        "ja": "オフサイド判定への主張",
+        "ko": "오프사이드 판정에 대한 주장",
+        "es": "Afirmando que fue fuera de juego",
+        "fr": "Affirmer que ctait hors jeu",
+        "zh-CN": "表达对规则的看法",
+        "de": "Behaupten, dass ein Abseits gepfiffen wurde oder werden sollte"
+      }
+    },
+    {
+      "id": "spt-6-01-3",
+      "translations": {
+        "zh-TW": "我覺得處罰太重了。",
+        "en": "I think the penalty was too harsh.",
+        "ja": "ペナルティは厳しすぎたと思います",
+        "ko": "페널티가 너무 엄격했다고 생각해요",
+        "es": "Creo que la falta fue demasiado dura.",
+        "fr": "Je pense que le penalty etait trop severe.",
+        "zh-CN": "我觉得处罚太重了。",
+        "de": "Ich denke, die Strafe war zu hart."
+      },
+      "explanations": {
+        "zh-TW": "對處罰的意見",
+        "en": "Expressing opinion that a penalty was too severe",
+        "ja": "ペナルティ過重への意見表明",
+        "ko": "페널티 과중 의견 표현",
+        "es": "Expresando que el penalty fue muy severe",
+        "fr": "Exprimer que le penalty etait trop severe",
+        "zh-CN": "对处罚的意见",
+        "de": "Die Meinung ausdrücken, dass eine Strafe zu streng war"
+      }
+    },
+    {
+      "id": "spt-6-01-4",
+      "translations": {
+        "zh-TW": "我們能要求影像重播嗎？",
+        "en": "Can we ask for a video review?",
+        "ja": "ビデオ判定を求められますか？",
+        "ko": "비디오 판정을 요청할 수 있나요?",
+        "es": "Podemos pedir revision por video?",
+        "fr": "Peut-on demander un arbitrage video?",
+        "zh-CN": "我们能要求图像重播吗？",
+        "de": "Können wir eine Videoüberprüfung verlangen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問挑戰規則",
+        "en": "Requesting a video assistant referee review",
+        "ja": "VAR利用の要求",
+        "ko": "VAR 이용 요구",
+        "es": "Solicitando revision del VAR",
+        "fr": "Demander une revision VAR",
+        "zh-CN": "询问挑战规则",
+        "de": "Eine Video-Schiedsrichter-Überprüfung anfordern"
+      }
+    },
+    {
+      "id": "spt-6-01-5",
+      "translations": {
+        "zh-TW": "讓我們聽聽另一隊怎麼說。",
+        "en": "Let us hear what the other team has to say.",
+        "ja": "相手チームの言い分を聞いてみましょう",
+        "ko": "상대팀의 이야기를 들어봅시다",
+        "es": "Escuchemos lo que tiene que decir el otro equipo.",
+        "fr": "Ecoute ce que lautre equipe a a dire.",
+        "zh-CN": "让我们听听另一队怎么说。",
+        "de": "Lassen Sie uns hören, was das andere Team zu sagen hat."
+      },
+      "explanations": {
+        "zh-TW": "要求公平看待",
+        "en": "Suggesting to listen to the opposing team's perspective",
+        "ja": "相手チームの意見を聞いてみることへの提案",
+        "ko": "상대팀 의견 경청 제안",
+        "es": "Sugiriendo escuchar al otro equipo",
+        "fr": "Proposer decouter lautre equipe",
+        "zh-CN": "要求公平看待",
+        "de": "Vorschlagen, die Perspektive des gegnerischen Teams anzuhören"
+      }
+    }
+  ],
+  "gln-1": [
+    {
+      "id": "gln-1-01-1",
+      "translations": {
+        "zh-TW": "你有聽到突發新聞嗎？",
+        "en": "Did you hear about the breaking news?",
+        "ja": "速報を聞きましたか？",
+        "ko": "속보를 들으셨나요?",
+        "es": "Escuchaste la noticia de ultima hora?",
+        "fr": "Tu as entendu les dernieres nouvelles?",
+        "zh-CN": "你有听到突发新闻吗？",
+        "de": "Haben Sie von den Eilmeldungen gehört?"
+      },
+      "explanations": {
+        "zh-TW": "開始討論新聞的開場白",
+        "en": "Asking if someone is aware of breaking news",
+        "ja": "速報への認知確認",
+        "ko": "속보 인지 확인",
+        "es": "Preguntando si alguien conoce la noticia",
+        "fr": "Demander si quelquun est au courant des dernieres nouvelles",
+        "zh-CN": "开始讨论新闻的开场白",
+        "de": "Fragen, ob jemand von Eilmeldungen weiß"
+      }
+    },
+    {
+      "id": "gln-1-01-2",
+      "translations": {
+        "zh-TW": "情況正在快速發展中。",
+        "en": "The situation is developing rapidly.",
+        "ja": "状況は急速に展開しています",
+        "ko": "상황이 급속히 전개되고 있습니다",
+        "es": "La situacion se esta desarrollando rapidamente.",
+        "fr": "La situation evolue rapidement.",
+        "zh-CN": "情况正在快速发展中。",
+        "de": "Die Situation entwickelt sich schnell."
+      },
+      "explanations": {
+        "zh-TW": "描述新聞進度",
+        "en": "Reporting that a news situation is rapidly evolving",
+        "ja": "ニュース状況の急速な展開を報告",
+        "ko": "뉴스 상황의 급속한 전개 보고",
+        "es": "Reportando que la situacion evoluciona rapidamente",
+        "fr": "Signaler que la situation evolue rapidement",
+        "zh-CN": "描述新闻进度",
+        "de": "Berichten, dass sich eine Nachrichtensituation schnell entwickelt"
+      }
+    },
+    {
+      "id": "gln-1-01-3",
+      "translations": {
+        "zh-TW": "你覺得是什麼造成的？",
+        "en": "What do you think caused this?",
+        "ja": "これが起こった原因は何だと思いますか？",
+        "ko": "이것이 일어난 원인이 뭐라고 생각하세요?",
+        "es": "Que crees que causo esto?",
+        "fr": "Quest-ce qui a selon toi cause ceci?",
+        "zh-CN": "你觉得是什么造成的？",
+        "de": "Was denken Sie, hat das verursacht?"
+      },
+      "explanations": {
+        "zh-TW": "詢問看法",
+        "en": "Asking for opinions on the cause of a news event",
+        "ja": "ニュース出来事の原因への意見質問",
+        "ko": "뉴스 사건의 원인 의견 질문",
+        "es": "Pidiendo opinion sobre la causa",
+        "fr": "Demander une opinion sur la cause",
+        "zh-CN": "询问看法",
+        "de": "Nach Meinungen zur Ursache eines Nachrichtenereignisses fragen"
+      }
+    },
+    {
+      "id": "gln-1-01-4",
+      "translations": {
+        "zh-TW": "你從哪裡獲得這個資訊的？",
+        "en": "Where did you get this information?",
+        "ja": "この情報をどこで知りましたか？",
+        "ko": "이 정보를 어디서 알게 되셨나요?",
+        "es": "De donde sacaste esta informacion?",
+        "fr": "Ou as-tu eu cette information?",
+        "zh-CN": "你从哪里获得这个资讯的？",
+        "de": "Woher haben Sie diese Information?"
+      },
+      "explanations": {
+        "zh-TW": "詢問消息來源",
+        "en": "Asking about the source of news information",
+        "ja": "ニュース情報源の質問",
+        "ko": "뉴스 출처 질문",
+        "es": "Preguntando por la fuente de informacion",
+        "fr": "Demander la source de linformation",
+        "zh-CN": "询问消息来源",
+        "de": "Nach der Quelle von Nachrichteninformationen fragen"
+      }
+    },
+    {
+      "id": "gln-1-01-5",
+      "translations": {
+        "zh-TW": "我們分享前應該先驗證這個。",
+        "en": "We should verify this before sharing.",
+        "ja": "共有する前に確認すべきです",
+        "ko": "공유하기 전에 확인해야 합니다",
+        "es": "Deberiamos verificar esto antes de compartir.",
+        "fr": "Nous devrions verifier ceci avant de partager.",
+        "zh-CN": "我们分享前应该先验证这个。",
+        "de": "Wir sollten das vor dem Teilen überprüfen."
+      },
+      "explanations": {
+        "zh-TW": "提醒訊息驗證",
+        "en": "Urging caution and fact-checking before spreading news",
+        "ja": "ニュース拡散前の確認を促す",
+        "ko": "뉴스 확산 전 사실 확인 독려",
+        "es": "Promoviendo la verificacion antes de compartir",
+        "fr": "Encourager la verification avant de partager",
+        "zh-CN": "提醒讯息验证",
+        "de": "Zur Vorsicht und Faktenprüfung vor der Verbreitung von Nachrichten mahnen"
+      }
+    }
+  ],
+  "gln-2": [
+    {
+      "id": "gln-2-01-1",
+      "translations": {
+        "zh-TW": "文章報導...",
+        "en": "The article reports that...",
+        "ja": "記事によると...",
+        "ko": "기사에 따르면...",
+        "es": "El articulo reporta que...",
+        "fr": "Larticle rapporte que...",
+        "zh-CN": "文章报导...",
+        "de": "Der Artikel berichtet, dass..."
+      },
+      "explanations": {
+        "zh-TW": "開始轉述新聞的標準句型",
+        "en": "Referring to information from a news article",
+        "ja": "ニュース記事の情報を参照",
+        "ko": "뉴스 기사 정보 참조",
+        "es": "Refiriendose a la informacion de un articulo",
+        "fr": "Se referant a linformation dun article",
+        "zh-CN": "开始转述新闻的标准句型",
+        "de": "Sich auf Informationen aus einem Nachrichtenartikel beziehen"
+      }
+    },
+    {
+      "id": "gln-2-01-2",
+      "translations": {
+        "zh-TW": "根據官方消息...",
+        "en": "According to official sources...",
+        "ja": "官方情報によると...",
+        "ko": "공식 출처에 따르면...",
+        "es": "Segun fuentes oficiales...",
+        "fr": "Selon des sources officielles...",
+        "zh-CN": "根据官方消息...",
+        "de": "Laut offiziellen Quellen..."
+      },
+      "explanations": {
+        "zh-TW": "引用消息來源",
+        "en": "Attributing information to official sources",
+        "ja": "公式情報源からの情報歸屬",
+        "ko": "공식 출처의 정보 귀속",
+        "es": "Atribuyendo informacion a fuentes oficiales",
+        "fr": "Attribuant linformation a des sources officielles",
+        "zh-CN": "引用消息来源",
+        "de": "Informationen offiziellen Quellen zuschreiben"
+      }
+    },
+    {
+      "id": "gln-2-01-3",
+      "translations": {
+        "zh-TW": "這是自...以來第一次。",
+        "en": "This marks the first time since...",
+        "ja": "これは...以来初めてのことです",
+        "ko": "이는...이후 처음 있는 일입니다",
+        "es": "Esto marca la primera vez desde...",
+        "fr": "Ceci marque la premiere fois depuis...",
+        "zh-CN": "这是自...以来第一次。",
+        "de": "Dies markiert das erste Mal seit..."
+      },
+      "explanations": {
+        "zh-TW": "強調新聞重要性",
+        "en": "Indicating a historic or significant first occurrence",
+        "ja": "歴史的な初めてを示す",
+        "ko": "역사적 최초 발생 알림",
+        "es": "Indicando una ocurrencia historica",
+        "fr": "Indiquant une premiere historique",
+        "zh-CN": "强调新闻重要性",
+        "de": "Auf ein historisches oder bedeutendes erstes Vorkommen hinweisen"
+      }
+    },
+    {
+      "id": "gln-2-01-4",
+      "translations": {
+        "zh-TW": "其影響可能相當重大。",
+        "en": "The implications could be significant.",
+        "ja": "影響は重大である可能性があります",
+        "ko": "영향은 중대할 가능성이 있습니다",
+        "es": "Las implicaciones podrian ser significativas.",
+        "fr": "Les implications pourraient etre significatives.",
+        "zh-CN": "其影响可能相当重大。",
+        "de": "Die Auswirkungen könnten erheblich sein."
+      },
+      "explanations": {
+        "zh-TW": "表達對影響的看法",
+        "en": "Hypothesizing about the potential impact of a news event",
+        "ja": "ニュース出来事の潜在的な影響について述べる",
+        "ko": "뉴스 사건의 잠재적 영향 언급",
+        "es": "Hablando sobre el impacto potencial",
+        "fr": "Parler de limpact potentiel",
+        "zh-CN": "表达对影响的看法",
+        "de": "Vermutungen über die potenziellen Auswirkungen eines Nachrichtenereignisses anstellen"
+      }
+    },
+    {
+      "id": "gln-2-01-5",
+      "translations": {
+        "zh-TW": "預計會有更多細節浮現。",
+        "en": "Further details are expected to emerge.",
+        "ja": "さらなる詳細が明らかになる見込みです",
+        "ko": "추가 세부 사항이 밝혀질 것으로 예상됩니다",
+        "es": "Se esperan mas detalles.",
+        "fr": "Dautres details devraient emerger.",
+        "zh-CN": "预计会有更多细节浮现。",
+        "de": "Weitere Details werden erwartet."
+      },
+      "explanations": {
+        "zh-TW": "預測後續發展",
+        "en": "Indicating more information will become available soon",
+        "ja": "更なる情報公開の予定を示す",
+        "ko": "추가 정보 공개 예정 알림",
+        "es": "Indicando que habra mas informacion",
+        "fr": "Indiquer que plus dinformations seront disponibles",
+        "zh-CN": "预测后续发展",
+        "de": "Anzeigen, dass bald mehr Informationen verfügbar werden"
+      }
+    }
+  ],
+  "gln-3": [
+    {
+      "id": "gln-3-01-1",
+      "translations": {
+        "zh-TW": "投票將在下個月舉行。",
+        "en": "The vote is taking place next month.",
+        "ja": "投票は来月行われます",
+        "ko": "투표는 다음 달 있습니다",
+        "es": "La votacion tendra lugar el proximo mes.",
+        "fr": "Le vote aura lieu le mois prochain.",
+        "zh-CN": "投票将在下个月举行。",
+        "de": "Die Wahl findet nächsten Monat statt."
+      },
+      "explanations": {
+        "zh-TW": "說明選舉時間",
+        "en": "Announcing the date of an upcoming election or vote",
+        "ja": "投票日程の発表",
+        "ko": "투표 일정 발표",
+        "es": "Anunciando la fecha de una eleccion",
+        "fr": "Annoncer la date dun scrutin",
+        "zh-CN": "说明选举时间",
+        "de": "Das Datum einer bevorstehenden Wahl oder Abstimmung bekannt geben"
+      }
+    },
+    {
+      "id": "gln-3-01-2",
+      "translations": {
+        "zh-TW": "目前領先的候選人是誰？",
+        "en": "Who are the leading candidates?",
+        "ja": "リードしている候補者は誰ですか？",
+        "ko": "선두 후보는 누구인가요?",
+        "es": "Quienes son los candidatos principales?",
+        "fr": "Qui sont les candidats de tete?",
+        "zh-CN": "目前领先的候选人是谁？",
+        "de": "Wer sind die führenden Kandidaten?"
+      },
+      "explanations": {
+        "zh-TW": "詢問候選人情況",
+        "en": "Asking about the frontrunners in an election",
+        "ja": "選挙の frontrunner 質問",
+        "ko": "선거 frontrunner 질문",
+        "es": "Preguntando por los favoritos",
+        "fr": "Demander les favoris",
+        "zh-CN": "询问候选人情况",
+        "de": "Nach den Spitzenkandidaten bei einer Wahl fragen"
+      }
+    },
+    {
+      "id": "gln-3-01-3",
+      "translations": {
+        "zh-TW": "主要的政策差異是什麼？",
+        "en": "What are the key policy differences?",
+        "ja": "主要な政策の違いは何ですか？",
+        "ko": "핵심 정책 차이점은 뭐예요?",
+        "es": "Cuales son las diferencias politicas clave?",
+        "fr": "Quelles sont les differences politiques cles?",
+        "zh-CN": "主要的政策差异是什么？",
+        "de": "Was sind die wichtigsten politischen Unterschiede?"
+      },
+      "explanations": {
+        "zh-TW": "詢問政策立場",
+        "en": "Asking about the main policy distinctions between candidates",
+        "ja": "候補者間の主要政策 차이質問",
+        "ko": "후보 간 주요 정책 차이 질문",
+        "es": "Preguntando por las diferencias de politica principal",
+        "fr": "Demander les differences de politique principales",
+        "zh-CN": "询问政策立场",
+        "de": "Nach den Hauptunterschieden in der Politik zwischen Kandidaten fragen"
+      }
+    },
+    {
+      "id": "gln-3-01-4",
+      "translations": {
+        "zh-TW": "早期民調顯示...",
+        "en": "Early polling shows...",
+        "ja": "早期世論調査では...",
+        "ko": "조기 여론조사에서는...",
+        "es": "Los sondeos iniciales muestran...",
+        "fr": "Les premiers sondages montrent...",
+        "zh-CN": "早期民调显示...",
+        "de": "Frühe Umfragen zeigen..."
+      },
+      "explanations": {
+        "zh-TW": "引用民調數據",
+        "en": "Referencing early polling data in an election",
+        "ja": "選挙早期世論調査データの言及",
+        "ko": "선거 조기 여론조사 데이터 인용",
+        "es": "Citando datos de sondeos iniciales",
+        "fr": "Citer des donnees de sondages precoces",
+        "zh-CN": "引用民调数据",
+        "de": "Auf frühe Umfragedaten bei einer Wahl verweisen"
+      }
+    },
+    {
+      "id": "gln-3-01-5",
+      "translations": {
+        "zh-TW": "選舉結果可能重塑政治局面。",
+        "en": "The election outcome could reshape the political landscape.",
+        "ja": "選挙結果は政治地図を大变える可能性があります",
+        "ko": "선거 결과가 정치 지형을大变할 수 있습니다",
+        "es": "El resultado electoral podria transformar el panorama politico.",
+        "fr": "Le resultat electoral pourrait transformer le paysage politique.",
+        "zh-CN": "选举结果可能重塑政治局面。",
+        "de": "Das Wahlergebnis könnte die politische Landschaft neu gestalten."
+      },
+      "explanations": {
+        "zh-TW": "預測選舉影響",
+        "en": "Predicting that an election could have major political consequences",
+        "ja": "選挙の重大政治的后果への予測",
+        "ko": "선거의 중대한 정치적 결과 예측",
+        "es": "Prediciendo consecuencias politicas mayores",
+        "fr": "Predire des consequences politiques majeures",
+        "zh-CN": "预测选举影响",
+        "de": "Vorhersagen, dass eine Wahl größere politische Konsequenzen haben könnte"
+      }
+    }
+  ],
+  "gln-4": [
+    {
+      "id": "gln-4-01-1",
+      "translations": {
+        "zh-TW": "氣候變遷正在加速。",
+        "en": "Climate change is accelerating.",
+        "ja": "気候変動が加速しています",
+        "ko": "기후 변화가 가속되고 있습니다",
+        "es": "El cambio climatico se esta acelerando.",
+        "fr": "Le changement climatique saccelere.",
+        "zh-CN": "气候变迁正在加速。",
+        "de": "Der Klimawandel beschleunigt sich."
+      },
+      "explanations": {
+        "zh-TW": "報告環境現狀的用語",
+        "en": "Stating that climate change is progressing at an increasing rate",
+        "ja": "気候変動の加速を述べる",
+        "ko": "기후 변화 가속 알림",
+        "es": "Afirmando que el cambio climatico se acelera",
+        "fr": "Affirmer que le changement climatique sacecere",
+        "zh-CN": "报告环境现状的用语",
+        "de": "Feststellen, dass der Klimawandel sich in zunehmendem Tempo fortsetzt"
+      }
+    },
+    {
+      "id": "gln-4-01-2",
+      "translations": {
+        "zh-TW": "最新報告顯示...",
+        "en": "The latest report shows...",
+        "ja": "最新の报告显示...",
+        "ko": "최신 보고서에 따르면...",
+        "es": "El ultimo informe muestra...",
+        "fr": "Le dernier rapport montre...",
+        "zh-CN": "最新报告显示...",
+        "de": "Der neueste Bericht zeigt..."
+      },
+      "explanations": {
+        "zh-TW": "引用研究數據",
+        "en": "Referring to findings in a recent climate report",
+        "ja": "最新気候レポートの知見を言及",
+        "ko": "최신 기후 보고서 발견 사항 언급",
+        "es": "Citanto hallazgos del ultimo informe",
+        "fr": "Citant les conclusions du dernier rapport",
+        "zh-CN": "引用研究数据",
+        "de": "Sich auf Erkenntnisse in einem aktuellen Klimabericht beziehen"
+      }
+    },
+    {
+      "id": "gln-4-01-3",
+      "translations": {
+        "zh-TW": "我們需要對...採取緊急行動。",
+        "en": "We need urgent action on...",
+        "ja": "...に対して紧急な行動が必要です",
+        "ko": "...에 대해 긴급한 조치가 필요합니다",
+        "es": "Necesitamos accion urgente sobre...",
+        "fr": "Nous avons besoin dune action urgente sur...",
+        "zh-CN": "我们需要对...采取紧急行动。",
+        "de": "Wir brauchen dringende Maßnahmen bezüglich..."
+      },
+      "explanations": {
+        "zh-TW": "呼籲行動",
+        "en": "Calling for immediate action to address climate issues",
+        "ja": "気候問題への緊急行動の呼びかけ",
+        "ko": "기후 문제에 대한 긴급 행동 호소",
+        "es": "Pidiendo accion inmediata",
+        "fr": "Appelant a une action immediate",
+        "zh-CN": "呼吁行动",
+        "de": "Zu sofortigen Maßnahmen zur Bewältigung von Klimaproblemen aufrufen"
+      }
+    },
+    {
+      "id": "gln-4-01-4",
+      "translations": {
+        "zh-TW": "...的碳足跡...",
+        "en": "The carbon footprint of...",
+        "ja": "...の二酸化炭素排出量は...",
+        "ko": "...의 탄소 발자국은...",
+        "es": "La huella de carbono de ... de ...",
+        "fr": "L'empreinte carbone de ... de ...",
+        "zh-CN": "...的碳足迹...",
+        "de": "Der CO2-Fußabdruck von..."
+      },
+      "explanations": {
+        "zh-TW": "討論排放問題",
+        "en": "Discussing the carbon emissions of a product or activity",
+        "ja": "製品・活動の炭素排出量を議論",
+        "ko": "제품/활동의 탄소 배출량 논의",
+        "es": "Discutiendo las emisiones de carbono",
+        "fr": "Discuter les emissions de carbone",
+        "zh-CN": "讨论排放问题",
+        "de": "Die Kohlenstoffemissionen eines Produkts oder einer Aktivität diskutieren"
+      }
+    },
+    {
+      "id": "gln-4-01-5",
+      "translations": {
+        "zh-TW": "個人能做什麼？",
+        "en": "What can individuals do?",
+        "ja": "個人にできることは何ですか？",
+        "ko": "개인이 할 수 있는 것은 뭐가 있나요?",
+        "es": "Que pueden hacer los individuos?",
+        "fr": "Que peuvent faire les individus?",
+        "zh-CN": "个人能做什么？",
+        "de": "Was können Einzelpersonen tun?"
+      },
+      "explanations": {
+        "zh-TW": "詢問解決方案",
+        "en": "Asking what personal actions can help address climate change",
+        "ja": "個人レベルでできる行動を質問",
+        "ko": "개인 수준에서 할 수 있는 행동 질문",
+        "es": "Preguntando que pueden hacer las personas",
+        "fr": "Demander ce que les individus peuvent faire",
+        "zh-CN": "询问解决方案",
+        "de": "Fragen, welche persönlichen Maßnahmen helfen können, den Klimawandel anzugehen"
+      }
+    }
+  ],
+  "gln-5": [
+    {
+      "id": "gln-5-01-1",
+      "translations": {
+        "zh-TW": "這次峰會聚集了...",
+        "en": "The summit brought together...",
+        "ja": " サミットには...が参集しました",
+        "ko": "정상 회의에는...이 모였습니다",
+        "es": "La cumbre reunio a...",
+        "fr": "Le sommet a reuni...",
+        "zh-CN": "这次峰会聚集了...",
+        "de": "Der Gipfel brachte zusammen..."
+      },
+      "explanations": {
+        "zh-TW": "報導國際會議的用語",
+        "en": "Describing who participated in a diplomatic summit",
+        "ja": " 정상 회의参加者を描述",
+        "ko": "정상 회의 참석자 설명",
+        "es": "Describiendo quienes participaron",
+        "fr": "Decrivant qui a participe",
+        "zh-CN": "报导国际会议的用语",
+        "de": "Beschreiben, wer an einem diplomatischen Gipfel teilgenommen hat"
+      }
+    },
+    {
+      "id": "gln-5-01-2",
+      "translations": {
+        "zh-TW": "主要協議包括...",
+        "en": "Key agreements include...",
+        "ja": "主要な合意には...が含まれます",
+        "ko": "주요 합의에는...이 포함됩니다",
+        "es": "Los acuerdos clave incluyen...",
+        "fr": "Les accords cles incluent...",
+        "zh-CN": "主要协议包括...",
+        "de": "Wichtige Vereinbarungen umfassen..."
+      },
+      "explanations": {
+        "zh-TW": "列出會議成果",
+        "en": "Listing the main agreements reached at a summit",
+        "ja": "정상 회의에서의主要合意を列举",
+        "ko": "정상 회의 주요 합의 열거",
+        "es": "Enumerando los principales acuerdos",
+        "fr": "Enumerer les accords principaux",
+        "zh-CN": "列出会议成果",
+        "de": "Die hauptsächlichen Vereinbarungen auflisten, die auf einem Gipfel erzielt wurden"
+      }
+    },
+    {
+      "id": "gln-5-01-3",
+      "translations": {
+        "zh-TW": "談判聚焦於...",
+        "en": "The negotiations focused on...",
+        "ja": "交渉は...に焦点当てられました",
+        "ko": "협상은...에 초점이 맞춰졌습니다",
+        "es": "Las negociaciones se centraron en...",
+        "fr": "Les negociations se sont concentrees sur...",
+        "zh-CN": "谈判聚焦于...",
+        "de": "Die Verhandlungen konzentrierten sich auf..."
+      },
+      "explanations": {
+        "zh-TW": "說明談判重點",
+        "en": "Describing the main topics of diplomatic negotiations",
+        "ja": "外交交渉の主要論点を述べる",
+        "ko": "외교 협상 주요 논점 알림",
+        "es": "Describiendo los temas principales",
+        "fr": "Decrire les themes principaux",
+        "zh-CN": "说明谈判重点",
+        "de": "Die Hauptthemen diplomatischer Verhandlungen beschreiben"
+      }
+    },
+    {
+      "id": "gln-5-01-4",
+      "translations": {
+        "zh-TW": "外交關係已...",
+        "en": "Diplomatic relations have...",
+        "ja": "外交関係は...",
+        "ko": "외교 관계는...",
+        "es": "Las relaciones diplomaticas han...",
+        "fr": "Les relations diplomatiques ont...",
+        "zh-CN": "外交关系已...",
+        "de": "Diplomatische Beziehungen haben..."
+      },
+      "explanations": {
+        "zh-TW": "說明關係變化",
+        "en": "Discussing the state or change in diplomatic relations",
+        "ja": "外交関係の状態・変化を議論",
+        "ko": "외교 관계의 상태/변화 논의",
+        "es": "Discutiendo el estado de las relaciones",
+        "fr": "Discuter letat des relations",
+        "zh-CN": "说明关系变化",
+        "de": "Den Zustand oder die Veränderung diplomatischer Beziehungen diskutieren"
+      }
+    },
+    {
+      "id": "gln-5-01-5",
+      "translations": {
+        "zh-TW": "這可能重塑全球同盟。",
+        "en": "This could reshape global alliances.",
+        "ja": "これはグローバル同盟を大变える可能性があります",
+        "ko": "이것이 글로벌 동맹을大变할 수 있습니다",
+        "es": "Esto podria transformar las alianzas globales.",
+        "fr": "Ceci pourrait transformer les alliances mondiales.",
+        "zh-CN": "这可能重塑全球同盟。",
+        "de": "Dies könnte globale Allianzen neu gestalten."
+      },
+      "explanations": {
+        "zh-TW": "預測影響",
+        "en": "Predicting that a diplomatic development could alter global alliances",
+        "ja": "外交展開によるグローバル同盟変化への予測",
+        "ko": "외교 전개로 인한 글로벌 동맹 변화 예측",
+        "es": "Prediciendo cambios en alianzas globales",
+        "fr": "Predire des changements dans les alliances",
+        "zh-CN": "预测影响",
+        "de": "Vorhersagen, dass eine diplomatische Entwicklung globale Allianzen verändern könnte"
+      }
+    }
+  ],
+  "gln-6": [
+    {
+      "id": "gln-6-01-1",
+      "translations": {
+        "zh-TW": "貿易爭端升級了。",
+        "en": "The trade dispute escalated.",
+        "ja": "貿易紛争がエスカレーションしました",
+        "ko": "무역 분쟁이 격화됐습니다",
+        "es": "La disputa comercial se intensifico.",
+        "fr": "Le diferend commercial a escalade.",
+        "zh-CN": "贸易争端升级了。",
+        "de": "Der Handelsstreit hat sich verschärft."
+      },
+      "explanations": {
+        "zh-TW": "報導貿易衝突的用語",
+        "en": "Reporting that a trade dispute has intensified",
+        "ja": "貿易紛争の激化報告",
+        "ko": "무역 분쟁 격화 보고",
+        "es": "Reportando la escalada de la disputa",
+        "fr": "Signaler lescalade du differend",
+        "zh-CN": "报导贸易冲突的用语",
+        "de": "Berichten, dass sich ein Handelsstreit verschärft hat"
+      }
+    },
+    {
+      "id": "gln-6-01-2",
+      "translations": {
+        "zh-TW": "對...徵收了關稅。",
+        "en": "Tariffs were imposed on...",
+        "ja": "...に対して関税が課されました",
+        "ko": "...에 대해 관세가 부과됐습니다",
+        "es": "Se impusieron aranceles a...",
+        "fr": "Des tarifs ont ete imposes sur...",
+        "zh-CN": "对...征收了关税。",
+        "de": "Zölle wurden auf... erhoben."
+      },
+      "explanations": {
+        "zh-TW": "說明貿易措施",
+        "en": "Reporting that import tariffs have been placed on goods",
+        "ja": "関税賦課の報告",
+        "ko": "관세 부과 보고",
+        "es": "Reportando la imposicion de aranceles",
+        "fr": "Signaler limposition de tarifs",
+        "zh-CN": "说明贸易措施",
+        "de": "Berichten, dass Importzölle auf Waren erhoben wurden"
+      }
+    },
+    {
+      "id": "gln-6-01-3",
+      "translations": {
+        "zh-TW": "經濟影響可能是...",
+        "en": "The economic impact could be...",
+        "ja": "経済への影響は...かもしれません",
+        "ko": "경제에 대한 영향은...일 수 있습니다",
+        "es": "El impacto economico podria ser...",
+        "fr": "Limpact economique pourrait etre...",
+        "zh-CN": "经济影响可能是...",
+        "de": "Die wirtschaftlichen Auswirkungen könnten... sein."
+      },
+      "explanations": {
+        "zh-TW": "預測經濟後果",
+        "en": "Speculating about the potential economic consequences",
+        "ja": "経済的影響の可能性を推測",
+        "ko": "경제적 영향 가능성 추측",
+        "es": "Especulando sobre consecuencias economicas",
+        "fr": "Speculer sur les consequences economiques",
+        "zh-CN": "预测经济后果",
+        "de": "Vermutungen über die potenziellen wirtschaftlichen Konsequenzen anstellen"
+      }
+    },
+    {
+      "id": "gln-6-01-4",
+      "translations": {
+        "zh-TW": "談判正在進行中。",
+        "en": "Negotiations are ongoing.",
+        "ja": "交渉は続いています",
+        "ko": "협상이 계속되고 있습니다",
+        "es": "Las negociaciones estan en curso.",
+        "fr": "Les negociations sont en cours.",
+        "zh-CN": "谈判正在进行中。",
+        "de": "Verhandlungen sind im Gange."
+      },
+      "explanations": {
+        "zh-TW": "說明當前狀態",
+        "en": "Indicating that trade negotiations are continuing",
+        "ja": "貿易交渉継続中の狀況",
+        "ko": "무역 협상 지속 중 상황",
+        "es": "Indicando que las negociaciones continuan",
+        "fr": "Indiquer que les negociations continuent",
+        "zh-CN": "说明当前状态",
+        "de": "Anzeigen, dass Handelsverhandlungen andauern"
+      }
+    },
+    {
+      "id": "gln-6-01-5",
+      "translations": {
+        "zh-TW": "雙方都需要妥協。",
+        "en": "Both sides need a compromise.",
+        "ja": "両側とも妥协が必要です",
+        "ko": "양쪽 다 타협이 필요합니다",
+        "es": "Ambos lados necesitan un compromiso.",
+        "fr": "Les deux parties ont besoin dun compromis.",
+        "zh-CN": "双方都需要妥协。",
+        "de": "Beide Seiten brauchen einen Kompromiss."
+      },
+      "explanations": {
+        "zh-TW": "提出解決方向",
+        "en": "Advocating for mutual compromise in a trade dispute",
+        "ja": "貿易紛争での相互妥協の提唱",
+        "ko": "무역 분쟁에서의 상호 양보 촉구",
+        "es": "Abogando por un compromiso mutuo",
+        "fr": "Plaidoyer pour un compromis mutuel",
+        "zh-CN": "提出解决方向",
+        "de": "Sich für gegenseitigen Kompromiss in einem Handelsstreit einsetzen"
+      }
+    }
+  ],
+  "pop-1": [
+    {
+      "id": "pop-1-01-1",
+      "translations": {
+        "zh-TW": "我上週末看了這部電影。",
+        "en": "I watched this movie last weekend.",
+        "ja": "先周末にこの映画を見ました",
+        "ko": "지난 주말에 이 영화를 봤어요",
+        "es": "Vi esta pelicula el fin de semana pasado.",
+        "fr": "Jai regarde ce film le week-end dernier.",
+        "zh-CN": "我上周末看了这部电影。",
+        "de": "Ich habe diesen Film letztes Wochenende gesehen."
+      },
+      "explanations": {
+        "zh-TW": "分享電影經驗的開場白",
+        "en": "Stating that one watched a movie recently",
+        "ja": "最近の映画視聴を述べる",
+        "ko": "최근 영화 시청 알림",
+        "es": "Afirmando que sevio una pelicula recientemente",
+        "fr": "Affirmer avoir regarde un film recemment",
+        "zh-CN": "分享电影经验的开场白",
+        "de": "Feststellen, dass man kürzlich einen Film gesehen hat"
+      }
+    },
+    {
+      "id": "pop-1-01-2",
+      "translations": {
+        "zh-TW": "劇情是...",
+        "en": "The plot was...",
+        "ja": "ストーリーは...",
+        "ko": "스토리는...",
+        "es": "La trama fue...",
+        "fr": "Lintrigue etait...",
+        "zh-CN": "剧情是...",
+        "de": "Die Handlung war..."
+      },
+      "explanations": {
+        "zh-TW": "開始描述劇情",
+        "en": "Describing the storyline of a movie",
+        "ja": "映画のストーリーを描述",
+        "ko": "영화 스토리 설명",
+        "es": "Describiendo la historia de la pelicula",
+        "fr": "Decrire lintrigue du film",
+        "zh-CN": "开始描述剧情",
+        "de": "Die Geschichte eines Films beschreiben"
+      }
+    },
+    {
+      "id": "pop-1-01-3",
+      "translations": {
+        "zh-TW": "演技精湛。",
+        "en": "The acting was superb.",
+        "ja": " Actingは最高でした",
+        "ko": "연기가 최고였어요",
+        "es": "La actuacion fue magnifica.",
+        "fr": "Le jeu dacteurs etait superieur.",
+        "zh-CN": "演技精湛。",
+        "de": "Die Schauspielerei war großartig."
+      },
+      "explanations": {
+        "zh-TW": "稱讚演員表現",
+        "en": "Complimenting the quality of acting in a movie",
+        "ja": "映画でのActingを賞賛",
+        "ko": "영화 연기 칭찬",
+        "es": "Elogiando la calidad de actuacion",
+        "fr": "Complimenter le jeu dacteurs",
+        "zh-CN": "称赞演员表现",
+        "de": "Die Qualität der Schauspielerei in einem Film loben"
+      }
+    },
+    {
+      "id": "pop-1-01-4",
+      "translations": {
+        "zh-TW": "我給它...顆星。",
+        "en": "I give it... stars.",
+        "ja": "...星星つけます",
+        "ko": "...별점을 줍니다",
+        "es": "Le doy... estrellas.",
+        "fr": "Je lui donne... etoiles.",
+        "zh-CN": "我给它...颗星。",
+        "de": "Ich gebe ihm... Sterne."
+      },
+      "explanations": {
+        "zh-TW": "給出評分",
+        "en": "Giving a star rating to a movie",
+        "ja": "映画への星評価の表明",
+        "ko": "영화 별점 평가 알림",
+        "es": "Dando una calificacion de estrellas",
+        "fr": "Donner une note en etoiles",
+        "zh-CN": "给出评分",
+        "de": "Eine Sternebewertung für einen Film abgeben"
+      }
+    },
+    {
+      "id": "pop-1-01-5",
+      "translations": {
+        "zh-TW": "你一定要看。",
+        "en": "You should definitely watch it.",
+        "ja": "絶対見るべきです",
+        "ko": "꼭 봐야 해요",
+        "es": "Deberias verla sin falta.",
+        "fr": "Tu dois absolument le regarder.",
+        "zh-CN": "你一定要看。",
+        "de": "Du solltest ihn definitiv sehen."
+      },
+      "explanations": {
+        "zh-TW": "推薦觀看",
+        "en": "Recommending a movie to someone",
+        "ja": "映画への推薦",
+        "ko": "영화 추천",
+        "es": "Recomendando una pelicula",
+        "fr": "Recommander un film",
+        "zh-CN": "推荐观看",
+        "de": "Jemandem einen Film empfehlen"
+      }
+    }
+  ],
+  "pop-2": [
+    {
+      "id": "pop-2-01-1",
+      "translations": {
+        "zh-TW": "我是 [藝術家] 的超級粉絲。",
+        "en": "I am a huge fan of [artist].",
+        "ja": "[artist]の大ファンです",
+        "ko": "[artist] 대 팬이에요",
+        "es": "Soy un huge fan de [artist].",
+        "fr": "Je suis un huge fan de [artist].",
+        "zh-CN": "我是 [艺术家] 的超级粉丝。",
+        "de": "Ich bin ein riesiger Fan von [Künstler]."
+      },
+      "explanations": {
+        "zh-TW": "表達對藝術家喜愛的標準用語",
+        "en": "Expressing enthusiasm for a musical artist",
+        "ja": "Musical artist への熱狂的支持表明",
+        "ko": "뮤지컬 아티스트에 대한 열광적 지지",
+        "es": "Expresando apoyo entusiasta",
+        "fr": "Exprimer un soutien enthousiaste",
+        "zh-CN": "表达对艺术家喜爱的标准用语",
+        "de": "Begeisterung für einen Musikkünstler ausdrücken"
+      }
+    },
+    {
+      "id": "pop-2-01-2",
+      "translations": {
+        "zh-TW": "他們的最新專輯太讚了。",
+        "en": "Their latest album is fire.",
+        "ja": "最新アルバムは Fire です",
+        "ko": "최신 앨범이 정말 좋아요",
+        "es": "Su ultimo album es increible.",
+        "fr": "Le dernier album est genial.",
+        "zh-CN": "他们的最新专辑太赞了。",
+        "de": "Ihr neuestes Album ist fantastisch."
+      },
+      "explanations": {
+        "zh-TW": "稱讚新專輯",
+        "en": "Enthusiastically praising a newly released music album",
+        "ja": "最新音乐专辑への热情な賞賛",
+        "ko": "최신 음악 앨범에 대한 열광적 칭찬",
+        "es": "Elogiando entusiastamente un album",
+        "fr": "Louanger entierement un album",
+        "zh-CN": "称赞新专辑",
+        "de": "Ein neu veröffentlichtes Musikalbum begeistert loben"
+      }
+    },
+    {
+      "id": "pop-2-01-3",
+      "translations": {
+        "zh-TW": "你有聽他們的新單曲嗎？",
+        "en": "Have you heard their new single?",
+        "ja": "彼らの新曲を聞いたことある？",
+        "ko": "새 싱글 들어봤어요?",
+        "es": "Has escuchado su nuevo single?",
+        "fr": "Tu as ecoute leur nouveau single?",
+        "zh-CN": "你有听他们的新单曲吗？",
+        "de": "Hast du ihre neue Single gehört?"
+      },
+      "explanations": {
+        "zh-TW": "詢問新作品",
+        "en": "Asking if someone has listened to a new song",
+        "ja": "新曲への認知質問",
+        "ko": "새 곡 인지 여부 질문",
+        "es": "Preguntando si alguien escucha nueva cancion",
+        "fr": "Demander si quelquun a ecoute la nouvelle chanson",
+        "zh-CN": "询问新作品",
+        "de": "Fragen, ob jemand einen neuen Song gehört hat"
+      }
+    },
+    {
+      "id": "pop-2-01-4",
+      "translations": {
+        "zh-TW": "我買到他們演唱會的票了！",
+        "en": "I got tickets to their concert!",
+        "ja": "コンサートのチケット取れた！",
+        "ko": "콘서트 표 끊었어요!",
+        "es": "Consigui tickets para su concierto!",
+        "fr": "Jai eu des billets pour leur concert!",
+        "zh-CN": "我买到他们演唱会的票了！",
+        "de": "Ich habe Tickets für ihr Konzert bekommen!"
+      },
+      "explanations": {
+        "zh-TW": "分享好消息",
+        "en": "Excitably sharing that one obtained concert tickets",
+        "ja": " Concert チケット取得の興奮共有",
+        "ko": "콘서트 표 취득 흥분 공유",
+        "es": "Compartiendo emocion por obtener boletos",
+        "fr": "Partager lexcitation davoir obtenu des billets",
+        "zh-CN": "分享好消息",
+        "de": "Begeistert mitteilen, dass man Konzertkarten bekommen hat"
+      }
+    },
+    {
+      "id": "pop-2-01-5",
+      "translations": {
+        "zh-TW": "他們要進行巡演了。",
+        "en": "They are going on tour.",
+        "ja": "ツアーを開催します",
+        "ko": "투어로 온다네요",
+        "es": "Van de gira.",
+        "fr": "Ils partent en tourne.",
+        "zh-CN": "他们要进行巡演了。",
+        "de": "Sie gehen auf Tournee."
+      },
+      "explanations": {
+        "zh-TW": "分享巡演消息",
+        "en": "Sharing news that an artist will be touring",
+        "ja": "アーティストのtour 開催発表",
+        "ko": "아티스트 투어 개최 발표",
+        "es": "Compartiendo noticias de gira",
+        "fr": "Partager les nouvelles de la tourne",
+        "zh-CN": "分享巡演消息",
+        "de": "Neuigkeiten mitteilen, dass ein Künstler auf Tour gehen wird"
+      }
+    }
+  ],
+  "pop-3": [
+    {
+      "id": "pop-3-01-1",
+      "translations": {
+        "zh-TW": "你有料到那個劇情反轉嗎？",
+        "en": "Did you see that plot twist coming?",
+        "ja": "あのplot twist、分かってた？",
+        "ko": "그 플롯 트위스트 예상했어요?",
+        "es": "Viste venir ese giro argumental?",
+        "fr": "Tu as vu ce twist venir?",
+        "zh-CN": "你有料到那个剧情反转吗？",
+        "de": "Hast du diese Wendung kommen sehen?"
+      },
+      "explanations": {
+        "zh-TW": "討論劇情的用語",
+        "en": "Asking if someone predicted a surprise plot development in a show",
+        "ja": "Showでの plot twist 予測質問",
+        "ko": "쇼에서의 플롯 트위스트 예측 질문",
+        "es": "Preguntando si alguien predijo el giro",
+        "fr": "Demander si quelquun avait predit le twist",
+        "zh-CN": "讨论剧情的用语",
+        "de": "Fragen, ob jemand eine überraschende Handlungsentwicklung in einer Show vorhergesehen hat"
+      }
+    },
+    {
+      "id": "pop-3-01-2",
+      "translations": {
+        "zh-TW": "我沒料到那個結局。",
+        "en": "I did not expect that ending.",
+        "ja": "あの結末は予想外でした",
+        "ko": "그 결말은 예상 밖이었어요",
+        "es": "No espere ese final.",
+        "fr": "Je nattendais pas cette fin.",
+        "zh-CN": "我没料到那个结局。",
+        "de": "Ich habe dieses Ende nicht erwartet."
+      },
+      "explanations": {
+        "zh-TW": "表達驚訝",
+        "en": "Expressing surprise at a TV show ending",
+        "ja": "ショー结局への意外的驚き",
+        "ko": "쇼 결말에 대한 의외성",
+        "es": "Expresando sorpresa ante el final",
+        "fr": "Exprimer la surprise devant la fin",
+        "zh-CN": "表达惊讶",
+        "de": "Überraschung über ein TV-Serienende ausdrücken"
+      }
+    },
+    {
+      "id": "pop-3-01-3",
+      "translations": {
+        "zh-TW": "角色發展是...",
+        "en": "The character development was...",
+        "ja": "キャラクター造形は...",
+        "ko": "캐릭터 개발이...",
+        "es": "El desarrollo del personaje fue...",
+        "fr": "Le developpement du personnage etait...",
+        "zh-CN": "角色发展是...",
+        "de": "Die Charakterentwicklung war..."
+      },
+      "explanations": {
+        "zh-TW": "評論角色塑造",
+        "en": "Commenting on how characters evolved throughout a series",
+        "ja": "キャラクターの成長へのコメント",
+        "ko": "캐릭터 성장에 대한 코멘트",
+        "es": "Comentando la evolucion de personajes",
+        "fr": "Commenter levolution des personnages",
+        "zh-CN": "评论角色塑造",
+        "de": "Kommentieren, wie sich Charaktere über eine Serie hinweg entwickelt haben"
+      }
+    },
+    {
+      "id": "pop-3-01-4",
+      "translations": {
+        "zh-TW": "第...季是最棒的。",
+        "en": "Season... was the best.",
+        "ja": "シーズン...が最も良かったです",
+        "ko": "시즌...이 가장 좋았어요",
+        "es": "La temporada... fue la mejor.",
+        "fr": "La saison... etait la meilleure.",
+        "zh-CN": "第...季是最棒的。",
+        "de": "Staffel... war die beste."
+      },
+      "explanations": {
+        "zh-TW": "比較季度",
+        "en": "Expressing that a particular season was the standout",
+        "ja": "特定シーズンへの支持表明",
+        "ko": "특정 시즌 지지 알림",
+        "es": "Afirmando que una temporada fue la mejor",
+        "fr": "Affirmer quune saison etait la meilleure",
+        "zh-CN": "比较季度",
+        "de": "Ausdrücken, dass eine bestimmte Staffel hervorragend war"
+      }
+    },
+    {
+      "id": "pop-3-01-5",
+      "translations": {
+        "zh-TW": "我迫不及待等下一季。",
+        "en": "I cannot wait for the next season.",
+        "ja": "次のシーズン待ち遠しいです",
+        "ko": "다음 시즌 기다려져요",
+        "es": "Tengo muchas ganas de la proxima temporada.",
+        "fr": "Jai hate de la prochaine saison.",
+        "zh-CN": "我迫不及待等下一季。",
+        "de": "Ich kann es kaum erwarten, bis die nächste Staffel kommt."
+      },
+      "explanations": {
+        "zh-TW": "表達期待",
+        "en": "Expressing eagerness for the next season of a show",
+        "ja": "次 시즌への期待表明",
+        "ko": "다음 시즌 기대 알림",
+        "es": "Expresando anticipacion por la proxima",
+        "fr": "Exprimer de limpatience pour la prochaine",
+        "zh-CN": "表达期待",
+        "de": "Ungeduld für die nächste Staffel einer Serie ausdrücken"
+      }
+    }
+  ],
+  "pop-4": [
+    {
+      "id": "pop-4-01-1",
+      "translations": {
+        "zh-TW": "這個趨勢正在爆紅。",
+        "en": "This trend is going viral.",
+        "ja": "このトレンドはバイラルています",
+        "ko": "이 트렌드가 바이럴이 되고 있어요",
+        "es": "Esta tendencia se esta volviendo viral.",
+        "fr": "Cette tendance devient virale.",
+        "zh-CN": "这个趋势正在爆红。",
+        "de": "Dieser Trend geht viral."
+      },
+      "explanations": {
+        "zh-TW": "描述網路現象的用語",
+        "en": "Reporting that a social media trend is spreading rapidly",
+        "ja": "SNSトレンドの急成長を報告",
+        "ko": "SNS 트렌드의 급성장 보고",
+        "es": "Reportando el crecimiento rapido de una tendencia",
+        "fr": "Signaler la croissance rapide dune tendance",
+        "zh-CN": "描述网络现象的用语",
+        "de": "Berichten, dass ein Social-Media-Trend sich schnell verbreitet"
+      }
+    },
+    {
+      "id": "pop-4-01-2",
+      "translations": {
+        "zh-TW": "標籤...正在熱門。",
+        "en": "The hashtag... is trending.",
+        "ja": "ハッシュタグ...がトレンド入りしています",
+        "ko": "해시태그...이 트렌딩이에요",
+        "es": "El hashtag... esta trending.",
+        "fr": "Le hashtag... est en tendance.",
+        "zh-CN": "标签...正在热门。",
+        "de": "Der Hashtag... ist im Trend."
+      },
+      "explanations": {
+        "zh-TW": "報導社交媒體趨勢",
+        "en": "Noting that a specific hashtag is popular on social media",
+        "ja": "特定ハッシュタグのトレンド化を指摘",
+        "ko": "특정 해시태그 트렌딩 지적",
+        "es": "Notando que un hashtag especifico es popular",
+        "fr": "Notifier quun hashtag specifique est populaire",
+        "zh-CN": "报导社交媒体趋势",
+        "de": "Feststellen, dass ein spezifischer Hashtag in sozialen Medien populär ist"
+      }
+    },
+    {
+      "id": "pop-4-01-3",
+      "translations": {
+        "zh-TW": "大家都在討論...",
+        "en": "Everyone is talking about...",
+        "ja": "みんなが...について話しています",
+        "ko": "다들...에 대해 이야기하고 있어요",
+        "es": "Todos estan hablando de...",
+        "fr": "Tout le monde parle de...",
+        "zh-CN": "大家都在讨论...",
+        "de": "Jeder spricht über..."
+      },
+      "explanations": {
+        "zh-TW": "說明話題熱度",
+        "en": "Observing that a topic is widely discussed",
+        "ja": "話題への广泛关注の指摘",
+        "ko": "화제에 대한广泛关注 지적",
+        "es": "Observando que un tema es ampliamente discutido",
+        "fr": "Observer quun sujet est largement discute",
+        "zh-CN": "说明话题热度",
+        "de": "Beobachten, dass ein Thema weit verbreitet diskutiert wird"
+      }
+    },
+    {
+      "id": "pop-4-01-4",
+      "translations": {
+        "zh-TW": "那個迷因太有趣了。",
+        "en": "The meme is hilarious.",
+        "ja": "そのミームは面白すぎる",
+        "ko": "그 밈은 너무 웃겨요",
+        "es": "El meme es muy gracioso.",
+        "fr": "Le meme est hilarious.",
+        "zh-CN": "那个迷因太有趣了。",
+        "de": "Der Meme ist lustig."
+      },
+      "explanations": {
+        "zh-TW": "評論網路文化",
+        "en": "Finding a meme very funny",
+        "ja": "ミーム觉得很搞笑",
+        "ko": "밈이 매우 웃겁다는 인식",
+        "es": "Considerando un meme muy gracioso",
+        "fr": "Trouver un mème très drole",
+        "zh-CN": "评论网络文化",
+        "de": "Einen Meme sehr lustig finden"
+      }
+    },
+    {
+      "id": "pop-4-01-5",
+      "translations": {
+        "zh-TW": "這一週後就會被遺忘。",
+        "en": "This will be forgotten in a week.",
+        "ja": "これは一週間で忘れられます",
+        "ko": "이건 일주일 있으면 잊혀질 거예요",
+        "es": "Esto se olvidara en una semana.",
+        "fr": "Ceci sera oublie en une semaine.",
+        "zh-CN": "这一周后就会被遗忘。",
+        "de": "Dies wird in einer Woche vergessen sein."
+      },
+      "explanations": {
+        "zh-TW": "預測話題壽命",
+        "en": "Cynically predicting that a trend is short-lived",
+        "ja": "トレンドの短命予測",
+        "ko": "트렌드의 단명 예측",
+        "es": "Prediciendo cinicamente la brevedad",
+        "fr": "Predire ciniquement la duree courte",
+        "zh-CN": "预测话题寿命",
+        "de": "Zynisch vorhersagen, dass ein Trend kurzlebig ist"
+      }
+    }
+  ],
+  "pop-5": [
+    {
+      "id": "pop-5-01-1",
+      "translations": {
+        "zh-TW": "這個藝術展覽展示了...",
+        "en": "The art exhibit features...",
+        "ja": "アート展の作品には...があります",
+        "ko": "아트 전시에는...이 있습니다",
+        "es": "La exhibicion de arte presenta...",
+        "fr": "Lexposition presente...",
+        "zh-CN": "这个艺术展览展示了...",
+        "de": "Die Kunstausstellung präsentiert..."
+      },
+      "explanations": {
+        "zh-TW": "介紹展覽內容的用語",
+        "en": "Describing what an art exhibit showcases",
+        "ja": "アート展出品作の描述",
+        "ko": "아트전 출품작 설명",
+        "es": "Describiendo lo que presenta una exhibicion",
+        "fr": "Decrire ce que presente une exposition",
+        "zh-CN": "介绍展览内容的用语",
+        "de": "Beschreiben, was eine Kunstausstellung zeigt"
+      }
+    },
+    {
+      "id": "pop-5-01-2",
+      "translations": {
+        "zh-TW": "藝術家探索...的主題。",
+        "en": "The artist explores themes of...",
+        "ja": "アーティストは...のテーマを探求しています",
+        "ko": "아티스트는...의 주제를 탐구합니다",
+        "es": "El artista explora temas de...",
+        "fr": "Lartiste explore des themes de...",
+        "zh-CN": "艺术家探索...的主题。",
+        "de": "Der Künstler erforscht Themen von..."
+      },
+      "explanations": {
+        "zh-TW": "說明藝術主題",
+        "en": "Describing the thematic focus of an artist's work",
+        "ja": "アーティストのテーマ探求生への言及",
+        "ko": "아티스트의 주제 탐구 설명",
+        "es": "Describiendo el enfoque tematico",
+        "fr": "Decrire le fokus thematique",
+        "zh-CN": "说明艺术主题",
+        "de": "Den thematischen Fokus der Arbeit eines Künstlers beschreiben"
+      }
+    },
+    {
+      "id": "pop-5-01-3",
+      "translations": {
+        "zh-TW": "使用的技法是...",
+        "en": "The technique used is...",
+        "ja": "使用了れるテクニックは...です",
+        "ko": "사용되는 테크닉은...입니다",
+        "es": "La tecnica usada es...",
+        "fr": "La technique employee est...",
+        "zh-CN": "使用的技法是...",
+        "de": "Die verwendete Technik ist..."
+      },
+      "explanations": {
+        "zh-TW": "討論藝術技法",
+        "en": "Commenting on the artistic technique employed",
+        "ja": "艺术的Techniqueへの言及",
+        "ko": "예술 기법에 대한 코멘트",
+        "es": "Comentando la tecnica artistica",
+        "fr": "Commenter la technique artistique",
+        "zh-CN": "讨论艺术技法",
+        "de": "Die verwendete künstlerische Technik kommentieren"
+      }
+    },
+    {
+      "id": "pop-5-01-4",
+      "translations": {
+        "zh-TW": "我覺得這件作品發人深省。",
+        "en": "I find this piece thought-provoking.",
+        "ja": "この作品には考えさせられます",
+        "ko": "이 작품은 생각하게 만듭니다",
+        "es": "Encuentro esta pieza provocadora.",
+        "fr": "Je trouve cette oeuvre provocante.",
+        "zh-CN": "我觉得这件作品发人深省。",
+        "de": "Ich finde dieses Werk gedankenanregend."
+      },
+      "explanations": {
+        "zh-TW": "表達個人看法",
+        "en": "Expressing that a work of art stimulates deep thought",
+        "ja": "作品が深い思考を促すことへの表明",
+        "ko": "작품이 깊은 사고를 촉진한다는 표현",
+        "es": "Expresando que una obra estimula el pensamiento",
+        "fr": "Exprimer quune oeuvre stimule la reflexion",
+        "zh-CN": "表达个人看法",
+        "de": "Ausdrücken, dass ein Kunstwerk tiefe Gedanken anregt"
+      }
+    },
+    {
+      "id": "pop-5-01-5",
+      "translations": {
+        "zh-TW": "這挑戰了傳統概念。",
+        "en": "This challenges traditional concepts.",
+        "ja": "これは伝統的なコンセプトに挑戦しています",
+        "ko": "이건 전통적인 콘셉트에 도전합니다",
+        "es": "Esto desafia los conceptos tradicionales.",
+        "fr": "Ceci defie les concepts traditionnels.",
+        "zh-CN": "这挑战了传统概念。",
+        "de": "Dies fordert traditionelle Konzepte heraus."
+      },
+      "explanations": {
+        "zh-TW": "評論藝術價值",
+        "en": "Observing that a work of art challenges conventional ideas",
+        "ja": "作品が伝統的な考えに挑戦することを指摘",
+        "ko": "작품이 전통적 사상에 도전한다는 지적",
+        "es": "Observando que una obra desafia ideas convencionales",
+        "fr": "Observer quune oeuvre defie les idees conventionnelles",
+        "zh-CN": "评论艺术价值",
+        "de": "Beobachten, dass ein Kunstwerk konventionelle Ideen herausfordert"
+      }
+    }
+  ],
+  "pop-6": [
+    {
+      "id": "pop-6-01-1",
+      "translations": {
+        "zh-TW": "這場盛會吸引了...",
+        "en": "The gala attracted...",
+        "ja": "ガラには...が参集しました",
+        "ko": "갈라에는...이 모였습니다",
+        "es": "La gala atrajo a...",
+        "fr": "Le gala a attire...",
+        "zh-CN": "这场盛会吸引了...",
+        "de": "Der Ball hat... angezogen."
+      },
+      "explanations": {
+        "zh-TW": "報導活動的用語",
+        "en": "Describing the attendees of a glamorous event",
+        "ja": " Gala 出席者の描述",
+        "ko": "갈라 참석자 설명",
+        "es": "Describiendo los asistentes de un evento",
+        "fr": "Decrire les assiste dun evenement",
+        "zh-CN": "报导活动的用语",
+        "de": "Die Teilnehmer einer glamourösen Veranstaltung beschreiben"
+      }
+    },
+    {
+      "id": "pop-6-01-2",
+      "translations": {
+        "zh-TW": "名人穿著...",
+        "en": "Celebrities wore...",
+        "ja": "セレブたちは...を着ていました",
+        "ko": "셀럽들이...을 입고 있었어요",
+        "es": "Los celebridades llevaban...",
+        "fr": "Les celebrites portaient...",
+        "zh-CN": "名人穿着...",
+        "de": "Celebrities trugen..."
+      },
+      "explanations": {
+        "zh-TW": "描述紅毯時尚",
+        "en": "Describing celebrity fashion at a red carpet event",
+        "ja": "レッドカーペットでのセレブファッションを描述",
+        "ko": "레드카펫에서의 셀럽 패션 설명",
+        "es": "Describiendo la moda de celebridades",
+        "fr": "Decrire la mode des personnalites",
+        "zh-CN": "描述红毯时尚",
+        "de": "Celebrity-Mode bei einer Roten-Teppich-Veranstaltung beschreiben"
+      }
+    },
+    {
+      "id": "pop-6-01-3",
+      "translations": {
+        "zh-TW": "亮點是...",
+        "en": "The highlight was...",
+        "ja": "ハイライトは...でした",
+        "ko": "하이라이트는...이었어요",
+        "es": "El momento culminante fue...",
+        "fr": "Le moment fort etait...",
+        "zh-CN": "亮点是...",
+        "de": "Der Höhepunkt war..."
+      },
+      "explanations": {
+        "zh-TW": "指出精彩時刻",
+        "en": "Describing the standout moment of an event",
+        "ja": "イベントの 立竿見影を述べる",
+        "ko": "이벤트의 하이라이트 알림",
+        "es": "Describiendo el momento destacado",
+        "fr": "Decrire le moment fort",
+        "zh-CN": "指出精彩时刻",
+        "de": "Den herausragenden Moment einer Veranstaltung beschreiben"
+      }
+    },
+    {
+      "id": "pop-6-01-4",
+      "translations": {
+        "zh-TW": "社交媒體的反應是...",
+        "en": "Social media reacted with...",
+        "ja": "SNSでは...と反応しています",
+        "ko": "SNS에서는...라는 반응이 쏟아지고 있어요",
+        "es": "Las redes sociales reaccionaron con...",
+        "fr": "Les reseaux sociaux ont reagi avec...",
+        "zh-CN": "社交媒体的反应是...",
+        "de": "Social Media reagierte mit..."
+      },
+      "explanations": {
+        "zh-TW": "報導網路反應",
+        "en": "Describing social media response to an event",
+        "ja": "SNSでの反応を述べる",
+        "ko": "SNS에서의 반응 알림",
+        "es": "Describiendo la respuesta en redes",
+        "fr": "Decrire la reponse sur les reseaux",
+        "zh-CN": "报导网络反应",
+        "de": "Die Reaktion in sozialen Medien auf eine Veranstaltung beschreiben"
+      }
+    },
+    {
+      "id": "pop-6-01-5",
+      "translations": {
+        "zh-TW": "這開啟了新潮流。",
+        "en": "This set a new trend.",
+        "ja": "これが新しいトレンドになりました",
+        "ko": "이것이 새로운 트렌드가 됐어요",
+        "es": "Esto establecio una nueva tendencia.",
+        "fr": "Ceci a cree une nouvelle tendance.",
+        "zh-CN": "这开启了新潮流。",
+        "de": "Dies setzte einen neuen Trend."
+      },
+      "explanations": {
+        "zh-TW": "說明影響",
+        "en": "Noting that something from the event started a new fashion or cultural trend",
+        "ja": "新的トレンドの开创を指摘",
+        "ko": "새 트렌드의 개척 지적",
+        "es": "Notando que algo inicio una nueva tendencia",
+        "fr": "Notifier ququelque chose a cree une nouvelle tendance",
+        "zh-CN": "说明影响",
+        "de": "Feststellen, dass etwas von der Veranstaltung einen neuen Mode- oder Kulturtrend startete"
+      }
+    }
+  ],
+  "tec-1": [
+    {
+      "id": "tec-1-01-1",
+      "translations": {
+        "zh-TW": "你有試過新的 AI 工具嗎？",
+        "en": "Have you tried the new AI tool?",
+        "ja": "新しいAIツールを試しましたか？",
+        "ko": "새 AI 도구를 써봤어요?",
+        "es": "Has probado la nueva herramienta de IA?",
+        "fr": "Tu as essaye le nouvel outil IA?",
+        "zh-CN": "你有试过新的 AI 工具吗？",
+        "de": "Hast du das neue KI-Tool ausprobiert?"
+      },
+      "explanations": {
+        "zh-TW": "開始討論新技術的標準用語",
+        "en": "Asking if someone has tried a new AI product or service",
+        "ja": "新AIツールの使用経験質問",
+        "ko": "새 AI 도구 사용 경험 질문",
+        "es": "Preguntando si alguien ha usado una herramienta",
+        "fr": "Demander si quelquun a essaye un outil",
+        "zh-CN": "开始讨论新技术的标准用语",
+        "de": "Fragen, ob jemand ein neues KI-Produkt oder eine Dienstleistung ausprobiert hat"
+      }
+    },
+    {
+      "id": "tec-1-01-2",
+      "translations": {
+        "zh-TW": "這對生產力來說是個遊戲規則改變者。",
+        "en": "It is a game-changer for productivity.",
+        "ja": "生産性にとってgame-changerです",
+        "ko": "생산성에 있어 game-changer예요",
+        "es": "Es un cambio radical para la productividad.",
+        "fr": "Cest un game-changer pour la productivite.",
+        "zh-CN": "这对生产力来说是个游戏规则改变者。",
+        "de": "Es ist ein Wendepunkt für die Produktivität."
+      },
+      "explanations": {
+        "zh-TW": "說明技術影響",
+        "en": "Describing that an AI tool dramatically improves productivity",
+        "ja": "AIツールによる生産性飞跃の表現",
+        "ko": "AI 도구에 의한 생산성 비약 표현",
+        "es": "Describiendo la mejora dramatica en productividad",
+        "fr": "Decrire lamelioration dramatique de la productivite",
+        "zh-CN": "说明技术影响",
+        "de": "Beschreiben, dass ein KI-Tool die Produktivität dramatisch verbessert"
+      }
+    },
+    {
+      "id": "tec-1-01-3",
+      "translations": {
+        "zh-TW": "和前一版本比起來如何？",
+        "en": "How does it compare to the previous version?",
+        "ja": "以前的バージョンとどう比較されますか？",
+        "ko": "이전 버전과 어떻게 비교되나요?",
+        "es": "Como se compara con la version anterior?",
+        "fr": "Comment se compare-t-il a la version precedente?",
+        "zh-CN": "和前一版本比起来如何？",
+        "de": "Wie vergleicht es sich mit der vorherigen Version?"
+      },
+      "explanations": {
+        "zh-TW": "比較版本差異",
+        "en": "Asking for a comparison with the previous version of a product",
+        "ja": "旧バージョンとの比較質問",
+        "ko": "이전 버전과의 비교 질문",
+        "es": "Pidiendo comparacion con la version anterior",
+        "fr": "Demander une comparaison avec la version precedente",
+        "zh-CN": "比较版本差异",
+        "de": "Nach einem Vergleich mit der vorherigen Version eines Produkts fragen"
+      }
+    },
+    {
+      "id": "tec-1-01-4",
+      "translations": {
+        "zh-TW": "學習曲線很陡但值得。",
+        "en": "The learning curve is steep but worth it.",
+        "ja": "学習コストは高いですが、それだけの価値があります",
+        "ko": "학습 곡선이 가파르지만 그럴 만한 가치가 있어요",
+        "es": "La curva de aprendizaje es pronunciada pero vale la pena.",
+        "fr": "La courbe dapprentissage est raide mais ca vaut le coup.",
+        "zh-CN": "学习曲线很陡但值得。",
+        "de": "Die Lernkurve ist steil, aber es lohnt sich."
+      },
+      "explanations": {
+        "zh-TW": "分享使用經驗",
+        "en": "Acknowledging difficulty but affirming value of learning a new tool",
+        "ja": " Perjuanganの大変さと価値への言及",
+        "ko": "학습의大変さと価値 언급",
+        "es": "Reconociendo la dificultad pero affirmando el valor",
+        "fr": "Reconnaissant la difficulte mais affirmant la valeur",
+        "zh-CN": "分享使用经验",
+        "de": "Schwierigkeit anerkennen, aber Wert des Lernens eines neuen Tools bestätigen"
+      }
+    },
+    {
+      "id": "tec-1-01-5",
+      "translations": {
+        "zh-TW": "這正在徹底改變這個產業。",
+        "en": "It is revolutionizing the industry.",
+        "ja": "この産業に革命を起こしています",
+        "ko": "이 산업에 혁명을 일으키고 있어요",
+        "es": "Esta revolucionando la industria.",
+        "fr": "Cela revolutionne lindustrie.",
+        "zh-CN": "这正在彻底改变这个产业。",
+        "de": "Es revolutioniert die Industrie."
+      },
+      "explanations": {
+        "zh-TW": "預測技術影響",
+        "en": "Stating that an AI tool is transforming its industry",
+        "ja": "AIツールによる産業転換の表明",
+        "ko": "AI 도구에 의한 산업 전환 알림",
+        "es": "Afirmando que la herramienta transforma su industria",
+        "fr": "Affirmer que loutil transforme son industrie",
+        "zh-CN": "预测技术影响",
+        "de": "Feststellen, dass ein KI-Tool seine Industrie transformiert"
+      }
+    }
+  ],
+  "tec-2": [
+    {
+      "id": "tec-2-01-1",
+      "translations": {
+        "zh-TW": "新款智慧型手機配備...",
+        "en": "The new smartphone features...",
+        "ja": "新しいスマートフォンの機能は...",
+        "ko": "새 스마트폰의 기능은...",
+        "es": "El nuevo smartphone tiene...",
+        "fr": "Le nouveau smartphone a...",
+        "zh-CN": "新款智能型手机配备...",
+        "de": "Das neue Smartphone bietet..."
+      },
+      "explanations": {
+        "zh-TW": "介紹新產品的用語",
+        "en": "Describing the key features of a new smartphone",
+        "ja": "新スマートフォンの主要機能を列举",
+        "ko": "새 스마트폰 주요 기능 열거",
+        "es": "Enumerando las funciones principales",
+        "fr": "Enumerer les fonctionnalites principales",
+        "zh-CN": "介绍新产品的用语",
+        "de": "Die Hauptmerkmale eines neuen Smartphones beschreiben"
+      }
+    },
+    {
+      "id": "tec-2-01-2",
+      "translations": {
+        "zh-TW": "相機已經升級。",
+        "en": "The camera has been improved.",
+        "ja": "カメラが改良されました",
+        "ko": "카메라가 개선됐어요",
+        "es": "La camara ha sido mejorada.",
+        "fr": "Lappareil photo a ete ameliore.",
+        "zh-CN": "相机已经升级。",
+        "de": "Die Kamera wurde verbessert."
+      },
+      "explanations": {
+        "zh-TW": "說明具體功能",
+        "en": "Noting that the camera quality of a new phone has improved",
+        "ja": "新手机的カメラ改良を指摘",
+        "ko": "스마트폰 카메라 개선 지적",
+        "es": "Notando la mejora en la camara",
+        "fr": "Notifier lamelioration de lappareil photo",
+        "zh-CN": "说明具体功能",
+        "de": "Feststellen, dass die Kameraqualität eines neuen Telefons verbessert wurde"
+      }
+    },
+    {
+      "id": "tec-2-01-3",
+      "translations": {
+        "zh-TW": "電池續航力現在...",
+        "en": "Battery life is now...",
+        "ja": "バッテリーの持ちは今は...",
+        "ko": "배터리 수명이 지금은...",
+        "es": "La vida de la bateria ahora es...",
+        "fr": "Lautonomie de la batterie est maintenant...",
+        "zh-CN": "电池续航力现在...",
+        "de": "Die Akkulaufzeit ist jetzt..."
+      },
+      "explanations": {
+        "zh-TW": "報導電池表現",
+        "en": "Describing the improved battery performance of a device",
+        "ja": "機器のバッテリー性能的向上を述べる",
+        "ko": "기기 배터리 성능 향상 설명",
+        "es": "Describiendo la mejora en la batterie",
+        "fr": "Decrire lamelioration de la batterie",
+        "zh-CN": "报导电池表现",
+        "de": "Die verbesserte Akkuleistung eines Geräts beschreiben"
+      }
+    },
+    {
+      "id": "tec-2-01-4",
+      "translations": {
+        "zh-TW": "價格有競爭力。",
+        "en": "The price is competitive.",
+        "ja": "価格は競争力があります",
+        "ko": "가격이 경쟁력이 있어요",
+        "es": "El precio es competitivo.",
+        "fr": "Le prix est competitf.",
+        "zh-CN": "价格有竞争力。",
+        "de": "Der Preis ist wettbewerbsfähig."
+      },
+      "explanations": {
+        "zh-TW": "評論定價",
+        "en": "Stating that the product is priced competitively",
+        "ja": "产品价格の競争力を述べる",
+        "ko": "제품 가격의 경쟁력 알림",
+        "es": "Afirmando que el precio es competitivo",
+        "fr": "Affirmer que le prix est competitf",
+        "zh-CN": "评论定价",
+        "de": "Feststellen, dass das Produkt wettbewerbsfähig preislich ist"
+      }
+    },
+    {
+      "id": "tec-2-01-5",
+      "translations": {
+        "zh-TW": "值得升級嗎？",
+        "en": "Is it worth upgrading?",
+        "ja": "アップグレードする価値はありますか？",
+        "ko": "업그레이드할 가치가 있나요?",
+        "es": "Vale la pena actualizar?",
+        "fr": "Ca vaut la peine de mettre a niveau?",
+        "zh-CN": "值得升级吗？",
+        "de": "Lohnt sich ein Upgrade?"
+      },
+      "explanations": {
+        "zh-TW": "提出討論問題",
+        "en": "Asking whether it makes sense to upgrade from an older device",
+        "ja": "旧デバイスからのアップグレード価値質問",
+        "ko": "이전 기기에서의 업그레이드 가치 질문",
+        "es": "Preguntando si vale la pena actualizar",
+        "fr": "Demander si ca vaut la peine de mettre a niveau",
+        "zh-CN": "提出讨论问题",
+        "de": "Fragen, ob es sinnvoll ist, von einem älteren Gerät aufzurüsten"
+      }
+    }
+  ],
+  "tec-3": [
+    {
+      "id": "tec-3-01-1",
+      "translations": {
+        "zh-TW": "生成式 AI 能夠...",
+        "en": "Generative AI can...",
+        "ja": "生成AIは...",
+        "ko": "생성형 AI는...",
+        "es": "La IA generativa puede...",
+        "fr": "LIA generative peut...",
+        "zh-CN": "生成式 AI 能够...",
+        "de": "Generative KI kann..."
+      },
+      "explanations": {
+        "zh-TW": "介紹 AI 能力的用語",
+        "en": "Describing the capabilities of generative AI",
+        "ja": "生成AIの可能性を述べる",
+        "ko": "생성형 AI의 가능성 설명",
+        "es": "Describiendo las capacidades de la IA generativa",
+        "fr": "Decrire les capacites de lIA generative",
+        "zh-CN": "介绍 AI 能力的用语",
+        "de": "Die Fähigkeiten von generativer KI beschreiben"
+      }
+    },
+    {
+      "id": "tec-3-01-2",
+      "translations": {
+        "zh-TW": "它改變了我如何...",
+        "en": "It has transformed how I...",
+        "ja": "私の...方法が 바뀌ました",
+        "ko": "제가...하는 방식이 달라졌어요",
+        "es": "Ha transformado la forma en que yo...",
+        "fr": "Cela a transforme ma facon de...",
+        "zh-CN": "它改变了我如何...",
+        "de": "Es hat transformiert, wie ich..."
+      },
+      "explanations": {
+        "zh-TW": "分享個人經驗",
+        "en": "Sharing how generative AI has changed personal workflow",
+        "ja": "生成AIによる個人的作業変化の共有",
+        "ko": "생성형 AI에 의한 개인 작업 변화 공유",
+        "es": "Compartiendo como la IA generativa ha cambiado el flujo",
+        "fr": "Partager comment lIA generative a change le flux",
+        "zh-CN": "分享个人经验",
+        "de": "Teilen, wie generative KI den persönlichen Arbeitsablauf verändert hat"
+      }
+    },
+    {
+      "id": "tec-3-01-3",
+      "translations": {
+        "zh-TW": "潛在應用包括...",
+        "en": "The potential applications include...",
+        "ja": "潜在的な応用には...が含まれます",
+        "ko": "잠재적 응용에는...이 포함됩니다",
+        "es": "Las aplicaciones potenciales incluyen...",
+        "fr": "Les applications potentielles incluent...",
+        "zh-CN": "潜在应用包括...",
+        "de": "Die potenziellen Anwendungen umfassen..."
+      },
+      "explanations": {
+        "zh-TW": "列舉使用場景",
+        "en": "Listing potential use cases for generative AI",
+        "ja": "生成AIの潜在的なユースケース列举",
+        "ko": "생성형 AI의 잠재적ユースケース 열거",
+        "es": "Enumerando casos de uso potenciales",
+        "fr": "Enumerer les cas dutilisation potentiels",
+        "zh-CN": "枚举使用场景",
+        "de": "Potenzielle Anwendungsfälle für generative KI auflisten"
+      }
+    },
+    {
+      "id": "tec-3-01-4",
+      "translations": {
+        "zh-TW": "有一些關於...的擔憂。",
+        "en": "There are concerns about...",
+        "ja": "...については懸念があります",
+        "ko": "...에 대해서는 우려가 있습니다",
+        "es": "Hay preocupaciones sobre...",
+        "fr": "Il y a des preoccupations concernant...",
+        "zh-CN": "有一些关于...的担忧。",
+        "de": "Es gibt Bedenken bezüglich..."
+      },
+      "explanations": {
+        "zh-TW": "討論風險",
+        "en": "Raising concerns about the implications of generative AI",
+        "ja": "生成AIの影響への懸念提起",
+        "ko": "생성형 AI의 영향에 대한 우려 제기로",
+        "es": "Planteando preocupaciones sobre las implicaciones",
+        "fr": "Soulever des preoccupations sur les implications",
+        "zh-CN": "讨论风险",
+        "de": "Bedenken bezüglich der Auswirkungen von generativer KI äußern"
+      }
+    },
+    {
+      "id": "tec-3-01-5",
+      "translations": {
+        "zh-TW": "我們應該規範...",
+        "en": "We should regulate...",
+        "ja": "...を規制すべきです",
+        "ko": "...을 규제해야 합니다",
+        "es": "Deberiamos regular...",
+        "fr": "Nous devrions reguler...",
+        "zh-CN": "我们应该规范...",
+        "de": "Wir sollten... regulieren."
+      },
+      "explanations": {
+        "zh-TW": "提出政策建議",
+        "en": "Advocating for regulation of generative AI applications",
+        "ja": "生成AI应用の規制提唱",
+        "ko": "생성형 AI 응용 규제 촉구",
+        "es": "Abogando por la regulacion",
+        "fr": "Plaidoyer pour la regulation",
+        "zh-CN": "提出政策建议",
+        "de": "Sich für die Regulierung von generativen KI-Anwendungen einsetzen"
+      }
+    }
+  ],
+  "tec-4": [
+    {
+      "id": "tec-4-01-1",
+      "translations": {
+        "zh-TW": "VR 提供沉浸式體驗。",
+        "en": "VR offers immersive experiences.",
+        "ja": "VRは没入型体験を提供します",
+        "ko": "VR은 몰입형 경험을 제공합니다",
+        "es": "La RV ofrece experiencias inmersivas.",
+        "fr": "La RV offre des experiences immersives.",
+        "zh-CN": "VR 提供沉浸式体验。",
+        "de": "VR bietet immersive Erlebnisse."
+      },
+      "explanations": {
+        "zh-TW": "描述 VR 特點的用語",
+        "en": "Describing the immersive nature of virtual reality",
+        "ja": "VRの没入型体験について述べる",
+        "ko": "VR의 몰입형 경험 설명",
+        "es": "Describiendo la naturaleza inmersiva de la realidad virtual",
+        "fr": "Decrire la nature immersive de la realite virtuelle",
+        "zh-CN": "描述 VR 特点的用语",
+        "de": "Die immersive Natur der virtuellen Realität beschreiben"
+      }
+    },
+    {
+      "id": "tec-4-01-2",
+      "translations": {
+        "zh-TW": "這項技術已顯著進步。",
+        "en": "The technology has advanced significantly.",
+        "ja": "このテクノロジーは大きく進歩しました",
+        "ko": "이 기술은 크게 발전했습니다",
+        "es": "La tecnologia ha avanzado significativamente.",
+        "fr": "La technologie a avance significativement.",
+        "zh-CN": "这项技术已显著进步。",
+        "de": "Die Technologie hat sich signifikant weiterentwickelt."
+      },
+      "explanations": {
+        "zh-TW": "說明技術發展",
+        "en": "Noting the rapid advancement of VR technology",
+        "ja": "VRテクノロジーの急速な進歩を指摘",
+        "ko": "VR 기술의 급속한 발전 지적",
+        "es": "Notando el rapido avance de la tecnologia",
+        "fr": "Notifier lavance rapide de la technologie",
+        "zh-CN": "说明技术发展",
+        "de": "Die schnelle Weiterentwicklung von VR-Technologie feststellen"
+      }
+    },
+    {
+      "id": "tec-4-01-3",
+      "translations": {
+        "zh-TW": "應用範圍從...",
+        "en": "Applications range from...",
+        "ja": "応用範囲は...から...にまで及びます",
+        "ko": "응용 범위는 ...에서 ...에까지 이릅니다",
+        "es": "Las aplicaciones van desde...",
+        "fr": "Les applications vont de...",
+        "zh-CN": "应用范围从...",
+        "de": "Anwendungen reichen von..."
+      },
+      "explanations": {
+        "zh-TW": "列舉應用領域",
+        "en": "Listing the wide range of VR applications",
+        "ja": "VR応用の広範囲列举",
+        "ko": "VR 응용의 광범위 열거",
+        "es": "Enumerando la amplia gama de aplicaciones",
+        "fr": "Enumerer le large eventail dapplications",
+        "zh-CN": "枚举应用领域",
+        "de": "Die breite Palette von VR-Anwendungen auflisten"
+      }
+    },
+    {
+      "id": "tec-4-01-4",
+      "translations": {
+        "zh-TW": "市場正在成長。",
+        "en": "The market is growing.",
+        "ja": "市場が成長しています",
+        "ko": "시장이 성장하고 있습니다",
+        "es": "El mercado esta creciendo.",
+        "fr": "Le marche croitra croissance.",
+        "zh-CN": "市场正在成长。",
+        "de": "Der Markt wächst."
+      },
+      "explanations": {
+        "zh-TW": "報導市場趨勢",
+        "en": "Reporting that the VR market is expanding",
+        "ja": "VR市場の成長を報告",
+        "ko": "VR 시장의 성장 보고",
+        "es": "Reportando que el mercado se expande",
+        "fr": "Signaler que le marche est en croissance",
+        "zh-CN": "报导市场趋势",
+        "de": "Berichten, dass der VR-Markt expandiert"
+      }
+    },
+    {
+      "id": "tec-4-01-5",
+      "translations": {
+        "zh-TW": "這可能徹底改變...",
+        "en": "This could revolutionize...",
+        "ja": "これは...に革命を起こす可能性があります",
+        "ko": "이것이...에 혁명을 일으킬 수 있습니다",
+        "es": "Esto podria revolucionar...",
+        "fr": "Ceci pourrait revolutionner...",
+        "zh-CN": "这可能彻底改变...",
+        "de": "Dies könnte... revolutionieren."
+      },
+      "explanations": {
+        "zh-TW": "預測未來影響",
+        "en": "Predicting that VR could transform a field",
+        "ja": "VRによる某分野の転換予測",
+        "ko": "VR에 의한 특정 분야 전환 예측",
+        "es": "Prediciendo que la RV podria transformar",
+        "fr": "Predire que la RV pourrait transformer",
+        "zh-CN": "预测未来影响",
+        "de": "Vorhersagen, dass VR ein Feld transformieren könnte"
+      }
+    }
+  ],
+  "tec-5": [
+    {
+      "id": "tec-5-01-1",
+      "translations": {
+        "zh-TW": "自駕車引發倫理問題。",
+        "en": "Self-driving cars raise ethical questions.",
+        "ja": "自动驾驶車は倫理的な問題を提起します",
+        "ko": "자가전조차는 윤리적 문제를 제기합니다",
+        "es": "Los automoviles autonomous plantean cuestiones ethicas.",
+        "fr": "Les voitures autonomes soulvent des questions ethiques.",
+        "zh-CN": "自驾车引发伦理问题。",
+        "de": "Selbstfahrende Autos werfen ethische Fragen auf."
+      },
+      "explanations": {
+        "zh-TW": "提出科技倫理議題的用語",
+        "en": "Introducing the ethical dimension of autonomous vehicles",
+        "ja": "自动驾驶車の倫理問題提起",
+        "ko": "자율주행차의 윤리 문제 제기",
+        "es": "Introduciendo la dimension etica",
+        "fr": "Introduire la dimension ethique",
+        "zh-CN": "提出科技伦理议题的用语",
+        "de": "Die ethische Dimension von autonomen Fahrzeugen einführen"
+      }
+    },
+    {
+      "id": "tec-5-01-2",
+      "translations": {
+        "zh-TW": "當...時，誰該負責？",
+        "en": "Who is responsible when...",
+        "ja": "...の時には誰が責任を取りますか？",
+        "ko": "...일 때 누가 책임을 지나요?",
+        "es": "Quien es responsable cuando...",
+        "fr": "Qui est responsable quand...",
+        "zh-CN": "当...时，谁该负责？",
+        "de": "Wer ist verantwortlich, wenn..."
+      },
+      "explanations": {
+        "zh-TW": "提出責任歸屬問題",
+        "en": "Raising the question of liability in autonomous vehicle accidents",
+        "ja": "自动驾驶車事故時の責任所属質問",
+        "ko": "자율주행차 사고 시 책임 소재 질문",
+        "es": "Planteando la cuestion de responsabilidad",
+        "fr": "Soulever la question de la responsabilite",
+        "zh-CN": "提出责任归属问题",
+        "de": "Die Frage der Haftung bei Unfällen mit autonomen Fahrzeugen aufwerfen"
+      }
+    },
+    {
+      "id": "tec-5-01-3",
+      "translations": {
+        "zh-TW": "這項技術並不完美。",
+        "en": "The technology is not perfect.",
+        "ja": "テクノロジーは完全ではありません",
+        "ko": "기술은 완벽하지 않습니다",
+        "es": "La tecnologia no es perfecta.",
+        "fr": "La technologie nest pas parfaite.",
+        "zh-CN": "这项技术并不完美。",
+        "de": "Die Technologie ist nicht perfekt."
+      },
+      "explanations": {
+        "zh-TW": "指出技術限制",
+        "en": "Acknowledging limitations of autonomous driving technology",
+        "ja": "自动驾驶テクノロジーの限界を認める",
+        "ko": "자율주행 기술의 한계 인정",
+        "es": "Reconociendo limitaciones",
+        "fr": "Reconnaître les limitations",
+        "zh-CN": "指出技术限制",
+        "de": "Einschränkungen der autonomen Fahrtechnologie anerkennen"
+      }
+    },
+    {
+      "id": "tec-5-01-4",
+      "translations": {
+        "zh-TW": "我們需要更多測試。",
+        "en": "We need more testing.",
+        "ja": "さらなるテストが必要です",
+        "ko": "더 많은 테스트가 필요합니다",
+        "es": "Necesitamos mas pruebas.",
+        "fr": "Nous avons besoin de plus de tests.",
+        "zh-CN": "我们需要更多测试。",
+        "de": "Wir brauchen mehr Tests."
+      },
+      "explanations": {
+        "zh-TW": "提出建議",
+        "en": "Advocating for more extensive testing before deployment",
+        "ja": "更なるテストの実施提倡",
+        "ko": "더 많은 테스트 실시 촉구",
+        "es": "Abogando por mas pruebas",
+        "fr": "Plaidoyer pour plus de tests",
+        "zh-CN": "提出建议",
+        "de": "Sich für umfangreichere Tests vor dem Einsatz einsetzen"
+      }
+    },
+    {
+      "id": "tec-5-01-5",
+      "translations": {
+        "zh-TW": "公眾信任是必要的。",
+        "en": "Public trust is essential.",
+        "ja": "市民の信頼が不可欠です",
+        "ko": "시민의 신뢰가 필수적입니다",
+        "es": "La confianza publica es essencial.",
+        "fr": "La confiance publique est essentielle.",
+        "zh-CN": "公众信任是必要的。",
+        "de": "Öffentliches Vertrauen ist essenziell."
+      },
+      "explanations": {
+        "zh-TW": "說明採用條件",
+        "en": "Emphasizing the importance of public acceptance of AV technology",
+        "ja": "自动驾驶技術への市民信頼の重要性を強調",
+        "ko": "자율주행 기술에 대한 시민 신뢰 중요성 강조",
+        "es": "Enfatizando la importancia de la aceptacion",
+        "fr": "Souligner limportance de lacceptation publique",
+        "zh-CN": "说明采用条件",
+        "de": "Die Wichtigkeit der öffentlichen Akzeptanz von AV-Technologie betonen"
+      }
+    }
+  ],
+  "tec-6": [
+    {
+      "id": "tec-6-01-1",
+      "translations": {
+        "zh-TW": "區塊鏈實現去中心化的...",
+        "en": "Blockchain enables decentralized...",
+        "ja": "ブロックチェーンは...の非中央集権化を可能にします",
+        "ko": "블록체인은...의 탈중앙화를 가능하게 합니다",
+        "es": "Blockchain permite la descentralizacion de...",
+        "fr": "La blockchain permet la decentralisation de...",
+        "zh-CN": "区块链实现去中心化的...",
+        "de": "Blockchain ermöglicht dezentralisierte..."
+      },
+      "explanations": {
+        "zh-TW": "介紹區塊鏈概念的用語",
+        "en": "Describing blockchain as an enabler of decentralization",
+        "ja": "ブロックチェーンの脱中央集権化機能を説明",
+        "ko": "블록체인의 탈중앙화 기능 설명",
+        "es": "Describiendo blockchain como habilitador",
+        "fr": "Decrire la blockchain comme enableur",
+        "zh-CN": "介绍区块链概念的用语",
+        "de": "Blockchain als Ermöglicher von Dezentralisierung beschreiben"
+      }
+    },
+    {
+      "id": "tec-6-01-2",
+      "translations": {
+        "zh-TW": "智慧合約能夠...",
+        "en": "Smart contracts can...",
+        "ja": "スマートコントラクトは...",
+        "ko": "스마트 컨트랙트는...",
+        "es": "Los contratos inteligentes pueden...",
+        "fr": "Les contrats intelligents peuvent...",
+        "zh-CN": "智能合约能够...",
+        "de": "Smart Contracts können..."
+      },
+      "explanations": {
+        "zh-TW": "說明具體應用",
+        "en": "Describing the capabilities of self-executing blockchain contracts",
+        "ja": "スマートコントラクトの可能性を説明",
+        "ko": "스마트 컨트랙트의 가능성 설명",
+        "es": "Describiendo las capacidades de los contratos",
+        "fr": "Decrire les capacites des contrats",
+        "zh-CN": "说明具体应用",
+        "de": "Die Fähigkeiten von selbstausführenden Blockchain-Verträgen beschreiben"
+      }
+    },
+    {
+      "id": "tec-6-01-3",
+      "translations": {
+        "zh-TW": "加密貨幣有...",
+        "en": "Cryptocurrency has...",
+        "ja": "店は...",
+        "ko": "암호화폐는...",
+        "es": "Las criptomonedas han...",
+        "fr": "Les cryptomonnaies ont...",
+        "zh-CN": "加密货币有...",
+        "de": "Kryptowährung hat..."
+      },
+      "explanations": {
+        "zh-TW": "描述加密貨幣特點",
+        "en": "Discussing the current state or trajectory of cryptocurrency",
+        "ja": "암호화폐의 현황/궂적을 논함",
+        "ko": "암호화폐의 현황/궂적 논쟁",
+        "es": "Discutiendo el estado actual de las cryptos",
+        "fr": "Discuter letat actuel des cryptos",
+        "zh-CN": "描述加密货币特点",
+        "de": "Den aktuellen Zustand oder die Entwicklung von Kryptowährung diskutieren"
+      }
+    },
+    {
+      "id": "tec-6-01-4",
+      "translations": {
+        "zh-TW": "DeFi 可能顛覆...",
+        "en": "DeFi could disrupt...",
+        "ja": "DeFiは...を崩壊させる可能性があります",
+        "ko": "DeFi는...을颠覆할 수 있습니다",
+        "es": "DeFi podria interrumpir...",
+        "fr": "DeFi pourrait disrupter...",
+        "zh-CN": "DeFi 可能颠覆...",
+        "de": "DeFi könnte... stören."
+      },
+      "explanations": {
+        "zh-TW": "預測金融影響",
+        "en": "Predicting that decentralized finance could disrupt traditional finance",
+        "ja": "DeFiによる伝統的な金融崩壊予測",
+        "ko": "DeFi에 의한 전통 금융颠覆 예측",
+        "es": "Prediciendo que DeFi podria interrumpir",
+        "fr": "Predire que DeFi pourrait disrupter",
+        "zh-CN": "预测金融影响",
+        "de": "Vorhersagen, dass dezentralisierte Finanzen traditionelle Finanzen stören könnten"
+      }
+    },
+    {
+      "id": "tec-6-01-5",
+      "translations": {
+        "zh-TW": "監管正在追趕。",
+        "en": "Regulation is catching up.",
+        "ja": "規制が追いついていません",
+        "ko": "규제가追上해 오고 있습니다",
+        "es": "La regulacion esta alcanzando.",
+        "fr": "La regulation rattrape.",
+        "zh-CN": "监管正在追赶。",
+        "de": "Die Regulierung holt auf."
+      },
+      "explanations": {
+        "zh-TW": "說明政策現狀",
+        "en": "Noting that regulatory frameworks are developing for crypto/blockchain",
+        "ja": " crypto/blockchainに対する規制枠組みの発展を指摘",
+        "ko": "암호화폐/블록체인에 대한 규제 프레임워크 발전 지적",
+        "es": "Notando que los marcos reguladores se desarrollan",
+        "fr": "Notifier que les cadres reglementaires se developpent",
+        "zh-CN": "说明政策现状",
+        "de": "Feststellen, dass regulatorische Rahmenbedingungen für Krypto/Blockchain entwickelt werden"
+      }
+    }
+  ]
+}

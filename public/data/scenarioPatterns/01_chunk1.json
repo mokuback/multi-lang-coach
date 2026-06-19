@@ -1,0 +1,3863 @@
+{
+  "it-1": [
+    {
+      "id": "it-1-01-1",
+      "translations": {
+        "zh-TW": "我想請求為...增加新功能",
+        "en": "I would like to request a feature enhancement for...",
+        "ja": "..., の機能強化をリクエスト致したいのですが...",
+        "ko": "..., 의 기능 향상을 요청하고 싶습니다.",
+        "es": "Me gustaria solicitar una mejora de caracteristica para...",
+        "fr": "Je voudrais demander une amelioration de fonction pour...",
+        "zh-CN": "我想请求为...增加新功能",
+        "de": "Ich möchte eine Funktionserweiterung für ... anfragen"
+      },
+      "explanations": {
+        "zh-TW": "軟體需求信件的標準開場白",
+        "en": "Feature enhancement request.",
+        "ja": "機能強化のリクエスト。",
+        "ko": "기능 향상 요청.",
+        "es": "Solicitud de mejora de caracteristica.",
+        "fr": "Demande damelioration de fonction.",
+        "zh-CN": "软件需求信件的标准开场白",
+        "de": "Anfrage zur Funktionserweiterung."
+      }
+    },
+    {
+      "id": "it-1-01-2",
+      "translations": {
+        "zh-TW": "目前系統無法...",
+        "en": "The current system lacks the ability to...",
+        "ja": "現在のシステムには...の機能がありません。",
+        "ko": "현재 시스템은 ...할 수 있는 능력이 없습니다.",
+        "es": "El sistema actual carece de la capacidad de...",
+        "fr": "Le systeme actuel ne peut pas...",
+        "zh-CN": "目前系统无法...",
+        "de": "Das aktuelle System bietet keine Möglichkeit, ..."
+      },
+      "explanations": {
+        "zh-TW": "說明現有系統的限制",
+        "en": "Describing a system limitation.",
+        "ja": "システムの限界を述べる。",
+        "ko": "시스템의 한계 설명.",
+        "es": "Describiendo una limitacion del sistema.",
+        "fr": "Decrire une limitation du systeme.",
+        "zh-CN": "说明现有系统的限制",
+        "de": "Beschreibung einer Systemeinschränkung."
+      }
+    },
+    {
+      "id": "it-1-01-3",
+      "translations": {
+        "zh-TW": "此功能將透過...提升效率",
+        "en": "This feature would improve efficiency by...",
+        "ja": "この機能は...により効率を向上させます。",
+        "ko": "이 기능은 ...으로 효율을 향상시킬 것입니다.",
+        "es": "Esta caracteristica mejoraria la eficiencia al...",
+        "fr": "Cette fonction permettrait d'ameliorer l'efficacite en...",
+        "zh-CN": "此功能将透过...提升效率",
+        "de": "Diese Funktion würde die Effizienz durch ... verbessern"
+      },
+      "explanations": {
+        "zh-TW": "說明功能帶來的效益",
+        "en": "Explaining how a feature improves efficiency.",
+        "ja": "機能が効率をどのように向上させるかを説明する。",
+        "ko": "기능이 효율을 어떻게 향상시키는지에 대해 설명.",
+        "es": "Explicando como una caracteristica mejora la eficiencia.",
+        "fr": "Expliquer comment une fonction ameliore l'efficacite.",
+        "zh-CN": "说明功能带来的效益",
+        "de": "Erklärung, wie eine Funktion die Effizienz verbessert."
+      }
+    },
+    {
+      "id": "it-1-01-4",
+      "translations": {
+        "zh-TW": "如需進一步說明請告知。",
+        "en": "Please let me know if you need further clarification.",
+        "ja": "ご不明 점이ございましたら、お知らせください。",
+        "ko": "추가 설명이 필요하시면 알려주세요.",
+        "es": "Por favor, hagamelo saber si necesita mas aclaraciones.",
+        "fr": "N'hesitez pas a me contacter si vous avez besoin de plus amples informations.",
+        "zh-CN": "如需进一步说明请告知。",
+        "de": "Bitte lassen Sie mich wissen, ob Sie weitere Erläuterungen benötigen."
+      },
+      "explanations": {
+        "zh-TW": "信件結尾的標準用語",
+        "en": "Offering further clarification.",
+        "ja": "さらなる不明点の解消を提供する。",
+        "ko": "추가 설명 제공.",
+        "es": "Ofreciendo mas aclaraciones.",
+        "fr": "Offrir de plus amples informations.",
+        "zh-CN": "信件结尾的标准用语",
+        "de": "Angebot weiterer Erläuterungen."
+      }
+    },
+    {
+      "id": "it-1-01-5",
+      "translations": {
+        "zh-TW": "我已附上詳細規格說明。",
+        "en": "I have attached the detailed specifications.",
+        "ja": "詳細な仕様書を添付いたしました。",
+        "ko": "상세한 사양서를 첨부하였습니다.",
+        "es": "He adjuntado las especificaciones detalladas.",
+        "fr": "J'ai joint les specifications detaillees.",
+        "zh-CN": "我已附上详细规格说明。",
+        "de": "Ich habe die detaillierten Spezifikationen beigefügt."
+      },
+      "explanations": {
+        "zh-TW": "說明附件內容",
+        "en": "Mentioning that specifications are attached.",
+        "ja": "仕様書が添付されていることを伝える。",
+        "ko": "사양서가 첨부되었음을 알림.",
+        "es": "Mencionando que las especificaciones estan adjuntas.",
+        "fr": "Mentionner que les specifications sont jointes.",
+        "zh-CN": "说明附件内容",
+        "de": "Erwähnung, dass Spezifikationen beigefügt sind."
+      }
+    }
+  ],
+  "it-2": [
+    {
+      "id": "it-2-01-1",
+      "translations": {
+        "zh-TW": "你能解釋這個功能怎麼運作嗎？",
+        "en": "Could you explain how this feature works?",
+        "ja": "この機能の使い方を教えていただけますか？",
+        "ko": "이 기능이 어떻게 작동하는지 알려주시겠어요?",
+        "es": "Podria explicarme como funciona esta caracteristica?",
+        "fr": "Pourriez-vous m'expliquer comment fonctionne cette fonction?",
+        "zh-CN": "你能解释这个功能怎么运作吗？",
+        "de": "Könnten Sie erklären, wie diese Funktion funktioniert?"
+      },
+      "explanations": {
+        "zh-TW": "詢問軟體功能的標準用語",
+        "en": "Asking for explanation of a feature.",
+        "ja": "機能の説明を求める。",
+        "ko": "기능 설명 요청.",
+        "es": "Pidiendo explicacion de una caracteristica.",
+        "fr": "Demander une explication sur une fonction.",
+        "zh-CN": "询问软件功能的标准用语",
+        "de": "Um Erklärung einer Funktion bitten."
+      }
+    },
+    {
+      "id": "it-2-01-2",
+      "translations": {
+        "zh-TW": "我在哪裡可以找到...的設定？",
+        "en": "Where can I find the settings for...?",
+        "ja": "...の設定はどこで見つけることができますか？",
+        "ko": "...의 설정은 어디서 찾을 수 있나요?",
+        "es": "Donde puedo encontrar la configuracion de...?",
+        "fr": "Ou puis-je trouver les parametres pour...?",
+        "zh-CN": "我在哪里可以找到...的设置？",
+        "de": "Wo kann ich die Einstellungen für ... finden?"
+      },
+      "explanations": {
+        "zh-TW": "詢問設定位置",
+        "en": "Asking where to find specific settings.",
+        "ja": "特定の設定を見つける場所を尋ねる。",
+        "ko": "특정 설정의 위치를 묻는 것.",
+        "es": "Preguntando donde encontrar una configuracion especifica.",
+        "fr": "Demander ou trouver des parametres specifiques.",
+        "zh-CN": "询问设置位置",
+        "de": "Fragen, wo bestimmte Einstellungen zu finden sind."
+      }
+    },
+    {
+      "id": "it-2-01-3",
+      "translations": {
+        "zh-TW": "有辦法自訂...嗎？",
+        "en": "Is there a way to customize...?",
+        "ja": "...をカスタマイズする方法はありますか？",
+        "ko": "...을 커스터마이징하는 방법이 있나요?",
+        "es": "Hay alguna forma de personalizar...?",
+        "fr": "Y a-t-il un moyen de personnaliser...?",
+        "zh-CN": "有办法自订...吗？",
+        "de": "Gibt es eine Möglichkeit, ... anzupassen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問客製化選項",
+        "en": "Asking about customization options.",
+        "ja": "カスタマイズオプションについて尋ねる。",
+        "ko": "커스터마이제이션 옵션에 대해 묻는 것.",
+        "es": "Preguntando sobre opciones de personalizacion.",
+        "fr": "Demander des options de personnalisation.",
+        "zh-CN": "询问客制化选项",
+        "de": "Fragen zu Anpassungsoptionen."
+      }
+    },
+    {
+      "id": "it-2-01-4",
+      "translations": {
+        "zh-TW": "系統需求是什麼？",
+        "en": "What are the system requirements?",
+        "ja": "システム要件は何ですか？",
+        "ko": "시스템 요구사항은 무엇인가요?",
+        "es": "Cuales son los requisitos del sistema?",
+        "fr": "Quels sont les exigences du systeme?",
+        "zh-CN": "系统需求是什么？",
+        "de": "Was sind die Systemanforderungen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問系統需求",
+        "en": "Asking about system requirements.",
+        "ja": "システム要件について尋ねる。",
+        "ko": "시스템 요구사항에 대해 묻는 것.",
+        "es": "Preguntando sobre los requisitos del sistema.",
+        "fr": "Demander les exigences du systeme.",
+        "zh-CN": "询问系统需求",
+        "de": "Fragen zu Systemanforderungen."
+      }
+    },
+    {
+      "id": "it-2-01-5",
+      "translations": {
+        "zh-TW": "這能與...整合嗎？",
+        "en": "Does this integrate with...?",
+        "ja": "これは...と連携できますか？",
+        "ko": "이것은 ...과 연동되나요?",
+        "es": "Se integra esto con...?",
+        "fr": "Cela s'integre-t-il avec...?",
+        "zh-CN": "这能与...集成吗？",
+        "de": "Integriert sich das mit ...?"
+      },
+      "explanations": {
+        "zh-TW": "詢問整合功能",
+        "en": "Asking about integration capabilities.",
+        "ja": "連携機能について尋ねる。",
+        "ko": "연동 기능에 대해 묻는 것.",
+        "es": "Preguntando sobre capacidades de integracion.",
+        "fr": "Demander les capacites d'integration.",
+        "zh-CN": "询问集成功能",
+        "de": "Fragen zu Integrationsfähigkeiten."
+      }
+    }
+  ],
+  "it-3": [
+    {
+      "id": "it-3-01-1",
+      "translations": {
+        "zh-TW": "我寫信向您報告專案進度。",
+        "en": "I am writing to update you on the project status.",
+        "ja": "プロジェクトの進捗をご報告いたします。",
+        "ko": "프로젝트 현황을 업데이트해 드립니다.",
+        "es": "Le escribo para actualizarle sobre el estado del proyecto.",
+        "fr": "Je vous ecris pour vous informer de l'etat du projet.",
+        "zh-CN": "我写信向您报告项目进度。",
+        "de": "Ich schreibe Ihnen, um Sie über den Projektstatus zu aktualisieren."
+      },
+      "explanations": {
+        "zh-TW": "專案進度報告的開場白",
+        "en": "Opening a project status update.",
+        "ja": "プロジェクト進捗報告の冒頭。",
+        "ko": "프로젝트 현황 업데이트 시작.",
+        "es": "Inicio de actualizacion del estado del proyecto.",
+        "fr": "Introduction d'une mise a jour du projet.",
+        "zh-CN": "项目进度报告的开场白",
+        "de": "Eröffnung eines Projektstatus-Updates."
+      }
+    },
+    {
+      "id": "it-3-01-2",
+      "translations": {
+        "zh-TW": "我們已完成第一階段。",
+        "en": "We have completed the first phase.",
+        "ja": "第一フェーズを完了いたしました。",
+        "ko": "첫 번째 단계를 완료하였습니다.",
+        "es": "Hemos completado la primera fase.",
+        "fr": "Nous avons acheve la premiere phase.",
+        "zh-CN": "我们已完成第一阶段。",
+        "de": "Wir haben die erste Phase abgeschlossen."
+      },
+      "explanations": {
+        "zh-TW": "說明完成進度",
+        "en": "Announcing completion of a phase.",
+        "ja": "フェーズ完了の報告。",
+        "ko": "단계 완료 알림.",
+        "es": "Anunciando la finalizacion de una fase.",
+        "fr": "Annoncer l'achevement d'une phase.",
+        "zh-CN": "说明完成进度",
+        "de": "Bekanntgabe des Abschlusses einer Phase."
+      }
+    },
+    {
+      "id": "it-3-01-3",
+      "translations": {
+        "zh-TW": "我們在...遇到阻礙。",
+        "en": "We encountered a blocker with...",
+        "ja": "...に関する障壁に出くわしました。",
+        "ko": "...와 관련된 장애물을 마주쳤습니다.",
+        "es": "Encontramos un obstaculo con...",
+        "fr": "Nous avons rencontre un obstacle avec...",
+        "zh-CN": "我们在...遇到阻碍。",
+        "de": "Wir sind auf ein Hindernis gestoßen bei ..."
+      },
+      "explanations": {
+        "zh-TW": "說明遇到的問題",
+        "en": "Reporting an issue or obstacle.",
+        "ja": "問題や障壁の報告。",
+        "ko": "문제나 장애물 보고.",
+        "es": "Reportando un problema u obstaculo.",
+        "fr": "Signaler un probleme ou un obstacle.",
+        "zh-CN": "说明遇到的问题",
+        "de": "Berichterstattung über ein Problem oder Hindernis."
+      }
+    },
+    {
+      "id": "it-3-01-4",
+      "translations": {
+        "zh-TW": "預計完成日期是...",
+        "en": "The estimated completion date is...",
+        "ja": "予定完了日は...です。",
+        "ko": "예상 완료일은 ...입니다.",
+        "es": "La fecha estimada de finalizacion es...",
+        "fr": "La date estimee d'achevement est...",
+        "zh-CN": "预计完成日期是...",
+        "de": "Das voraussichtliche Fertigstellungsdatum ist ..."
+      },
+      "explanations": {
+        "zh-TW": "說明預計時程",
+        "en": "Providing an estimated completion date.",
+        "ja": "予定完了日を示す。",
+        "ko": "예상 완료일 제공.",
+        "es": "Proporcionando una fecha estimada de finalizacion.",
+        "fr": " Fournir une date d'achevement estimee.",
+        "zh-CN": "说明预计时程",
+        "de": "Angabe eines voraussichtlichen Fertigstellungsdatums."
+      }
+    },
+    {
+      "id": "it-3-01-5",
+      "translations": {
+        "zh-TW": "我會提供詳細報告。",
+        "en": "I will follow up with a detailed report.",
+        "ja": "詳細なレポートを別途ご報告いたします。",
+        "ko": "상세 보고서를 보내드리겠습니다.",
+        "es": "Les dare un seguimiento con un informe detallado.",
+        "fr": "Je ferai un suivi avec un rapport detaille.",
+        "zh-CN": "我会提供详细报告。",
+        "de": "Ich werde mit einem detaillierten Bericht nachfolgen."
+      },
+      "explanations": {
+        "zh-TW": "結尾承諾",
+        "en": "Promising to send a detailed report later.",
+        "ja": "後日詳細レポートを送ることへの約束。",
+        "ko": "추후 상세 보고서를 보내겠다는 약속.",
+        "es": "Prometiendo enviar un informe detallado.",
+        "fr": "Promettre un rapport detaille ulterieur.",
+        "zh-CN": "结尾承诺",
+        "de": "Versprechen, später einen detaillierten Bericht zu senden."
+      }
+    }
+  ],
+  "it-4": [
+    {
+      "id": "it-4-01-1",
+      "translations": {
+        "zh-TW": "我們來討論新功能需求。",
+        "en": "Let us discuss the new feature requirements.",
+        "ja": "新しい機能要件について議論しましょう。",
+        "ko": "새로운 기능 요구사항에 대해 논의합시다.",
+        "es": "Discutamos los nuevos requisitos de caracteristicas.",
+        "fr": "Discutons des nouvelles exigences de fonction.",
+        "zh-CN": "我们来讨论新功能需求。",
+        "de": "Lassen Sie uns die neuen Funktionanforderungen besprechen."
+      },
+      "explanations": {
+        "zh-TW": "開始討論的開場白",
+        "en": "Initiating a discussion about feature requirements.",
+        "ja": "機能要件についての議論を開始する。",
+        "ko": "기능 요구사항에 대한 논의 시작.",
+        "es": "Iniciando una discusion sobre requisitos de caracteristicas.",
+        "fr": "Initier une discussion sur les exigences de fonction.",
+        "zh-CN": "开始讨论的开场白",
+        "de": "Einleitung einer Diskussion über Funktionanforderungen."
+      }
+    },
+    {
+      "id": "it-4-01-2",
+      "translations": {
+        "zh-TW": "這個衝刺週期的優先事項是什麼？",
+        "en": "What are the priorities for this sprint?",
+        "ja": "今スプリントの優先順位は何ですか？",
+        "ko": "이번 스프린트의 우선순위는 무엇인가요?",
+        "es": "Cuales son las prioridades para este sprint?",
+        "fr": "Quelles sont les priorites de ce sprint?",
+        "zh-CN": "这个冲刺周期的优先事项是什么？",
+        "de": "Was sind die Prioritäten für diesen Sprint?"
+      },
+      "explanations": {
+        "zh-TW": "詢問優先順序",
+        "en": "Asking about sprint priorities.",
+        "ja": "スプリントの優先順位について尋ねる。",
+        "ko": "스프린트 우선순위에 대해 묻는 것.",
+        "es": "Preguntando sobre las prioridades del sprint.",
+        "fr": "Demander les priorites du sprint.",
+        "zh-CN": "询问优先级",
+        "de": "Fragen zu Sprint-Prioritäten."
+      }
+    },
+    {
+      "id": "it-4-01-3",
+      "translations": {
+        "zh-TW": "我們需要重構...的程式碼。",
+        "en": "We need to refactor the code for...",
+        "ja": "...のコードをリファクタリングする必要があります。",
+        "ko": "...의 코드를 리팩토링해야 합니다.",
+        "es": "Necesitamos refactorizar el codigo para...",
+        "fr": "Nous devons refactoriser le code pour...",
+        "zh-CN": "我们需要重构...的进程码。",
+        "de": "Wir müssen den Code für ... refaktorieren."
+      },
+      "explanations": {
+        "zh-TW": "提出技術建議",
+        "en": "Stating the need to refactor code.",
+        "ja": "コードリファクタリングの必要性を述べる。",
+        "ko": "코드 리팩토링 필요성 설명.",
+        "es": "Afirmando la necesidad de refactorizar el codigo.",
+        "fr": "Affirmer la necessite de refactoriser le code.",
+        "zh-CN": "提出技术建议",
+        "de": "Feststellung der Notwendigkeit, Code zu refaktorieren."
+      }
+    },
+    {
+      "id": "it-4-01-4",
+      "translations": {
+        "zh-TW": "此功能的截止日期是...",
+        "en": "The deadline for this feature is...",
+        "ja": "この機能の締め切りは...です。",
+        "ko": "이 기능의 마감일은 ...입니다.",
+        "es": "La fecha limite para esta caracteristica es...",
+        "fr": "La date limite pour cette fonction est...",
+        "zh-CN": "此功能的截止日期是...",
+        "de": "Die Deadline für diese Funktion ist ..."
+      },
+      "explanations": {
+        "zh-TW": "說明時程",
+        "en": "Stating a feature deadline.",
+        "ja": "機能の締め切りを述べる。",
+        "ko": "기능 마감일 알림.",
+        "es": "Indicando la fecha limite de una caracteristica.",
+        "fr": "Indiquer la date limite dune fonction.",
+        "zh-CN": "说明时程",
+        "de": "Angabe einer Funktion-Deadline."
+      }
+    },
+    {
+      "id": "it-4-01-5",
+      "translations": {
+        "zh-TW": "我建議我們一起配對編程。",
+        "en": "I suggest we pair program on this.",
+        "ja": "これについてペアプログラミングを提案します。",
+        "ko": "이것에 대해 페어 프로그래밍을 제안합니다.",
+        "es": "Sugiero que programemos en par.",
+        "fr": "Je suggere que nous programmions en binome.",
+        "zh-CN": "我建议我们一起配对编程。",
+        "de": "Ich schlage vor, dass wir Pair Programming nutzen."
+      },
+      "explanations": {
+        "zh-TW": "提議協作方式",
+        "en": "Suggesting collaborative programming.",
+        "ja": "ペアプログラミングを提案する。",
+        "ko": "페어 프로그래밍 제안.",
+        "es": "Sugiriendo programacion en par.",
+        "fr": "Suggerer la programmation en binome.",
+        "zh-CN": "提议协作方式",
+        "de": "Vorschlag für kollaboratives Programmieren."
+      }
+    }
+  ],
+  "it-5": [
+    {
+      "id": "it-5-01-1",
+      "translations": {
+        "zh-TW": "大家能聽清楚嗎？",
+        "en": "Can everyone hear me clearly?",
+        "ja": "皆様、聞こえていますか？",
+        "ko": "여러분 다 들리시나요?",
+        "es": "Me pueden escuchar claramente?",
+        "fr": "M'entendez-vous clairement?",
+        "zh-CN": "大家能听清楚吗？",
+        "de": "Kann mich jeder deutlich hören?"
+      },
+      "explanations": {
+        "zh-TW": "視訊會議開場確認",
+        "en": "Checking audio clarity in a meeting.",
+        "ja": "会議中の音声確認。",
+        "ko": "미팅 중 음성 확인.",
+        "es": "Verificando la claridad del audio en una reunion.",
+        "fr": "Verifier la clarte audio en reunion.",
+        "zh-CN": "视讯会议开场确认",
+        "de": "Überprüfung der Tonqualität in einer Besprechung."
+      }
+    },
+    {
+      "id": "it-5-01-2",
+      "translations": {
+        "zh-TW": "讓我分享螢幕。",
+        "en": "Let me share my screen.",
+        "ja": "画面を共有します。",
+        "ko": "화면을 공유하겠습니다.",
+        "es": "Permitame compartir mi pantalla.",
+        "fr": "Permettez-moi de partager mon ecran.",
+        "zh-CN": "让我分享屏幕。",
+        "de": "Lassen Sie mich meinen Bildschirm teilen."
+      },
+      "explanations": {
+        "zh-TW": "分享螢幕的標準用語",
+        "en": "Announcing screen sharing.",
+        "ja": "画面共有の開始を宣言する。",
+        "ko": "화면 공유 시작 알림.",
+        "es": "Anunciando compartir pantalla.",
+        "fr": "Annoncer le partage d'ecran.",
+        "zh-CN": "分享屏幕的标准用语",
+        "de": "Ankündigung des Bildschirmteilens."
+      }
+    },
+    {
+      "id": "it-5-01-3",
+      "translations": {
+        "zh-TW": "能請你再說一次嗎？",
+        "en": "Could you repeat that, please?",
+        "ja": "もう一度言っていただけますか？",
+        "ko": "다시 한번 말씀해 주시겠어요?",
+        "es": "Podria repetir eso, por favor?",
+        "fr": "Pourriez-vous repeter, s'il vous plait?",
+        "zh-CN": "能请你再说一次吗？",
+        "de": "Könnten Sie das bitte wiederholen?"
+      },
+      "explanations": {
+        "zh-TW": "請求重複的禮貌用語",
+        "en": "Asking for repetition politely.",
+        "ja": "丁重に繰り返しの依頼をする。",
+        "ko": "공손하게 반복 요청.",
+        "es": "Pidiendo repeticion educadamente.",
+        "fr": "Demander une repetition poliment.",
+        "zh-CN": "请求重复的礼貌用语",
+        "de": "Höfliche Bitte um Wiederholung."
+      }
+    },
+    {
+      "id": "it-5-01-4",
+      "translations": {
+        "zh-TW": "我們遇到連線問題。",
+        "en": "We are experiencing some connection issues.",
+        "ja": "接続の問題が発生しています。",
+        "ko": "연결 문제가 발생하고 있습니다.",
+        "es": "Estamos experimentando algunos problemas de conexion.",
+        "fr": "Nous rencontrons des problemes de connexion.",
+        "zh-CN": "我们遇到连接问题。",
+        "de": "Wir haben einige Verbindungsprobleme."
+      },
+      "explanations": {
+        "zh-TW": "說明技術問題",
+        "en": "Reporting technical connection problems.",
+        "ja": "接続技術問題を報告する。",
+        "ko": "연결 기술 문제 보고.",
+        "es": "Reportando problemas tecnicos de conexion.",
+        "fr": "Signaler des problemes techniques de connexion.",
+        "zh-CN": "说明技术问题",
+        "de": "Berichterstattung über technische Verbindungsprobleme."
+      }
+    },
+    {
+      "id": "it-5-01-5",
+      "translations": {
+        "zh-TW": "我們來安排後續會議。",
+        "en": "Let us schedule a follow-up meeting.",
+        "ja": "フォローアップミーティングをスケジュールしましょう。",
+        "ko": "후속 미팅을 예약합시다.",
+        "es": "Programemos una reunion de seguimiento.",
+        "fr": "Planifions une reunion de suivi.",
+        "zh-CN": "我们来安排后续会议。",
+        "de": "Lassen Sie uns ein Follow-up-Meeting vereinbaren."
+      },
+      "explanations": {
+        "zh-TW": "安排下一步的標準用語",
+        "en": "Proposing a follow-up meeting.",
+        "ja": "フォローアップミーティングを提案する。",
+        "ko": "후속 미팅 제안.",
+        "es": "Proponiendo una reunion de seguimiento.",
+        "fr": "Proposer une reunion de suivi.",
+        "zh-CN": "安排下一步的标准用语",
+        "de": "Vorschlag für ein Follow-up-Meeting."
+      }
+    }
+  ],
+  "it-6": [
+    {
+      "id": "it-6-01-1",
+      "translations": {
+        "zh-TW": "我們需要設計可擴展的架構。",
+        "en": "We need to design a scalable architecture.",
+        "ja": "スケーラブルなアーキテクチャを設計する必要があります。",
+        "ko": "확장 가능한 아키텍처를 설계해야 합니다.",
+        "es": "Necesitamos diseñar una arquitectura escalable.",
+        "fr": "Nous devons concevoir une architecture evolutive.",
+        "zh-CN": "我们需要设计可扩展的架构。",
+        "de": "Wir müssen eine skalierbare Architektur entwerfen."
+      },
+      "explanations": {
+        "zh-TW": "提出架構設計方向",
+        "en": "Discussing scalable system architecture.",
+        "ja": "スケーラブルなシステムアーキテクチャの議論。",
+        "ko": "확장 가능한 시스템 아키텍처 논의.",
+        "es": "Discutiendo arquitectura de sistema escalable.",
+        "fr": "Discuter de larchitecture systeme evolutive.",
+        "zh-CN": "提出架构设计方向",
+        "de": "Besprechung einer skalierbaren Systemarchitektur."
+      }
+    },
+    {
+      "id": "it-6-01-2",
+      "translations": {
+        "zh-TW": "現有的安全措施是什麼？",
+        "en": "What security measures are in place?",
+        "ja": "どのようなセキュリティ対策が施されていますか？",
+        "ko": "어떤 보안 조치가 마련되어 있나요?",
+        "es": "Que medidas de seguridad estan implementadas?",
+        "fr": "Quelles mesures de securite sont en place?",
+        "zh-CN": "现有的安全措施是什么？",
+        "de": "Welche Sicherheitsmaßnahmen sind vorhanden?"
+      },
+      "explanations": {
+        "zh-TW": "詢問安全機制",
+        "en": "Asking about existing security measures.",
+        "ja": "既存のセキュリティ対策について尋ねる。",
+        "ko": "기존 보안 조치에 대해 묻는 것.",
+        "es": "Preguntando sobre las medidas de seguridad existentes.",
+        "fr": "Demander les mesures de securite existantes.",
+        "zh-CN": "询问安全机制",
+        "de": "Fragen zu vorhandenen Sicherheitsmaßnahmen."
+      }
+    },
+    {
+      "id": "it-6-01-3",
+      "translations": {
+        "zh-TW": "我們應該為...實作加密。",
+        "en": "We should implement encryption for...",
+        "ja": "...のために暗号化を実装すべきです。",
+        "ko": "...을 위해 암호화를 구현해야 합니다.",
+        "es": "Deberiamos implementar cifrado para...",
+        "fr": "Nous devrions implementer le chiffrement pour...",
+        "zh-CN": "我们应该为...实作加密。",
+        "de": "Wir sollten Verschlüsselung für ... implementieren."
+      },
+      "explanations": {
+        "zh-TW": "提出安全建議",
+        "en": "Recommending encryption implementation.",
+        "ja": "暗号化実装の推奨。",
+        "ko": "암호화 구현 권장.",
+        "es": "Recomendando la implementacion de cifrado.",
+        "fr": "Recommander la mise en oeuvre du chiffrement.",
+        "zh-CN": "提出安全建议",
+        "de": "Empfehlung zur Implementierung von Verschlüsselung."
+      }
+    },
+    {
+      "id": "it-6-01-4",
+      "translations": {
+        "zh-TW": "系統需要為...做備援。",
+        "en": "The system needs redundancy for...",
+        "ja": "システムには...のための冗長性が必要です。",
+        "ko": "시스템에는 ...을 위한 중복성이 필요합니다.",
+        "es": "El sistema necesita redundancia para...",
+        "fr": "Le systeme a besoin de redondance pour...",
+        "zh-CN": "系统需要为...做备援。",
+        "de": "Das System benötigt Redundanz für ..."
+      },
+      "explanations": {
+        "zh-TW": "說明備援需求",
+        "en": "Stating the need for system redundancy.",
+        "ja": "システムの冗長性の必要性を述べる。",
+        "ko": "시스템 중복성 필요성 설명.",
+        "es": "Afirmando la necesidad de redundancia del sistema.",
+        "fr": "Affirmer la necessite de redondance du systeme.",
+        "zh-CN": "说明备援需求",
+        "de": "Feststellung des Bedarfs an Systemredundanz."
+      }
+    },
+    {
+      "id": "it-6-01-5",
+      "translations": {
+        "zh-TW": "我們來進行安全稽核。",
+        "en": "Let us conduct a security audit.",
+        "ja": "セキュリティ監査を行いましょう。",
+        "ko": "보안 감사를 실시합시다.",
+        "es": "Realicemos una auditoria de seguridad.",
+        "fr": "Effectuons un audit de securite.",
+        "zh-CN": "我们来进行安全审核。",
+        "de": "Lassen Sie uns ein Sicherheitsaudit durchführen."
+      },
+      "explanations": {
+        "zh-TW": "提議安全檢查",
+        "en": "Proposing a security audit.",
+        "ja": "セキュリティ監査の提案。",
+        "ko": "보안 감사 제안.",
+        "es": "Proponiendo una auditoria de seguridad.",
+        "fr": "Proposer un audit de securite.",
+        "zh-CN": "提议安全检查",
+        "de": "Vorschlag für ein Sicherheitsaudit."
+      }
+    }
+  ],
+  "sales-1": [
+    {
+      "id": "sales-1-01-1",
+      "translations": {
+        "zh-TW": "感謝您對我們產品的興趣。",
+        "en": "Thank you for your interest in our product.",
+        "ja": "当店製品にお 관심을 가지고いただき、ありがとうございます。",
+        "ko": "저희 제품에 관심을 가져주셔서 감사합니다.",
+        "es": "Gracias por su interes en nuestro producto.",
+        "fr": "Merci de votre interet pour notre produit.",
+        "zh-CN": "感谢您对我们产品的兴趣。",
+        "de": "Vielen Dank für Ihr Interesse an unserem Produkt."
+      },
+      "explanations": {
+        "zh-TW": "產品介紹的標準開場白",
+        "en": "Expressing gratitude for customer interest.",
+        "ja": "顧客興味への感謝表示。",
+        "ko": "고객 관심에 대한 감사 표현.",
+        "es": "Expresando gratitud por el interes del cliente.",
+        "fr": "Exprimer sa gratitude pour l'interet du client.",
+        "zh-CN": "产品介绍的标准开场白",
+        "de": "Ausdruck von Dankbarkeit für Kundeninteresse."
+      }
+    },
+    {
+      "id": "sales-1-01-2",
+      "translations": {
+        "zh-TW": "讓我簡單介紹我們提供的產品。",
+        "en": "Let me briefly introduce what we offer.",
+        "ja": "私達の提供内容について簡単にご紹介いたします。",
+        "ko": "저희가 제공하는 것에 대해 간단히 소개하겠습니다.",
+        "es": "Permitame presentarle brevemente lo que ofrecemos.",
+        "fr": "Permettez-moi de vous presenter brievement ce que nous proposons.",
+        "zh-CN": "让我简单介绍我们提供的产品。",
+        "de": "Erlauben Sie mir, kurz vorzustellen, was wir anbieten."
+      },
+      "explanations": {
+        "zh-TW": "開始產品介紹的轉場語",
+        "en": "Offering to briefly present products.",
+        "ja": "製品の簡単な紹介を申し出る。",
+        "ko": "제품简要 소개 제안.",
+        "es": "Ofreciendo presentar productos brevemente.",
+        "fr": "Offrir de presenter les produits brievement.",
+        "zh-CN": "开始产品介绍的转场语",
+        "de": "Angebot, Produkte kurz vorzustellen."
+      }
+    },
+    {
+      "id": "sales-1-01-3",
+      "translations": {
+        "zh-TW": "我們的產品專為幫助您...而設計。",
+        "en": "Our product is designed to help you...",
+        "ja": "当店の製品はあなたが...のために設計されています。",
+        "ko": "저희 제품은 여러분이 ...하는 데 도움을 주도록 설계되었습니다.",
+        "es": "Nuestro producto esta disenado para ayudarle a...",
+        "fr": "Notre produit est concu pour vous aider a...",
+        "zh-CN": "我们的产品专为帮助您...而设计。",
+        "de": "Unser Produkt ist darauf ausgelegt, Ihnen zu helfen ..."
+      },
+      "explanations": {
+        "zh-TW": "說明產品目的",
+        "en": "Describing the purpose of the product.",
+        "ja": "製品の目的を説明する。",
+        "ko": "제품의 목적을 설명.",
+        "es": "Describiendo el proposito del producto.",
+        "fr": "Decrire le but du produit.",
+        "zh-CN": "说明产品目的",
+        "de": "Beschreibung des Zwecks des Produkts."
+      }
+    },
+    {
+      "id": "sales-1-01-4",
+      "translations": {
+        "zh-TW": "我們與眾不同之處在於...",
+        "en": "What sets us apart is...",
+        "ja": "当店が他に差別化されている点は...",
+        "ko": "저희를 다르게 만드는 것은 ...입니다.",
+        "es": "Lo que nos diferencia es...",
+        "fr": "Ce qui nous distingue, c'est...",
+        "zh-CN": "我们与众不同之处在于...",
+        "de": "Was uns auszeichnet, ist ..."
+      },
+      "explanations": {
+        "zh-TW": "強調產品獨特性",
+        "en": "Highlighting unique selling points.",
+        "ja": "独自の差別化点を強調する。",
+        "ko": "고유 판매 포인트 강조.",
+        "es": "Destacando puntos de venta unicos.",
+        "fr": "Souligner les points de vente uniques.",
+        "zh-CN": "强调产品独特性",
+        "de": "Hervorhebung einzigartiger Verkaufsargumente."
+      }
+    },
+    {
+      "id": "sales-1-01-5",
+      "translations": {
+        "zh-TW": "您希望我演示嗎？",
+        "en": "Would you like me to demonstrate?",
+        "ja": "デモンストレーションいたしましょうか？",
+        "ko": "데모를 보여드릴까요?",
+        "es": "Le gustaria que le hiciera una demostracion?",
+        "fr": "Voudriez-vous que je vous fasse une demonstration?",
+        "zh-CN": "您希望我演示吗？",
+        "de": "Möchten Sie, dass ich eine Demonstration gebe?"
+      },
+      "explanations": {
+        "zh-TW": "提議展示產品",
+        "en": "Offering a product demonstration.",
+        "ja": "製品デモンストレーションの提案。",
+        "ko": "제품 데모 제안.",
+        "es": "Ofreciendo una demostracion del producto.",
+        "fr": "Offrir une demonstration du produit.",
+        "zh-CN": "提议展示产品",
+        "de": "Angebot einer Produktdemonstration."
+      }
+    }
+  ],
+  "sales-2": [
+    {
+      "id": "sales-2-01-1",
+      "translations": {
+        "zh-TW": "今天是什麼風把您吹來的？",
+        "en": "What brings you here today?",
+        "ja": "本日いらっしゃったきっかけは何ですか？",
+        "ko": "오늘 무엇이 당신을 여기까지 오게 했나요?",
+        "es": "Que le trae por aqui hoy?",
+        "fr": "Qu'est-ce qui vous amene ici aujourd'hui?",
+        "zh-CN": "今天是什么风把您吹来的？",
+        "de": "Was führt Sie heute hierher?"
+      },
+      "explanations": {
+        "zh-TW": "開場詢問客戶需求的禮貌用語",
+        "en": "Asking about the reason for visiting.",
+        "ja": "来訪理由を尋ねる。",
+        "ko": "방문 이유 묻기.",
+        "es": "Preguntando la razon de la visita.",
+        "fr": "Demander la raison de la visite.",
+        "zh-CN": "开场询问客户需求的礼貌用语",
+        "de": "Fragen nach dem Grund des Besuchs."
+      }
+    },
+    {
+      "id": "sales-2-01-2",
+      "translations": {
+        "zh-TW": "您目前面臨哪些挑戰？",
+        "en": "What challenges are you facing?",
+        "ja": "今どのような課題をお持ちですか？",
+        "ko": "현재 어떤 도전에 직면하고 계신가요?",
+        "es": "Que desafios esta enfrentando?",
+        "fr": "Quels defis affrontez-vous?",
+        "zh-CN": "您目前面临哪些挑战？",
+        "de": "Welche Herausforderungen haben Sie?"
+      },
+      "explanations": {
+        "zh-TW": "詢問客戶痛點",
+        "en": "Inquiring about customer challenges.",
+        "ja": "顧客の課題を尋ねる。",
+        "ko": "고객 도전 질문.",
+        "es": "Indagando sobre los desafios del cliente.",
+        "fr": "S'enquirer des defis du client.",
+        "zh-CN": "询问客户痛点",
+        "de": "Erkundigung nach Kundenherausforderungen."
+      }
+    },
+    {
+      "id": "sales-2-01-3",
+      "translations": {
+        "zh-TW": "您本季度的目標是什麼？",
+        "en": "What are your goals for this quarter?",
+        "ja": "今四半期の目標は 무엇ですか？",
+        "ko": "이번 분기의 목표는 무엇인가요?",
+        "es": "Cuales son sus objetivos para este trimestre?",
+        "fr": "Quels sont vos objectifs pour ce trimestre?",
+        "zh-CN": "您本季度的目标是什么？",
+        "de": "Was sind Ihre Ziele für dieses Quartal?"
+      },
+      "explanations": {
+        "zh-TW": "詢問業務目標",
+        "en": "Asking about quarterly goals.",
+        "ja": "四半期目標について尋ねる。",
+        "ko": "분기 목표 질문.",
+        "es": "Preguntando sobre los objetivos trimestrales.",
+        "fr": "Demander les objectifs trimestriels.",
+        "zh-CN": "询问业务目标",
+        "de": "Fragen zu Quartalszielen."
+      }
+    },
+    {
+      "id": "sales-2-01-4",
+      "translations": {
+        "zh-TW": "您目前如何處理...？",
+        "en": "How do you currently handle...?",
+        "ja": "現在...にどのように対応していますか？",
+        "ko": "현재 ...을 어떻게 처리하고 계신가요?",
+        "es": "Como maneja actualmente...?",
+        "fr": "Comment geerez-vous actuellement...?",
+        "zh-CN": "您目前如何处理...？",
+        "de": "Wie gehen Sie derzeit mit ... um?"
+      },
+      "explanations": {
+        "zh-TW": "了解現狀流程",
+        "en": "Asking how they currently manage something.",
+        "ja": "現在の対応方法について尋ねる。",
+        "ko": "현재 처리 방법 질문.",
+        "es": "Preguntando como manejan actualmente algo.",
+        "fr": "Demander comment ils gerent actuellement quelque chose.",
+        "zh-CN": "了解现状流程",
+        "de": "Fragen, wie sie derzeit etwas verwalten."
+      }
+    },
+    {
+      "id": "sales-2-01-5",
+      "translations": {
+        "zh-TW": "此專案的時間表是什麼？",
+        "en": "What is your timeline for this project?",
+        "ja": "このプロジェクトのスケジュールはどのようにですか？",
+        "ko": "이 프로젝트의 일정是什么时候?",
+        "es": "Cual es su cronograma para este proyecto?",
+        "fr": "Quel est votre calendrier pour ce projet?",
+        "zh-CN": "此项目的时间表是什么？",
+        "de": "Wie ist Ihr Zeitplan für dieses Projekt?"
+      },
+      "explanations": {
+        "zh-TW": "詢問專案時程",
+        "en": "Asking about project timeline.",
+        "ja": "プロジェクトスケジュールについて尋ねる。",
+        "ko": "프로젝트 일정 질문.",
+        "es": "Preguntando sobre el cronograma del proyecto.",
+        "fr": "Demander le calendrier du projet.",
+        "zh-CN": "询问项目时程",
+        "de": "Fragen zum Projektzeitplan."
+      }
+    }
+  ],
+  "sales-3": [
+    {
+      "id": "sales-3-01-1",
+      "translations": {
+        "zh-TW": "我理解您對價格的疑慮。",
+        "en": "I understand your concern about the price.",
+        "ja": "価格についての不安を承ります。",
+        "ko": "가격에 대한 우려를 이해합니다.",
+        "es": "Entiendo su inquietud sobre el precio.",
+        "fr": "Je comprends votre preoccupation concernant le prix.",
+        "zh-CN": "我理解您对价格的疑虑。",
+        "de": "Ich verstehe Ihre Bedenken hinsichtlich des Preises."
+      },
+      "explanations": {
+        "zh-TW": "認同客戶感受的開場白",
+        "en": "Acknowledging price concerns empathetically.",
+        "ja": "価格への不安に共感を示す。",
+        "ko": "가격 우려에 공감 표시.",
+        "es": "Reconociendo preocupaciones sobre el precio con empatia.",
+        "fr": "Reconnaaitre les preoccupations sur le prix avec empathie.",
+        "zh-CN": "认同客户感受的开场白",
+        "de": "Empathisches Anerkennen von Preisbedenken."
+      }
+    },
+    {
+      "id": "sales-3-01-2",
+      "translations": {
+        "zh-TW": "讓我說明您將獲得的價值。",
+        "en": "Let me explain the value you will receive.",
+        "ja": "お届けする価値についてご説明します。",
+        "ko": "받으시게 될 가치에 대해 설명하겠습니다.",
+        "es": "Permitame explicarle el valor que recibira.",
+        "fr": "Permettez-moi de vous expliquer la valeur que vous recevrez.",
+        "zh-CN": "让我说明您将获得的价值。",
+        "de": "Erlauben Sie mir, Ihnen den Wert zu erklären, den Sie erhalten werden."
+      },
+      "explanations": {
+        "zh-TW": "轉向價值說明",
+        "en": "Explaining the value proposition.",
+        "ja": "価値提案を説明する。",
+        "ko": "가치 제안을 설명.",
+        "es": "Explicando la propuesta de valor.",
+        "fr": "Expliquer la proposition de valeur.",
+        "zh-CN": "转向价值说明",
+        "de": "Erklärung des Wertversprechens."
+      }
+    },
+    {
+      "id": "sales-3-01-3",
+      "translations": {
+        "zh-TW": "如果您比較功能...",
+        "en": "If you compare the features...",
+        "ja": "機能を比較してみると...",
+        "ko": "기능을 비교해보시면...",
+        "es": "Si compara las caracteristicas...",
+        "fr": "Si vous comparez les caracteristiques...",
+        "zh-CN": "如果您比较功能...",
+        "de": "Wenn Sie die Funktionen vergleichen ..."
+      },
+      "explanations": {
+        "zh-TW": "開始功能比較",
+        "en": "Comparing features to justify price.",
+        "ja": "価格正当化のための機能比較。",
+        "ko": "가격 정당화를 위한 기능 비교.",
+        "es": "Comparando caracteristicas para justificar el precio.",
+        "fr": "Comparer les caracteristiques pour justifier le prix.",
+        "zh-CN": "开始功能比较",
+        "de": "Vergleich von Funktionen zur Preisrechtfertigung."
+      }
+    },
+    {
+      "id": "sales-3-01-4",
+      "translations": {
+        "zh-TW": "我們可以為...提供折扣。",
+        "en": "We can offer a discount for...",
+        "ja": "...には折扣を提供しています。",
+        "ko": "...에 대해 할인을 제공할 수 있습니다.",
+        "es": "Podemos ofrecer un descuento por...",
+        "fr": "Nous pouvons offrir une remise pour...",
+        "zh-CN": "我们可以为...提供折扣。",
+        "de": "Wir könnten einen Rabatt für ... anbieten."
+      },
+      "explanations": {
+        "zh-TW": "提出折扣方案",
+        "en": "Offering a discount conditionally.",
+        "ja": "条件付き折扣の提案。",
+        "ko": "조건부 할인 제안.",
+        "es": "Ofreciendo un descuento condicionalmente.",
+        "fr": "Offrir une remise conditionnellement.",
+        "zh-CN": "提出折扣方案",
+        "de": "Bedingtes Angebot eines Rabatts."
+      }
+    },
+    {
+      "id": "sales-3-01-5",
+      "translations": {
+        "zh-TW": "分期付款方案有幫助嗎？",
+        "en": "Would a payment plan help?",
+        "ja": "お支払いプランはいかがですか？",
+        "ko": "결제 계획이 도움이 될까요?",
+        "es": "Le ayudaria un plan de pagos?",
+        "fr": "Un plan de paiement vous aiderait-il?",
+        "zh-CN": "分期付款方案有帮助吗？",
+        "de": "Würde ein Zahlungsplan helfen?"
+      },
+      "explanations": {
+        "zh-TW": "提議替代方案",
+        "en": "Suggesting a payment plan as an alternative.",
+        "ja": "代替案としての支払いプラン提案。",
+        "ko": "대안으로서의 결제 계획 제안.",
+        "es": "Sugiriendo un plan de pagos como alternativa.",
+        "fr": "Suggerer un plan de paiement comme alternative.",
+        "zh-CN": "提议替代方案",
+        "de": "Vorschlag eines Zahlungsplans als Alternative."
+      }
+    }
+  ],
+  "sales-4": [
+    {
+      "id": "sales-4-01-1",
+      "translations": {
+        "zh-TW": "讓我向您展示這是如何運作的。",
+        "en": "Let me show you how this works.",
+        "ja": "これがどのように動くかお見せします。",
+        "ko": "이것이 어떻게 작동하는지 보여드리겠습니다.",
+        "es": "Permitame mostrarle como funciona esto.",
+        "fr": "Permettez-moi de vous montrer comment cela fonctionne.",
+        "zh-CN": "让我向您展示这是如何运作的。",
+        "de": "Lassen Sie mich Ihnen zeigen, wie das funktioniert."
+      },
+      "explanations": {
+        "zh-TW": "開始產品演示的標準用語",
+        "en": "Offering to demonstrate a feature.",
+        "ja": "機能デモンストレーションの提案。",
+        "ko": "기능 시연 제공.",
+        "es": "Ofreciendo demostrar una caracteristica.",
+        "fr": "Offrir de demontrer une fonction.",
+        "zh-CN": "开始产品演示的标准用语",
+        "de": "Angebot, eine Funktion vorzuführen."
+      }
+    },
+    {
+      "id": "sales-4-01-2",
+      "translations": {
+        "zh-TW": "如您在螢幕上所見...",
+        "en": "As you can see on the screen...",
+        "ja": "画面でご覧のとおり...",
+        "ko": "화면에서 보시는 바와 같이...",
+        "es": "Como puede ver en la pantalla...",
+        "fr": "Comme vous pouvez le voir a l'ecran...",
+        "zh-CN": "如您在屏幕上所见...",
+        "de": "Wie Sie auf dem Bildschirm sehen können ..."
+      },
+      "explanations": {
+        "zh-TW": "引導客戶注意力的用語",
+        "en": "Directing attention to the screen.",
+        "ja": "画面への注意を向ける。",
+        "ko": "화면으로 주의 환기.",
+        "es": "Dirigiendo la atencion a la pantalla.",
+        "fr": "Diriger l'attention vers l'ecran.",
+        "zh-CN": "引导客户注意力的用语",
+        "de": "Lenkung der Aufmerksamkeit auf den Bildschirm."
+      }
+    },
+    {
+      "id": "sales-4-01-3",
+      "translations": {
+        "zh-TW": "此功能讓您能夠...",
+        "en": "This feature allows you to...",
+        "ja": "この機能によりあなたは...",
+        "ko": "이 기능을 통해 여러분은 ...할 수 있습니다.",
+        "es": "Esta caracteristica le permite...",
+        "fr": "Cette fonction vous permet de...",
+        "zh-CN": "此功能让您能够...",
+        "de": "Diese Funktion ermöglicht Ihnen ..."
+      },
+      "explanations": {
+        "zh-TW": "說明功能用途",
+        "en": "Explaining what a feature enables.",
+        "ja": "機能でできること説明する。",
+        "ko": "기능으로 할 수 있는 설명.",
+        "es": "Explicando lo que permite una caracteristica.",
+        "fr": "Expliquer ce qu'une fonction permet.",
+        "zh-CN": "说明功能用途",
+        "de": "Erklärung, was eine Funktion ermöglicht."
+      }
+    },
+    {
+      "id": "sales-4-01-4",
+      "translations": {
+        "zh-TW": "您想親自試試看嗎？",
+        "en": "Would you like to try it yourself?",
+        "ja": "ご自身でお試しになりますか？",
+        "ko": "직접 해보시겠어요?",
+        "es": "Le gustaria probarlo usted mismo?",
+        "fr": "Voudriez-vous essayer vous-meme?",
+        "zh-CN": "您想亲自试试看吗？",
+        "de": "Möchten Sie es selbst versuchen?"
+      },
+      "explanations": {
+        "zh-TW": "邀請客戶體驗",
+        "en": "Encouraging hands-on trial.",
+        "ja": "実践体験を促す。",
+        "ko": "직접 시도 격려.",
+        "es": "Animando a probar de primera mano.",
+        "fr": "Encourager l'essai pratique.",
+        "zh-CN": "邀请客户体验",
+        "de": "Ermutigung zu einer praktischen Probe."
+      }
+    },
+    {
+      "id": "sales-4-01-5",
+      "translations": {
+        "zh-TW": "目前有任何問題嗎？",
+        "en": "Do you have any questions so far?",
+        "ja": "今のところご質問はありますか？",
+        "ko": "지금까지 질문 있으신가요?",
+        "es": "Tiene alguna pregunta hasta ahora?",
+        "fr": "Avez-vous des questions jusqu'ici?",
+        "zh-CN": "目前有任何问题吗？",
+        "de": "Haben Sie bisher irgendwelche Fragen?"
+      },
+      "explanations": {
+        "zh-TW": "確認客戶理解狀況",
+        "en": "Checking for understanding.",
+        "ja": "理解確認。",
+        "ko": "이해 확인.",
+        "es": "Verificando la comprension.",
+        "fr": "Verifier la comprehension.",
+        "zh-CN": "确认客户理解状况",
+        "de": "Überprüfung des Verständnisses."
+      }
+    }
+  ],
+  "sales-5": [
+    {
+      "id": "sales-5-01-1",
+      "translations": {
+        "zh-TW": "我們來討論合約條款。",
+        "en": "Let us discuss the contract terms.",
+        "ja": "契約条件について議論しましょう。",
+        "ko": "계약 조건에 대해 논의합시다.",
+        "es": "Discutamos los terminos del contrato.",
+        "fr": "Discutons des conditions du contrat.",
+        "zh-CN": "我们来讨论合约条款。",
+        "de": "Lassen Sie uns die Vertragsbedingungen besprechen."
+      },
+      "explanations": {
+        "zh-TW": "開始談判的開場白",
+        "en": "Initiating contract discussion.",
+        "ja": "契約議論の開始。",
+        "ko": "계약 논의 착수.",
+        "es": "Iniciando la discusion del contrato.",
+        "fr": "Initier la discussion du contrat.",
+        "zh-CN": "开始谈判的开场白",
+        "de": "Einleitung einer Vertragsdiskussion."
+      }
+    },
+    {
+      "id": "sales-5-01-2",
+      "translations": {
+        "zh-TW": "我們需要審查付款條款。",
+        "en": "We need to review the payment terms.",
+        "ja": "お支払い条件を確認する必要があります。",
+        "ko": "결제 조건을 검토해야 합니다.",
+        "es": "Necesitamos revisar los terminos de pago.",
+        "fr": "Nous devons examiner les conditions de paiement.",
+        "zh-CN": "我们需要审查付款条款。",
+        "de": "Wir müssen die Zahlungsbedingungen überprüfen."
+      },
+      "explanations": {
+        "zh-TW": "提出具體條款",
+        "en": "Asking to review payment conditions.",
+        "ja": "支払い条件の見直しを求める。",
+        "ko": "결제 조건 검토 요청.",
+        "es": "Pidiendo revisar las condiciones de pago.",
+        "fr": "Demander a examiner les conditions de paiement.",
+        "zh-CN": "提出具体条款",
+        "de": "Bitte um Überprüfung der Zahlungsbedingungen."
+      }
+    },
+    {
+      "id": "sales-5-01-3",
+      "translations": {
+        "zh-TW": "交付時間表是...",
+        "en": "The delivery timeline is...",
+        "ja": "納期は...です。",
+        "ko": "납품 일정은 ...입니다.",
+        "es": "El cronograma de entrega es...",
+        "fr": "Le calendrier de livraison est...",
+        "zh-CN": "交付时间表是...",
+        "de": "Der Lieferzeitplan ist ..."
+      },
+      "explanations": {
+        "zh-TW": "說明時程安排",
+        "en": "Stating the delivery schedule.",
+        "ja": "納期提示。",
+        "ko": "납품 일정 알림.",
+        "es": "Indicando el cronograma de entrega.",
+        "fr": "Indiquer le calendrier de livraison.",
+        "zh-CN": "说明时程安排",
+        "de": "Angabe des Lieferzeitplans."
+      }
+    },
+    {
+      "id": "sales-5-01-4",
+      "translations": {
+        "zh-TW": "我們可以就...進行協商。",
+        "en": "We can negotiate on...",
+        "ja": "...については交渉できます。",
+        "ko": "...에 대해서는 협상할 수 있습니다.",
+        "es": "Podemos negociar sobre...",
+        "fr": "Nous pouvons negocier sur...",
+        "zh-CN": "我们可以就...进行协商。",
+        "de": "Wir könnten über ... verhandeln."
+      },
+      "explanations": {
+        "zh-TW": "表達協商意願",
+        "en": "Indicating willingness to negotiate.",
+        "ja": "交渉意向を示す。",
+        "ko": "협상 의향 표시.",
+        "es": "Indicando disposicion a negociar.",
+        "fr": "Indiquer lavolonte de negocier.",
+        "zh-CN": "表达协商意愿",
+        "de": "Ausdruck der Bereitschaft zu verhandeln."
+      }
+    },
+    {
+      "id": "sales-5-01-5",
+      "translations": {
+        "zh-TW": "讓我們找到折衷方案。",
+        "en": "Let us find a middle ground.",
+        "ja": "折衷案を見つけましょう。",
+        "ko": "타협점을 찾합시다.",
+        "es": "Encontremos un punto medio.",
+        "fr": "Trouvons un compromis.",
+        "zh-CN": "让我们找到折衷方案。",
+        "de": "Lassen Sie uns einen Mittelweg finden."
+      },
+      "explanations": {
+        "zh-TW": "提議妥協",
+        "en": "Proposing a compromise.",
+        "ja": "妥協案の提案。",
+        "ko": "타협안 제안.",
+        "es": "Proponiendo un compromiso.",
+        "fr": "Proposer un compromis.",
+        "zh-CN": "提议妥协",
+        "de": "Vorschlag für einen Kompromiss."
+      }
+    }
+  ],
+  "sales-6": [
+    {
+      "id": "sales-6-01-1",
+      "translations": {
+        "zh-TW": "我們期待建立長期合作夥伴關係。",
+        "en": "We look forward to a long-term partnership.",
+        "ja": "長期的なパートナーシップを楽しみにしております。",
+        "ko": "장기적 파트너십을 기대합니다.",
+        "es": "Esperamos una asociacion a largo plazo.",
+        "fr": "Nous nous rejouissons d'un partenariat a long terme.",
+        "zh-CN": "我们期待创建长期合作伙伴关系。",
+        "de": "Wir freuen uns auf eine langfristige Partnerschaft."
+      },
+      "explanations": {
+        "zh-TW": "表達合作意願的開場白",
+        "en": "Expressing desire for a lasting relationship.",
+        "ja": "長期的関係への期待表明。",
+        "ko": "지속적 관계 희망 표현.",
+        "es": "Expresando deseo de una relacion duradera.",
+        "fr": "Exprimer le desir d'une relation durable.",
+        "zh-CN": "表达合作意愿的开场白",
+        "de": "Ausdruck des Wunsches nach einer langfristigen Beziehung."
+      }
+    },
+    {
+      "id": "sales-6-01-2",
+      "translations": {
+        "zh-TW": "讓我們探索合作機會。",
+        "en": "Let us explore collaboration opportunities.",
+        "ja": "協業の可能性を探りましょう。",
+        "ko": "협업 기회를 탐색합시다.",
+        "es": "Exploremos oportunidades de colaboracion.",
+        "fr": "Explorons les opportunites de collaboration.",
+        "zh-CN": "让我们探索合作机会。",
+        "de": "Lassen Sie uns Zusammenarbeitsmöglichkeiten erkunden."
+      },
+      "explanations": {
+        "zh-TW": "提出合作討論",
+        "en": "Proposing to explore collaboration.",
+        "ja": "協業探化の提案。",
+        "ko": "협업 탐색 제안.",
+        "es": "Proponiendo explorar colaboracion.",
+        "fr": "Proposer d'explorer la collaboration.",
+        "zh-CN": "提出合作讨论",
+        "de": "Vorschlag zur Erkundung von Zusammenarbeit."
+      }
+    },
+    {
+      "id": "sales-6-01-3",
+      "translations": {
+        "zh-TW": "我們重視您在...的專業。",
+        "en": "We value your expertise in...",
+        "ja": "あなたの...の専門知識を高く評価しています。",
+        "ko": "당신의 ...에 대한 전문 지식을 높이 평가합니다.",
+        "es": "Valoramos su experiencia en...",
+        "fr": "Nous apprcions votre expertise en...",
+        "zh-CN": "我们重视您在...的专业。",
+        "de": "Wir schätzen Ihre Expertise in ..."
+      },
+      "explanations": {
+        "zh-TW": "肯定對方優勢",
+        "en": "Acknowledging the other party's expertise.",
+        "ja": "相手の専門知識を認める。",
+        "ko": "상대방 전문 지식 인정.",
+        "es": "Reconociendo la experiencia de la otra parte.",
+        "fr": "Reconnaeitre l'expertise de l'autre partie.",
+        "zh-CN": "肯定对方优势",
+        "de": "Anerkennung der Expertise der anderen Partei."
+      }
+    },
+    {
+      "id": "sales-6-01-4",
+      "translations": {
+        "zh-TW": "我們如何互相支持？",
+        "en": "How can we support each other?",
+        "ja": "どのようにお互いサポートし合えるでしょうか？",
+        "ko": "어떻게 서로 지원할 수 있을까요?",
+        "es": "Como podemos apoyarnos mutuamente?",
+        "fr": "Comment pouvons-nous nous entraider?",
+        "zh-CN": "我们如何互相支持？",
+        "de": "Wie könnten wir uns gegenseitig unterstützen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問合作方式",
+        "en": "Asking about mutual support.",
+        "ja": "相互サポートについて尋ねる。",
+        "ko": "상호 지원 질문.",
+        "es": "Preguntando sobre apoyo mutuo.",
+        "fr": "Demander le soutien mutuel.",
+        "zh-CN": "询问合作方式",
+        "de": "Fragen zu gegenseitiger Unterstützung."
+      }
+    },
+    {
+      "id": "sales-6-01-5",
+      "translations": {
+        "zh-TW": "讓我們起草合作夥伴協議。",
+        "en": "Let us draft a partnership agreement.",
+        "ja": "パートナーシップ協定の草案を作成しましょう。",
+        "ko": "파트너십 합의서 초안을 작성합시다.",
+        "es": "Redactemos un acuerdo de asociacion.",
+        "fr": "Redigeons un accord de partenariat.",
+        "zh-CN": "让我们起草合作伙伴协议。",
+        "de": "Lassen Sie uns einen Partnerschaftsvertrag entwerfen."
+      },
+      "explanations": {
+        "zh-TW": "提議具體行動",
+        "en": "Proposing to draft a formal agreement.",
+        "ja": "正式合意書の草案作成を提案。",
+        "ko": "정식 합의서 초안 작성 제안.",
+        "es": "Proponiendo redactar un acuerdo formal.",
+        "fr": "Proposer de rediger un accord formel.",
+        "zh-CN": "提议具体行动",
+        "de": "Vorschlag zum Entwurf einer förmlichen Vereinbarung."
+      }
+    }
+  ],
+  "hr-1": [
+    {
+      "id": "hr-1-01-1",
+      "translations": {
+        "zh-TW": "感謝您應徵我們公司。",
+        "en": "Thank you for applying to our company.",
+        "ja": "ご応募いただきありがとうございます。",
+        "ko": "저희 회사에 지원해 주셔서 감사합니다.",
+        "es": "Gracias por solicitar empleo en nuestra empresa.",
+        "fr": "Merci davoir pose votre candidature chez notre entreprise.",
+        "zh-CN": "感谢您应征我们公司。",
+        "de": "Vielen Dank für Ihre Bewerbung bei unserem Unternehmen."
+      },
+      "explanations": {
+        "zh-TW": "面試邀請的開場白",
+        "en": "Acknowledging a job application.",
+        "ja": "応募への感謝表示。",
+        "ko": "지원에 대한 감사.",
+        "es": "Reconociendo una solicitud de empleo.",
+        "fr": "Reconnaeitre une candidature.",
+        "zh-CN": "面试邀请的开场白",
+        "de": "Bestätigung einer Stellenbewerbung."
+      }
+    },
+    {
+      "id": "hr-1-01-2",
+      "translations": {
+        "zh-TW": "我們想安排一場面試。",
+        "en": "We would like to schedule an interview.",
+        "ja": "面接をスケジュールさせていただきたいと存じます。",
+        "ko": "면접 일정을 잡고 싶습니다.",
+        "es": "Nos gustaria programar una entrevista.",
+        "fr": "Nous aimerions planifier un entretien.",
+        "zh-CN": "我们想安排一场面试。",
+        "de": "Wir würden gerne ein Vorstellungsgespräch vereinbaren."
+      },
+      "explanations": {
+        "zh-TW": "提出面試邀請",
+        "en": "Scheduling an interview with the applicant.",
+        "ja": "応募者との面接日程調整。",
+        "ko": "지원자와 면접 일정 조율.",
+        "es": "Programando una entrevista con el solicitante.",
+        "fr": "Planifier un entretien avec le candidat.",
+        "zh-CN": "提出面试邀请",
+        "de": "Vereinbarung eines Vorstellungsgesprächs mit dem Bewerber."
+      }
+    },
+    {
+      "id": "hr-1-01-3",
+      "translations": {
+        "zh-TW": "您在...方便嗎？",
+        "en": "Are you available on...?",
+        "ja": "...はご注意いただけますか？",
+        "ko": "...에 시간 있으신가요?",
+        "es": "Esta disponible el...?",
+        "fr": "Etes-vous disponible le...?",
+        "zh-CN": "您在...方便吗？",
+        "de": "Sind Sie am ... verfügbar?"
+      },
+      "explanations": {
+        "zh-TW": "詢問可行時間",
+        "en": "Asking about interview availability.",
+        "ja": "面接日程の希望を確認。",
+        "ko": "면접 가능 일정 확인.",
+        "es": "Preguntando disponibilidad para la entrevista.",
+        "fr": "Demander la disponibilite pour lentretien.",
+        "zh-CN": "询问可行时间",
+        "de": "Fragen zur Verfügbarkeit für ein Vorstellungsgespräch."
+      }
+    },
+    {
+      "id": "hr-1-01-4",
+      "translations": {
+        "zh-TW": "面試大約需要...",
+        "en": "The interview will take approximately...",
+        "ja": "面接は約...かかる見込みです。",
+        "ko": "면접은 약 ... 소요될 예정입니다.",
+        "es": "La entrevista durara aproximadamente...",
+        "fr": "Lentretien durera environ...",
+        "zh-CN": "面试大约需要...",
+        "de": "Das Vorstellungsgespräch wird voraussichtlich ... dauern."
+      },
+      "explanations": {
+        "zh-TW": "說明面試時長",
+        "en": "Informing about interview duration.",
+        "ja": "面接所要時間の案内。",
+        "ko": "면접 소요 시간 안내.",
+        "es": "Informando sobre la duracion de la entrevista.",
+        "fr": "Informer sur la duree de lentretien.",
+        "zh-CN": "说明面试时长",
+        "de": "Information über die Dauer des Vorstellungsgesprächs."
+      }
+    },
+    {
+      "id": "hr-1-01-5",
+      "translations": {
+        "zh-TW": "請攜帶您的作品集。",
+        "en": "Please bring your portfolio.",
+        "ja": "ポートフォリオをお持ちください。",
+        "ko": "포트폴리오를 가져와주세요.",
+        "es": "Por favor traiga su portafolio.",
+        "fr": "Veuillez apporter votre portfolio.",
+        "zh-CN": "请携带您的作品集。",
+        "de": "Bitte bringen Sie Ihr Portfolio mit."
+      },
+      "explanations": {
+        "zh-TW": "提醒準備事項",
+        "en": "Requesting the applicant to bring supporting materials.",
+        "ja": "応募者に資料携带を依頼。",
+        "ko": "지원자에게 자료 지참 요청.",
+        "es": "Pidiendo al solicitante que traiga materiales.",
+        "fr": "Demander au candidat dapporter des documents.",
+        "zh-CN": "提醒准备事项",
+        "de": "Aufforderung an den Bewerber, unterstützende Materialien mitzubringen."
+      }
+    }
+  ],
+  "hr-2": [
+    {
+      "id": "hr-2-01-1",
+      "translations": {
+        "zh-TW": "讓我說明我們的福利方案。",
+        "en": "Let me explain our benefits package.",
+        "ja": "福利厚生についてご説明します。",
+        "ko": "우리의 복리후생 패키지에 대해 설명하겠습니다.",
+        "es": "Permitame explicar nuestro paquete de beneficios.",
+        "fr": "Permettez-moi de vous presenter notre package davantages.",
+        "zh-CN": "让我说明我们的福利方案。",
+        "de": "Erlauben Sie mir, unser Leistungspaket vorzustellen."
+      },
+      "explanations": {
+        "zh-TW": "開始福利說明的用語",
+        "en": "Introducing the employee benefits overview.",
+        "ja": "福利厚生の概要紹介。",
+        "ko": "직원 복리후생 개요 소개.",
+        "es": "Introduciendo la vision general de beneficios.",
+        "fr": "Introduire le apercu des avantages.",
+        "zh-CN": "开始福利说明的用语",
+        "de": "Einführung in den Überblick über Mitarbeiterleistungen."
+      }
+    },
+    {
+      "id": "hr-2-01-2",
+      "translations": {
+        "zh-TW": "我們提供健康保險。",
+        "en": "We offer health insurance.",
+        "ja": "医疗保险を提供しています。",
+        "ko": "건강 보험을 제공하고 있습니다.",
+        "es": "Ofrecemos seguro medico.",
+        "fr": "Nous offrons une assurance sante.",
+        "zh-CN": "我们提供健康保险。",
+        "de": "Wir bieten Krankenversicherung an."
+      },
+      "explanations": {
+        "zh-TW": "說明保險福利",
+        "en": "Describing health insurance benefit.",
+        "ja": "医疗保险福利の説明。",
+        "ko": "건강 보험福利 설명.",
+        "es": "Describiendo el beneficio de seguro medico.",
+        "fr": "Decrire le avantage assurance sante.",
+        "zh-CN": "说明保险福利",
+        "de": "Beschreibung des Krankenversicherungsleistungen."
+      }
+    },
+    {
+      "id": "hr-2-01-3",
+      "translations": {
+        "zh-TW": "員工享有帶薪休假。",
+        "en": "Employees get paid leave.",
+        "ja": "従業員には有給休暇があります。",
+        "ko": "직원들은 유급 휴가를 얻습니다.",
+        "es": "Los empleados obtienen licencia pagada.",
+        "fr": "Les employes ont des conges payes.",
+        "zh-CN": "员工享有带薪休假。",
+        "de": "Mitarbeiter erhalten bezahlten Urlaub."
+      },
+      "explanations": {
+        "zh-TW": "說明休假制度",
+        "en": "Describing paid leave policy.",
+        "ja": "有給休假ポリシーの説明。",
+        "ko": "유급 휴가 정책 설명.",
+        "es": "Describiendo la politica de licencia pagada.",
+        "fr": "Decrire la politique de conges payes.",
+        "zh-CN": "说明休假制度",
+        "de": "Beschreibung der Richtlinie für bezahlten Urlaub."
+      }
+    },
+    {
+      "id": "hr-2-01-4",
+      "translations": {
+        "zh-TW": "試用期為...",
+        "en": "The probation period is...",
+        "ja": "試用期間は...です。",
+        "ko": "시험 기간은 ...입니다.",
+        "es": "El periodo de prueba es...",
+        "fr": "La periode dessai est...",
+        "zh-CN": "试用期为...",
+        "de": "Die Probezeit beträgt ..."
+      },
+      "explanations": {
+        "zh-TW": "說明試用期",
+        "en": "Stating the probation period length.",
+        "ja": "試用期間の長さを述べる。",
+        "ko": "시험 기간 길이 알림.",
+        "es": "Indicando la duracion del periodo de prueba.",
+        "fr": "Indiquer la duree de la periode dessai.",
+        "zh-CN": "说明试用期",
+        "de": "Angabe der Dauer der Probezeit."
+      }
+    },
+    {
+      "id": "hr-2-01-5",
+      "translations": {
+        "zh-TW": "有任何問題嗎？",
+        "en": "Do you have any questions?",
+        "ja": "ご質問はありますか？",
+        "ko": "질문 있으신가요?",
+        "es": "Tiene alguna pregunta?",
+        "fr": "Avez-vous des questions?",
+        "zh-CN": "有任何问题吗？",
+        "de": "Haben Sie irgendwelche Fragen?"
+      },
+      "explanations": {
+        "zh-TW": "確認理解狀況",
+        "en": "Opening the floor for questions.",
+        "ja": "質疑応答の開始。",
+        "ko": "질문 시간 개시.",
+        "es": "Abriendo la palabra para preguntas.",
+        "fr": "Ouvrir la parole aux questions.",
+        "zh-CN": "确认理解状况",
+        "de": "Öffnung des Frageforums."
+      }
+    }
+  ],
+  "hr-3": [
+    {
+      "id": "hr-3-01-1",
+      "translations": {
+        "zh-TW": "請自我介紹。",
+        "en": "Tell me about yourself.",
+        "ja": "自己紹介してください。",
+        "ko": "자기소개 해주세요.",
+        "es": "Hablame de ti mismo.",
+        "fr": "Parlez-moi de vous.",
+        "zh-CN": "请自我介绍。",
+        "de": "Erzählen Sie mir von sich."
+      },
+      "explanations": {
+        "zh-TW": "面試開場的標準問題",
+        "en": "Opening interview with self-introduction request.",
+        "ja": "面接開始の自己紹介依頼。",
+        "ko": "면접 첫 자기소개 요청.",
+        "es": "Inicio de entrevista con solicitud de presentacion.",
+        "fr": "Ouverture de lentretien avec demande de presentation.",
+        "zh-CN": "面试开场的标准问题",
+        "de": "Eröffnung des Vorstellungsgesprächs mit Bitte um Selbstvorstellung."
+      }
+    },
+    {
+      "id": "hr-3-01-2",
+      "translations": {
+        "zh-TW": "為什麼想在這裡工作？",
+        "en": "Why do you want to work here?",
+        "ja": "なぜこちらで働きたいですか？",
+        "ko": "왜 여기서 일하고 싶나요?",
+        "es": "Por que quieres trabajar aqui?",
+        "fr": "Pourquoi voulez-vous travailler ici?",
+        "zh-CN": "为什么想在这里工作？",
+        "de": "Warum möchten Sie hier arbeiten?"
+      },
+      "explanations": {
+        "zh-TW": "詢問求職動機",
+        "en": "Asking about motivation for the position.",
+        "ja": "応募動機の質問。",
+        "ko": "지원 동기 질문.",
+        "es": "Preguntando sobre la motivacion del solicitante.",
+        "fr": "Demander la motivation pour le poste.",
+        "zh-CN": "询问求职动机",
+        "de": "Fragen zur Motivation für die Position."
+      }
+    },
+    {
+      "id": "hr-3-01-3",
+      "translations": {
+        "zh-TW": "你的優點是什麼？",
+        "en": "What are your strengths?",
+        "ja": "あなたの強みは何ですか？",
+        "ko": "당신의 강점은 무엇인가요?",
+        "es": "Cuales son tus fortalezas?",
+        "fr": "Quelles sont vos forces?",
+        "zh-CN": "你的优点是什么？",
+        "de": "Was sind Ihre Stärken?"
+      },
+      "explanations": {
+        "zh-TW": "詢問個人特質",
+        "en": "Asking about candidate strengths.",
+        "ja": "候補者の強みの質問。",
+        "ko": "후보자 강점 질문.",
+        "es": "Preguntando sobre las fortalezas del candidato.",
+        "fr": "Demander les forces du candidat.",
+        "zh-CN": "询问个人特质",
+        "de": "Fragen zu den Stärken des Kandidaten."
+      }
+    },
+    {
+      "id": "hr-3-01-4",
+      "translations": {
+        "zh-TW": "描述你克服過的挑戰。",
+        "en": "Describe a challenge you overcame.",
+        "ja": "乗り越えた課題を描述してください。",
+        "ko": "극복한 도전에 대해 설명해 주세요.",
+        "es": "Describe un desafio que superaste.",
+        "fr": "Decrivez un defi que vous avez surmonte.",
+        "zh-CN": "描述你克服过的挑战。",
+        "de": "Beschreiben Sie eine Herausforderung, die Sie gemeistert haben."
+      },
+      "explanations": {
+        "zh-TW": "行為面試問題",
+        "en": "Asking about past challenge experience.",
+        "ja": "過去の課題克服経験の質問。",
+        "ko": "과거 도전 극복 경험 질문.",
+        "es": "Preguntando sobre experiencias pasadas de desafios.",
+        "fr": "Demander les experiences de defis surmontes.",
+        "zh-CN": "行为面试问题",
+        "de": "Fragen zur Erfahrung mit vergangenen Herausforderungen."
+      }
+    },
+    {
+      "id": "hr-3-01-5",
+      "translations": {
+        "zh-TW": "你五年後想在哪裡？",
+        "en": "Where do you see yourself in 5 years?",
+        "ja": "5年後にどのようにいたいですか？",
+        "ko": "5년 후에 어디서 보고 싶나요?",
+        "es": "Donde te ves en 5 anos?",
+        "fr": "OÙ vous voyez-vous dans 5 ans?",
+        "zh-CN": "你五年后想在哪里？",
+        "de": "Wo sehen Sie sich in 5 Jahren?"
+      },
+      "explanations": {
+        "zh-TW": "詢問職涯規劃",
+        "en": "Asking about long-term career goals.",
+        "ja": "長期キャリア目標の質問。",
+        "ko": "장기 경력 목표 질문.",
+        "es": "Preguntando sobre metas profesionales a largo plazo.",
+        "fr": "Demander les objectifs de carrier a long terme.",
+        "zh-CN": "询问职涯规划",
+        "de": "Fragen zu langfristigen Karrierezielen."
+      }
+    }
+  ],
+  "hr-4": [
+    {
+      "id": "hr-4-01-1",
+      "translations": {
+        "zh-TW": "我們來規劃入職培訓計畫。",
+        "en": "Let us plan the onboarding program.",
+        "ja": "オンボーディングプログラムを計画しましょう。",
+        "ko": "온보딩 프로그램을 계획합시다.",
+        "es": "Planifiquemos el programa de incorporacion.",
+        "fr": "Planifions le programme d'intégration.",
+        "zh-CN": "我们来规划入职培训计划。",
+        "de": "Lassen Sie uns das Onboarding-Programm planen."
+      },
+      "explanations": {
+        "zh-TW": "開始討論的開場白",
+        "en": "Proposing to plan the onboarding process.",
+        "ja": "オンボーディング工程の計画を提案。",
+        "ko": "온보딩 공정 계획 제안.",
+        "es": "Proponiendo planificar el proceso de incorporacion.",
+        "fr": "Proposer de planifier le processus d'intégration.",
+        "zh-CN": "开始讨论的开场白",
+        "de": "Vorschlag zur Planung des Onboarding-Prozesses."
+      }
+    },
+    {
+      "id": "hr-4-01-2",
+      "translations": {
+        "zh-TW": "新進員工需要入職培訓。",
+        "en": "New hires need orientation.",
+        "ja": "新入社員にはオリエンテーションが必要です。",
+        "ko": "신입 사원은 오리엔테이션이 필요합니다.",
+        "es": "Los empleados nuevos necesitan orientacion.",
+        "fr": "Les nouvelles recrues ont besoin d'une orientation.",
+        "zh-CN": "新进员工需要入职培训。",
+        "de": "Neue Mitarbeiter benötigen Einarbeitung."
+      },
+      "explanations": {
+        "zh-TW": "說明培訓需求",
+        "en": "Stating that new employees require orientation.",
+        "ja": "新入社員にオリエンテーションが必要という述明。",
+        "ko": "신입 사원에 오리엔테이션 필요 설명.",
+        "es": "Afirmando que los empleados nuevos requieren orientacion.",
+        "fr": "Affirmer que les nouvelles recrues necessitent une orientation.",
+        "zh-CN": "说明培训需求",
+        "de": "Feststellung, dass neue Mitarbeiter Einarbeitung benötigen."
+      }
+    },
+    {
+      "id": "hr-4-01-3",
+      "translations": {
+        "zh-TW": "培訓為期...",
+        "en": "The training lasts...",
+        "ja": "研修は... 지속됩니다。",
+        "ko": "교육은 ... 동안 진행됩니다.",
+        "es": "La capacitacion dura...",
+        "fr": "La formation dure...",
+        "zh-CN": "培训为期...",
+        "de": "Die Schulung dauert ..."
+      },
+      "explanations": {
+        "zh-TW": "說明培訓時長",
+        "en": "Stating the duration of training.",
+        "ja": "研修期間の提示。",
+        "ko": "교육 기간 알림.",
+        "es": "Indicando la duracion de la capacitacion.",
+        "fr": "Indiquer la duree de la formation.",
+        "zh-CN": "说明培训时长",
+        "de": "Angabe der Dauer der Schulung."
+      }
+    },
+    {
+      "id": "hr-4-01-4",
+      "translations": {
+        "zh-TW": "我們應該分配一位導師。",
+        "en": "We should assign a mentor.",
+        "ja": "メンターを指名すべきです。",
+        "ko": "멘토를 배정해야 합니다.",
+        "es": "Deberiamos asignar un mentor.",
+        "fr": "Nous devrions affecter un mentor.",
+        "zh-CN": "我们应该分配一位导师。",
+        "de": "Wir sollten einen Mentor zuweisen."
+      },
+      "explanations": {
+        "zh-TW": "提出具體建議",
+        "en": "Suggesting assigning a mentor to new hires.",
+        "ja": "新入社員へのメンター配置を提案。",
+        "ko": "신입 사원에 멘토 배정 제안.",
+        "es": "Sugiriendo asignar un mentor a empleados nuevos.",
+        "fr": "Suggerer d'affecter un mentor aux nouvelles recrues.",
+        "zh-CN": "提出具体建议",
+        "de": "Vorschlag, neuen Mitarbeitern einen Mentor zuzuweisen."
+      }
+    },
+    {
+      "id": "hr-4-01-5",
+      "translations": {
+        "zh-TW": "我們來檢視時程表。",
+        "en": "Let us review the schedule.",
+        "ja": "スケジュールを確認しましょう。",
+        "ko": "일정을 검토합시다.",
+        "es": "Revisemos el cronograma.",
+        "fr": "Examinons le calendrier.",
+        "zh-CN": "我们来查看时程表。",
+        "de": "Lassen Sie uns den Zeitplan überprüfen."
+      },
+      "explanations": {
+        "zh-TW": "確認計畫細節",
+        "en": "Proposing to review the schedule.",
+        "ja": "スケジュールの確認を提案。",
+        "ko": "일정 검토 제안.",
+        "es": "Proponiendo revisar el cronograma.",
+        "fr": "Proposer d'examiner le calendrier.",
+        "zh-CN": "确认计划细节",
+        "de": "Vorschlag zur Überprüfung des Zeitplans."
+      }
+    }
+  ],
+  "hr-5": [
+    {
+      "id": "hr-5-01-1",
+      "translations": {
+        "zh-TW": "我們需要處理這個衝突。",
+        "en": "We need to address the conflict.",
+        "ja": "この対立に対処する必要があります。",
+        "ko": "이 갈등에 대응해야 합니다.",
+        "es": "Necesitamos abordar el conflicto.",
+        "fr": "Nous devons traiter le conflit.",
+        "zh-CN": "我们需要处理这个冲突。",
+        "de": "Wir müssen den Konflikt ansprechen."
+      },
+      "explanations": {
+        "zh-TW": "開始調解的開場白",
+        "en": "Acknowledging and addressing a workplace conflict.",
+        "ja": "職場の対立を認識し対処する。",
+        "ko": "직장 갈등 인정 및 대응.",
+        "es": "Reconociendo y abordando un conflicto laboral.",
+        "fr": "Reconnaeitre et traiter un conflit professionnel.",
+        "zh-CN": "开始调解的开场白",
+        "de": "Anerkennung und Ansprechen eines Arbeitsplatzkonflikts."
+      }
+    },
+    {
+      "id": "hr-5-01-2",
+      "translations": {
+        "zh-TW": "請說明您的立場。",
+        "en": "Please explain your side.",
+        "ja": "あなたの言い分を説明してください。",
+        "ko": "당신의 의견을 설명해 주세요.",
+        "es": "Por favor explique su postura.",
+        "fr": "Veuillez expliquer votre point de vue.",
+        "zh-CN": "请说明您的立场。",
+        "de": "Bitte erklären Sie Ihre Sichtweise."
+      },
+      "explanations": {
+        "zh-TW": "給予發言機會",
+        "en": "Asking for an explanation of one party's perspective.",
+        "ja": "一方の見解説明を求める。",
+        "ko": "한쪽 당사자의 관점 설명 요청.",
+        "es": "Pidiendo una explicacion de la perspectiva de una parte.",
+        "fr": "Demander l'explication du point de vue d'une partie.",
+        "zh-CN": "给予发言机会",
+        "de": "Bitte um Erklärung der Sichtweise einer Partei."
+      }
+    },
+    {
+      "id": "hr-5-01-3",
+      "translations": {
+        "zh-TW": "我理解您的挫折感。",
+        "en": "I understand your frustration.",
+        "ja": "あなたの悔しさを理解しています。",
+        "ko": "당신의 답답함을 이해합니다.",
+        "es": "Entiendo su frustracion.",
+        "fr": "Je comprends votre frustration.",
+        "zh-CN": "我理解您的挫折感。",
+        "de": "Ich verstehe Ihre Frustration."
+      },
+      "explanations": {
+        "zh-TW": "展現同理心",
+        "en": "Showing empathy toward frustration.",
+        "ja": "悔しみへの共感を表示。",
+        "ko": "답답함에 대한 공감 표시.",
+        "es": "Mostrando empatia hacia la frustracion.",
+        "fr": "Montrer de l'empathie envers la frustration.",
+        "zh-CN": "展现同理心",
+        "de": "Zeigen von Empathie gegenüber Frustration."
+      }
+    },
+    {
+      "id": "hr-5-01-4",
+      "translations": {
+        "zh-TW": "讓我們找到解決方案。",
+        "en": "Let us find a solution.",
+        "ja": "解決策を見つけましょう。",
+        "ko": "해결책을 찾읍시다.",
+        "es": "Encontremos una solucion.",
+        "fr": "Trouvons une solution.",
+        "zh-CN": "让我们找到解决方案。",
+        "de": "Lassen Sie uns eine Lösung finden."
+      },
+      "explanations": {
+        "zh-TW": "提議解決問題",
+        "en": "Collaboratively seeking a resolution.",
+        "ja": "協力して解決策を探る。",
+        "ko": "협력하여 해결책 모색.",
+        "es": "Buscando colaborativamente una resolucion.",
+        "fr": "Rechercher collaborativement une resolution.",
+        "zh-CN": "提议解决问题",
+        "de": "Kollaborative Suche nach einer Lösung."
+      }
+    },
+    {
+      "id": "hr-5-01-5",
+      "translations": {
+        "zh-TW": "我們期待專業的行為。",
+        "en": "We expect professional behavior.",
+        "ja": "プロフェッショナルな行動を期待します。",
+        "ko": "전문적인 행동을 기대합니다.",
+        "es": "Esperamos comportamiento profesional.",
+        "fr": "Nous attendons un comportement professionnel.",
+        "zh-CN": "我们期待专业的行为。",
+        "de": "Wir erwarten professionelles Verhalten."
+      },
+      "explanations": {
+        "zh-TW": "設定行為標準",
+        "en": "Stating expectations for professional conduct.",
+        "ja": "専門的行動への期待を述べる。",
+        "ko": "전문적 행동에 대한 기대 알림.",
+        "es": "Indicando expectativas de conducta profesional.",
+        "fr": "Indiquer les attentes en matiere de conduite professionnelle.",
+        "zh-CN": "设置行为标准",
+        "de": "Festlegung von Erwartungen für professionelles Verhalten."
+      }
+    }
+  ],
+  "hr-6": [
+    {
+      "id": "hr-6-01-1",
+      "translations": {
+        "zh-TW": "我們需要討論人才留任。",
+        "en": "We need to discuss talent retention.",
+        "ja": "人材確保について議論する必要があります。",
+        "ko": "인재 확보에 대해 논의해야 합니다.",
+        "es": "Necesitamos hablar sobre la retencion de talento.",
+        "fr": "Nous devons discuter de la retention des talents.",
+        "zh-CN": "我们需要讨论人才留任。",
+        "de": "Wir müssen die Mitarbeiterbindung besprechen."
+      },
+      "explanations": {
+        "zh-TW": "開始討論的開場白",
+        "en": "Initiating discussion about retaining employees.",
+        "ja": "人材定着に関する議論を開始。",
+        "ko": "인재 유지에 대한 논의 착수.",
+        "es": "Iniciando discusion sobre retencion de empleados.",
+        "fr": "Initier une discussion sur la retention des employes.",
+        "zh-CN": "开始讨论的开场白",
+        "de": "Einleitung einer Diskussion über Mitarbeiterbindung."
+      }
+    },
+    {
+      "id": "hr-6-01-2",
+      "translations": {
+        "zh-TW": "高績效員工需要認可。",
+        "en": "High performers need recognition.",
+        "ja": "高業績者には認知が必要です。",
+        "ko": "고성과자들은 인정이 필요합니다.",
+        "es": "Los empleados de alto rendimiento necesitan reconocimiento.",
+        "fr": "Les performeurs eleves ont besoin de reconnaissance.",
+        "zh-CN": "高绩效员工需要认可。",
+        "de": "Hohe Leistungsträger benötigen Anerkennung."
+      },
+      "explanations": {
+        "zh-TW": "說明留任策略",
+        "en": "Stating the need to recognize top performers.",
+        "ja": "トップパフォーマーの認知の必要性を述べる。",
+        "ko": "최고 성과자 인정 필요성 알림.",
+        "es": "Afirmando la necesidad de reconocer a los mejores.",
+        "fr": "Affirmer la necessite de reconnatre les performeurs.",
+        "zh-CN": "说明留任策略",
+        "de": "Feststellung der Notwendigkeit, Spitzenleistungsträger anzuerkennen."
+      }
+    },
+    {
+      "id": "hr-6-01-3",
+      "translations": {
+        "zh-TW": "我們應該檢視薪酬。",
+        "en": "We should review compensation.",
+        "ja": "報酬を見直すべきです。",
+        "ko": "보상을 검토해야 합니다.",
+        "es": "Deberiamos revisar la compensacion.",
+        "fr": "Nous devrions examiner la remuneration.",
+        "zh-CN": "我们应该查看薪酬。",
+        "de": "Wir sollten die Vergütung überprüfen."
+      },
+      "explanations": {
+        "zh-TW": "提出具體建議",
+        "en": "Proposing to review compensation packages.",
+        "ja": "報酬パッケージの検討を提案。",
+        "ko": "보상 패키지 검토 제안.",
+        "es": "Proponiendo revisar los paquetes de compensacion.",
+        "fr": "Proposer d'examiner les forfaits de remuneration.",
+        "zh-CN": "提出具体建议",
+        "de": "Vorschlag zur Überprüfung von Vergütungspaketen."
+      }
+    },
+    {
+      "id": "hr-6-01-4",
+      "translations": {
+        "zh-TW": "裁員是最後手段。",
+        "en": "Layoffs are a last resort.",
+        "ja": "リストラは最後の手段です。",
+        "ko": "해고는 최후의 수단입니다.",
+        "es": "Los despidos son el ultimo recurso.",
+        "fr": "Les licenciements sont un dernier recours.",
+        "zh-CN": "裁员是最后手段。",
+        "de": "Entlassungen sind die letzte Möglichkeit."
+      },
+      "explanations": {
+        "zh-TW": "說明政策立場",
+        "en": "Indicating that layoffs should be avoided.",
+        "ja": "解雇を避けるべきことを示す。",
+        "ko": "해고는 피해야 함을 표시.",
+        "es": "Indicando que los despidos deben evitarse.",
+        "fr": "Indiquer que les licenciements doivent etre evites.",
+        "zh-CN": "说明政策立场",
+        "de": "Ausdruck, dass Entlassungen vermieden werden sollten."
+      }
+    },
+    {
+      "id": "hr-6-01-5",
+      "translations": {
+        "zh-TW": "我們來制定過渡計畫。",
+        "en": "Let us create a transition plan.",
+        "ja": "移行計画を作成しましょう。",
+        "ko": "전환 계획을 수립합시다.",
+        "es": "Creemos un plan de transicion.",
+        "fr": "Creons un plan de transition.",
+        "zh-CN": "我们来制定过渡计划。",
+        "de": "Lassen Sie uns einen Übergangsplan erstellen."
+      },
+      "explanations": {
+        "zh-TW": "提出行動方案",
+        "en": "Proposing to create a transition plan.",
+        "ja": "移行計画の作成を提案。",
+        "ko": "전환 계획 수립 제안.",
+        "es": "Proponiendo crear un plan de transicion.",
+        "fr": "Proposer de creer un plan de transition.",
+        "zh-CN": "提出行动方案",
+        "de": "Vorschlag zur Erstellung eines Übergangsplans."
+      }
+    }
+  ],
+  "legal-1": [
+    {
+      "id": "legal-1-01-1",
+      "translations": {
+        "zh-TW": "我們需要確認簽署日期。",
+        "en": "We need to confirm the signing date.",
+        "ja": "調印日を確認する必要があります。",
+        "ko": "서명 날짜를 확인해야 합니다.",
+        "es": "Necesitamos confirmar la fecha de firma.",
+        "fr": "Nous devons confirmer la date de signature.",
+        "zh-CN": "我们需要确认签署日期。",
+        "de": "Wir müssen das Unterzeichnungsdatum bestätigen."
+      },
+      "explanations": {
+        "zh-TW": "開始確認合約流程的用語",
+        "en": "Requesting confirmation of a signing date.",
+        "ja": "調印日の確認を求める。",
+        "ko": "서명 날짜 확인 요청.",
+        "es": "Solicitando confirmacion de la fecha de firma.",
+        "fr": "Demander la confirmation de la date de signature.",
+        "zh-CN": "开始确认合约流程的用语",
+        "de": "Aufforderung zur Bestätigung eines Unterzeichnungsdatums."
+      }
+    },
+    {
+      "id": "legal-1-01-2",
+      "translations": {
+        "zh-TW": "合約準備好簽署了嗎？",
+        "en": "Is the contract ready for signature?",
+        "ja": "契約は調印の準備ができていますか？",
+        "ko": "계약에 서명할 준비가 되었나요?",
+        "es": "Esta el contrato listo para firma?",
+        "fr": "Le contrat est-il pret pour signature?",
+        "zh-CN": "合约准备好签署了吗？",
+        "de": "Ist der Vertrag zur Unterzeichnung bereit?"
+      },
+      "explanations": {
+        "zh-TW": "詢問合約狀態",
+        "en": "Asking if the contract is ready to be signed.",
+        "ja": "契約の調印準備完了確認。",
+        "ko": "계약 서명 준비 완료 확인.",
+        "es": "Preguntando si el contrato esta listo para firmarse.",
+        "fr": "Demander si le contrat est pret a etre signe.",
+        "zh-CN": "询问合约状态",
+        "de": "Fragen, ob der Vertrag zur Unterzeichnung bereit ist."
+      }
+    },
+    {
+      "id": "legal-1-01-3",
+      "translations": {
+        "zh-TW": "請在...之前審閱草案。",
+        "en": "Please review the draft before...",
+        "ja": "...の前に草案をご確認ください。",
+        "ko": "... 전에 초안을 검토해 주세요.",
+        "es": "Por favor revise el borrador antes de...",
+        "fr": "Veuillez examiner le brouillon avant...",
+        "zh-CN": "请在...之前审阅草案。",
+        "de": "Bitte überprüfen Sie den Entwurf vor ..."
+      },
+      "explanations": {
+        "zh-TW": "設定審閱期限",
+        "en": "Asking someone to review a draft before a deadline.",
+        "ja": "期限前の草案確認依頼。",
+        "ko": "마감일 전 초안 검토 요청.",
+        "es": "Pidiendo revisar un borrador antes de una fecha limite.",
+        "fr": "Demander dexamen du brouillon avant une date limite.",
+        "zh-CN": "设置审阅期限",
+        "de": "Bitte an jemanden, einen Entwurf vor einer Frist zu überprüfen."
+      }
+    },
+    {
+      "id": "legal-1-01-4",
+      "translations": {
+        "zh-TW": "我們需要兩位見證人。",
+        "en": "We need two witnesses.",
+        "ja": "証人が二人必要です。",
+        "ko": "증인 두 명이 필요합니다.",
+        "es": "Necesitamos dos testigos.",
+        "fr": "Nous avons besoin de deux temoins.",
+        "zh-CN": "我们需要两位见证人。",
+        "de": "Wir benötigen zwei Zeugen."
+      },
+      "explanations": {
+        "zh-TW": "說明簽署要求",
+        "en": "Stating the requirement for two witnesses.",
+        "ja": "証人二人必要という述明。",
+        "ko": "증인 두 명 필요 설명.",
+        "es": "Afirmando el requisito de dos testigos.",
+        "fr": "Affirmer le besoin de deux temoins.",
+        "zh-CN": "说明签署要求",
+        "de": "Feststellung der Anforderung für zwei Zeugen."
+      }
+    },
+    {
+      "id": "legal-1-01-5",
+      "translations": {
+        "zh-TW": "我們來安排簽署會議。",
+        "en": "Let us schedule the signing meeting.",
+        "ja": "調印ミーティングをスケジュールしましょう。",
+        "ko": "서명 미팅을 예약합시다.",
+        "es": "Programemos la reunion de firma.",
+        "fr": "Planifions la reunion de signature.",
+        "zh-CN": "我们来安排签署会议。",
+        "de": "Lassen Sie uns das Unterzeichnungsmeeting vereinbaren."
+      },
+      "explanations": {
+        "zh-TW": "提議具體行動",
+        "en": "Proposing to schedule a signing meeting.",
+        "ja": "調印ミーティングの日程提案。",
+        "ko": "서명 미팅 일정 제안.",
+        "es": "Proponiendo programar la reunion de firma.",
+        "fr": "Proposer de planifier une reunion de signature.",
+        "zh-CN": "提议具体行动",
+        "de": "Vorschlag zur Vereinbarung eines Unterzeichnungsmeetings."
+      }
+    }
+  ],
+  "legal-2": [
+    {
+      "id": "legal-2-01-1",
+      "translations": {
+        "zh-TW": "這個術語是什麼意思？",
+        "en": "What does this term mean?",
+        "ja": "この用語の意味は何ですか？",
+        "ko": "이 용어의 의미는 무엇인가요?",
+        "es": "Que significa este termino?",
+        "fr": "Que signifie ce terme?",
+        "zh-CN": "这个术语是什么意思？",
+        "de": "Was bedeutet dieser Begriff?"
+      },
+      "explanations": {
+        "zh-TW": "詢問法律術語定義的標準用語",
+        "en": "Asking for the meaning of a legal term.",
+        "ja": "法律用語の意味を尋ねる。",
+        "ko": "법률 용어의 의미 질문.",
+        "es": "Preguntando el significado de un termino legal.",
+        "fr": "Demander la signification dun terme juridique.",
+        "zh-CN": "询问法律术语定义的标准用语",
+        "de": "Fragen nach der Bedeutung eines rechtlichen Begriffs."
+      }
+    },
+    {
+      "id": "legal-2-01-2",
+      "translations": {
+        "zh-TW": "您能說明...的定義嗎？",
+        "en": "Could you clarify the definition of...?",
+        "ja": "...の定義を明らかにしていただけますか？",
+        "ko": "...의 정의를 명확히 해주시겠어요?",
+        "es": "Podria aclarar la definicion de...?",
+        "fr": "Pourriez-vous clarifier la definition de...?",
+        "zh-CN": "您能说明...的定义吗？",
+        "de": "Könnten Sie die Definition von ... klären?"
+      },
+      "explanations": {
+        "zh-TW": "禮貌請求解釋",
+        "en": "Asking for clarification of a definition.",
+        "ja": "定義の明確化を求める。",
+        "ko": "정의 명확화 요청.",
+        "es": "Pidiendo clarificacion de una definicion.",
+        "fr": "Demander la clarification dune definition.",
+        "zh-CN": "礼貌请求解释",
+        "de": "Bitte um Klärung einer Definition."
+      }
+    },
+    {
+      "id": "legal-2-01-3",
+      "translations": {
+        "zh-TW": "我不熟悉這個概念。",
+        "en": "I am not familiar with this concept.",
+        "ja": "この概念に慣れていません。",
+        "ko": "이 개념에 익숙하지 않습니다.",
+        "es": "No estoy familiarizado con este concepto.",
+        "fr": "Je ne suis pas familier avec ce concept.",
+        "zh-CN": "我不熟悉这个概念。",
+        "de": "Ich bin mit diesem Konzept nicht vertraut."
+      },
+      "explanations": {
+        "zh-TW": "坦承不了解的用語",
+        "en": "Admitting unfamiliarity with a legal concept.",
+        "ja": "法的概念への不案内を認める。",
+        "ko": "법적 개념에 대한 무지 인정.",
+        "es": "Admitiendo falta de familiaridad con un concepto legal.",
+        "fr": "Admettre lignorance dun concept juridique.",
+        "zh-CN": "坦承不了解的用语",
+        "de": "Zugeben von Unvertrautheit mit einem rechtlichen Konzept."
+      }
+    },
+    {
+      "id": "legal-2-01-4",
+      "translations": {
+        "zh-TW": "請用簡單的語言解釋。",
+        "en": "Please explain in plain language.",
+        "ja": "平易な言葉で説明してください。",
+        "ko": "쉬운 말로 설명해 주세요.",
+        "es": "Por favor explique en lenguaje sencillo.",
+        "fr": "Veuillez expliquer en langage simple.",
+        "zh-CN": "请用简单的语言解释。",
+        "de": "Bitte erklären Sie es in einfacher Sprache."
+      },
+      "explanations": {
+        "zh-TW": "請求通俗解釋",
+        "en": "Requesting plain-language explanation.",
+        "ja": "平易な言葉での説明依頼。",
+        "ko": "쉬운 말로 설명 요청.",
+        "es": "Solicitando explicacion en lenguaje sencillo.",
+        "fr": "Demander une explication en langage simple.",
+        "zh-CN": "请求通俗解释",
+        "de": "Aufforderung zur Erklärung in einfacher Sprache."
+      }
+    },
+    {
+      "id": "legal-2-01-5",
+      "translations": {
+        "zh-TW": "這有什麼法律含義嗎？",
+        "en": "Does this have any legal implications?",
+        "ja": "これは何か法的影響がありますか？",
+        "ko": "이것에 법적 함의가 있나요?",
+        "es": "Tiene esto alguna implicacion legal?",
+        "fr": "Cela a-t-il des implications juridiques?",
+        "zh-CN": "这有什么法律含义吗？",
+        "de": "Hat dies irgendwelche rechtlichen Auswirkungen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問法律影響",
+        "en": "Asking about potential legal consequences.",
+        "ja": "法的結果についての質問。",
+        "ko": "법적 결과에 대한 질문.",
+        "es": "Preguntando sobre posibles consecuencias legales.",
+        "fr": "Demander les consequences juridiques potentielles.",
+        "zh-CN": "询问法律影响",
+        "de": "Fragen zu potenziellen rechtlichen Folgen."
+      }
+    }
+  ],
+  "legal-3": [
+    {
+      "id": "legal-3-01-1",
+      "translations": {
+        "zh-TW": "我需要審查服務條款。",
+        "en": "I need to review the terms of service.",
+        "ja": "利用規約をレビューする必要があります。",
+        "ko": "서비스 약관을 검토해야 합니다.",
+        "es": "Necesito revisar los terminos de servicio.",
+        "fr": "Je dois examiner les conditions de service.",
+        "zh-CN": "我需要审查服务条款。",
+        "de": "Ich muss die Nutzungsbedingungen überprüfen."
+      },
+      "explanations": {
+        "zh-TW": "開始審查合約的用語",
+        "en": "Stating the need to review terms of service.",
+        "ja": "利用規約レビュー必要の述明。",
+        "ko": "서비스 약관 검토 필요 알림.",
+        "es": "Afirmando la necesidad de revisar los terminos.",
+        "fr": "Affirmer la necessite dexaminer les conditions.",
+        "zh-CN": "开始审查合约的用语",
+        "de": "Feststellung der Notwendigkeit, Nutzungsbedingungen zu überprüfen."
+      }
+    },
+    {
+      "id": "legal-3-01-2",
+      "translations": {
+        "zh-TW": "這個條款需要修訂。",
+        "en": "This clause needs revision.",
+        "ja": "この条項は修正が必要です。",
+        "ko": "이 조항은 수정이 필요합니다.",
+        "es": "Esta clausula necesita revision.",
+        "fr": "Cette clause necessite une revision.",
+        "zh-CN": "这个条款需要修订。",
+        "de": "Diese Klausel benötigt eine Überarbeitung."
+      },
+      "explanations": {
+        "zh-TW": "指出問題條款",
+        "en": "Requesting a clause to be revised.",
+        "ja": "条項修正を求める。",
+        "ko": "조항 수정 요청.",
+        "es": "Solicitando que se revise una clausula.",
+        "fr": "Demander la revision dune clause.",
+        "zh-CN": "指出问题条款",
+        "de": "Aufforderung zur Überarbeitung einer Klausel."
+      }
+    },
+    {
+      "id": "legal-3-01-3",
+      "translations": {
+        "zh-TW": "我們無法接受此條款。",
+        "en": "We cannot accept this term.",
+        "ja": "この条件は受け入れられません。",
+        "ko": "이 조건은 받아들일 수 없습니다.",
+        "es": "No podemos aceptar este termino.",
+        "fr": "Nous ne pouvons pas accepter cette condition.",
+        "zh-CN": "我们无法接受此条款。",
+        "de": "Wir können diesen Bedingung nicht akzeptieren."
+      },
+      "explanations": {
+        "zh-TW": "表達拒絕立場",
+        "en": "Expressing inability to accept a term.",
+        "ja": "条件受入不可の表明。",
+        "ko": "조건 수락 불가 표현.",
+        "es": "Expresando incapacidad de aceptar un termino.",
+        "fr": "Exprimer limpossibilite daccepter une condition.",
+        "zh-CN": "表达拒绝立场",
+        "de": "Ausdruck der Unfähigkeit, eine Bedingung zu akzeptieren."
+      }
+    },
+    {
+      "id": "legal-3-01-4",
+      "translations": {
+        "zh-TW": "請說明責任歸屬部分。",
+        "en": "Please clarify the liability section.",
+        "ja": "責任範囲の部分を明確化してください。",
+        "ko": "책임 범위 부분을 명확히 해주세요.",
+        "es": "Por favor aclare la seccion de responsabilidad.",
+        "fr": "Veuillez clarifier la section responsabilite.",
+        "zh-CN": "请说明责任归属部分。",
+        "de": "Bitte klären Sie den Haftungsabschnitt."
+      },
+      "explanations": {
+        "zh-TW": "要求具體說明",
+        "en": "Requesting clarification of the liability clause.",
+        "ja": "責任範囲条項の明確化を求める。",
+        "ko": "책임 범위 조항 명확화 요청.",
+        "es": "Pidiendo clarificacion de la clausula de responsabilidad.",
+        "fr": "Demander la clarification de la clause de responsabilite.",
+        "zh-CN": "要求具体说明",
+        "de": "Aufforderung zur Klärung der Haftungsklausel."
+      }
+    },
+    {
+      "id": "legal-3-01-5",
+      "translations": {
+        "zh-TW": "我們來協商此條款。",
+        "en": "Let us negotiate this provision.",
+        "ja": "この規定について交渉しましょう。",
+        "ko": "이 조항에 대해 협상합시다.",
+        "es": "Negociemos esta disposicion.",
+        "fr": "Negocions cette disposition.",
+        "zh-CN": "我们来协商此条款。",
+        "de": "Lassen Sie uns diese Bestimmung verhandeln."
+      },
+      "explanations": {
+        "zh-TW": "提議協商",
+        "en": "Proposing to negotiate a specific provision.",
+        "ja": "特定の規定について交渉を提案。",
+        "ko": "특정 조항에 대한 협상 제안.",
+        "es": "Proponiendo negociar una disposicion especifica.",
+        "fr": "Proposer de negocier une disposition specifique.",
+        "zh-CN": "提议协商",
+        "de": "Vorschlag zur Verhandlung einer bestimmten Bestimmung."
+      }
+    }
+  ],
+  "legal-4": [
+    {
+      "id": "legal-4-01-1",
+      "translations": {
+        "zh-TW": "我們需要簽署保密協議。",
+        "en": "We need to sign an NDA.",
+        "ja": "NDAに署名する必要があります。",
+        "ko": "NDA에 서명해야 합니다.",
+        "es": "Necesitamos firmar un NDA.",
+        "fr": "Nous devons signer un NDA.",
+        "zh-CN": "我们需要签署保密协议。",
+        "de": "Wir müssen ein NDA unterzeichnen."
+      },
+      "explanations": {
+        "zh-TW": "提出保密協議要求的用語",
+        "en": "Stating the need to sign a non-disclosure agreement.",
+        "ja": "秘密保持契約署名の必要性を述べる。",
+        "ko": "비밀유지계약 서명 필요 설명.",
+        "es": "Afirmando la necesidad de firmar un acuerdo de confidencialidad.",
+        "fr": "Affirmer la necessite de signer un accord de confidentialite.",
+        "zh-CN": "提出保密协议要求的用语",
+        "de": "Feststellung der Notwendigkeit, eine Verschwiegenheitserklärung zu unterzeichnen."
+      }
+    },
+    {
+      "id": "legal-4-01-2",
+      "translations": {
+        "zh-TW": "涵蓋哪些資訊？",
+        "en": "What information is covered?",
+        "ja": "どの情報が対象となりますか？",
+        "ko": "어떤 정보가 적용되나요?",
+        "es": "Que informacion esta cubierta?",
+        "fr": "Quelles informations sont couvertes?",
+        "zh-CN": "涵盖哪些资讯？",
+        "de": "Welche Informationen sind abgedeckt?"
+      },
+      "explanations": {
+        "zh-TW": "詢問保密範圍",
+        "en": "Asking what information the NDA covers.",
+        "ja": "NDAの対象情報についての質問。",
+        "ko": "NDA 적용 정보 질문.",
+        "es": "Preguntando que informacion cubre el NDA.",
+        "fr": "Demander quelles informations sont couvertes par le NDA.",
+        "zh-CN": "询问保密范围",
+        "de": "Fragen, welche Informationen die NDA abdeckt."
+      }
+    },
+    {
+      "id": "legal-4-01-3",
+      "translations": {
+        "zh-TW": "此協議期限多久？",
+        "en": "How long does this agreement last?",
+        "ja": "この合意の有効期間はどのくらいですか？",
+        "ko": "이 합의의 기간은 얼마나 되나요?",
+        "es": "Cuanto dura este acuerdo?",
+        "fr": "Combien de temps dure cet accord?",
+        "zh-CN": "此协议期限多久？",
+        "de": "Wie lange gilt diese Vereinbarung?"
+      },
+      "explanations": {
+        "zh-TW": "詢問有效期",
+        "en": "Asking about the duration of the agreement.",
+        "ja": "合意の有効期間についての質問。",
+        "ko": "합의 기간에 대한 질문.",
+        "es": "Preguntando sobre la duracion del acuerdo.",
+        "fr": "Demander la duree de laccord.",
+        "zh-CN": "询问有效期",
+        "de": "Fragen zur Dauer der Vereinbarung."
+      }
+    },
+    {
+      "id": "legal-4-01-4",
+      "translations": {
+        "zh-TW": "有任何例外嗎？",
+        "en": "Are there any exceptions?",
+        "ja": "例外はありますか？",
+        "ko": "예외가 있나요?",
+        "es": "Hay alguna excepcion?",
+        "fr": "Y a-t-il des exceptions?",
+        "zh-CN": "有任何例外吗？",
+        "de": "Gibt es irgendwelche Ausnahmen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問豁免情況",
+        "en": "Asking about exceptions to the NDA.",
+        "ja": "NDAの例外について尋ねる。",
+        "ko": "NDA 예외에 대해 묻는 것.",
+        "es": "Preguntando sobre excepciones al NDA.",
+        "fr": "Demander les exceptions au NDA.",
+        "zh-CN": "询问豁免情况",
+        "de": "Fragen zu Ausnahmen von der NDA."
+      }
+    },
+    {
+      "id": "legal-4-01-5",
+      "translations": {
+        "zh-TW": "我們需要法律顧問審閱。",
+        "en": "We need legal counsel to review.",
+        "ja": "法務にレビューを依頼する必要があります。",
+        "ko": "법무의 검토가 필요합니다.",
+        "es": "Necesitamos que el departamento legal revise.",
+        "fr": "Nous avons besoin que le service juridique examine.",
+        "zh-CN": "我们需要法律顾问审阅。",
+        "de": "Wir benötigen rechtlichen Beistand zur Überprüfung."
+      },
+      "explanations": {
+        "zh-TW": "提出專業審查需求",
+        "en": "Stating the need for legal review.",
+        "ja": "法務レビューの必要性を述べる。",
+        "ko": "법무 검토 필요 설명.",
+        "es": "Afirmando la necesidad de revision legal.",
+        "fr": "Affirmer la necessite dun examen juridique.",
+        "zh-CN": "提出专业审查需求",
+        "de": "Feststellung der Notwendigkeit einer rechtlichen Überprüfung."
+      }
+    }
+  ],
+  "legal-5": [
+    {
+      "id": "legal-5-01-1",
+      "translations": {
+        "zh-TW": "發生了違約情況。",
+        "en": "There has been a breach of contract.",
+        "ja": "契約違反がありました。",
+        "ko": "계약 위반이 있었습니다.",
+        "es": "Ha habido un incumplimiento de contrato.",
+        "fr": "Il y a eu une rupture de contrat.",
+        "zh-CN": "发生了违约情况。",
+        "de": "Es hat einen Vertragsbruch gegeben."
+      },
+      "explanations": {
+        "zh-TW": "提出違約主張的開場白",
+        "en": "Asserting that a contract has been violated.",
+        "ja": "契約違反が発生したとの主張。",
+        "ko": "계약 위반 발생 주장.",
+        "es": "Afirmando que se ha violado un contrato.",
+        "fr": "Affirmer quun contrat a ete viole.",
+        "zh-CN": "提出违约主张的开场白",
+        "de": "Feststellung, dass ein Vertrag verletzt wurde."
+      }
+    },
+    {
+      "id": "legal-5-01-2",
+      "translations": {
+        "zh-TW": "您未能依約交付。",
+        "en": "You failed to deliver as agreed.",
+        "ja": "合意したように配送いただけませんでした。",
+        "ko": "합의한 대로 인도하지 못했습니다.",
+        "es": "No entregaste segun lo acordado.",
+        "fr": "Vous navez pas livre comme convenu.",
+        "zh-CN": "您未能依约交付。",
+        "de": "Sie haben die Lieferung wie vereinbart nicht erfüllt."
+      },
+      "explanations": {
+        "zh-TW": "說明具體違約事實",
+        "en": "Charging the other party with non-delivery.",
+        "ja": "相手方の未配送を問う。",
+        "ko": "상대방의 미인도问责.",
+        "es": "Acusando a la otra parte de no entregar.",
+        "fr": "Accuser lautre partie de non-livraison.",
+        "zh-CN": "说明具体违约事实",
+        "de": "Vorwurf der Nichterfüllung an die andere Partei."
+      }
+    },
+    {
+      "id": "legal-5-01-3",
+      "translations": {
+        "zh-TW": "我們就...要求損害賠償。",
+        "en": "We seek damages for...",
+        "ja": "...について損害賠償を請求します。",
+        "ko": "...에 대해 손해배상을 청구합니다.",
+        "es": "Buscamos danos y perjuicios por...",
+        "fr": "Nous reclamons des dommages et interets pour...",
+        "zh-CN": "我们就...要求损害赔偿。",
+        "de": "Wir fordern Schadensersatz für ..."
+      },
+      "explanations": {
+        "zh-TW": "提出賠償要求",
+        "en": "Claiming damages for a specific issue.",
+        "ja": "特定問題についての損害賠償請求。",
+        "ko": "특정 문제에 대한 손해배상 청구.",
+        "es": "Reclamando danos y perjuicios por un tema especifico.",
+        "fr": "Reclamer des dommages et interets pour une question specifique.",
+        "zh-CN": "提出赔偿要求",
+        "de": "Forderung von Schadensersatz für ein spezifisches Problem."
+      }
+    },
+    {
+      "id": "legal-5-01-4",
+      "translations": {
+        "zh-TW": "這構成重大違約。",
+        "en": "This constitutes a material breach.",
+        "ja": "これは実質的違反を構成します。",
+        "ko": "이것은 중대한 위반에 해당합니다.",
+        "es": "Esto constituye un incumplimiento material.",
+        "fr": "Cela constitue un manquement substantiel.",
+        "zh-CN": "这构成重大违约。",
+        "de": "Dies stellt einen wesentlichen Vertragsbruch dar."
+      },
+      "explanations": {
+        "zh-TW": "說明違約嚴重程度",
+        "en": "Stating that the breach is significant.",
+        "ja": "違反が重大であることを述べる。",
+        "ko": "위반이 중대함을 설명.",
+        "es": "Afirmando que el incumplimiento es significativo.",
+        "fr": "Affirmer que le manquement est significatif.",
+        "zh-CN": "说明违约严重程度",
+        "de": "Feststellung, dass der Vertragsbruch wesentlich ist."
+      }
+    },
+    {
+      "id": "legal-5-01-5",
+      "translations": {
+        "zh-TW": "我們保留法律追訴權。",
+        "en": "We reserve our legal rights.",
+        "ja": "法的権利を留保します。",
+        "ko": "법적 권리를 보유합니다.",
+        "es": "Reservamos nuestros derechos legales.",
+        "fr": "Nous reserverves nos droits juridiques.",
+        "zh-CN": "我们保留法律追诉权。",
+        "de": "Wir behalten uns unsere rechtlichen Ansprüche vor."
+      },
+      "explanations": {
+        "zh-TW": "法律聲明的標準用語",
+        "en": "Reserving the right to take legal action.",
+        "ja": "法的措置を取る権利の留保。",
+        "ko": "법적 조치 취할 권리 보유.",
+        "es": "Reservando el derecho a tomar acciones legales.",
+        "fr": "Reserver le droit de poursuivre en justice.",
+        "zh-CN": "法律声明的标准用语",
+        "de": "Vorbehalt des Rechts, rechtliche Schritte zu unternehmen."
+      }
+    }
+  ],
+  "legal-6": [
+    {
+      "id": "legal-6-01-1",
+      "translations": {
+        "zh-TW": "我們需要全球保護我們的知識產權。",
+        "en": "We need to protect our IP globally.",
+        "ja": "グローバルに知的財産を保護する必要があります。",
+        "ko": "글로벌로 지적재산을 보호해야 합니다.",
+        "es": "Necesitamos proteger nuestra PI globalmente.",
+        "fr": "Nous devons proteger notre propriete intellectuelle au niveau mondial.",
+        "zh-CN": "我们需要全球保护我们的知识产权。",
+        "de": "Wir müssen unser geistiges Eigentum global schützen."
+      },
+      "explanations": {
+        "zh-TW": "提出跨國知識產權議題的開場白",
+        "en": "Stating the need for worldwide IP protection.",
+        "ja": "世界的な知的財産保護の必要性を述べる。",
+        "ko": "글로벌 지적재산 보호 필요 설명.",
+        "es": "Afirmando la necesidad de proteccion global de PI.",
+        "fr": "Affirmer la necessite de protection mondiale de la propriete intellectuelle.",
+        "zh-CN": "提出跨国知识产权议题的开场白",
+        "de": "Feststellung der Notwendigkeit für weltweiten IP-Schutz."
+      }
+    },
+    {
+      "id": "legal-6-01-2",
+      "translations": {
+        "zh-TW": "我們應該在哪些國家申請？",
+        "en": "Which countries should we file in?",
+        "ja": "どの国に出願すべきですか？",
+        "ko": "어떤 국가에 출원해야 하나요?",
+        "es": "En que paises debemos presentar?",
+        "fr": "Dans quels pays devons-nous deposer?",
+        "zh-CN": "我们应该在哪些国家申请？",
+        "de": "In welchen Ländern sollten wir anmelden?"
+      },
+      "explanations": {
+        "zh-TW": "詢問保護範圍",
+        "en": "Asking which countries to file patents in.",
+        "ja": "特許出願先の国についての質問。",
+        "ko": "특허 출원 대상 국가 질문.",
+        "es": "Preguntando en que paises presentar patentes.",
+        "fr": "Demander dans quels pays deposer les brevets.",
+        "zh-CN": "询问保护范围",
+        "de": "Fragen, in welchen Ländern Patente angemeldet werden sollten."
+      }
+    },
+    {
+      "id": "legal-6-01-3",
+      "translations": {
+        "zh-TW": "申請期限是什麼時候？",
+        "en": "What is the filing deadline?",
+        "ja": "出願期限はいつですか？",
+        "ko": "출원 기한은 언제인가요?",
+        "es": "Cual es la fecha limite de presentacion?",
+        "fr": "Quelle est la date limite de depot?",
+        "zh-CN": "申请期限是什么时候？",
+        "de": "Was ist die Anmeldefrist?"
+      },
+      "explanations": {
+        "zh-TW": "詢問時程",
+        "en": "Asking about filing deadlines.",
+        "ja": "出願期限についての質問。",
+        "ko": "출원 기한 질문.",
+        "es": "Preguntando sobre fechas limite de presentacion.",
+        "fr": "Demander les dates limites de depot.",
+        "zh-CN": "询问时程",
+        "de": "Fragen zu Anmeldefristen."
+      }
+    },
+    {
+      "id": "legal-6-01-4",
+      "translations": {
+        "zh-TW": "我們需要在...的當地律師。",
+        "en": "We need a local counsel in...",
+        "ja": "...现地の法務顧問が必要です。",
+        "ko": "...에 현지 법무 고문이 필요합니다.",
+        "es": "Necesitamos un asesor legal local en...",
+        "fr": "Nous avons besoin dun conseil local en...",
+        "zh-CN": "我们需要在...的当地律师。",
+        "de": "Wir benötigen einen lokalen Berater in ..."
+      },
+      "explanations": {
+        "zh-TW": "提出專業需求",
+        "en": "Requesting local legal counsel in a specific country.",
+        "ja": "特定国での現地法務顧問の必要性を述べる。",
+        "ko": "특정 국가 현지 법무 고문 필요 설명.",
+        "es": "Solicitando asesoria legal local en un pais especifico.",
+        "fr": "Demander des conseils juridiques locaux dans un pays specifique.",
+        "zh-CN": "提出专业需求",
+        "de": "Aufforderung nach lokalem rechtlichen Beistand in einem bestimmten Land."
+      }
+    },
+    {
+      "id": "legal-6-01-5",
+      "translations": {
+        "zh-TW": "我們如何執行我們的權利？",
+        "en": "How do we enforce our rights?",
+        "ja": "権利を執行するにはどうすればいいですか？",
+        "ko": "권리를 집행하려면 어떻게 해야 하나요?",
+        "es": "Como hacemos valer nuestros derechos?",
+        "fr": "Comment faisons-nous valoir nos droits?",
+        "zh-CN": "我们如何运行我们的权利？",
+        "de": "Wie setzen wir unsere Rechte durch?"
+      },
+      "explanations": {
+        "zh-TW": "詢問維權方式",
+        "en": "Asking how to enforce IP rights.",
+        "ja": "知的財産権の執行方法について尋ねる。",
+        "ko": "지적재산권 집행 방법 질문.",
+        "es": "Preguntando como hacer valer los derechos de PI.",
+        "fr": "Demander comment faire valoir les droits de propriete intellectuelle.",
+        "zh-CN": "询问维权方式",
+        "de": "Fragen, wie IP-Rechte durchgesetzt werden können."
+      }
+    }
+  ],
+  "fin-1": [
+    {
+      "id": "fin-1-01-1",
+      "translations": {
+        "zh-TW": "我需要提交差旅費用報銷單。",
+        "en": "I need to submit my expense report.",
+        "ja": "経費報告を提出する必要があります。",
+        "ko": "비용 보고서를 제출해야 합니다.",
+        "es": "Necesito presentar mi informe de gastos.",
+        "fr": "Je dois soumettre mon rapport de frais.",
+        "zh-CN": "我需要提交差旅费用报销单。",
+        "de": "Ich muss meinen Spesenbericht einreichen."
+      },
+      "explanations": {
+        "zh-TW": "開始報銷流程的標準用語",
+        "en": "Stating intent to submit an expense report.",
+        "ja": "経費報告提出の意思表示。",
+        "ko": "비용 보고서 제출 의향 알림.",
+        "es": "Afirmando la intencion de presentar un informe de gastos.",
+        "fr": "Affirmer lintention de soumettre un rapport de frais.",
+        "zh-CN": "开始报销流程的标准用语",
+        "de": "Ausdruck der Absicht, einen Spesenbericht einzureichen."
+      }
+    },
+    {
+      "id": "fin-1-01-2",
+      "translations": {
+        "zh-TW": "這是我的收據。",
+        "en": "Here are my receipts.",
+        "ja": "領収書をここに提出します。",
+        "ko": "영수증을 여기 있습니다.",
+        "es": "Aqui estan mis recibos.",
+        "fr": "Voici mes recu.",
+        "zh-CN": "这是我的收据。",
+        "de": "Hier sind meine Belege."
+      },
+      "explanations": {
+        "zh-TW": "提交證明文件",
+        "en": "Presenting receipts for reimbursement.",
+        "ja": "精算のための領収書提出。",
+        "ko": "정산을 위한 영수증 제시.",
+        "es": "Presentando recibos para reembolso.",
+        "fr": "Presenter des recu pour remboursement.",
+        "zh-CN": "提交证明文档",
+        "de": "Vorlage von Belegen für Erstattung."
+      }
+    },
+    {
+      "id": "fin-1-01-3",
+      "translations": {
+        "zh-TW": "總金額是...",
+        "en": "The total amount is...",
+        "ja": "合計金額は...です。",
+        "ko": "총액은 ...입니다.",
+        "es": "El monto total es...",
+        "fr": "Le montant total est...",
+        "zh-CN": "总金额是...",
+        "de": "Der Gesamtbetrag beträgt ..."
+      },
+      "explanations": {
+        "zh-TW": "說明報銷金額",
+        "en": "Stating the total amount of expenses.",
+        "ja": "経費の総額を述べる。",
+        "ko": "비용 총액 알림.",
+        "es": "Indicando el monto total de los gastos.",
+        "fr": "Indiquer le montant total des depenses.",
+        "zh-CN": "说明报销金额",
+        "de": "Angabe des Gesamtbetrags der Ausgaben."
+      }
+    },
+    {
+      "id": "fin-1-01-4",
+      "translations": {
+        "zh-TW": "什麼時候會核銷？",
+        "en": "When will I be reimbursed?",
+        "ja": "いつ精算されますか？",
+        "ko": "언제 정산되나요?",
+        "es": "Cuando se me reembolsara?",
+        "fr": "Quand serai-je rembourse?",
+        "zh-CN": "什么时候会核销？",
+        "de": "Wann werde ich erstattet?"
+      },
+      "explanations": {
+        "zh-TW": "詢問處理時程",
+        "en": "Asking when reimbursement will be processed.",
+        "ja": "精算時期についての質問。",
+        "ko": "정산 시기 질문.",
+        "es": "Preguntando cuando se procesara el reembolso.",
+        "fr": "Demander quand le remboursement sera traite.",
+        "zh-CN": "询问处理时程",
+        "de": "Fragen, wann die Erstattung bearbeitet wird."
+      }
+    },
+    {
+      "id": "fin-1-01-5",
+      "translations": {
+        "zh-TW": "這筆費用有涵蓋嗎？",
+        "en": "Is this expense covered?",
+        "ja": "この経費は払い戻し対象ですか？",
+        "ko": "이 비용이 보장되나요?",
+        "es": "Este gasto esta cubierto?",
+        "fr": "Cette depense est-elle couverte?",
+        "zh-CN": "这笔费用有涵盖吗？",
+        "de": "Ist diese Ausgabe abgedeckt?"
+      },
+      "explanations": {
+        "zh-TW": "確認報銷資格",
+        "en": "Asking if an expense qualifies for reimbursement.",
+        "ja": "経費精算対象の質問。",
+        "ko": "비용 정산 대상 여부 질문.",
+        "es": "Preguntando si un gasto califica para reembolso.",
+        "fr": "Demander si une depense est remboursable.",
+        "zh-CN": "确认报销资格",
+        "de": "Fragen, ob eine Ausgabe für Erstattung qualifiziert."
+      }
+    }
+  ],
+  "fin-2": [
+    {
+      "id": "fin-2-01-1",
+      "translations": {
+        "zh-TW": "我需要核對這張發票。",
+        "en": "I need to verify this invoice.",
+        "ja": "この請求書を検証する必要があります。",
+        "ko": "이 청구서를 확인해야 합니다.",
+        "es": "Necesito verificar esta factura.",
+        "fr": "Je dois verifier cette facture.",
+        "zh-CN": "我需要核对这张发票。",
+        "de": "Ich muss diese Rechnung überprüfen."
+      },
+      "explanations": {
+        "zh-TW": "開始核對發票的用語",
+        "en": "Stating intent to verify an invoice.",
+        "ja": "請求書検証の意思表示。",
+        "ko": "청구서 확인 의향.",
+        "es": "Afirmando la intencion de verificar una factura.",
+        "fr": "Affirmer lintention de verifier une facture.",
+        "zh-CN": "开始核对发票的用语",
+        "de": "Ausdruck der Absicht, eine Rechnung zu überprüfen."
+      }
+    },
+    {
+      "id": "fin-2-01-2",
+      "translations": {
+        "zh-TW": "金額有出入。",
+        "en": "There is a discrepancy in the amount.",
+        "ja": "金額に不一致があります。",
+        "ko": "금액에 불일치가 있습니다.",
+        "es": "Hay una discrepancia en el monto.",
+        "fr": "Il y a une discordance dans le montant.",
+        "zh-CN": "金额有出入。",
+        "de": "Es gibt eine Abweichung im Betrag."
+      },
+      "explanations": {
+        "zh-TW": "指出錯誤",
+        "en": "Pointing out an amount mismatch.",
+        "ja": "金額不一致の指摘。",
+        "ko": "금액 불일치 지적.",
+        "es": "Sealando una discrepancia en el monto.",
+        "fr": "Signaler une discordance de montant.",
+        "zh-CN": "指出错误",
+        "de": "Hinweis auf eine Betragsdiskrepanz."
+      }
+    },
+    {
+      "id": "fin-2-01-3",
+      "translations": {
+        "zh-TW": "您能查一下您的記錄嗎？",
+        "en": "Could you check your records?",
+        "ja": "記録を確認していただけますか？",
+        "ko": "기록을 확인해 주시겠어요?",
+        "es": "Podria verificar sus registros?",
+        "fr": "Pourriez-vous verifier vos dossiers?",
+        "zh-CN": "您能查一下您的记录吗？",
+        "de": "Könnten Sie Ihre Aufzeichnungen überprüfen?"
+      },
+      "explanations": {
+        "zh-TW": "請求對方確認",
+        "en": "Requesting the other party to verify their records.",
+        "ja": "相手方の記録確認を求める。",
+        "ko": "상대방 기록 확인 요청.",
+        "es": "Pidiendo a la otra parte verificar sus registros.",
+        "fr": "Demander a lautre partie de verifier ses dossiers.",
+        "zh-CN": "请求对方确认",
+        "de": "Aufforderung an die andere Partei, ihre Aufzeichnungen zu überprüfen."
+      }
+    },
+    {
+      "id": "fin-2-01-4",
+      "translations": {
+        "zh-TW": "請發送更正後的發票。",
+        "en": "Please send a corrected invoice.",
+        "ja": "修正した請求書を送ってください。",
+        "ko": "수정된 청구서를 보내주세요.",
+        "es": "Por favor envie una factura corregida.",
+        "fr": "Veuillez envoyer une facture corrigee.",
+        "zh-CN": "请发送更正后的发票。",
+        "de": "Bitte senden Sie eine korrigierte Rechnung."
+      },
+      "explanations": {
+        "zh-TW": "要求補救措施",
+        "en": "Requesting a corrected invoice.",
+        "ja": "請求書修正を求める。",
+        "ko": "청구서 수정을 요청.",
+        "es": "Solicitando una factura corregida.",
+        "fr": "Demander une facture corrigee.",
+        "zh-CN": "要求补救措施",
+        "de": "Aufforderung nach einer korrigierten Rechnung."
+      }
+    },
+    {
+      "id": "fin-2-01-5",
+      "translations": {
+        "zh-TW": "我們需要在...之前解決這個問題。",
+        "en": "We need this resolved by...",
+        "ja": "...までにこれらを解決する必要があります。",
+        "ko": "...까지 이것을 해결해야 합니다.",
+        "es": "Necesitamos que esto se resuelva antes de...",
+        "fr": "Nous devons resoudre cela avant...",
+        "zh-CN": "我们需要在...之前解决这个问题。",
+        "de": "Wir benötigen eine Lösung bis ..."
+      },
+      "explanations": {
+        "zh-TW": "設定解決期限",
+        "en": "Setting a deadline for resolution.",
+        "ja": "解決期限の設定。",
+        "ko": "해결 기한 설정.",
+        "es": "Estableciendo una fecha limite para la resolucion.",
+        "fr": "Fixer un delai pour la resolution.",
+        "zh-CN": "设置解决期限",
+        "de": "Festlegung einer Frist für die Lösung."
+      }
+    }
+  ],
+  "fin-3": [
+    {
+      "id": "fin-3-01-1",
+      "translations": {
+        "zh-TW": "我們今年預算超支了。",
+        "en": "We exceeded our budget this year.",
+        "ja": "今年は予算を超過しました。",
+        "ko": "올해 예산을 초과했습니다.",
+        "es": "Excedimos nuestro presupuesto este ano.",
+        "fr": "Nous avons depasse notre budget cette annee.",
+        "zh-CN": "我们今年预算超支了。",
+        "de": "Wir haben unser Budget in diesem Jahr überschritten."
+      },
+      "explanations": {
+        "zh-TW": "報告預算問題的開場白",
+        "en": "Admitting budget overrun.",
+        "ja": "予算超過の報告。",
+        "ko": "예산 초과 보고.",
+        "es": "Admitiendo que se excedio el presupuesto.",
+        "fr": "Admettre un depassement de budget.",
+        "zh-CN": "报告预算问题的开场白",
+        "de": "Zugeben einer Budgetüberschreitung."
+      }
+    },
+    {
+      "id": "fin-3-01-2",
+      "translations": {
+        "zh-TW": "主要原因是...",
+        "en": "The main reason was...",
+        "ja": "主な理由は...です。",
+        "ko": "주된 이유는 ...입니다.",
+        "es": "La razon principal fue...",
+        "fr": "La raison principale etait...",
+        "zh-CN": "主要原因是...",
+        "de": "Der Hauptgrund war ..."
+      },
+      "explanations": {
+        "zh-TW": "開始解釋原因",
+        "en": "Explaining the primary cause of budget overrun.",
+        "ja": "予算超過の主な原因を説明する。",
+        "ko": "예산 초과의 주된 원인 설명.",
+        "es": "Explicando la causa principal del exceso de presupuesto.",
+        "fr": "Expliquer la cause principale du depassement.",
+        "zh-CN": "开始解释原因",
+        "de": "Erklärung der primären Ursache für Budgetüberschreitung."
+      }
+    },
+    {
+      "id": "fin-3-01-3",
+      "translations": {
+        "zh-TW": "我們有...的意外支出。",
+        "en": "We had unexpected costs for...",
+        "ja": "...に予期せぬ費用がかかりました。",
+        "ko": "...에 예상치 못한 비용이 발생했습니다.",
+        "es": "Tuvimos costos inesperados por...",
+        "fr": "Nous avons eu des couts inatendus pour...",
+        "zh-CN": "我们有...的意外支出。",
+        "de": "Wir hatten unerwartete Kosten für ..."
+      },
+      "explanations": {
+        "zh-TW": "說明具體支出",
+        "en": "Attributing costs to unexpected expenses.",
+        "ja": "予期せぬ費用への原因帰属。",
+        "ko": "예상치 못한 비용으로 인한 원인 귀속.",
+        "es": "Atribuyendo costos a gastos inesperados.",
+        "fr": "Attribuer les couts a des depenses inatendues.",
+        "zh-CN": "说明具体支出",
+        "de": "Zuschreibung von Kosten zu unerwarteten Ausgaben."
+      }
+    },
+    {
+      "id": "fin-3-01-4",
+      "translations": {
+        "zh-TW": "我們已採取措施...",
+        "en": "We have taken measures to...",
+        "ja": "...のために措置を講じました。",
+        "ko": "...을 위해 조치를 취했습니다.",
+        "es": "Hemos tomado medidas para...",
+        "fr": "Nous avons pris des mesures pour...",
+        "zh-CN": "我们已采取措施...",
+        "de": "Wir haben Maßnahmen ergriffen, um ..."
+      },
+      "explanations": {
+        "zh-TW": "說明應對行動",
+        "en": "Describing corrective actions taken.",
+        "ja": "実施した改善措置の説明。",
+        "ko": "시정한 조치 설명.",
+        "es": "Describiendo las acciones correctivas tomadas.",
+        "fr": "Decrire les mesures correctives prises.",
+        "zh-CN": "说明应对行动",
+        "de": "Beschreibung ergriffener Korrekturmaßnahmen."
+      }
+    },
+    {
+      "id": "fin-3-01-5",
+      "translations": {
+        "zh-TW": "我們明年會更謹慎。",
+        "en": "We will be more careful next year.",
+        "ja": "来年はより慎重にいきたいです。",
+        "ko": "내년에는 더 조심할 것입니다.",
+        "es": "Seremos mas cuidadosos el proximo ano.",
+        "fr": "Nous serons plus prudents lannee prochaine.",
+        "zh-CN": "我们明年会更谨慎。",
+        "de": "Wir werden nächstes Jahr vorsichtiger sein."
+      },
+      "explanations": {
+        "zh-TW": "承諾改進",
+        "en": "Promising to be more cautious in the future.",
+        "ja": "今後の慎重な行動への約束。",
+        "ko": "향후 더 조심할 것이라는 약속.",
+        "es": "Prometiendo ser mas cuidadosos en el futuro.",
+        "fr": "Promettre detre plus prudent la prochaine fois.",
+        "zh-CN": "承诺改进",
+        "de": "Versprechen, in Zukunft vorsichtiger zu sein."
+      }
+    }
+  ],
+  "fin-4": [
+    {
+      "id": "fin-4-01-1",
+      "translations": {
+        "zh-TW": "我們來分析季度財務報表。",
+        "en": "Let us analyze the quarterly report.",
+        "ja": "四半期報告書を分析しましょう。",
+        "ko": "분기 보고서를 분석합시다.",
+        "es": "Analicemos el informe trimestral.",
+        "fr": "Analysons le rapport trimestriel.",
+        "zh-CN": "我们来分析季度财务报表。",
+        "de": "Lassen Sie uns den Quartalsbericht analysieren."
+      },
+      "explanations": {
+        "zh-TW": "開始財報分析的開場白",
+        "en": "Proposing to analyze a quarterly report.",
+        "ja": "四半期報告書分析の提案。",
+        "ko": "분기 보고서 분석 제안.",
+        "es": "Proponiendo analizar un informe trimestral.",
+        "fr": "Proposer danalyser un rapport trimestriel.",
+        "zh-CN": "开始财报分析的开场白",
+        "de": "Vorschlag zur Analyse eines Quartalsberichts."
+      }
+    },
+    {
+      "id": "fin-4-01-2",
+      "translations": {
+        "zh-TW": "營收增加了...",
+        "en": "Revenue increased by...",
+        "ja": "収益は...増加しました。",
+        "ko": "수익이 ... 증가했습니다.",
+        "es": "Los ingresos aumentaron en...",
+        "fr": "Les revenus ont augmente de...",
+        "zh-CN": "营收增加了...",
+        "de": "Der Umsatz ist um ... gestiegen."
+      },
+      "explanations": {
+        "zh-TW": "報告營收變化",
+        "en": "Reporting revenue growth.",
+        "ja": "収益増加の報告。",
+        "ko": "수익 증가 보고.",
+        "es": "Reportando crecimiento de ingresos.",
+        "fr": "Signaler une croissance des revenus.",
+        "zh-CN": "报告营收变化",
+        "de": "Berichterstattung über Umsatzwachstum."
+      }
+    },
+    {
+      "id": "fin-4-01-3",
+      "translations": {
+        "zh-TW": "營業費用因...而上升。",
+        "en": "Operating expenses rose due to...",
+        "ja": "運営費用は...により増加しました。",
+        "ko": "운영 비용이 ...으로 인해 증가했습니다.",
+        "es": "Los gastos operativos aumentaron debido a...",
+        "fr": "Les charges dexploitation ont augmente en raison de...",
+        "zh-CN": "营业费用因...而上升。",
+        "de": "Die Betriebsausgaben sind aufgrund von ... gestiegen."
+      },
+      "explanations": {
+        "zh-TW": "解釋費用變化",
+        "en": "Explaining why operating expenses increased.",
+        "ja": "運営費用増加の理由を説明する。",
+        "ko": "운영 비용 증가 원인 설명.",
+        "es": "Explicando por que los gastos operativos aumentaron.",
+        "fr": "Expliquer pourquoi les charges dexploitation ont augmente.",
+        "zh-CN": "解释费用变化",
+        "de": "Erklärung, warum die Betriebsausgaben gestiegen sind."
+      }
+    },
+    {
+      "id": "fin-4-01-4",
+      "translations": {
+        "zh-TW": "淨利率是...",
+        "en": "Net profit margin is...",
+        "ja": "純利益率は...です。",
+        "ko": "순이익률은 ...입니다.",
+        "es": "El margen de beneficio neto es...",
+        "fr": "La marge benefice nette est...",
+        "zh-CN": "净利率是...",
+        "de": "Die Nettogewinnspanne beträgt ..."
+      },
+      "explanations": {
+        "zh-TW": "報告利潤指標",
+        "en": "Stating the net profit margin figure.",
+        "ja": "純利益率の数値を述べる。",
+        "ko": "순이익률 수치 알림.",
+        "es": "Indicando la cifra del margen de beneficio neto.",
+        "fr": "Indiquer le chiffre de la marge benefice nette.",
+        "zh-CN": "报告利润指针",
+        "de": "Angabe der Nettogewinnspanne-Zahl."
+      }
+    },
+    {
+      "id": "fin-4-01-5",
+      "translations": {
+        "zh-TW": "我們應密切監控現金流。",
+        "en": "We should monitor cash flow closely.",
+        "ja": "キャッシュフローを緊密に監視すべきです。",
+        "ko": "현금 흐름을 긴밀히 모니터링해야 합니다.",
+        "es": "Debemos monitorear el flujo de caja de cerca.",
+        "fr": "Nous devons surveiller closely le flux de tresorerie.",
+        "zh-CN": "我们应密切监控现金流。",
+        "de": "Wir sollten den Cashflow genau überwachen."
+      },
+      "explanations": {
+        "zh-TW": "提出建議",
+        "en": "Recommending close cash flow monitoring.",
+        "ja": "キャッシュフロー監視の強化を推奨。",
+        "ko": "현금 흐름 모니터링 강화 권장.",
+        "es": "Recomendando un monitoreo cercano del flujo de caja.",
+        "fr": "Recommander une surveillance etroite du flux de tresorerie.",
+        "zh-CN": "提出建议",
+        "de": "Empfehlung engmaschiger Cashflow-Überwachung."
+      }
+    }
+  ],
+  "fin-5": [
+    {
+      "id": "fin-5-01-1",
+      "translations": {
+        "zh-TW": "我們需要對併購標的進行估值。",
+        "en": "We need to value the acquisition target.",
+        "ja": "買収目標を評価する必要があります。",
+        "ko": "인수 대상을 평가해야 합니다.",
+        "es": "Necesitamos evaluar el objetivo de adquisicion.",
+        "fr": "Nous devons evaluer la cible dacquisition.",
+        "zh-CN": "我们需要对并购标的进行估值。",
+        "de": "Wir müssen das Übernahmeziel bewerten."
+      },
+      "explanations": {
+        "zh-TW": "開始併購討論的開場白",
+        "en": "Stating the need to value an acquisition target.",
+        "ja": "買収目標評価の必要性を述べる。",
+        "ko": "인수 대상 평가 필요성 알림.",
+        "es": "Afirmando la necesidad de evaluar un objetivo de adquisicion.",
+        "fr": "Affirmer la necessite devaluer une cible dacquisition.",
+        "zh-CN": "开始并购讨论的开场白",
+        "de": "Feststellung der Notwendigkeit, ein Übernahmeziel zu bewerten."
+      }
+    },
+    {
+      "id": "fin-5-01-2",
+      "translations": {
+        "zh-TW": "他們的 EBITDA 是多少？",
+        "en": "What is their EBITDA?",
+        "ja": "彼らのEBITDAはいくらですか？",
+        "ko": "그들의 EBITDA는 얼마인가요?",
+        "es": "Cual es su EBITDA?",
+        "fr": "Quel est leur EBITDA?",
+        "zh-CN": "他们的 EBITDA 是多少？",
+        "de": "Was ist ihr EBITDA?"
+      },
+      "explanations": {
+        "zh-TW": "詢問關鍵財務指標",
+        "en": "Asking about the target company EBITDA.",
+        "ja": "対象企業のEBITDAについての質問。",
+        "ko": "대상 기업 EBITDA 질문.",
+        "es": "Preguntando sobre el EBITDA de la empresa objetivo.",
+        "fr": "Demander le EBITDA de lentreprise cible.",
+        "zh-CN": "询问关键财务指针",
+        "de": "Fragen zum EBITDA des Zielunternehmens."
+      }
+    },
+    {
+      "id": "fin-5-01-3",
+      "translations": {
+        "zh-TW": "商譽應反映...",
+        "en": "The goodwill should reflect...",
+        "ja": "のれんは...を反映すべきです。",
+        "ko": "暧질은 ...을 반영해야 합니다.",
+        "es": "El goodwill debe reflejar...",
+        "fr": "Le goodwill devrait reflechir...",
+        "zh-CN": "商誉应反映...",
+        "de": "Der Firmenwert sollte ... widerspiegeln"
+      },
+      "explanations": {
+        "zh-TW": "討論無形資產價值",
+        "en": "Discussing how goodwill should be calculated.",
+        "ja": "暖質の計算方法を議論する。",
+        "ko": "暖질 계산 방법 논의.",
+        "es": "Discutiendo como se debe calcular el goodwill.",
+        "fr": "Discuter de la façon dont le goodwill devrait etre calcule.",
+        "zh-CN": "讨论无形资产价值",
+        "de": "Besprechung, wie Firmenwert berechnet werden sollte."
+      }
+    },
+    {
+      "id": "fin-5-01-4",
+      "translations": {
+        "zh-TW": "我們需要對...進行盡職調查。",
+        "en": "We need due diligence on...",
+        "ja": "...についてデューデリジェンスが必要です。",
+        "ko": "...에 대해 실사 조사(deDiligence)가 필요합니다.",
+        "es": "Necesitamos debida diligencia sobre...",
+        "fr": "Nous avons besoin dune due diligence sur...",
+        "zh-CN": "我们需要对...进行尽职调查。",
+        "de": "Wir benötigen Due Diligence für ..."
+      },
+      "explanations": {
+        "zh-TW": "提出調查需求",
+        "en": "Requesting due diligence on a specific area.",
+        "ja": "特定分野のデューデリジェンスを求める。",
+        "ko": "특정 분야 실사 조사 요청.",
+        "es": "Solicitando debida diligencia en un area especifica.",
+        "fr": "Demander une due diligence sur un domaine specifique.",
+        "zh-CN": "提出调查需求",
+        "de": "Aufforderung zu Due Diligence in einem bestimmten Bereich."
+      }
+    },
+    {
+      "id": "fin-5-01-5",
+      "translations": {
+        "zh-TW": "估值區間是...",
+        "en": "The valuation range is...",
+        "ja": "評価範囲は...です。",
+        "ko": "평가 범위는 ...입니다.",
+        "es": "El rango de valoracion es...",
+        "fr": "La plage de valorisation est...",
+        "zh-CN": "估值区间是...",
+        "de": "Die Bewertungsspanne beträgt ..."
+      },
+      "explanations": {
+        "zh-TW": "報告估值結果",
+        "en": "Stating the valuation range.",
+        "ja": "評価範囲を述べる。",
+        "ko": "평가 범위 알림.",
+        "es": "Indicando el rango de valoracion.",
+        "fr": "Indiquer la plage de valorisation.",
+        "zh-CN": "报告估值结果",
+        "de": "Angabe der Bewertungsspanne."
+      }
+    }
+  ],
+  "fin-6": [
+    {
+      "id": "fin-6-01-1",
+      "translations": {
+        "zh-TW": "我將報告風險評估結果。",
+        "en": "I will present the risk assessment.",
+        "ja": "リスク評価を提示します。",
+        "ko": "위험 평가를 제시하겠습니다.",
+        "es": "Presentare la evaluacion de riesgos.",
+        "fr": "Je presenterai levaluation des risques.",
+        "zh-CN": "我将报告风险评估结果。",
+        "de": "Ich werde die Risikobewertung vorstellen."
+      },
+      "explanations": {
+        "zh-TW": "開始風險報告的開場白",
+        "en": "Announcing intent to present a risk assessment.",
+        "ja": "リスク評価提示の意思表示。",
+        "ko": "위험 평가 제시 의향 알림.",
+        "es": "Anunciando la intencion de presentar una evaluacion de riesgos.",
+        "fr": "Annoncer lintention de presenter une evaluation des risques.",
+        "zh-CN": "开始风险报告的开场白",
+        "de": "Ankündigung der Absicht, eine Risikobewertung vorzustellen."
+      }
+    },
+    {
+      "id": "fin-6-01-2",
+      "translations": {
+        "zh-TW": "主要風險包括...",
+        "en": "The main risks include...",
+        "ja": "主なリスクには...が含まれます。",
+        "ko": "주된 위험에는 ...이 포함됩니다.",
+        "es": "Los principales riesgos incluyen...",
+        "fr": "Les principaux risques incluent...",
+        "zh-CN": "主要风险包括...",
+        "de": "Die Hauptrisiken umfassen ..."
+      },
+      "explanations": {
+        "zh-TW": "列出風險因素",
+        "en": "Listing the primary risks.",
+        "ja": "主なリスクの一覧提示。",
+        "ko": "주된 위험 목록 제시.",
+        "es": "Enumerando los principales riesgos.",
+        "fr": "Enumerer les principaux risques.",
+        "zh-CN": "列出风险因素",
+        "de": "Aufführung der primären Risiken."
+      }
+    },
+    {
+      "id": "fin-6-01-3",
+      "translations": {
+        "zh-TW": "市場波動可能影響...",
+        "en": "Market volatility may impact...",
+        "ja": "市場変動が...に影響を与える可能性があります。",
+        "ko": "시장 변동성이 ...에 영향을 미칠 수 있습니다.",
+        "es": "La volatilidad del mercado puede impactar...",
+        "fr": "La volatilite du marche peut avoir un impact sur...",
+        "zh-CN": "市场波动可能影响...",
+        "de": "Marktvolatilität könnte ... beeinträchtigen"
+      },
+      "explanations": {
+        "zh-TW": "說明市場風險",
+        "en": "Explaining how market volatility poses a risk.",
+        "ja": "市場変動がリスクとなる理由を説明する。",
+        "ko": "시장 변동성이 위험이 되는 이유 설명.",
+        "es": "Explicando como la volatilidad del mercado plantea un riesgo.",
+        "fr": "Expliquer comment la volatilite du marche represente un risque.",
+        "zh-CN": "说明市场风险",
+        "de": "Erklärung, wie Marktvolatilität ein Risiko darstellt."
+      }
+    },
+    {
+      "id": "fin-6-01-4",
+      "translations": {
+        "zh-TW": "我們建議分散投資。",
+        "en": "We recommend diversification.",
+        "ja": "分散化を推奨します。",
+        "ko": "다각화를 권장합니다.",
+        "es": "Recomendamos diversificacion.",
+        "fr": "Nous recommandons la diversification.",
+        "zh-CN": "我们建议分散投资。",
+        "de": "Wir empfehlen Diversifizierung."
+      },
+      "explanations": {
+        "zh-TW": "提出風險對策",
+        "en": "Recommending a diversification strategy.",
+        "ja": "分散化戦略を推奨。",
+        "ko": "다각화 전략 권장.",
+        "es": "Recomendando una estrategia de diversificacion.",
+        "fr": "Recommander une strategie de diversification.",
+        "zh-CN": "提出风险对策",
+        "de": "Empfehlung einer Diversifizierungsstrategie."
+      }
+    },
+    {
+      "id": "fin-6-01-5",
+      "translations": {
+        "zh-TW": "預期報酬是...",
+        "en": "The expected return is...",
+        "ja": "期待収益率は...です。",
+        "ko": "기대 수익률은 ...입니다.",
+        "es": "El retorno esperado es...",
+        "fr": "Le rendement attendu est...",
+        "zh-CN": "预期报酬是...",
+        "de": "Die erwartete Rendite beträgt ..."
+      },
+      "explanations": {
+        "zh-TW": "報告預期收益",
+        "en": "Stating the expected rate of return.",
+        "ja": "期待収益率を述べる。",
+        "ko": "기대 수익률 알림.",
+        "es": "Indicando la tasa de retorno esperada.",
+        "fr": "Indiquer le taux de rendement attendu.",
+        "zh-CN": "报告预期收益",
+        "de": "Angabe der erwarteten Rendite."
+      }
+    }
+  ],
+  "crs-1": [
+    {
+      "id": "crs-1-01-1",
+      "translations": {
+        "zh-TW": "不好意思，請問教室在哪裡？",
+        "en": "Excuse me, do you know where the classroom is?",
+        "ja": "すみません教室はどこですか？",
+        "ko": "실례합니다, 교실이 어디인지 아시나요?",
+        "es": "Perdone, sabe donde esta el aula?",
+        "fr": "Excusez-moi, savez-vous ou est la salle de classe?",
+        "zh-CN": "不好意思，请问教室在哪里？",
+        "de": "Entschuldigen Sie, wissen Sie, wo der Hörsaal ist?"
+      },
+      "explanations": {
+        "zh-TW": "詢問教室位置的禮貌用語",
+        "en": "Asking for directions to a classroom.",
+        "ja": "教室への道順を求める。",
+        "ko": "교실로 가는 길 질문.",
+        "es": "Pidiendo indicaciones al aula.",
+        "fr": "Demander son chemin vers la salle de classe.",
+        "zh-CN": "询问教室位置的礼貌用语",
+        "de": "Fragen nach dem Weg zu einem Hörsaal."
+      }
+    },
+    {
+      "id": "crs-1-01-2",
+      "translations": {
+        "zh-TW": "在哪棟建築物？",
+        "en": "Which building is it in?",
+        "ja": "どの建物にありますか？",
+        "ko": "어떤 건물에 있나요?",
+        "es": "En que edificio esta?",
+        "fr": "Dans quel batiment est-elle?",
+        "zh-CN": "在哪栋建筑物？",
+        "de": "In welchem Gebäude ist er?"
+      },
+      "explanations": {
+        "zh-TW": "詢問具體位置",
+        "en": "Asking which building a classroom is located in.",
+        "ja": "教室がある建物を尋ねる。",
+        "ko": "교실이 있는 건물 질문.",
+        "es": "Preguntando en que edificio esta el aula.",
+        "fr": "Demander dans quel batiment se trouve la salle.",
+        "zh-CN": "询问具体位置",
+        "de": "Fragen, in welchem Gebäude sich ein Hörsaal befindet."
+      }
+    },
+    {
+      "id": "crs-1-01-3",
+      "translations": {
+        "zh-TW": "課程幾點開始？",
+        "en": "What time does class start?",
+        "ja": "授業はいつ始まりますか？",
+        "ko": "수업이 몇 시에 시작하나요?",
+        "es": "A que hora empieza la clase?",
+        "fr": "A quelle heure commence le cours?",
+        "zh-CN": "课程几点开始？",
+        "de": "Wann beginnt der Unterricht?"
+      },
+      "explanations": {
+        "zh-TW": "詢問上課時間",
+        "en": "Asking when a class begins.",
+        "ja": "授業開始時刻を尋ねる。",
+        "ko": "수업 시작 시간 질문.",
+        "es": "Preguntando cuando empieza la clase.",
+        "fr": "Demander a quelle heure le cours commence.",
+        "zh-CN": "询问上课时间",
+        "de": "Fragen, wann ein Unterricht beginnt."
+      }
+    },
+    {
+      "id": "crs-1-01-4",
+      "translations": {
+        "zh-TW": "有地圖嗎？",
+        "en": "Is there a map available?",
+        "ja": "地図はありますか？",
+        "ko": "지도가 있나요?",
+        "es": "Hay un mapa disponible?",
+        "fr": "Y a-t-il une carte disponible?",
+        "zh-CN": "有地图吗？",
+        "de": "Gibt es einen Plan?"
+      },
+      "explanations": {
+        "zh-TW": "請求指引",
+        "en": "Requesting a campus map.",
+        "ja": "キャンパス地图の依頼。",
+        "ko": "캠퍼스 지도 요청.",
+        "es": "Solicitando un mapa del campus.",
+        "fr": "Demander un plan du campus.",
+        "zh-CN": "请求指引",
+        "de": "Aufforderung nach einem Campusplan."
+      }
+    },
+    {
+      "id": "crs-1-01-5",
+      "translations": {
+        "zh-TW": "謝謝您的幫忙。",
+        "en": "Thank you for your help.",
+        "ja": "ご協力ありがとうございます。",
+        "ko": "도움에 감사합니다.",
+        "es": "Gracias por su ayuda.",
+        "fr": "Merci de votre aide.",
+        "zh-CN": "谢谢您的帮忙。",
+        "de": "Vielen Dank für Ihre Hilfe."
+      },
+      "explanations": {
+        "zh-TW": "表達感謝",
+        "en": "Expressing gratitude for assistance.",
+        "ja": "手伝いへの感謝表示。",
+        "ko": "도움에 대한 감사 표현.",
+        "es": "Expresando gratitud por la asistencia.",
+        "fr": "Exprimer sa gratitude pour lassistance.",
+        "zh-CN": "表达感谢",
+        "de": "Ausdruck von Dankbarkeit für Hilfe."
+      }
+    }
+  ],
+  "crs-2": [
+    {
+      "id": "crs-2-01-1",
+      "translations": {
+        "zh-TW": "作業什麼時候到期？",
+        "en": "When is the assignment due?",
+        "ja": "課題はいつ締め切りですか？",
+        "ko": "과제가 언제 마감인가요?",
+        "es": "Cuando vence la tarea?",
+        "fr": "Quand le devoir est-il a rendre?",
+        "zh-CN": "作业什么时候到期？",
+        "de": "Wann ist die Aufgabe fällig?"
+      },
+      "explanations": {
+        "zh-TW": "詢問截止日期的標準用語",
+        "en": "Asking about assignment deadline.",
+        "ja": "課題締め切りについての質問。",
+        "ko": "과제 마감일 질문.",
+        "es": "Preguntando sobre la fecha limite de la tarea.",
+        "fr": "Demander la date limite du devoir.",
+        "zh-CN": "询问截止日期的标准用语",
+        "de": "Fragen zur Aufgabefrist."
+      }
+    },
+    {
+      "id": "crs-2-01-2",
+      "translations": {
+        "zh-TW": "我可以申請延期嗎？",
+        "en": "Can I get an extension?",
+        "ja": "延長できますか？",
+        "ko": "기한 연장이 가능하나요?",
+        "es": "Puedo obtener una extension?",
+        "fr": "Puis-je obtenir une extension?",
+        "zh-CN": "我可以申请延期吗？",
+        "de": "Kann ich eine Verlängerung bekommen?"
+      },
+      "explanations": {
+        "zh-TW": "請求寬限",
+        "en": "Requesting a deadline extension.",
+        "ja": "締め切り延長の依頼。",
+        "ko": "마감일 연장 요청.",
+        "es": "Solicitando una extension del plazo.",
+        "fr": "Demander une extension du delai.",
+        "zh-CN": "请求宽限",
+        "de": "Aufforderung zur Fristverlängerung."
+      }
+    },
+    {
+      "id": "crs-2-01-3",
+      "translations": {
+        "zh-TW": "我應該用什麼格式？",
+        "en": "What format should I use?",
+        "ja": "どのフォーマットを使えばいいですか？",
+        "ko": "어떤 형식을 사용해야 하나요?",
+        "es": "Que formato debo usar?",
+        "fr": "Quel format dois-je utiliser?",
+        "zh-CN": "我应该用什么格式？",
+        "de": "Welches Format soll ich verwenden?"
+      },
+      "explanations": {
+        "zh-TW": "詢問提交要求",
+        "en": "Asking about required format.",
+        "ja": "必要なフォーマットについての質問。",
+        "ko": "필요한 형식 질문.",
+        "es": "Preguntando sobre el formato requerido.",
+        "fr": "Demander le format requis.",
+        "zh-CN": "询问提交要求",
+        "de": "Fragen zum erforderlichen Format."
+      }
+    },
+    {
+      "id": "crs-2-01-4",
+      "translations": {
+        "zh-TW": "我要在哪裡提交？",
+        "en": "Where do I submit?",
+        "ja": "どこに提出すればいいですか？",
+        "ko": "어디에 제출하면 되나요?",
+        "es": "Donde debo entregar?",
+        "fr": "Ou dois-je le rendre?",
+        "zh-CN": "我要在哪里提交？",
+        "de": "Wo gebe ich ab?"
+      },
+      "explanations": {
+        "zh-TW": "詢問提交地點",
+        "en": "Asking where to submit an assignment.",
+        "ja": "課題提出先を尋ねる。",
+        "ko": "과제 제출처 질문.",
+        "es": "Preguntando donde entregar una tarea.",
+        "fr": "Demander ou rendre un devoir.",
+        "zh-CN": "询问提交地点",
+        "de": "Fragen, wo eine Aufgabe abzugeben ist."
+      }
+    },
+    {
+      "id": "crs-2-01-5",
+      "translations": {
+        "zh-TW": "遲交會有處罰嗎？",
+        "en": "Are there any late penalties?",
+        "ja": "期限超過のペナルティはありますか？",
+        "ko": "기한 초과 시 페널티가 있나요?",
+        "es": "Hay alguna penalizacion por retraso?",
+        "fr": "Y a-t-il des penalites de retard?",
+        "zh-CN": "迟交会有处罚吗？",
+        "de": "Gibt es Verspätungsstrafen?"
+      },
+      "explanations": {
+        "zh-TW": "詢問遲交後果",
+        "en": "Asking about penalties for late submission.",
+        "ja": "期限内提出に関するペナルティの質問。",
+        "ko": "지연 제출에 대한 페널티 질문.",
+        "es": "Preguntando sobre penalizaciones por entrega tardia.",
+        "fr": "Demander les penalites pour rendu en retard.",
+        "zh-CN": "询问迟交后果",
+        "de": "Fragen zu Strafen für verspätete Abgabe."
+      }
+    }
+  ],
+  "crs-3": [
+    {
+      "id": "crs-3-01-1",
+      "translations": {
+        "zh-TW": "我想討論我的研究主題。",
+        "en": "I would like to discuss my research topic.",
+        "ja": "研究テーマについてお話したいです。",
+        "ko": "연구 주제에 대해 이야기하고 싶습니다.",
+        "es": "Me gustaria discutir mi tema de investigacion.",
+        "fr": "Je voudrais discuter de mon sujet de recherche.",
+        "zh-CN": "我想讨论我的研究主题。",
+        "de": "Ich würde gerne mein Forschungsthema besprechen."
+      },
+      "explanations": {
+        "zh-TW": "開始學術討論的開場白",
+        "en": "Requesting a discussion about a research topic.",
+        "ja": "研究テーマ discussion の依頼。",
+        "ko": "연구 주제 논의 요청.",
+        "es": "Solicitando una discusion sobre un tema de investigacion.",
+        "fr": "Demander une discussion sur un sujet de recherche.",
+        "zh-CN": "开始学术讨论的开场白",
+        "de": "Aufforderung zu einer Diskussion über ein Forschungsthema."
+      }
+    },
+    {
+      "id": "crs-3-01-2",
+      "translations": {
+        "zh-TW": "我的研究問題是...",
+        "en": "My research question is...",
+        "ja": "私の研究課題は...です。",
+        "ko": "제 연구 질문은 ...입니다.",
+        "es": "Mi pregunta de investigacion es...",
+        "fr": "Ma question de recherche est...",
+        "zh-CN": "我的研究问题是...",
+        "de": "Meine Forschungsfrage ist ..."
+      },
+      "explanations": {
+        "zh-TW": "說明研究重點",
+        "en": "Presenting a research question.",
+        "ja": "研究課題を提示する。",
+        "ko": "연구 질문 제시.",
+        "es": "Presentando una pregunta de investigacion.",
+        "fr": "Presenter une question de recherche.",
+        "zh-CN": "说明研究重点",
+        "de": "Vorstellung einer Forschungsfrage."
+      }
+    },
+    {
+      "id": "crs-3-01-3",
+      "translations": {
+        "zh-TW": "我正在考慮...",
+        "en": "I am considering...",
+        "ja": "...を考慮しています。",
+        "ko": "...을 고려하고 있습니다.",
+        "es": "Estoy considerando...",
+        "fr": "Je considere...",
+        "zh-CN": "我正在考虑...",
+        "de": "Ich erwäge ..."
+      },
+      "explanations": {
+        "zh-TW": "提出想法",
+        "en": "Expressing consideration of an option.",
+        "ja": "選択肢を検討中である旨の表明。",
+        "ko": "선택지 고려 중임을 표현.",
+        "es": "Expresando que se esta considerando una opcion.",
+        "fr": "Exprimer quon envisage une option.",
+        "zh-CN": "提出想法",
+        "de": "Ausdruck der Erwägung einer Option."
+      }
+    },
+    {
+      "id": "crs-3-01-4",
+      "translations": {
+        "zh-TW": "我應該參考哪些文獻？",
+        "en": "What literature should I review?",
+        "ja": "どの文献をレビューすべきですか？",
+        "ko": "어떤 문헌을 검토해야 하나요?",
+        "es": "Que literatura debo revisar?",
+        "fr": "Quelle litterature dois-je examiner?",
+        "zh-CN": "我应该参考哪些文献？",
+        "de": "Welche Literatur soll ich überprüfen?"
+      },
+      "explanations": {
+        "zh-TW": "請求指導",
+        "en": "Asking for recommended literature.",
+        "ja": "推奨文献についての質問。",
+        "ko": "권장 문헌 질문.",
+        "es": "Pidiendo literatura recomendada.",
+        "fr": "Demander de la litterature recommandee.",
+        "zh-CN": "请求指导",
+        "de": "Fragen nach empfohlener Literatur."
+      }
+    },
+    {
+      "id": "crs-3-01-5",
+      "translations": {
+        "zh-TW": "謝謝您的指導。",
+        "en": "Thank you for your guidance.",
+        "ja": "ご指導ありがとうございます。",
+        "ko": "지도에 감사합니다.",
+        "es": "Gracias por su orientacion.",
+        "fr": "Merci de vos conseils.",
+        "zh-CN": "谢谢您的指导。",
+        "de": "Vielen Dank für Ihre Anleitung."
+      },
+      "explanations": {
+        "zh-TW": "表達感謝",
+        "en": "Expressing gratitude for guidance received.",
+        "ja": "指導への感謝表示。",
+        "ko": "지도에 대한 감사 표현.",
+        "es": "Expresando gratitud por la orientacion recibida.",
+        "fr": "Exprimer sa gratitude pour les conseils recus.",
+        "zh-CN": "表达感谢",
+        "de": "Ausdruck von Dankbarkeit für erhaltene Anleitung."
+      }
+    }
+  ]
+}

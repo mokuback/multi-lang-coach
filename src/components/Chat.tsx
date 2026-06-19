@@ -2,9 +2,14 @@
 import { createPortal } from 'react-dom';
 import { Send, AlertCircle, CheckCircle, Info, Lightbulb, X, Wand2, Volume2, Mic, Square, RefreshCw, Download, Loader2 } from 'lucide-react';
 import { callLLMAPI, analyzeSentenceAPI, polishSentenceAPI, analyzeConversationAPI, transcribeAudio } from '../utils/llmClient';
+import { getWhisperLang, getTtsCode, getTtsPrefix } from '../utils/languageMap';
 import { exportToPDF } from '../utils/pdfExporter';
 import { useI18n } from '../contexts/I18nContext';
-import { useAppState } from '../contexts/AppStateContext';
+import { useSettingsStore } from '../store/useSettingsStore';
+import { useSessionStore } from '../store/useSessionStore';
+import { useVocabulary } from '../hooks/useVocabulary';
+import { usePatterns } from '../hooks/usePatterns';
+import { useProgress } from '../hooks/useProgress';
 import ChatExportModal from './ChatExportModal';
 import ChatLearningModal from './ChatLearningModal';
 import confetti from 'canvas-confetti';
@@ -37,7 +42,20 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
   setChatHistory: React.Dispatch<React.SetStateAction<ChatMessage[]>>;
 }) => {
   const { t, uiLang, getLocalizedContent } = useI18n();
-  const { state: { apiProvider, apiModel, apiKey, targetLanguage, userCategory, userRole, userLevel, speechRate, autoRead, patternVersion, androidSmartSpeech, correctionMode }, setVocabulary, setSavedPatterns } = useAppState();
+  const apiProvider = useSettingsStore(s => s.apiProvider);
+  const apiModel = useSettingsStore(s => s.apiModel);
+  const apiKey = useSettingsStore(s => s.apiKey);
+  const targetLanguage = useSettingsStore(s => s.targetLanguage);
+  const userCategory = useSettingsStore(s => s.userCategory);
+  const userRole = useSettingsStore(s => s.userRole);
+  const userLevel = useSettingsStore(s => s.userLevel);
+  const speechRate = useSettingsStore(s => s.speechRate);
+  const autoRead = useSettingsStore(s => s.autoRead);
+  const patternVersion = useSettingsStore(s => s.patternVersion);
+  const androidSmartSpeech = useSettingsStore(s => s.androidSmartSpeech);
+  const correctionMode = useSettingsStore(s => s.correctionMode);
+  const { setVocabulary } = useVocabulary();
+  const { setSavedPatterns } = usePatterns();
   const [input, setInput] = useState('');
   const [showPatternHints, setShowPatternHints] = useState(false);
   const [scenarioHintPatterns, setScenarioHintPatterns] = useState([]);
@@ -77,7 +95,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
       return;
     }
     const loadPatterns = async () => {
-      const data = await getScenarioPatterns(targetLanguage, patternVersion);
+      const data = await getScenarioPatterns(patternVersion);
       if (data && data[scenario.id]) {
         setScenarioHintPatterns(data[scenario.id]);
       } else {
@@ -162,7 +180,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
       recognitionRef.current = new SpeechRecognition();
       recognitionRef.current.continuous = true;
       recognitionRef.current.interimResults = true;
-      recognitionRef.current.lang = targetLanguage === 'ja' ? 'ja-JP' : 'en-US'; 
+      recognitionRef.current.lang = getWhisperLang(targetLanguage); 
 
       recognitionRef.current.onresult = (event) => {
         let interimTranscript = '';
@@ -399,10 +417,26 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
       const delimiterRegex = new RegExp(`(${matchedDelimiters.map(d => escapeRegex(d)).join('|')})`, 'g');
       segments = text.split(delimiterRegex).filter(s => s.trim().length > 0);
       useUILangDetection = true;
-    } else if (!isJa) {
-      // 回退到原有邏輯：根據中文漢字與全形標點符號進行切割
-      segments = text.split(/([\u4e00-\u9fa5\u3000-\u303F\uFF00-\uFFEF]+)/g).filter(s => s.trim().length > 0);
-    } else if (scenario && scenario.title) {
+    } else {
+      const isTargetChinese = targetLanguage === 'zh-TW' || targetLanguage === 'zh-CN';
+      const isTargetJa = targetLanguage === 'ja';
+      
+      if (isTargetChinese) {
+        segments = [text];
+        useUILangDetection = false;
+      } else if (isTargetJa && scenario?.title) {
+        const translatedTitle = t(scenario.title);
+        if (text.includes(translatedTitle)) {
+          segments = text.split(new RegExp(`(${translatedTitle})`, 'g')).filter(s => s.trim().length > 0);
+          useUILangDetection = true;
+        }
+      } else {
+        segments = text.split(/([\u4e00-\u9fa5\u3000-\u303F\uFF00-\uFFEF]+)/g).filter(s => s.trim().length > 0);
+        useUILangDetection = true;
+      }
+    }
+
+    if (!useUILangDetection && scenario && scenario.title) {
       // 回退到原有邏輯：日文模式，只針對「情境標題」進行切割
       const translatedTitle = t(scenario.title);
       if (text.includes(translatedTitle)) {
@@ -428,18 +462,19 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
                      ));
       } else {
         // 使用原有邏輯
-        if (!isJa) {
+        const isTargetChinese = targetLanguage === 'zh-TW' || targetLanguage === 'zh-CN';
+        if (!isJa && !isTargetChinese) {
           useUILang = /[\u4e00-\u9fa5]/.test(segment);
-        } else if (scenario && scenario.title) {
+        } else if (targetLanguage === 'ja' && scenario && scenario.title) {
           useUILang = (segment === t(scenario.title));
         }
       }
 
       if (useUILang) {
         // 使用 UI 語言朗讀
-        const uiLangCode = getLangCode(uiLang);
+        const uiLangCode = getTtsCode(uiLang);
         utterance.lang = uiLangCode;
-        const uiLangPrefix = getLangPrefix(uiLang);
+        const uiLangPrefix = getTtsPrefix(uiLang);
         // 尋找合適的語音
         const uiLangVoice = voices.find(v => 
           v.lang.startsWith(uiLangPrefix) && 
@@ -448,9 +483,9 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
         if (uiLangVoice) utterance.voice = uiLangVoice;
       } else {
         // 使用目標語言朗讀
-        const targetLangCode = isJa ? 'ja-JP' : (targetLanguage === 'en' ? 'en-US' : getLangCode(targetLanguage));
+        const targetLangCode = isJa ? 'ja-JP' : (targetLanguage === 'en' ? 'en-US' : getTtsCode(targetLanguage));
         utterance.lang = targetLangCode;
-        const targetLangPrefix = isJa ? 'ja' : (targetLanguage === 'en' ? 'en' : getLangPrefix(targetLanguage));
+        const targetLangPrefix = isJa ? 'ja' : (targetLanguage === 'en' ? 'en' : getTtsPrefix(targetLanguage));
         const targetLangVoice = voices.find(v => 
           v.lang.startsWith(targetLangPrefix) && 
           (v.name.includes('Google') || v.name.includes('Microsoft') || v.name.includes('Siri') || 
@@ -575,8 +610,44 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
              extractedVocab = { term: "詳しく説明する", meaning: t('mock_vocab_elaborate'), example: "その点について、詳しく説明していただけますか？", phonetic: "kuwashiku setsumei suru", partOfSpeech: "v." };
           }
           aiMessage.translation += "\n\n" + t('mockSystemNote');
+        } else if (targetLanguage === 'zh-TW' || targetLanguage === 'zh-CN') {
+          // Chinese mock logic
+          if (userText.includes('進度') || userText.includes('进度') || userText.toLowerCase().includes('progress')) {
+            aiMessage.content = "感謝您分享進度。不過，請確保詳細說明任何可能的阻礙（Blocker）。另外，我注意到一個小小的語法錯誤。";
+            aiMessage.translation = t('mock_trans_progress');
+            aiMessage.correction = null;
+            extractedVocab = { term: "阻礙 (Blocker)", meaning: t('mock_vocab_blocker'), example: "我們有一個嚴重的阻礙阻擋了發布。", phonetic: "zǔ ài", partOfSpeech: "n." };
+          } else if (userText.includes('資料庫') || userText.includes('数据库') || userText.toLowerCase().includes('database') || userText.toLowerCase().includes('server')) {
+            aiMessage.content = "這聽起來像是後端問題。當向非技術主管或客戶解釋時，您可以簡化說明。您可以說『我們遇到了基礎設施延遲』。";
+            aiMessage.translation = t('mock_trans_database');
+            extractedVocab = { term: "基礎設施 (Infrastructure)", meaning: t('mock_vocab_infrastructure'), example: "我們的IT基礎設施需要升級。", phonetic: "jī chǔ shè shī", partOfSpeech: "n." };
+          } else {
+            aiMessage.content = "我明白了。能否詳細說明一下您關注的具體軟體需求或時程？";
+            aiMessage.translation = t('mock_trans_default');
+            aiMessage.correction = null;
+            extractedVocab = { term: "詳細說明 (Elaborate)", meaning: t('mock_vocab_elaborate'), example: "能否詳細說明一下這一點？", phonetic: "xiáng xì shuō míng", partOfSpeech: "v." };
+          }
+          aiMessage.translation += "\n\n" + t('mockSystemNote');
+        } else if (targetLanguage === 'ko') {
+          // Korean mock logic
+          if (userText.toLowerCase().includes('progress') || userText.includes('진행')) {
+            aiMessage.content = "진행 상황을 공유해 주셔서 감사합니다. 하지만, 블로커에 대한 자세한 내용도 공유해 주세요. 또한, 문법에서 작은 실수를 발견했습니다.";
+            aiMessage.translation = t('mock_trans_progress');
+            aiMessage.correction = null;
+            extractedVocab = { term: "블로커 (Blocker)", meaning: t('mock_vocab_blocker'), example: "릴리스를 막고 있는 심각한 블로커가 있습니다.", phonetic: "beul-lo-keo", partOfSpeech: "n." };
+          } else if (userText.toLowerCase().includes('database') || userText.toLowerCase().includes('server') || userText.includes('데이터베이스')) {
+            aiMessage.content = "백엔드 문제인 것 같습니다. 비기술적 상사나 고객에게 설명할 때는 단순화하는 것이 좋습니다. '인프라 지연이 발생하고 있습니다'라고 말할 수 있습니다.";
+            aiMessage.translation = t('mock_trans_database');
+            extractedVocab = { term: "인프라 (Infrastructure)", meaning: t('mock_vocab_infrastructure'), example: "우리 IT 인프라에 업그레이드가 필요합니다.", phonetic: "in-peu-ra", partOfSpeech: "n." };
+          } else {
+            aiMessage.content = "이해했습니다. 집중하고 계신 구체적인 소프트웨어 요구사항이나 일정에 대해 더 자세히 설명해 주실 수 있나요?";
+            aiMessage.translation = t('mock_trans_default');
+            aiMessage.correction = null;
+            extractedVocab = { term: "자세히 설명하다 (Elaborate)", meaning: t('mock_vocab_elaborate'), example: "그 점에 대해 더 자세히 설명해 주실 수 있나요?", phonetic: "ja-se-hi seol-myeong-ha-da", partOfSpeech: "v." };
+          }
+          aiMessage.translation += "\n\n" + t('mockSystemNote');
         } else {
-          // English mock logic
+          // English mock logic (default)
           if (userText.toLowerCase().includes('progress')) {
              aiMessage.content = "Great context on the progress. However, make sure to detail any blockers. Also, I noticed a minor grammar mistake.";
              aiMessage.translation = "太好了，了解進度的狀態。不過，請確保您有詳細說明任何可能遇到的阻礙 (Blockers)。另外，我注意到一個小小的文法錯誤。";
@@ -1407,3 +1478,5 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
 };
 
 export default Chat;
+
+

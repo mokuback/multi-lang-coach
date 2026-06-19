@@ -1,0 +1,32 @@
+Total keys: 770
+
+1. Key: 基本打招呼與禮貌用語
+   Value: Basic Greetings & Polite Expressions
+
+2. Key: 掌握最常用的見面與道別用語。
+   Value: Master the most common greetings and farewells.
+
+3. Key: 早安
+   Value: Good morning
+
+4. Key: 你好
+   Value: Hello
+
+5. Key: 晚安
+   Value: Good evening
+
+6. Key: 謝謝
+   Value: Thank you
+
+7. Key: 再見
+   Value: Goodbye
+
+8. Key: 基本問候 (無特定句型)
+   Value: Basic Greetings (No specific pattern)
+
+9. Key: 依據時間不同使用對應的打招呼用語。
+   Value: Use appropriate greetings based on the time of day.
+
+10. Key: 自我介紹與身分
+   Value: Self-Introduction & Identity
+

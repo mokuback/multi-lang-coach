@@ -1,0 +1,66 @@
+{
+  "patternDrill": {
+    "aiGreeting": {
+      "en": "Let's drill this pattern: \"{pattern}\". I will give you a scenario in {uiLangName}, and you reply using this pattern.",
+      "ja": "このパターンの練習をしましょう: \"{pattern}\". {uiLangName}で状況を説明するので、あなたはこのパターンを使って答えてください。",
+      "ko": "이 패턴을 연습해 봅시다: \"{pattern}\". {uiLangName}(으)로 상황을 설명할 테니, 이 패턴을 사용해서 대답해 주세요.",
+      "zh-CN": "让我们练习这个句型：「{pattern}」。我会用{uiLangName}说明情境，请使用这个句型回覆。",
+      "zh-TW": "讓我們練習這個句型：「{pattern}」。我會用{uiLangName}說明情境，請使用這個句型回覆。"
+    },
+    "aiTranslation": {
+      "en": "Let's practice this pattern: \"{pattern}\". I will give you a scenario in {uiLangName}, please reply using this pattern.",
+      "ja": "このパターンを使って練習しましょう：「{pattern}」。{uiLangName}で状況を説明するので、このパターンを使って答えてください。",
+      "ko": "이 패턴을 연습해 봅시다：「{pattern}」。{uiLangName}(으)로 상황을 설명할 테니, 이 패턴을 사용해서 대답해 주세요.",
+      "zh-CN": "我们来练习这个句型：「{pattern}」。我会给你一个{uiLangName}情境，请使用这个句型回覆。",
+      "zh-TW": "我們來練習這個句型：「{pattern}」。我會給你一個{uiLangName}情境，請使用這個句型回覆。"
+    }
+  },
+  "curriculumDrill": {
+    "aiGreeting": {
+      "en": "Welcome to the unit: \"{unitTitle}\". I am your AI coach. Let's start the training!",
+      "ja": "ユニット「{unitTitle}」へようこそ。私はあなたのAIコーチです。特訓を始めましょう！",
+      "ko": "유닛「{unitTitle}」에 오신 것을 환영합니다. 저는 당신의 AI 코치입니다. 훈련을 시작합시다!",
+      "zh-CN": "欢迎来到「{unitTitle}」单元。我是你的 AI 教练，我们开始特训吧！",
+      "zh-TW": "歡迎來到「{unitTitle}」單元。我是你的 AI 教練，我們開始特訓吧！"
+    },
+    "aiTranslation": {
+      "en": "Welcome to the unit: \"{unitTitle}\". I am your AI coach. Let's start the training! Please prepare, I will give you a {uiLangName} scenario.",
+      "ja": "ユニット「{unitTitle}」へようこそ。私はあなたのAIコーチです。特訓を始めましょう！準備してください、{uiLangName}のシナリオを出します。",
+      "ko": "유닛「{unitTitle}」에 오신 것을 환영합니다. 저는 당신의 AI 코치입니다. 훈련을 시작합시다! 준비하세요, {uiLangName} 시나리오를 내겠습니다.",
+      "zh-CN": "欢迎来到「{unitTitle}」单元。我是你的 AI 教练，我们开始特训吧！请准备好，我会出一个{uiLangName}情境考你。",
+      "zh-TW": "歡迎來到「{unitTitle}」單元。我是你的 AI 教練，我們開始特訓吧！請準備好，我會出一個{uiLangName}情境考你。"
+    }
+  },
+  "freeMode": {
+    "aiGreeting": {
+      "en": "Hello! Let's start a free conversation. You can talk about anything!",
+      "ja": "こんにちは！会話を始めましょう。何について話してもいいですよ！",
+      "ko": "안녕하세요! 대화를 시작해 봅시다. 어떤 주제든 괜찮아요!",
+      "zh-CN": "您好！我们开始自由对话吧，您可以聊任何话题！",
+      "zh-TW": "您好！我們開始自由對話吧，您可以聊任何話題！"
+    },
+    "aiTranslation": {
+      "en": "Hello! Let's start a free conversation. You can talk about anything!",
+      "ja": "こんにちは！会話を始めましょう。何について話してもいいですよ！",
+      "ko": "안녕하세요! 대화를 시작해 봅시다. 어떤 주제든 괜찮아요!",
+      "zh-CN": "您好！我们开始自由对话吧，您可以聊任何话题！",
+      "zh-TW": "您好！我們開始自由對話吧，您可以聊任何話題！"
+    }
+  },
+  "scenario": {
+    "aiGreeting": {
+      "en": "Hello! Let's start practicing the scenario: \"{title}\". {desc}",
+      "ja": "こんにちは！「{title}」のシナリオを練習しましょう。{desc}",
+      "ko": "안녕하세요! 「{title}」 시나리오를 연습해 봅시다. {desc}",
+      "zh-CN": "您好！我们开始练习「{title}」情境。{desc}",
+      "zh-TW": "您好！我們開始練習「{title}」情境。{desc}"
+    },
+    "aiTranslation": {
+      "en": "Hello! Let's start practicing the scenario: \"{title}\". {desc}",
+      "ja": "こんにちは！「{title}」のシナリオを練習しましょう。{desc}",
+      "ko": "안녕하세요! 「{title}」 시나리오를 연습해 봅시다. {desc}",
+      "zh-CN": "您好！我们开始练习「{title}」情境。{desc}",
+      "zh-TW": "您好！我們開始練習「{title}」情境。{desc}"
+    }
+  }
+}

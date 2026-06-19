@@ -2,8 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Settings as SettingsIcon } from 'lucide-react';
 import { useI18n } from '../contexts/I18nContext';
-import { useAppState } from '../contexts/AppStateContext';
+import { useSettingsStore } from '../store/useSettingsStore';
 import { categoryData, getDefaultRole } from '../data/categoryData';
+import { getLangName } from '../utils/languageMap';
 import GlassSelect from './GlassSelect';
 
 // Vite injects these at build time
@@ -14,28 +15,45 @@ declare const __BUILD_DATE__: string;
 const LANG_OPTIONS = [
   { value: 'zh-TW', label: '繁體中文', flag: '🇭🇹' },
   { value: 'zh-CN', label: '简体中文', flag: '🇨🇳' },
-  { value: 'en',    label: 'English',    flag: '🇬🇧' },
-  { value: 'ja',    label: '日本語',    flag: '🇯🇵' },
-  { value: 'ko',    label: '한국어',    flag: '🇰🇷' },
-  { value: 'es',    label: 'Español',    flag: '🇪🇸' },
-  { value: 'fr',    label: 'Français',   flag: '🇫🇷' },
+  { value: 'en', label: 'English', flag: '🇬🇧' },
+  { value: 'ja', label: '日本語', flag: '🇯🇵' },
+  { value: 'ko', label: '한국어', flag: '🇰🇷' },
+  { value: 'es', label: 'Español', flag: '🇪🇸' },
+  { value: 'fr', label: 'Français', flag: '🇫🇷' },
+  { value: 'de', label: 'Deutsch', flag: '🇩🇪' },
 ];
 
 const Settings = () => {
   const { t, uiLang, setUiLang } = useI18n();
   const navigate = useNavigate();
 
-  const {
-    state: {
-      apiProvider, apiModel, apiKey, androidSmartSpeech,
-      correctionMode, speechRate, autoRead, uiTheme,
-      targetLanguage, patternVersion, userCategory, userRole, userLevel
-    },
-    setApiProvider, setApiModel, setApiKey, setAndroidSmartSpeech,
-    setCorrectionMode,
-    setSpeechRate, setAutoRead, setUiTheme,
-    setTargetLanguage, setPatternVersion, setUserCategory, setUserRole, setUserLevel
-  } = useAppState();
+  const apiProvider = useSettingsStore(s => s.apiProvider);
+  const apiModel = useSettingsStore(s => s.apiModel);
+  const apiKey = useSettingsStore(s => s.apiKey);
+  const androidSmartSpeech = useSettingsStore(s => s.androidSmartSpeech);
+  const correctionMode = useSettingsStore(s => s.correctionMode);
+  const speechRate = useSettingsStore(s => s.speechRate);
+  const autoRead = useSettingsStore(s => s.autoRead);
+  const uiTheme = useSettingsStore(s => s.uiTheme);
+  const targetLanguage = useSettingsStore(s => s.targetLanguage);
+  const patternVersion = useSettingsStore(s => s.patternVersion);
+  const userCategory = useSettingsStore(s => s.userCategory);
+  const userRole = useSettingsStore(s => s.userRole);
+  const userLevel = useSettingsStore(s => s.userLevel);
+
+  const setApiProvider = useSettingsStore(s => s.setApiProvider);
+  const setApiModel = useSettingsStore(s => s.setApiModel);
+  const setApiKey = useSettingsStore(s => s.setApiKey);
+  const setAndroidSmartSpeech = useSettingsStore(s => s.setAndroidSmartSpeech);
+  const setCorrectionMode = useSettingsStore(s => s.setCorrectionMode);
+  const setSpeechRate = useSettingsStore(s => s.setSpeechRate);
+  const setAutoRead = useSettingsStore(s => s.setAutoRead);
+  const setUiTheme = useSettingsStore(s => s.setUiTheme);
+  const setTargetLanguage = useSettingsStore(s => s.setTargetLanguage);
+  const setPatternVersion = useSettingsStore(s => s.setPatternVersion);
+  const setUserCategory = useSettingsStore(s => s.setUserCategory);
+  const setUserRole = useSettingsStore(s => s.setUserRole);
+  const setUserLevel = useSettingsStore(s => s.setUserLevel);
 
   const handleCategoryChange = (v: string) => {
     setUserCategory(v);
@@ -43,7 +61,7 @@ const Settings = () => {
   };
 
   const themeOptions = [
-    { value: 'glass',     label: t('科技玻璃風 (Glassmorphism)') },
+    { value: 'glass', label: t('科技玻璃風 (Glassmorphism)') },
     { value: 'saas-dark', label: t('商業深色風 (SaaS Dark)') },
     { value: 'saas-light', label: t('商業淺色風 (SaaS Light)') },
   ];
@@ -59,8 +77,10 @@ const Settings = () => {
   }));
 
   const targetLangOptions = [
-    { value: 'en', label: t('英語 (English)') },
-    { value: 'ja', label: t('日語 (日本語)') },
+    { value: 'en', label: `${getLangName('en', uiLang)} (English)` },
+    { value: 'ja', label: `${getLangName('ja', uiLang)} (日本語)` },
+    { value: 'zh-CN', label: `${getLangName('zh-CN', uiLang)} (简体中文)` },
+    { value: 'ko', label: `${getLangName('ko', uiLang)} (한국어)` },
   ];
 
   const levelOptions = categoryData.levels.map((l: any) => ({
@@ -70,7 +90,7 @@ const Settings = () => {
 
   const correctionModeOptions = [
     { value: 'communicative', label: t('溝通為主（僅糾正重大基礎錯誤，鼓勵開口）') },
-    { value: 'strict',        label: t('超級嚴格（抓出所有不道地、些微的文法瑕疵）') },
+    { value: 'strict', label: t('超級嚴格（抓出所有不道地、些微的文法瑕疵）') },
   ];
 
   const patternVersionOptions = [
@@ -80,7 +100,7 @@ const Settings = () => {
 
   const providerOptions = [
     { value: 'gemini', label: t('Google Gemini') },
-    { value: 'groq',   label: t('Groq (高速 Llama 等開源模型)') },
+    { value: 'groq', label: t('Groq (高速 Llama 等開源模型)') },
   ];
 
   return (
