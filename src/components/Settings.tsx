@@ -77,10 +77,10 @@ const Settings = () => {
   }));
 
   const targetLangOptions = [
-    { value: 'en', label: `${getLangName('en', uiLang)} (English)` },
-    { value: 'ja', label: `${getLangName('ja', uiLang)} (日本語)` },
-    { value: 'zh-CN', label: `${getLangName('zh-CN', uiLang)} (简体中文)` },
-    { value: 'ko', label: `${getLangName('ko', uiLang)} (한국어)` },
+    { value: 'en', label: `${getLangName('en', uiLang)}` },
+    { value: 'ja', label: `${getLangName('ja', uiLang)}` },
+    { value: 'zh-CN', label: `${getLangName('zh-CN', uiLang)}` },
+    { value: 'ko', label: `${getLangName('ko', uiLang)}` },
   ];
 
   const levelOptions = categoryData.levels.map((l: any) => ({

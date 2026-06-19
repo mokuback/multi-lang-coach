@@ -77,9 +77,9 @@ const LANGUAGE_MAP: Record<string, LanguageInfo> = {
     isTargetLanguage: true,
     isUiLanguage: true,
     targetLabel: {
-      'zh-TW': '簡體中文', 'zh-CN': '简体中文', 'en': 'Mandarin (Simplified)', 'ja': '簡体字中国語',
-      'ko': '중국어(간체)', 'es': 'Chino mandarín (simplificado)', 'fr': 'Mandarin (simplifié)',
-      'de': 'Mandarin (Vereinfacht)',
+      'zh-TW': '簡體中文', 'zh-CN': '简体中文', 'en': 'Mandarin', 'ja': '簡体字中国語',
+      'ko': '중국어', 'es': 'Chino mandarín', 'fr': 'Mandarin',
+      'de': 'Mandarin',
     },
     uiLabel: '简体中文',
     phoneticFormat: '该汉字的拼音，并在后方括号内标注声调数字(例如：māo [1])。若为词组，每个字的拼音用空格隔开',
