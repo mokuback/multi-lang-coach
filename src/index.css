@@ -361,32 +361,30 @@ h1, h2, h3, h4, h5, h6 {
     display: none !important;
   }
 
-
-
   .mobile-theme-toggle {
     display: flex;
     position: fixed;
     bottom: 40px;
     left: 16px;
-    z-index: 1001;
-    background: rgba(128, 128, 128, 0.1);
-    border: 1px solid rgba(128, 128, 128, 0.15);
-    color: var(--text-primary);
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+    z-index: 100;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background: var(--panel-bg-light);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    color: var(--text-primary);
     cursor: pointer;
-    backdrop-filter: blur(12px);
-    transition: all 0.2s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .mobile-theme-toggle:active {
-    transform: scale(0.95);
+    transform: scale(0.92);
   }
-
 
   /* Mobile general overrides */
   .mobile-grid-1 { grid-template-columns: 1fr !important; }
@@ -429,4 +427,13 @@ h1, h2, h3, h4, h5, h6 {
   .learning-modal {
     padding: 16px !important;
   }
+}
+
+/* Animations */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.spin {
+  animation: spin 1s linear infinite;
 }

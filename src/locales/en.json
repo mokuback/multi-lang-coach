@@ -768,5 +768,15 @@
   "mock_exp_ja_itasu": "When reporting to a boss or client, using the humble form 'itasu' sounds more professional and polite.",
   "mock_trans_ja_progress": "Thank you for the progress update. However, please make sure you detail any potential blockers. Also, I noticed a minor grammar mistake.",
   "mock_trans_ja_database": "That sounds like a backend issue. When explaining to a non-technical boss or client, you can say 'We are experiencing infrastructure delays' for easier understanding.",
-  "mock_trans_ja_default": "I see. Could you elaborate a bit more on the 'specific software requirements' or 'schedules' you are focusing on?"
+  "mock_trans_ja_default": "I see. Could you elaborate a bit more on the 'specific software requirements' or 'schedules' you are focusing on?",
+  "按部就班學習基本單字與核心句型，穩固您的外語基礎。": "Learn basic vocabulary and core patterns step by step to solidify your foreign language foundation.",
+  "完成每天的專屬任務，追蹤您的學習進度與經驗值。": "Complete your daily exclusive tasks and track your learning progress and experience points.",
+  "與 AI 教練進行即時語音對話，體驗最真實的沉浸式學習。": "Engage in real-time voice conversations with an AI coach and experience the most authentic immersive learning.",
+  "收錄各類情境的實用句型庫，隨時查閱與學習。": "Access a practical pattern library for various scenarios, available for reference and learning at any time.",
+  "專屬筆記": "Exclusive Notes",
+  "管理您的生詞與句型筆記，AI 會針對這些內容為您特訓。": "Manage your vocabulary and pattern notes, and AI will provide special training tailored to this content for you.",
+  "由大數據與先進 AI 驅動的智能外語教練。": "An intelligent foreign language coach driven by big data and advanced AI.",
+  "透過沉浸式語音對話、即時糾錯與客製化特訓，讓您自信開口說外語。": "Through immersive voice conversations, instant error correction, and customized special training, let you speak foreign languages with confidence.",
+  "開始您的學習之旅": "Start Your Learning Journey",
+  "上一頁": "Back"
 }

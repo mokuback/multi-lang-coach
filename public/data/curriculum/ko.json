@@ -1,0 +1,1727 @@
+[
+  {
+    "id": "ko_unit_1",
+    "title": {
+      "zh-TW": "基本問候",
+      "zh-CN": "基本问候",
+      "en": "Basic Greetings",
+      "ja": "基本的な挨拶",
+      "ko": "기본 인사",
+      "es": "Saludos básicos",
+      "fr": "Salutations de base",
+      "de": "Grundlegende Grüße"
+    },
+    "description": {
+      "zh-TW": "學會最基本的韓文打招呼用語。",
+      "zh-CN": "学会最基本的韩文打招呼用语。",
+      "en": "Learn the most basic Korean greeting expressions.",
+      "ja": "韓国語の最も基本的な挨拶表現を学びます。",
+      "ko": "한국어의 가장 기본적인 인사 표현을 배웁니다.",
+      "es": "Aprende las expresiones de saludo más básicas en coreano.",
+      "fr": "Apprenez les expressions de salutation les plus basiques en coréen.",
+      "de": "Lernen Sie die grundlegendsten koreanischen Grußausdrücke."
+    },
+    "vocab": [
+      {
+        "word": "안녕하세요",
+        "meanings": {
+          "zh-TW": "你好",
+          "zh-CN": "你好",
+          "en": "Hello",
+          "ja": "こんにちは",
+          "ko": "안녕하세요",
+          "es": "Hola",
+          "fr": "Bonjour",
+          "de": "Hallo"
+        },
+        "phonetic": "annyeonghaseyo"
+      },
+      {
+        "word": "감사합니다",
+        "meanings": {
+          "zh-TW": "謝謝",
+          "zh-CN": "谢谢",
+          "en": "Thank you",
+          "ja": "ありがとう",
+          "ko": "감사합니다",
+          "es": "Gracias",
+          "fr": "Merci",
+          "de": "Danke"
+        },
+        "phonetic": "gamsahamnida"
+      },
+      {
+        "word": "죄송합니다",
+        "meanings": {
+          "zh-TW": "對不起",
+          "zh-CN": "对不起",
+          "en": "Sorry",
+          "ja": "すみません",
+          "ko": "죄송합니다",
+          "es": "Lo siento",
+          "fr": "Désolé",
+          "de": "Entschuldigung"
+        },
+        "phonetic": "joesonghamnida"
+      },
+      {
+        "word": "안녕히 가세요",
+        "meanings": {
+          "zh-TW": "再見",
+          "zh-CN": "再见",
+          "en": "Goodbye",
+          "ja": "さようなら",
+          "ko": "안녕히 가세요",
+          "es": "Adiós",
+          "fr": "Au revoir",
+          "de": "Auf Wiedersehen"
+        },
+        "phonetic": "annyeonghi gaseyo"
+      },
+      {
+        "word": "네",
+        "meanings": {
+          "zh-TW": "是/好",
+          "zh-CN": "是/好",
+          "en": "Yes",
+          "ja": "はい",
+          "ko": "네",
+          "es": "Sí",
+          "fr": "Oui",
+          "de": "Ja"
+        },
+        "phonetic": "ne"
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "안녕하세요, 저는 [이름]입니다.",
+        "explanation": "你好，我是...。",
+        "explanations": {
+          "zh-TW": "你好，我是...。",
+          "zh-CN": "你好，我是...。",
+          "en": "Hello, I am ..."
+        }
+      },
+      {
+        "pattern": "[이름] 씨, 감사합니다.",
+        "explanation": "..., 謝謝你。",
+        "explanations": {
+          "zh-TW": "..., 謝謝你。",
+          "zh-CN": "..., 谢谢你。",
+          "en": "..., thank you."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ko_unit_2",
+    "title": {
+      "zh-TW": "數字與計數",
+      "zh-CN": "数字与计数",
+      "en": "Numbers and Counting",
+      "ja": "数字と数え方",
+      "ko": "숫자와 세기",
+      "es": "Números y conteo",
+      "fr": "Nombres et comptage",
+      "de": "Zahlen und Zählen"
+    },
+    "description": {
+      "zh-TW": "學會韓文數字。",
+      "zh-CN": "学会韩文数字。",
+      "en": "Learn Korean numbers.",
+      "ja": "韓国語の数字を学びます。",
+      "ko": "한국어 숫자를 배웁니다.",
+      "es": "Aprende los números coreanos.",
+      "fr": "Apprenez les chiffres coréens.",
+      "de": "Lernen Sie koreanische Zahlen."
+    },
+    "vocab": [
+      {
+        "word": "영",
+        "meanings": {
+          "zh-TW": "零",
+          "zh-CN": "零",
+          "en": "Zero",
+          "ja": "ゼロ",
+          "ko": "영",
+          "es": "Cero",
+          "fr": "Zéro",
+          "de": "Null"
+        },
+        "phonetic": "yeong"
+      },
+      {
+        "word": "하나",
+        "meanings": {
+          "zh-TW": "一",
+          "zh-CN": "一",
+          "en": "One",
+          "ja": "一",
+          "ko": "하나",
+          "es": "Uno",
+          "fr": "Un",
+          "de": "Eins"
+        },
+        "phonetic": "hana"
+      },
+      {
+        "word": "열",
+        "meanings": {
+          "zh-TW": "十",
+          "zh-CN": "十",
+          "en": "Ten",
+          "ja": "十",
+          "ko": "열",
+          "es": "Diez",
+          "fr": "Dix",
+          "de": "Zehn"
+        },
+        "phonetic": "yeol"
+      },
+      {
+        "word": "몇",
+        "meanings": {
+          "zh-TW": "多少/幾",
+          "zh-CN": "多少/几",
+          "en": "How many",
+          "ja": "いくつ",
+          "ko": "몇",
+          "es": "Cuántos",
+          "fr": "Combien",
+          "de": "Wie viele"
+        },
+        "phonetic": "myeot"
+      },
+      {
+        "word": "살",
+        "meanings": {
+          "zh-TW": "歲",
+          "zh-CN": "岁",
+          "en": "Years old",
+          "ja": "歳",
+          "ko": "살",
+          "es": "Años",
+          "fr": "Ans",
+          "de": "Jahre alt"
+        },
+        "phonetic": "sal"
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "저는 [숫자]개 있어요.",
+        "explanation": "我有...個。",
+        "explanations": {
+          "zh-TW": "我有...個。",
+          "zh-CN": "我有...个。",
+          "en": "I have ... (counter)."
+        }
+      },
+      {
+        "pattern": "몇 살이에요?",
+        "explanation": "幾歲？",
+        "explanations": {
+          "zh-TW": "幾歲？",
+          "zh-CN": "几岁？",
+          "en": "How old are you?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ko_unit_3",
+    "title": {
+      "zh-TW": "時間與日期",
+      "zh-CN": "时间与日期",
+      "en": "Time and Date",
+      "ja": "時間と日付",
+      "ko": "시간과 날짜",
+      "es": "Tiempo y fecha",
+      "fr": "Temps et date",
+      "de": "Zeit und Datum"
+    },
+    "description": {
+      "zh-TW": "學會說時間。",
+      "zh-CN": "学会说时间。",
+      "en": "Learn to tell time.",
+      "ja": "時間を言うことを学びます。",
+      "ko": "시간을 말하는 것을 배웁니다.",
+      "es": "Aprende a decir la hora.",
+      "fr": "Apprenez à dire l'heure.",
+      "de": "Lernen Sie, die Uhrzeit zu sagen."
+    },
+    "vocab": [
+      {
+        "word": "지금",
+        "meanings": {
+          "zh-TW": "現在",
+          "zh-CN": "现在",
+          "en": "Now",
+          "ja": "今",
+          "ko": "지금",
+          "es": "Ahora",
+          "fr": "Maintenant",
+          "de": "Jetzt"
+        },
+        "phonetic": "jigeum"
+      },
+      {
+        "word": "시",
+        "meanings": {
+          "zh-TW": "點（鐘點）",
+          "zh-CN": "点（钟点）",
+          "en": "O'clock",
+          "ja": "時",
+          "ko": "시",
+          "es": "En punto",
+          "fr": "Heure",
+          "de": "Uhr"
+        },
+        "phonetic": "si"
+      },
+      {
+        "word": "오늘",
+        "meanings": {
+          "zh-TW": "今天",
+          "zh-CN": "今天",
+          "en": "Today",
+          "ja": "今日",
+          "ko": "오늘",
+          "es": "Hoy",
+          "fr": "Aujourd'hui",
+          "de": "Heute"
+        },
+        "phonetic": "oneul"
+      },
+      {
+        "word": "내일",
+        "meanings": {
+          "zh-TW": "明天",
+          "zh-CN": "明天",
+          "en": "Tomorrow",
+          "ja": "明日",
+          "ko": "내일",
+          "es": "Mañana",
+          "fr": "Demain",
+          "de": "Morgen"
+        },
+        "phonetic": "naeil"
+      },
+      {
+        "word": "월요일",
+        "meanings": {
+          "zh-TW": "星期一",
+          "zh-CN": "星期一",
+          "en": "Monday",
+          "ja": "月曜日",
+          "ko": "월요일",
+          "es": "Lunes",
+          "fr": "Lundi",
+          "de": "Montag"
+        },
+        "phonetic": "woryoil"
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "지금 몇 시예요?",
+        "explanation": "現在幾點？",
+        "explanations": {
+          "zh-TW": "現在幾點？",
+          "zh-CN": "现在几点？",
+          "en": "What time is it now?"
+        }
+      },
+      {
+        "pattern": "오늘은 [요일]이에요.",
+        "explanation": "今天是...。",
+        "explanations": {
+          "zh-TW": "今天是...。",
+          "zh-CN": "今天是...。",
+          "en": "Today is ... (day of week)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ko_unit_4",
+    "title": {
+      "zh-TW": "自我介紹",
+      "zh-CN": "自我介绍",
+      "en": "Self-Introduction",
+      "ja": "自己紹介",
+      "ko": "자기소개",
+      "es": "Autopresentación",
+      "fr": "Auto-présentation",
+      "de": "Selbstvorstellung"
+    },
+    "description": {
+      "zh-TW": "學會用韓文介紹自己。",
+      "zh-CN": "学会用韩文介绍自己。",
+      "en": "Learn to introduce yourself in Korean.",
+      "ja": "韓国語で自己紹介をすることを学びます。",
+      "ko": "한국어로 자기소개를 하는 것을 배웁니다.",
+      "es": "Aprende a presentarte en coreano.",
+      "fr": "Apprenez à vous présenter en coréen.",
+      "de": "Lernen Sie, sich auf Koreanisch vorzustellen."
+    },
+    "vocab": [
+      {
+        "word": "저는 ...입니다",
+        "meanings": {
+          "zh-TW": "我是...",
+          "zh-CN": "我是...",
+          "en": "I am ...",
+          "ja": "私は...です",
+          "ko": "저는 ...입니다",
+          "es": "Soy ...",
+          "fr": "Je suis ...",
+          "de": "Ich bin ..."
+        },
+        "phonetic": "jeoneun ... imnida"
+      },
+      {
+        "word": "한국 사람",
+        "meanings": {
+          "zh-TW": "韓國人",
+          "zh-CN": "韩国人",
+          "en": "Korean",
+          "ja": "韓国人",
+          "ko": "한국 사람",
+          "es": "Coreano",
+          "fr": "Coréen",
+          "de": "Koreaner"
+        },
+        "phonetic": "hanguk saram"
+      },
+      {
+        "word": "엔지니어",
+        "meanings": {
+          "zh-TW": "工程師",
+          "zh-CN": "工程师",
+          "en": "Engineer",
+          "ja": "エンジニア",
+          "ko": "엔지니어",
+          "es": "Ingeniero",
+          "fr": "Ingénieur",
+          "de": "Ingenieur"
+        },
+        "phonetic": "enjini-eo"
+      },
+      {
+        "word": "학생",
+        "meanings": {
+          "zh-TW": "學生",
+          "zh-CN": "学生",
+          "en": "Student",
+          "ja": "学生",
+          "ko": "학생",
+          "es": "Estudiante",
+          "fr": "Étudiant",
+          "de": "Student"
+        },
+        "phonetic": "haksaeng"
+      },
+      {
+        "word": "선생님",
+        "meanings": {
+          "zh-TW": "老師",
+          "zh-CN": "老师",
+          "en": "Teacher",
+          "ja": "先生",
+          "ko": "선생님",
+          "es": "Profesor",
+          "fr": "Enseignant",
+          "de": "Lehrer"
+        },
+        "phonetic": "seonsaengnim"
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "저는 [이름]이고, [직업]입니다.",
+        "explanation": "我叫...，我是...。",
+        "explanations": {
+          "zh-TW": "我叫...，我是...。",
+          "zh-CN": "我叫...，我是...。",
+          "en": "My name is ..., I am a/an ..."
+        }
+      },
+      {
+        "pattern": "저는 [국적] 사람입니다.",
+        "explanation": "我是...人。",
+        "explanations": {
+          "zh-TW": "我是...人。",
+          "zh-CN": "我是...人。",
+          "en": "I am ... (nationality)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ko_unit_5",
+    "title": {
+      "zh-TW": "家庭與外貌",
+      "zh-CN": "家庭与外貌",
+      "en": "Family and Appearance",
+      "ja": "家族と外見",
+      "ko": "가족과 외모",
+      "es": "Familia y apariencia",
+      "fr": "Famille et apparence",
+      "de": "Familie und Aussehen"
+    },
+    "description": {
+      "zh-TW": "學會描述家人。",
+      "zh-CN": "学会描述家人。",
+      "en": "Learn to describe family members.",
+      "ja": "家族を述べることを学びます。",
+      "ko": "가족을 묘사하는 것을 배웁니다.",
+      "es": "Aprende a describir a los miembros de la familia.",
+      "fr": "Apprenez à décrire les membres de la famille.",
+      "de": "Lernen Sie, Familienmitglieder zu beschreiben."
+    },
+    "vocab": [
+      {
+        "word": "아빠",
+        "meanings": {
+          "zh-TW": "爸爸",
+          "zh-CN": "爸爸",
+          "en": "Dad",
+          "ja": "お父さん",
+          "ko": "아빠",
+          "es": "Papá",
+          "fr": "Papa",
+          "de": "Papa"
+        },
+        "phonetic": "appa"
+      },
+      {
+        "word": "엄마",
+        "meanings": {
+          "zh-TW": "媽媽",
+          "zh-CN": "妈妈",
+          "en": "Mom",
+          "ja": "お母さん",
+          "ko": "엄마",
+          "es": "Mamá",
+          "fr": "Maman",
+          "de": "Mama"
+        },
+        "phonetic": "eomma"
+      },
+      {
+        "word": "키",
+        "meanings": {
+          "zh-TW": "身高",
+          "zh-CN": "身高",
+          "en": "Height",
+          "ja": "身長",
+          "ko": "키",
+          "es": "Altura",
+          "fr": "Taille",
+          "de": "Größe"
+        },
+        "phonetic": "ki"
+      },
+      {
+        "word": "뚱뚱하다",
+        "meanings": {
+          "zh-TW": "胖",
+          "zh-CN": "胖",
+          "en": "Fat",
+          "ja": "太っている",
+          "ko": "뚱뚱하다",
+          "es": "Gordo",
+          "fr": "Gros",
+          "de": "Dick"
+        },
+        "phonetic": "ttungttunghada"
+      },
+      {
+        "word": "예쁘다",
+        "meanings": {
+          "zh-TW": "漂亮",
+          "zh-CN": "漂亮",
+          "en": "Pretty",
+          "ja": "きれい",
+          "ko": "예쁘다",
+          "es": "Guapa",
+          "fr": "Jolie",
+          "de": "Hübsch"
+        },
+        "phonetic": "yeppeuda"
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "이분은 제 [가족]이에요.",
+        "explanation": "這是我...。",
+        "explanations": {
+          "zh-TW": "這是我...。",
+          "zh-CN": "这是我...。",
+          "en": "This is my ..."
+        }
+      },
+      {
+        "pattern": "그는/그녀는 매우 [형용사]어요.",
+        "explanation": "他/她很...。",
+        "explanations": {
+          "zh-TW": "他/她很...。",
+          "zh-CN": "他/她很...。",
+          "en": "He/She is very ..."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ko_unit_6",
+    "title": {
+      "zh-TW": "日常生活",
+      "zh-CN": "日常生活",
+      "en": "Daily Life",
+      "ja": "日常生活",
+      "ko": "일상생활",
+      "es": "Vida diaria",
+      "fr": "Vie quotidienne",
+      "de": "Alltag"
+    },
+    "description": {
+      "zh-TW": "學會描述日常活動。",
+      "zh-CN": "学会描述日常活动。",
+      "en": "Learn to describe daily activities.",
+      "ja": "日常活動を述べることを学びます。",
+      "ko": "일상 활동을 묘사하는 것을 배웁니다.",
+      "es": "Aprende a describir actividades diarias.",
+      "fr": "Apprenez à décrire les activités quotidiennes.",
+      "de": "Lernen Sie, tägliche Aktivitäten zu beschreiben."
+    },
+    "vocab": [
+      {
+        "word": "일어나다",
+        "meanings": {
+          "zh-TW": "起床",
+          "zh-CN": "起床",
+          "en": "Get up",
+          "ja": "起きる",
+          "ko": "일어나다",
+          "es": "Levantarse",
+          "fr": "Se lever",
+          "de": "Aufstehen"
+        },
+        "phonetic": "ireonada"
+      },
+      {
+        "word": "출근하다",
+        "meanings": {
+          "zh-TW": "上班",
+          "zh-CN": "上班",
+          "en": "Go to work",
+          "ja": "出勤する",
+          "ko": "출근하다",
+          "es": "Ir a trabajar",
+          "fr": "Aller au travail",
+          "de": "Zur Arbeit gehen"
+        },
+        "phonetic": "chugeunhada"
+      },
+      {
+        "word": "퇴근하다",
+        "meanings": {
+          "zh-TW": "下班",
+          "zh-CN": "下班",
+          "en": "Get off work",
+          "ja": "退勤する",
+          "ko": "퇴근하다",
+          "es": "Salir del trabajo",
+          "fr": "Quitter le travail",
+          "de": "Feierabend haben"
+        },
+        "phonetic": "toegeunhada"
+      },
+      {
+        "word": "자다",
+        "meanings": {
+          "zh-TW": "睡覺",
+          "zh-CN": "睡觉",
+          "en": "Sleep",
+          "ja": "寝る",
+          "ko": "자다",
+          "es": "Dormir",
+          "fr": "Dormir",
+          "de": "Schlafen"
+        },
+        "phonetic": "jada"
+      },
+      {
+        "word": "밥을 먹다",
+        "meanings": {
+          "zh-TW": "吃飯",
+          "zh-CN": "吃饭",
+          "en": "Eat a meal",
+          "ja": "ご飯を食べる",
+          "ko": "밥을 먹다",
+          "es": "Comer",
+          "fr": "Manger",
+          "de": "Essen"
+        },
+        "phonetic": "babeul meokda"
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "저는 매일 [시간]에 [동사]요.",
+        "explanation": "我每天...。",
+        "explanations": {
+          "zh-TW": "我每天...。",
+          "zh-CN": "我每天...。",
+          "en": "I ... every day."
+        }
+      },
+      {
+        "pattern": "언제 [동사]세요?",
+        "explanation": "你什麼時候...？",
+        "explanations": {
+          "zh-TW": "你什麼時候...？",
+          "zh-CN": "你什么时候...？",
+          "en": "When do you ...?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ko_unit_7",
+    "title": {
+      "zh-TW": "餐飲與點菜",
+      "zh-CN": "餐饮与点菜",
+      "en": "Dining and Ordering",
+      "ja": "飲食と注文",
+      "ko": "식사와 주문",
+      "es": "Comer y pedir",
+      "fr": "Manger et commander",
+      "de": "Essen und bestellen"
+    },
+    "description": {
+      "zh-TW": "學會在餐廳點菜。",
+      "zh-CN": "学会在餐厅点菜。",
+      "en": "Learn to order food at a restaurant.",
+      "ja": "レストランで注文することを学びます。",
+      "ko": "식당에서 주문하는 것을 배웁니다.",
+      "es": "Aprende a pedir comida en un restaurante.",
+      "fr": "Apprenez à commander de la nourriture au restaurant.",
+      "de": "Lernen Sie, im Restaurant Essen zu bestellen."
+    },
+    "vocab": [
+      {
+        "word": "식당",
+        "meanings": {
+          "zh-TW": "餐廳",
+          "zh-CN": "餐厅",
+          "en": "Restaurant",
+          "ja": "レストラン",
+          "ko": "식당",
+          "es": "Restaurante",
+          "fr": "Restaurant",
+          "de": "Restaurant"
+        },
+        "phonetic": "sikdang"
+      },
+      {
+        "word": "메뉴",
+        "meanings": {
+          "zh-TW": "菜單",
+          "zh-CN": "菜单",
+          "en": "Menu",
+          "ja": "メニュー",
+          "ko": "메뉴",
+          "es": "Menú",
+          "fr": "Menu",
+          "de": "Speisekarte"
+        },
+        "phonetic": "menyu"
+      },
+      {
+        "word": "커피",
+        "meanings": {
+          "zh-TW": "咖啡",
+          "zh-CN": "咖啡",
+          "en": "Coffee",
+          "ja": "コーヒー",
+          "ko": "커피",
+          "es": "Café",
+          "fr": "Café",
+          "de": "Kaffee"
+        },
+        "phonetic": "keopi"
+      },
+      {
+        "word": "물",
+        "meanings": {
+          "zh-TW": "水",
+          "zh-CN": "水",
+          "en": "Water",
+          "ja": "水",
+          "ko": "물",
+          "es": "Agua",
+          "fr": "Eau",
+          "de": "Wasser"
+        },
+        "phonetic": "mul"
+      },
+      {
+        "word": "맛있다",
+        "meanings": {
+          "zh-TW": "好吃",
+          "zh-CN": "好吃",
+          "en": "Delicious",
+          "ja": "おいしい",
+          "ko": "맛있다",
+          "es": "Delicioso",
+          "fr": "Délicieux",
+          "de": "Leckere"
+        },
+        "phonetic": "masitda"
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "저는 [음식]을 먹고 싶어요.",
+        "explanation": "我想吃...。",
+        "explanations": {
+          "zh-TW": "我想吃...。",
+          "zh-CN": "我想吃...。",
+          "en": "I want to eat ..."
+        }
+      },
+      {
+        "pattern": "[음식]을 주세요.",
+        "explanation": "請給我...。",
+        "explanations": {
+          "zh-TW": "請給我...。",
+          "zh-CN": "请给我...。",
+          "en": "Please give me ..."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ko_unit_8",
+    "title": {
+      "zh-TW": "購物與價格",
+      "zh-CN": "购物与价格",
+      "en": "Shopping and Prices",
+      "ja": "買い物と価格",
+      "ko": "쇼핑과 가격",
+      "es": "Compras y precios",
+      "fr": "Achats et prix",
+      "de": "Einkaufen und Preise"
+    },
+    "description": {
+      "zh-TW": "學會問價格。",
+      "zh-CN": "学会问价格。",
+      "en": "Learn to ask prices.",
+      "ja": "価格を聞くことを学びます。",
+      "ko": "가격을 묻는 것을 배웁니다.",
+      "es": "Aprende a preguntar precios.",
+      "fr": "Apprenez à demander les prix.",
+      "de": "Lernen Sie, nach Preisen zu fragen."
+    },
+    "vocab": [
+      {
+        "word": "얼마예요",
+        "meanings": {
+          "zh-TW": "多少錢",
+          "zh-CN": "多少钱",
+          "en": "How much",
+          "ja": "いくら",
+          "ko": "얼마예요",
+          "es": "Cuánto cuesta",
+          "fr": "Combien",
+          "de": "Wie viel kostet"
+        },
+        "phonetic": "eolmayeyo"
+      },
+      {
+        "word": "원",
+        "meanings": {
+          "zh-TW": "韓元",
+          "zh-CN": "韩元",
+          "en": "Won",
+          "ja": "ウォン",
+          "ko": "원",
+          "es": "Won",
+          "fr": "Won",
+          "de": "Won"
+        },
+        "phonetic": "won"
+      },
+      {
+        "word": "비싸다",
+        "meanings": {
+          "zh-TW": "貴",
+          "zh-CN": "贵",
+          "en": "Expensive",
+          "ja": "高い",
+          "ko": "비싸다",
+          "es": "Caro",
+          "fr": "Cher",
+          "de": "Teuer"
+        },
+        "phonetic": "bissada"
+      },
+      {
+        "word": "싸다",
+        "meanings": {
+          "zh-TW": "便宜",
+          "zh-CN": "便宜",
+          "en": "Cheap",
+          "ja": "安い",
+          "ko": "싸다",
+          "es": "Barato",
+          "fr": "Pas cher",
+          "de": "Günstig"
+        },
+        "phonetic": "ssada"
+      },
+      {
+        "word": "사다",
+        "meanings": {
+          "zh-TW": "買",
+          "zh-CN": "买",
+          "en": "Buy",
+          "ja": "買う",
+          "ko": "사다",
+          "es": "Comprar",
+          "fr": "Acheter",
+          "de": "Kaufen"
+        },
+        "phonetic": "sada"
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "이거 얼마예요?",
+        "explanation": "這個多少錢？",
+        "explanations": {
+          "zh-TW": "這個多少錢？",
+          "zh-CN": "这个多少钱？",
+          "en": "How much is this?"
+        }
+      },
+      {
+        "pattern": "너무 비싸요, 좀 싸게 해주세요.",
+        "explanation": "太貴了，可以便宜一點嗎？",
+        "explanations": {
+          "zh-TW": "太貴了，可以便宜一點嗎？",
+          "zh-CN": "太贵了，可以便宜一点吗？",
+          "en": "Too expensive, can it be cheaper?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ko_unit_9",
+    "title": {
+      "zh-TW": "交通與方向",
+      "zh-CN": "交通与方向",
+      "en": "Transportation and Directions",
+      "ja": "交通と方向",
+      "ko": "교통과 방향",
+      "es": "Transporte y direcciones",
+      "fr": "Transport et directions",
+      "de": "Verkehr und Richtungen"
+    },
+    "description": {
+      "zh-TW": "學會問路。",
+      "zh-CN": "学会问路。",
+      "en": "Learn to ask for directions.",
+      "ja": "道を尋ねることを学びます。",
+      "ko": "길을 묻는 것을 배웁니다.",
+      "es": "Aprende a preguntar por direcciones.",
+      "fr": "Apprenez à demander votre chemin.",
+      "de": "Lernen Sie, nach dem Weg zu fragen."
+    },
+    "vocab": [
+      {
+        "word": "지하철",
+        "meanings": {
+          "zh-TW": "地鐵",
+          "zh-CN": "地铁",
+          "en": "Subway",
+          "ja": "地下鉄",
+          "ko": "지하철",
+          "es": "Metro",
+          "fr": "Métro",
+          "de": "U-Bahn"
+        },
+        "phonetic": "jihacheol"
+      },
+      {
+        "word": "버스",
+        "meanings": {
+          "zh-TW": "公交車",
+          "zh-CN": "公交车",
+          "en": "Bus",
+          "ja": "バス",
+          "ko": "버스",
+          "es": "Autobús",
+          "fr": "Bus",
+          "de": "Bus"
+        },
+        "phonetic": "beoseu"
+      },
+      {
+        "word": "왼쪽",
+        "meanings": {
+          "zh-TW": "左",
+          "zh-CN": "左",
+          "en": "Left",
+          "ja": "左",
+          "ko": "왼쪽",
+          "es": "Izquierda",
+          "fr": "Gauche",
+          "de": "Links"
+        },
+        "phonetic": "oenjjok"
+      },
+      {
+        "word": "오른쪽",
+        "meanings": {
+          "zh-TW": "右",
+          "zh-CN": "右",
+          "en": "Right",
+          "ja": "右",
+          "ko": "오른쪽",
+          "es": "Derecha",
+          "fr": "Droite",
+          "de": "Rechts"
+        },
+        "phonetic": "oreunjjok"
+      },
+      {
+        "word": "어디",
+        "meanings": {
+          "zh-TW": "哪裡",
+          "zh-CN": "哪里",
+          "en": "Where",
+          "ja": "どこ",
+          "ko": "어디",
+          "es": "Dónde",
+          "fr": "Où",
+          "de": "Wo"
+        },
+        "phonetic": "eodi"
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "[장소]가 어디예요?",
+        "explanation": "...在哪裡？",
+        "explanations": {
+          "zh-TW": "...在哪裡？",
+          "zh-CN": "...在哪里？",
+          "en": "Where is ...?"
+        }
+      },
+      {
+        "pattern": "[왼쪽/오른쪽]으로 가세요.",
+        "explanation": "請往...。",
+        "explanations": {
+          "zh-TW": "請往...。",
+          "zh-CN": "请往...。",
+          "en": "Please go ..."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ko_unit_10",
+    "title": {
+      "zh-TW": "天氣與季節",
+      "zh-CN": "天气与季节",
+      "en": "Weather and Seasons",
+      "ja": "天気と季節",
+      "ko": "날씨와 계절",
+      "es": "Clima y estaciones",
+      "fr": "Météo et saisons",
+      "de": "Wetter und Jahreszeiten"
+    },
+    "description": {
+      "zh-TW": "學會描述天氣。",
+      "zh-CN": "学会描述天气。",
+      "en": "Learn to describe weather.",
+      "ja": "天気を述べることを学びます。",
+      "ko": "날씨를 묘사하는 것을 배웁니다.",
+      "es": "Aprende a describir el clima.",
+      "fr": "Apprenez à décrire la météo.",
+      "de": "Lernen Sie, das Wetter zu beschreiben."
+    },
+    "vocab": [
+      {
+        "word": "덥다",
+        "meanings": {
+          "zh-TW": "熱",
+          "zh-CN": "热",
+          "en": "Hot",
+          "ja": "熱い",
+          "ko": "덥다",
+          "es": "Caliente",
+          "fr": "Chaud",
+          "de": "Heiß"
+        },
+        "phonetic": "deopda"
+      },
+      {
+        "word": "춥다",
+        "meanings": {
+          "zh-TW": "冷",
+          "zh-CN": "冷",
+          "en": "Cold",
+          "ja": "寒い",
+          "ko": "춥다",
+          "es": "Frío",
+          "fr": "Froid",
+          "de": "Kalt"
+        },
+        "phonetic": "chupda"
+      },
+      {
+        "word": "비가 오다",
+        "meanings": {
+          "zh-TW": "下雨",
+          "zh-CN": "下雨",
+          "en": "Raining",
+          "ja": "雨が降る",
+          "ko": "비가 오다",
+          "es": "Lloviendo",
+          "fr": "Il pleut",
+          "de": "Es regnet"
+        },
+        "phonetic": "biga oda"
+      },
+      {
+        "word": "봄",
+        "meanings": {
+          "zh-TW": "春天",
+          "zh-CN": "春天",
+          "en": "Spring",
+          "ja": "春",
+          "ko": "봄",
+          "es": "Primavera",
+          "fr": "Printemps",
+          "de": "Frühling"
+        },
+        "phonetic": "bom"
+      },
+      {
+        "word": "겨울",
+        "meanings": {
+          "zh-TW": "冬天",
+          "zh-CN": "冬天",
+          "en": "Winter",
+          "ja": "冬",
+          "ko": "겨울",
+          "es": "Invierno",
+          "fr": "Hiver",
+          "de": "Winter"
+        },
+        "phonetic": "gyeoul"
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "오늘 날씨 어때요?",
+        "explanation": "今天天氣怎麼樣？",
+        "explanations": {
+          "zh-TW": "今天天氣怎麼樣？",
+          "zh-CN": "今天天气怎么样？",
+          "en": "How is the weather today?"
+        }
+      },
+      {
+        "pattern": "저는 [추위/더위]를 많이 타요.",
+        "explanation": "我很怕...。",
+        "explanations": {
+          "zh-TW": "我很怕...。",
+          "zh-CN": "我很怕...。",
+          "en": "I am very sensitive to ..."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ko_unit_11",
+    "title": {
+      "zh-TW": "打電話",
+      "zh-CN": "打电话",
+      "en": "Making Phone Calls",
+      "ja": "電話をかける",
+      "ko": "전화하기",
+      "es": "Hacer llamadas",
+      "fr": "Passer des appels",
+      "de": "Telefonieren"
+    },
+    "description": {
+      "zh-TW": "學會用韓文打電話。",
+      "zh-CN": "学会用韩文打电话。",
+      "en": "Learn to make phone calls in Korean.",
+      "ja": "韓国語で電話をかけることを学びます。",
+      "ko": "한국어로 전화 거는 것을 배웁니다.",
+      "es": "Aprende a hacer llamadas en coreano.",
+      "fr": "Apprenez à passer des appels en coréen.",
+      "de": "Lernen Sie, Telefonate auf Koreanisch zu führen."
+    },
+    "vocab": [
+      {
+        "word": "여보세요",
+        "meanings": {
+          "zh-TW": "喂",
+          "zh-CN": "喂",
+          "en": "Hello (phone)",
+          "ja": "もしもし",
+          "ko": "여보세요",
+          "es": "¿Diga?",
+          "fr": "Allô",
+          "de": "Hallo"
+        },
+        "phonetic": "yeoboseyo"
+      },
+      {
+        "word": "실례합니다",
+        "meanings": {
+          "zh-TW": "請問/不好意思",
+          "zh-CN": "请问/不好意思",
+          "en": "Excuse me",
+          "ja": "すみません",
+          "ko": "실례합니다",
+          "es": "Disculpe",
+          "fr": "Excusez-moi",
+          "de": "Entschuldigung"
+        },
+        "phonetic": "sillyehamnida"
+      },
+      {
+        "word": "계세요",
+        "meanings": {
+          "zh-TW": "在嗎",
+          "zh-CN": "在吗",
+          "en": "Are you there",
+          "ja": "いますか",
+          "ko": "계세요",
+          "es": "¿Está ahí?",
+          "fr": "Êtes-vous là?",
+          "de": "Sind Sie da?"
+        },
+        "phonetic": "gyeseyo"
+      },
+      {
+        "word": "전화",
+        "meanings": {
+          "zh-TW": "電話",
+          "zh-CN": "电话",
+          "en": "Phone",
+          "ja": "電話",
+          "ko": "전화",
+          "es": "Teléfono",
+          "fr": "Téléphone",
+          "de": "Telefon"
+        },
+        "phonetic": "jeonhwa"
+      },
+      {
+        "word": "메시지",
+        "meanings": {
+          "zh-TW": "留言",
+          "zh-CN": "留言",
+          "en": "Message",
+          "ja": "伝言",
+          "ko": "메시지",
+          "es": "Mensaje",
+          "fr": "Message",
+          "de": "Nachricht"
+        },
+        "phonetic": "mesiji"
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "여보세요, [이름] 씨 계세요?",
+        "explanation": "喂，請問...在嗎？",
+        "explanations": {
+          "zh-TW": "喂，請問...在嗎？",
+          "zh-CN": "喂，请问...在吗？",
+          "en": "Hello, may I ask if ... is there?"
+        }
+      },
+      {
+        "pattern": "메시지 남겨 드릴까요?",
+        "explanation": "要我留言嗎？",
+        "explanations": {
+          "zh-TW": "要我留言嗎？",
+          "zh-CN": "要我留言吗？",
+          "en": "Would you like me to leave a message?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ko_unit_12",
+    "title": {
+      "zh-TW": "健康與就醫",
+      "zh-CN": "健康与就医",
+      "en": "Health and Seeing a Doctor",
+      "ja": "健康と診察",
+      "ko": "건강과 진료",
+      "es": "Salud y visita al médico",
+      "fr": "Santé et consultation",
+      "de": "Gesundheit und Arztbesuch"
+    },
+    "description": {
+      "zh-TW": "學會描述身體不適。",
+      "zh-CN": "学会描述身体不适。",
+      "en": "Learn to describe physical discomfort.",
+      "ja": "体調不良を述べることを学びます。",
+      "ko": "신체 불편함을 묘사하는 것을 배웁니다.",
+      "es": "Aprende a describir malestar físico.",
+      "fr": "Apprenez à décrire un malaise physique.",
+      "de": "Lernen Sie, körperliches Unwohlsein zu beschreiben."
+    },
+    "vocab": [
+      {
+        "word": "머리가 아프다",
+        "meanings": {
+          "zh-TW": "頭疼",
+          "zh-CN": "头疼",
+          "en": "Headache",
+          "ja": "頭痛",
+          "ko": "머리가 아프다",
+          "es": "Dolor de cabeza",
+          "fr": "Mal de tête",
+          "de": "Kopfschmerzen"
+        },
+        "phonetic": "meoriga apeuda"
+      },
+      {
+        "word": "약",
+        "meanings": {
+          "zh-TW": "藥",
+          "zh-CN": "药",
+          "en": "Medicine",
+          "ja": "薬",
+          "ko": "약",
+          "es": "Medicina",
+          "fr": "Médicament",
+          "de": "Medizin"
+        },
+        "phonetic": "yak"
+      },
+      {
+        "word": "의사",
+        "meanings": {
+          "zh-TW": "醫生",
+          "zh-CN": "医生",
+          "en": "Doctor",
+          "ja": "医者",
+          "ko": "의사",
+          "es": "Médico",
+          "fr": "Médecin",
+          "de": "Arzt"
+        },
+        "phonetic": "uisa"
+      },
+      {
+        "word": "병원",
+        "meanings": {
+          "zh-TW": "醫院",
+          "zh-CN": "医院",
+          "en": "Hospital",
+          "ja": "病院",
+          "ko": "병원",
+          "es": "Hospital",
+          "fr": "Hôpital",
+          "de": "Krankenhaus"
+        },
+        "phonetic": "byeongwon"
+      },
+      {
+        "word": "열이 나다",
+        "meanings": {
+          "zh-TW": "發燒",
+          "zh-CN": "发烧",
+          "en": "Fever",
+          "ja": "熱がある",
+          "ko": "열이 나다",
+          "es": "Fiebre",
+          "fr": "Fièvre",
+          "de": "Fieber"
+        },
+        "phonetic": "yeori nada"
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "저 [신체]가 아파요.",
+        "explanation": "我...很疼。",
+        "explanations": {
+          "zh-TW": "我...很疼。",
+          "zh-CN": "我...很疼。",
+          "en": "My ... hurts."
+        }
+      },
+      {
+        "pattern": "병원에 가야 해요.",
+        "explanation": "我需要去看醫生。",
+        "explanations": {
+          "zh-TW": "我需要去看醫生。",
+          "zh-CN": "我需要去看医生。",
+          "en": "I need to go to the hospital."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ko_unit_13",
+    "title": {
+      "zh-TW": "業餘愛好",
+      "zh-CN": "业余爱好",
+      "en": "Hobbies",
+      "ja": "趣味",
+      "ko": "취미와 여가",
+      "es": "Pasatiempos",
+      "fr": "Loisirs",
+      "de": "Hobbys"
+    },
+    "description": {
+      "zh-TW": "學會說自己的興趣。",
+      "zh-CN": "学会说自己的兴趣。",
+      "en": "Learn to talk about your interests.",
+      "ja": "趣味について話すことを学びます。",
+      "ko": "취미에 대해 말하는 것을 배웁니다.",
+      "es": "Aprende a hablar de tus intereses.",
+      "fr": "Apprenez à parler de vos intérêts.",
+      "de": "Lernen Sie, über Ihre Interessen zu sprechen."
+    },
+    "vocab": [
+      {
+        "word": "운동",
+        "meanings": {
+          "zh-TW": "運動",
+          "zh-CN": "运动",
+          "en": "Sports",
+          "ja": "運動",
+          "ko": "운동",
+          "es": "Deporte",
+          "fr": "Sport",
+          "de": "Sport"
+        },
+        "phonetic": "undong"
+      },
+      {
+        "word": "영화",
+        "meanings": {
+          "zh-TW": "電影",
+          "zh-CN": "电影",
+          "en": "Movie",
+          "ja": "映画",
+          "ko": "영화",
+          "es": "Película",
+          "fr": "Film",
+          "de": "Film"
+        },
+        "phonetic": "yeonghwa"
+      },
+      {
+        "word": "음악",
+        "meanings": {
+          "zh-TW": "音樂",
+          "zh-CN": "音乐",
+          "en": "Music",
+          "ja": "音楽",
+          "ko": "음악",
+          "es": "Música",
+          "fr": "Musique",
+          "de": "Musik"
+        },
+        "phonetic": "eumak"
+      },
+      {
+        "word": "여행",
+        "meanings": {
+          "zh-TW": "旅遊",
+          "zh-CN": "旅游",
+          "en": "Travel",
+          "ja": "旅行",
+          "ko": "여행",
+          "es": "Viaje",
+          "fr": "Voyage",
+          "de": "Reise"
+        },
+        "phonetic": "yeohaeng"
+      },
+      {
+        "word": "좋아하다",
+        "meanings": {
+          "zh-TW": "喜歡",
+          "zh-CN": "喜欢",
+          "en": "Like",
+          "ja": "好き",
+          "ko": "좋아하다",
+          "es": "Gustar",
+          "fr": "Aimer",
+          "de": "Mögen"
+        },
+        "phonetic": "joahada"
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "저는 [취미]를 좋아해요.",
+        "explanation": "我喜歡...。",
+        "explanations": {
+          "zh-TW": "我喜歡...。",
+          "zh-CN": "我喜欢...。",
+          "en": "I like ..."
+        }
+      },
+      {
+        "pattern": "뭐 하기 좋아해요?",
+        "explanation": "你喜歡做什麼？",
+        "explanations": {
+          "zh-TW": "你喜歡做什麼？",
+          "zh-CN": "你喜欢做什么？",
+          "en": "What do you like to do?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ko_unit_14",
+    "title": {
+      "zh-TW": "工作職場",
+      "zh-CN": "工作职场",
+      "en": "Work and Workplace",
+      "ja": "仕事と職場",
+      "ko": "직장생활",
+      "es": "Trabajo",
+      "fr": "Travail",
+      "de": "Arbeit"
+    },
+    "description": {
+      "zh-TW": "學會描述工作。",
+      "zh-CN": "学会描述工作。",
+      "en": "Learn to describe work.",
+      "ja": "仕事を述べることを学びます。",
+      "ko": "일에 대해 묘사하는 것을 배웁니다.",
+      "es": "Aprende a describir el trabajo.",
+      "fr": "Apprenez à décrire le travail.",
+      "de": "Lernen Sie, die Arbeit zu beschreiben."
+    },
+    "vocab": [
+      {
+        "word": "출근",
+        "meanings": {
+          "zh-TW": "上班",
+          "zh-CN": "上班",
+          "en": "Go to work",
+          "ja": "出勤",
+          "ko": "출근",
+          "es": "Ir a trabajar",
+          "fr": "Aller au travail",
+          "de": "Zur Arbeit gehen"
+        },
+        "phonetic": "chugeun"
+      },
+      {
+        "word": "회의",
+        "meanings": {
+          "zh-TW": "開會",
+          "zh-CN": "开会",
+          "en": "Meeting",
+          "ja": "会議",
+          "ko": "회의",
+          "es": "Reunión",
+          "fr": "Réunion",
+          "de": "Besprechung"
+        },
+        "phonetic": "hoeui"
+      },
+      {
+        "word": "야근",
+        "meanings": {
+          "zh-TW": "加班",
+          "zh-CN": "加班",
+          "en": "Overtime",
+          "ja": "残業",
+          "ko": "야근",
+          "es": "Horas extras",
+          "fr": "Heures supplémentaires",
+          "de": "Überstunden"
+        },
+        "phonetic": "yageun"
+      },
+      {
+        "word": "동료",
+        "meanings": {
+          "zh-TW": "同事",
+          "zh-CN": "同事",
+          "en": "Colleague",
+          "ja": "同僚",
+          "ko": "동료",
+          "es": "Colega",
+          "fr": "Collègue",
+          "de": "Kollege"
+        },
+        "phonetic": "dongryo"
+      },
+      {
+        "word": "바쁘다",
+        "meanings": {
+          "zh-TW": "忙",
+          "zh-CN": "忙",
+          "en": "Busy",
+          "ja": "忙しい",
+          "ko": "바쁘다",
+          "es": "Ocupado",
+          "fr": "Occupé",
+          "de": "Beschäftigt"
+        },
+        "phonetic": "bappeuda"
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "오늘 [회의/출근]이 있어요.",
+        "explanation": "我今天要...。",
+        "explanations": {
+          "zh-TW": "我今天要...。",
+          "zh-CN": "我今天要...。",
+          "en": "I have ... today."
+        }
+      },
+      {
+        "pattern": "오늘 바빠요?",
+        "explanation": "你今天忙嗎？",
+        "explanations": {
+          "zh-TW": "你今天忙嗎？",
+          "zh-CN": "你今天忙吗？",
+          "en": "Are you busy today?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ko_unit_15",
+    "title": {
+      "zh-TW": "旅行與住宿",
+      "zh-CN": "旅行与住宿",
+      "en": "Travel and Accommodation",
+      "ja": "旅行と宿泊",
+      "ko": "여행과 숙박",
+      "es": "Viajes y alojamiento",
+      "fr": "Voyage et hébergement",
+      "de": "Reisen und Unterkunft"
+    },
+    "description": {
+      "zh-TW": "學會旅行相關用語。",
+      "zh-CN": "学会旅行相关用语。",
+      "en": "Learn travel-related terms.",
+      "ja": "旅行関連用語を学びます。",
+      "ko": "여행 관련 용어를 배웁니다.",
+      "es": "Aprende términos relacionados con viajes.",
+      "fr": "Apprenez les termes liés aux voyages.",
+      "de": "Lernen Sie reisebezogene Begriffe."
+    },
+    "vocab": [
+      {
+        "word": "항공권",
+        "meanings": {
+          "zh-TW": "機票",
+          "zh-CN": "机票",
+          "en": "Flight ticket",
+          "ja": "航空券",
+          "ko": "항공권",
+          "es": "Billete de avión",
+          "fr": "Billet d'avion",
+          "de": "Flugticket"
+        },
+        "phonetic": "hanggonggwon"
+      },
+      {
+        "word": "호텔",
+        "meanings": {
+          "zh-TW": "酒店",
+          "zh-CN": "酒店",
+          "en": "Hotel",
+          "ja": "ホテル",
+          "ko": "호텔",
+          "es": "Hotel",
+          "fr": "Hôtel",
+          "de": "Hotel"
+        },
+        "phonetic": "hotel"
+      },
+      {
+        "word": "여권",
+        "meanings": {
+          "zh-TW": "護照",
+          "zh-CN": "护照",
+          "en": "Passport",
+          "ja": "パスポート",
+          "ko": "여권",
+          "es": "Pasaporte",
+          "fr": "Passeport",
+          "de": "Reisepass"
+        },
+        "phonetic": "yeogwon"
+      },
+      {
+        "word": "짐",
+        "meanings": {
+          "zh-TW": "行李",
+          "zh-CN": "行李",
+          "en": "Luggage",
+          "ja": "荷物",
+          "ko": "짐",
+          "es": "Equipaje",
+          "fr": "Bagages",
+          "de": "Gepäck"
+        },
+        "phonetic": "jim"
+      },
+      {
+        "word": "비자",
+        "meanings": {
+          "zh-TW": "簽證",
+          "zh-CN": "签证",
+          "en": "Visa",
+          "ja": "ビザ",
+          "ko": "비자",
+          "es": "Visa",
+          "fr": "Visa",
+          "de": "Visum"
+        },
+        "phonetic": "bija"
+      }
+    ],
+    "patterns": [
+      {
+        "pattern": "[날짜] 항공권 예매할게요.",
+        "explanation": "我要訂...的機票。",
+        "explanations": {
+          "zh-TW": "我要訂...的機票。",
+          "zh-CN": "我要订...的机票。",
+          "en": "I will book a flight ticket for ..."
+        }
+      },
+      {
+        "pattern": "빈 방 있나요?",
+        "explanation": "請問有沒有空房？",
+        "explanations": {
+          "zh-TW": "請問有沒有空房？",
+          "zh-CN": "请问有没有空房？",
+          "en": "Excuse me, is there a vacant room?"
+        }
+      }
+    ]
+  }
+]

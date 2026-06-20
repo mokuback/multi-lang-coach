@@ -768,5 +768,15 @@
   "mock_exp_ja_itasu": "Lors du rapport à un chef ou un client, utiliser la forme humble 'itasu' semble plus professionnel et poli.",
   "mock_trans_ja_progress": "Merci pour la mise à jour des progrès. Cependant, assurez-vous de détailler tout obstacle potentiel. Aussi, j'ai remarqué une petite erreur grammaticale.",
   "mock_trans_ja_database": "Cela ressemble à un problème de backend. En l'expliquant à un chef ou un client non technique, vous pouvez dire 'Nous expérimentons des retards d'infrastructure' pour que ce soit plus facile à comprendre.",
-  "mock_trans_ja_default": "Je vois. Pourriez-vous élaborer un peu plus sur les 'exigences logicielles spécifiques' ou 'calendriers' sur lesquels vous vous concentrez?"
+  "mock_trans_ja_default": "Je vois. Pourriez-vous élaborer un peu plus sur les 'exigences logicielles spécifiques' ou 'calendriers' sur lesquels vous vous concentrez?",
+  "按部就班學習基本單字與核心句型，穩固您的外語基礎。": "Apprenez le vocabulaire de base et les modèles principaux étape par étape pour consolider vos bases linguistiques.",
+  "完成每天的專屬任務，追蹤您的學習進度與經驗值。": "Complétez vos tâches quotidiennes exclusives et suivez votre progrès d'apprentissage et vos points d'expérience.",
+  "與 AI 教練進行即時語音對話，體驗最真實的沉浸式學習。": "Engagez des conversations vocales en temps réel avec un entraîneur IA et expérimentez l'apprentissage immersif le plus authentique.",
+  "收錄各類情境的實用句型庫，隨時查閱與學習。": "Accédez à une bibliothèque de modèles pratiques pour divers scénarios, disponible pour consultation et apprentissage à tout moment.",
+  "專屬筆記": "Notes Exclusives",
+  "管理您的生詞與句型筆記，AI 會針對這些內容為您特訓。": "Gérez vos notes de vocabulaire et de modèles, et l'IA fournira un entraînement spécial adapté à ce contenu pour vous.",
+  "由大數據與先進 AI 驅動的智能外語教練。": "Un entraîneur inteligent de langues étrangères entraîné par le big data et l'IA avancée.",
+  "透過沉浸式語音對話、即時糾錯與客製化特訓，讓您自信開口說外語。": "Grâce à des conversations vocales immersives, une correction d'erreurs instantanée et un entraînement spécial personnalisé, permettez-vous de parler des langues étrangères avec confiance.",
+  "開始您的學習之旅": "Commencez Votre Voyage d'Apprentissage",
+  "上一頁": "Retour"
 }

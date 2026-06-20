@@ -6,6 +6,7 @@ import ChatWrapper from './components/ChatWrapper';
 import Notebook from './components/Notebook';
 import PatternNotebook from './components/PatternNotebook';
 import Patterns from './components/Patterns';
+import Home from './components/Home';
 import Guide from './components/Guide';
 import Curriculum from './components/Curriculum';
 import Settings from './components/Settings';
@@ -17,42 +18,6 @@ import { useSettingsStore } from './store/useSettingsStore';
 import './App.css';
 import './index.css';
 
-const TAB_STORAGE_KEY = 'APP_ACTIVE_TAB';
-
-/** Tracks route changes and persists the last visited page */
-function RouteTracker() {
-  const location = useLocation();
-  
-  useEffect(() => {
-    if (location.pathname !== '/' && location.pathname !== '/chat') {
-      localStorage.setItem(TAB_STORAGE_KEY, location.pathname.replace(/^\//, ''));
-    }
-  }, [location]);
-
-  return null;
-}
-
-/** Performs the initial redirect after mount (avoiding render-phase navigation conflicts) */
-function InitialRedirect() {
-  const navigate = useNavigate();
-  const hasSeenWelcome = useSettingsStore(s => s.hasSeenWelcome);
-  const done = useRef(false);
-
-  useEffect(() => {
-    if (done.current) return;
-    done.current = true;
-
-    const lastRoute = localStorage.getItem(TAB_STORAGE_KEY);
-    const target = lastRoute ? `/${lastRoute.replace(/^\//, '')}` : '/guide';
-    
-    // Only redirect if we're at the root
-    if (window.location.pathname === '/' || window.location.pathname === '') {
-      navigate(target, { replace: true });
-    }
-  }, [navigate]);
-
-  return null;
-}
 
 function WelcomeModal() {
   const { t } = useI18n();
@@ -104,7 +69,8 @@ function AppLayout() {
       <Sidebar />
       <main className="main-content">
         <Routes>
-          <Route path="/" element={null} />
+          <Route path="/" element={<Navigate to="/home" replace />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/guide" element={<Guide />} />
           <Route path="/curriculum" element={<Curriculum />} />
           <Route path="/dashboard" element={<Dashboard />} />
@@ -126,11 +92,7 @@ function AppRouter() {
   return (
     <BrowserRouter>
       <I18nProvider>
-        <>
-          <RouteTracker />
-          <InitialRedirect />
-          <AppLayout />
-        </>
+        <AppLayout />
       </I18nProvider>
     </BrowserRouter>
   );

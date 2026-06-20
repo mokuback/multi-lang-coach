@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { LayoutDashboard, MessageSquare, BookOpen, Settings, BookMarked, FileText, Palette, GraduationCap, Menu, X } from 'lucide-react';
+import { LayoutDashboard, MessageSquare, BookOpen, Settings, BookMarked, FileText, Palette, GraduationCap, Menu, X, Home, ArrowLeft } from 'lucide-react';
 import { categoryData } from '../data/categoryData';
 import { useI18n } from '../contexts/I18nContext';
 import { useSettingsStore } from '../store/useSettingsStore';
@@ -67,16 +67,18 @@ const Sidebar = () => {
 
   // Determine active tab from URL path
   const getActiveTabFromPath = (path: string) => {
-    if (path === '/') return 'guide';
-    return path.split('/')[1] || 'guide';
+    if (path === '/') return 'home';
+    return path.split('/')[1] || 'home';
   };
 
   const activeTab = getActiveTabFromPath(location.pathname);
+  const isHomePage = location.pathname === '/' || location.pathname === '/home';
 
   const levelLabel = categoryData.levels.find(l => l.id === userLevel)?.label || userLevel;
   const roleLabel = Object.values(categoryData.roles).flat().find(r => r.id === userRole)?.label || userRole;
 
   const navItems = [
+    { id: 'home', label: t('首頁'), icon: Home, path: '/home', isHome: true },
     { id: 'guide', label: t('使用說明'), icon: BookOpen, path: '/guide' },
     { id: 'curriculum', label: t('基礎訓練'), icon: GraduationCap, path: '/curriculum' },
     { id: 'dashboard', label: t('每日任務'), icon: LayoutDashboard, path: '/dashboard' },
@@ -84,7 +86,7 @@ const Sidebar = () => {
     { id: 'patterns', label: t('常用句型'), icon: BookMarked, path: '/patterns' },
     { id: 'notebook', label: t('生詞筆記'), icon: BookOpen, path: '/notebook', isPersonal: true },
     { id: 'pattern-notebook', label: t('句型筆記'), icon: FileText, path: '/pattern-notebook', isPersonal: true },
-    { id: 'settings', label: t('設定與 API'), icon: Settings, path: '/settings', isSystem: true }
+    { id: 'settings', label: t('設定與 API'), icon: Settings, path: '/settings', isSettings: true }
   ];
 
   const cycleTheme = () => {
@@ -128,13 +130,33 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <button 
-          onClick={cycleTheme}
-          title={t("切換介面風格")}
-          style={{ background: 'transparent', border: 'none', color: 'var(--text-primary)', cursor: 'pointer', padding: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-        >
-          <Palette size={20} />
-        </button>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+          {!isHomePage && (
+            <button 
+              onClick={() => navigate(-1)}
+              title={t("上一頁")}
+              style={{ background: 'transparent', border: 'none', color: 'var(--text-primary)', cursor: 'pointer', padding: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+            >
+              <ArrowLeft size={20} />
+            </button>
+          )}
+          {!isHomePage && (
+            <button 
+              onClick={() => { navigate('/home'); setIsMobileOpen(false); }}
+              title={t("首頁")}
+              style={{ background: 'transparent', border: 'none', color: 'var(--text-primary)', cursor: 'pointer', padding: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+            >
+              <Home size={20} />
+            </button>
+          )}
+          <button 
+            onClick={cycleTheme}
+            title={t("切換介面風格")}
+            style={{ background: 'transparent', border: 'none', color: 'var(--text-primary)', cursor: 'pointer', padding: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+          >
+            <Palette size={20} />
+          </button>
+        </div>
       </div>
 
       {/* 手機版半透明遮罩 */}
@@ -236,11 +258,12 @@ const Sidebar = () => {
           const isActive = activeTab === item.id;
           const Icon = item.icon;
           const isPersonal = item.isPersonal;
-          const isSystem = item.isSystem;
+          const isHome = item.isHome;
+          const isSettings = item.isSettings;
           
           return (
             <React.Fragment key={item.id}>
-              {(isPersonal && !navItems[index - 1]?.isPersonal) || (isSystem && !navItems[index - 1]?.isSystem) ? (
+              {(isPersonal && !navItems[index - 1]?.isPersonal) || (isSettings && !navItems[index - 1]?.isSettings) ? (
                 <div style={{ height: '1px', background: 'var(--glass-border)', margin: '8px 4px' }} />
               ) : null}
               <button
@@ -250,23 +273,23 @@ const Sidebar = () => {
                   justifyContent: 'flex-start',
                   padding: '12px 16px',
                   border: isActive 
-                    ? (isPersonal ? '1px solid var(--magic-color, #d946ef)' : (isSystem ? '1px solid var(--text-muted)' : '1px solid var(--accent-color)')) 
+                    ? (isHome || isSettings ? '1px solid #ffa502' : isPersonal ? '1px solid var(--magic-color, #d946ef)' : '1px solid var(--accent-color)') 
                     : '1px solid transparent',
                   borderRadius: '8px',
                   background: isActive 
-                    ? (isPersonal ? 'rgba(217, 70, 239, 0.1)' : (isSystem ? 'rgba(255, 255, 255, 0.05)' : 'rgba(0, 240, 255, 0.1)')) 
+                    ? (isHome || isSettings ? 'rgba(255, 165, 2, 0.1)' : isPersonal ? 'rgba(217, 70, 239, 0.1)' : 'rgba(0, 240, 255, 0.1)') 
                     : 'transparent',
                   color: isActive 
-                    ? (isPersonal ? 'var(--magic-color, #d946ef)' : (isSystem ? 'var(--text-primary)' : 'var(--accent-color)')) 
-                    : (isPersonal ? 'var(--magic-color, #d946ef)' : (isSystem ? 'var(--text-muted)' : 'var(--text-secondary)')),
-                  opacity: (!isActive && isPersonal) ? 0.85 : 1
+                    ? (isHome || isSettings ? '#ffa502' : isPersonal ? 'var(--magic-color, #d946ef)' : 'var(--accent-color)') 
+                    : (isHome || isSettings ? '#ffa502' : isPersonal ? 'var(--magic-color, #d946ef)' : 'var(--text-secondary)'),
+                  opacity: (!isActive && (isPersonal || isHome || isSettings)) ? 0.85 : 1
                 }}
               >
                 <Icon 
                   size={20} 
                   strokeWidth={isActive ? 2.5 : 2} 
                   style={{ 
-                    color: !isActive && isPersonal ? 'var(--magic-color, #d946ef)' : undefined 
+                    color: !isActive && (isPersonal || isHome || isSettings) ? (isHome || isSettings ? '#ffa502' : 'var(--magic-color, #d946ef)') : undefined 
                   }} 
                 />
                 <span style={{ fontWeight: isActive ? 600 : 500 }}>{item.label}</span>

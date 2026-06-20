@@ -1,7 +1,7 @@
-﻿import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { BookOpen, Play, Volume2, ArrowRight, Sparkles } from 'lucide-react';
-import { curriculumData } from '../data/curriculumData';
+import { BookOpen, Play, Volume2, ArrowRight, Sparkles, Loader } from 'lucide-react';
+import { fetchCurriculumData } from '../data/curriculumData';
 import { useI18n } from '../contexts/I18nContext';
 import { useSettingsStore } from '../store/useSettingsStore';
 import { useSessionStore } from '../store/useSessionStore';
@@ -16,8 +16,26 @@ const Curriculum = () => {
   const speechRate = useSettingsStore(s => s.speechRate);
   const navigate = useNavigate();
   const [selectedUnit, setSelectedUnit] = useState(null);
+  const [units, setUnits] = useState<any[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const units = curriculumData[targetLanguage] || [];
+  useEffect(() => {
+    let mounted = true;
+    const loadData = async () => {
+      setIsLoading(true);
+      const data = await fetchCurriculumData(targetLanguage);
+      if (mounted) {
+        setUnits(data);
+        setIsLoading(false);
+      }
+    };
+    loadData();
+    
+    // 如果切換了語言，將選中的單元重置
+    setSelectedUnit(null);
+    
+    return () => { mounted = false; };
+  }, [targetLanguage]);
 
   const handleSpeak = (text, lang = targetLanguage) => {
     const googleLang = getGoogleTtsLang(lang);
@@ -87,13 +105,18 @@ const Curriculum = () => {
         </header>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-          {units.length === 0 && (
+          {isLoading ? (
+            <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: '40px 0', color: 'var(--text-secondary)' }}>
+              <Loader className="spin" size={32} style={{ margin: '0 auto 16px', color: 'var(--accent-color)' }} />
+              {t('載入中...')}
+            </div>
+          ) : units.length === 0 ? (
             <p style={{ color: 'var(--text-secondary)', gridColumn: '1 / -1', textAlign: 'center', padding: '40px 0' }}>
               {t('目前沒有可用的課程，請先在設定中選擇學習語言。')}
             </p>
-          )}
-          {units.map((unit, index) => (
-            <div key={unit.id} className="glass-panel hover-card" style={{ 
+          ) : (
+            units.map((unit, index) => (
+              <div key={unit.id} className="glass-panel hover-card" style={{ 
               padding: '24px',
               cursor: 'pointer',
               transition: 'transform 0.3s ease, border-color 0.3s ease'
@@ -121,7 +144,8 @@ const Curriculum = () => {
               </div>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>{getLocalizedContent(unit.description)}</p>
             </div>
-          ))}
+            ))
+          )}
         </div>
       </div>
     );
