@@ -417,6 +417,12 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
             merged.push([r[0], r[1]]);
           }
         }
+        // 擴展 merged 範圍：將緊貼 UI 語言片段前後的標點/空白一併納入 UI 範圍
+        const punctRE = /^[\p{P}\p{Z}\p{S}]/u;
+        for (const r of merged) {
+          while (r[0] > 0 && punctRE.test(text[r[0] - 1])) r[0]--;
+          while (r[1] < text.length && punctRE.test(text[r[1]])) r[1]++;
+        }
         const parts = [];
         let cursor = 0;
         for (const r of merged) {
@@ -426,8 +432,10 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
         }
         if (cursor < text.length) parts.push({ text: text.slice(cursor), ui: false });
         const nonEmpty = parts.filter(p => p.text.trim().length > 0);
-        segments = nonEmpty.map(p => p.text);
-        (window as any).__ttsSegIsUI = nonEmpty.map(p => p.ui);
+        // 過濾掉只包含標點/空白的段（無需發音）
+        const speakable = nonEmpty.filter(p => /[\p{L}\p{N}]/u.test(p.text));
+        segments = speakable.map(p => p.text);
+        (window as any).__ttsSegIsUI = speakable.map(p => p.ui);
         useUILangDetection = true;
       }
     } else {
