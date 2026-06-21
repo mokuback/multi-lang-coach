@@ -8,20 +8,20 @@ export function buildChatSystemPrompt(ctx: PromptContext): string {
 
   const responseLangRule =
     ctx.uiLang === 'zh-CN'
-      ? '【非常重要】你的所有回覆（包括翻譯、解釋、引導、說明等）必須使用簡體中文。'
+      ? '【核心規則】你的「對話內容」(content) 必須全程使用目標語言（如日文/韓文/英文），絕對禁止摻雜任何簡體中文。「翻譯」(translation) 和「解釋」(explanation) 欄位才使用簡體中文。情境標題與單元說明（如有）保持簡體中文。'
       : ctx.uiLang === 'zh-TW'
-      ? '【重要】你的所有回覆必須使用繁體中文。'
+      ? '【核心規則】你的「對話內容」(content) 必須全程使用目標語言（如日文/韓文/英文），絕對禁止摻雜任何繁體中文。「翻譯」(translation) 和「解釋」(explanation) 欄位才使用繁體中文。情境標題與單元說明（如有）保持繁體中文。'
       : ctx.uiLang === 'en'
-      ? '【Important】All your responses (including translations, explanations, guidance, descriptions, etc.) must be in English.'
+      ? '【Core Rule】Your "dialogue content" (content field) must always be in the target language (Japanese/Korean/Chinese/etc.), never in English. Only the "translation" and "explanation" fields should use English. Scenario titles and unit descriptions (if any) stay in English.'
       : ctx.uiLang === 'ja'
-      ? '【重要】あなたの全ての返信（翻訳、説明、ガイダンス、説明などを含む）は日本語でなければなりません。'
+      ? '【コアルール】あなたの「対話内容」(content) は常に目標言語（中文・韓国語・英語など）で話してください。日本語を絶対に含めないでください。「翻訳」(translation) と「説明」(explanation) 欄のみ日本語を使用します。'
       : ctx.uiLang === 'ko'
-      ? '【중요】당신의 모든 응답(번역, 설명, 안내, 설명 등 포함)은 한국어여야 합니다.'
+      ? '【핵심 규칙】당신의 "대화 내용"(content)은 항상 목표 언어(일본어/중국어/영어 등)로 작성하고, 한국어를 절대 포함하지 마세요. "번역"(translation)과 "설명"(explanation) 필드에서만 한국어를 사용합니다.'
       : ctx.uiLang === 'es'
-      ? '【Importante】Todas tus respuestas (incluyendo traducciones, explicaciones, orientación, descripciones, etc.) deben estar en Español.'
+      ? '【Regla central】Tu "contenido de diálogo" (content) debe estar siempre en el idioma objetivo (japonés/coreano/inglés/chino), nunca en español. Solo los campos "traducción" y "explicación" deben usar español.'
       : ctx.uiLang === 'fr'
-      ? '【Important】Toutes vos réponses (y compris les traductions, explications, orientations, descriptions, etc.) doivent être en français.'
-      : '【Important】All your responses must be in the language of the user interface.';
+      ? '【Règle centrale】Votre "contenu de dialogue" (content) doit toujours être dans la langue cible (japonais/coréen/anglais/chinois), jamais en français. Seuls les champs "traduction" et "explication" doivent être en français.'
+      : '【Core Rule】Your "dialogue content" (content) must always be in the target language. Only "translation" and "explanation" fields should use the UI language.';
 
   const strictnessRule =
     ctx.correctionMode === 'strict'
@@ -53,7 +53,7 @@ export function buildChatSystemPrompt(ctx: PromptContext): string {
       你必須嚴格回傳 JSON 格式，不允許 Markdown 程式碼區塊標記 (例如 \`\`\`json)。
       JSON 格式必須精確符合以下結構：
       {
-        "content": "教練的鼓勵與下一個測試情境的中文引導 (例如：「很好！現在請用這個句型告訴我...」)",
+        "content": "教練的鼓勵與下一個測試情境的目標語言引導 (例如：「很好！現在請用這個句型告訴我...」）— 必須使用目標語言，絕對不可摻雜 ${uiLangName}。",
         "translation": "上一句話的目標外語翻譯 (非必填)",
         "correction": {
           "original": "錯誤的原句",

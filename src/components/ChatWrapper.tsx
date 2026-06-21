@@ -15,6 +15,8 @@ const ChatWrapper = () => {
   const { t, uiLang, getLocalizedContent } = useI18n();
   const targetLanguage = useSettingsStore(s => s.targetLanguage);
   const userLevel = useSettingsStore(s => s.userLevel);
+  const userCategory = useSettingsStore(s => s.userCategory);
+  const userRole = useSettingsStore(s => s.userRole);
 
   const location = useLocation();
 
@@ -134,29 +136,44 @@ const ChatWrapper = () => {
 
     // General scenario initialization (for scenarios from Dashboard)
     if (scenario.id && scenario.title && scenario.desc) {
-      // Get greeting template for target language, fallback to zh-TW
+      const category = categoryData.categories.find(c => c.id === userCategory);
+      const role = categoryData.roles[userCategory]?.find(r => r.id === userRole);
+      const categoryLabel = getLocalizedContent(category?.label) || userCategory;
+      const roleLabel = getLocalizedContent(role?.label) || userRole;
+      const langName = getLangName(targetLanguage, uiLang);
+
       const greetingTpl = greetings.scenario.aiGreeting[targetLanguage] || greetings.scenario.aiGreeting['zh-TW'];
       const translationTpl = greetings.scenario.aiTranslation[targetLanguage] || greetings.scenario.aiTranslation['zh-TW'];
       
       const aiGreeting = greetingTpl
         .replace('{title}', scenario.title)
-        .replace('{desc}', scenario.desc);
+        .replace('{desc}', scenario.desc)
+        .replace('{category}', categoryLabel)
+        .replace('{role}', roleLabel)
+        .replace('{langName}', langName);
       const aiTranslation = translationTpl
         .replace('{title}', scenario.title)
-        .replace('{desc}', scenario.desc);
+        .replace('{desc}', scenario.desc)
+        .replace('{category}', categoryLabel)
+        .replace('{role}', roleLabel)
+        .replace('{langName}', langName);
+
+      // uiSegments: 佔位符替換後的 UI 語言子串，TTS 時用 UI 語言朗讀
+      const uiSegments = [scenario.title, scenario.desc, roleLabel, langName].filter(Boolean);
 
       setChatHistory([
         { role: 'system', content: t(`我們正在進行情境對話練習。情境主題是：【${scenario.title}】。情境描述：${scenario.desc}。請扮演對話對象，使用符合【${levelLabel}】程度規格的${langName}與我進行自然的對話練習。對話開始時，請先用${langName}主動開啟話題。`) },
         {
           role: 'assistant',
           content: aiGreeting,
-          translation: aiTranslation
+          translation: aiTranslation,
+          uiSegments
         }
       ]);
       initializedRef.current = true;
       return;
     }
-  }, [scenario, t, targetLanguage, userLevel, uiLang]);
+  }, [scenario, t, targetLanguage, userLevel, uiLang, userCategory, userRole]);
 
   return (
     <Chat

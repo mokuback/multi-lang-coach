@@ -49,18 +49,18 @@
   },
   "scenario": {
     "aiGreeting": {
-      "en": "Hello! Let's start practicing the scenario: \"{title}\". {desc}",
-      "ja": "こんにちは！「{title}」のシナリオを練習しましょう。{desc}",
-      "ko": "안녕하세요! 「{title}」 시나리오를 연습해 봅시다. {desc}",
-      "zh-CN": "您好！我们开始练习「{title}」情境。{desc}",
-      "zh-TW": "您好！我們開始練習「{title}」情境。{desc}"
+      "en": "Hello! Let's start practicing the scenario: \"{title}\". {desc} I will be playing the role of a {role} conversation partner. Please start the conversation in {langName}.",
+      "ja": "こんにちは！「{title}」のシナリオを練習しましょう。{desc} 私は{role}の相手役を演じます。{langName}で会話を始めてください。",
+      "ko": "안녕하세요! 「{title}」 시나리오를 연습해 봅시다. {desc} 저는 {role} 상대 역할을 맡겠습니다. {langName}(으)로 대화를 시작해 주세요.",
+      "zh-CN": "您好！我们开始练习「{title}」情境。{desc} 我将扮演{role}的对话对象，请用{langName}开始对话。",
+      "zh-TW": "您好！我們開始練習「{title}」情境。{desc} 我將扮演{role}的對話對象，請用{langName}開始對話。"
     },
     "aiTranslation": {
-      "en": "Hello! Let's start practicing the scenario: \"{title}\". {desc}",
-      "ja": "こんにちは！「{title}」のシナリオを練習しましょう。{desc}",
-      "ko": "안녕하세요! 「{title}」 시나리오를 연습해 봅시다. {desc}",
-      "zh-CN": "您好！我们开始练习「{title}」情境。{desc}",
-      "zh-TW": "您好！我們開始練習「{title}」情境。{desc}"
+      "en": "Hello! Let's start practicing the scenario: \"{title}\". {desc} I will be playing the role of a {role} conversation partner. Please start the conversation in {langName}.",
+      "ja": "こんにちは！「{title}」のシナリオを練習しましょう。{desc} 私は{role}の相手役を演じます。{langName}で会話を始めてください。",
+      "ko": "안녕하세요! 「{title}」 시나리오를 연습해 봅시다. {desc} 저는 {role} 상대 역할을 맡겠습니다. {langName}(으)로 대화를 시작해 주세요.",
+      "zh-CN": "您好！我们开始练习「{title}」情境。{desc} 我将扮演{role}的对话对象，请用{langName}开始对话。",
+      "zh-TW": "您好！我們開始練習「{title}」情境。{desc} 我將扮演{role}的對話對象，請用{langName}開始對話。"
     }
   }
 }
