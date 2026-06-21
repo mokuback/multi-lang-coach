@@ -7,7 +7,7 @@ import { useVocabulary } from '../hooks/useVocabulary';
 import { usePatterns } from '../hooks/usePatterns';
 import { useProgress } from '../hooks/useProgress';
 import { useI18n } from '../contexts/I18nContext';
-import { categoryData } from '../data/categoryData';
+import { categoryData, getRoleTargetName } from '../data/categoryData';
 import { getLangName, getUiLangName, getNativeLangName } from '../utils/languageMap';
 import greetings from '../data/chatGreetings.json';
 
@@ -140,9 +140,8 @@ const ChatWrapper = () => {
       const role = categoryData.roles[userCategory]?.find(r => r.id === userRole);
       const categoryLabel = getLocalizedContent(category?.label) || userCategory;
       const roleLabel = getLocalizedContent(role?.label) || userRole;
-      // role 用目標語言顯示：從 label 提取英文部分
-      const roleMatch = role?.label?.match(/\(([^)]+)\)/);
-      const roleTarget = roleMatch ? roleMatch[1] : (role?.id || userRole);
+      // role 用目標語言顯示
+      const roleTarget = getRoleTargetName(userRole, targetLanguage);
       const langName = getLangName(targetLanguage, uiLang);
       // langName 用目標語言原生名稱
       const nativeLangName = getNativeLangName(targetLanguage);
