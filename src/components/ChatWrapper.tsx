@@ -8,7 +8,7 @@ import { usePatterns } from '../hooks/usePatterns';
 import { useProgress } from '../hooks/useProgress';
 import { useI18n } from '../contexts/I18nContext';
 import { categoryData } from '../data/categoryData';
-import { getLangName, getUiLangName } from '../utils/languageMap';
+import { getLangName, getUiLangName, getNativeLangName } from '../utils/languageMap';
 import greetings from '../data/chatGreetings.json';
 
 const ChatWrapper = () => {
@@ -140,7 +140,12 @@ const ChatWrapper = () => {
       const role = categoryData.roles[userCategory]?.find(r => r.id === userRole);
       const categoryLabel = getLocalizedContent(category?.label) || userCategory;
       const roleLabel = getLocalizedContent(role?.label) || userRole;
+      // role 用目標語言顯示：從 label 提取英文部分
+      const roleMatch = role?.label?.match(/\(([^)]+)\)/);
+      const roleTarget = roleMatch ? roleMatch[1] : (role?.id || userRole);
       const langName = getLangName(targetLanguage, uiLang);
+      // langName 用目標語言原生名稱
+      const nativeLangName = getNativeLangName(targetLanguage);
 
       const greetingTpl = greetings.scenario.aiGreeting[targetLanguage] || greetings.scenario.aiGreeting['zh-TW'];
       const translationTpl = greetings.scenario.aiTranslation[targetLanguage] || greetings.scenario.aiTranslation['zh-TW'];
@@ -149,17 +154,17 @@ const ChatWrapper = () => {
         .replace('{title}', scenario.title)
         .replace('{desc}', scenario.desc)
         .replace('{category}', categoryLabel)
-        .replace('{role}', roleLabel)
-        .replace('{langName}', langName);
+        .replace('{role}', roleTarget)
+        .replace('{langName}', nativeLangName);
       const aiTranslation = translationTpl
         .replace('{title}', scenario.title)
         .replace('{desc}', scenario.desc)
         .replace('{category}', categoryLabel)
-        .replace('{role}', roleLabel)
-        .replace('{langName}', langName);
+        .replace('{role}', roleTarget)
+        .replace('{langName}', nativeLangName);
 
-      // uiSegments: 佔位符替換後的 UI 語言子串，TTS 時用 UI 語言朗讀
-      const uiSegments = [scenario.title, scenario.desc, roleLabel, langName].filter(Boolean);
+      // uiSegments: 只有 title 和 desc 是 UI 語言，role 和 langName 現在是目標語言
+      const uiSegments = [scenario.title, scenario.desc].filter(Boolean);
 
       setChatHistory([
         { role: 'system', content: t(`我們正在進行情境對話練習。情境主題是：【${scenario.title}】。情境描述：${scenario.desc}。請扮演對話對象，使用符合【${levelLabel}】程度規格的${langName}與我進行自然的對話練習。對話開始時，請先用${langName}主動開啟話題。`) },

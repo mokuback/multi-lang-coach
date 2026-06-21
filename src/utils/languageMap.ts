@@ -166,6 +166,21 @@ export function getUiLangName(uiLang: string): string {
   return UI_LANG_NAMES[uiLang] || uiLang;
 }
 
+/** 取得目標學習語言的原生名稱（用於目標語言發音） */
+export function getNativeLangName(langId: string): string {
+  const map: Record<string, string> = {
+    'ja': '日本語',
+    'en': 'English',
+    'ko': '한국어',
+    'zh-CN': '中文',
+    'zh-TW': '中文',
+    'de': 'Deutsch',
+    'es': 'Español',
+    'fr': 'Français',
+  };
+  return map[langId] || langId;
+}
+
 /** 取得詞彙格式指令 */
 export function getPhoneticFormat(langId: string): string {
   return LANGUAGE_MAP[langId]?.phoneticFormat || '该单词的音标';
