@@ -100,7 +100,12 @@
         "explanations": {
           "zh-TW": "你好，我叫...",
           "zh-CN": "你好，我叫...",
-          "en": "Hello, my name is..."
+          "en": "Hello, my name is...",
+          "ja": "こんにちは、[名前]です。",
+          "ko": "안녕하세요, [이름]입니다.",
+          "es": "Hola, me llamo [Nombre].",
+          "fr": "Bonjour, je m'appelle [Nom].",
+          "de": "Hallo, ich heiße [Name]."
         }
       },
       {
@@ -109,7 +114,12 @@
         "explanations": {
           "zh-TW": "..., 謝謝你。",
           "zh-CN": "..., 谢谢你。",
-          "en": "..., thank you."
+          "en": "..., thank you.",
+          "ja": "[名前]、ありがとう。",
+          "ko": "[이름], 고마워요.",
+          "es": "[Nombre], gracias.",
+          "fr": "[Nom], merci.",
+          "de": "[Name], danke."
         }
       }
     ]
@@ -215,7 +225,12 @@
         "explanations": {
           "zh-TW": "我有...個。",
           "zh-CN": "我有...个。",
-          "en": "I have ... (counter)."
+          "en": "I have ... (counter).",
+          "ja": "私は[数字]個持っています。",
+          "ko": "저는 [숫자]개 있어요.",
+          "es": "Tengo [Número].",
+          "fr": "J'en ai [Chiffre].",
+          "de": "Ich habe [Zahl]."
         }
       },
       {
@@ -224,7 +239,12 @@
         "explanations": {
           "zh-TW": "你幾歲？",
           "zh-CN": "你几岁？",
-          "en": "How old are you?"
+          "en": "How old are you?",
+          "ja": "おいくつですか？",
+          "ko": "몇 살이에요?",
+          "es": "¿Cuántos años tienes?",
+          "fr": "Quel âge as-tu?",
+          "de": "Wie alt bist du?"
         }
       }
     ]
@@ -330,7 +350,12 @@
         "explanations": {
           "zh-TW": "現在幾點？",
           "zh-CN": "现在几点？",
-          "en": "What time is it now?"
+          "en": "What time is it now?",
+          "ja": "今、何時ですか？",
+          "ko": "지금 몇 시예요?",
+          "es": "¿Qué hora es?",
+          "fr": "Quelle heure est-il?",
+          "de": "Wie spät ist es?"
         }
       },
       {
@@ -339,7 +364,12 @@
         "explanations": {
           "zh-TW": "今天是...。",
           "zh-CN": "今天是...。",
-          "en": "Today is ... (day of week)."
+          "en": "Today is ... (day of week).",
+          "ja": "今日は[曜日]です。",
+          "ko": "오늘은 [요일]이에요.",
+          "es": "Hoy es [Día de la semana].",
+          "fr": "Aujourd'hui, c'est [Jour].",
+          "de": "Heute ist [Wochentag]."
         }
       }
     ]
@@ -445,7 +475,12 @@
         "explanations": {
           "zh-TW": "我叫...，我是...。",
           "zh-CN": "我叫...，我是...。",
-          "en": "My name is ..., I am a/an ..."
+          "en": "My name is ..., I am a/an ...",
+          "ja": "私は[名前]で、[職業]です。",
+          "ko": "저는 [이름]이고, [직업]이에요.",
+          "es": "Soy [Nombre] y trabajo como [Profesión].",
+          "fr": "Je suis [Nom] et je travaille comme [Profession].",
+          "de": "Ich bin [Name] und arbeite als [Beruf]."
         }
       },
       {
@@ -454,7 +489,12 @@
         "explanations": {
           "zh-TW": "我是...人。",
           "zh-CN": "我是...人。",
-          "en": "I am ... (nationality)."
+          "en": "I am ... (nationality).",
+          "ja": "私は[国籍]人です。",
+          "ko": "저는 [국적] 사람이에요.",
+          "es": "Soy de [Nacionalidad].",
+          "fr": "Je suis de [Nationalité].",
+          "de": "Ich bin [Nationalität]er/in."
         }
       }
     ]
@@ -560,7 +600,12 @@
         "explanations": {
           "zh-TW": "這是我...。",
           "zh-CN": "这是我...。",
-          "en": "This is my ..."
+          "en": "This is my ...",
+          "ja": "こちらは私の[家族]です。",
+          "ko": "이건 제 [가족]이에요.",
+          "es": "Este es mi [Familia].",
+          "fr": "C'est mon/mon [Famille].",
+          "de": "Das ist mein/e [Familienmitglied]."
         }
       },
       {
@@ -569,7 +614,12 @@
         "explanations": {
           "zh-TW": "他/她很...。",
           "zh-CN": "他/她很...。",
-          "en": "He/She is very ..."
+          "en": "He/She is very ...",
+          "ja": "彼/彼女は[adjective]です。",
+          "ko": "그녀/그는 아주 [형용사]어요.",
+          "es": "Él/Ella es muy [Adjetivo].",
+          "fr": "Il/Elle est très [Adjectif].",
+          "de": "Er/Sie ist sehr [Adjektiv]."
         }
       }
     ]
@@ -675,7 +725,12 @@
         "explanations": {
           "zh-TW": "我每天...。",
           "zh-CN": "我每天...。",
-          "en": "I ... every day."
+          "en": "I ... every day.",
+          "ja": "私は毎日[時間][動詞]ます。",
+          "ko": "저는 매일 [시간]에 [동사]요.",
+          "es": "Yo [Verbo] a las [Hora] todos los días.",
+          "fr": "Je [Verbe] à [Heure] chaque jour.",
+          "de": "Ich [Verb] jeden Tag um [Zeit]."
         }
       },
       {
@@ -684,7 +739,12 @@
         "explanations": {
           "zh-TW": "你什麼時候...？",
           "zh-CN": "你什么时候...？",
-          "en": "When do you ...?"
+          "en": "When do you ...?",
+          "ja": "いつ[動詞]ますか？",
+          "ko": "언제 [동사]세요?",
+          "es": "¿Cuándo [Verbo]?",
+          "fr": "Quand [Verbe]-ez-vous?",
+          "de": "Wann [Verb] du?"
         }
       }
     ]
@@ -790,7 +850,12 @@
         "explanations": {
           "zh-TW": "我想吃...。",
           "zh-CN": "我想吃...。",
-          "en": "I want to eat ..."
+          "en": "I want to eat [food].",
+          "ja": "[食べ物]を食べたいです。",
+          "ko": "저는 [음식]을 먹고 싶어요.",
+          "es": "Quiero comer [Comida].",
+          "fr": "Je veux manger [Nourriture].",
+          "de": "Ich möchte [Essen] essen."
         }
       },
       {
@@ -799,7 +864,12 @@
         "explanations": {
           "zh-TW": "請給我...。",
           "zh-CN": "请给我...。",
-          "en": "Please give me ..."
+          "en": "Please give me ...",
+          "ja": "[食べ物]をください。",
+          "ko": "[음식] 주세요.",
+          "es": "Dame [Comida], por favor.",
+          "fr": "Donnez-moi [Nourriture], s'il vous plaît.",
+          "de": "Gib mir bitte [Essen]."
         }
       }
     ]
@@ -905,7 +975,12 @@
         "explanations": {
           "zh-TW": "這個多少錢？",
           "zh-CN": "这个多少钱？",
-          "en": "How much is this?"
+          "en": "How much is this?",
+          "ja": "これはいくらですか？",
+          "ko": "이거 얼마예요?",
+          "es": "¿Cuánto cuesta esto?",
+          "fr": "Combien ça coûte?",
+          "de": "Wie viel kostet das?"
         }
       },
       {
@@ -914,7 +989,12 @@
         "explanations": {
           "zh-TW": "太貴了，可以便宜一點嗎？",
           "zh-CN": "太贵了，可以便宜一点吗？",
-          "en": "Too expensive, can it be cheaper?"
+          "en": "Too expensive, can it be cheaper?",
+          "ja": "高すぎます、やすくってもらえますか？",
+          "ko": "너무 비싸요, 좀 싸게 해주세요.",
+          "es": "Es muy caro, ¿puede ser más barato?",
+          "fr": "C'est trop cher, pouvez-vous baisser le prix?",
+          "de": "Das ist zu teuer, können Sie es günstiger machen?"
         }
       }
     ]
@@ -1020,7 +1100,12 @@
         "explanations": {
           "zh-TW": "...在哪裡？",
           "zh-CN": "...在哪里？",
-          "en": "Where is ...?"
+          "en": "Where is ...?",
+          "ja": "[場所]はどこですか？",
+          "ko": "[장소]가 어디예요?",
+          "es": "¿Dónde está [Lugar]?",
+          "fr": "Où est [Lieu]?",
+          "de": "Wo ist [Ort]?"
         }
       },
       {
@@ -1029,7 +1114,12 @@
         "explanations": {
           "zh-TW": "請往...拐。",
           "zh-CN": "请往...拐。",
-          "en": "Please turn ..."
+          "en": "Please turn ...",
+          "ja": "[左/右]へ曲がってください。",
+          "ko": "[왼쪽/오른쪽]으로 가세요.",
+          "es": "Gire a la [izquierda/derecha].",
+          "fr": "Allez à [gauche/droite].",
+          "de": "Gehen Sie nach [links/rechts]."
         }
       }
     ]
@@ -1135,7 +1225,12 @@
         "explanations": {
           "zh-TW": "今天天氣怎麼樣？",
           "zh-CN": "今天天气怎么样？",
-          "en": "How is the weather today?"
+          "en": "How is the weather today?",
+          "ja": "今日の天気はどうですか？",
+          "ko": "오늘 날씨 어때요?",
+          "es": "¿Cómo está el clima hoy?",
+          "fr": "Quel temps fait-il aujourd'hui?",
+          "de": "Wie ist das Wetter heute?"
         }
       },
       {
@@ -1144,7 +1239,12 @@
         "explanations": {
           "zh-TW": "我覺得很...。",
           "zh-CN": "我觉得很...。",
-          "en": "I feel very ..."
+          "en": "I feel very ...",
+          "ja": "[暑さ/寒さ]く感じます。",
+          "ko": "저는 [더위/추위]를 많이 타요.",
+          "es": "Siento mucho [calor/frío].",
+          "fr": "Je ressens très [chaud/froid].",
+          "de": "Ich finde es sehr [heiß/kalt]."
         }
       }
     ]
@@ -1250,7 +1350,12 @@
         "explanations": {
           "zh-TW": "喂，請問...在嗎？",
           "zh-CN": "喂，请问...在吗？",
-          "en": "Hello, may I ask if ... is there?"
+          "en": "Hello, may I ask if ... is there?",
+          "ja": "もしもし、[名前]さんはいますか？",
+          "ko": "여보세요, [이름] 있어요?",
+          "es": "Hola, ¿está [Nombre]?",
+          "fr": "Allô, [Nom] est là?",
+          "de": "Hallo, ist [Name] da?"
         }
       },
       {
@@ -1259,7 +1364,12 @@
         "explanations": {
           "zh-TW": "請讓我留言。",
           "zh-CN": "请让我留言。",
-          "en": "Please let me leave a message."
+          "en": "Please let me leave a message.",
+          "ja": "メッセージを残してください。",
+          "ko": "메시지 남겨 주세요.",
+          "es": "Por favor déjeme un mensaje.",
+          "fr": "Laissez-moi un message, s'il vous plaît.",
+          "de": "Bitte hinterlassen Sie mir eine Nachricht."
         }
       }
     ]
@@ -1365,7 +1475,12 @@
         "explanations": {
           "zh-TW": "我...很疼。",
           "zh-CN": "我...很疼。",
-          "en": "My ... hurts."
+          "en": "My ... hurts.",
+          "ja": "私の[体の部位]が痛いです。",
+          "ko": "저 [신체]가 아파요.",
+          "es": "Me duele [parte del cuerpo].",
+          "fr": "J'ai mal à [partie du corps].",
+          "de": "Mir tut [Körperteil] weh."
         }
       },
       {
@@ -1374,7 +1489,12 @@
         "explanations": {
           "zh-TW": "我需要看醫生。",
           "zh-CN": "我需要看医生。",
-          "en": "I need to see a doctor."
+          "en": "I need to see a doctor.",
+          "ja": "医者に見てもらう必要があります。",
+          "ko": "병원에 가야 해요.",
+          "es": "Necesito ver a un médico.",
+          "fr": "Je dois voir un médecin.",
+          "de": "Ich muss zum Arzt."
         }
       }
     ]
@@ -1480,7 +1600,12 @@
         "explanations": {
           "zh-TW": "我喜歡...。",
           "zh-CN": "我喜欢...。",
-          "en": "I like ..."
+          "en": "I like ...",
+          "ja": "[趣味]が好きです。",
+          "ko": "저는 [취미]를 좋아해요.",
+          "es": "Me gustan los/las [Afición].",
+          "fr": "J'aime [Loisir].",
+          "de": "Ich mag [Hobby]."
         }
       },
       {
@@ -1489,7 +1614,12 @@
         "explanations": {
           "zh-TW": "你喜歡做什麼？",
           "zh-CN": "你喜欢做什么？",
-          "en": "What do you like to do?"
+          "en": "What do you like to do?",
+          "ja": "何をするのが好きですか？",
+          "ko": "뭐 하기 좋아해요?",
+          "es": "¿Qué te gusta hacer?",
+          "fr": "Qu'aimez-vous faire?",
+          "de": "Was machst du gern?"
         }
       }
     ]
@@ -1595,7 +1725,12 @@
         "explanations": {
           "zh-TW": "我今天要...。",
           "zh-CN": "我今天要...。",
-          "en": "I have to ... today."
+          "en": "I have to ... today.",
+          "ja": "今日は[仕事]があります。",
+          "ko": "오늘 [업무]이/가 있어요.",
+          "es": "Hoy tengo [trabajo/reunión].",
+          "fr": "J'ai [travail/réunion] aujourd'hui.",
+          "de": "Ich habe heute [Arbeit/Besprechung]."
         }
       },
       {
@@ -1604,7 +1739,12 @@
         "explanations": {
           "zh-TW": "你今天忙嗎？",
           "zh-CN": "你今天忙吗？",
-          "en": "Are you busy today?"
+          "en": "Are you busy today?",
+          "ja": "今日忙しいですか？",
+          "ko": "오늘 바빠요?",
+          "es": "¿Estás ocupado/a hoy?",
+          "fr": "Êtes-vous occupé/e aujourd'hui?",
+          "de": "Bist du heute beschäftigt?"
         }
       }
     ]
@@ -1710,7 +1850,12 @@
         "explanations": {
           "zh-TW": "我要訂...的機票。",
           "zh-CN": "我要订...的机票。",
-          "en": "I want to book a flight ticket for ..."
+          "en": "I want to book a flight on [date].",
+          "ja": "[日付]のフライトを予約したいです。",
+          "ko": "[날짜] 항공권 예매하고 싶어요.",
+          "es": "Quiero reservar un vuelo para [Fecha].",
+          "fr": "Je veux réserver un vol pour [Date].",
+          "de": "Ich möchte einen Flug für [Datum] buchen."
         }
       },
       {
@@ -1719,7 +1864,12 @@
         "explanations": {
           "zh-TW": "請問有沒有空房？",
           "zh-CN": "请问有没有空房？",
-          "en": "Excuse me, is there a vacant room?"
+          "en": "Excuse me, is there a vacant room?",
+          "ja": "空いている部屋はありますか？",
+          "ko": "빈 방 있나요?",
+          "es": "¿Tienen habitaciones disponibles?",
+          "fr": "Avez-vous des chambres disponibles?",
+          "de": "Haben Sie freie Zimmer?"
         }
       }
     ]
