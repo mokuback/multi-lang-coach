@@ -1,0 +1,71 @@
+var fs = require('fs');
+var path = './public/data/curriculum/ja.json';
+var d = JSON.parse(fs.readFileSync(path, 'utf8'));
+
+// Unit 1: 寒暄固定短语（无占位符）
+d[0].patterns[0].explanations.en = 'Good morning (used in the morning)';
+d[0].patterns[1].explanations.en = 'Hello (used during the day)';
+d[0].patterns[2].explanations.en = 'Good evening (used after evening)';
+d[0].patterns[3].explanations.en = 'Thank you (everyday usage)';
+d[0].patterns[4].explanations.en = 'Goodbye (used for long separations)';
+d[0].patterns[5].explanations.en = '[Name], thank you.';
+
+// Unit 2: 自我介绍
+d[1].patterns[0].explanations.en = 'I am [Noun].';
+d[1].patterns[1].explanations.en = 'Are you [Noun]?';
+
+// Unit 3: 指示代词
+d[2].patterns[0].explanations.en = 'This is [Noun].';
+d[2].patterns[1].explanations.en = 'Is that [Noun]?';
+
+// Unit 4: 场所
+d[3].patterns[0].explanations.en = 'Where is [Noun]?';
+d[3].patterns[1].explanations.en = '[Noun] is at [Place].';
+
+// Unit 5: 数字与时间
+d[4].patterns[0].explanations.en = 'What time is it now?';
+d[4].patterns[1].explanations.en = 'It is [Number] o\'clock.';
+
+// Unit 6: 点餐与购物
+d[5].patterns[0].explanations.en = 'How much is this?';
+d[5].patterns[1].explanations.en = '[Noun], please.';
+d[5].patterns[2].explanations.en = 'Give me [Noun].';
+
+// Unit 7: 日常动作
+d[6].patterns[0].explanations.en = 'I [Verb] [Noun].';
+d[6].patterns[1].explanations.en = 'What will you [Verb]?';
+
+// Unit 8: 邀请与提议
+d[7].patterns[0].explanations.en = 'Would you like to [Verb] together?';
+d[7].patterns[1].explanations.en = 'Let\'s [Verb].';
+
+// Unit 9: 过去的经验
+d[8].patterns[0].explanations.en = '[Noun/Adjective] was...';
+d[8].patterns[1].explanations.en = 'I [Verb]ed.';
+
+// Unit 10: 想要与愿望
+d[9].patterns[0].explanations.en = 'I want [Noun].';
+d[9].patterns[1].explanations.en = 'I want to [Verb].';
+
+// Unit 11: 打电话与留言
+d[10].patterns[0].explanations.en = '[Noun], please.';
+d[10].patterns[1].explanations.en = 'I am currently [Noun]-ing.';
+
+// Unit 12: 请求与许可
+d[11].patterns[0].explanations.en = 'May I [Verb]?';
+d[11].patterns[1].explanations.en = 'Please [Verb].';
+
+// Unit 13: 状态与变化
+d[12].patterns[0].explanations.en = 'It becomes [Adjective/Noun].';
+d[12].patterns[1].explanations.en = 'It is very [Adjective].';
+
+// Unit 14: 比较与选择
+d[13].patterns[0].explanations.en = 'A is more [Adjective] than B.';
+d[13].patterns[1].explanations.en = 'Which is more [Adjective], A or B?';
+
+// Unit 15: 经验与建议
+d[14].patterns[0].explanations.en = 'I have [Verbed] before.';
+d[14].patterns[1].explanations.en = 'You should [Verb].';
+
+fs.writeFileSync(path, JSON.stringify(d, null, 2));
+console.log('Fixed all 35 patterns in ja.json');

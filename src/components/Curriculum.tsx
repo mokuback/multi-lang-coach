@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { BookOpen, Play, Volume2, ArrowRight, Sparkles, Loader } from 'lucide-react';
+import { BookOpen, Play, Volume2, ArrowRight, Sparkles, Loader, GraduationCap } from 'lucide-react';
 import { fetchCurriculumData } from '../data/curriculumData';
 import { useI18n } from '../contexts/I18nContext';
 import { useSettingsStore } from '../store/useSettingsStore';
@@ -95,7 +95,7 @@ const Curriculum = () => {
 
   if (!selectedUnit) {
     return (
-      <div className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '900px', margin: '0 auto' }}>
+      <div className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
         <header style={{ marginBottom: '40px' }}>
           <h2 style={{ fontSize: '2rem', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '12px' }}>
             <BookOpen className="text-accent" size={32} />
@@ -104,7 +104,7 @@ const Curriculum = () => {
           <p className="text-muted">{t('選擇一個單元開始您的學習之旅。')}</p>
         </header>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(450px, 1fr))', gap: '24px' }}>
           {isLoading ? (
             <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: '40px 0', color: 'var(--text-secondary)' }}>
               <Loader className="spin" size={32} style={{ margin: '0 auto 16px', color: 'var(--accent-color)' }} />
@@ -130,14 +130,16 @@ const Curriculum = () => {
               e.currentTarget.style.transform = 'translateY(0)'; 
               e.currentTarget.style.borderColor = 'var(--glass-border)';
             }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
-                <h3 style={{ fontSize: '1.25rem' }}>{getLocalizedContent(unit.title)}</h3>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '12px' }}>
+                <h3 style={{ fontSize: '1.25rem', display: 'flex', alignItems: 'flex-start', gap: '8px' }}><GraduationCap size={20} style={{ color: 'var(--accent-color)', flexShrink: 0, marginTop: '2px' }} /><span>{getLocalizedContent(unit.title)}</span></h3>
                 <span style={{ 
                   background: 'var(--panel-bg-light)', 
                   padding: '4px 12px', 
                   borderRadius: '16px',
                   fontSize: '0.8rem',
-                  color: 'var(--text-muted)'
+                  color: 'var(--text-muted)',
+                  flexShrink: 0,
+                  whiteSpace: 'nowrap'
                 }}>
                   {unit.vocab?.length || 0} {t('單字')} · {unit.patterns?.length || 0} {t('句型')}
                 </span>
@@ -154,7 +156,7 @@ const Curriculum = () => {
   const unit = selectedUnit;
 
   return (
-    <div className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '900px', margin: '0 auto' }}>
+    <div className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
       <header style={{ marginBottom: '40px', display: 'flex', alignItems: 'center', gap: '16px' }}>
         <button 
           className="glass-button"

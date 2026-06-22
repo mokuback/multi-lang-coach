@@ -1,0 +1,20 @@
+var fs = require('fs');
+var d = JSON.parse(fs.readFileSync('./public/data/curriculum/ja.json', 'utf8'));
+
+var count = 0;
+d.forEach(function(u, uidx) {
+  (u.patterns || []).forEach(function(p, pidx) {
+    count++;
+    var en = (p.explanations || {}).en || '';
+    var hasEllipsis = en.indexOf('...') !== -1;
+    var prefix = hasEllipsis ? '⚠️ ' : '  ';
+    console.log(prefix + 'U' + (uidx+1) + '.' + pidx + ': ' + p.pattern);
+    console.log(prefix + '    en = [' + en + ']');
+    if (hasEllipsis) {
+      console.log(prefix + '    ^^^ Still has "..." — needs fix');
+    }
+    console.log();
+  });
+});
+
+console.log('Total patterns: ' + count);

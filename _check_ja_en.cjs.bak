@@ -1,0 +1,45 @@
+var fs = require('fs');
+var d = JSON.parse(fs.readFileSync('./public/data/curriculum/ja.json', 'utf8'));
+
+// 检查策略：
+// 1. en 值是否和 pattern 不一致（即不是 pattern 本身）
+// 2. en 值是否看起来像另一个句型的英文
+// 3. en 值是否包含「...」或者其他非句型文本
+
+var allPatterns = [];
+d.forEach(function(u, uidx) {
+  (u.patterns || []).forEach(function(p, pidx) {
+    allPatterns.push({
+      unit: uidx + 1,
+      pidx: pidx,
+      pattern: p.pattern,
+      en: (p.explanations || {}).en || '',
+      explanations: p.explanations
+    });
+  });
+});
+
+console.log('=== ja.json: ALL patterns with en values ===\n');
+allPatterns.forEach(function(item) {
+  var en = item.en;
+  // 标记可疑项：en 不是 pattern 且看起来像其他句型
+  var suspicious = false;
+  var reason = '';
+  
+  if (!en) {
+    reason = 'MISSING en';
+    suspicious = true;
+  } else if (en === 'What is this?') {
+    reason = 'WRONG (same as other pattern)';
+    suspicious = true;
+  } else if (en.indexOf('...') !== -1 && en.indexOf('[') === -1) {
+    reason = 'PLACEHOLDER without brackets';
+    suspicious = true;
+  }
+  
+  var line = 'U' + item.unit + '.' + item.pidx + ': ' + item.pattern + '\n    en = [' + en + ']';
+  if (suspicious) {
+    line = '❌ ' + line + '  ← ' + reason;
+  }
+  console.log(line + '\n');
+});

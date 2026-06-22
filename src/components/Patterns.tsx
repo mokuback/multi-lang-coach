@@ -70,17 +70,34 @@ const Patterns = () => {
   };
 
   const renderPatternCards = (patternsList, sid) => (
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '20px', marginBottom: '40px' }}>
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '24px', marginBottom: '40px' }}>
       {patternsList.map((item, index) => (
         <div 
           key={`${sid}-${index}`} 
           className="glass-panel hover-card animate-fade-in" 
-          style={{ padding: '20px', cursor: 'pointer', display: 'flex', flexDirection: 'column' }}
+          style={{ 
+            padding: '24px',
+            cursor: 'pointer',
+            display: 'flex',
+            flexDirection: 'column',
+            transition: 'transform 0.3s ease, border-color 0.3s ease'
+          }}
           onClick={() => handleStartPatternDrill(item)}
+          onMouseEnter={(e) => { 
+            e.currentTarget.style.transform = 'translateY(-5px)'; 
+            e.currentTarget.style.borderColor = 'var(--accent-color)';
+          }}
+          onMouseLeave={(e) => { 
+            e.currentTarget.style.transform = 'translateY(0)'; 
+            e.currentTarget.style.borderColor = 'var(--glass-border)';
+          }}
         >
-          <h3 style={{ fontSize: '1.2rem', color: 'var(--accent-color)', marginBottom: '8px', lineHeight: '1.4' }}>
-            {item.translations?.[targetLanguage] || item.pattern || ''}
-          </h3>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '12px' }}>
+            <h3 style={{ fontSize: '1.25rem', display: 'flex', alignItems: 'flex-start', gap: '8px', color: 'var(--accent-color)', marginBottom: '8px', lineHeight: '1.4', flex: 1 }}>
+              <BookMarked size={20} style={{ color: 'var(--accent-color)', flexShrink: 0, marginTop: '2px' }} />
+              <span>{item.translations?.[targetLanguage] || item.pattern || ''}</span>
+            </h3>
+          </div>
           <p style={{ color: 'var(--text-primary)', marginBottom: '8px', fontWeight: 500, fontSize: '1.05rem' }}>
             {getLocalizedContent(item.translations || { 'zh-TW': item.translation || '' })}
           </p>
@@ -102,7 +119,7 @@ const Patterns = () => {
   );
 
   return (
-    <div className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '1000px', margin: '0 auto' }}>
+    <div className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '1200px', margin: '0 auto' }}>
       <header style={{ marginBottom: '40px' }}>
         <h2 style={{ fontSize: '2rem', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '12px' }}>
           <BookMarked className="text-accent" size={32} />

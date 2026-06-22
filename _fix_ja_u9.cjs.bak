@@ -1,0 +1,9 @@
+var fs = require('fs');
+var path = './public/data/curriculum/ja.json';
+var d = JSON.parse(fs.readFileSync(path, 'utf8'));
+
+// Fix U9.0: remove trailing ...
+d[8].patterns[0].explanations.en = '[Noun/Adjective] was.';
+
+fs.writeFileSync(path, JSON.stringify(d, null, 2));
+console.log('Fixed U9.0: en = "' + d[8].patterns[0].explanations.en + '"');
