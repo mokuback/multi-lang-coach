@@ -17,11 +17,11 @@
   },
   "curriculumDrill": {
     "aiGreeting": {
-      "en": "Welcome to the unit: \"{unitTitle}\". I am your AI coach. Let's start the training! {readyPrompt}",
-      "ja": "ユニット「{unitTitle}」へようこそ。私はあなたのAIコーチです。特訓を始めましょう！ {readyPrompt}",
-      "ko": "유닛「{unitTitle}」에 오신 것을 환영합니다. 저는 당신의 AI 코치입니다. 훈련을 시작합시다! {readyPrompt}",
-      "zh-CN": "欢迎来到「{unitTitle}」单元。我是你的 AI 教练，我们开始特训吧！ {readyPrompt}",
-      "zh-TW": "歡迎來到「{unitTitle}」單元。我是你的 AI 教練，我們開始特訓吧！ {readyPrompt}"
+      "en": "Welcome to the unit: \"{unitTitle}\". I am your AI coach. Let's start the training! Ready? Let me know.",
+      "ja": "ユニット「{unitTitle}」へようこそ。私はあなたのAIコーチです。特訓を始めましょう！準備できたら教えてください。",
+      "ko": "유닛「{unitTitle}」에 오신 것을 환영합니다. 저는 당신의 AI 코치입니다. 훈련을 시작합시다！준비되면 알려주세요.",
+      "zh-CN": "欢迎来到「{unitTitle}」单元。我是你的 AI 教练，我们开始特训吧！准备好了，请告诉我。",
+      "zh-TW": "歡迎來到「{unitTitle}」單元。我是你的 AI 教練，我們開始特訓吧！準備好了，請告訴我。"
     },
     "aiTranslation": {
       "en": "Welcome to the unit: \"{unitTitle}\". I am your AI coach. Let's start the training! Please prepare, I will give you a {uiLangName} scenario.",
