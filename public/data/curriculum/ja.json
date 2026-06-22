@@ -170,7 +170,7 @@
         "explanations": {
           "zh-TW": "..., 謝謝你。",
           "zh-CN": "..., 谢谢你。",
-          "en": "..., thank you.",
+          "en": "[Name], thank you.",
           "ja": "[名前]、ありがとうございます。",
           "ko": "[이름], 고마워요.",
           "es": "[Nombre], gracias.",
@@ -281,7 +281,7 @@
         "explanations": {
           "zh-TW": "我是...",
           "zh-CN": "我是...",
-          "en": "I am...",
+          "en": "I am [Noun].",
           "ja": "わたしは [名詞] です。",
           "ko": "저는 [명사]이에요.",
           "es": "Soy [Sustantivo].",
@@ -295,7 +295,7 @@
         "explanations": {
           "zh-TW": "你是...嗎？",
           "zh-CN": "你是...吗？",
-          "en": "Are you...?",
+          "en": "Are you [Noun]?",
           "ja": "あなたは [名詞] ですか。",
           "ko": "당신은 [명사]예요?",
           "es": "¿Eres [Sustantivo]?",
@@ -420,7 +420,7 @@
         "explanations": {
           "zh-TW": "這是...",
           "zh-CN": "这是...",
-          "en": "This is...",
+          "en": "This is [Noun].",
           "ja": "これは [名詞] です。",
           "ko": "이건 [명사]이에요.",
           "es": "Esto es [Sustantivo].",
@@ -434,7 +434,7 @@
         "explanations": {
           "zh-TW": "那是...嗎？",
           "zh-CN": "那是...吗？",
-          "en": "Is that...?",
+          "en": "Is that [Noun]?",
           "ja": "それは [名詞] ですか。",
           "es": "¿Es eso [Sustantivo]?",
           "fr": "Est-ce que c'est [Nom]?",
@@ -559,7 +559,7 @@
         "explanations": {
           "zh-TW": "...在哪裡？",
           "zh-CN": "...在哪里？",
-          "en": "Where is...?",
+          "en": "Where is [Noun]?",
           "ja": "[名詞] は どこ ですか。",
           "ko": "[명사] 어디예요?",
           "es": "¿Dónde está [Sustantivo]?",
@@ -573,7 +573,7 @@
         "explanations": {
           "zh-TW": "...在某處",
           "zh-CN": "...在某处",
-          "en": "...is somewhere.",
+          "en": "[Noun] is at [Place].",
           "ja": "[名詞] は [場所] です。",
           "ko": "[명사]은 [장소]에 있어요.",
           "es": "[Sustantivo] está en [Lugar].",
@@ -712,7 +712,7 @@
         "explanations": {
           "zh-TW": "現在...點",
           "zh-CN": "现在...点",
-          "en": "It is... o'clock.",
+          "en": "It is [Number] o'clock.",
           "ja": "今、[数字]時 です。",
           "ko": "지금 [숫자]시예요.",
           "es": "Son las [Número].",
@@ -837,7 +837,7 @@
         "explanations": {
           "zh-TW": "麻煩給我...",
           "zh-CN": "麻烦給我...",
-          "en": "... please",
+          "en": "[Noun], please.",
           "ja": "[名詞] を お願いします。",
           "ko": "[명사] 주세요.",
           "es": "[Sustantivo], por favor.",
@@ -851,7 +851,7 @@
         "explanations": {
           "zh-TW": "給我...",
           "zh-CN": "给我...",
-          "en": "Give me...",
+          "en": "Give me [Noun].",
           "ja": "[名詞] を ください。",
           "ko": "[명사] 주세요.",
           "es": "Dame [Sustantivo].",
@@ -1184,7 +1184,7 @@
         "explanations": {
           "zh-TW": "當時是...",
           "zh-CN": "当时是...",
-          "en": "Please connect me to someone.",
+          "en": "[Noun/Adjective] was.",
           "ja": "[名詞/形容詞] でした。",
           "ko": "[명사/형용사]이었어요/했어요.",
           "es": "Era [Sustantivo/Adjetivo].",
@@ -1198,7 +1198,7 @@
         "explanations": {
           "zh-TW": "已經做了...",
           "zh-CN": "已經做了...",
-          "en": "May I...?",
+          "en": "I [Verb]ed.",
           "ja": "[動詞] ました。",
           "ko": "[동사]했어요.",
           "es": "[Verbo]é.",
@@ -1295,7 +1295,7 @@
         "explanations": {
           "zh-TW": "我想要某物",
           "zh-CN": "我想要某物",
-          "en": "To become...",
+          "en": "I want [Noun].",
           "ja": "わたしは [名詞] が 欲しいです。",
           "ko": "저는 [명사]이/가 싶어요.",
           "es": "Quiero [Sustantivo].",
@@ -1309,7 +1309,7 @@
         "explanations": {
           "zh-TW": "我想要做某事",
           "zh-CN": "我想要做某事",
-          "en": "A is more... than B.",
+          "en": "I want to [Verb].",
           "ja": "わたしは [動詞] たいです。",
           "ko": "저는 [동사]고 싶어요.",
           "es": "Quiero [Verbo].",
@@ -1420,7 +1420,7 @@
         "explanations": {
           "zh-TW": "請找某人聽電話",
           "zh-CN": "请找某人聽电话",
-          "en": "Have had the experience of...",
+          "en": "[Noun], please.",
           "ja": "[名詞] を お願いします。",
           "ko": "[명사] 주세요.",
           "es": "[Sustantivo], por favor.",
@@ -1434,7 +1434,7 @@
         "explanations": {
           "zh-TW": "現在正在...中",
           "zh-CN": "现在正在...中",
-          "en": "My name is...",
+          "en": "I am currently [Noun]-ing.",
           "ja": "今は [名詞] 中です。",
           "ko": "지금은 [명사] 중이에요.",
           "es": "Ahora estoy en [Sustantivo].",
@@ -1531,7 +1531,7 @@
         "explanations": {
           "zh-TW": "我可以...嗎？",
           "zh-CN": "我可以...吗？",
-          "en": "I am a...",
+          "en": "May I [Verb]?",
           "ja": "[動詞て形] も いいですか。",
           "ko": "[동사て형]도 될까요?",
           "es": "¿Puedo [Verbo]?",
@@ -1545,7 +1545,7 @@
         "explanations": {
           "zh-TW": "請你幫我...",
           "zh-CN": "请你幫我...",
-          "en": "What is this?",
+          "en": "Please [Verb].",
           "ja": "[動詞て形] ください。",
           "ko": "[동사て형] 주세요.",
           "es": "Por favor, [Verbo].",
@@ -1753,7 +1753,7 @@
         "explanations": {
           "zh-TW": "A比B更...",
           "zh-CN": "A比B更...",
-          "en": "What time is it?",
+          "en": "A is more [Adjective] than B.",
           "ja": "Aは Bより [形容詞] です。",
           "ko": "A는 B보다 [형용사]해요.",
           "es": "A es más [Adjetivo] que B.",
@@ -1864,7 +1864,7 @@
         "explanations": {
           "zh-TW": "曾經有...的經驗",
           "zh-CN": "曾经有...的经验",
-          "en": "Can you...?",
+          "en": "I have [Verbed] before.",
           "ja": "[動詞た形] ことが あります。",
           "ko": "[동사た형]经验이 있어요.",
           "es": "He [Participio] alguna vez.",
@@ -1878,7 +1878,7 @@
         "explanations": {
           "zh-TW": "最好做...",
           "zh-CN": "最好做...",
-          "en": "Have you ever...?",
+          "en": "You should [Verb].",
           "ja": "[動詞た形] ほうが いいです。",
           "ko": "[동사た형] 것이 좋아요.",
           "es": "Es mejor [Verbo].",
