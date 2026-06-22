@@ -113,7 +113,8 @@ const ChatWrapper = () => {
         {
           role: 'assistant',
           content: aiGreeting,
-          translation: aiTranslation
+          translation: aiTranslation,
+          uiSegments: [localizedTitle]
         }
       ]);
       initializedRef.current = true;
