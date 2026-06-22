@@ -1,18 +1,18 @@
 {
   "patternDrill": {
     "aiGreeting": {
-      "en": "Let's drill this pattern: \"{pattern}\". I will give you a scenario in {uiLangName}, and you reply using this pattern.",
-      "ja": "このパターンの練習をしましょう: \"{pattern}\". {uiLangName}で状況を説明するので、あなたはこのパターンを使って答えてください。",
-      "ko": "이 패턴을 연습해 봅시다: \"{pattern}\". {uiLangName}(으)로 상황을 설명할 테니, 이 패턴을 사용해서 대답해 주세요.",
-      "zh-CN": "让我们练习这个句型：「{pattern}」。我会用{uiLangName}说明情境，请使用这个句型回覆。",
-      "zh-TW": "讓我們練習這個句型：「{pattern}」。我會用{uiLangName}說明情境，請使用這個句型回覆。"
+      "en": "Let's drill this pattern: \"{pattern}\". I will give you a scenario in {uiLangName}, and you reply using this pattern. Ready? Let me know.",
+      "ja": "このパターンの練習をしましょう: 「{pattern}」。{uiLangName}で状況を説明するので、あなたはこのパターンを使って答えてください。準備できたら教えてください。",
+      "ko": "이 패턴을 연습해 봅시다: 「{pattern}」。{uiLangName}(으)로 상황을 설명할 테니, 이 패턴을 사용해서 대답해 주세요.준비되면 알려주세요.",
+      "zh-CN": "让我们练习这个句型：「{pattern}」。我会用{uiLangName}说明情境，请使用这个句型回覆。准备好了，请告诉我。",
+      "zh-TW": "讓我們練習這個句型：「{pattern}」。我會用{uiLangName}說明情境，請使用這個句型回覆。準備好了，請告訴我。"
     },
     "aiTranslation": {
-      "en": "Let's practice this pattern: \"{pattern}\". I will give you a scenario in {uiLangName}, please reply using this pattern.",
-      "ja": "このパターンを使って練習しましょう：「{pattern}」。{uiLangName}で状況を説明するので、このパターンを使って答えてください。",
-      "ko": "이 패턴을 연습해 봅시다：「{pattern}」。{uiLangName}(으)로 상황을 설명할 테니, 이 패턴을 사용해서 대답해 주세요.",
-      "zh-CN": "我们来练习这个句型：「{pattern}」。我会给你一个{uiLangName}情境，请使用这个句型回覆。",
-      "zh-TW": "我們來練習這個句型：「{pattern}」。我會給你一個{uiLangName}情境，請使用這個句型回覆。"
+      "en": "Let's practice this pattern: \"{pattern}\". I will give you a scenario in {uiLangName}, please reply using this pattern. Ready? Let me know.",
+      "ja": "このパターンを使って練習しましょう：「{pattern}」。{uiLangName}で状況を説明するので、このパターンを使って答えてください。準備できたら教えてください。",
+      "ko": "이 패턴을 연습해 봅시다：「{pattern}」。{uiLangName}(으)로 상황을 설명할 테니, 이 패턴을 사용해서 대답해 주세요.준비되면 알려주세요.",
+      "zh-CN": "我们来练习这个句型：「{pattern}」。我会给你一个{uiLangName}情境，请使用这个句型回覆。准备好了，请告诉我。",
+      "zh-TW": "我們來練習這個句型：「{pattern}」。我會給你一個{uiLangName}情境，請使用這個句型回覆。準備好了，請告訴我。"
     }
   },
   "curriculumDrill": {
@@ -24,11 +24,11 @@
       "zh-TW": "歡迎來到「{unitTitle}」單元。我是你的 AI 教練，我們開始特訓吧！準備好了，請告訴我。"
     },
     "aiTranslation": {
-      "en": "Welcome to the unit: \"{unitTitle}\". I am your AI coach. Let's start the training! Please prepare, I will give you a {uiLangName} scenario.",
-      "ja": "ユニット「{unitTitle}」へようこそ。私はあなたのAIコーチです。特訓を始めましょう！準備してください、{uiLangName}のシナリオを出します。",
-      "ko": "유닛「{unitTitle}」에 오신 것을 환영합니다. 저는 당신의 AI 코치입니다. 훈련을 시작합시다! 준비하세요, {uiLangName} 시나리오를 내겠습니다.",
-      "zh-CN": "欢迎来到「{unitTitle}」单元。我是你的 AI 教练，我们开始特训吧！请准备好，我会出一个{uiLangName}情境考你。",
-      "zh-TW": "歡迎來到「{unitTitle}」單元。我是你的 AI 教練，我們開始特訓吧！請準備好，我會出一個{uiLangName}情境考你。"
+      "en": "Welcome to the unit: \"{unitTitle}\". I am your AI coach. Let's start the training! Ready? Let me know, I will give you a {uiLangName} scenario.",
+      "ja": "ユニット「{unitTitle}」へようこそ。私はあなたのAIコーチです。特訓を始めましょう！準備できたら教えてください、{uiLangName}のシナリオを出します。",
+      "ko": "유닛「{unitTitle}」에 오신 것을 환영합니다. 저는 당신의 AI 코치입니다. 훈련을 시작합시다! 준비되면 알려주세요, {uiLangName} 시나리오를 내겠습니다.",
+      "zh-CN": "欢迎来到「{unitTitle}」单元。我是你的 AI 教练，我们开始特训吧！准备好了，请告诉我，我会出一个{uiLangName}情境考你。",
+      "zh-TW": "歡迎來到「{unitTitle}」單元。我是你的 AI 教練，我們開始特訓吧！準備好了，請告訴我，我會出一個{uiLangName}情境考你。"
     }
   },
   "freeMode": {
@@ -49,18 +49,18 @@
   },
   "scenario": {
     "aiGreeting": {
-      "en": "Hello! Let's start practicing the scenario: \"{title}\". {desc} I will be playing the role of a {role} conversation partner. Please start the conversation in {langName}.",
-      "ja": "こんにちは！「{title}」のシナリオを練習しましょう。{desc} 私は{role}の相手役を演じます。{langName}で会話を始めてください。",
-      "ko": "안녕하세요! 「{title}」 시나리오를 연습해 봅시다. {desc} 저는 {role} 상대 역할을 맡겠습니다. {langName}(으)로 대화를 시작해 주세요.",
-      "zh-CN": "您好！我们开始练习「{title}」情境。{desc} 我将扮演{role}的对话对象，请用{langName}开始对话。",
-      "zh-TW": "您好！我們開始練習「{title}」情境。{desc} 我將扮演{role}的對話對象，請用{langName}開始對話。"
+      "en": "Hello! Let's start practicing the scenario: \"{title}\". \"{desc}\". I will be playing the role of a {role} conversation partner. Please start the conversation in {langName}.",
+      "ja": "こんにちは！「{title}」のシナリオを練習しましょう。「{desc}」 私は{role}の相手役を演じます。{langName}で会話を始めてください。",
+      "ko": "안녕하세요! 「{title}」 시나리오를 연습해 봅시다. 「{desc}」 저는 {role} 상대 역할을 맡겠습니다. {langName}(으)로 대화를 시작해 주세요.",
+      "zh-CN": "您好！我们开始练习「{title}」情境。「{desc}」 我将扮演{role}的对话对象，请用{langName}开始对话。",
+      "zh-TW": "您好！我們開始練習「{title}」情境。「{desc}」 我將扮演{role}的對話對象，請用{langName}開始對話。"
     },
     "aiTranslation": {
-      "en": "Hello! Let's start practicing the scenario: \"{title}\". {desc} I will be playing the role of a {role} conversation partner. Please start the conversation in {langName}.",
-      "ja": "こんにちは！「{title}」のシナリオを練習しましょう。{desc} 私は{role}の相手役を演じます。{langName}で会話を始めてください。",
-      "ko": "안녕하세요! 「{title}」 시나리오를 연습해 봅시다. {desc} 저는 {role} 상대 역할을 맡겠습니다. {langName}(으)로 대화를 시작해 주세요.",
-      "zh-CN": "您好！我们开始练习「{title}」情境。{desc} 我将扮演{role}的对话对象，请用{langName}开始对话。",
-      "zh-TW": "您好！我們開始練習「{title}」情境。{desc} 我將扮演{role}的對話對象，請用{langName}開始對話。"
+      "en": "Hello! Let's start practicing the scenario: \"{title}\". \"{desc}\". I will be playing the role of a {role} conversation partner. Please start the conversation in {langName}.",
+      "ja": "こんにちは！「{title}」のシナリオを練習しましょう。「{desc}」 私は{role}の相手役を演じます。{langName}で会話を始めてください。",
+      "ko": "안녕하세요! 「{title}」 시나리오를 연습해 봅시다. 「{desc}」 저는 {role} 상대 역할을 맡겠습니다. {langName}(으)로 대화를 시작해 주세요.",
+      "zh-CN": "您好！我们开始练习「{title}」情境。「{desc}」 我将扮演{role}的对话对象，请用{langName}开始对话。",
+      "zh-TW": "您好！我們開始練習「{title}」情境。「{desc}」 我將扮演{role}的對話對象，請用{langName}開始對話。"
     }
   }
 }

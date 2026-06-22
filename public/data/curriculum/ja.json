@@ -95,12 +95,21 @@
     ],
     "patterns": [
       {
-        "pattern": "基本問候 (無特定句型)",
-        "explanation": "依據時間不同使用對應的打招呼用語。",
+        "pattern": "こんにちは、[名前]です。",
+        "explanation": "你好，我是...",
         "explanations": {
-          "zh-TW": "依據時間不同使用對應的打招呼用語。",
-          "zh-CN": "依據时间不同使用对應的打招呼用语。",
-          "en": "Use appropriate greetings based on time of day."
+          "zh-TW": "你好，我是...",
+          "zh-CN": "你好，我是...",
+          "en": "Hello, I am..."
+        }
+      },
+      {
+        "pattern": "[名前]、ありがとうございます。",
+        "explanation": "..., 謝謝你。",
+        "explanations": {
+          "zh-TW": "..., 謝謝你。",
+          "zh-CN": "..., 谢谢你。",
+          "en": "..., thank you."
         }
       }
     ]
