@@ -96,19 +96,37 @@ const ChatWrapper = () => {
       const greetingTpl = greetings.curriculumDrill.aiGreeting[targetLanguage] || greetings.curriculumDrill.aiGreeting['zh-TW'];
       const translationTpl = greetings.curriculumDrill.aiTranslation[targetLanguage] || greetings.curriculumDrill.aiTranslation['zh-TW'];
       
+      // readyPrompt: UI 語言的準備提示（TTS 用 UI 語言發音）
+      const readyPrompts: Record<string, string> = {
+        'zh-TW': '您準備好了，請告訴我。',
+        'zh-CN': '您准备好了，请告诉我。',
+        'en': 'Ready? Let me know.',
+        'ja': '準備できたら教えてください。',
+        'ko': '준비되면 알려주세요.',
+        'de': 'Sag mir Bescheid, wenn du bereit bist.',
+        'es': 'Avísame cuando estés listo.',
+        'fr': 'Dites-moi quand vous êtes prêt.'
+      };
+      const readyPrompt = readyPrompts[uiLang] || readyPrompts['zh-TW'];
+
       const aiGreeting = greetingTpl
         .replace('{unitTitle}', scenario.title)
-        .replace('{uiLangName}', uiLangName);
+        .replace('{uiLangName}', uiLangName)
+        .replace('{readyPrompt}', readyPrompt);
       const aiTranslation = translationTpl
         .replace('{unitTitle}', scenario.title)
         .replace('{uiLangName}', uiLangName);
+
+      // uiSegments: readyPrompt 是 UI 語言，TTS 時用 UI 語言朗讀
+      const uiSegments = [readyPrompt];
 
       setChatHistory([
         { role: 'system', content: systemPrompt },
         {
           role: 'assistant',
           content: aiGreeting,
-          translation: aiTranslation
+          translation: aiTranslation,
+          uiSegments
         }
       ]);
       initializedRef.current = true;
