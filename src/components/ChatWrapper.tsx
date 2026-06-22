@@ -109,16 +109,21 @@ const ChatWrapper = () => {
       };
       const readyPrompt = readyPrompts[uiLang] || readyPrompts['zh-TW'];
 
+      // unitTitle：優先使用 UI 語言顯示與發音
+      const localizedTitle = typeof scenario.title === 'string'
+        ? scenario.title
+        : getLocalizedContent(scenario.title) || scenario.title;
+
       const aiGreeting = greetingTpl
-        .replace('{unitTitle}', scenario.title)
+        .replace('{unitTitle}', localizedTitle)
         .replace('{uiLangName}', uiLangName)
         .replace('{readyPrompt}', readyPrompt);
       const aiTranslation = translationTpl
-        .replace('{unitTitle}', scenario.title)
+        .replace('{unitTitle}', localizedTitle)
         .replace('{uiLangName}', uiLangName);
 
-      // uiSegments: readyPrompt 是 UI 語言，TTS 時用 UI 語言朗讀
-      const uiSegments = [readyPrompt];
+      // uiSegments: localizedTitle 與 readyPrompt 均為 UI 語言，TTS 用 UI 語言朗讀
+      const uiSegments = [localizedTitle, readyPrompt];
 
       setChatHistory([
         { role: 'system', content: systemPrompt },
