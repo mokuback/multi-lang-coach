@@ -100,7 +100,7 @@
         "explanations": {
           "zh-TW": "我的名字是...",
           "zh-CN": "我的名字是...",
-          "en": "What are you going to do?",
+          "en": "My name is [Name].",
           "ja": "私の名前は[名前]です。",
           "ko": "저는 [이름]입니다.",
           "es": "Me llamo [Nombre].",
@@ -114,7 +114,7 @@
         "explanations": {
           "zh-TW": "很高興認識你。",
           "zh-CN": "很高興认識你。",
-          "en": "May I speak to...?",
+          "en": "Nice to meet you.",
           "ja": "はじめまして。",
           "ko": "만나서 반갑습니다.",
           "es": "Mucho gusto.",
@@ -225,7 +225,7 @@
         "explanations": {
           "zh-TW": "我是一個...",
           "zh-CN": "我是一个...",
-          "en": "Can you help me...?",
+          "en": "I am a [Noun].",
           "ja": "私は[Noun]です。",
           "ko": "저는 [명사]입니다.",
           "es": "Soy un/una [Sustantivo].",
@@ -239,7 +239,7 @@
         "explanations": {
           "zh-TW": "你是一個...嗎？",
           "zh-CN": "你是一个...吗？",
-          "en": "A is better than B.",
+          "en": "Are you a [Noun]?",
           "ja": "あなたは[Noun]ですか？",
           "ko": "당신은 [명사]입니까?",
           "es": "¿Eres un/una [Sustantivo]?",
@@ -350,7 +350,7 @@
         "explanations": {
           "zh-TW": "這是什麼？",
           "zh-CN": "这是什么？",
-          "en": "You should...",
+          "en": "What is this?",
           "ja": "これは何ですか？",
           "ko": "이건 뭐예요?",
           "es": "¿Qué es esto?",
@@ -364,7 +364,7 @@
         "explanations": {
           "zh-TW": "這是一個...",
           "zh-CN": "这是一个...",
-          "en": "Have you ever...?",
+          "en": "This is a [Noun].",
           "ja": "これは[Noun]です。",
           "ko": "이건 [명사]입니다.",
           "es": "Esto es un/una [Sustantivo].",
@@ -475,7 +475,7 @@
         "explanations": {
           "zh-TW": "...在哪裡？",
           "zh-CN": "...在哪里？",
-          "en": "I am doing...",
+          "en": "Where is the [Noun]?",
           "ja": "[Noun]はどこですか？",
           "ko": "[명사] 어디에 있어요?",
           "es": "¿Dónde está el/la [Sustantivo]?",
@@ -489,7 +489,7 @@
         "explanations": {
           "zh-TW": "它在...",
           "zh-CN": "它在...",
-          "en": "Please tell me more about...",
+          "en": "It is [Location].",
           "ja": "[場所]にあります。",
           "ko": "[위치]에 있어요.",
           "es": "Está en [Ubicación].",
@@ -725,7 +725,7 @@
         "explanations": {
           "zh-TW": "現在幾點？",
           "zh-CN": "现在几点？",
-          "en": "I need to schedule...",
+          "en": "What time is it?",
           "ja": "今、何時ですか？",
           "ko": "지금 몇 시예요?",
           "es": "¿Qué hora es?",
@@ -739,7 +739,7 @@
         "explanations": {
           "zh-TW": "我在...點做...",
           "zh-CN": "我在...点做...",
-          "en": "When are you available?",
+          "en": "I [Verb] at [Time].",
           "ja": "私は[時間]に[動詞]ます。",
           "ko": "저는 [시간]에 [동사]요.",
           "es": "Yo [Verbo] a las [Hora].",
@@ -864,7 +864,7 @@
         "explanations": {
           "zh-TW": "我喜歡...",
           "zh-CN": "我喜歡...",
-          "en": "I will...",
+          "en": "I like [Noun].",
           "ja": "私は[Noun]が好きです。",
           "ko": "저는 [명사] 좋아해요.",
           "es": "Me gusta [Sustantivo].",
@@ -975,7 +975,7 @@
         "explanations": {
           "zh-TW": "你會...嗎？",
           "zh-CN": "你会...吗？",
-          "en": "This is my reply.",
+          "en": "Can you [Verb]?",
           "ja": "[動詞]できますか？",
           "ko": "[동사] 할 수 있어요?",
           "es": "¿Puedes [Verbo]?",
@@ -989,7 +989,7 @@
         "explanations": {
           "zh-TW": "我會...",
           "zh-CN": "我会...",
-          "en": "Thank you for your message.",
+          "en": "I can [Verb].",
           "ja": "私は[動詞]できます。",
           "ko": "저는 [동사] 할 수 있어요.",
           "es": "Yo puedo [Verbo].",
@@ -1114,7 +1114,7 @@
         "explanations": {
           "zh-TW": "我做了...",
           "zh-CN": "我做了...",
-          "en": "May I speak to...?",
+          "en": "I [Past Verb] [Noun].",
           "ja": "私は[Noun]を[過去動詞]ました。",
           "ko": "저는 [명사]을 [과거동사]했어요.",
           "es": "Yo [Verbo pasado] [Sustantivo].",
@@ -1225,7 +1225,7 @@
         "explanations": {
           "zh-TW": "你打算做什麼？",
           "zh-CN": "你打算做什么？",
-          "en": "Can you help me...?",
+          "en": "What are you going to do?",
           "ja": "何をするつもりですか？",
           "ko": "뭐 할 거예요?",
           "es": "¿Qué vas a hacer?",
@@ -1239,7 +1239,7 @@
         "explanations": {
           "zh-TW": "我打算要...",
           "zh-CN": "我打算要...",
-          "en": "Please help me arrange...",
+          "en": "I am going to [Verb].",
           "ja": "私は[動詞]るつもりです。",
           "ko": "저는 [동사]할 거예요.",
           "es": "Voy a [Verbo].",
@@ -1350,7 +1350,7 @@
         "explanations": {
           "zh-TW": "我可以和...通話嗎？",
           "zh-CN": "我可以和...通話吗？",
-          "en": "I'm considering...",
+          "en": "May I speak to [Name]?",
           "ja": "[名前]さんをお願いします。",
           "ko": "[이름] 씨 좀 부탁드려도 될까요?",
           "es": "¿Puedo hablar con [Nombre]?",
@@ -1364,7 +1364,7 @@
         "explanations": {
           "zh-TW": "我可以留個言嗎？",
           "zh-CN": "我可以留个言吗？",
-          "en": "I'm glad to meet you.",
+          "en": "Can I leave a message?",
           "ja": "メッセージを残でもいいですか？",
           "ko": "메시지 남겨도 될까요?",
           "es": "¿Puedo dejar un mensaje?",
@@ -1475,7 +1475,7 @@
         "explanations": {
           "zh-TW": "你能幫我...嗎？",
           "zh-CN": "你能幫我...吗？",
-          "en": "What are your interests?",
+          "en": "Could you help me [Verb]?",
           "ja": "[動詞]を手伝ってもらえますか？",
           "ko": "[동사] 도와주시겠어요?",
           "es": "¿Podría ayudarme a [Verbo]?",
@@ -1489,7 +1489,7 @@
         "explanations": {
           "zh-TW": "我可以...嗎？",
           "zh-CN": "我可以...吗？",
-          "en": "What do you think about...?",
+          "en": "May I [Verb]?",
           "ja": "[動詞]てもいいですか？",
           "ko": "[동사] 해도 될까요?",
           "es": "¿Puedo [Verbo]?",
@@ -1614,7 +1614,7 @@
         "explanations": {
           "zh-TW": "哪一個比較...？",
           "zh-CN": "哪一个比較...？",
-          "en": "I think...",
+          "en": "Which one is [Adjective+er]?",
           "ja": "どちらが[adjective]ですか？",
           "ko": "어느 쪽이 더 [형용사]해요?",
           "es": "¿Cuál es más [adjetivo]?",
@@ -1725,7 +1725,7 @@
         "explanations": {
           "zh-TW": "你應該...",
           "zh-CN": "你应该...",
-          "en": "Shall we go to...?",
+          "en": "You should [Verb].",
           "ja": "[動詞]べきです。",
           "ko": "[동사] 해야 해요.",
           "es": "Deberías [Verbo].",
@@ -1739,7 +1739,7 @@
         "explanations": {
           "zh-TW": "那是個好主意。",
           "zh-CN": "那是个好主意。",
-          "en": "那是個好主意。",
+          "en": "That is a good idea.",
           "ja": "それは良いアイデアです。",
           "ko": "좋은 생각이네요.",
           "es": "Es una buena idea.",
@@ -1850,7 +1850,7 @@
         "explanations": {
           "zh-TW": "你曾經...過嗎？",
           "zh-CN": "你曾经...过吗？",
-          "en": "你曾經...過嗎？",
+          "en": "Have you ever [Past Participle]?",
           "ja": "[過去分詞]ことがありますか？",
           "ko": "[과거분사] 해본 적 있어요?",
           "es": "¿Alguna vez has [participio]?",
@@ -1864,7 +1864,7 @@
         "explanations": {
           "zh-TW": "我感到...",
           "zh-CN": "我感到...",
-          "en": "我感到...",
+          "en": "I feel [Adjective].",
           "ja": "[形容詞]と感じます。",
           "ko": "[형용사]해요.",
           "es": "Me siento [adjetivo].",
