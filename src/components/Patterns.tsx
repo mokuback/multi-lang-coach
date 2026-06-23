@@ -119,7 +119,7 @@ const Patterns = () => {
   );
 
   return (
-    <div className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '900px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '30px' }}>
+    <div className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '1200px', margin: '0 auto', width: '100%', display: 'flex', flexDirection: 'column', gap: '30px' }}>
       <header style={{ marginBottom: '40px' }}>
         <h2 style={{ fontSize: '2rem', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '12px' }}>
           <BookMarked className="text-accent" size={32} />

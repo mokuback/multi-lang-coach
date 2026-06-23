@@ -834,7 +834,7 @@ const Chat = ({ scenario, chatHistory, setChatHistory }: {
   `;
 
   return (
-    <div className="animate-fade-in" style={{ display: 'flex', flexDirection: 'column', height: '100%', maxWidth: '900px', margin: '0 auto', position: 'relative' }}>
+    <div className="animate-fade-in" style={{ display: 'flex', flexDirection: 'column', maxWidth: '1200px', margin: '0 auto', width: '100%', padding: '20px 0', minHeight: 'calc(100vh - 80px)', position: 'relative' }}>
       <style>{pulseKeyframes}</style>
 
       {/* Chat header */}

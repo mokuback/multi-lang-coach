@@ -51,7 +51,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="animate-fade-in custom-scrollbar" style={{ padding: '20px 0', maxWidth: '1000px', margin: '0 auto', height: '100%', overflowY: 'auto' }}>
+    <div className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
       
       {/* 上半部：圖文說明區 (Hero Section) */}
       <section style={{

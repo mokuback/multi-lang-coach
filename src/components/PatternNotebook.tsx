@@ -64,7 +64,7 @@ const PatternNotebook = () => {
 
   if (filteredPatterns.length === 0) {
     return (
-      <div className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '900px', margin: '0 auto' }}>
+      <div className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
         <header style={{ marginBottom: '40px' }}>
           <h2 style={{ fontSize: '2rem', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '12px' }}>
             📖 {t('句型庫')}
@@ -79,7 +79,7 @@ const PatternNotebook = () => {
   }
 
   return (
-    <div className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '900px', margin: '0 auto' }}>
+    <div className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
       <header style={{ marginBottom: '40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
         <h2 style={{ fontSize: '2rem', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '12px' }}>
           📖 {t('句型庫')}

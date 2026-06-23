@@ -6,7 +6,7 @@ const ContactUs = () => {
   const { t } = useI18n();
 
   return (
-    <div className="animate-fade-in" style={{ padding: '40px 20px', maxWidth: '800px', margin: '0 auto' }}>
+    <div className="animate-fade-in" style={{ padding: '40px 20px', maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
       <header style={{ textAlign: 'center', marginBottom: '40px' }}>
         <div style={{
           display: 'inline-flex',
