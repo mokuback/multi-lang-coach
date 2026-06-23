@@ -70,7 +70,7 @@ const Patterns = () => {
   };
 
   const renderPatternCards = (patternsList, sid) => (
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '24px', marginBottom: '40px' }}>
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '24px', marginBottom: '40px' }}>
       {patternsList.map((item, index) => (
         <div 
           key={`${sid}-${index}`} 
@@ -119,7 +119,7 @@ const Patterns = () => {
   );
 
   return (
-    <div className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '1200px', margin: '0 auto' }}>
+    <div className="animate-fade-in" style={{ padding: '20px 0', maxWidth: '900px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '30px' }}>
       <header style={{ marginBottom: '40px' }}>
         <h2 style={{ fontSize: '2rem', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '12px' }}>
           <BookMarked className="text-accent" size={32} />
@@ -128,7 +128,7 @@ const Patterns = () => {
         <p className="text-muted">{t('為您精選最關鍵的母語人士常用句型。點擊進入代換練習模式！')}</p>
       </header>
 
-      <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '16px', marginBottom: '30px', padding: '16px 20px', borderRadius: '12px', background: 'var(--glass-bg)', border: '1px solid var(--glass-border)' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '16px', marginBottom: '30px', padding: '16px 20px', borderRadius: '12px', background: 'var(--glass-bg)', border: '1px solid var(--glass-border)', width: '100%' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '8px', width: '100%' }}>
           <Filter size={20} className="text-accent" style={{ flexShrink: 0 }} />
           <span style={{ fontWeight: 500, color: 'var(--text-primary)', whiteSpace: 'nowrap' }}>{t('情境篩選：')}</span>
@@ -150,7 +150,7 @@ const Patterns = () => {
       </div>
 
       {isLoading ? (
-        <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-secondary)' }}>
+        <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-secondary)', width: '100%' }}>
           <div className="animate-spin" style={{ margin: '0 auto 16px', width: '32px', height: '32px', border: '3px solid var(--glass-border)', borderTopColor: 'var(--accent-color)', borderRadius: '50%' }} />
           <p>{t('載入句型中...')}</p>
         </div>

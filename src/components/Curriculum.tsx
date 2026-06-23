@@ -130,21 +130,25 @@ const Curriculum = () => {
               e.currentTarget.style.transform = 'translateY(0)'; 
               e.currentTarget.style.borderColor = 'var(--glass-border)';
             }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '12px' }}>
-                <h3 style={{ fontSize: '1.25rem', display: 'flex', alignItems: 'flex-start', gap: '8px' }}><GraduationCap size={20} style={{ color: 'var(--accent-color)', flexShrink: 0, marginTop: '2px' }} /><span>{getLocalizedContent(unit.title)}</span></h3>
-                <span style={{ 
-                  background: 'var(--panel-bg-light)', 
-                  padding: '4px 12px', 
-                  borderRadius: '16px',
-                  fontSize: '0.8rem',
-                  color: 'var(--text-muted)',
-                  flexShrink: 0,
-                  whiteSpace: 'nowrap'
-                }}>
-                  {unit.vocab?.length || 0} {t('單字')} · {unit.patterns?.length || 0} {t('句型')}
-                </span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                  <h3 style={{ fontSize: '1.25rem', display: 'flex', alignItems: 'flex-start', gap: '8px', flex: 1 }}><GraduationCap size={20} style={{ color: 'var(--accent-color)', flexShrink: 0, marginTop: '2px' }} /><span>{getLocalizedContent(unit.title)}</span></h3>
+                </div>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>{getLocalizedContent(unit.description)}</p>
+                <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                  <span style={{ 
+                    background: 'var(--panel-bg-light)', 
+                    padding: '4px 12px', 
+                    borderRadius: '16px',
+                    fontSize: '0.8rem',
+                    color: 'var(--text-muted)',
+                    flexShrink: 0,
+                    whiteSpace: 'nowrap'
+                  }}>
+                    {unit.vocab?.length || 0} {t('單字')} · {unit.patterns?.length || 0} {t('句型')}
+                  </span>
+                </div>
               </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>{getLocalizedContent(unit.description)}</p>
             </div>
             ))
           )}
